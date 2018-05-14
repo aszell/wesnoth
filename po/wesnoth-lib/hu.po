@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2014-05-08 23:51+0200\n"
+"PO-Revision-Date: 2018-05-13 21:25+0200\n"
 "Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #. [terrain_type]: id=farmer-fence  # AI-animal-proof fences from first scenario
 #. [terrain_type]: id=fence
@@ -576,10 +576,8 @@ msgstr "Havas hegyvidék"
 
 #. [terrain_type]: id=desert_mountains
 #: data/core/terrain.cfg:810
-#, fuzzy
-#| msgid "Dry Mountains"
 msgid "Desert Mountains"
-msgstr "Száraz hegyvidék"
+msgstr "Sivatagos hegyvidék"
 
 #. [terrain_type]: id=regular_stone_floor
 #: data/core/terrain.cfg:821
@@ -601,7 +599,7 @@ msgstr "Hagyományos fapadló"
 #: data/core/terrain.cfg:831 data/core/terrain.cfg:841
 #: data/core/terrain.cfg:851
 msgid "Rug"
-msgstr ""
+msgstr "Szőnyeg"
 
 #. [terrain_type]: id=rug_floor
 #: data/core/terrain.cfg:834
@@ -610,10 +608,8 @@ msgstr ""
 
 #. [terrain_type]: id=rug2_floor
 #: data/core/terrain.cfg:844
-#, fuzzy
-#| msgid "Save Replay"
 msgid "Normal Rug"
-msgstr "Visszajátszás mentése"
+msgstr "Normál szőnyeg"
 
 #. [terrain_type]: id=rug3_floor
 #: data/core/terrain.cfg:854
@@ -5570,10 +5566,8 @@ msgstr "Gyakorlás"
 
 #. [grid]
 #: data/gui/window/title_screen.cfg:252
-#, fuzzy
-#| msgid "Campaign"
 msgid "Campaigns"
-msgstr "Hadjárat"
+msgstr "Hadjáratok"
 
 #. [grid]
 #: data/gui/window/title_screen.cfg:252
@@ -6470,23 +6464,23 @@ msgstr ""
 
 #: src/gui/dialogs/loading_screen.cpp:50
 msgid "Building terrain rules"
-msgstr ""
+msgstr "Terepszabályok felépítése"
 
 #: src/gui/dialogs/loading_screen.cpp:51
 msgid "Reading files and creating cache"
-msgstr ""
+msgstr "A fájlok beolvasása és a gyorsítótár létrehozása"
 
 #: src/gui/dialogs/loading_screen.cpp:52 src/gui/dialogs/loading_screen.cpp:55
 msgid "Initializing display"
-msgstr ""
+msgstr "Képernyő inicializálása"
 
 #: src/gui/dialogs/loading_screen.cpp:53
 msgid "Reinitialize fonts for the current language"
-msgstr ""
+msgstr "Betűtípusok újrainicializálása a jelenlegi nyelvhez"
 
 #: src/gui/dialogs/loading_screen.cpp:54
 msgid "Initializing teams"
-msgstr ""
+msgstr "Csapatok inicializálása"
 
 #: src/gui/dialogs/loading_screen.cpp:56
 #, fuzzy
@@ -6495,14 +6489,12 @@ msgid "Loading game configuration"
 msgstr "Beállítások:"
 
 #: src/gui/dialogs/loading_screen.cpp:57
-#, fuzzy
-#| msgid "Flowering Water Lilies"
 msgid "Loading data files"
-msgstr "Virágzó vízi liliomok"
+msgstr "Adatfájlok betöltése"
 
 #: src/gui/dialogs/loading_screen.cpp:58
 msgid "Loading level"
-msgstr ""
+msgstr "Szint betöltése"
 
 #: src/gui/dialogs/loading_screen.cpp:59
 msgid "Initializing scripting engine"
@@ -6516,11 +6508,11 @@ msgstr "Lépéstervező bekapcsolása kezdéskor"
 
 #: src/gui/dialogs/loading_screen.cpp:61
 msgid "Reading unit files"
-msgstr ""
+msgstr "Egységek fájljainak beolvasása"
 
 #: src/gui/dialogs/loading_screen.cpp:62
 msgid "Loading units"
-msgstr ""
+msgstr "Egységek betöltése"
 
 #: src/gui/dialogs/loading_screen.cpp:63
 #, fuzzy
@@ -6529,10 +6521,8 @@ msgid "Searching for installed add-ons"
 msgstr "Kiegészítések eltávolítása"
 
 #: src/gui/dialogs/loading_screen.cpp:64
-#, fuzzy
-#| msgid "Random starting time"
 msgid "Starting game"
-msgstr "Véletlen kezdőnapszak"
+msgstr "Játék indítása"
 
 #: src/gui/dialogs/loading_screen.cpp:65
 msgid "Verifying cache"
