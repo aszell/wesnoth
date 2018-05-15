@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-16 03:33 UTC\n"
-"PO-Revision-Date: 2018-05-14 20:36+0200\n"
+"PO-Revision-Date: 2018-05-15 19:54+0200\n"
 "Last-Translator: Farkas János <mail.janos.farkas@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -58,7 +58,7 @@ msgstr "Wesnoth gyakorlópálya — I. rész"
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:26
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:74
 msgid "team_name^Student"
-msgstr "team_name^Tanuló"
+msgstr "Tanuló"
 
 #. [unit]: id=Delfador, type=Elder Mage
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:74
@@ -159,6 +159,12 @@ msgid ""
 "simply click on Konrad and then your destination. (You can press <b>u</b> to "
 "undo a move if you move to the wrong place.)"
 msgstr ""
+"A kiválaszott egységgel (ebben az esetben Konraddal) a világosabb mezőkre "
+"tudsz lépni. Minden egységnek bizonyos számú <i>lépéspontja</i> van, ez "
+"határozza meg, hány mezőt haladhat körönként. Sík terepen általában egy "
+"lépéspontba kerül egy lépés. Ha lépni szeretnél, egyszerűen kattints a "
+"célmezőre. (Ha rossz helyre kattintanál, visszavonni az <b>u</b>(undo) "
+"gombbal tudod.)"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:218
@@ -170,16 +176,22 @@ msgid ""
 "simply click on Li’sar and then your destination. (You can press <b>u</b> to "
 "undo a move if you move to the wrong place.)"
 msgstr ""
+"A kiválaszott egységgel (ebben az esetben Li'sarral) a világosabb mezőkre "
+"tudsz lépni. Minden egységnek bizonyos számú <i>lépéspontja</i> van, ez "
+"határozza meg, hány mezőt haladhat körönként. Sík terepen általában egy "
+"lépéspontba kerül egy lépés. Ha lépni szeretnél, egyszerűen kattints a "
+"célmezőre. (Ha rossz helyre kattintanál, visszavonni az <b>u</b>(undo) "
+"gombbal tudod.)"
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:229
 msgid "Move Konrad next to Delfador"
-msgstr "Lépj Konraddal Delfador mellé."
+msgstr "Lépj Konraddal Delfador mellé"
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:231
 msgid "Move Li’sar next to Delfador"
-msgstr "Lépj Li’sarral Delfador mellé."
+msgstr "Lépj Li’sarral Delfador mellé"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:248
@@ -188,9 +200,8 @@ msgstr "Jó reggelt, Delfador! Harcolhatok ma végre?"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:249
-#, fuzzy
 msgid "female^Good morning, Delfador! Is it time to attack things?"
-msgstr "female^Jó reggelt, Delfador! Harcolhatok ma végre?"
+msgstr "Jó reggelt, Delfador! Harcolhatok ma végre?"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:254
@@ -204,8 +215,6 @@ msgstr "Egy ork ellen kell küzdenem? Vagy egy trollal harcoljak?"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:260
-#, fuzzy
-#| msgid "Have you found an orc for me to fight, huh? A troll?"
 msgid "female^Have you found an orc for me to fight, huh? A troll?"
 msgstr "Egy ork ellen kell küzdenem? Vagy egy trollal harcoljak?"
 
@@ -226,36 +235,26 @@ msgstr "Egy homokzsákot? Azt akarod, hogy egy bábuval harcoljak?"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:318
-#, fuzzy
-#| msgid "A quintain? You want me to fight a dummy?"
 msgid "female^A quintain? You want me to fight a dummy?"
 msgstr "Egy homokzsákot? Azt akarod, hogy egy bábuval harcoljak?"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:324
-#, fuzzy
-#| msgid ""
-#| "female^Young lady, you have 32 hitpoints and a sword. I’m fairly sure "
-#| "you’ll win."
 msgid ""
 "Young man, you have $student_hp hitpoints and a sword. I’m fairly sure "
 "you’ll win."
 msgstr ""
-"Ifjú hölgy, neked 32 életerőpontod van és mellé egy kardod. Egészen biztos "
-"vagyok benne, hogy nyersz."
+"Fiatalember, neked $student_hp életerőpontod van és mellé egy kardod. "
+"Egészen biztos vagyok benne, hogy nyersz."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:329
-#, fuzzy
-#| msgid ""
-#| "female^Young lady, you have 32 hitpoints and a sword. I’m fairly sure "
-#| "you’ll win."
 msgid ""
 "female^Young lady, you have $student_hp hitpoints and a sword. I’m fairly "
 "sure you’ll win."
 msgstr ""
-"Ifjú hölgy, neked 32 életerőpontod van és mellé egy kardod. Egészen biztos "
-"vagyok benne, hogy nyersz."
+"Ifjú hölgy, neked $student_hp életerőpontod van és mellé egy kardod. Egészen "
+"biztos vagyok benne, hogy nyersz."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:337
@@ -265,11 +264,6 @@ msgstr "Támadás"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:339
-#, fuzzy
-#| msgid ""
-#| "To attack the quintain, first select the attacker (Konrad) then the "
-#| "target (the quintain). You will see an attack description. When you click "
-#| "<b>OK</b>, Konrad will attack."
 msgid ""
 "To attack the quintain, first select the attacker (Konrad), then the target "
 "(the quintain). You will see an attack description. Click <b>Attack</b> when "
@@ -277,15 +271,10 @@ msgid ""
 msgstr ""
 "Ahhoz, hogy megtámadd a homokzsákot, először válaszd ki a támadót (Konrad) "
 "és utána a célpontot (homokzsák). Egy leírást fogsz látni a támadásról. "
-"Amikor a <b>Rendben</b> gombra kattintasz, Konrad támadni fog."
+"Kattints a <b>Támadás</b> gombra, ha készen állsz."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:346
-#, fuzzy
-#| msgid ""
-#| "To attack the quintain, first select the attacker (Li’sar) then the "
-#| "target (the quintain). You will see an attack description. When you click "
-#| "<b>OK</b>, Li’sar will attack."
 msgid ""
 "To attack the quintain, first select the attacker (Li’sar), then the target "
 "(the quintain). You will see an attack description. Click <b>Attack</b> when "
@@ -293,7 +282,7 @@ msgid ""
 msgstr ""
 "Ahhoz, hogy megtámadd a homokzsákot, először válaszd ki a támadót (Li’sar) "
 "és utána a célpontot (homokzsák). Egy leírást fogsz látni a támadásról. "
-"Amikor a <b>Rendben</b> gombra kattintasz, Li’sar támadni fog."
+"Kattints a <b>Támadás</b> gombra, ha készen állsz."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:361
@@ -312,8 +301,6 @@ msgstr "Nem kellene visszavonulnom?"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:372
-#, fuzzy
-#| msgid "Should I retreat?"
 msgid "female^Should I retreat?"
 msgstr "Nem kellene visszavonulnom?"
 
@@ -337,6 +324,9 @@ msgid ""
 "leader. In most scenarios, you will lose if your leader is killed. Be sure "
 "to keep him safe!"
 msgstr ""
+"Hősöd (Konrad) felett a kis aranykorona jelzi, hogy ő az egyik oldal vezére. "
+"A legtöbb pályán veszítesz, ha vezéred meghal. Mindig gondoskodj a "
+"biztonságáról!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:392
@@ -345,6 +335,9 @@ msgid ""
 "leader. In most scenarios, you will lose if your leader is killed. Be sure "
 "to keep her safe!"
 msgstr ""
+"Hősöd (Li'sar) felett a kis aranykorona jelzi, hogy ő az egyik oldal vezére. "
+"A legtöbb pályán veszítesz, ha vezéred meghal. Mindig gondoskodj a "
+"biztonságáról!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:402
@@ -362,26 +355,20 @@ msgstr "Ennek a <i>madárijesztőnek</i> is van köre?"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:412
-#, fuzzy
-#| msgid ""
-#| "Yes. It’s a magical quintain.\n"
-#| "Now, this quintain gets 5 chances to hit you for 3 damage each. If it "
-#| "hits every time, you’ll drop from $student_hp to $future_hp hit points. "
-#| "Brace yourself!"
 msgid ""
 "Yes. It’s a magical quintain! If it hits you, it does 3 damage, and has 5 "
 "chances. If it hits every time, you’ll drop from $student_hp to "
 "$($student_hp-15) hitpoints. Brace yourself!"
 msgstr ""
-"Persze. Ez egy mágikus homokzsák.\n"
-"Most a homokzsáknak 5 lehetősége van arra, hogy megüssön, egy-egy ütés 3 "
-"pontot sebez. Ha minden esetben eltalál, akkor az életerőd $student_hp "
-"pontról $future_hp pontra fog esni. Szedd össze magad!"
+"Persze. Ez egy mágikus homokzsák! Most a homokzsáknak 5 lehetősége van arra, "
+"hogy megüssön, egy-egy ütés 3 pontot sebez. Ha minden esetben eltalál, akkor "
+"az életerőd $student_hp pontról $($student_hp-15) pontra fog esni. Szedd "
+"össze magad!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:419
 msgid "Turns"
-msgstr ""
+msgstr "Körök"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:421
@@ -394,6 +381,12 @@ msgid ""
 "turn it is, and any applicable turn limit, next to the flag icon at the top "
 "of the screen."
 msgstr ""
+"Minden körben minden oldal lehetőséget kap lépései végrehajtására. Amikor "
+"mindent elvégeztél ebben a körben, kattints a <b>Kör vége</b> gombra a kép "
+"jobb alsó sarkában. A többi csapat, akár ember, akár MI irányítja, ezt "
+"követően fog lépni. Néhány pályát adott számú körön belül be kell fejezni. A "
+"képernyő tetején a zászló jel mellett láthatod, melyik körben jársz, és hogy "
+"van-e körlimit."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:424
@@ -410,17 +403,11 @@ msgstr "Aú! Gyógyulnom kell! Csak $student_hp életpontom maradt!"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:442
-#, fuzzy
-#| msgid "Ouch! I need to heal! Only $student_hp hitpoints left!"
 msgid "female^Ouch! I need to heal! Only $student_hp hitpoints left!"
 msgstr "Aú! Gyógyulnom kell! Csak $student_hp életpontom maradt!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:447
-#, fuzzy
-#| msgid ""
-#| "There is a village on the other side of the river. Visiting villages is a "
-#| "good idea, and ending your turn in one will heal you. To the village!"
 msgid ""
 "There are two villages within your reach. Visiting villages is a good idea, "
 "and ending your turn on one will heal you. To a village!"
@@ -436,15 +423,11 @@ msgstr "Falu"
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:469
-#, fuzzy
-#| msgid "Move Konrad to capture a village"
 msgid "Move Konrad to a nearby village"
 msgstr "Lépj Konraddal egy faluba és foglald el"
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:471
-#, fuzzy
-#| msgid "Move Li’sar to capture a village"
 msgid "Move Li’sar to a nearby village"
 msgstr "Lépj Li’sarral egy faluba és foglald el"
 
@@ -1294,10 +1277,8 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:314
-#, fuzzy
-#| msgid "Elvish Fighter"
 msgid "Elvish Archer"
-msgstr "Tünde harcos"
+msgstr "Tünde íjász"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:315

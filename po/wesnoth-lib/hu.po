@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-13 21:25+0200\n"
+"PO-Revision-Date: 2018-05-15 19:48+0200\n"
 "Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -2161,7 +2161,6 @@ msgstr ""
 msgid "Update add-on"
 msgstr "Kiegészítések frissítése"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=single_publish
 #. [button]: id=publish
 #: data/gui/widget/addon_list.cfg:412 data/gui/window/addon_manager.cfg:270
@@ -2169,7 +2168,6 @@ msgstr "Kiegészítések frissítése"
 msgid "Publish add-on"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=single_uninstall
 #. [button]: id=uninstall
 #: data/gui/widget/addon_list.cfg:435 data/gui/window/addon_manager.cfg:247
@@ -2211,7 +2209,7 @@ msgstr "Bezár"
 #: data/gui/widget/unit_preview_pane.cfg:296
 #: data/gui/widget/unit_preview_pane.cfg:356
 msgid "Profile"
-msgstr ""
+msgstr "Adatlap"
 
 #. [label]
 #. [widget]: id=name
@@ -2239,7 +2237,6 @@ msgstr "Kiszolgáló:"
 msgid "Remove Add-ons"
 msgstr "Kiegészítések eltávolítása"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=show_help
 #. [button]: id=help
 #: data/gui/window/addon_connect.cfg:184 data/gui/window/title_screen.cfg:174
@@ -2252,7 +2249,6 @@ msgstr "Segítség"
 msgid "Connect"
 msgstr "Kapcsolódás"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=cancel
 #: data/gui/window/addon_connect.cfg:212
 #: data/gui/window/addon_uninstall_list.cfg:174
@@ -2303,7 +2299,6 @@ msgstr ""
 msgid "Version:"
 msgstr "Verzió: "
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [scroll_label]: id=description
 #: data/gui/window/addon_manager.cfg:160
 #: src/gui/dialogs/multiplayer/mp_create_game.cpp:591
@@ -2358,7 +2353,6 @@ msgstr "Letöltések:"
 msgid "Dependencies:"
 msgstr "Függőségek:"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=dependencies
 #: data/gui/window/addon_manager.cfg:523 src/gui/dialogs/addon/manager.cpp:885
 msgid "addon_dependencies^None"
@@ -2369,7 +2363,6 @@ msgstr "Nincs"
 msgid "Translations:"
 msgstr "Fordítások:"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=translations
 #: data/gui/window/addon_manager.cfg:557 src/gui/dialogs/addon/manager.cpp:899
 msgid "translations^None"
@@ -2431,7 +2424,6 @@ msgstr "Vezér"
 msgid "Add-ons Manager"
 msgstr "Kiegészítések"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=details_toggle
 #: data/gui/window/addon_manager.cfg:946 src/gui/dialogs/addon/manager.cpp:452
 #: src/gui/dialogs/addon/manager.cpp:639
@@ -2528,7 +2520,6 @@ msgstr ""
 msgid "Scaled to hex"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/window/advanced_graphics_options.cfg:165
 #: data/gui/window/campaign_dialog.cfg:426
@@ -2589,10 +2580,8 @@ msgstr ""
 
 #. [grid]
 #: data/gui/window/attack_predictions.cfg:94
-#, fuzzy
-#| msgid "Change Hotkey"
 msgid "Chance to hit"
-msgstr "Gyorsbillentyű megváltoztatása"
+msgstr "Találati esély"
 
 #. [grid]
 #: data/gui/window/attack_predictions.cfg:95
@@ -2607,14 +2596,12 @@ msgstr ""
 #. [label]: id=title
 #: data/gui/window/attack_predictions.cfg:249
 msgid "Damage Calculations"
-msgstr ""
+msgstr "Sebzés számítások"
 
 #. [column]
 #: data/gui/window/attack_predictions.cfg:272
-#, fuzzy
-#| msgid "Attack"
 msgid "Attacker"
-msgstr "Támadás"
+msgstr "Támadó"
 
 #. [column]
 #: data/gui/window/attack_predictions.cfg:282
@@ -2642,17 +2629,14 @@ msgstr ""
 
 #. [toggle_button]: id=sort_time
 #: data/gui/window/campaign_dialog.cfg:239
-#, fuzzy
-#| msgid "Date"
 msgid "Dates"
-msgstr "Dátum"
+msgstr "Dátumok"
 
 #. [toggle_button]: id=sort_time
 #: data/gui/window/campaign_dialog.cfg:240
 msgid "Sort in approximate chronological order of story events"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/campaign_dialog.cfg:276
 #: src/gui/dialogs/multiplayer/lobby.cpp:466
@@ -2678,7 +2662,7 @@ msgstr ""
 #: data/gui/window/campaign_difficulty.cfg:63
 #: data/multiplayer/scenarios/2p_Dark_Forecast.cfg:251
 msgid "Difficulty"
-msgstr "Nehézség: "
+msgstr "Nehézség"
 
 #. [scroll_label]: id=message
 #: data/gui/window/campaign_difficulty.cfg:83
@@ -2845,7 +2829,6 @@ msgstr "Új napszak"
 msgid "Delete ToD"
 msgstr "Napszak törlése"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/depcheck_confirm_change.cfg:40
 #: src/gui/dialogs/addon/manager.cpp:773 src/gui/dialogs/file_dialog.cpp:307
@@ -2858,7 +2841,6 @@ msgstr "Megerősítés"
 msgid "Would you like to apply the changes?"
 msgstr "Végrehajtsam a változtatásokat?"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/window/depcheck_confirm_change.cfg:130
 #: data/gui/window/game_delete.cfg:107
@@ -2869,7 +2851,6 @@ msgstr "Végrehajtsam a változtatásokat?"
 msgid "Yes"
 msgstr "Igen"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=cancel
 #: data/gui/window/depcheck_confirm_change.cfg:144
 #: data/gui/window/game_delete.cfg:121
@@ -2950,7 +2931,6 @@ msgstr "Azonosító:"
 msgid "Description:"
 msgstr "Leírás:"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/editor_edit_scenario.cfg:170
 #: src/gui/dialogs/multiplayer/lobby.cpp:488
@@ -3012,7 +2992,6 @@ msgstr "Csapatok adatainak elrejtése"
 msgid "Gold:"
 msgstr "Arany:"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/editor_edit_side.cfg:277
 #: src/gui/dialogs/multiplayer/lobby.cpp:489
@@ -3034,7 +3013,6 @@ msgstr "Falvankénti ellátmány:"
 msgid "Controller:"
 msgstr "Irányító:"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [row]
 #: data/gui/window/editor_edit_side.cfg:373 src/gui/dialogs/game_stats.cpp:78
 msgid "controller^Human"
@@ -3076,7 +3054,6 @@ msgstr "Eltakarás"
 msgid "vision^None"
 msgstr "Egy sincs"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/editor_generate_map.cfg:43 src/hotkey/hotkey_command.cpp:242
 msgid "Generate Map"
@@ -3089,7 +3066,6 @@ msgstr "Pálya generálása"
 msgid "Choose a map generator:"
 msgstr "Pályarajzoló"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=random_map_settings
 #. [button]: id=settings
 #: data/gui/window/editor_generate_map.cfg:128
@@ -3108,7 +3084,6 @@ msgstr ""
 msgid "Generate"
 msgstr "Megrajzolás"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #: data/gui/window/editor_new_map.cfg:36 src/hotkey/hotkey_command.cpp:170
 msgid "New Map"
@@ -3133,7 +3108,6 @@ msgstr "Magasság: "
 msgid "Create"
 msgstr "Pálya létrehozása"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/editor_resize_map.cfg:35 src/hotkey/hotkey_command.cpp:240
 msgid "Resize Map"
@@ -3364,7 +3338,6 @@ msgstr ""
 msgid "Date"
 msgstr "Dátum"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=lblTitle
 #. [button]: id=load_game
 #: data/gui/window/game_load.cfg:286 data/gui/window/mp_create_game.cfg:898
@@ -3408,7 +3381,6 @@ msgstr "A függőben lévő egységmozgások visszavonása a mentett játékban"
 msgid "Open saves folder"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=lblTitle
 #: data/gui/window/game_save.cfg:42 data/gui/window/game_save_message.cfg:42
 #: data/gui/window/game_save_oos.cfg:42 src/hotkey/hotkey_command.cpp:98
@@ -3435,7 +3407,6 @@ msgstr "Felülírjam?"
 msgid "Save already exists. Do you want to overwrite it?"
 msgstr "Már van ilyen mentés. Felülírjam?"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_0
 #: data/gui/window/game_stats.cfg:35 data/gui/window/game_stats.cfg:283
 #: src/hotkey/hotkey_command.cpp:83
@@ -3449,7 +3420,6 @@ msgstr "Vezér"
 msgid "Team"
 msgstr "1-es csapat"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_2
 #: data/gui/window/game_stats.cfg:63
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:401
@@ -3477,7 +3447,6 @@ msgstr "Egységlista"
 msgid "Upkeep"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_6
 #. [image]: id=income_icon
 #. [label]: id=side_income
@@ -3531,7 +3500,6 @@ msgid ""
 "Village"
 msgstr "Falvankénti ellátmány:"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #: data/gui/window/game_stats.cfg:705 src/gui/dialogs/game_stats.cpp:255
 #, fuzzy
@@ -3546,7 +3514,6 @@ msgstr "Jelenlegi szoba"
 msgid "Game Stats"
 msgstr "Elérési útvonalak"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [widget]: id=tab_label
 #: data/gui/window/game_stats.cfg:793 src/gui/dialogs/game_stats.cpp:255
 #, fuzzy
@@ -3843,7 +3810,6 @@ msgstr "Eltávolítás"
 msgid "Create Game"
 msgstr "Játék létrehozása"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=show_preferences
 #. [label]: id=title
 #. [grid]
@@ -4370,7 +4336,6 @@ msgstr "Parancsok"
 msgid "Time for each attack, recruit, and capture"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [widget]: id=label
 #. [widget]: id=tab_label
 #: data/gui/window/mp_create_game.cfg:533 data/gui/window/preferences.cfg:291
@@ -4468,7 +4433,6 @@ msgstr ""
 "Adj meg egy jelszót, amelyet a játékodhoz csatlakozni kívánó embereknek kell "
 "majd megadniuk."
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/mp_create_game/default_resolution.cfg:176
 #: data/gui/window/mp_create_game/small_resolution.cfg:177
@@ -4492,7 +4456,6 @@ msgstr "Vezér"
 msgid "Gender:"
 msgstr "Nem:"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [row]
 #: data/gui/window/mp_faction_select.cfg:167
 #: src/gui/dialogs/multiplayer/faction_select.cpp:151
@@ -4577,7 +4540,6 @@ msgstr ""
 msgid "Game Lobby"
 msgstr "Játékcsarnok"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=status_label
 #: data/gui/window/mp_join_game.cfg:479 data/gui/window/mp_staging.cfg:614
 #: data/gui/window/mp_staging.cfg:806
@@ -4618,7 +4580,6 @@ msgstr "Bejelentkezés: "
 msgid "Save password locally (encrypted)"
 msgstr "Jelszó mentése a beállítások fájljába (kódolatlan szöveg)"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [widget]: id=label
 #. [label]
 #. [grid]
@@ -4678,7 +4639,6 @@ msgstr "Helyi játék"
 msgid "Address"
 msgstr "Cím"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/window/mp_server_list.cfg:217 src/preferences/display.cpp:170
 msgid "Select"
@@ -5340,7 +5300,6 @@ msgstr "Képernyőképek..."
 msgid "Browse the screenshots folder using a file manager"
 msgstr "A képernyőképeket tartalmazó könyvtár megnyitása fájlkezelővel"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=save
 #: data/gui/window/screenshot_notification.cfg:203
 #: src/gui/dialogs/file_dialog.cpp:185
@@ -5420,7 +5379,6 @@ msgstr ""
 msgid "This Turn"
 msgstr "Kör"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #: data/gui/window/statistics_dialog.cfg:432 src/hotkey/hotkey_command.cpp:120
 msgid "Statistics"
@@ -5445,7 +5403,6 @@ msgstr "Hadjárat"
 msgid "Skip"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=lblTitle
 #: data/gui/window/surrender_quit.cfg:40 src/hotkey/hotkey_command.cpp:123
 #, fuzzy
@@ -5558,7 +5515,6 @@ msgstr "Mutasd a következő tippet"
 msgid "Start a tutorial to familiarize yourself with the game"
 msgstr "A gyakorlópálya indítása a játékkal való ismerkedéshez"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [grid]
 #: data/gui/window/title_screen.cfg:251 src/gui/dialogs/game_load.cpp:340
 msgid "Tutorial"
@@ -5672,7 +5628,7 @@ msgstr ""
 #. [button]: id=damage_calculation
 #: data/gui/window/unit_attack.cfg:192
 msgid "Damage Calculation"
-msgstr ""
+msgstr "Sebzés számítás"
 
 #. [button]: id=ok
 #: data/gui/window/unit_attack.cfg:220
@@ -5686,7 +5642,6 @@ msgstr "Támadás"
 msgid "Attack Enemy"
 msgstr "Ellenség megtámadása"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/unit_create.cfg:47 src/hotkey/hotkey_command.cpp:114
 msgid "Create Unit (Debug!)"
@@ -5724,7 +5679,6 @@ msgstr ""
 msgid "XP"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_4
 #. [toggle_button]: id=sort_6
 #: data/gui/window/unit_list.cfg:177 data/gui/window/unit_recall.cfg:89
@@ -5733,7 +5687,6 @@ msgstr ""
 msgid "Traits"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/unit_list.cfg:368 src/hotkey/hotkey_command.cpp:119
 msgid "Unit List"
@@ -5751,7 +5704,6 @@ msgstr "Egység átnevezése"
 msgid "Dismiss"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/window/unit_recall.cfg:419 src/hotkey/hotkey_command.cpp:104
 msgid "Recall"
@@ -5764,13 +5716,11 @@ msgstr "Visszahívás"
 msgid "Recruit Unit"
 msgstr "Toborzás"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [button]: id=ok
 #: data/gui/window/unit_recruit.cfg:219 src/hotkey/hotkey_command.cpp:102
 msgid "Recruit"
 msgstr "Toborzás"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]
 #: data/gui/window/wml_error.cfg:40 src/gui/dialogs/message.cpp:210
 #: src/gui/dialogs/preferences_dialog.cpp:262
@@ -5778,7 +5728,6 @@ msgstr "Toborzás"
 msgid "Error"
 msgstr "Hiba"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=details_heading
 #: data/gui/window/wml_error.cfg:112 src/gui/dialogs/multiplayer/lobby.cpp:226
 #: src/gui/dialogs/multiplayer/lobby.cpp:242 src/gui/dialogs/wml_error.cpp:197
