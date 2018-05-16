@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-16 03:33 UTC\n"
-"PO-Revision-Date: 2018-05-15 19:54+0200\n"
+"PO-Revision-Date: 2018-05-16 19:57+0200\n"
 "Last-Translator: Farkas János <mail.janos.farkas@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -438,13 +438,6 @@ msgstr "Falvak"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:486
-#, fuzzy
-#| msgid ""
-#| "You have captured a village! It now flies your flag and has been added to "
-#| "your total village count. (The house icon at the top of the screen shows "
-#| "how many villages you currently control.) Villages provide the gold "
-#| "needed to recruit units. Each turn, you gain two gold plus one for every "
-#| "village you own."
 msgid ""
 "You have captured a village! It now flies your colors and has been added to "
 "your total village count (the house icon at the top of the screen shows how "
@@ -453,8 +446,8 @@ msgid ""
 msgstr ""
 "Elfoglaltad a falut! Kitűzték rá a zászlódat, és hozzá is adódott a "
 "birtokodban lévő faluk számához (ház ikon a képernyő tetején). A falvak "
-"biztosítják a toborzáshoz szükséges aranyat. Alapesetben körönként két "
-"aranyat kapsz, ezenfelül minden birtokodban lévő falu után még egyet."
+"biztosítják a toborzáshoz szükséges aranyat. Alapesetben körönként 2 aranyat "
+"kapsz, ezenfelül minden birtokodban lévő falu után jár még 1."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:508
@@ -467,14 +460,8 @@ msgstr ""
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:513
-#, fuzzy
-#| msgid ""
-#| "You’re about to be healed by $hp_difference hitpoints, but it’s time to "
-#| "summon some help against that quintain."
 msgid "Now, it’s time to summon some help against that quintain."
-msgstr ""
-"Rövidesen gyógyulsz $hp_difference életerőponttal, de itt az ideje, hogy "
-"segítséget szerezz a homokzsák ellen."
+msgstr "Itt az ideje, hogy segítséget szerezz a homokzsák ellen."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:518
@@ -483,24 +470,19 @@ msgstr "Toborzok néhány tündét!"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:519
-#, fuzzy
-#| msgid "I’ll recruit some elves!"
 msgid "female^I’ll recruit some elves!"
 msgstr "Toborzok néhány tündét!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:524
-#, fuzzy
-#| msgid ""
-#| "A splendid idea. You can recruit two units if you return to the keep. You "
-#| "have plenty of gold for that."
 msgid ""
 "A splendid idea! It’s probably best not to attempt attacking the quintain "
 "this turn. Instead, you should return to the keep and recruit two units; you "
 "have plenty of gold for that."
 msgstr ""
-"Pompás ötlet. Ha visszatérsz a várkastélyodba, toborozhatsz két egységet. "
-"Bőségesen elég aranyad van hozzá."
+"Pompás ötlet! Valószínűleg jobb, ha ebben a körben nem próbálod megtámadni a "
+"homokzsákot. Inkább térj vissza a várkastélyba és toborozz két egységet, "
+"bőségesen elég aranyad van hozzá."
 
 #. [label]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:529
@@ -524,11 +506,6 @@ msgstr "Toborzás"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:559
-#, fuzzy
-#| msgid ""
-#| "Whenever you’re on a <i>keep</i>, you can <i>recruit</i> into the castle "
-#| "tiles around it by right-clicking and selecting <b>Recruit</b>. This time "
-#| "you will only be given one type of unit to choose: the Elvish Fighter."
 msgid ""
 "Whenever you’re on a <i>keep</i>, you can <i>recruit</i> units on the castle "
 "tiles around it by right-clicking and selecting <b>Recruit</b>. Note that "
@@ -537,15 +514,14 @@ msgid ""
 "choose from: the Elvish Fighter."
 msgstr ""
 "Amikor a <i>várkastélyban</i> vagy, a körülötte lévő vár mezőkre "
-"<i>toborozhatsz</i> is a jobb gombos menü <i>Toborzás</i> opcióját "
-"választva. Most csak egyfajta egységből lehet választani: Tünde harcos."
+"<i>toborozhatsz</i> a jobb gombos menü <i>Toborzás</i> opcióját választva. A "
+"frissen toborzott egységeket csak a toborzást követő körtől tudod használni. "
+"Most csak egyfajta egységből lehet választani: Tünde harcos."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:562
-#, fuzzy
-#| msgid "Left click on an Elvish Fighter"
 msgid "Recruit two Elvish Fighters"
-msgstr "Kattints bal gombbal a tünde harcosra"
+msgstr "Toborozz két tünde harcost"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:581
@@ -572,9 +548,6 @@ msgstr ""
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:620
-#, fuzzy
-#| msgid ""
-#| "Hey, the quintain just healed 2 hitpoints! I’d better attack it at once!"
 msgid ""
 "female^Hey, the quintain just healed 2 hitpoints! I’d better attack it at "
 "once!"
@@ -590,59 +563,40 @@ msgstr ""
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:630
-#, fuzzy
-#| msgid ""
-#| "But before you send your fighters against the quintain, you should know "
-#| "they have two kinds of attack..."
 msgid ""
 "Before you send your fighters against the quintain, you should know they "
 "have two kinds of attack..."
 msgstr ""
-"Mielőtt azonban odaküldöd a harcosaidat, tudnod kell, hogy kétfajta "
-"támadásuk van..."
+"Mielőtt odaküldöd a harcosaidat, tudnod kell, hogy kétfajta támadásuk van..."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:635
-#, fuzzy
-#| msgid "I’ll tell them to use the one that does the most damage!"
 msgid "I’ll tell them to use the one that does more damage!"
 msgstr "Megmondom majd nekik, hogy azt használják, amelyik többet sebez!"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:636
-#, fuzzy
-#| msgid "I’ll tell them to use the one that does the most damage!"
 msgid "female^I’ll tell them to use the one that does more damage!"
 msgstr "Megmondom majd nekik, hogy azt használják, amelyik többet sebez!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:641
-#, fuzzy
-#| msgid ""
-#| "And which would that be? The sword (5–4) or the bow (3–3)? I suppose "
-#| "you’ll find out..."
 msgid ""
 "And which would that be? The sword (5×4; or 5 damage on each hit, with 4 "
 "attacks) or the bow (3×3; or 3 damage on each hit, with 3 attacks)? I "
 "suppose you’ll find out..."
 msgstr ""
-"És vajon melyik lenne az? A kard (5-4) vagy az íj (3-3)? Szerintem ki fogod "
-"találni..."
+"És vajon melyik lenne az? A kard (5×4; 5 sebzés minden találat esetén, 4 "
+"támadással) vagy az íj (3×3, azaz 3 sebzés találatonként, 3 támadással)? "
+"Szerintem ki fogod találni..."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:644
-#, fuzzy
-#| msgid "Attack the orc with an Archer"
 msgid "Attack the quintain with your fighters"
-msgstr "Támadd meg az orkot egy íjásszal"
+msgstr "Támadd meg a homokzsákot a harcosaiddal"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:655
-#, fuzzy
-#| msgid ""
-#| "You wouldn’t do anything stupid like charging that quintain yourself "
-#| "again, now would you?\n"
-#| "Use the fighters you recruited first; they’ll be a lot of help."
 msgid ""
 "You wouldn’t do anything stupid like charging that quintain yourself again, "
 "now would you? Use the fighters you recruited first; they’ll be a lot of "
@@ -654,35 +608,27 @@ msgstr ""
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:686
-#, fuzzy
-#| msgid ""
-#| "Your elf used a sword (5–4; or 5 damage, 4 attacks), which is a <i>melee</"
-#| "i> attack. The quintain defended with its melee attack (3–5)."
 msgid ""
 "Your elf used a sword (5×4; or 5 damage on each hit, with 4 attacks), which "
 "is a <i>melee</i> attack. The quintain defended with its melee attack (3×5; "
 "or 3 damage on each hit, with 5 attacks). The ranged attack (the bow) would "
 "have been safer."
 msgstr ""
-"A tündéd a kardját használta (5-4; azaz 5 sebzés és 4 támadás), amely egy "
-"<i>közelharci</i> fegyver. A homokzsák védekezhetett az ő közelharci "
-"támadásával (3-5)."
+"A tündéd a kardját használta (5×4; azaz 5 sebzés találatonként és 4 "
+"támadás), amely egy <i>közelharci</i> fegyver. A homokzsák védekezhetett az "
+"ő közelharci támadásával (3×5, vagyis 3 sebzés találatonként, 5 támadással). "
+"A távolsági támadás (az íj) biztonságosabb lett volna."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:698
-#, fuzzy
-#| msgid ""
-#| "Your elf used a bow, which is a <i>ranged</i> attack (3–3; or 3 damage, 3 "
-#| "attacks). The quintain has no ranged attack, only a melee attack, so it "
-#| "could not defend itself."
 msgid ""
 "Your elf used a bow, which is a <i>ranged</i> attack (3×3; or 3 damage on "
 "each hit, with 3 attacks). The quintain has no ranged attack, only a melee "
 "attack, so it could not defend itself."
 msgstr ""
-"A tündéd az íját használta, amely <i>távolsági</i> támadás (3-3; azaz 3 "
-"sebzés és 3 támadás). A homokzsáknak nincs távolsági fegyvere, csak "
-"közelharci, tehát nem tudta magát védeni."
+"A tündéd az íját használta, amely <i>távolsági</i> támadás (3×3; azaz 3 "
+"sebzés találatonként és 3 támadás). A homokzsáknak nincs távolsági fegyvere, "
+"csak közelharci, tehát nem tudta magát védeni."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:713
@@ -817,52 +763,28 @@ msgstr "A homokzsák megsemmisült, és tapasztalati pontokat is szereztem!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:847
-#, fuzzy
-#| msgid ""
-#| "Yes, you gain experience through battle, especially by killing an "
-#| "opponent. Gain enough experience and you’ll become more powerful.\n"
-#| "Now, Konrad, I will leave you with more dummies to practice on! After "
-#| "that, we have real work to do..."
 msgid ""
 "Yes, you gain experience through battle, especially by killing an opponent. "
 "Gain enough experience and you’ll become more powerful."
 msgstr ""
 "Igen, a csatákban tapasztalati pontokat szerezhetsz, főleg ha megölsz egy "
-"ellenséget: gyűjts elég TP-t és még erősebb leszel.\n"
-"Most pedig, Konrad, hagyok itt neked még néhány bábut, amikkel "
-"gyakorolhatsz! Azután viszont komoly dolgunk lesz..."
+"ellenséget: gyűjts elég TP-t és még erősebb leszel."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:853
-#, fuzzy
-#| msgid ""
-#| "Yes, you gain experience through battle, especially by killing an "
-#| "opponent. Gain enough experience and you’ll become more powerful.\n"
-#| "Now, Konrad, I will leave you with more dummies to practice on! After "
-#| "that, we have real work to do..."
 msgid ""
 "Now, Konrad, I will leave you with more dummies to practice on! After that, "
 "we have real work to do..."
 msgstr ""
-"Igen, a csatákban tapasztalati pontokat szerezhetsz, főleg ha megölsz egy "
-"ellenséget: gyűjts elég TP-t és még erősebb leszel.\n"
 "Most pedig, Konrad, hagyok itt neked még néhány bábut, amikkel "
 "gyakorolhatsz! Azután viszont komoly dolgunk lesz..."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:858
-#, fuzzy
-#| msgid ""
-#| "Yes, you gain experience through battle, especially by killing an "
-#| "opponent. Gain enough experience and you’ll become more powerful.\n"
-#| "Now, Li’sar, I will leave you with more dummies to practice on! After "
-#| "that, we have real work to do..."
 msgid ""
 "Now, Li’sar, I will leave you with more dummies to practice on! After that, "
 "we have real work to do..."
 msgstr ""
-"Igen, a csatákban tapasztalati pontokat szerezhetsz, főleg ha megölsz egy "
-"ellenséget: gyűjts elég TP-t és még erősebb leszel.\n"
 "Most pedig, Li’sar, hagyok itt neked még néhány bábut, amikkel "
 "gyakorolhatsz! Azután viszont komoly dolgunk lesz..."
 
