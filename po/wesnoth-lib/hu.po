@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-15 19:48+0200\n"
+"PO-Revision-Date: 2018-05-17 20:06+0200\n"
 "Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -7081,10 +7081,8 @@ msgid "Movement Costs:"
 msgstr ""
 
 #: src/gui/widgets/unit_preview_pane.cpp:212
-#, fuzzy
-#| msgid "Attack"
 msgid "Attacks"
-msgstr "Támadás"
+msgstr "Támadások"
 
 #: src/gui/widgets/unit_preview_pane.cpp:265
 #: src/gui/widgets/unit_preview_pane.cpp:295

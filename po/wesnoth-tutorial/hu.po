@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-16 03:33 UTC\n"
-"PO-Revision-Date: 2018-05-16 19:57+0200\n"
+"PO-Revision-Date: 2018-05-22 20:52+0200\n"
 "Last-Translator: Farkas János <mail.janos.farkas@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -457,6 +457,9 @@ msgid ""
 "whichever is less. In your case, you regained $student_hp_heal_amount "
 "hitpoints."
 msgstr ""
+"Visszanyertél egy kis életerőt, mert faluban kezdted a köröd! A falvakban 8 "
+"életerőpontot nyersz körönként, vagy ha ennél kevesebb hiányzik, akkor "
+"annyit. Te most $student_hp_heal_amount életerőpontot gyógyultál."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:513
@@ -526,7 +529,7 @@ msgstr "Toborozz két tünde harcost"
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:581
 msgid "Traits"
-msgstr ""
+msgstr "Jellemvonások"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:583
@@ -537,6 +540,11 @@ msgid ""
 "each turn, and units with the <i>intelligent</i> trait require 20% less "
 "experience to level up."
 msgstr ""
+"Figyeld meg újoncaid <i>jellemvonásait</i>!  Ezek a faj alatt láthatóak az "
+"oldalsávban. A jellemvonások finoman befolyásolják egységeid rátermettségét. "
+"A <i>gyors</i> jellemvonással rendelkező egységek például egy mezővel többet "
+"léphetnek körönként, míg az <i>intelligens</i> egységek szintlépéséhez 20%-"
+"kal kevesebb tapasztalat is elegendő."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:619
@@ -808,6 +816,8 @@ msgid ""
 "Well, I think I know the basics. Onwards! Maybe I can fight in a real battle "
 "next?"
 msgstr ""
+"Nos, szerintem megértettem az alapokat. Előre! Következhet végre egy valódi "
+"csata?"
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:949
@@ -823,13 +833,6 @@ msgstr "Győzelem"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:967
-#, fuzzy
-#| msgid ""
-#| "After your victory notice, the map will be grayed out to indicate that "
-#| "the scenario is over, but you will still be able to examine the final "
-#| "positions and state of your troops and any surviving enemies. This is "
-#| "called <i>linger mode</i>. When you’re finished, click the <b>End "
-#| "Scenario</b> button to go on the next scenario in the campaign."
 msgid ""
 "After your victory notice, the map will be grayed out to indicate that the "
 "scenario is over; this is called <i>linger mode</i>. You will still be able "
@@ -838,8 +841,8 @@ msgid ""
 "to the next scenario in the campaign."
 msgstr ""
 "Miután győzelmet arattál, a térkép el fog szürkülni jelezvén, hogy a pálya "
-"véget ért. Ezután még tanulmányozhatod a végső állást és csapataid, vagy a "
-"még megmaradt ellenfelek állapotát (ezt hívják <i>tétovázó módnak</i>), "
+"véget ért; ezt hívják <i>tétovázó módnak</i>. Ezután még tanulmányozhatod a "
+"végső állást és csapataid, vagy a még megmaradt ellenfelek állapotát, "
 "mielőtt a <b>Pálya vége</b> gombra kattintanál, és a következő pályára "
 "lépnél."
 
