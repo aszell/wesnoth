@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-16 03:33 UTC\n"
-"PO-Revision-Date: 2018-05-22 21:50+0200\n"
+"PO-Revision-Date: 2018-05-22 22:00+0200\n"
 "Last-Translator: Farkas János <mail.janos.farkas@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -325,8 +325,7 @@ msgid ""
 "to keep him safe!"
 msgstr ""
 "Hősöd (Konrad) felett a kis aranykorona jelzi, hogy ő az egyik oldal vezére. "
-"A legtöbb pályán veszítesz, ha vezéred meghal. Mindig gondoskodj a "
-"biztonságáról!"
+"A legtöbb pályán veszítesz, ha vezéred meghal. Mindig ügyelj a biztonságára!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:392
@@ -336,8 +335,7 @@ msgid ""
 "to keep her safe!"
 msgstr ""
 "Hősöd (Li'sar) felett a kis aranykorona jelzi, hogy ő az egyik oldal vezére. "
-"A legtöbb pályán veszítesz, ha vezéred meghal. Mindig gondoskodj a "
-"biztonságáról!"
+"A legtöbb pályán veszítesz, ha vezéred meghal. Mindig ügyelj a biztonságára!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:402
@@ -922,9 +920,9 @@ msgid ""
 "upkeep, long-distance movement, zone of control, and time of day."
 msgstr ""
 "Üdv újra! Ez a kétrészes gyakorlópálya második része, mely megtanít az "
-"egységek visszahívására, bemutatja az egységek és a fegyverek különleges "
-"képességeit, a jövedelmet és a fenntartási költségeket, mozgást nagy "
-"távolságokra, valamint a területek ellenőrzését és a napszakokat."
+"egységek visszahívására, bemutatja az egységek képességeit és a fegyverek "
+"különleges támadásait, a jövedelmet és a fenntartási költségeket, mozgást "
+"nagy távolságokra, valamint a területek ellenőrzését és a napszakokat."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:169
@@ -996,7 +994,7 @@ msgid ""
 "the real fight will begin."
 msgstr ""
 "Addigra a vezérük több egységet is toborozni fog, majd ellenünk küldi őket, "
-"és az igazi harc kezdetét veszi."
+"és kezdetét veszi az igazi harc."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:195
@@ -1091,7 +1089,7 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:258
 msgid "Recalling"
-msgstr ""
+msgstr "Visszahívás"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:260
@@ -1104,6 +1102,13 @@ msgid ""
 "while your leader stands on a keep and select the <i>Recall</i> option. "
 "Remember to also recruit new troops in addition to recalling old ones."
 msgstr ""
+"Új egységek toborzása mellett gyakorlott veterán harcosaid is "
+"<i>visszahívhatod</i> az előző pályákról, fejenként 20 aranyért. Így "
+"legmagasabb szintű, vagy jó képességekkel és tulajdonságokkal rendelkező "
+"harcosaid visszahívásával jelentős haderőt képezhetsz ki egy pályasorozatot "
+"végigjátszva. Egy egység visszahívásához jobb gombbal kattints, miközben "
+"vezéred a várkastélyban tartózkodik, és válaszd a <i>Visszahívás</i> "
+"lehetőséget. A régi egységek visszahívásán túl ne feledj újakat is toborozni!"
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:265
@@ -1113,26 +1118,23 @@ msgid ""
 "them. Personally, I would recommend a balanced force of two archers, two "
 "fighters, and a shaman."
 msgstr ""
+"Két új egységet is toborozhatsz ezen a pályán: tünde íjászokat és tünde "
+"sámánnőket. Majd akkor beszélek róluk, ha már rendelkezel velük. Szerintem "
+"egy kiegyensúlyozott sereggel jársz a legjobban, melyet két íjász, két "
+"harcos és egy sámán alkot."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:268
 msgid "Recruit or recall your troops"
-msgstr ""
+msgstr "Toborozz vagy hívj vissza katonákat!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:282
-#, fuzzy
-#| msgid "Shaman"
 msgid "Elvish Shaman"
-msgstr "Sámánnő"
+msgstr "Tünde sámánnő"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:283
-#, fuzzy
-#| msgid ""
-#| "The Shaman is a fairly weak unit, but she has the ability to <i>heal</i> "
-#| "friendly units around her. She also has a special attack which <i>slows</"
-#| "i> enemies, halving the damage they do."
 msgid ""
 "The Shaman is a fairly weak unit, but she has the ability to <i>heal</i> "
 "friendly units around her. She also has a special attack which <i>slows</i> "
@@ -1141,13 +1143,13 @@ msgstr ""
 "A sámánnő egy viszonylag gyenge egység, azonban képes a mellette álló "
 "szövetséges egységek sebeit <i>gyógyítani</i>. Ezenkívül van egy speciális "
 "támadása, amely <i>lelassítja</i> az ellenfelet, és megfelezi az általa "
-"okozható sebzést is!"
+"okozható sebzést is egy körig."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:288
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:295
 msgid "Abilities and Weapon Specials"
-msgstr ""
+msgstr "Képességek és különleges támadások"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:290
@@ -1159,6 +1161,14 @@ msgid ""
 "at the start of each turn. Unit types with abilities, especially ones like "
 "Heal, can be very useful, so be careful when sending them into battle."
 msgstr ""
+"Bizonyos típusú egységek speciális <i>képességekkel</i> rendelkeznek. A "
+"kisebb bónuszokat és hátrányokat adó jellemvonásokkal szemben a képességek "
+"olyan tevékenységeket tesznek lehetővé, melyekkel normál egységeid nem "
+"rendelkeznek. A tünde sámánnő például Gyógyítás képességgel rendelkezik, "
+"mellyel minden szomszédos szövetséges egységet 4 életerőponttal gyógyít a "
+"kör elején. A képességekkel, különösen a gyógyítás képességgel rendelkező "
+"egységek nagyon hasznosak lehetnek, jól gondold meg, mikor küldöd őket "
+"csatába!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:297
@@ -1173,6 +1183,15 @@ msgid ""
 "A full list of abilities and weapons specials, along with traits, may be "
 "found in help."
 msgstr ""
+"A különleges támadások olyan módosítók, amelyek bizonyos támadásokat "
+"erősebbé tesznek. Esetünkben a sámánnő Behálózás támadásához tartozó "
+"Lassítás módosító hatására az ellenfél egy körön át feleakkorát tud sebezni "
+"támadásaival. Az Első ütés módosító lehetővé teszi, hogy a találat először "
+"következzen be függetlenül attól, hogy ki támadott először, és a Mágikus "
+"támadás minden esetben 70% találati esélyt garantál.\n"
+"\n"
+"A képességek és különleges támadások teljes listája a jellemvonásokkal "
+"együtt a súgóban található."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:314
@@ -1187,6 +1206,9 @@ msgid ""
 "melee attacks with strong ranged attacks, and vice versa. This allows your "
 "units to take less damage overall when your enemy counterattacks."
 msgstr ""
+"Míg a tünde harcos közelharcban, a tünde íjász távolsági támadásban erős. Jó "
+"közelharcosokat erős távolsági támadásokkal érdemes támadni, és viszont. Így "
+"egységeid általában kisebb sérüléseket szenvednek az ellentámadásnál."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:342
@@ -1197,25 +1219,18 @@ msgstr ""
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:353
-#, fuzzy
-#| msgid ""
-#| "While none of your recruited units can move, you still can. Your five "
-#| "units cost you 5 gold in upkeep, leaving you 3 gold poorer per turn. You "
-#| "need more income."
 msgid ""
 "While none of your recruited units can move yet, you still can. You need "
 "more income; there are some villages near the keep you can capture."
 msgstr ""
-"Az igaz, hogy az újonnan toborzott egységeid nem mozoghatnak, viszont te még "
-"tudsz. Az öt egységedet 5 aranyba kerül fenntartani, így 3 arannyal "
-"kevesebbed lesz minden kör után. Több bevételre lesz szükséged."
+"Az igaz, hogy az újonnan toborzott egységeid még nem mozoghatnak, te viszont "
+"tudsz. Több bevételre lesz szükséged; a várkastély közelében levő falvakat "
+"elfoglalhatod."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:356
-#, fuzzy
-#| msgid "Move Konrad to capture a village"
 msgid "Capture a village"
-msgstr "Lépj Konraddal egy faluba és foglald el"
+msgstr "Foglalj el egy falut."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:371
@@ -1223,11 +1238,13 @@ msgid ""
 "Excellent! As Delfador mentioned earlier, each captured village will support "
 "one unit and provide you with 1 extra gold per turn."
 msgstr ""
+"Kitűnő! Ahogy Delfador említette, minden falu egy egységet lát el, és még "
+"egy aranyat ad ezen felül körönként."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:376
 msgid "Income and Upkeep"
-msgstr ""
+msgstr "Jövedelem és fenntartási költség"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:378
@@ -1238,11 +1255,16 @@ msgid ""
 "per turn. Be careful, as owning too many units can cause you to have "
 "negative income and lose gold each turn!"
 msgstr ""
+"Minden körben 2 aranyat kapsz, plusz falvanként egyet. De a <i>fenntartási "
+"költséget</i> ebből kell levonni. Összesen annyi szintnyi egységed lehet, "
+"ahány faluval rendelkezel, ezen felül 1 aranyat kell fizetned körönként. "
+"Légy óvatos, ha túl sok egységgel rendelkezel, negatívvá válhat a "
+"jövedelmed, és minden körben csökkenni fog aranyaid mennyisége!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:383
 msgid "Status Table"
-msgstr ""
+msgstr "Csapatok adatai"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:385
@@ -1252,6 +1274,10 @@ msgid ""
 "a side may be hidden. It is useful to check this table when a scenario "
 "begins."
 msgstr ""
+"The Status Table details the sides’ current status and starting conditions. "
+"Fog and shroud will affect what you can see in this table, and occasionally "
+"a side may be hidden. It is useful to check this table when a scenario "
+"begins."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:403
@@ -1666,8 +1692,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:721
-#, fuzzy
-#| msgid "Recruit the Right Unit Types"
 msgid "Recruit the Right Units"
 msgstr "Megfelelő egységek toborzása"
 
@@ -1799,15 +1823,11 @@ msgstr ""
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:951
-#, fuzzy
-#| msgid ""
-#| "Second level units are powerful, but not invulnerable! Goodbye, $deadguy."
-#| "name|."
 msgid ""
 "Higher level units are powerful, but not invulnerable. Goodbye, $unit.name|."
 msgstr ""
-"A kettes szintű egységek sokkal erősebbek, de nem sérthetetlenek. Nyugodj "
-"békében $deadguy.name|!"
+"A magasabb szintű egységek sokkal erősebbek, de nem sérthetetlenek. Nyugodj "
+"békében, $unit.name|!"
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:965
@@ -2046,16 +2066,12 @@ msgstr "Visszavonás"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/utils/utils.cfg:56
-#, fuzzy
-#| msgid ""
-#| "Don’t forget, you can press <b>u</b> to undo most things; useful for "
-#| "correcting mistakes."
 msgid ""
 "Don’t forget, you can press <b>u</b> to undo most things if you make a "
 "mistake."
 msgstr ""
-"Ne felejtsd el: használd az <b>u</b> gombot a lépések visszavonására; "
-"hasznos a hibák javításában."
+"Ne felejtsd el: használd az <b>u</b> gombot a lépések visszavonására, ha "
+"hibáznál."
 
 #: data/campaigns/tutorial/utils/utils.cfg:92
 msgid ""
