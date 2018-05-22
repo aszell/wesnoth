@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: hu-wesnoth\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-18 20:54+0200\n"
+"PO-Revision-Date: 2018-05-21 15:37+0200\n"
 "Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -3863,12 +3863,10 @@ msgstr "Veszítesz, ha:"
 
 #. [lua]: generate_objectives
 #: data/lua/wml/objectives.lua:57
-#, fuzzy
-#| msgid "(this turn left)"
 msgid "(this turn left)"
 msgid_plural "(%d turns left)"
 msgstr[0] "(ez az utolsó kör)"
-msgstr[1] "(ez az utolsó kör)"
+msgstr[1] "(%d kör van hátra)"
 
 #. [lua]: generate_objectives
 #: data/lua/wml/objectives.lua:119

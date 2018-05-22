@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-18 21:24+0200\n"
+"PO-Revision-Date: 2018-05-21 16:14+0200\n"
 "Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -5669,7 +5669,7 @@ msgstr ""
 #: src/gui/widgets/unit_preview_pane.cpp:345
 #: src/gui/widgets/unit_preview_pane.cpp:488
 msgid "Traits"
-msgstr ""
+msgstr "Jellemvonások"
 
 #. [label]
 #: data/gui/window/unit_list.cfg:368 src/hotkey/hotkey_command.cpp:119
@@ -5678,15 +5678,13 @@ msgstr "Egységlista"
 
 #. [label]: id=title
 #: data/gui/window/unit_recall.cfg:291
-#, fuzzy
-#| msgid "Rename Unit"
 msgid "Recall Unit"
-msgstr "Egység átnevezése"
+msgstr "Egység visszahívása"
 
 #. [button]: id=dismiss
 #: data/gui/window/unit_recall.cfg:385
 msgid "Dismiss"
-msgstr ""
+msgstr "Feloszlatás"
 
 #. [button]: id=ok
 #: data/gui/window/unit_recall.cfg:419 src/hotkey/hotkey_command.cpp:104
@@ -5695,10 +5693,8 @@ msgstr "Visszahívás"
 
 #. [label]
 #: data/gui/window/unit_recruit.cfg:146
-#, fuzzy
-#| msgid "Recruit"
 msgid "Recruit Unit"
-msgstr "Toborzás"
+msgstr "Egység toborzása"
 
 #. [button]: id=ok
 #: data/gui/window/unit_recruit.cfg:219 src/hotkey/hotkey_command.cpp:102
@@ -7104,7 +7100,7 @@ msgstr ""
 #: src/gui/widgets/unit_preview_pane.cpp:363
 #: src/gui/widgets/unit_preview_pane.cpp:506
 msgid "Abilities"
-msgstr ""
+msgstr "Képességek"
 
 #: src/gui/widgets/window.cpp:939
 msgid "Click dismiss needs a 'click_dismiss' or 'ok' button."
@@ -7365,10 +7361,8 @@ msgid "Continue Network Game"
 msgstr "Hálózati játék folytatása"
 
 #: src/hotkey/hotkey_command.cpp:124
-#, fuzzy
-#| msgid "Quit the game"
 msgid "Quit to Main Menu"
-msgstr "Kilépés a játékból"
+msgstr "Visszatérés a főmenübe"
 
 #: src/hotkey/hotkey_command.cpp:125
 msgid "Set Team Label"
@@ -7411,10 +7405,8 @@ msgid "Next Side"
 msgstr "Következő játékos"
 
 #: src/hotkey/hotkey_command.cpp:136
-#, fuzzy
-#| msgid "Next page"
 msgid "Next Move"
-msgstr "Következő oldal"
+msgstr "Következő lépés"
 
 #: src/hotkey/hotkey_command.cpp:137
 msgid "Full Map"
@@ -7425,20 +7417,16 @@ msgid "Each Team"
 msgstr "Mindegyik csapat"
 
 #: src/hotkey/hotkey_command.cpp:139
-#, fuzzy
-#| msgid "Human Castle"
 msgid "Human Team"
-msgstr "Emberi várkastély"
+msgstr "Emberi csapat"
 
 #: src/hotkey/hotkey_command.cpp:140
 msgid "Skip Animation"
 msgstr "Animációk átugrása"
 
 #: src/hotkey/hotkey_command.cpp:141
-#, fuzzy
-#| msgid "Replay"
 msgid "End Replay"
-msgstr "Visszajátszás"
+msgstr "Visszajátszás vége"
 
 #. TRANSLATORS: whiteboard menu entry: toggle planning mode
 #: src/hotkey/hotkey_command.cpp:144

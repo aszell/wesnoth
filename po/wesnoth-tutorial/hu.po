@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-16 03:33 UTC\n"
-"PO-Revision-Date: 2018-05-22 22:00+0200\n"
+"PO-Revision-Date: 2018-05-22 22:11+0200\n"
 "Last-Translator: Farkas János <mail.janos.farkas@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -1143,7 +1143,7 @@ msgstr ""
 "A sámánnő egy viszonylag gyenge egység, azonban képes a mellette álló "
 "szövetséges egységek sebeit <i>gyógyítani</i>. Ezenkívül van egy speciális "
 "támadása, amely <i>lelassítja</i> az ellenfelet, és megfelezi az általa "
-"okozható sebzést is egy körig."
+"okozott sebzést is egy körig."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:288
@@ -1216,6 +1216,8 @@ msgid ""
 "You certainly have a fondness for shamans, I see. They will provide a lot of "
 "healing, but not much offensive potential."
 msgstr ""
+"Látom, vonzódsz a sámánnőkhöz. Jól gyógyítanak, de nem sokat érnek, ha "
+"támadni kell."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:353
@@ -1285,6 +1287,8 @@ msgid ""
 "Now, young man, it is time to discuss strategy. Your units are ready to "
 "attack, and the orcish leader has begun gathering his own troops."
 msgstr ""
+"Nos, fiatalember, itt az ideje megvitatni a stratégiát! Egységeid készen "
+"állnak a támadásra, és az ork vezér is elkezdte összegyűjteni katonáit."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:408
@@ -1292,6 +1296,8 @@ msgid ""
 "Now, young lady, it is time to discuss strategy. Your units are ready to "
 "attack, and the orcish leader has begun gathering his own troops."
 msgstr ""
+"Nos, ifjú hölgy, itt az ideje megvitatni a stratégiát! Egységeid készen "
+"állnak a támadásra, és az ork vezér is elkezdte összegyűjteni katonáit."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:414
@@ -1299,6 +1305,8 @@ msgid ""
 "Galdrad, if I go by the ford, I could sneak up near his keep and dispatch "
 "him quickly."
 msgstr ""
+"Galdrad, a gázló felől odalopózhatnék a kastélyához, és gyorsan végezhetnék "
+"vele."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:415
@@ -1306,6 +1314,8 @@ msgid ""
 "female^Galdrad, if I go by the ford, I could sneak up near his keep and "
 "dispatch him quickly."
 msgstr ""
+"Galdrad, a gázló felől odalopózhatnék a kastélyához, és gyorsan végezhetnék "
+"vele."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:420
@@ -1317,6 +1327,11 @@ msgid ""
 "there; your Fighters will only suffer a 40% chance of being hit in return, "
 "while Shamans and Archers will only incur a 30% chance."
 msgstr ""
+"Megtehetnéd, de a tündék (és orkok) nagyon ügyetlenül <i>védekeznek</i> "
+"vízben. Sérülékenyebb lennél a vízben gázolva, az ellenségnek 80% esélye "
+"lenne a találatra. Mivel a tündéknek az erdőben jó a védelmük, azt javaslom, "
+"maradj a fák között és onnan ronts az orkokra, így csak 40% esélyük lesz "
+"visszavágni."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:425
@@ -1325,19 +1340,22 @@ msgid ""
 "our forces. It might do to send a few units to defend the banks, and the "
 "village there."
 msgstr ""
+"Mindenesetre tartsd szemmel a gázlót. Az orkok lehet, hogy megpróbálnak a "
+"csapataink mögé lopózni. Érdemes lehet néhány egységet elküldeni a partok és "
+"az ottani falu védelmére."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:430
 msgid ""
 "Alright. The bridge it is, then, but I’ll be careful about the crossing."
-msgstr ""
+msgstr "Rendben, akkor a hidat választom. De figyelni fogok az átkelőre is."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:431
 msgid ""
 "female^Alright. The bridge it is, then, but I’ll be careful about the "
 "crossing."
-msgstr ""
+msgstr "Rendben, akkor a hidat választom. De figyelni fogok az átkelőre is."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:434
@@ -1349,6 +1367,11 @@ msgid ""
 "villages on this side of the river. You should secure them for income and "
 "healing."
 msgstr ""
+"Az az ork közkatona még elállja az utunkat. Nincs távolsági támadása, szóval "
+"íjászaid kis kockázattal megtámadhatják. Sajnos egységeid nem érhetik el "
+"ebben a körben, de ne hagyd őket henyélni! Állítsd őket fel úgy, hogy a "
+"következő körben már támadhassanak. A folyónak ezen az oldalán vannak még "
+"más falvak is, a jövedelem és gyógyítás céljából érdemes elfoglalni őket."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:438
@@ -1368,28 +1391,18 @@ msgstr ""
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:445
-#, fuzzy
-#| msgid ""
-#| "You’ve captured all the villages around the keep, but stay near so you "
-#| "can recruit more units."
 msgid ""
 "I think I’ll stick around the keep for now, in order to recruit more units."
 msgstr ""
-"Elfoglaltad az összes falut a vár körül, de maradj a közelben, hogy új "
-"egységeket tudjál toborozni."
+"Szerintem a várkastély körül maradok, hogy még egységeket toborozhassak."
 
 #. [message]: speaker=student
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:446
-#, fuzzy
-#| msgid ""
-#| "You’ve captured all the villages around the keep, but stay near so you "
-#| "can recruit more units."
 msgid ""
 "female^I think I’ll stick around the keep for now, in order to recruit more "
 "units."
 msgstr ""
-"Elfoglaltad az összes falut a vár körül, de maradj a közelben, hogy új "
-"egységeket tudjál toborozni."
+"Szerintem a várkastély körül maradok, hogy még egységeket toborozhassak."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:452
@@ -1399,6 +1412,9 @@ msgid ""
 "battle can turn quickly, and you don’t want to find yourself cut off from "
 "recruiting reinforcements."
 msgstr ""
+"Sokat tanultál, Konrad! Valóban jó ötlet a vezéred biztonságban tudni, és az "
+"ellenségtől távol tartani a játék elején. A hadiszerencse forgandó, nem "
+"kellene magad az utánpótlás lehetőségétől megfosztani!"
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:457
@@ -1408,6 +1424,9 @@ msgid ""
 "battle can turn quickly, and you don’t want to find yourself cut off from "
 "recruiting reinforcements."
 msgstr ""
+"Sokat tanultál, Li'sar! Valóban jó ötlet a vezéred biztonságban tudni, és az "
+"ellenségtől távol tartani a játék elején. A hadiszerencse forgandó, nem "
+"kellene magad az utánpótlás lehetőségétől megfosztani!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:467
