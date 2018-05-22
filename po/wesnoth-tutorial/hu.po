@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-16 03:33 UTC\n"
-"PO-Revision-Date: 2018-05-22 20:52+0200\n"
+"PO-Revision-Date: 2018-05-22 21:38+0200\n"
 "Last-Translator: Farkas János <mail.janos.farkas@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -703,13 +703,6 @@ msgstr "Szintlépés"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:786
-#, fuzzy
-#| msgid ""
-#| "When a unit gains enough experience points (the <i>experience bar</i>, if "
-#| "present, is on the <b>right</b> of the <i>hitpoints bar</i>), it will go "
-#| "up a level. Elvish Fighters have two advancement options, and you will be "
-#| "able to choose which one you want. However, second level units cost twice "
-#| "as much to support as first level units."
 msgid ""
 "When a unit gains enough experience points (the <i>experience bar</i>, if "
 "present, is on the <b>right</b> of the <i>hitpoints bar</i>), it will gain a "
@@ -730,15 +723,6 @@ msgstr "Védekezés"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:799
-#, fuzzy
-#| msgid ""
-#| "Whenever one of your units is selected, you’ll see varying percentages as "
-#| "you move the mouse over the map. The higher the percentage, the more "
-#| "<i>defense</i> that unit has in that kind of terrain. For example, most "
-#| "units have good defenses in castles and villages but poor defenses in "
-#| "rivers. However, these quintains use a <i>magical</i> attack, which "
-#| "always has a 70% chance of hitting no matter what terrain its target "
-#| "occupies."
 msgid ""
 "Whenever one of your units is selected, you’ll see varying percentages as "
 "you move the mouse over the map. The higher the percentage, the more "
@@ -751,8 +735,9 @@ msgstr ""
 "Amint kiválasztasz egy egységet, különböző százalékokat láthatsz különböző "
 "helyeken: minél magasabb, annál jobban tud <i>védekezni</i> az egység az "
 "adott terepen. Például a védekezés jobb a várakban és falvakban, de rosszabb "
-"a folyókban. A bábuk támadása <i>mágikus</i>, ezért nekik 70%-os esélyük van "
-"téged eltalálni, bármilyen terepen is állsz."
+"a folyókban. Néhány egységnek, mint ezeknek a bábuknak a támadása "
+"<i>mágikus</i>, ezért nekik 70%-os esélyük van téged eltalálni, bármilyen "
+"terepen is állsz."
 
 #. [message]: speaker=unit
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:811

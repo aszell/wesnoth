@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-17 20:06+0200\n"
+"PO-Revision-Date: 2018-05-18 21:24+0200\n"
 "Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -4341,22 +4341,16 @@ msgstr ""
 #: data/gui/window/mp_create_game.cfg:533 data/gui/window/preferences.cfg:291
 #: data/gui/window/preferences/05_multiplayer.cfg:402
 #: src/hotkey/hotkey_command.cpp:38
-#, fuzzy
-#| msgid "Generate"
 msgid "General"
-msgstr "Megrajzolás"
+msgstr "Általános"
 
 #. [widget]: id=tab_label
 #: data/gui/window/mp_create_game.cfg:546
-#, fuzzy
-#| msgid "Options"
 msgid "Custom Options"
-msgstr "Beállítások"
+msgstr "Speciális beállítások"
 
 #. [widget]: id=tab_label
 #: data/gui/window/mp_create_game.cfg:559
-#, fuzzy
-#| msgid "Settings"
 msgid "Game Settings"
 msgstr "Beállítások"
 
@@ -4522,10 +4516,8 @@ msgstr ""
 
 #. [label]
 #: data/gui/window/mp_join_game.cfg:175 data/gui/window/mp_staging.cfg:190
-#, fuzzy
-#| msgid "Gender:"
 msgid "<b>Gender:</b>"
-msgstr "Nem:"
+msgstr "<b>Nem:</b>"
 
 #. [button]: id=cancel
 #: data/gui/window/mp_join_game.cfg:347
@@ -4682,24 +4674,18 @@ msgstr ""
 
 #. [widget]: id=label
 #: data/gui/window/preferences.cfg:310
-#, fuzzy
-#| msgid "Hotkeys"
 msgid "Hotkeys"
 msgstr "Gyorsbillentyűk"
 
 #. [widget]: id=label
 #: data/gui/window/preferences.cfg:328
-#, fuzzy
-#| msgid "Refresh Display"
 msgid "Display"
-msgstr "Képernyő frissítése"
+msgstr "Kijelző"
 
 #. [widget]: id=label
 #: data/gui/window/preferences.cfg:382
-#, fuzzy
-#| msgid "sound^Advanced Options"
 msgid "Advanced"
-msgstr "Szakértői beállítások"
+msgstr "Haladó beállítások"
 
 #. [label]
 #: data/gui/window/preferences/01_general.cfg:20
@@ -4733,8 +4719,6 @@ msgstr "Ne animálja a számítógép lépéseit"
 
 #. [column]
 #: data/gui/window/preferences/01_general.cfg:83
-#, fuzzy
-#| msgid "Speed: "
 msgid "Speed:"
 msgstr "Sebesség: "
 
