@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-25 18:01+0200\n"
+"PO-Revision-Date: 2018-05-26 21:20+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>, 2018.\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -5384,7 +5384,7 @@ msgstr "Hadjárat"
 #. [button]: id=cancel
 #: data/gui/window/story_viewer.cfg:131
 msgid "Skip"
-msgstr ""
+msgstr "Kihagyás"
 
 #. [label]: id=lblTitle
 #: data/gui/window/surrender_quit.cfg:40 src/hotkey/hotkey_command.cpp:123

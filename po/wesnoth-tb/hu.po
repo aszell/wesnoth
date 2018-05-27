@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hu-tb\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-09 06:49 UTC\n"
-"PO-Revision-Date: 2012-11-02 17:06+0100\n"
+"PO-Revision-Date: 2018-05-26 21:18+0200\n"
 "Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:13
@@ -30,10 +30,8 @@ msgstr "Kfm"
 
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:18
-#, fuzzy
-#| msgid "(Beginner)"
 msgid "Beginner"
-msgstr "(kezdő)"
+msgstr "kezdő"
 
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:18
@@ -43,10 +41,8 @@ msgstr "Dzsidás"
 # másutt így nevezik
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:19
-#, fuzzy
-#| msgid "(Challenging)"
 msgid "Challenging"
-msgstr "(kihívást jelentő)"
+msgstr "kihívást jelentő"
 
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:19
@@ -308,6 +304,8 @@ msgid ""
 "Use footpads as fodder to protect your loyal units and attack during the day "
 "to minimize the damage your forces take."
 msgstr ""
+"Használd az útonállókat a hűséges egységek védelmére, és csak nappal támadj, "
+"hogy csökkentsd veszteségeid!"
 
 #. [message]: speaker=Baran
 #: data/campaigns/Two_Brothers/scenarios/01_Rooting_Out_a_Mage.cfg:186
@@ -332,12 +330,6 @@ msgstr ""
 
 #. [message]: speaker=Baran
 #: data/campaigns/Two_Brothers/scenarios/01_Rooting_Out_a_Mage.cfg:206
-#, fuzzy
-#| msgid ""
-#| "A dark mage has come upon us; his creatures call him Mordak. They have "
-#| "been terrorizing outlying farms, and we fear they may soon attack the "
-#| "village itself! The villagers of Maghre have taken up weapons but they "
-#| "are not trained fighters; but we need your men, and you to lead them."
 msgid ""
 "A dark mage has come upon us; his creatures call him Mordak. They have been "
 "terrorizing outlying farms, and we fear they may soon attack the village "
@@ -567,10 +559,8 @@ msgstr "Nil-Galion"
 
 #. [side]: type=Dark Adept, id=Muff Toras
 #: data/campaigns/Two_Brothers/scenarios/02_The_Chase.cfg:170
-#, fuzzy
-#| msgid "Catch the kidnappers"
 msgid "Kidnappers"
-msgstr "Elfogod az emberrablókat"
+msgstr "Emberrablók"
 
 #. [side]: type=Dark Adept, id=Muff Toras
 #: data/campaigns/Two_Brothers/scenarios/02_The_Chase.cfg:174
@@ -598,6 +588,8 @@ msgid ""
 "The Elvish forces are spread out. Seek to fight them one at a time with "
 "several of your units."
 msgstr ""
+"A tünde csapatok szétszóródtak. Egyesével érdemes elbánni velük, több "
+"egységeddel egyszerre támadva."
 
 #. [objectives]
 #: data/campaigns/Two_Brothers/scenarios/02_The_Chase.cfg:317
@@ -605,12 +597,16 @@ msgid ""
 "Use horsemen or footpads to quickly explore the shrouded woods to locate the "
 "kidnappers."
 msgstr ""
+"A lovasok vagy útonállók gyorsabban felderíthetik a sötét erdőket, hogy az "
+"emberrablók nyomára akadjanak."
 
 #. [objectives]
 #: data/campaigns/Two_Brothers/scenarios/02_The_Chase.cfg:332
 msgid ""
 "Separate the Dark Adept from his guards and attack in force for an easy kill."
 msgstr ""
+"Az árnyak tanítványát az őreitől elválasztva, nagy túlerővel a legkönnyebb "
+"legyőzni."
 
 #. [message]: speaker=Arvith
 #: data/campaigns/Two_Brothers/scenarios/02_The_Chase.cfg:375
@@ -667,7 +663,7 @@ msgid ""
 "offer."
 msgstr ""
 "Pah, maradjatok az úton. Lándzsásaink és íjászaink harcolhatnak a rengeteg "
-"mélyében is. Szembenéztünk már ennél nagyobb kihívással is és akkor is "
+"mélyében is. Szembenéztünk már ennél nagyobb kihívással is, és akkor is "
 "győztünk."
 
 #. [message]: speaker=second_unit
@@ -1705,7 +1701,7 @@ msgstr "Baran"
 
 #: data/campaigns/Two_Brothers/utils/macros.cfg:4
 msgid "Hint:"
-msgstr ""
+msgstr "Tipp:"
 
 #~ msgid "$first_password_1|!"
 #~ msgstr "$first_password_1|!"

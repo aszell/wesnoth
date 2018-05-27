@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: secrets_of_the_ancients\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-06 08:31 UTC\n"
-"PO-Revision-Date: 2015-08-05 22:24+0100\n"
+"PO-Revision-Date: 2018-05-24 18:50+0200\n"
 "Last-Translator: Kadlecsik Ármin <wellington2277@gmail.com>\n"
 "Language-Team: WhiteWolf <wellington2277@gmail.com>\n"
 "Language: hu\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #. [campaign]: id=Secrets of the Ancients
 #. [editor_group]: id=sota
@@ -2625,17 +2625,6 @@ msgstr "Mozgó Fák"
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:21
-#, fuzzy
-#| msgid ""
-#| "17 IV, 23 YW\n"
-#| "\n"
-#| "My primary objective was met, and I had a retinue of ghosts. Also, a new "
-#| "companion who had a talent for healing. I doubted that Ras-Tabahn was "
-#| "already waiting at the appointed place, but I still wanted to hurry, so "
-#| "we followed the elf road north as quickly as we could. Fortunately, it "
-#| "was not in bad repair, though in many places it was overgrown, leaving "
-#| "only a few smooth cobbles to mark the way. The second day, we were still "
-#| "deep in the woods when we encountered an elf sorceress."
 msgid ""
 "17 IV, 23 YW\n"
 "\n"
@@ -2655,7 +2644,7 @@ msgstr ""
 "utat követtük északra olyan sebesen ahogy csak tudtuk. Szerencsére nem volt "
 "nagyon rossz állapotban, bár több helyen benőtte a gaz, és csak néhány kő "
 "mutatta az utat. A második nap még mindig mélyen az erdőben jártunk, amikor "
-"egy tünde varázslónőbe ütköztünk."
+"egy tünde boszorkányba ütköztünk."
 
 #. [side]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:42

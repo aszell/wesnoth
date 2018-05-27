@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: hu-wesnoth\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-24 01:52+0200\n"
+"PO-Revision-Date: 2018-05-26 21:17+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -6115,42 +6115,30 @@ msgid "Turns finished early: "
 msgstr "Kihasználatlan körök: "
 
 #: src/game_initialization/playcampaign.cpp:67
-#, fuzzy
-#| msgid "per turn"
 msgid " per turn"
-msgstr "körönként"
+msgstr " körönként"
 
 #: src/game_initialization/playcampaign.cpp:67
 msgid "Early finish bonus: "
 msgstr "Jutalom a korai befejezésért: "
 
 #: src/game_initialization/playcampaign.cpp:68
-#, fuzzy
-#| msgid "Turn bonus: "
 msgid "Total bonus: "
-msgstr "Kör bónusz: "
+msgstr "Összes bónusz: "
 
 #: src/game_initialization/playcampaign.cpp:70
-#, fuzzy
-#| msgid "Village gold: "
 msgid "Total gold: "
-msgstr "Falvankénti arany: "
+msgstr "Összes arany: "
 
 #: src/game_initialization/playcampaign.cpp:73
-#, fuzzy
-#| msgid "Carry over percentage: "
 msgid "Carryover percentage: "
 msgstr "Továbbviteli százalék: "
 
 #: src/game_initialization/playcampaign.cpp:76
-#, fuzzy
-#| msgid "Bonus Gold: "
 msgid "Bonus gold: "
 msgstr "Bónusz arany: "
 
 #: src/game_initialization/playcampaign.cpp:78
-#, fuzzy
-#| msgid "Retained Gold: "
 msgid "Retained gold: "
 msgstr "Megőrzött arany: "
 
@@ -6249,10 +6237,8 @@ msgid "Unknown scenario: '$scenario|'"
 msgstr "Ismeretlen küldetés: „$scenario|”"
 
 #: src/game_initialization/singleplayer.cpp:42
-#, fuzzy
-#| msgid "No campaigns are available.\n"
 msgid "No campaigns are available."
-msgstr "Nincsenek elérhető hadjáratok.\n"
+msgstr "Nincsenek elérhető hadjáratok."
 
 #: src/game_launcher.cpp:644 src/game_launcher.cpp:662
 msgid "The file you have tried to load is corrupt"
