@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-26 21:20+0200\n"
+"PO-Revision-Date: 2018-05-27 15:17+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>, 2018.\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -2491,10 +2491,8 @@ msgstr ""
 
 #. [label]
 #: data/gui/window/advanced_graphics_options.cfg:91
-#, fuzzy
-#| msgid "sound^Advanced Options"
 msgid "Advanced Graphics Options"
-msgstr "Szakértői beállítások"
+msgstr "Haladó grafikai beállítások"
 
 #. [label]
 #: data/gui/window/advanced_graphics_options.cfg:107
@@ -2557,10 +2555,8 @@ msgstr ""
 
 #. [grid]
 #: data/gui/window/attack_predictions.cfg:84
-#, fuzzy
-#| msgid "Switch Time of Day"
 msgid "Time of day modifier"
-msgstr "Napszakváltás"
+msgstr "Napszak módosító"
 
 #. [grid]
 #: data/gui/window/attack_predictions.cfg:85
@@ -2606,10 +2602,8 @@ msgstr "Támadó"
 
 #. [column]
 #: data/gui/window/attack_predictions.cfg:282
-#, fuzzy
-#| msgid "Gender:"
 msgid "Defender"
-msgstr "Nem:"
+msgstr "Védő"
 
 #. [label]
 #: data/gui/window/campaign_dialog.cfg:174
@@ -2618,10 +2612,8 @@ msgstr "Hadjárat"
 
 #. [label]
 #: data/gui/window/campaign_dialog.cfg:214
-#, fuzzy
-#| msgid "Sort players:"
 msgid "Sort by:"
-msgstr "Játékosok sorba rendezése:"
+msgstr "Rendezés:"
 
 #. [toggle_button]: id=sort_name
 #: data/gui/window/campaign_dialog.cfg:227
@@ -2641,15 +2633,13 @@ msgstr ""
 #. [label]
 #: data/gui/window/campaign_dialog.cfg:276
 #: src/gui/dialogs/multiplayer/lobby.cpp:466
-#, fuzzy
-#| msgid "Choose Modifications"
 msgid "Modifications"
-msgstr "Módosítók kiválasztása"
+msgstr "Módosítók:"
 
 #. [toggle_button]: id=checkbox_deterministic
 #: data/gui/window/campaign_dialog.cfg:409
 msgid "Deterministic mode"
-msgstr ""
+msgstr "Kiszámítható mód"
 
 #. [toggle_button]: id=checkbox_deterministic
 #: data/gui/window/campaign_dialog.cfg:411
