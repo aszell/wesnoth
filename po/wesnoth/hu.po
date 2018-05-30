@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: hu-wesnoth\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-26 21:17+0200\n"
+"PO-Revision-Date: 2018-05-28 22:36+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -7671,25 +7671,23 @@ msgid "Liminal units: "
 msgstr "Ingatag egységek: "
 
 #: src/reports.cpp:1236
-#, fuzzy
-#| msgid "Turn "
 msgid "Turn Number"
-msgstr "Kör "
+msgstr "Kör száma"
 
 #: src/reports.cpp:1238
 msgid ""
 "When the game reaches the number of turns indicated by the second number, it "
 "will end."
-msgstr ""
+msgstr "A játék véget ér, amikor a körök száma eléri a második értéket."
 
 #: src/reports.cpp:1263
 msgid ""
 "The amount of gold currently available to recruit and maintain your army."
-msgstr ""
+msgstr "Egységek toborzására és csapatfenntartásra fordítható arany."
 
 #: src/reports.cpp:1282
 msgid "The fraction of known villages that your side has captured."
-msgstr ""
+msgstr "Az ismert falvak ekkora hányadát foglaltad el."
 
 #: src/reports.cpp:1282
 msgid "Villages"
@@ -7697,13 +7695,11 @@ msgstr "Falvak"
 
 #: src/reports.cpp:1287
 msgid "The total number of units on your side."
-msgstr ""
+msgstr "Az oldaladon álló egységek száma"
 
 #: src/reports.cpp:1287
-#, fuzzy
-#| msgid "units"
 msgid "Units"
-msgstr "egység"
+msgstr "Egységek"
 
 #: src/reports.cpp:1297
 msgid ""
@@ -7712,6 +7708,10 @@ msgid ""
 "total cost of upkeep, including that covered by villages — in other words, "
 "the amount of gold that would be deducted if you lost all villages."
 msgstr ""
+"A körönkénti csapatfenntartási költség. Az első szám azt jelzi, mennyivel "
+"csökken aranyaid száma, a második pedig a falvak támogatásával együtt "
+"számított teljes fenntartási költség - más szóval az az aranymennyiség, "
+"amibe kerülnének csapataid, ha minden falut elvesztenél."
 
 #: src/reports.cpp:1297
 msgid "Upkeep"
@@ -7726,6 +7726,8 @@ msgid ""
 "The amount of gold you gain each turn from your controlled villages, or the "
 "amount of gold you will lose each turn for unit upkeep."
 msgstr ""
+"Körönként ennyivel növekszik vagyonod a falvaidból befolyó jövedelem után, "
+"vagy ennyivel csökken egységeid fenntartási költsége miatt."
 
 #: src/reports.cpp:1502
 msgid "Observers:"
@@ -7733,7 +7735,7 @@ msgstr "Megfigyelők:"
 
 #: src/reports.cpp:1542
 msgid "Clock"
-msgstr ""
+msgstr "Óra"
 
 #: src/reports.cpp:1568
 msgid "Countdown until your turn automatically ends."
