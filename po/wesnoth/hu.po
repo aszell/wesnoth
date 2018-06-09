@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: hu-wesnoth\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-05-28 22:36+0200\n"
+"PO-Revision-Date: 2018-06-05 16:25+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -4925,6 +4925,9 @@ msgid ""
 "of 20 gold. In a campaign, always check if recalling a unit of the same type "
 "may be cheaper."
 msgstr ""
+"Némely egység toborzási költsége meghaladhatja a 20 aranyba kerülő "
+"visszahívást. Hadjáratok során érdemes ellenőrizni, hogy az adott típusú "
+"egység visszahívása olcsóbb-e."
 
 #. [tip]
 #: data/tips.cfg:257
