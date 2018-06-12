@@ -55,6 +55,7 @@ opts.AddVariables(
     ('extra_flags_profile', 'Extra compiler and linker flags to use for profile builds', ""),
     BoolVariable('enable_lto', 'Whether to enable Link Time Optimization for build=release', False),
     ('arch', 'What -march option to use for build=release, will default to pentiumpro on Windows', ""),
+    BoolVariable('harden', 'Whether to enable options to harden the executables', False),
     BoolVariable('glibcxx_debug', 'Whether to define _GLIBCXX_DEBUG and _GLIBCXX_DEBUG_PEDANTIC for build=debug', False),
     EnumVariable('profiler', 'profiler to be used for build=profile', "gprof", ["gprof", "gcov", "gperftools", "perf"]),
     EnumVariable('pgo_data', 'whether to generate profiling data for PGO, or use existing profiling data', "", ["", "generate", "use"]),
@@ -354,6 +355,9 @@ if env["prereqs"]:
             conf.CheckSDL("SDL2_mixer", header_file = "SDL_mixer") & \
             conf.CheckSDL("SDL2_image", header_file = "SDL_image")
 
+    if sys.platform == "msys":
+        env["PKG_CONFIG_FLAGS"] = "--dont-define-prefix"
+
     have_server_prereqs = (\
         conf.CheckCPlusPlus(gcc_version = "4.8") & \
         conf.CheckLib("libcrypto") & \
@@ -478,6 +482,18 @@ for env in [test_env, client_env, env]:
             env.AppendUnique(CCFLAGS = ["-fsanitize=" + env["sanitize"]], LINKFLAGS = ["-fsanitize=" + env["sanitize"]])
 
 # #
+# Add options to provide more hardened executables
+# #
+
+        if env['harden']:
+            env.AppendUnique(CCFLAGS = ["-fPIE", "-fstack-protector-strong"])
+            env.AppendUnique(LINKFLAGS = ["-fPIE", "-pie", "-Wl,-z,now,-z,relro"])
+            env.AppendUnique(CPPDEFINES = ["_FORTIFY_SOURCE=2"])
+
+            if env["enable_lto"] == True:
+                env.AppendUnique(LINKFLAGS = ["-fstack-protector-strong"])
+
+# #
 # Start determining options for debug build
 # #
 
@@ -532,6 +548,10 @@ for env in [test_env, client_env, env]:
             if env["enable_lto"] == True:
                 rel_comp_flags = rel_comp_flags + " -flto=thin"
                 rel_link_flags = rel_comp_flags + " -fuse-ld=lld"
+
+# Enable ASLR and NX bit support on mingw
+        if "mingw" in env["TOOLS"]:
+            rel_link_flags += "-Wl,--dynamicbase -Wl,--nxcompat"
 
 # #
 # End setting options for release build

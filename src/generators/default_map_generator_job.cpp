@@ -36,6 +36,7 @@
 static lg::log_domain log_mapgen("mapgen");
 #define ERR_NG LOG_STREAM(err, log_mapgen)
 #define LOG_NG LOG_STREAM(info, log_mapgen)
+#define DBG_NG LOG_STREAM(debug, log_mapgen)
 
 typedef std::vector<std::vector<int>> height_map;
 typedef t_translation::ter_map terrain_map;
@@ -285,6 +286,7 @@ height_map default_map_generator_job::generate_height_map(size_t width, size_t h
 		}
 	}
 
+	DBG_NG << iterations << " iterations\n";
 	for(size_t i = 0; i != iterations; ++i) {
 
 		// (x1,y1) is the location of the hill,
@@ -312,6 +314,7 @@ height_map default_map_generator_job::generate_height_map(size_t width, size_t h
 		}
 
 		const int radius = rng_()%hill_size + 1;
+		DBG_NG << "placing hill at " << x1 << "," << y1 << " radius=" << radius << " is_valley=" << is_valley << "\n";
 
 		const int min_x = x1 - radius > 0 ? x1 - radius : 0;
 		const int max_x = x1 + radius < static_cast<long>(res.size()) ? x1 + radius : res.size();
@@ -354,6 +357,9 @@ height_map default_map_generator_job::generate_height_map(size_t width, size_t h
 		}
 	}
 
+	LOG_NG  << "generate_height_map"
+		<< " lowest=" << lowest
+		<< " highest =" << highest << " \n";
 	// Normalize the heights to the range 0-1000:
 	highest -= lowest;
 	for(x = 0; size_t(x) != res.size(); ++x) {
@@ -686,6 +692,20 @@ static void flood_name(const map_location& start, const std::string& name, std::
 std::string default_map_generator_job::default_generate_map(generator_data data, std::map<map_location,std::string>* labels, const config& cfg)
 {
 	log_scope("map generation");
+	
+	LOG_NG << "default_generate_map parameters" 
+		<< " width=" << data.width 
+		<< " height=" << data.height
+		<< " nplayers=" << data.nplayers
+		<< " nvillages=" << data.nvillages
+		<< " iterations=" << data.iterations
+		<< " hill_size=" << data.hill_size
+		<< " castle_size=" << data.castle_size
+		<< " island_size=" << data.island_size
+		<< " island_off_center=" << data.island_off_center
+		<< " max_lakes=" << data.max_lakes
+		<< " link_castles=" << data.link_castles
+		<< " show_labels=" << data.show_labels << "\n";
 
 	// Odd widths are nasty
 	VALIDATE(is_even(data.width), _("Random maps with an odd width aren't supported."));

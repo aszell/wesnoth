@@ -37,6 +37,9 @@ Battle for \fBWesnoth\fPはターン制のファンタジー戦略ゲームで�
 .SH オプション
 .
 .TP 
+\fB\-\-all\-translations\fP
+ゲーム内の言語選択リストに、翻訳率が低いものを含むすべての翻訳を表示する。
+.TP 
 \fB\-\-bunzip\fP\fI\ infile.bz2\fP
 bzip2 フォーマットのファイルを展開して .bz2 という拡張子を除いたファイルに保存する。 \fIinfile.bz2\fP は削除される。
 .TP 
@@ -94,7 +97,7 @@ gzip フォーマットのファイルを展開して .gz という拡張子を�
 \fB\-\-log\-\fP\fIlevel\fP\fB=\fP\fIdomain1\fP\fB,\fP\fIdomain2\fP\fB,\fP\fI...\fP
 ログ領域(domain)の厳密さのレベルを設定する。 \fBall\fP は、どのログ領域にも対応させるために利用される。有効なレベルは以下の通り。
 \fBerror\fP、\ \fBwarning\fP、\ \fBinfo\fP、\ \fBdebug\fP。既定値では \fBwarning\fP
-レベルがほとんどのログ領域に使用されるが、\fBdeprecation\fPは無効である。
+レベルがほとんどのログ領域に使用されるが、 \fB\-d\fP オプションと組み合わせた場合を除いて \fBdeprecation\fPは無効である。
 .TP 
 \fB\-\-log\-precise\fP
 より正確なログファイルの時刻を表示する。
@@ -196,6 +199,10 @@ GUI 付きでゲームを実行する、暗黙的に \fB\-\-nogui\fP を置き�
 WML\ タグが定義されるべきである。デフォルトでは\fBtest\fPである。\fB[micro_ai]\fP\ 機能のデモンストレーションでは\fBmicro_ai_test\fPと共に開始可能である。暗黙的に
 \fB\-\-nogui\fPが指定される。
 .TP 
+\fB\-\-translations\-over\fP\fI\ percent\fP
+言語の基準翻訳率を I に設定する。言語の翻訳率が \fIpercent\fP を越えている場合のみ、ゲーム内の言語リストに表示される。有効な値は 0 から
+100 。
+.TP 
 \fB\-u,\ \-\-unit\fP\fI\ scenario\-id\fP
 指定されたテストシナリオをユニットテストとして実行する。 \fB\-\-nogui\fP を伴う。
 .TP 
@@ -254,9 +261,7 @@ Games」の外に絶対パスで指定することもできる。Windows では
 \fBdata/multiplayer/eras.cfg\fP の中に記述されている。
 .TP 
 \fB\-\-exit\-at\-end\fP
-exits once the scenario is over, without displaying victory/defeat dialog
-which normally requires the user to click End Scenario.  This is also used
-for scriptable benchmarking.
+シナリオ終了時の勝利／敗北ダイアログが非表示となり、ユーザーが「シナリオ終了」をクリックせずとも終了するようになる。スクリプトによるベンチマーク時に利用される。
 .TP 
 \fB\-\-ignore\-map\-settings\fP
 マップの設定を使わず、代わりにデフォルト値を使用する。

@@ -1199,16 +1199,10 @@ bool attack::perform_hit(bool attacker_turn, statistics::attack_context& stats)
 		OOS_error_ = true;
 	}
 
-	if(dies) {
-		// Will be reset in unit_killed() later.
-		unit::dying_unit_loc = defender.loc_;
-	}
-
 	if(hits) {
 		try {
 			fire_event(attacker_turn ? "attacker_hits" : "defender_hits");
 		} catch(const attack_end_exception&) {
-			unit::dying_unit_loc = map_location::null_location();
 			refresh_bc();
 			return false;
 		}
@@ -1216,7 +1210,6 @@ bool attack::perform_hit(bool attacker_turn, statistics::attack_context& stats)
 		try {
 			fire_event(attacker_turn ? "attacker_misses" : "defender_misses");
 		} catch(const attack_end_exception&) {
-			unit::dying_unit_loc = map_location::null_location();
 			refresh_bc();
 			return false;
 		}
@@ -1299,8 +1292,6 @@ void attack::unit_killed(unit_info& attacker,
 
 	std::string undead_variation = defender.get_unit().undead_variation();
 
-	unit::dying_unit_loc = defender.loc_;
-
 	fire_event("attack_end");
 	refresh_bc();
 
@@ -1325,7 +1316,6 @@ void attack::unit_killed(unit_info& attacker,
 
 	// WML has invalidated the dying unit, abort.
 	if(!defender.valid() || defender.get_unit().hitpoints() > 0) {
-		unit::dying_unit_loc = map_location::null_location();
 		return;
 	}
 
@@ -1349,8 +1339,6 @@ void attack::unit_killed(unit_info& attacker,
 
 	resources::game_events->pump().fire("die", death_loc, attacker_loc, dat);
 	refresh_bc();
-
-	unit::dying_unit_loc = map_location::null_location();
 
 	if(!defender.valid() || defender.get_unit().hitpoints() > 0) {
 		// WML has invalidated the dying unit, abort

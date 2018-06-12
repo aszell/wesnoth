@@ -1,16 +1,82 @@
-## Version 1.14.1+dev
+## Version 1.14.3+dev
+ ### User interface
+   * Improved the layout of the Statistics dialog.
+ ### Graphics
+   * Tweaked the Ruffian's attack animation timing.
+   * New attack animation for the Peasant.
+ ### Miscellaneous and bug fixes
+   * Added an advanced preference to enable experimental PRNG combat.
+   * Fixed MP admins being unable to observe private games.
+
+## Version 1.14.3
+ ### AI
+   * Fixed crash in presence of units with negative hitpoints (issue #3042).
+   * Efficiency improvements to filter evaluations in the Goto Micro AI and some
+     AI helper functions
+ ### Campaigns
+   * Dead Water:
+     * Fix possibility of villagers blocking pickup of sword in S10 The Flaming
+       Sword (issue #3207).
+   * Descent Into Darkness:
+     * New Parthyn map in S1 and S6.
+   * Northern Rebirth:
+     * Reduced starting gold and income in scenarios 10 to 13
+   * Secrets of the Ancients:
+     * Fix S09 Training Session not ending when all dark adepts die (issue #3192)
+   * Tutorial:
+     * S2: made enemy starting gold equal to that of the player.
+   * Under the Burning Suns:
+     * Added portrait and updated sprite for Giant Ant.
+ ### Language and i18n
+   * Updated translations: British English, Chinese (Traditional), Czech, French,
+     Italian, Japanese, Scottish Gaelic, Spanish
+ ### Multiplayer server
+   * Fixed lan_server option not causing the server to exit once vacated, e.g.
+     when using the Host Networked Game option from the Multiplayer menu in the
+     game (issue #3206).
+ ### Music and sound effects
+   * The music now changes immediately when you load a save file (issue #2602).
+   * Fixed Lua errors when setting a music track that cannot be found when the
+     playlist is already empty, e.g. if there's no music installed for the
+     game (issue #3194).
+ ### WML engine
+   * Removed validation to ensure units cannot have negative hitpoints. We
+     learned that the ability to create such units is documented, and thus
+     disallowing it was an API change. Since API changes aren't allowed in
+     the stable branch, we have reverted it.
+ ### Miscellaneous and bug fixes
+   * Fixed an occasional crash at the loading screen related to multi-thread
+     access of the image cache.
+   * [kill] animate=yes no longer scrolls to units through fog or shroud, thus
+     matching 1.12's behavior again.
+   * [message] displays the unit type name when a nameless unit speaks and no
+     custom caption= is specified (issue #3211).
+   * do_not_list=yes units are no longer excluded from the debug mode-only
+     Create Unit dialog.
+   * Fixed a rare issue where disabled attacks could cause the wrong attack to
+     be initially selected in the Unit Attack dialog. This bug also had the
+     potential to cause units to the wrong attack when  engaging or viewing
+     damage calculations.
+   * Fixed [scenario] map_file= being unusable in most circumstances.
+
+## Version 1.14.2
  ### Campaigns
    * Northern Rebirth:
      * S02.1 Infested Caves: keep side 8 AI leader from wandering off too far
-       and ending up on a keep with only one hex for recruiting
+       and ending up on a keep with only one hex for recruiting.
      * S02.1 Infested Caves: AIs are less likely to kill each other in early
-       game, which would make it harder for the player otherwise
-     * S02.1 Infested Caves: Dwarvish allies are also less likely to die
+       game, which would make it harder for the player otherwise.
+     * S02.1 Infested Caves: Dwarvish allies are also less likely to die.
      * S02.1 Infested Caves: minor map tweaks and improvements.
+     * S05 The Pursuit: removed a bottleneck and tweaked Rod of Justice.
    * Sceptre of Fire:
      * In 'Caverns of Flame', fixed various issues with the volcano eruption.
    * Under the Burning Suns:
      * Various Quenoth unit graphics updates.
+   * Descent into Darkness:
+     * In 'A small Favor', disabled a not intended way to win the scenario.
+   * Secrets of the Ancients:
+     * Bats are transformed to normal ones already after S5
  ### Graphics
    * Fixed a minor team coloring mistake in the north-facing Revenant standing
      animation.
@@ -35,6 +101,7 @@
    * Fixed memory leak in terrain filter code. In a huge map with Silver Mages,
      it could leak several gigabytes of memory in a long session.
    * Fixed: unit halo remained after undoing a recall (issue #3065)
+   * Fixed: unit halo intensity doubled during AMLA animation
    * [change_theme] no longer causes a Lua error when theme= is not specified
      instead of explicitly set to an empty string.
    * [change_theme] no longer requires running a separate action to update the
@@ -60,6 +127,17 @@
    * Fixed animation-wide text_color and blend_color keys being overwritten. This
      fixes level-in and level-out animations sometimes fading to black instead of
      white.
+   * Fixed [animate_unit] freezing the game when observing MP games (#2970).
+   * Fixed carryover behaving differently when loading a start-of-scenario save
+     (issue #3152).
+   * Fixed turn replay function in MP.
+   * Fixed savegames being created even when not needed (issue #3150).
+   * Fixed handling of extra_recruit in planning mode (issue #3100).
+   * Fixed handling of skirmisher in planning mode.
+   * Fixed handling of filter_recall in planning mode.
+   * Fixed possible segfault at game end.
+   * Fixed require_resource in [resource].
+   * Fixed require_scenario=yes not working with map_generation (issue #3105).
 
 ## Version 1.14.1
  ### Campaigns
@@ -114,6 +192,7 @@
    * Implemented a workaround for an unhandled std::bad_cast from string comparison
      functions that caused a crash-to-desktop when opening Preferences among others
      (issue #3050).
+   * Fixed many crashes and out-of-sync errors when using the planning mode.
 
 ## Version 1.14.0
  ### Campaigns

@@ -415,7 +415,7 @@ void mp_staging::on_side_slider_change(ng::side_engine_ptr side, slider& slider)
 
 void mp_staging::update_leader_display(ng::side_engine_ptr side, grid& row_grid)
 {
-	const std::string current_faction = (*side->flg().choosable_factions()[side->flg().current_faction_index()])["name"];
+	const std::string current_faction = side->flg().current_faction()["name"];
 
 	// BIG FAT TODO: get rid of this shitty "null" string value in the FLG manager
 	std::string current_leader = side->flg().current_leader() != "null" ? side->flg().current_leader() : font::unicode_em_dash;
@@ -452,9 +452,7 @@ void mp_staging::update_leader_display(ng::side_engine_ptr side, grid& row_grid)
 		const std::string gender_icon = formatter() << "icons/icon-" << current_gender << ".png";
 
 		image& icon = find_widget<image>(&row_grid, "leader_gender", false);
-
 		icon.set_label(gender_icon);
-		icon.set_tooltip(current_gender);
 	}
 }
 

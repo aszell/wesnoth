@@ -24,6 +24,7 @@
 #include "game_events/pump.hpp"
 #include "preferences/game.hpp"
 #include "game_data.hpp" //resources::gamedata->phase()
+#include "gettext.hpp"
 #include "gui/dialogs/unit_advance.hpp"
 #include "gui/widgets/retval.hpp" //gui2::retval::OK
 #include "log.hpp"
@@ -221,7 +222,7 @@ namespace
 		}
 		virtual std::string description() const
 		{
-			return "an advancement choice";
+			return _("an advancement choice");
 		}
 	private:
 		const map_location loc_;
@@ -350,6 +351,7 @@ void advance_unit(map_location loc, const advancement_option &advance_to, bool f
 		preferences::encountered_units().insert(new_unit->type_id());
 		LOG_CF << "Added '" << new_unit->type_id() << "' to the encountered units.\n";
 	}
+	u->anim_comp().clear_haloes();
 	resources::gameboard->units().erase(loc);
 	resources::whiteboard->on_kill_unit();
 	u = resources::gameboard->units().insert(new_unit).first;

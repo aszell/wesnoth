@@ -1,10 +1,11 @@
 # Translators:
+# IWAI, Masaharu <iwaim.sub@gmail.com>, 2018
 # RatArmy <broadbarredfirefish@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-05-16 03:33 UTC\n"
+"POT-Creation-Date: 2018-06-09 20:33 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: RatArmy <broadbarredfirefish@gmail.com>, 2018\n"
 "Language-Team: Japanese (https://www.transifex.com/wesnoth-jp/teams/60513/"
@@ -216,12 +217,12 @@ msgstr "フレイル"
 #. [attack]: type=arcane
 #: data/campaigns/Eastern_Invasion/units/Mounted_Fighter.cfg:23
 #: data/campaigns/Heir_To_The_Throne/units/Battle_Princess.cfg:33
-#: data/campaigns/Heir_To_The_Throne/units/Battle_Princess.cfg:130
-#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:25
-#: data/campaigns/Heir_To_The_Throne/units/Fighter.cfg:21
-#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:26
+#: data/campaigns/Heir_To_The_Throne/units/Battle_Princess.cfg:129
+#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:24
+#: data/campaigns/Heir_To_The_Throne/units/Fighter.cfg:20
+#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:25
 #: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:33
-#: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:90
+#: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:89
 #: data/campaigns/Heir_To_The_Throne/units/Sea_Orc.cfg:36
 #: data/campaigns/Liberty/units/Death_Squire.cfg:32
 #: data/campaigns/Sceptre_of_Fire/units/Haldric_II.cfg:26
@@ -272,8 +273,8 @@ msgstr "剣"
 
 #. [attack]: type=pierce
 #. [attack]: type=fire
-#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:34
-#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:35
+#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:33
+#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:34
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:36
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:37
 #: data/campaigns/Under_the_Burning_Suns/units/humans/Human_Commander.cfg:44
@@ -360,8 +361,8 @@ msgstr ""
 "練を受けた兵士には特に危険なものではありませんが、その数の中に以前の仲間がい"
 "る光景は控えめに言っても恐ろしいものです。"
 
-#. [attack]: type=impact
 #. [attack]: type=arcane
+#. [attack]: type=impact
 #. [attack]: type=fire
 #. [attack]: type=cold
 #: data/campaigns/Secrets_of_the_Ancients/units/Corpse_Shynal.cfg:35
@@ -526,8 +527,8 @@ msgstr ""
 #: data/core/units/dwarves/Stalwart.cfg:33
 #: data/core/units/goblins/Impaler.cfg:28
 #: data/core/units/goblins/Impaler.cfg:40 data/core/units/goblins/Rouser.cfg:30
-#: data/core/units/goblins/Spearman.cfg:28
-#: data/core/units/goblins/Spearman.cfg:38
+#: data/core/units/goblins/Spearman.cfg:26
+#: data/core/units/goblins/Spearman.cfg:36
 #: data/core/units/humans/Horseman.cfg:23
 #: data/core/units/humans/Loyalist_Javelineer.cfg:27
 #: data/core/units/humans/Loyalist_Spearman.cfg:64
@@ -733,7 +734,7 @@ msgstr "シールドバッシュ"
 #. [attack]: type=blade
 #. [attack]: type=pierce
 #: data/campaigns/Under_the_Burning_Suns/units/monsters/Alien_Minion.cfg:32
-#: data/campaigns/Under_the_Burning_Suns/units/monsters/Ant.cfg:23
+#: data/campaigns/Under_the_Burning_Suns/units/monsters/Ant.cfg:24
 #: data/core/units/bats/Bat_Blood.cfg:116 data/core/units/bats/Bat_Dread.cfg:31
 #: data/core/units/bats/Bat_Vampire.cfg:115
 #: data/core/units/goblins/Direwolf_Rider.cfg:32
@@ -921,8 +922,8 @@ msgstr ""
 "す。また、その身に着けた厚い板金は、彼らの鱗の隙間に滑り込んでしまう武器から"
 "身を守る役割を充分に果たします。"
 
-#. [attack]: type=pierce
 #. [attack]: type=blade
+#. [attack]: type=pierce
 #: data/core/units/drakes/Arbiter.cfg:27 data/core/units/drakes/Arbiter.cfg:36
 #: data/core/units/drakes/Warden.cfg:28 data/core/units/drakes/Warden.cfg:37
 #: data/core/units/humans/Loyalist_Halberdier.cfg:28
@@ -2767,25 +2768,20 @@ msgstr "ゴブリンの槍兵"
 #. [unit_type]: id=Goblin Spearman, race=goblin
 #: data/core/units/goblins/Spearman.cfg:17
 msgid ""
-"In any litter of orcs, several are born much smaller and weaker than the "
-"rest. These runts are called ‘Goblins’ and are looked down on by the rest of "
-"their kin. In battle, these are given the most meager of equipment, and are "
-"used as a soak-off force to give the Warlords time to prepare the real "
-"assault.\n"
-"\n"
-"Some speculate that the existence of these creatures is the beginning of a "
-"failure of the orcish bloodline, though no one knows enough of their history "
-"to state anything conclusive."
+"In any race, there are always those rare individuals who, by stroke of bad "
+"luck, are born much smaller and weaker than the rest of their kind. For "
+"Orcs, however, such occurrences are extraordinarily common, with there "
+"usually being several runts born in each litter. Known as ‘Goblins’, these "
+"sickly creatures nearly always live short, brutal lives, most used merely as "
+"fodder against an enemy of their larger siblings' choosing while equipped "
+"with only the crudest of spears."
 msgstr ""
-"ゴブリンの槍兵（Goblin Spearman）\n"
-"\n"
-"オークのどのひと腹の子の中でも、何匹かは他よりもずっと小さく弱い者が生まれま"
-"す。この発育不良の者達は「ゴブリン」と呼ばれ同族の他の者から見下されます。戦"
-"闘において、この者達は最も貧弱な装備を与えられ、将軍に実際の強襲を準備する時"
-"間を与えるための捨て駒として使われます。\n"
-"\n"
-"決定的な事を明言できるほど彼らの歴史については誰も知らないのですが、こういっ"
-"た生き物の存在はオークの血筋の誤りの始まりであると推測する者もいます。"
+"どんな種族であっても、不運にも同胞よりも小さく弱い体で生まれる者たちが存在し"
+"ます。しかし、オークにとってはそのような者たちは珍しく無く、通常、兄弟の中に"
+"は数人の出来損ないが含まれています。彼らは「ゴブリン」として知られており、ほ"
+"とんどのゴブリンの人生は短く厳しいものです。ゴブリンの多くは敵への囮として、"
+"兄弟であるオークたちに利用されます。その際には、粗悪な槍が唯一の武器として与"
+"えられます。"
 
 #. [unit_type]: id=Wolf Rider, race=wolf
 #: data/core/units/goblins/Wolf_Rider.cfg:4
@@ -3777,7 +3773,7 @@ msgstr ""
 "彼らは実際、魔術師の階級の中で自らの結社を持っています。彼らの同輩にある秘密"
 "を与えないという結社を。これらのうちの一つは、歩いて移動するよりも早く大きな"
 "距離を渡ることができる明らかな能力です。銀魔術師の結社のメンバーはこの働きに"
-"ついて同僚の魔術師と議論することを熱心に拒否します。まれに他の者が彼らの仕事"
+"ついて同僚の魔術師と議論することを頑なに拒否します。まれに他の者が彼らの仕事"
 "について詮索したときには、彼らは努力することをやめ、二度とそのことを話しませ"
 "ん。\n"
 "\n"
@@ -4747,7 +4743,7 @@ msgid ""
 "on any footing. While notably aggressive at night, these creatures do not "
 "pose much of a threat to any serious fighter."
 msgstr ""
-"巨大ネズミ（Giant Rat）\n"
+"大ネズミ（Giant Rat）\n"
 "\n"
 "都市に棲む普通のネズミよりも遥かに大きい害獣です。非武装の人間くらいになら傷"
 "を負わせることができますし、捕まえるのが困難なので人々を苛つかせます。特に夜"
@@ -4944,8 +4940,8 @@ msgstr ""
 msgid "Wolf"
 msgstr "狼"
 
-#. [unit_type]: id=Direwolf, race=wolf
 #. [unit_type]: id=Wolf, race=wolf
+#. [unit_type]: id=Direwolf, race=wolf
 #. [unit_type]: id=Great Wolf, race=wolf
 #: data/core/units/monsters/Wolf.cfg:33
 #: data/core/units/monsters/Wolf_Dire.cfg:24
@@ -6267,11 +6263,11 @@ msgid ""
 "living, and those who live to speak of them had no leisure to study their "
 "foe."
 msgstr ""
-"夜鬼（Nightgaunt）\n"
+"ナイトゴーント（Nightgaunt）\n"
 "\n"
 "この生き物が身に着けている仮面の目的は、彼らの顔つきと同様に知られていませ"
 "ん。これらの恐ろしい姿は生きている者に見られることはほとんどありません。そし"
-"て、彼らのことを話せる生存者は彼らの敵を研究する暇はありませんでした。"
+"て、彼らのことを話せる生存者はその敵を研究する暇はありませんでした。"
 
 #. [unit_type]: id=Shadow, race=undead
 #: data/core/units/undead/Spirit_Shadow.cfg:4

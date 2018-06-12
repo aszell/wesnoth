@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.2\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-05-16 03:33 UTC\n"
+"POT-Creation-Date: 2018-06-09 20:33 UTC\n"
 "PO-Revision-Date: 2015-01-17 20:50+0100\n"
 "Last-Translator: Martin Dzbor <mdzbor@yahoo.co.uk>\n"
 "Language-Team: none\n"
@@ -219,12 +219,12 @@ msgstr "bojový cep"
 #. [attack]: type=arcane
 #: data/campaigns/Eastern_Invasion/units/Mounted_Fighter.cfg:23
 #: data/campaigns/Heir_To_The_Throne/units/Battle_Princess.cfg:33
-#: data/campaigns/Heir_To_The_Throne/units/Battle_Princess.cfg:130
-#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:25
-#: data/campaigns/Heir_To_The_Throne/units/Fighter.cfg:21
-#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:26
+#: data/campaigns/Heir_To_The_Throne/units/Battle_Princess.cfg:129
+#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:24
+#: data/campaigns/Heir_To_The_Throne/units/Fighter.cfg:20
+#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:25
 #: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:33
-#: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:90
+#: data/campaigns/Heir_To_The_Throne/units/Princess.cfg:89
 #: data/campaigns/Heir_To_The_Throne/units/Sea_Orc.cfg:36
 #: data/campaigns/Liberty/units/Death_Squire.cfg:32
 #: data/campaigns/Sceptre_of_Fire/units/Haldric_II.cfg:26
@@ -275,8 +275,8 @@ msgstr "meč"
 
 #. [attack]: type=pierce
 #. [attack]: type=fire
-#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:34
-#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:35
+#: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:33
+#: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:34
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:36
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:37
 #: data/campaigns/Under_the_Burning_Suns/units/humans/Human_Commander.cfg:44
@@ -364,8 +364,8 @@ msgstr ""
 "armádu nemŕtvych. Bezpochyby, uzrieť medzi zástupom chodiacich mŕtvol svojho "
 "padlého spolubojovníka je obzvlášť demoralizujúce."
 
-#. [attack]: type=impact
 #. [attack]: type=arcane
+#. [attack]: type=impact
 #. [attack]: type=fire
 #. [attack]: type=cold
 #: data/campaigns/Secrets_of_the_Ancients/units/Corpse_Shynal.cfg:35
@@ -527,8 +527,8 @@ msgstr ""
 #: data/core/units/dwarves/Stalwart.cfg:33
 #: data/core/units/goblins/Impaler.cfg:28
 #: data/core/units/goblins/Impaler.cfg:40 data/core/units/goblins/Rouser.cfg:30
-#: data/core/units/goblins/Spearman.cfg:28
-#: data/core/units/goblins/Spearman.cfg:38
+#: data/core/units/goblins/Spearman.cfg:26
+#: data/core/units/goblins/Spearman.cfg:36
 #: data/core/units/humans/Horseman.cfg:23
 #: data/core/units/humans/Loyalist_Javelineer.cfg:27
 #: data/core/units/humans/Loyalist_Spearman.cfg:64
@@ -740,7 +740,7 @@ msgstr "Omráčenie štítom"
 #. [attack]: type=blade
 #. [attack]: type=pierce
 #: data/campaigns/Under_the_Burning_Suns/units/monsters/Alien_Minion.cfg:32
-#: data/campaigns/Under_the_Burning_Suns/units/monsters/Ant.cfg:23
+#: data/campaigns/Under_the_Burning_Suns/units/monsters/Ant.cfg:24
 #: data/core/units/bats/Bat_Blood.cfg:116 data/core/units/bats/Bat_Dread.cfg:31
 #: data/core/units/bats/Bat_Vampire.cfg:115
 #: data/core/units/goblins/Direwolf_Rider.cfg:32
@@ -930,8 +930,8 @@ msgstr ""
 "Hrubé brnenie chráni týchto jašterov aj pred bodnými zbraňami, ktoré by ináč "
 "mohli preniknúť pomedzi šupiny pokrývajúce ich telá."
 
-#. [attack]: type=pierce
 #. [attack]: type=blade
+#. [attack]: type=pierce
 #: data/core/units/drakes/Arbiter.cfg:27 data/core/units/drakes/Arbiter.cfg:36
 #: data/core/units/drakes/Warden.cfg:28 data/core/units/drakes/Warden.cfg:37
 #: data/core/units/humans/Loyalist_Halberdier.cfg:28
@@ -2994,27 +2994,14 @@ msgstr "Goblin kopijník"
 #. [unit_type]: id=Goblin Spearman, race=goblin
 #: data/core/units/goblins/Spearman.cfg:17
 msgid ""
-"In any litter of orcs, several are born much smaller and weaker than the "
-"rest. These runts are called ‘Goblins’ and are looked down on by the rest of "
-"their kin. In battle, these are given the most meager of equipment, and are "
-"used as a soak-off force to give the Warlords time to prepare the real "
-"assault.\n"
-"\n"
-"Some speculate that the existence of these creatures is the beginning of a "
-"failure of the orcish bloodline, though no one knows enough of their history "
-"to state anything conclusive."
+"In any race, there are always those rare individuals who, by stroke of bad "
+"luck, are born much smaller and weaker than the rest of their kind. For "
+"Orcs, however, such occurrences are extraordinarily common, with there "
+"usually being several runts born in each litter. Known as ‘Goblins’, these "
+"sickly creatures nearly always live short, brutal lives, most used merely as "
+"fodder against an enemy of their larger siblings' choosing while equipped "
+"with only the crudest of spears."
 msgstr ""
-"V každom kmeni orkov sa niekoľko jedincov narodí menších a slabších ako "
-"ostatní. Bežné pomenovanie pre tento druh je 'goblin'. Toto označenie "
-"dotyčnému jedincovi zaručuje snáď iba to, že sa pre zvyšok kmeňa stane "
-"terčom pohŕdania. V boji dostanú goblini to najúbohejšie vybavenie a ostatní "
-"orkovia ich často používajú sa ako živé štíty na zachytenie prvej vlny útoku "
-"nepriateľa, aspoň dokiaľ orkskí vojvodovia nezorganizujú skutočný "
-"protiútok.\n"
-"\n"
-"Niektorí sa domnievajú, že už len existencia týchto potvor naznačuje úpadok "
-"orčieho rodu, ale nikto nevie dosť o ich histórii a vývoji, aby mohol dôjsť "
-"k jednoznačnému záveru."
 
 #. [unit_type]: id=Wolf Rider, race=wolf
 #: data/core/units/goblins/Wolf_Rider.cfg:4
@@ -5156,8 +5143,8 @@ msgstr ""
 msgid "Wolf"
 msgstr "Vlk"
 
-#. [unit_type]: id=Direwolf, race=wolf
 #. [unit_type]: id=Wolf, race=wolf
+#. [unit_type]: id=Direwolf, race=wolf
 #. [unit_type]: id=Great Wolf, race=wolf
 #: data/core/units/monsters/Wolf.cfg:33
 #: data/core/units/monsters/Wolf_Dire.cfg:24
@@ -6596,6 +6583,29 @@ msgstr ""
 "prikláňa k najzrejmejšiemu názoru, že sú ochrancami prírody ako takej.\n"
 "\n"
 "Lesní muži sú mierumilovní, ale majú ohromnú silu. Nie sú však príliš rýchli."
+
+#~ msgid ""
+#~ "In any litter of orcs, several are born much smaller and weaker than the "
+#~ "rest. These runts are called ‘Goblins’ and are looked down on by the rest "
+#~ "of their kin. In battle, these are given the most meager of equipment, "
+#~ "and are used as a soak-off force to give the Warlords time to prepare the "
+#~ "real assault.\n"
+#~ "\n"
+#~ "Some speculate that the existence of these creatures is the beginning of "
+#~ "a failure of the orcish bloodline, though no one knows enough of their "
+#~ "history to state anything conclusive."
+#~ msgstr ""
+#~ "V každom kmeni orkov sa niekoľko jedincov narodí menších a slabších ako "
+#~ "ostatní. Bežné pomenovanie pre tento druh je 'goblin'. Toto označenie "
+#~ "dotyčnému jedincovi zaručuje snáď iba to, že sa pre zvyšok kmeňa stane "
+#~ "terčom pohŕdania. V boji dostanú goblini to najúbohejšie vybavenie a "
+#~ "ostatní orkovia ich často používajú sa ako živé štíty na zachytenie prvej "
+#~ "vlny útoku nepriateľa, aspoň dokiaľ orkskí vojvodovia nezorganizujú "
+#~ "skutočný protiútok.\n"
+#~ "\n"
+#~ "Niektorí sa domnievajú, že už len existencia týchto potvor naznačuje "
+#~ "úpadok orčieho rodu, ale nikto nevie dosť o ich histórii a vývoji, aby "
+#~ "mohol dôjsť k jednoznačnému záveru."
 
 #~ msgid ""
 #~ "Champions among their fellow troops, the dwarven sentinels form the "

@@ -22,15 +22,13 @@
 #include "color.hpp"
 #include "deprecation.hpp"
 #include "display_context.hpp"
-#include "filter_context.hpp"
 #include "formatter.hpp"
 #include "formula/string_utils.hpp" // for VGETTEXT
 #include "game_board.hpp"			// for game_board
 #include "game_config.hpp"			// for add_color_info, etc
 #include "game_data.hpp"
 #include "game_errors.hpp"		   // for game_error
-#include "game_events/manager.hpp" // for add_events, pump
-#include "game_events/pump.hpp" // for running
+#include "game_events/manager.hpp" // for add_events
 #include "preferences/game.hpp"	// for encountered_units
 #include "gettext.hpp"			   // for N_
 #include "lexical_cast.hpp"
@@ -52,12 +50,10 @@
 #include "units/map.hpp"	   // for unit_map, etc
 #include "variable.hpp"		   // for vconfig, etc
 #include "version.hpp"
-#include "wml_exception.hpp"
 
 #include "utils/functional.hpp"
 #include <boost/dynamic_bitset.hpp>
 #include <boost/function_output_iterator.hpp>
-#include "lua/lauxlib.h"
 
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -209,8 +205,6 @@ namespace
 		return ptr ? new T(*ptr) : nullptr;
 	}
 } // end anon namespace
-
-map_location unit::dying_unit_loc;
 
 /**
  * Intrusive Pointer interface
@@ -635,14 +629,6 @@ void unit::init(const config& cfg, bool use_traits, const vconfig* vcfg)
 	}
 
 	if(const config::attribute_value* v = cfg.get("hitpoints")) {
-		if(!(*v > 0 || loc_ == dying_unit_loc)) {
-			if(resources::game_events->pump().running()) {
-				// This function throws an exception, it doesn't return
-				luaL_error(resources::filter_con->get_lua_kernel()->get_state(), "Attempted to create a unit with negative HP");
-			} else {
-				VALIDATE(false, _("Unit with negative HP found"));
-			}
-		}
 		hit_points_ = *v;
 	} else {
 		hit_points_ = max_hit_points_;
@@ -955,14 +941,6 @@ void unit::advance_to(const unit_type& u_type, bool use_traits)
 	max_experience_ = new_type.experience_needed(false);
 	level_ = new_type.level();
 	recall_cost_ = new_type.recall_cost();
-
-	/* Need to add a check to see if the unit's old cost is equal
-	to the unit's old unit_type cost first.  If it is change the cost
-	otherwise keep the old cost. */
-	if(old_type.recall_cost() == recall_cost_) {
-		recall_cost_ = new_type.recall_cost();
-	}
-
 	alignment_ = new_type.alignment();
 	max_hit_points_ = new_type.hitpoints();
 	hp_bar_scaling_ = new_type.hp_bar_scaling();
