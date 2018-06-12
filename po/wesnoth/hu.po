@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: hu-wesnoth\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-15 23:33-0400\n"
-"PO-Revision-Date: 2018-06-05 16:25+0200\n"
+"PO-Revision-Date: 2018-06-12 21:55+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -3915,7 +3915,7 @@ msgstr "Leállít"
 #. [action]: id=button-stopreplay, type=image
 #: data/themes/_initial.cfg:463
 msgid "pause after current move"
-msgstr ""
+msgstr "megállítás az aktuális lépés után"
 
 #. [action]: id=button-resetreplay, type=image
 #: data/themes/_initial.cfg:478 data/themes/_initial.cfg:635
@@ -3949,17 +3949,13 @@ msgstr "csapat körének lejátszása"
 
 #. [action]: id=button-nextmove, type=image
 #: data/themes/_initial.cfg:525 data/themes/_initial.cfg:677
-#, fuzzy
-#| msgid "Next Side"
 msgid "Next Move"
-msgstr "Következő csapat"
+msgstr "Következő lépés"
 
 #. [action]: id=button-nextmove, type=image
 #: data/themes/_initial.cfg:526 data/themes/_initial.cfg:678
-#, fuzzy
-#| msgid "play side turn"
 msgid "play single move"
-msgstr "csapat körének lejátszása"
+msgstr "egyetlen lépés lejátszása"
 
 #. [menu]: id=show-what
 #: data/themes/_initial.cfg:538 data/themes/_initial.cfg:690
@@ -3968,20 +3964,18 @@ msgstr "Nézőpont"
 
 #. [action]: id=button-continue
 #: data/themes/_initial.cfg:549
-#, fuzzy
-#| msgid "continuous replay"
 msgid "Continue Play"
-msgstr "folyamatos visszajátszás"
+msgstr "Visszajátszás folytatása"
 
 #. [action]: id=button-continue
 #: data/themes/_initial.cfg:550
 msgid "Exit the replay mode and continue playing normally."
-msgstr ""
+msgstr "Visszajátszás megszakítása, folytatás normál játékmódban"
 
 #. [action]: id=skip-animation, type=checkbox
 #: data/themes/_initial.cfg:562 data/themes/_initial.cfg:702
 msgid "Skip animation"
-msgstr "Megjelenítés átugrása"
+msgstr "Animációk kihagyása"
 
 #. [label]: id=replay-label
 #: data/themes/_initial.cfg:592
@@ -3991,7 +3985,7 @@ msgstr "Visszajátszás"
 #. [action]: id=button-stopreplay, type=image
 #: data/themes/_initial.cfg:622
 msgid "pause"
-msgstr ""
+msgstr "szünet"
 
 #. [theme]: id=Classic
 #: data/themes/classic.cfg:11

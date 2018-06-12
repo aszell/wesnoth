@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: hu-tsg_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-06 08:31 UTC\n"
-"PO-Revision-Date: 2018-06-07 06:15+0200\n"
+"PO-Revision-Date: 2018-06-12 22:02+0200\n"
 "Last-Translator: Széll András <szell.and@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -2186,8 +2186,8 @@ msgid ""
 "ahead? Let us hope this is a speedy journey, for the specter of winter looms."
 msgstr ""
 "A legyőzött banditákkal és élőholtakkal a hátunk mögött, milyen ellenség "
-"várhat még ránk? Reméljük, hogy ez egy gyors út lesz, hiszen már a tél "
-"szelleme dereng."
+"várhat még ránk? Reméljük, hogy ez egy gyors út lesz, mert már érezni a tél "
+"első fuvallatait."
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/06a_Tidings_Good_and_Ill.cfg:224
@@ -2627,7 +2627,7 @@ msgid ""
 "but never one such as that."
 msgstr ""
 "Miféle ördögi teremtmény lehet az? Sok szörnyű dolgot láttam életemben, de "
-"egy sem volt olyan, mint az."
+"olyat még egyet sem."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/07a_Into_the_Depths.cfg:354
@@ -2804,7 +2804,7 @@ msgid ""
 "How did you come to be here, you of all people, shut away from the trees and "
 "the light of the sun?"
 msgstr ""
-"Hogy lehet, hogy itt vagytok, oly messze, elzárva a nap sugarától és a "
+"Hogy kerülhettél ide, éppen te, ily messze, elzárva a nap sugarától és a "
 "fáktól?"
 
 #. [message]: speaker=Mal M'Brin
@@ -2844,8 +2844,8 @@ msgid ""
 "ages past, and destroy them all!"
 msgstr ""
 "Emberek! Árulók! Fagyilkosok! A világ rákfenéje! Északra, arra a területre "
-"hozom új szolgáimat, amelyet évszázadokkal ezelőtt az embereknek adtunk... "
-"és mindnyájukat elpusztítom!"
+"hozom új szolgáimat, amelyet évszázadokkal ezelőtt bolond módjára az "
+"embereknek adtunk... és mindnyájukat elpusztítom!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/07a_Into_the_Depths.cfg:712
@@ -2871,7 +2871,7 @@ msgid ""
 msgstr ""
 "Most már Mal M’Brinnek hívnak, Ethiliel, legjobb tanítványom. Itt az ideje "
 "egy újabb leckének. Olyan voltam, mint te, kétségekkel és gyengeséggel teli, "
-"de ezen már túlléptem, és többé váltam, mint akinek ismertél. A halálban ott "
+"de ezen már túlléptem, és több lettem, mint akinek ismertél. A halálban ott "
 "van a végtelenség, közel kerültem a minden dolog legmélyén rejlő "
 "nemlétezéshez. Te is részese lehetsz ennek a megzabolázatlan erőnek!"
 
@@ -2891,8 +2891,8 @@ msgid ""
 "And when we were done, what would we have become? Unlife. Hungering shadows, "
 "devouring all we once cherished."
 msgstr ""
-"És ha mindezzel készen volnánk, mi válna belőlünk? Élettelen, éhező árnyak, "
-"kik elpusztították, mit egykor a legdrágábbnak tartottak."
+"És ha mindezzel készen volnánk, mivé válnánk? Élettelen, éhező árnyakká, kik "
+"elpusztították, mit egykor a legdrágábbnak tartottak."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/07a_Into_the_Depths.cfg:733
