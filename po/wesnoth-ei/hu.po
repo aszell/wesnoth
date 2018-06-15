@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-26 12:04 UTC\n"
-"PO-Revision-Date: 2011-12-23 21:01+0100\n"
+"PO-Revision-Date: 2018-06-13 21:44+0200\n"
 "Last-Translator: Gábor Udvari <gabor.udvari@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -23,12 +23,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:13
-#, fuzzy
-#| msgid "The Eastern Invasion"
 msgid "Eastern Invasion"
 msgstr "Lerohanás keleten"
 
@@ -39,10 +37,8 @@ msgstr "LK"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:18
-#, fuzzy
-#| msgid "(Easy)"
 msgid "Easy"
-msgstr "(Könnyű)"
+msgstr "Könnyű"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:18
@@ -51,10 +47,8 @@ msgstr "Lándzsás"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:19
-#, fuzzy
-#| msgid "(Normal)"
 msgid "Normal"
-msgstr "(Átlagos)"
+msgstr "Átlagos"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:19
@@ -63,10 +57,8 @@ msgstr "Kardforgató"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:20
-#, fuzzy
-#| msgid "(Challenging)"
 msgid "Challenging"
-msgstr "(Kihívást jelentő)"
+msgstr "Kihívást jelentő"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:20
@@ -109,7 +101,7 @@ msgstr "Hadjárat utószó és illesztés"
 #. [about]
 #: data/campaigns/Eastern_Invasion/_main.cfg:53
 msgid "Prose and Story Edits"
-msgstr ""
+msgstr "Szöveg és a történet szerkesztése"
 
 #. [about]
 #: data/campaigns/Eastern_Invasion/_main.cfg:59
@@ -118,8 +110,6 @@ msgstr "Művészeti és grafikai tervezés"
 
 #. [lua]: wml_actions.bandit_village_capture
 #: data/campaigns/Eastern_Invasion/lua/bandits.lua:83
-#, fuzzy
-#| msgid "They’re here!"
 msgid "They're here!"
 msgstr "Itt vannak!"
 
@@ -135,10 +125,6 @@ msgstr "A helyőrség"
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:21
-#, fuzzy
-#| msgid ""
-#| "It was the thirteenth year of Konrad II’s reign, and there were strange "
-#| "occurrences in the Estmark Hills on the eastern border of Wesnoth."
 msgid ""
 "It was the thirteenth year of Konrad II’s reign when the strange occurrences "
 "in the Estmark Hills on the eastern border of Wesnoth began."
@@ -218,11 +204,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:48
-#, fuzzy
-#| msgid ""
-#| "To the northern outpost he sent Owaec, a clan noble. To the southern "
-#| "outpost, he sent Gweddry, who would be accompanied by Dacyn the mage. It "
-#| "is with them this story is concerned."
 msgid ""
 "To the northern outpost he sent Owaec, a clan noble. To the southern "
 "outpost, he sent Gweddry, who would be accompanied by Dacyn the mage. Our "
@@ -365,10 +346,8 @@ msgstr "Mal-Uldhar"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:209
-#, fuzzy
-#| msgid "The Outpost"
 msgid "Defend the outpost"
-msgstr "A helyőrség"
+msgstr "Védd meg a helyőrséget"
 
 #. [objective]: condition=lose
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:213
@@ -430,22 +409,22 @@ msgstr "Mi? Mi történt?"
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:249
 msgid "Look. To the east. Undead approach!"
-msgstr ""
+msgstr "Nézd. Keletre. Élőholtak közelednek!"
 
 #. [message]: speaker=Mal-Talar
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:254
 msgid "Ah, interesting..."
-msgstr ""
+msgstr "Ah, érdekes..."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:259
 msgid "Men, to arms!"
-msgstr ""
+msgstr "Fegyverbe, emberek!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:272
 msgid "I sense a great evil... Can it be? Gweddry, I must not be seen."
-msgstr ""
+msgstr "Nagy gonoszságot érzékelek... Lehetséges? Gweddry, nem láthatnak meg!"
 
 #. [message]: speaker=Mal-Ravanal
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:312
@@ -454,13 +433,14 @@ msgid ""
 "recruits? You will suffer for your incompetence. Destroy them, and dare not "
 "bother me again."
 msgstr ""
+"Ez az az ellenállás, amiről beszéltek? Egy képzetlen parancsnok és néhány "
+"fiatal újonc? Megbánjátok még ügyetlenségetek! Semmisítsétek meg őket, és ne "
+"merészeljetek újra zavarni!"
 
 #. [message]: speaker=Mal-Talar
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:318
-#, fuzzy
-#| msgid "Very well, Dark Archon. They will die. And then?"
 msgid "Apologies, Dark Archon. They will die. And then?"
-msgstr "Ahogy akarod, Sötét Archon. Meg fognak halni. És aztán?"
+msgstr "Szörnyen sajnáljuk, Sötét Archon. Meg fognak halni. És aztán?"
 
 #. [message]: speaker=Mal-Ravanal
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:323
@@ -468,13 +448,13 @@ msgid ""
 "Slaughter the villagers and march onwards. You have wasted enough time here "
 "already."
 msgstr ""
+"Mészároljátok le a falusiakat és meneteljetek tovább! Elég időt "
+"pocsékoltatok már el itt."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:347
-#, fuzzy
-#| msgid "What?! Men, to arms! And where did Dacyn go?!"
 msgid "What?! We must hold the outpost! And where did Dacyn go?!"
-msgstr "Mi? Fegyverbe, bajtársak! De hol van Dacyn?"
+msgstr "Mi?! Tartanunk kell a helyőrséget! De hová tűnt Dacyn?"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:386
@@ -498,20 +478,16 @@ msgstr ""
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:401
 msgid "But what about the outpost?"
-msgstr "De mi lesz az állással?"
+msgstr "De mi lesz a helyőrséggel?"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:406
-#, fuzzy
-#| msgid ""
-#| "It is pointless to try to defend it. Now, come on, we do not have much "
-#| "time to spare!"
 msgid ""
 "This outpost is already lost. We must defeat this evil if Wesnoth is to "
 "survive. Now, come on, we do not have much time to spare!"
 msgstr ""
-"Nincs értelme, hogy tovább védjük. Most gyertek, nincs vesztegetni való "
-"időnk!"
+"Ez a helyőrség már elveszett. E gonoszt kell legyőznünk, ha Wesnothot meg "
+"akarjuk menteni! Most gyertek, nincs vesztegetni való időnk!"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:436
@@ -521,7 +497,7 @@ msgstr "Eljuttatod Gweddryt a csapóajtóhoz"
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:480
 msgid "Hurry! We cannot defeat this evil today! We must escape!"
-msgstr ""
+msgstr "Siessünk! Ezt a gonoszt ma nem győzhetjük le! Menekülnünk kell!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:489
@@ -559,10 +535,8 @@ msgstr "Knutan"
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:147
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:358
-#, fuzzy
-#| msgid "Move Gweddry to the trapdoor"
 msgid "Move Gweddry to the tunnel exit"
-msgstr "Eljuttatod Gweddryt a csapóajtóhoz"
+msgstr "Eljuttatod Gweddryt az alagút kijáratáig"
 
 #. [note]
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:168
