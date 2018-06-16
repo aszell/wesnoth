@@ -41,24 +41,34 @@ menu_button::menu_button(const implementation::builder_menu_button& builder)
 	: styled_widget(builder, get_control_type())
 	, selectable_item()
 	, state_(ENABLED)
-	, retval_(retval::NONE)
 	, values_()
-	, selected_()
+	, selected_(0)
 	, keep_open_(false)
 {
-	values_.emplace_back(::config {"label", this->get_label()});
+	values_.emplace_back("label", this->get_label());
 
 	connect_signal<event::MOUSE_ENTER>(
-			std::bind(&menu_button::signal_handler_mouse_enter, this, _2, _3));
-	connect_signal<event::MOUSE_LEAVE>(
-			std::bind(&menu_button::signal_handler_mouse_leave, this, _2, _3));
+		std::bind(&menu_button::signal_handler_mouse_enter, this, _2, _3));
 
-	connect_signal<event::LEFT_BUTTON_DOWN>(std::bind(
-			&menu_button::signal_handler_left_button_down, this, _2, _3));
+	connect_signal<event::MOUSE_LEAVE>(
+		std::bind(&menu_button::signal_handler_mouse_leave, this, _2, _3));
+
+	connect_signal<event::LEFT_BUTTON_DOWN>(
+		std::bind(&menu_button::signal_handler_left_button_down, this, _2, _3));
+
 	connect_signal<event::LEFT_BUTTON_UP>(
-			std::bind(&menu_button::signal_handler_left_button_up, this, _2, _3));
-	connect_signal<event::LEFT_BUTTON_CLICK>(std::bind(
-			&menu_button::signal_handler_left_button_click, this, _2, _3));
+		std::bind(&menu_button::signal_handler_left_button_up, this, _2, _3));
+
+	connect_signal<event::LEFT_BUTTON_CLICK>(
+		std::bind(&menu_button::signal_handler_left_button_click, this, _2, _3));
+
+	connect_signal<event::SDL_WHEEL_UP>(
+		std::bind(&menu_button::signal_handler_sdl_wheel_up, this, _2, _3),
+		event::dispatcher::back_post_child);
+
+	connect_signal<event::SDL_WHEEL_DOWN>(
+		std::bind(&menu_button::signal_handler_sdl_wheel_down, this, _2, _3),
+		event::dispatcher::back_post_child);
 }
 
 void menu_button::set_active(const bool active)
@@ -144,22 +154,39 @@ void menu_button::signal_handler_left_button_click(const event::ui_event event, 
 		}
 
 		set_selected(selected, true);
-
-		if(retval_ != retval::NONE) {
-			if(window* window = get_window()) {
-				window->set_retval(retval_);
-				return;
-			}
-		}
 	}
 
 	handled = true;
 }
 
-void menu_button::set_values(const std::vector<::config>& values, int selected)
+void menu_button::signal_handler_sdl_wheel_up(const event::ui_event event, bool& handled)
 {
-	assert(static_cast<size_t>(selected) < values.size());
-	assert(static_cast<size_t>(selected_) < values_.size());
+	DBG_GUI_E << LOG_HEADER << ' ' << event << ".\n";
+
+	// TODO: should values wrap?
+	if(selected_ > 0) {
+		set_selected(selected_ - 1);
+	}
+
+	handled = true;
+}
+
+void menu_button::signal_handler_sdl_wheel_down(const event::ui_event event, bool& handled)
+{
+	DBG_GUI_E << LOG_HEADER << ' ' << event << ".\n";
+
+	// TODO: should values wrap?
+	if(selected_ < values_.size() - 1) {
+		set_selected(selected_ + 1);
+	}
+
+	handled = true;
+}
+
+void menu_button::set_values(const std::vector<::config>& values, unsigned selected)
+{
+	assert(selected < values.size());
+	assert(selected_ < values_.size());
 
 	if(values[selected]["label"] != values_[selected_]["label"]) {
 		set_is_dirty(true);
@@ -171,10 +198,10 @@ void menu_button::set_values(const std::vector<::config>& values, int selected)
 	set_label(values_[selected_]["label"]);
 }
 
-void menu_button::set_selected(int selected, bool fire_event)
+void menu_button::set_selected(unsigned selected, bool fire_event)
 {
-	assert(static_cast<size_t>(selected) < values_.size());
-	assert(static_cast<size_t>(selected_) < values_.size());
+	assert(selected < values_.size());
+	assert(selected_ < values_.size());
 
 	if(selected != selected_) {
 		set_is_dirty(true);
@@ -280,8 +307,6 @@ namespace implementation
 
 builder_menu_button::builder_menu_button(const config& cfg)
 	: builder_styled_widget(cfg)
-	, retval_id_(cfg["return_value_id"])
-	, retval_(cfg["return_value"])
 	, options_()
 {
 	for(const auto& option : cfg.child_range("option")) {
@@ -293,7 +318,6 @@ widget* builder_menu_button::build() const
 {
 	menu_button* widget = new menu_button(*this);
 
-	widget->set_retval(get_retval(retval_id_, retval_, id));
 	if(!options_.empty()) {
 		widget->set_values(options_);
 	}

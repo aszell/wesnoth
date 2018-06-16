@@ -54,24 +54,7 @@ public:
 	/** See @ref styled_widget::get_state. */
 	virtual unsigned get_state() const override;
 
-	/** Inherited from clickable_item. */
-	void connect_click_handler(const event::signal_function& signal)
-	{
-		connect_signal_mouse_left_click(*this, signal);
-	}
-
-	/** Inherited from clickable_item. */
-	void disconnect_click_handler(const event::signal_function& signal)
-	{
-		disconnect_signal_mouse_left_click(*this, signal);
-	}
-
 	/***** ***** ***** setters / getters for members ***** ****** *****/
-
-	void set_retval(const int retval)
-	{
-		retval_ = retval;
-	}
 
 	/**
 	 * Sets the maximum number of selected elements shown on the label.
@@ -79,7 +62,7 @@ public:
 	 *
 	 * @param max      The maximum number of elements to show
 	 */
-	void set_max_shown(const int max)
+	void set_max_shown(const unsigned max)
 	{
 		max_shown_ = max;
 	}
@@ -89,7 +72,7 @@ public:
 	 *
 	 * @returns        The maximum number of elements to show
 	 */
-	int get_max_shown()
+	unsigned get_max_shown()
 	{
 		return max_shown_;
 	}
@@ -165,17 +148,9 @@ private:
 	state_t state_;
 
 	/**
-	 * The return value of the button.
-	 *
-	 * If this value is not 0 and the button is clicked it sets the retval of
-	 * the window and the window closes itself.
-	 */
-	int retval_;
-
-	/**
 	 * The maximum number of selected states to list in the label
 	 */
-	int max_shown_;
+	unsigned max_shown_;
 
 	std::vector<::config> values_;
 
@@ -233,8 +208,7 @@ public:
 	widget* build() const;
 
 private:
-	std::string retval_id_;
-	int retval_, max_shown_;
+	unsigned max_shown_;
 	std::vector<::config> options_;
 };
 
