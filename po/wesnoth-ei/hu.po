@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-26 12:04 UTC\n"
-"PO-Revision-Date: 2018-06-13 21:44+0200\n"
+"PO-Revision-Date: 2018-06-16 20:58+0200\n"
 "Last-Translator: Gábor Udvari <gabor.udvari@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:13
@@ -434,8 +434,8 @@ msgid ""
 "bother me again."
 msgstr ""
 "Ez az az ellenállás, amiről beszéltek? Egy képzetlen parancsnok és néhány "
-"fiatal újonc? Megbánjátok még ügyetlenségetek! Semmisítsétek meg őket, és ne "
-"merészeljetek újra zavarni!"
+"fiatal újonc? Megbánjátok még ügyetlenségeteket! Semmisítsétek meg őket, és "
+"ne merészeljetek újra zavarni!"
 
 #. [message]: speaker=Mal-Talar
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:318
@@ -541,12 +541,12 @@ msgstr "Eljuttatod Gweddryt az alagút kijáratáig"
 #. [note]
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:168
 msgid "Get moving quickly."
-msgstr ""
+msgstr "Keljünk útra gyorsan."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:183
 msgid "Where are we? I can’t see where we are going."
-msgstr "Hol vagyunk? Nem látok, merre tartunk?"
+msgstr "Hol vagyunk? Nem látom, merre tartunk."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:188
@@ -555,6 +555,8 @@ msgid ""
 "currently inhabited by trolls. Now hurry, we have to move quickly; the "
 "undead will surely follow us down here."
 msgstr ""
+"Ez a helyőrség egy régi menekülőjárata; sajnos a barlangokat jelenleg "
+"trollok lakják. Most siessünk, az élőholtak biztosan lejönnek utánunk!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:193
@@ -567,11 +569,13 @@ msgid ""
 "I will explain later. For now, suffice to say they are much too powerful for "
 "us; our only hope is to head north."
 msgstr ""
+"Elmondom később, most legyen elég annyi, hogy túlontúl erősek számunkra, "
+"egyetlen esélyünk, ha északra megyünk."
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:212
 msgid "TROL TREZZUR HOLE: KEEP OWT"
-msgstr "TROL KINCSES JUK: MARAGGY KIVÜL"
+msgstr "TROL KINCSES JUK: MARAGGY KIVÜLL"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:230
@@ -580,15 +584,11 @@ msgstr "Kik vannak ott?"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:235
-#, fuzzy
-#| msgid ""
-#| "We are soldiers of the king of Wesnoth. Will you help us escape these "
-#| "trolls?"
 msgid ""
 "We are soldiers of the king of Wesnoth. Will you help us fight these trolls?"
 msgstr ""
-"Wesnoth királyának hűséges katonái vagyunk. Segítetek elmenekülni a trollok "
-"elől?"
+"Wesnoth királyának hűséges katonái vagyunk. Segítetek a trollok ellen "
+"harcban?"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:240
@@ -596,7 +596,7 @@ msgid ""
 "Aye, we’ll help ye, for we have nae love for the trolls. Anyone attacked by "
 "them deserves some help, I think."
 msgstr ""
-"Jaja, segítünk, úgy se szeressük a trollokat. Bárki, akit megtámadnak "
+"Jaja, segítünk, úccse szeressük a trollokat. Bárki, akit megtámadnak, "
 "megérdemli a segítséget, asszem."
 
 #. [message]: speaker=Dacyn
@@ -606,7 +606,7 @@ msgid ""
 "caves, and they will kill you if you stay behind."
 msgstr ""
 "Köszönjük! Most pedig azt ajánlom, hogy tartsatok velünk. Élőholtak vannak a "
-"nyomunkban, és bárkit, aki itt marad, meg fognak ölni."
+"nyomunkban, és meg fognak ölni benneteket, ha itt maradtok."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:254
@@ -615,7 +615,7 @@ msgid ""
 "will find these caves."
 msgstr ""
 "Köszönjük! Most pedig azt ajánlom, hogy tartsatok velünk. Az élőholtak már a "
-"közelben vannak, és biztosan meg fogják találni a barlangot is."
+"közelben vannak, és biztosan meg fogják találni a barlangokat is."
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:261
@@ -637,6 +637,7 @@ msgid ""
 "It seems these trolls were hiding some gold. I think I can count fifty gold "
 "pieces!"
 msgstr ""
+"Úgy látszik, a trollok aranyat rejtegettek. Ötven aranyat számoltam össze!"
 
 #. [unit]: type=Necromancer, id=Mal-Bakral
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:336
@@ -650,18 +651,13 @@ msgstr "Megtaláltunk husika! Készülj a halálra!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/02_The_Escape_Tunnel.cfg:351
-#, fuzzy
-#| msgid ""
-#| "They follow us... we must get out of this tunnel. It looks like it is "
-#| "leading east. That is unfortunate, for it will take us further from "
-#| "Weldyn. But it is our only option."
 msgid ""
 "They follow us... we must get out of this tunnel. It looks like it is "
 "leading east. That is unfortunate, for it will take us beyond the borders of "
 "Wesnoth. But it is our only option."
 msgstr ""
-"Követnek minket... El kell hagynunk ezt a csatornát. Úgy tűnik keletre tart. "
-"Sajnálatos, ugyanis ezzel csak távolabb kerülünk Weldyntől. De nincs más "
+"Követnek minket... El kell hagynunk ezt az alagutat. Úgy tűnik, keletre "
+"visz. Sajnálatos, ugyanis ezzel Wesnoth határain túlra jutunk. De nincs más "
 "választásunk."
 
 #. [message]: speaker=Gweddry
@@ -702,21 +698,15 @@ msgstr "Kiszabadultunk ezekből a sötét alagutakból! De hol vagyunk most?"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/03_An_Unexpected_Appearance.cfg:189
-#, fuzzy
-#| msgid ""
-#| "We are in the middle of the eastern mountains, in a mountain pass leading "
-#| "east and west. We need to head north, to meet Owaec, but we cannot go "
-#| "through the mountains... we must go east, or west, and hope we can get "
-#| "around them."
 msgid ""
 "We are in the middle of the eastern mountains, in a mountain pass leading "
 "east and west. We need to head north, but we cannot go through the "
 "mountains... we must go east, or west, and hope we can get around them."
 msgstr ""
 "A keleti hegyek szívében vagyunk, ezen a hágón lehet kelet és nyugat közt "
-"átkelni. Északra kell tartanunk, hogy csatlakozhassunk Owaechez, de nem "
-"mehetünk a hegységen keresztül, választanunk kell, hogy keletről vagy "
-"nyugatról kerüljük meg."
+"átkelni. Északra kell tartanunk, hogy találkozzunk Owaeckel, de nem mehetünk "
+"a hegységen keresztül, választanunk kell, hogy keletről vagy nyugatról "
+"kerüljük meg."
 
 #. [message]: speaker=Mal-Kallat
 #: data/campaigns/Eastern_Invasion/scenarios/03_An_Unexpected_Appearance.cfg:194
@@ -743,29 +733,21 @@ msgstr "Ez már a te problémád lesz."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/03_An_Unexpected_Appearance.cfg:214
-#, fuzzy
-#| msgid ""
-#| "These undead are toying with us! This adept is weak — we may be able to "
-#| "take his castle."
 msgid ""
 "These undead are toying with us! This adept is weak — we may be able to take "
 "his fort."
 msgstr ""
 "Ezek az élőholtak macska-egér játékot játszanak velünk. Ez a tanonc "
-"gyengének tűnik — talán az ő várát bevehetjük."
+"gyengének tűnik — talán az ő erődjét bevehetjük."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/03_An_Unexpected_Appearance.cfg:219
-#, fuzzy
-#| msgid ""
-#| "A good idea. Then, we must kill either of the dark sorcerers. I would "
-#| "prefer to attack the western one, so we can get closer to Wesnoth."
 msgid ""
 "A good idea. Then, we must kill either of the dark sorcerers. I would prefer "
 "to attack the western one, so we can return to Wesnoth."
 msgstr ""
 "Jó ötlet. Aztán pedig elég lesz az egyik sötét varázslót legyőznünk. Én a "
-"nyugat felé lévőre gondoltam, így Wesnoth felé indulhatnánk."
+"nyugat felé lévőre gondoltam, hogy Wesnothba visszatérhessünk."
 
 #. [message]: speaker=Mal-Skraat
 #: data/campaigns/Eastern_Invasion/scenarios/03_An_Unexpected_Appearance.cfg:231
@@ -786,20 +768,12 @@ msgstr "A tünde szövetség"
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:24
-#, fuzzy
-#| msgid ""
-#| "But Gweddry and Dacyn were to find that re-entering Wesnoth would not be "
-#| "easy with the escape tunnel closed to them. They marched out of the "
-#| "foothills of the Estmarks in a direction few Wesnothians had traveled "
-#| "before, into unknown forest country just south of the Great River."
 msgid ""
 "But Gweddry and Dacyn were to find no respite within the borders of Wesnoth. "
 "They marched out of the foothills of the Estmarks into an unknown forest..."
 msgstr ""
-"De Gweddrynek és Dacynnek rá kellett jönnie, hogy nem lesz könnyű dolog "
-"visszatérni Wesnothba az elzárult menekülő-alagút miatt. Gyalogosan haladtak "
-"Estmark hegyeiben, olyan irányba, amerre csak pár wesnothi utazott előttük, "
-"egy ismeretlen, erdős világ felé, a Nagy-folyótól délre."
+"De Gweddry és Dacyn nem lelt nyugalmat Wesnoth határain belül. Eastmark "
+"dombvidékéről leérkezve egy ismeretlen erdőbe masíroztak..."
 
 #. [side]
 #. [side]: type=Elvish Ranger, id=Volas
@@ -822,7 +796,7 @@ msgstr "Volas"
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:134
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:71
 msgid "Orcs"
-msgstr ""
+msgstr "Orkok"
 
 #. [side]: type=Orcish Warrior, id=Gruga-Har
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:80
@@ -846,18 +820,13 @@ msgstr "Üdvözletem, utazók! Isten hozott a birodalmamban!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:159
-#, fuzzy
-#| msgid ""
-#| "Would it be possible for us to rest in your lands for a while? We have "
-#| "been pursued by fell undead, although they did not dare to enter the "
-#| "forest... yet."
 msgid ""
 "Would it be possible for us to rest in your lands for a while? We have been "
 "pursued by fell undead, although they did not dare follow us into the "
 "forest... yet."
 msgstr ""
 "Megengednétek, hogy hazátokban maradjuk egy ideig? Vérszomjas élőholtak "
-"üldöztek minket, bár ebbe az erdőbe nem mertek belépni... még."
+"üldöztek minket, bár ebbe az erdőbe nem mertek követni... még."
 
 #. [message]: speaker=Volas
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:164
@@ -866,21 +835,14 @@ msgstr "Természetesen."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:169
-#, fuzzy
-#| msgid ""
-#| "Good. Now, you should be warned. This undead warlord is very powerful. If "
-#| "you choose to battle with him then, even if you are victorious, few will "
-#| "survive. I invite you to join us, and head north. We may be able to leave "
-#| "the area he wishes to conquer."
 msgid ""
 "Good. Now, you should be warned: this undead warlord is very powerful. If "
 "you choose to fight, even if you are victorious, few will survive. I invite "
 "you to join us, and head north."
 msgstr ""
-"Jó. Most pedig beszéljünk a veszélyről. Az élőholt hadúr óriási erővel bír. "
-"Ha nyíltan szembeszállsz vele, még ha győzedelmeskedsz is, csak kevesek "
-"élnék túl a csatát. Azt tanácsolom, hogy együtt induljunk tovább északra. "
-"Talán elhagyhatjuk azt a területet, amelyre a foga fáj."
+"Jó. Nos, figyelmeztetünk: az élőholt hadúr óriási erővel bír. Ha nyíltan "
+"szembeszállsz vele, még ha győzedelmeskedsz is, csak kevesek élnék túl a "
+"csatát. Azt tanácsolom, hogy együtt induljunk tovább északra."
 
 #. [message]: speaker=Volas
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:174
@@ -899,7 +861,7 @@ msgid ""
 "comrades there."
 msgstr ""
 "Ez nem túl bölcs döntés, de a te felelősséged. Ha nem is csatlakoztok, "
-"segítetek legalább elérni az északi állást? Ottani társainkat is "
+"segítetek legalább elérni az északi helyőrséget? Ottani társainkat is "
 "értesítenünk kell."
 
 #. [message]: speaker=Volas
@@ -931,21 +893,17 @@ msgstr "Micsoda? Orkok! Honnan jöhettek?"
 
 #. [message]: speaker=Volas
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:214
-#, fuzzy
-#| msgid ""
-#| "I know not. But they are right in the Northern Path. You will have to "
-#| "fight them to move on."
 msgid ""
 "I know not. But they have made camp on the northern path. You will have to "
 "fight them to move on."
 msgstr ""
-"Nem tudom. Az északi ösvényen vannak! Meg kell velük küzdenünk a "
-"továbbhaladásért."
+"Nem tudom. Az északi ösvényen vertek tábort. Meg kell velük küzdenetek a "
+"továbbhaladásért!"
 
 #. [message]: speaker=Gruga-Har
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:219
 msgid "Bring forth the assassins, we may be able to poison them!"
-msgstr "Hozzátok előre az orgyilkosokat! Talán megmérgezhetjük őket."
+msgstr "Hozzátok előre az orgyilkosokat! Talán megmérgezhetjük őket!"
 
 #. [unit]: type=Orcish Nightblade, type=Orcish Slayer, id=Nafga
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:240
@@ -982,9 +940,6 @@ msgstr "Hahaha! Nafga meg fogja ölni a tündéket!"
 
 #. [message]: speaker=Nafga
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:304
-#, fuzzy
-#| msgid ""
-#| "No! This is the first time I have failed a mission, and it is my last!"
 msgid ""
 "No! This is the first time I have failed a mission, and it will be my last!"
 msgstr ""
@@ -998,7 +953,7 @@ msgid ""
 "him in his mission!"
 msgstr ""
 "Az orgyilkosom halott! A tündék megfizetnek ezért! Na, nem a haláláért, "
-"hanem mert megakadályozták a küldetése végrehajtásában."
+"hanem mert megakadályozták a küldetése végrehajtásában!"
 
 #. [message]: speaker=Volas
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:333
@@ -1007,11 +962,8 @@ msgstr "Cserbenhagytatok, Wesnoth fiai..."
 
 #. [message]: speaker=Volas
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:353
-#, fuzzy
-#| msgid "We have defeated the orcs! Now you can rest, and then leave."
 msgid "We have defeated the orcs! Now you can rest before your journey."
-msgstr ""
-"Végeztünk az orkokkal! Most már pihenhetsz, aztán pedig továbbindulhatsz."
+msgstr "Végeztünk az orkokkal! Most már pihenhetsz, mielőtt folytatnád utad."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:358
@@ -1019,15 +971,14 @@ msgid ""
 "We have not the time. This battle has wasted too much of it already. We must "
 "leave now."
 msgstr ""
-"Nincs időnk. Ez a küzdelem már túl sok időbe került. El kell indulnunk "
-"azonnal."
+"Nincs időnk, ezzel a küzdelemmel már túl sokat vesztettünk. Azonnal el kell "
+"indulnunk."
 
 #. [message]: speaker=Volas
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:363
-#, fuzzy
-#| msgid "Very well. I will send guides to lead you to your allies."
 msgid "Very well. I will send guides to lead you north to your allies."
-msgstr "Úgy is jó. Küldök segítséget, akik elvezetnek a szövetségeseitekhez."
+msgstr ""
+"Úgy is jó. Küldök segítséget, akik elvezetnek északi szövetségeseitekhez."
 
 #. [scenario]: id=04b_The_Undead_Border_Patrol
 #: data/campaigns/Eastern_Invasion/scenarios/04b_The_Undead_Border_Patrol.cfg:5
@@ -1276,7 +1227,7 @@ msgid ""
 "the Revenants, one of us knights is let free!"
 msgstr ""
 "Köszönöm, hogy elpusztítottad a csontváz harcost. Minden alkalommal, amikor "
-"egy ellenséges bosszúállót porrá zúzol, egy szövetséges lovag szabaddá válik."
+"egy ellenséges bosszúállót porrá zúzol, egy szövetséges lovag szabaddá válik!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/04c_Mal-Ravanals_Capital.cfg:340
