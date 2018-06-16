@@ -4,12 +4,13 @@
 # Barthalos Márton <barthalosmarton@yahoo.com>, 2008, 2009, 2014.
 # Farkas János <mail.janos.farkas@gmail.com>, 2014.
 # Széll András <szell.andris@gmail.com>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-06-03 13:43 UTC\n"
-"PO-Revision-Date: 2018-05-25 18:28+0200\n"
+"PO-Revision-Date: 2018-06-16 08:12+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>, 2018.\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #. [lua]: wml_actions.select_character
 #: data/campaigns/tutorial/lua/character_selection.lua:25
@@ -120,7 +121,7 @@ msgid ""
 msgstr ""
 "A gyakorlás alatt Te leszel Konrad. A várkastélyban állsz, Delfador, a "
 "mentorod pedig a folyó keleti oldalán. Ha valamelyik egység fölé viszed az "
-"egeret, megnézheted képességeit a kép jobb oldalán."
+"egeret, megnézheted képességeit a képernyő jobb oldalán."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:166
@@ -132,7 +133,7 @@ msgid ""
 msgstr ""
 "A gyakorlás alatt Te leszel Li’sar. A várkastélyban állsz, Delfador, a "
 "mentorod pedig a folyó keleti oldalán. Ha valamelyik egység fölé viszed az "
-"egeret, megnézheted képességeit a kép jobb oldalán."
+"egeret, megnézheted képességeit a képernyő jobb oldalán."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:172
@@ -516,7 +517,7 @@ msgid ""
 "choose from: the Elvish Fighter."
 msgstr ""
 "Amikor a <i>várkastélyban</i> vagy, a körülötte lévő vár mezőkre "
-"<i>toborozhatsz</i> a jobb gombos menü <i>Toborzás</i> opcióját választva. A "
+"<i>toborozhatsz</i> a jobb gombos menü <b>Toborzás</b> opcióját választva. A "
 "frissen toborzott egységeket csak a toborzást követő körtől tudod használni. "
 "Most csak egyfajta egységből lehet választani: Tünde harcos."
 
@@ -709,11 +710,12 @@ msgid ""
 "choose which one you want. However, second level units cost twice as much to "
 "support as first level units."
 msgstr ""
-"Ha egy egység elég tapasztalati pontot gyűjtött (a <i>TP-t mutató "
-"állapotjelző</i> a jobbra lévő kisebbik), akkor szintet fog lépni. A tünde "
-"harcosoknak két továbbfejlődési lehetőségük is van, ezek közül lehetőséged "
-"lesz választani. Megjegyzendő, hogy egy kettes szintű egység fenntartása "
-"kétszer annyi aranyba kerül, mint egy egyes szintűé."
+"Ha egy egység elég tapasztalati pontot gyűjtött, akkor szintet fog lépni. (A "
+"<i>TP-t mutató állapotjelző</i>, ha látható, az <i>életerő jelző</i> <b>jobb "
+"oldalán</b> van.) A tünde harcosoknak két továbbfejlődési lehetőségük is "
+"van, ezek közül lehetőséged lesz választani. Megjegyzendő, hogy egy kettes "
+"szintű egység fenntartása kétszer annyi aranyba kerül, mint egy egyes "
+"szintűé."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:796
@@ -1233,7 +1235,7 @@ msgstr ""
 #. [event]
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:356
 msgid "Capture a village"
-msgstr "Foglalj el egy falut."
+msgstr "Foglalj el egy falut"
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:371
@@ -1241,8 +1243,8 @@ msgid ""
 "Excellent! As Delfador mentioned earlier, each captured village will support "
 "one unit and provide you with 1 extra gold per turn."
 msgstr ""
-"Kitűnő! Ahogy Delfador említette, minden falu egy egységet lát el, és még "
-"egy aranyat ad ezen felül körönként."
+"Kitűnő! Ahogy Delfador említette, minden elfoglalt falu egy egységet lát el, "
+"és még egy aranyat ad ezen felül körönként."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:376
@@ -1515,8 +1517,8 @@ msgid ""
 "If one of your Shamans stands just behind your wounded units, she will heal "
 "them each 4 hitpoints at the beginning of the next turn."
 msgstr ""
-"Ha egy sámánnőd közvetlenül a sérült egységeid mögött áll, akkor sebeiket 4 "
-"életerőponttal fogja gyógyítani a következő köröd elején."
+"Ha egy sámánnőd közvetlenül a sérült egységeid mögött áll, akkor 4 "
+"életerőponttal fogja gyógyítani őket a következő köröd elején."
 
 #. [message]: speaker=second_unit
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:552
@@ -1796,8 +1798,7 @@ msgid ""
 "We will miss $unit.name|, but at least he was not one of our experienced "
 "troops!"
 msgstr ""
-"Elveszítjük $unit.name| egységet, de legalább nem egy tapasztalt katonánk "
-"hal meg!"
+"$unit.name| hiányozni fog, de legalább nem egy tapasztalt katonánk hal meg!"
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:934
@@ -1805,8 +1806,7 @@ msgid ""
 "We will miss $unit.name|, but at least she was not one of our experienced "
 "troops!"
 msgstr ""
-"Elveszítjük $unit.name| egységet, de legalább nem egy tapasztalt katonánk "
-"hal meg!"
+"$unit.name| hiányozni fog, de legalább nem egy tapasztalt katonánk hal meg!"
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:951
