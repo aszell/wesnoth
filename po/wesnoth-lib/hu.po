@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-06-03 16:42+0300\n"
-"PO-Revision-Date: 2018-06-12 22:03+0200\n"
+"PO-Revision-Date: 2018-06-16 10:41+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>, 2018.\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #. [terrain_type]: id=farmer-fence  # AI-animal-proof fences from first scenario
 #. [terrain_type]: id=fence
@@ -2101,24 +2101,18 @@ msgstr "Verzió"
 
 #. [toggle_button]: id=sort_1
 #: data/gui/widget/addon_list.cfg:107
-#, fuzzy
-#| msgid "Author:"
 msgid "Author"
-msgstr "Szerző:"
+msgstr "Szerző"
 
 #. [toggle_button]: id=sort_2
 #: data/gui/widget/addon_list.cfg:121
-#, fuzzy
-#| msgid "Size:"
 msgid "Size"
-msgstr "Méret:"
+msgstr "Méret"
 
 #. [toggle_button]: id=sort_3
 #: data/gui/widget/addon_list.cfg:135
-#, fuzzy
-#| msgid "Downloads:"
 msgid "Downloads"
-msgstr "Letöltések:"
+msgstr "Letöltések"
 
 #. [toggle_button]: id=sort_4
 #. [toggle_button]: id=sort_0
@@ -2278,7 +2272,7 @@ msgstr ""
 #. [label]: id=version_string
 #: data/gui/window/addon_manager.cfg:120
 msgid "Version:"
-msgstr "Verzió: "
+msgstr "Verzió:"
 
 #. [scroll_label]: id=description
 #: data/gui/window/addon_manager.cfg:160
@@ -2300,10 +2294,8 @@ msgstr "Típus:"
 
 #. [label]
 #: data/gui/window/addon_manager.cfg:344
-#, fuzzy
-#| msgid "date^First uploaded:"
 msgid "date^Uploaded:"
-msgstr "Először feltöltve:"
+msgstr "Feltöltve:"
 
 #. [label]
 #: data/gui/window/addon_manager.cfg:377
@@ -2312,10 +2304,8 @@ msgstr "Állapot:"
 
 #. [label]
 #: data/gui/window/addon_manager.cfg:407
-#, fuzzy
-#| msgid "date^Last updated:"
 msgid "date^Updated:"
-msgstr "Utoljára frissítve:"
+msgstr "Frissítve:"
 
 #. [label]
 #: data/gui/window/addon_manager.cfg:437
@@ -2765,10 +2755,8 @@ msgstr "Maszk"
 
 #. [grid]
 #: data/gui/window/custom_tod.cfg:287
-#, fuzzy
-#| msgid "Sound"
 msgid "Sound:"
-msgstr "Hang"
+msgstr "Hang:"
 
 #. [label]
 #: data/gui/window/custom_tod.cfg:316
@@ -6377,13 +6365,11 @@ msgstr "Szint betöltése"
 
 #: src/gui/dialogs/loading_screen.cpp:59
 msgid "Initializing scripting engine"
-msgstr ""
+msgstr "Szkriptmotor inicializálása"
 
 #: src/gui/dialogs/loading_screen.cpp:60
-#, fuzzy
-#| msgid "Enable planning mode on start"
 msgid "Initializing planning mode"
-msgstr "Lépéstervező bekapcsolása kezdéskor"
+msgstr "Lépéstervező inicializálása"
 
 #: src/gui/dialogs/loading_screen.cpp:61
 msgid "Reading unit files"
@@ -6394,10 +6380,8 @@ msgid "Loading units"
 msgstr "Egységek betöltése"
 
 #: src/gui/dialogs/loading_screen.cpp:63
-#, fuzzy
-#| msgid "Uninstall Add-ons"
 msgid "Searching for installed add-ons"
-msgstr "Kiegészítések eltávolítása"
+msgstr "Telepített kiegészítések keresése"
 
 #: src/gui/dialogs/loading_screen.cpp:64
 msgid "Starting game"
@@ -6405,11 +6389,9 @@ msgstr "Játék indítása"
 
 #: src/gui/dialogs/loading_screen.cpp:65
 msgid "Verifying cache"
-msgstr ""
+msgstr "Gyorsítótár ellenőrzése"
 
 #: src/gui/dialogs/loading_screen.cpp:66
-#, fuzzy
-#| msgid "Connect to Server"
 msgid "Connecting to server"
 msgstr "Csatlakozás a kiszolgálóhoz"
 
