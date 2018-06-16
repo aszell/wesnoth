@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: hu-tutorial\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-06-03 13:43 UTC\n"
-"PO-Revision-Date: 2018-06-16 08:12+0200\n"
+"PO-Revision-Date: 2018-06-16 11:37+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>, 2018.\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -162,11 +162,11 @@ msgid ""
 "undo a move if you move to the wrong place.)"
 msgstr ""
 "Ha kiválasztod az egyik egységet vagy az egeret fölé viszed (ebben az "
-"esetben Konradot), , világosabban kiemeltek a mezők, amikre léphetsz. Minden "
+"esetben Konradot), világosabban kiemeltek a mezők, amikre léphetsz. Minden "
 "egységnek bizonyos számú <i>lépéspontja</i> van, ez határozza meg, hány "
 "mezőt haladhat körönként. Sík terepen általában egy lépéspontba kerül egy "
 "lépés. Ha lépni szeretnél, egyszerűen kattints a célmezőre. (Ha rossz helyre "
-"kattintanál, visszavonni az <b>u</b>(undo) gombbal tudod.)"
+"kattintanál, visszavonni az <b>u</b> (undo) gombbal tudod.)"
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:218
@@ -183,7 +183,7 @@ msgstr ""
 "egységnek bizonyos számú <i>lépéspontja</i> van, ez határozza meg, hány "
 "mezőt haladhat körönként. Sík terepen általában egy lépéspontba kerül egy "
 "lépés. Ha lépni szeretnél, egyszerűen kattints a célmezőre. (Ha rossz helyre "
-"kattintanál, visszavonni az <b>u</b>(undo) gombbal tudod.)"
+"kattintanál, visszavonni az <b>u</b> (undo) gombbal tudod.)"
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:229
