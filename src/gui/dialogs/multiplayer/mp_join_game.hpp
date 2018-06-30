@@ -31,6 +31,7 @@ class tree_view_node;
 
 namespace dialogs
 {
+class faction_select;
 
 class mp_join_game : public modal_dialog, private plugin_executor
 {
@@ -51,6 +52,9 @@ private:
 
 	/** Inherited from modal_dialog. */
 	virtual void post_show(window& window) override;
+
+	/** @returns false if an error ocurred. */
+	bool show_flg_select(int side_num);
 
 	void generate_side_list(window& window);
 
@@ -76,6 +80,10 @@ private:
 	std::map<std::string, tree_view_node*> team_tree_map_;
 
 	std::unique_ptr<player_list_helper> player_list_;
+
+	gui2::dialogs::faction_select* open_flg_dialog_;
+
+	std::size_t flg_button_callback_timer_id_;
 };
 
 } // namespace dialogs

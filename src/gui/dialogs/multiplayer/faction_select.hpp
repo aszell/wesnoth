@@ -32,6 +32,9 @@ public:
 
 	DEFINE_SIMPLE_EXECUTE_WRAPPER(faction_select)
 
+	void cancel();
+	
+	int get_side_num() const { return side_; }
 private:
 	ng::flg_manager& flg_manager_;
 
@@ -43,6 +46,7 @@ private:
 
 	const int last_faction_, last_leader_, last_gender_;
 
+	gui2::window* w_;
 	/** Inherited from modal_dialog, implemented by REGISTER_DIALOG. */
 	virtual const std::string& window_id() const override;
 
@@ -56,6 +60,8 @@ private:
 	void on_faction_select(window& window);
 
 	void on_leader_select(window& window);
+
+	void profile_button_callback(window& window);
 
 	void on_gender_select(window& window);
 

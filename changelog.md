@@ -1,20 +1,47 @@
 ## Version 1.14.3+dev
+ ### Add-ons server
+   * Made it so plain-text .po catalogues in add-ons are detected and added to
+     the list of translations for them.
  ### Campaigns
+   * Dead Water:
+     * In 'Tirigaz', take the situation into account of orcs being killed either
+       first or by undead.
    * Eastern Invasion:
      * Fixed missing prisoners and loss of recallable units in 'Captured'.
- ### User interface
-   * Improved the layout of the Statistics dialog.
-   * Allow changing dropdown menu selections with the scrollwheel (FR #3251).
+   * Under the Burning Suns:
+     * S11: added custom graphics for the citadel.
+     * S12: clarified the alien bodies' weaknesses.
+     * Various visual improvements.
+ ### Editor
+   * Fixed saving a map as a scenario not enabling scenario editor tools.
  ### Graphics
    * Tweaked the Ruffian's attack animation timing.
    * New attack animation for the Peasant.
  ### Language and i18n
-   * Updated translations: Slovak
+   * Updated translations: French, German, Slovak
+ ### Multiplayer server
+   * Fixed lobby and whisper messages not having a maximum length.
+ ### User interface
+   * Improved the layout of the Statistics dialog.
+   * Allow changing dropdown menu selections with the scrollwheel (FR #3251).
+   * Fixed the unit preview pane not showing the default race icon when detailing
+     a single unit's stats.
+   * Sort units secondarily by XP in the unit list dialog.
+   * Limited chatbox input to 256 characters.
+ ### WML engine
+   * Fixed errors about WESNOTH_VERSION not being defined when trying to load
+     add-ons that have preprocessor errors (issues #1924, #1634).
  ### Miscellaneous and bug fixes
    * Added an advanced preference to enable experimental PRNG combat.
+   * Linux builds now enable security hardening by default.
    * Fixed MP admins being unable to observe private games.
    * Fixed MP faction, leader, and leader gender changes persisting even if the
      selection dialog is dismissed.
+   * Fixed an issue with positioned sound sources ignoring the volume set in
+     Preferences after going off the audible radius and back (issue #3280).
+   * Fixed wmllint choking on gzipped binary files (e.g. gzipped tarballs).
+   * Fixed wmllint crashing on inexistent paths provided in the command line
+     (issue #3286).
 
 ## Version 1.14.3
  ### AI

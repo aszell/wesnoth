@@ -484,9 +484,10 @@ for env in [test_env, client_env, env]:
 # #
 # Add options to provide more hardened executables
 # osx doesn't seem to support RELRO
+# windows' tdm-gcc doesn't seem to provide good support for the hardening options in general
 # #
 
-        if env['harden']:
+        if env['harden'] and env["PLATFORM"] != 'win32':
             env.AppendUnique(CCFLAGS = ["-fPIE", "-fstack-protector-strong"])
             env.AppendUnique(CPPDEFINES = ["_FORTIFY_SOURCE=2"])
 
@@ -761,11 +762,11 @@ if 'dist' in COMMAND_LINE_TARGETS:    # Speedup, the manifest is expensive
     def dist_manifest():
         "Get an argument list suitable for passing to a distribution archiver."
         # Start by getting a list of all files under version control
-        lst = subprocess.check_output("git ls-files | grep -v 'data\/test\/.*' | awk '/^[^?]/ {print $4;}'", shell=True).split()
+        lst = subprocess.check_output("git ls-files", shell=True).splitlines()
         lst = filter(os.path.isfile, lst)
         return lst
     dist_tarball = env.Tar('wesnoth-${version}.tar.bz2', [])
-    open("dist.manifest", "w").write("\n".join(dist_manifest() + ["src/revision.hpp"]))
+    open("dist.manifest", "w").write("\n".join(dist_manifest() + ["src/revision.h"]))
     env.Append(TARFLAGS='-j -T dist.manifest --transform "s,^,wesnoth-$version/,"',
                TARCOMSTR="Making distribution tarball...")
     env.AlwaysBuild(dist_tarball)

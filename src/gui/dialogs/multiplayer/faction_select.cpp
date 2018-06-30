@@ -26,11 +26,15 @@
 #include "gui/widgets/settings.hpp"
 #include "gui/widgets/image.hpp"
 #include "gui/widgets/label.hpp"
+#include "gui/widgets/button.hpp"
 #include "gui/widgets/menu_button.hpp"
 #include "gui/widgets/toggle_button.hpp"
 #include "gui/widgets/window.hpp"
 #include "formatter.hpp"
+#include "game_config_manager.hpp"
 #include "gettext.hpp"
+#include "help/help.hpp"
+#include "preferences/game.hpp"	// for encountered_units
 #include "units/types.hpp"
 
 #include "utils/functional.hpp"
@@ -49,11 +53,19 @@ faction_select::faction_select(ng::flg_manager& flg_manager, const std::string& 
 	, last_faction_(flg_manager.current_faction_index())
 	, last_leader_(flg_manager.current_leader_index())
 	, last_gender_(flg_manager.current_gender_index())
+	, w_(nullptr)
 {
 }
 
+void faction_select::cancel()
+{
+	if(w_) {
+		w_->set_retval(retval::CANCEL);
+	}
+}
 void faction_select::pre_show(window& window)
 {
+	w_ = &window;
 	find_widget<label>(&window, "starting_pos", false).set_label(std::to_string(side_));
 
 	//
@@ -77,6 +89,10 @@ void faction_select::pre_show(window& window)
 	//
 	connect_signal_notify_modified(find_widget<menu_button>(&window, "leader_menu", false),
 		std::bind(&faction_select::on_leader_select, this, std::ref(window)));
+
+	// Leader's profile button
+	find_widget<button>(&window, "type_profile", false).connect_click_handler(
+		std::bind(&faction_select::profile_button_callback, this, std::ref(window)));
 
 	//
 	// Set up faction list
@@ -195,6 +211,22 @@ void faction_select::on_leader_select(window& window)
 	});
 
 	update_leader_image(window);
+
+	// Disable the profile button if leader_type is dash or "Random"
+	button& profile_button = find_widget<button>(&window, "type_profile", false);
+	const std::string& leader_type = find_widget<menu_button>(&window, "leader_menu", false).get_value_string();
+	profile_button.set_active(unit_types.find(leader_type) != nullptr);
+}
+
+void faction_select::profile_button_callback(window& window)
+{
+	const std::string& leader_type = find_widget<menu_button>(&window, "leader_menu", false).get_value_string();
+	const unit_type* ut = unit_types.find(leader_type);
+	if(ut != nullptr) {
+		preferences::encountered_units().insert(ut->id());
+		help::help_manager help_manager(&game_config_manager::get()->game_config());
+		help::show_unit_description(*ut);
+	}
 }
 
 void faction_select::on_gender_select(window& window)
