@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-05-26 12:04 UTC\n"
-"PO-Revision-Date: 2018-07-01 19:36+0200\n"
+"PO-Revision-Date: 2018-07-08 23:23+0200\n"
 "Last-Translator: Gábor Udvari <gabor.udvari@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -1232,8 +1232,8 @@ msgid ""
 "Wait! I recognize that magic! Dacyn, have you come to surrender to me? Or "
 "perhaps you wish to finish the duel we started so long ago?"
 msgstr ""
-"Várjunk csak! Az a mágia ismerős! Dacyn, azért jöttél, hogy feladd "
-"magad? Vagy be kívánod fejezni a párbajt, amit oly rég kezdtünk?"
+"Várjunk csak! Az a mágia ismerős! Dacyn, azért jöttél, hogy feladd magad? "
+"Vagy be kívánod fejezni a párbajt, amit oly rég kezdtünk?"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/04c_Mal-Ravanals_Capital.cfg:491
@@ -1276,7 +1276,7 @@ msgstr "Aha, szóval úgy döntöttél, harcolsz velem."
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/04c_Mal-Ravanals_Capital.cfg:527
 msgid "I will atone for my failure thirty three years ago."
-msgstr ""
+msgstr "Jóváteszem harminchárom évvel ezelőtti hibám."
 
 #. [message]: speaker=Mal-Ravanal
 #: data/campaigns/Eastern_Invasion/scenarios/04c_Mal-Ravanals_Capital.cfg:540
@@ -1454,19 +1454,12 @@ msgstr ""
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/05_Northern_Outpost.cfg:254
-#, fuzzy
-#| msgid ""
-#| "It seems the undead have caught up with us! We will have to kill them, "
-#| "too, if we want these villages to be safe. Well, I will see you when you "
-#| "defeat the outlaws and undead!"
 msgid ""
 "It seems the undead have caught up with us! We will have to kill them too if "
 "we want the villagers to be safe. Well, I will begin casting the spell."
 msgstr ""
-"Úgy tűnik az élőholtak is megtaláltak! Velük is meg kell küzdenünk, ha "
-"biztonságban akarjuk tudni ezeket a falvakat. Nem lesz könnyű feladat, "
-"remélem találkozunk, miután legyőztétek a törvényen kívülieket és az "
-"élőholtakat!"
+"Úgy tűnik, az élőholtak is utolértek! Velük is meg kell küzdenünk, ha "
+"biztonságban akarjuk tudni ezeket a falvakat. Nos, megkezdem a varázslatot."
 
 #. [unit]: type=Assassin, id=Shodrano
 #: data/campaigns/Eastern_Invasion/scenarios/05_Northern_Outpost.cfg:319
@@ -1484,11 +1477,8 @@ msgstr ""
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/05_Northern_Outpost.cfg:332
-#, fuzzy
-#| msgid ""
-#| "That’s the bandit leader! Kill him, and we will have fulfilled our duty!"
 msgid "That’s the bandit leader! Kill him!"
-msgstr "Ő a banditák vezére! Öljétek meg, és teljesítettük a feladatunkat!"
+msgstr "Ő a banditák vezére! Öljétek meg!"
 
 #. [message]: speaker=Shodrano
 #: data/campaigns/Eastern_Invasion/scenarios/05_Northern_Outpost.cfg:346
@@ -1522,16 +1512,12 @@ msgstr ""
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/05_Northern_Outpost.cfg:420
-#, fuzzy
-#| msgid ""
-#| "Good work! Now, we should move onward, north. Tell the villagers to pack "
-#| "their belongings and follow us."
 msgid ""
 "Good! Now, we must move onward, north. Tell the villagers to pack their "
 "belongings and head west."
 msgstr ""
 "Szép munka! Most pedig induljunk tovább északra. Mondjátok meg a "
-"falusiaknak, hogy pakoljanak fel a szekerekre, és kövessenek minket!"
+"falusiaknak, hogy pakoljanak fel a szekerekre, és tartsanak nyugatra!"
 
 #. [unit]: id=Owaec, type=$stored_Owaec.type
 #: data/campaigns/Eastern_Invasion/scenarios/05_Northern_Outpost.cfg:435
@@ -1574,21 +1560,11 @@ msgstr "Mal-Arnai"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/06_Two_Paths.cfg:145
-#, fuzzy
-#| msgid "Look! The road splits here. Which way shall we go?"
 msgid "It looks like the road splits here. Which way shall we go?"
-msgstr "Nézzétek! Az út itt kettéválik. Merre menjünk?"
+msgstr "Úgy látszik, az út itt kettéválik. Merre menjünk?"
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/06_Two_Paths.cfg:150
-#, fuzzy
-#| msgid ""
-#| "We’re in the land of the Clans now; I know it well. The road north leads "
-#| "directly to the Great River; across it lies the orcs’ home country in the "
-#| "Northlands. The westward road will keep us inside the realm of Wesnoth, "
-#| "for a time, before we reach another crossing point north of Glyn’s "
-#| "Forest. If we travel along that path, we will not have to fight orcs "
-#| "immediately."
 msgid ""
 "We’re in the land of the Clans now; I know it well. The road north leads "
 "directly to the Great River; across it lies the orcs’ home country in the "
@@ -1599,8 +1575,8 @@ msgstr ""
 "A Klánok földjén vagyunk; jól ismerem ezt a vidéket. Az északi út egyenesen "
 "a Nagy-folyóhoz vezet; azon túl, Északföldén, van az orkok hazája. A nyugati "
 "út még egy ideig Wesnoth területén halad egészen a Glyn-erdejétől északra "
-"fekvő útkereszteződésig. Ha arra megyünk, nem kell azonnal szembeszállnunk "
-"az orkokkal."
+"fekvő folyami átkelőig. Ha nyugatra megyünk, nem kell azonnal "
+"szembeszállnunk az orkokkal."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/06_Two_Paths.cfg:155
@@ -1608,6 +1584,9 @@ msgid ""
 "We should probably go north to the orcish lands as quickly as possible. The "
 "longer we tarry in Wesnoth, the more undead we will have to face."
 msgstr ""
+"Valószínűleg amilyen gyorsan csak lehet, északra kell mennünk az ork "
+"földekre Minél többet késlekedünk Wesnothban, annál több élőholttal kell "
+"megküzdenünk."
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/06_Two_Paths.cfg:160
@@ -2389,10 +2368,6 @@ msgstr "Fogságban"
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:18
-#, fuzzy
-#| msgid ""
-#| "After reaching what they believed was safety, Gweddry and his men had "
-#| "been captured by northern orcs."
 msgid ""
 "After reaching what they believed was safety, Gweddry and his men had been "
 "captured by northern orcs."
@@ -2407,6 +2382,8 @@ msgid ""
 "Nak, while the rest were thrown into the orcish prisons to await their "
 "turn..."
 msgstr ""
+"Gweddry, Dacyn és Owaec azonnal az ork király, Dra-Nak elé került, míg a "
+"többiek az ork börtönökben vártak a sorukra."
 
 #. [side]: type=Orcish Warlord, id=King Dra-Nak
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:42
@@ -2415,36 +2392,36 @@ msgstr "Dra-Nak király"
 
 #. [side]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:80
-#, fuzzy
-#| msgid "Prison"
 msgid "Prisoners"
-msgstr "Börtön"
+msgstr "Rabok"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:414
 msgid ""
 "Several of Gweddry's men find themselves locked away in a crude orcish cell."
-msgstr ""
+msgstr "Gweddry számos embere találja magát egy rideg ork börtöncellába zárva."
 
 #. [message]: role=escapee sidekick 1
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:420
 msgid "We've got to get out of here!"
-msgstr ""
+msgstr "Ki kell jutnunk innen!"
 
 #. [message]: role=escapee sidekick 2
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:425
 msgid "I'm sure the commander will come and save us!"
 msgstr ""
+"Biztos vagyok benne, hogy a parancsnok értünk jön és megment bennünket!"
 
 #. [message]: role=escapee sidekick 1
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:430
 msgid "What? Didn't you see those huge trolls drag them away? It's hopeless!"
 msgstr ""
+"Miii? Nem láttad, hogy azok a óriási trollok elhurcolták őket? Reménytelen!"
 
 #. [message]: role=escapee leader
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:435
 msgid "Be quiet, you two! There's something back here..."
-msgstr ""
+msgstr "Csendesebben, ti ketten! Van itt hátul valami..."
 
 #. [message]: role=escapee leader
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:442
@@ -2452,60 +2429,59 @@ msgid ""
 "Look! There's a gap in the wall over here. I think I can slip through if I "
 "clear away some of these rocks..."
 msgstr ""
+"Nézzétek! Van itt egy rés a falban. Szerintem átférek, ha még egy pár követ "
+"eltakarítok az útból."
 
 #. [message]: role=escapee leader
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:478
 msgid "Come on! This way!"
-msgstr ""
+msgstr "Gyertek! Erre!"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:486
 msgid "Find Gweddry, Dacyn and Owaec"
-msgstr ""
+msgstr "Találd meg Gweddry-t, Dacynt és Owaecet"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:490
-#, fuzzy
-#| msgid "Well, where are the prisoners?"
 msgid "Release the other prisoners"
-msgstr "Tehát, hol vannak a rabok?"
+msgstr "Kiszabadítod a többi rabot"
 
 #. [objective]: condition=lose
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:494
-#, fuzzy
-#| msgid "Death of Volas"
 msgid "Death of the escapees"
-msgstr "Volas elesik"
+msgstr "A szökevények meghalnak"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:511
 msgid "The door won't open from this side."
-msgstr ""
+msgstr "Az ajtó nem nyílik erről az oldalról"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:529
 msgid "There's strange noises coming from those pits. I don't like this."
-msgstr ""
+msgstr "Furcsa zajok hallatszanak azokból a gödrökből. Ez nem tetszik."
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:540
 msgid "Neep! Neep!"
-msgstr ""
+msgstr "Cííp! Cííp!"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:571
 msgid "Ack! Get away from me!"
-msgstr ""
+msgstr "Aú! Menj innét!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:586
 msgid "This tunnel seems to go deeper into the caves. We can't go that way."
 msgstr ""
+"Ez az alagút mintha mélyebbre vezetne a barlangokba. Nem mehetünk arra."
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:601
 msgid "There's a pile of orcish gear and trash here. The stench is wretched."
-msgstr ""
+msgstr "Itt egy halom ork felszerelés és egy rakás szemét. Orrfacsaró a bűz."
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:627
@@ -2513,36 +2489,38 @@ msgid ""
 "The other prison cells should be to the north of that chamber. If we can get "
 "past those trolls we could free our comrades."
 msgstr ""
+"A többi börtöncella attól a teremtől északra lehet. Ha a trollokon "
+"túljutunk, kiszabadíthatjuk bajtársainkat."
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:635
 msgid "But there's too many of them!"
-msgstr ""
+msgstr "De túl sokan vannak!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:640
 msgid "Hmm... I have an idea."
-msgstr ""
+msgstr "Hmm... Van egy ötletem."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:655
 msgid "After a while..."
-msgstr ""
+msgstr "Kicsit később..."
 
 #. [message]: id=$unit.id
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:686
 msgid "So, how do I look?"
-msgstr ""
+msgstr "No, hogy nézek ki?"
 
 #. [message]: id=$unit.id
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:691
 msgid "I'll try to slip past the trolls. You wait here."
-msgstr ""
+msgstr "Megpróbálok elsurranni a trollok mellett. Itt várjatok."
 
 #. [message]: speaker=King Dra-Nak
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:728
 msgid "Ha-ha! These humans will make excellent slaves in my mines!"
-msgstr ""
+msgstr "Ha-ha! Ezekből az emberek kitűnő rabszolgák lesznek a bányáimban!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:733
@@ -2550,51 +2528,53 @@ msgid ""
 "Opening the cells should confuse the guards for a moment. But I better not "
 "get too close to them..."
 msgstr ""
+"A cellák kinyitása egy pillanatra összezavarhatja az őröket. De jobb, ha nem "
+"kerülök túl közel hozzájuk..."
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:801
 msgid "Eh?"
-msgstr ""
+msgstr "He?"
 
 #. [message]: speaker=King Dra-Nak
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:813
 msgid "Hey! Who are you? Get her!"
-msgstr ""
+msgstr "Hé! Ki vagy te? Kapjátok el!"
 
 #. [message]: speaker=King Dra-Nak
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:820
 msgid "Hey! Who are you? Get him!"
-msgstr ""
+msgstr "Hé! Ki vagy? Kapjátok el!"
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:827
 msgid "Uh oh!"
-msgstr ""
+msgstr "O-óóó."
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:858
 msgid "Here's one of the prison cells! Let me open it..."
-msgstr ""
+msgstr "Itt az egyik tömlöc! Hadd nyissam ki..."
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:917
 msgid "Finally, we're rescued!"
-msgstr ""
+msgstr "Végre, megmenekültünk!"
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:939
 msgid "At last!"
-msgstr ""
+msgstr "Végre!"
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:961
 msgid "Now let's get out of here!"
-msgstr ""
+msgstr "No tűnjünk innen!"
 
 #. [message]: speaker=King Dra-Nak
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:974
 msgid "What? Who's there? Get them!"
-msgstr ""
+msgstr "Mi? Ki az ott! Kapjátok el őket!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:1012
@@ -2607,6 +2587,8 @@ msgid ""
 "The eastern entrance is teeming with orcs. We have to find another way to "
 "exit to the west!"
 msgstr ""
+"A keleti bejárat körül nyüzsögnek az orkok. Találnunk kell egy másik "
+"kijáratot nyugatra!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:1029
@@ -2614,6 +2596,7 @@ msgid ""
 "We have to get our gold back first! It must have been taken to their "
 "treasury."
 msgstr ""
+"Előbb vissza kell szerezzük az aranyunkat! Biztosan a kincstárukba vitték."
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:1043
