@@ -10,17 +10,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-1.14\n"
-"Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-05-26 12:04 UTC\n"
-"PO-Revision-Date: 2018-05-18 10:19+0900\n"
-"Last-Translator: qrqiuren <qrqiuren@users.noreply.github.com>\n"
+"Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2018-07-08 08:51 UTC\n"
+"PO-Revision-Date: 2018-07-08 21:18+0800\n"
+"Last-Translator: CloudiDust <cloudidust@gmail.com>\n"
 "Language-Team: Wesnoth Simplified Chinese Team\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #. [generic_multiplayer]: id=user_map
 #: data/multiplayer/_main.cfg:8
@@ -483,7 +483,7 @@ msgstr ""
 #: data/multiplayer/scenarios/2p_Fallenstar_Lake.cfg:35
 #: data/multiplayer/scenarios/2p_Ruined_Passage.cfg:40
 #: data/multiplayer/scenarios/2p_Silverhead_Crossing.cfg:32
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:60
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:103
 #: data/multiplayer/scenarios/3p_Alirok_Marsh.cfg:31
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:31
 #: data/multiplayer/scenarios/3p_Morituri.cfg:31
@@ -517,7 +517,7 @@ msgstr "东军"
 #: data/multiplayer/scenarios/2p_Fallenstar_Lake.cfg:24
 #: data/multiplayer/scenarios/2p_Ruined_Passage.cfg:24
 #: data/multiplayer/scenarios/2p_Silverhead_Crossing.cfg:21
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:72
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:115
 #: data/multiplayer/scenarios/3p_Alirok_Marsh.cfg:42
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:42
 #: data/multiplayer/scenarios/3p_Morituri.cfg:42
@@ -774,7 +774,7 @@ msgid ""
 "allegiance with the Dragon, were slaughtered. Knowing that these Drakes were "
 "innocent, Rah Ihn Mar came to Ruaskkolin Lake to hunt down and slay "
 "Terowydlithrol, who had been seen entering the region but a day ago. Burning "
-"for vengeance, Rah Ihn Mar began the hunt....."
+"for vengeance, Rah Ihn Mar began the hunt..."
 msgstr ""
 "拉·伊亨·玛，来自“燃烧丘陵”的斗士，来到了拉斯科库林湖区域以追杀被精灵们称为“龙"
 "之克星”的精灵英雄特洛伊德利斯洛尔。据说特洛伊德利斯洛尔杀死了一条威胁精灵村庄"
@@ -882,9 +882,9 @@ msgstr "塔拉埃尔•林多克"
 #: data/multiplayer/scenarios/2p_Caves_of_the_Basilisk.cfg:204
 msgid ""
 "General Talael Ryndoc came to this place to fight a duel with the Grand "
-"Marshal Aethec Corryn, but the two men never found one another. "
+"Marshal Aethec Corryn, but the two men never found one another."
 msgstr ""
-"塔拉埃尔•林多克将军来到此地与大元帅艾西克•科林决斗，但是这两人再也没有找到过"
+"塔拉埃尔•林多克将军来到此地与艾西克•科林大元帅决斗，但是这两人再也没有找到过"
 "对方。"
 
 #. [side]
@@ -900,9 +900,9 @@ msgid ""
 "inform the court that you were too much of a coward to attend our duel! Your "
 "disgrace shall be more agonizing than the death I’d have given you!”\n"
 "\n"
-"Perhaps he should not have shouted quite so loudly.... "
+"Perhaps he should not have shouted quite so loudly..."
 msgstr ""
-"大元帅艾西克•科林的遗言是：“塔拉埃尔•林多克！我正翻遍每一寸土地找你！我应该回"
+"艾西克•科林大元帅的遗言是：“塔拉埃尔•林多克！我正翻遍每一寸土地找你！我应该回"
 "到哈德里克大厅，告诉宫廷你是个不敢参加决斗的懦夫！那样你的耻辱比之被我在此杀"
 "死，会更让你痛苦万分！”\n"
 "\n"
@@ -1656,8 +1656,8 @@ msgstr "2p — 千刺卫戍军"
 
 #. [multiplayer]: id=multiplayer_thousand_stings_garrison
 #: data/multiplayer/scenarios/2p_Thousand_Stings_Garrison.cfg:39
-msgid "A strange place. Designed by Doc Paterson"
-msgstr "一个奇怪的地方。此地图由多克·帕特森设计"
+msgid "A strange place. Designed by Doc Paterson."
+msgstr "一个奇怪的地方。由多克·帕特森设计。"
 
 #. [side]
 #: data/multiplayer/scenarios/2p_Thousand_Stings_Garrison.cfg:93
@@ -1748,14 +1748,14 @@ msgstr ""
 "之间低语。你们的首领们对身周的黑暗不以为意，还是选定这地方作为冲突的场所。"
 
 #. [note]
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:118
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:157
 msgid ""
 "The map contains mausoleums and campfires that shift the time of the day by "
 "one step toward night and day, respectively."
 msgstr "此地图包含陵墓和篝火，会分别将时段往夜间和昼间移动一步。"
 
 #. [note]
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:121
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:160
 msgid ""
 "The tile in the centre, which contains the casket of the titular "
 "necromancer, is always covered in pitch black fog."
@@ -1778,19 +1778,19 @@ msgstr "这个极其重要的运输通道在韦诺的诸多最伟大的战斗中
 msgid "3p — Alirok Marsh"
 msgstr "3p — 埃尔洛克沼泽"
 
-#. [multiplayer]: id=multiplayer_Alirok_Marsh
-#. [multiplayer]: id=multiplayer_Island_of_the_Horatii
-#. [multiplayer]: id=multiplayer_3p_Morituri
-#. [multiplayer]: id=multiplayer_Blue_Water_Province
-#. [multiplayer]: id=multiplayer_Castle_Hopping_Isle
-#. [multiplayer]: id=multiplayer_Clash
-#. [multiplayer]: id=multiplayer_4p_Hamlets
-#. [multiplayer]: id=multiplayer_Loris_River
-#. [multiplayer]: id=multiplayer_4p_Morituri
-#. [multiplayer]: id=multiplayer_Ruins_of_Terra-Dwelve
-#. [multiplayer]: id=multiplayer_4p_Underworld
 #. [multiplayer]: id=multiplayer_8p_Mokena_Prairie
 #. [multiplayer]: id=multiplayer_8p_Morituri
+#. [multiplayer]: id=multiplayer_Blue_Water_Province
+#. [multiplayer]: id=multiplayer_3p_Morituri
+#. [multiplayer]: id=multiplayer_Clash
+#. [multiplayer]: id=multiplayer_Castle_Hopping_Isle
+#. [multiplayer]: id=multiplayer_Island_of_the_Horatii
+#. [multiplayer]: id=multiplayer_Ruins_of_Terra-Dwelve
+#. [multiplayer]: id=multiplayer_4p_Morituri
+#. [multiplayer]: id=multiplayer_Loris_River
+#. [multiplayer]: id=multiplayer_Alirok_Marsh
+#. [multiplayer]: id=multiplayer_4p_Hamlets
+#. [multiplayer]: id=multiplayer_4p_Underworld
 #: data/multiplayer/scenarios/3p_Alirok_Marsh.cfg:6
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:6
 #: data/multiplayer/scenarios/3p_Morituri.cfg:6
@@ -2003,8 +2003,8 @@ msgstr "东北"
 msgid "4p — King of the Hill"
 msgstr "4p — 山丘之王"
 
-#. [multiplayer]: id=multiplayer_King_of_the_Hill
 #. [multiplayer]: id=multiplayer_Siege_Castles
+#. [multiplayer]: id=multiplayer_King_of_the_Hill
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:9
 #: data/multiplayer/scenarios/4p_Siege_Castles.cfg:9
 msgid " Recommended setting of 2 gold per village and 150 starting gold."

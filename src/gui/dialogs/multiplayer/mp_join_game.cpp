@@ -74,8 +74,7 @@ mp_join_game::mp_join_game(saved_game& state, mp::lobby_info& lobby_info, wesnot
 	, observe_game_(observe_game)
 	, stop_updates_(false)
 	, player_list_(nullptr)
-	, open_flg_dialog_(nullptr)
-	, flg_button_callback_timer_id_(0)
+	, flg_dialog_(nullptr)
 {
 	set_show_even_without_video(true);
 }
@@ -85,10 +84,6 @@ mp_join_game::~mp_join_game()
 	if(update_timer_ != 0) {
 		remove_timer(update_timer_);
 		update_timer_ = 0;
-	}
-	if(flg_button_callback_timer_id_ != 0) {
-		remove_timer(flg_button_callback_timer_id_);
-		flg_button_callback_timer_id_ = 0;
 	}
 }
 
@@ -285,6 +280,7 @@ bool mp_join_game::show_flg_select(int side_num)
 		if(!side_choice["allow_changes"].to_bool(true)) {
 			return true;
 		}
+
 		const config& era = level_.child("era");
 		if(!era) {
 			ERR_MP << "no era information\n";
@@ -313,16 +309,15 @@ bool mp_join_game::show_flg_select(int side_num)
 		const bool saved_game = level_.child("multiplayer")["savegame"].to_bool();
 
 		ng::flg_manager flg(era_factions, side_choice, lock_settings, use_map_settings, saved_game);
-		gui2::dialogs::faction_select dlg(flg, color, side_num);
 
 		{
-			open_flg_dialog_ = &dlg;
-			utils::scope_exit se([this](){ open_flg_dialog_ = nullptr; });
-			dlg.show();
-		}
+			gui2::dialogs::faction_select flg_dialog(flg, color, side_num);
+			flg_dialog_ = &flg_dialog;
+			utils::scope_exit se([this]() { flg_dialog_ = nullptr; });
 
-		if(dlg.get_retval() != gui2::retval::OK) {
-			return true;
+			if(!flg_dialog.show()) {
+				return true;
+			}
 		}
 
 		config faction;
@@ -332,11 +327,12 @@ bool mp_join_game::show_flg_select(int side_num)
 		change["faction"] = flg.current_faction()["id"];
 		change["leader"] = flg.current_leader();
 		change["gender"] = flg.current_gender();
-		//TODO: the host cannot yet handle this and always uses the first side owned by that player.
+		// TODO: the host cannot yet handle this and always uses the first side owned by that player.
 		change["side_num"] = side_num;
 
 		network_connection_.send_data(faction);
 	}
+
 	return true;
 }
 
@@ -452,23 +448,25 @@ void mp_join_game::generate_side_list(window& window)
 		auto* select_leader_button = find_widget<button>(&row_grid, "select_leader", false, false);
 		if(select_leader_button) {
 			if(side["player_id"] == preferences::login() && side["allow_changes"].to_bool(true)) {
-				auto handler = [this, side_num](){
-					if(flg_button_callback_timer_id_ != 0) {
-						remove_timer(flg_button_callback_timer_id_);
-						flg_button_callback_timer_id_ = 0;
-					}
-					if(flg_button_callback_timer_id_ == 0) {
-						auto real_handler = [this, side_num](size_t /*timer_id*/ ) {
-							show_flg_select(side_num);
-							//we cannot remoe the timer here as we are currently executing the timers handler.
-						};
-						//don't call this now but in a seperate callstack since the widget might be recreates while the dialog is open.
-						flg_button_callback_timer_id_ = add_timer(0, real_handler, /*repeat=*/false);
-					}
+				//
+				// Small wrapper function in order to set the handled and halt parameters and prevent
+				// crashes in case the dialog closes and the original button to which the callback was
+				// bound had already been destroyed. The other use of show_flg_select doesn't need these
+				// parameters, so it's easier not to declare them as function arguments.
+				//
+				const auto handler = [this, side_num](bool& handled, bool& halt) {
+					show_flg_select(side_num);
+					// note: this function is called from a std::function object stored in the widget 
+					//       and show_flg_select which internally calls
+					//       show_dialog -> pump -> ... -> network_handler -> ... -> generate_side_list
+					//       might destroy that std::function object while it is executed, this means that
+					//       using the captured variables 'this' and 'side_num' after this will result in
+					//       unexpected behaviour or crashes.
+					handled = halt = true;
 				};
-				connect_signal_mouse_left_click(*select_leader_button, std::bind(handler));
-			}
-			else {
+
+				connect_signal_mouse_left_click(*select_leader_button, std::bind(handler, _3, _4));
+			} else {
 				select_leader_button->set_visible(widget::visibility::hidden);
 			}
 		}
@@ -476,6 +474,15 @@ void mp_join_game::generate_side_list(window& window)
 		if(income_amt == 0) {
 			find_widget<image>(&row_grid, "income_icon", false).set_visible(widget::visibility::invisible);
 			find_widget<label>(&row_grid, "side_income", false).set_visible(widget::visibility::invisible);
+		}
+	}
+}
+
+void mp_join_game::close_faction_select_dialog_if_open()
+{
+	if(flg_dialog_) {
+		if(window* w = flg_dialog_->get_window()) {
+			w->set_retval(retval::CANCEL);
 		}
 	}
 }
@@ -501,20 +508,17 @@ void mp_join_game::network_handler(window& window)
 	}
 
 	if(data["failed"].to_bool()) {
-		if(open_flg_dialog_) {
-			open_flg_dialog_->cancel();
-		}
+		close_faction_select_dialog_if_open();
+
 		window.set_retval(retval::CANCEL);
 	} else if(data.child("start_game")) {
-		if(open_flg_dialog_) {
-			open_flg_dialog_->cancel();
-		}
+		close_faction_select_dialog_if_open();
+
 		level_["started"] = true;
 		window.set_retval(retval::OK);
 	} else if(data.child("leave_game")) {
-		if(open_flg_dialog_) {
-			open_flg_dialog_->cancel();
-		}
+		close_faction_select_dialog_if_open();
+
 		window.set_retval(retval::CANCEL);
 	}
 
@@ -529,10 +533,10 @@ void mp_join_game::network_handler(window& window)
 		if(config& side_to_change = get_scenario().find_child("side", "side", change["side"])) {
 			side_to_change.merge_with(change);
 		}
-		if(open_flg_dialog_ && open_flg_dialog_->get_side_num() == change["side"].to_int()) {
-			open_flg_dialog_->cancel();
-		}
 
+		if(flg_dialog_ && flg_dialog_->get_side_num() == change["side"].to_int()) {
+			close_faction_select_dialog_if_open();
+		}
 	} else if(data.has_child("scenario") || data.has_child("snapshot") || data.child("next_scenario")) {
 		level_ = first_scenario_ ? data : data.child("next_scenario");
 
