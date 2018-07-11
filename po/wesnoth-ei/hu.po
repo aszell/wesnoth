@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-08 23:23+0200\n"
+"PO-Revision-Date: 2018-07-11 21:11+0200\n"
 "Last-Translator: Gábor Udvari <gabor.udvari@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -1590,30 +1590,21 @@ msgstr ""
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/06_Two_Paths.cfg:160
-#, fuzzy
-#| msgid ""
-#| "The orcs are more powerful than you suspect. I doubt the undead have had "
-#| "time to get past us in large enough numbers to make them more dangerous "
-#| "than the orcs."
 msgid ""
 "The orcs are more powerful than you suspect. I doubt the few undead in "
 "Wesnoth can rival the might of the orcish homeland."
 msgstr ""
-"Az orkok erősebbek, mint gondolnád. Kétlem, hogy már annyi élőholt átjutott "
-"volna mellettünk, hogy veszélyesebbé váljanak az orkoknál."
+"Az orkok erősebbek, mint gondolnád. Kétlem, hogy a Wesnothban levő néhány "
+"élőholt veszélyesebb volna az orkok anyaországánál."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/06_Two_Paths.cfg:165
-#, fuzzy
-#| msgid ""
-#| "Either way we will have to fight. Look, the orcs and undead are in a "
-#| "conflict, and block our path!"
 msgid ""
 "Either way we will have to fight. Look, the orcs and undead block our path "
 "ahead!"
 msgstr ""
 "Akárhogy is döntünk, mindenképpen harcolnunk kell majd. Nézzétek, az orkok "
-"és az élőholtak összecsaptak előttünk, és elállják az utat!"
+"és az élőholtak elállják az utat előttünk!"
 
 #. [message]: speaker=Mal-Arnai
 #: data/campaigns/Eastern_Invasion/scenarios/06_Two_Paths.cfg:170
@@ -1680,36 +1671,25 @@ msgstr "Grug"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:104
-#, fuzzy
-#| msgid "Get Gweddry and Owaec across the river"
 msgid "Move Gweddry and Owaec across the river"
 msgstr "Eljuttatod Gweddryt és Owaecet a folyó túlpartjára"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:145
-#, fuzzy
-#| msgid ""
-#| "We have come to the Great River. What should we do? Should we attempt to "
-#| "cross it?"
 msgid ""
 "We have come to the Great River. Should we cross here, or try to find a ford?"
-msgstr "A Nagy Folyónál vagyunk. Mit tegyünk? Megpróbálkozzunk az átkeléssel?"
+msgstr "A Nagy Folyónál vagyunk. Itt keljünk át, vagy keressünk egy gázlót?"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:149
-#, fuzzy
-#| msgid ""
-#| "We must cross this river. The undead are chasing us, and their hordes are "
-#| "much too great for us to defeat. Reinforcements for the undead will "
-#| "arrive soon. We must be across the river before that happens."
 msgid ""
 "We must cross here. The undead are chasing us, and their hordes are much too "
 "great for us to defeat. We've haven't faced even a small part of their force "
 "yet. We need to cross the river before the bulk of their army arrives!"
 msgstr ""
-"Át kell jutnunk a folyón! Az élőholtak a nyomunkban vannak, és túl nagy "
-"erőfölényben ahhoz, hogy legyőzzük őket. Nemsokára megérkezik az erősítésük, "
-"és addigra már a folyó túlsó oldalán kell lennünk."
+"Itt kell átjutnunk! Az élőholtak a nyomunkban vannak, és túl nagy "
+"erőfölényben ahhoz, hogy legyőzzük őket. Még a töredékét sem láttuk a "
+"seregeiknek. Azelőtt kell átkelnünk, hogy a derékhadak megérkeznének!"
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:153
@@ -1743,27 +1723,22 @@ msgstr "Bolond ork! Meghal most!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:169
-#, fuzzy
-#| msgid ""
-#| "If we show ourselves as enemies of the orcs, they may aid us. But I think "
-#| "we should cross the river before trying to convince these ogres to help."
 msgid ""
 "If we show ourselves as enemies of the orcs, they may aid us. But first we "
 "need to cross the river."
 msgstr ""
-"Ha magunkat az orkok ellenségeinek tüntetjük fel, talán segítenek nekünk. Ám "
-"szerintem át kell kelnünk a folyón, mielőtt megpróbálnánk meggyőzni ezeket "
-"az ogrékat. "
+"Ha az orkok ellenségeiként mutatkozunk, talán segítenek nekünk. De előbb át "
+"kell kelnünk a folyón."
 
 #. [message]: speaker=Garnad
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:204
 msgid "We have you now, mortals!"
-msgstr ""
+msgstr "Most megvagytok, halandók!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:208
 msgid "They're closing in on us! We must get moving quickly."
-msgstr ""
+msgstr "Közelednek! Gyorsan mennünk kell."
 
 #. [unit]: type=Lich, id=Mal-Hakralan
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:223
@@ -1776,6 +1751,8 @@ msgid ""
 "I see, this is where the scared dogs ran to. Don't think you can get away "
 "<b>this</b> easily."
 msgstr ""
+"Látom, erre menekülnek a rémült kutyák. Ne gondoljátok, hogy <b>ennyire</b> "
+"könnyen megússzátok."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/07a_The_Crossing.cfg:245
@@ -1828,10 +1805,8 @@ msgstr "Mal-un-Karad"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:78
-#, fuzzy
-#| msgid "Defeat either enemy leader"
 msgid "Defeat the enemy leader"
-msgstr "Legyőzöd bármelyik ellenséges vezért"
+msgstr "Legyőzöd az ellenséges vezért"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:113
@@ -1875,6 +1850,7 @@ msgstr ""
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:134
 msgid "Creatures from the deep, I summon thee to destroy this foe!"
 msgstr ""
+"Mélység lényei, megidézlek benneteket, hogy elpusztítsátok az ellenséget!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:219
@@ -1882,23 +1858,23 @@ msgid ""
 "It seems as if in addition to summoning undead this foul sorcerer has "
 "learned to call up monsters from the deep!"
 msgstr ""
-"Úgy tűnik, ez a delevény amellett, hogy holtakat támaszt fel, megtanulta "
+"Úgy tűnik, ez a delevény amellett, hogy holtakat támaszt fel, megtanulta, "
 "hogyan kell előhívni a szörnyeket a mélységből!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:260
 msgid "I failed my Master..."
-msgstr ""
+msgstr "Elbuktam, Mesterem..."
 
 #. [message]
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:279
 msgid "<i>HISS!</i>"
-msgstr ""
+msgstr "<i>SSSSZ</i>"
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:289
 msgid "The sea creatures are gone!"
-msgstr ""
+msgstr "A tengeri lények eltűntek!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/07b_Undead_Crossing.cfg:298
@@ -1906,6 +1882,8 @@ msgid ""
 "We have no time to lose! Let's get moving quickly before the rest of their "
 "army catches up with us."
 msgstr ""
+"Nincs vesztegetni való időnk! Gyorsan menjünk tovább, mielőtt seregük többi "
+"része utolérne."
 
 #. [scenario]: id=08_Training_the_Ogres
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:4

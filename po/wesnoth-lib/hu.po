@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 04:51-0400\n"
-"PO-Revision-Date: 2018-06-16 10:41+0200\n"
+"PO-Revision-Date: 2018-07-11 02:01+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>, 2018.\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -578,7 +578,7 @@ msgstr "Havas hegyvidék"
 #. [terrain_type]: id=desert_mountains
 #: data/core/terrain.cfg:810
 msgid "Desert Mountains"
-msgstr "Sivatagos hegyvidék"
+msgstr "Sivatagi hegyvidék"
 
 #. [terrain_type]: id=regular_stone_floor
 #: data/core/terrain.cfg:821
