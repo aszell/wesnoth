@@ -7,20 +7,21 @@
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2007-2009, 2010, 2011, 2012, 2014.
 # Farkas János <mail.janos.farkas@gmail.com>, 2014.
 # Széll András <szell.andris@gmail.com>, 2018.
+# Tamás Krutki <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 04:51-0400\n"
-"PO-Revision-Date: 2018-07-11 02:01+0200\n"
-"Last-Translator: Széll András <szell.andris@gmail.com>, 2018.\n"
-"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"PO-Revision-Date: 2018-07-13 23:07+0200\n"
+"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #. [terrain_type]: id=farmer-fence  # AI-animal-proof fences from first scenario
 #. [terrain_type]: id=fence
@@ -2574,7 +2575,7 @@ msgstr "Támadó"
 #. [column]
 #: data/gui/window/attack_predictions.cfg:282
 msgid "Defender"
-msgstr "Védő"
+msgstr "Védekező"
 
 #. [label]
 #: data/gui/window/campaign_dialog.cfg:174
@@ -2605,7 +2606,7 @@ msgstr ""
 #: data/gui/window/campaign_dialog.cfg:276
 #: src/gui/dialogs/multiplayer/lobby.cpp:457
 msgid "Modifications"
-msgstr "Módosítók:"
+msgstr "Módosítók"
 
 #. [toggle_button]: id=checkbox_deterministic
 #: data/gui/window/campaign_dialog.cfg:409
