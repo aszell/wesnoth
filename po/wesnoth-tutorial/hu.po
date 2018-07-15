@@ -5,6 +5,7 @@
 # Farkas János <mail.janos.farkas@gmail.com>, 2014.
 # Széll András <szell.andris@gmail.com>, 2018.
 # Krutki Tamás <krtamas@0x64.org>, 2018.
+# Pazurik L. Ádám <pazurik.laszlo.adam@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-tutorial\n"
