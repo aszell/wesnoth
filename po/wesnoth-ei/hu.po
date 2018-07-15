@@ -15,15 +15,15 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-11 21:11+0200\n"
-"Last-Translator: Gábor Udvari <gabor.udvari@gmail.com>\n"
+"PO-Revision-Date: 2018-07-15 14:04+0200\n"
+"Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #. [campaign]: id=Eastern_Invasion
 #: data/campaigns/Eastern_Invasion/_main.cfg:13
@@ -1887,25 +1887,23 @@ msgstr ""
 
 #. [scenario]: id=08_Training_the_Ogres
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:4
-#, fuzzy
-#| msgid "Training the Ogres"
 msgid "Capturing the Ogres"
-msgstr "Ogrék \"sorozása\""
+msgstr "Ogrék elfogása"
 
 #. [side]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:41
 msgid "Ogres"
-msgstr ""
+msgstr "Ogrék"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:76
 msgid "(captured ogres will be made available for recall)"
-msgstr ""
+msgstr "(az elfogott ogréket vissza tudod hívni)"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:76
 msgid "Capture as many ogres as you can"
-msgstr ""
+msgstr "Fogj el annyi ogrét, amennyit csak tudsz"
 
 #. [note]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:94
@@ -1913,29 +1911,26 @@ msgid ""
 "An ogre is captured when it starts a turn being unable to move more than one "
 "hex."
 msgstr ""
+"Akkor kapsz el egy ogrét, ha köre kezdetén legfeljebb egy mezőnyit tud lépni."
 
 #. [note]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:97
 msgid "If an ogre reaches the edge of the map, it will escape."
-msgstr ""
+msgstr "Ha egy ogre eléri a térkép szélét, elmenekül."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:120
-#, fuzzy
-#| msgid ""
-#| "Look, we have found a pack of ogres. We should try to capture some to "
-#| "train."
 msgid ""
 "Look, this valley is inhabited by a tribe of ogres. We should try to capture "
 "some to train."
 msgstr ""
-"Nézzétek, belebotlottunk néhány ogréba. Próbáljunk meg párat elfogni, hogy "
-"kiképezhessük őket."
+"Nézzétek, ezt a völgyet egy ogre törzs lakja. Próbáljunk meg párat elfogni, "
+"hogy kiképezhessük őket."
 
 #. [message]: race=ogre
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:124
 msgid "Humans are coming! Run!"
-msgstr ""
+msgstr "Emberek jönnek! Futás!"
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:128
@@ -1943,26 +1938,28 @@ msgid ""
 "Looks like they are fleeing. I think they will surrender easily if we can "
 "surround them."
 msgstr ""
+"Úgy tűnik, menekülnek. Szerintem hamar megadják magukat, ha körbe tudjuk "
+"őket keríteni."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:132
 msgid "All right, we have to capture them one by one."
-msgstr ""
+msgstr "Rendben, egyesével kell őket elkapnunk."
 
 #. [value]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:151
 msgid "Waah! Run!"
-msgstr ""
+msgstr "Vááá! Futás!"
 
 #. [value]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:155
 msgid "Run for your lives!"
-msgstr ""
+msgstr "Fussatok, ha kedves az életetek!"
 
 #. [value]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:159
 msgid "Help!"
-msgstr ""
+msgstr "Segítség!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:203
@@ -1972,44 +1969,44 @@ msgstr "Egyet hagytunk elmenekülni. Remélem a többi nem fog!"
 #. [value]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:256
 msgid "$ogre_name surrender!"
-msgstr ""
+msgstr "$ogre_name megadja magát!"
 
 #. [value]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:260
 msgid "Don't hurt $ogre_name|!"
-msgstr ""
+msgstr "$ogre_name| kéri, ne bántsd!"
 
 #. [value]
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:264
 msgid "$ogre_name will be good! Promise!"
-msgstr ""
+msgstr "$ogre_name jól fog viselkedni, becsszó!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:352
 msgid "We failed to capture any of them!"
-msgstr ""
+msgstr "Nem sikerült egyet sem elkapnunk."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:361
 msgid "We only captured one ogre."
-msgstr ""
+msgstr "Csak egy ogrét kaptunk el."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:370
 msgid "We failed to capture more than two of the ogres."
-msgstr ""
+msgstr "Nem sikerült kettőnél több ogrét elkapnunk."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:379
 msgid "We captured three ogres! I hope they will prove useful."
-msgstr ""
+msgstr "Három ogrét kaptunk el! Remélem, hasznosnak bizonyulnak."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/08_Training_the_Ogres.cfg:386
 msgid ""
 "We managed to capture many ogres! They will make a good addition to our "
 "troops."
-msgstr ""
+msgstr "Sok ogrét fogtunk el. Jók lesznek seregeink megerősítésére."
 
 #. [scenario]: id=09_Xenophobia
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:4
@@ -2024,12 +2021,12 @@ msgstr "Pelathsil"
 #. [side]: type=Dwarvish Lord, id=Pelathsil
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:43
 msgid "Dwarves"
-msgstr ""
+msgstr "Törpök"
 
 #. [side]: type=Orcish Nightblade, id=Bagork
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:75
 msgid "Bagork"
-msgstr ""
+msgstr "Bagork"
 
 #. [side]: type=Elvish Avenger, id=Elandin
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:97
@@ -2039,7 +2036,7 @@ msgstr "Elandin"
 #. [side]: type=Elvish Avenger, id=Elandin
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:102
 msgid "Elves"
-msgstr ""
+msgstr "Tündék"
 
 #. [side]: type=Orcish Warlord, id=Prok-Bak
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:129
@@ -2053,21 +2050,17 @@ msgstr "Legyőzöd az összes ellenséges vezért"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:210
-#, fuzzy
-#| msgid ""
-#| "Hail, dwarves! Will you help us get by these foul orcs? We need to get "
-#| "further along this path."
 msgid ""
 "Hail, dwarves! Will you help us get by these foul orcs? We are headed "
 "farther north."
 msgstr ""
-"Üdv néktek, törpök! Segítetek megszabadulni ezektől az ocsmány orkoktól? "
-"Tovább kell haladnunk ezen az úton."
+"Üdv néktek, törpök! Segítetek átjutni ezeken az ocsmány orkokon? Északabbra "
+"tartunk."
 
 #. [message]: speaker=Prok-Bak
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:214
 msgid "You human! Call us foul, will you?!"
-msgstr "Te ember! Minket merészeltél ocsmánynak nevezni!?"
+msgstr "Te ember! Minket merészeltél ocsmánynak nevezni!?!"
 
 #. [message]: speaker=Pelathsil
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:218
