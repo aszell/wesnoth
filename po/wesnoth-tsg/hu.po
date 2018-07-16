@@ -4,20 +4,21 @@
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2008, 2009, 2012.
 # Gábor Udvari <gabor.udvari@gmail.com>, 2011.
 # Széll András <szell.andris@gmail.com>, 2018.
+# Tamás Krutki <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-tsg_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-06-12 22:02+0200\n"
-"Last-Translator: Széll András <szell.and@gmail.com>\n"
+"PO-Revision-Date: 2018-07-16 22:49+0200\n"
+"Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #. [campaign]: id=The_South_Guard
 #: data/campaigns/The_South_Guard/_main.cfg:9
@@ -1072,8 +1073,8 @@ msgid ""
 "Deoran, so use them to guard him!"
 msgstr ""
 "Most már huszárokat is toborozhatsz. Gyorsak és halálosak füves területeken, "
-"de erdőben és dombokon gyengék. Lépést tudnak tartani Deorannal, így "
-"védhetik!"
+"de erdőben gyengék, a hegyeken pedig nem tudnak átjutni. Képesek lépést "
+"tartani Deorannal, így védhetik!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:299
@@ -1904,7 +1905,7 @@ msgid ""
 "mere phantom. He resides in catacombs deep underneath the castle, but they "
 "cannot be entered without magical means."
 msgstr ""
-"Félek, hogy tévedtek. Nem az igazi Mebrint pusztítottátok el, csak egy "
+"Félek, hogy tévedtek. Nem az igazi Mebrint pusztítottuk el, csak egy "
 "fantomot. Ő a kastély alatti katakombákban tartózkodik, de oda varázslat "
 "segítsége nélkül nem lehet bejutni."
 
@@ -2009,7 +2010,8 @@ msgstr ""
 "Ne légy olyan meggondolatlan! A nagy varázslók nem egyszerű trükkmesterek, "
 "hogy ilyen könnyen le lehessen őket győzni. Attól tartok, az erőd alatt "
 "alagutak és katakombák vannak, és mi csak egy lidércet győztünk le. Ha meg "
-"akarjuk tisztítani a vidéket a gonosztól, le kell ereszkednünk a sötétségbe."
+"akarjuk tisztítani a vidéket a gonosztól, le kell ereszkednünk a sötétségbe, "
+"hogy gyökerestől kiirthassuk."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:894
@@ -2267,7 +2269,7 @@ msgid ""
 "If they are hostile to us, they could endanger Deoran and Ethiliel as well. "
 "Perhaps their leader can be reasoned with."
 msgstr ""
-"Ha ellenségesen viselkednek velünk, veszélyt jelenthetnének Deoranra és "
+"Ha ellenségesen viselkednek velünk, veszélyt jelenthetnek Deoranra és "
 "Ethilielre is. Talán meg lehet győzni a vezetőjüket."
 
 #. [message]: speaker=Queen Xeila
@@ -2308,7 +2310,7 @@ msgid ""
 "dwell in these lands. Surely you have come from him?"
 msgstr ""
 "Utazók ezen a sivár földön! Azt a sötét bölcset keresem, aki a szóbeszéd "
-"szerint ezen a vidéken lakozik. Valóban tőle jöttetek?"
+"szerint ezen a vidéken lakozik. Bizonyára tőle jöttetek?"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/06a_Tidings_Good_and_Ill.cfg:412
@@ -2628,7 +2630,7 @@ msgid ""
 "heard stories of these creatures but I wouldn’t have expected to come across "
 "one here. Let us proceed with caution."
 msgstr ""
-"Bármilyen szörnyeteg is mászkál odalenn, őrnek állíthatták. Mi, tündék, "
+"Bármilyen gonosz is mászkál odalenn, őrnek állíthatták. Mi, tündék, "
 "hallottunk történeteket ilyesfajta lényekről, de nem számítottam rá, hogy "
 "szembe is találkozunk eggyel itt. Legyünk óvatosak."
 
@@ -3851,7 +3853,7 @@ msgid ""
 msgstr ""
 "Urza Mathin legyőzése után Deoran rögvest felderítőket küldött az egész "
 "vidékre. Emberei mindenfelé bandita hordák szabad rablásairól számoltak be. "
-"A határt megsértő bűnözők félelemben tartották és fosztogatták a környéken "
+"A határt megsértő banditák félelemben tartották és fosztogatták a környéken "
 "élő földműveseket, falvakat. A Déli Őrhely katonáinak se híre, se hamva nem "
 "volt."
 
