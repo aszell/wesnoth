@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: hu-trow\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:50 UTC\n"
-"PO-Revision-Date: 2018-07-17 15:18+0100\n"
+"PO-Revision-Date: 2018-07-17 17:26+0100\n"
 "Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -4355,8 +4355,9 @@ msgstr "Eowarar"
 
 #. [objective]: condition=win
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:244
+#, fuzzy
 msgid "(the scenario ends when any unit perishes)"
-msgstr ""
+msgstr "(a küldetés véget ér ha bármely egység meghal)"
 
 #. [objective]: condition=win
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:244
@@ -4367,20 +4368,28 @@ msgstr "Kerüld el egységek halálát minél tovább"
 
 #. [note]
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:264
+#, fuzzy
 msgid ""
 "You will receive a finish bonus — equal to an early finish bonus — for the "
 "number of turns you lasted."
 msgstr ""
+"A korai befejezési bónusszal megegyező bónuszt fogsz kapni, melynek nagysága"
+" attól függ, "
+"hogy hány körön át tartottál ki."
 
 #. [note]
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:268
+#, fuzzy
 msgid "20% of finishing gold carried over to the next scenario."
-msgstr ""
+msgstr "A megmaradt arany 20%-a átkerül a következő pályára."
 
 #. [note]
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:276
+#, fuzzy
 msgid "Enemies will not initiate an attack if there is a risk of them dying."
 msgstr ""
+"Az ellenségek nem fognak támadást indítani, ha fennáll a veszélye, hogy"
+" meghalnak."
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:286
