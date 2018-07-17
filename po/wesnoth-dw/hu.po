@@ -1,19 +1,20 @@
 # Kelemen Zoltán, 2011.
 # Barthalos Márton, 2012.
+# Tamás Krutki <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2012-01-19 13:42+0100\n"
-"Last-Translator: \n"
-"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-07-17 15:09+0100\n"
+"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"Language-Team: Hungarian <>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 2.0\n"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:13
@@ -30,7 +31,7 @@ msgstr "HV"
 #, fuzzy
 #| msgid "(Beginner)"
 msgid "Beginner"
-msgstr "(Kezdő)"
+msgstr "kezdő"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:18
@@ -47,14 +48,14 @@ msgstr "Harcos"
 #, fuzzy
 #| msgid "(Normal)"
 msgid "Normal"
-msgstr "(Átlagos)"
+msgstr "átlagos"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:20
 #, fuzzy
 #| msgid "(Challenging)"
 msgid "Challenging"
-msgstr "(Kihívást jelentő)"
+msgstr "kihívást jelentő"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:20
@@ -66,7 +67,7 @@ msgstr "Gárdista"
 #, fuzzy
 #| msgid "(Difficult)"
 msgid "Difficult"
-msgstr "(Nehéz)"
+msgstr "nehéz"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:21
@@ -114,8 +115,11 @@ msgstr "Művészeti munkák"
 
 #. [lua]: wesnoth.theme_items.unit_status
 #: data/campaigns/Dead_Water/_main.cfg:88
+#, fuzzy
 msgid "stunned: This unit is stunned. It cannot enforce its Zone of Control."
 msgstr ""
+"összezavarva: Ez az egység össze van zavarodva. Nem képes védelmi zónáját"
+" fenntartani."
 
 #. [scenario]: id=01_Invasion
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:36
@@ -756,7 +760,7 @@ msgstr "Úgy tűnik, szereztél egy házi denevért."
 #, fuzzy
 #| msgid "Look! There is a massive bat back here."
 msgid "Look! There is a bat."
-msgstr "Nézzetek ide! Egy böhöm denevér."
+msgstr "Nézzétek! Egy denevér."
 
 #. [message]: speaker=Kai Krellis
 #. [message]: speaker=second_unit
@@ -804,7 +808,7 @@ msgstr "Élőholt denevér"
 #| "Look! There is a bat in the corner here. It is moving, but it looks half "
 #| "dead."
 msgid "Look! There is a bat. It is moving, but it looks half dead."
-msgstr "Nézzetek ide! Egy denevér van a sarokban. Mozog, de alig él."
+msgstr "Nézzétek! Egy denevér. Mozog, de alig él."
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:749
@@ -976,7 +980,7 @@ msgstr ""
 #, fuzzy
 #| msgid "The trident is 14-2, magical, ranged, with <i>fire</i> damage."
 msgid "The trident is 14×2, magical, ranged, with <i>fire</i> damage."
-msgstr "A viharszigony támadása 14-2, mágikus, távolsági, <i>tűz</i> típusú."
+msgstr "A szigony támadása 14×2, mágikus, távolsági, <i>tűz</i> típusú."
 
 #. [option]
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:306
@@ -1602,7 +1606,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Destroy all the undead"
 msgid "Now we must defeat the undead."
-msgstr "Legyőzöd az összes élőholtat"
+msgstr "Most le kell győznünk az összes élőholtat."
 
 #. [message]: speaker=Marg-Tonz
 #. orc's boss' last breath, deliberately gendered instead of changing to "merfolk"
@@ -2592,7 +2596,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:569
-#, fuzzy
 #| msgid ""
 #| "The mermen clapped their hands over their ears as a terrible wail echoed "
 #| "off the castle walls."
@@ -2685,8 +2688,9 @@ msgstr "Én nem tartok veletek. Valakinek a népedből kellene a kardot vinni."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:967
+#, fuzzy
 msgid "This is not food. And it is definitely not a toy. Leave it."
-msgstr ""
+msgstr "Ez nem ennivaló, és egészen biztosan nem egy játék. Hagyd!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:996
@@ -2694,7 +2698,7 @@ msgstr ""
 #| msgid "This sword is 8-4, magical, with <i>fire</i> damage."
 msgid "This sword is 8×4, magical, with <i>fire</i> damage."
 msgstr ""
-"Ennek a kardnak a sebzése 8-4, mágikus, <i>tűz</i> típusú támadása van."
+"Ennek a kardnak a sebzése 8×4, mágikus, <i>tűz</i> típusú támadása van."
 
 #. [option]
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:1003
@@ -2823,7 +2827,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:17
-#, fuzzy
 #| msgid ""
 #| "The tribe that had fled Jotha unable to fight returned as an army "
 #| "stiffened by veteran fighters and led by a warrior king. Though they were "
@@ -2992,12 +2995,14 @@ msgstr "Tyegëa! Ne!"
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:797
 msgid "Inky has found something. Someone should check it out."
-msgstr ""
+msgstr "Tintás talált valamit. Valakinek meg kellene néznie mi az."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:819
 msgid "Something must be there! Good bat! Someone should find out what it is."
 msgstr ""
+"Kell, hogy legyen ott valami! Jó denevér! Valakinek ki kellene derítenie mi"
+" az."
 
 #. [message]: speaker=unit
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:853
@@ -3122,7 +3127,8 @@ msgid ""
 msgstr ""
 "Cylanna soha többé nem tett nagyobb utazást, hanem Jotha köztiszteletben "
 "álló véneként ténykedett. A király tanácsadója maradt, de fő feladata a "
-"betegek gyógyítása, valamint a keresztelők és esküvők levezénylése volt. "
+"betegek gyógyítása, valamint a névadó ünnepségek és esküvők levezénylése"
+" volt. "
 "Mindez jobban kielégítette, mint az élőholtak elleni csatározás."
 
 #. [message]: speaker=narrator
@@ -3252,7 +3258,6 @@ msgstr "Sellő polgár"
 
 #. [unit_type]: id=Merman Citizen, race=merman
 #: data/campaigns/Dead_Water/units/Citizen.cfg:17
-#, fuzzy
 #| msgid ""
 #| "Mermen are mostly peaceful, but will fight to defend their homes. In this "
 #| "situation, even mermen with no weapons or training can be dangerous."
@@ -3331,8 +3336,9 @@ msgstr ""
 
 #. shown in the status table
 #: data/campaigns/Dead_Water/utils/dw-utils.cfg:73
+#, fuzzy
 msgid "user_team_name^Merfolk"
-msgstr ""
+msgstr "Sellők"
 
 #: data/campaigns/Dead_Water/utils/dw-utils.cfg:77
 msgid "Kai Krellis"
@@ -3349,7 +3355,7 @@ msgstr "Viharszigony"
 #| msgid "This weapon shoots powerful lightning bolts at your enemies."
 msgid ""
 "This trident gives merfolk the power to throw lightning at their enemies."
-msgstr "Ez a fegyver félelmetes villámokat lövell az ellenségeidre."
+msgstr "Ez a szigony félelmetes villámokat lövell az ellenségeidre."
 
 #. [object]: id={ID}
 #: data/campaigns/Dead_Water/utils/items.cfg:13
@@ -3411,8 +3417,9 @@ msgstr "Valaki vegye el tőle, mielőtt még megsebzi magát!"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/utils/items.cfg:239
+#, fuzzy
 msgid "Leave it."
-msgstr ""
+msgstr "Hagyd!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Dead_Water/utils/items.cfg:254
@@ -3489,8 +3496,9 @@ msgid ""
 "This attack hits so hard that the opponent is dazed and can no longer "
 "enforce a zone of control. The effect wears off on the opponent’s next turn."
 msgstr ""
-"Ez a támadás akkorát üt, hogy az áldozatot úgy összezavarja, hogy nem képes "
-"a védelmi zónáját ellenőrizni. A hatás elmúlik, amikor a védő legközelebb "
+"Ez a támadás akkorát üt, hogy az ellenséget úgy összezavarja, hogy nem képes "
+"a védelmi zónáját ellenőrizni. A hatás elmúlik, amikor az ellenfél"
+" legközelebb "
 "sorra kerül."
 
 #~ msgid "Merman Forces"
