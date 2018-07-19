@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-17 21:12+0200\n"
+"PO-Revision-Date: 2018-07-19 07:23+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -2844,16 +2844,12 @@ msgstr "Semlegesítőkő"
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:367
-#, fuzzy
-#| msgid ""
-#| "Now, we have reached the Horse Plains, the fair homeland of my people. "
-#| "They may be able to help us in—"
 msgid ""
 "Now, we have reached the Horse Plains, the fair homeland of my people. They "
 "may be able to help us find—"
 msgstr ""
 "Végre, elértük a Lovak Mezejét, népem szeretett szülőföldjét. Talán fognak "
-"nekünk segíteni —"
+"nekünk segíteni, hogy —"
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:371
@@ -2861,8 +2857,8 @@ msgid ""
 "What?! Swamps?! Those undead have destroyed the grasslands of my House, and "
 "they shall pay for it!"
 msgstr ""
-"Mi a... csak nem mocsarak?! Ezek az élőholtak tönkretették a mezeinket, ezt "
-"még megbánják!"
+"Mi a... csak nem mocsarak?! Ezek az élőholtak tönkretették a legelőinket, "
+"ezt még megbánják!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:375
@@ -2871,10 +2867,9 @@ msgid ""
 "death, decay, everything that they are themselves. I can sense them lurking "
 "in the swamps, waiting to ambush us."
 msgstr ""
-"A delevény-úr, Mal-Ravanal minden bizonnyal elárasztotta a völgyet. Az "
-"élőholtak kedvelik a mocsarat. A mocsár olyan, mint ők. Halál, rothadás,és "
-"minden, ami csak rájuk emlékeztethet. Érzem, hogy itt rejtőznek és le "
-"akarnak csapni ránk."
+"A delevény-úr minden bizonnyal elárasztotta a völgyet. Az élőholtak kedvelik "
+"a mocsarat. A mocsár olyan, mint ők. Halál, rothadás, és minden, ami csak "
+"rájuk emlékeztethet. Érzem, hogy itt rejtőznek és le akarnak csapni ránk."
 
 #. [message]: speaker=Engineer
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:379
@@ -2888,29 +2883,21 @@ msgstr "Kereshhhétek... öljhhhétek... vághhhjátok... őhhhket..."
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:391
-#, fuzzy
-#| msgid "What is that sound?!"
 msgid "What was that?!"
-msgstr "Mi ez a hang?!"
+msgstr "Mi volt ez?!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:395
-#, fuzzy
-#| msgid ""
-#| "I do not know, but my guess is the dragon Khrakrahs. He was a powerful "
-#| "beast indeed, in the time of Haldric, living in the Northern Mountains. "
-#| "But he does not sound alive. I know not what happened, but we must surely "
-#| "destroy him."
 msgid ""
 "That was the dragon Khrakrahs. He was a powerful beast indeed in the time of "
 "Haldric, living in the Northern Mountains. But he radiates a dark power "
 "these days, and I know not why he has taken up residence this far south. We "
 "must find him, and pray that he still has the Null Stone."
 msgstr ""
-"Nem tudom, de úgy hangzott, mintha a sárkány, Khrakrahs lett volna. Amikor "
-"még élt, a legerősebb lény volt, ami Haldric idejében az északi hegyekben "
-"lakozott. De a hangja nem élőé. Nem tudom, mi történhetett vele, de nekünk "
-"most bizonyosan el kell pusztítanunk őt."
+"Ez Khrakrahs, a sárkány. Haldric idejében még igen erős lény volt, és az "
+"északi hegyekben lakozott. De egy ideje sötét erő sugárzik belőle, és nem "
+"tudom, miért vert tanyát ennyire délen. Meg kell találnunk és reménykednünk, "
+"hogy még mindig nála a Semlegesítőkő."
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:434
@@ -2919,11 +2906,14 @@ msgid ""
 "this undead abomination does not appear weak to my arcane powers... he must "
 "still have the Null Stone!"
 msgstr ""
+"Ó! Úgy tűnik a hatalmas Khrakrahs már nincs az élők között. De ez az "
+"elfajzott élőholt teremtmény úgy tűnik, nem gyengül földöntúli varázslataim "
+"hatására... Biztosan nála van még a Semlegesítőkő!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/13_The_Drowned_Plains.cfg:452
 msgid "The Null Stone! With it we may finally defeat Mal-Ravanal!"
-msgstr ""
+msgstr "A Semlegesítőkő! Ezzel végre legyőzhetjük Mal-Ravanalt!"
 
 #. [scenario]: id=14_Approaching_Weldyn
 #: data/campaigns/Eastern_Invasion/scenarios/14_Approaching_Weldyn.cfg:4
@@ -2956,10 +2946,8 @@ msgstr "II. Konrad"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/14_Approaching_Weldyn.cfg:128
-#, fuzzy
-#| msgid "Get Gweddry to Weldyn"
 msgid "Move Gweddry to Weldyn castle"
-msgstr "Eljuttatod Gweddryt Weldynbe"
+msgstr "Eljuttatod Gweddryt Weldyn kastélyába"
 
 #. [objective]: condition=lose
 #: data/campaigns/Eastern_Invasion/scenarios/14_Approaching_Weldyn.cfg:144
@@ -2969,35 +2957,28 @@ msgstr "II. Konrad elesik"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/14_Approaching_Weldyn.cfg:182
-#, fuzzy
-#| msgid ""
-#| "We have finally reached Weldyn, but it seems the undead have surrounded "
-#| "it. We must break through to reach the king!"
 msgid ""
 "We have finally reached Weldyn, but it seems the undead have it surrounded. "
 "We must break through to reach the king!"
 msgstr ""
-"Végre elértük Weldynt, de úgy tűnik az élőholtak már körbevették. Át kell "
+"Végre elértük Weldynt, de úgy tűnik, az élőholtak már körbevették. Át kell "
 "törnünk, hogy eljussunk a királyhoz!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/14_Approaching_Weldyn.cfg:186
-#, fuzzy
-#| msgid ""
-#| "It would be best not to try to defeat these undead, there are too many of "
-#| "them. Go straight to the city."
 msgid ""
 "It would be best not to waste time defeating these undead, they are but a "
 "small fraction of the host we face. We should go straight to the city and "
 "prepare our defenses."
 msgstr ""
-"Veszélyes lenne megküzdeni ezekkel az élőholtakkal, óriási túlerőben vannak! "
-"Indulj egyenesen a városba!"
+"Nem kellene időt vesztegetni az élőholtak legyőzésére, hiszen seregeiknek "
+"csak töredékével állunk szemben. Induljunk egyenesen a városba és erősítsük "
+"meg a védelmét!"
 
 #. [message]: speaker=Gweddry
 #: data/campaigns/Eastern_Invasion/scenarios/14_Approaching_Weldyn.cfg:199
 msgid "My liege, we have vital information about the leader of these undead."
-msgstr ""
+msgstr "Királyom, létfontosságú információnk van az élőholtak vezéréről!"
 
 #. [message]: speaker=Konrad II
 #: data/campaigns/Eastern_Invasion/scenarios/14_Approaching_Weldyn.cfg:203
@@ -3016,20 +2997,14 @@ msgstr "A tanácskozás"
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:19
-#, fuzzy
-#| msgid ""
-#| "Before we begin our council, I must tell you all the history of this lich "
-#| "we face. He was at first a mage of light, like me, and his fall began "
-#| "during the reign of Haldric VII..."
 msgid ""
 "Before we begin our council, I must tell you all the history of this lich we "
 "face. He was at first a mage of the realm, like me, and his fall began "
 "during the reign of Haldric VII..."
 msgstr ""
 "Mielőtt megkezdenénk a tanácskozást, mindnyájatoknak el kell mondanom a "
-"velünk szemben álló delevény történetét. Valamikor fénymágus volt, mint "
-"amilyen én is, de VII. Haldric uralkodása idején elidegenedett a "
-"többiektől..."
+"velünk szemben álló delevény történetét. Valaha a birodalom mágusa volt, "
+"mint én is, de VII. Haldric uralkodása idején elidegenedett a többiektől..."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:23
@@ -3048,13 +3023,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:26
-#, fuzzy
-#| msgid ""
-#| "In all the land, there were two magi of light that clearly stood out from "
-#| "the rest. A mage from the east named Ravan, and myself. The King, wishing "
-#| "to choose a good advisor, sent us both before Galdren. Then he conversed "
-#| "with the seer privately. None know what was said, but when he came out he "
-#| "announced that the seer was dead, and he had chosen me as his new advisor."
 msgid ""
 "In all the land, there were two magi that clearly stood out from the rest. A "
 "mage from the east named Ravan, and myself. The King, wishing to choose the "
@@ -3062,22 +3030,14 @@ msgid ""
 "privately. None know what was said, but when he came out he announced that "
 "the seer was dead, and he had chosen me as his new advisor."
 msgstr ""
-"Közel és messze két fénymágus emelkedett ki a többiek közül. A keletről "
-"érkezett Ravan és jómagam. A király, aki jó tanácsadót akart választani, "
-"elküldött mindkettőnket Galdrenhez, majd személyesen tanácskozott a "
-"látnokkal. Senki nem tudja mit mondhatott neki, de mikor visszatért, "
-"bejelentette, hogy a látnok halott, és engem választott új tanácsadójának."
+"Közel s távol két mágus emelkedett ki a többiek közül. A keletről érkezett "
+"Ravan és jómagam. A király, aki jó tanácsadót akart választani, elküldött "
+"mindkettőnket Galdrenhez, majd személyesen tanácskozott a látnokkal. Senki "
+"nem tudja, mit mondhatott neki, de mikor visszatért, bejelentette, hogy a "
+"látnok halott, és engem választott új tanácsadójának."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:29
-#, fuzzy
-#| msgid ""
-#| "Ravan took this quietly enough, we all thought, but now I think that this "
-#| "was when he began his fall. He went deep into conversation with the "
-#| "spirits of darkness, hoping to discover their weaknesses, but it was they "
-#| "who found his. In time, as all of the magi of death eventually do, he "
-#| "took his own life and reformed himself as a lich, one of the most "
-#| "powerful ones ever seen."
 msgid ""
 "Ravan took this quietly enough, we all thought, but now I think that this "
 "was when he began his fall. He went deep into conversation with the spirits "
@@ -3087,27 +3047,19 @@ msgstr ""
 "Ravan könnyen vette a történteket, legalábbis mi így gondoltuk, de most már "
 "úgy hiszem, akkor kezdődött el a hanyatlása. Elkezdte mélyen tanulmányozni a "
 "sötétség szellemeit, remélve hogy felfedi gyengeségeiket, de végül ő maga "
-"lett az áldozat. Idővel, mint ahogyan sok halálmágussal megesik, véget "
-"vetett az életének, és újjáalkotta magát delevény formában, ráadásul az "
-"egyik legerősebb lett valamennyi közül."
+"lett az áldozat."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:32
-#, fuzzy
-#| msgid ""
-#| "One day, he disguised himself and came to the castle, where I was living. "
-#| "He demanded to see me, and the guards let him in, for then he was still a "
-#| "respected member of the court. When I came out, he revealed himself, "
-#| "named himself Mal-Ravanal, and challenged me to a duel."
 msgid ""
 "One day, Ravan returned to the castle where I was living. He demanded to see "
 "me and the guards let him in, for then he was still a well-respected mage. "
 "When I greeted him, he named himself Mal-Ravanal and challenged me to a duel."
 msgstr ""
-"Egy napon, álcázva magát, a várba jött, ahol én éltem. Találkozni akart "
-"velem, és az őrök beengedték, hiszen akkor még megbecsült tagja volt a "
-"tanácsnak. Mikor kijöttem, hogy köszöntsem, felfedte magát, mint Mal-Ravanal "
-"és párbajra hívott."
+"Egy napon Ravan visszatért a várba, ahol én éltem. Találkozni akart velem, "
+"és az őrök beengedték, hiszen akkor még megbecsült mágus volt. Mikor "
+"kijöttem, hogy köszöntsem, felfedte magát, mint Mal-Ravanal és párbajra "
+"hívott."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:35
@@ -3116,14 +3068,21 @@ msgid ""
 "no small skill I emerged victorious. As he lie there mortally wounded I "
 "prepared to excise the darkness in his soul."
 msgstr ""
+"Támadása gyors, ereje nagy volt, de rendületlen hittel és nem kis "
+"ügyességgel én kerültem ki győztesként. Ahogy ott feküdt halálos sebbel, "
+"felkészültem, hogy kiűzzem a sötétséget lelkéből."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:38
+#, fuzzy
 msgid ""
 "But I hesitated too long... He simply vanished, teleported away. The mage "
 "Ravan died that day; yet death is a mere inconvenience to those most skilled "
 "in the arts of necromancy..."
 msgstr ""
+"De túl sokáig vártam... Egyszerűen eltűnt, elteleportált. Ravan, a mágus "
+"azon a napon halt meg, de a holtidézés művészetében legképzettebbek számára "
+"a halál csupán apró kényelmetlenség."
 
 #. [side]: type=Great Mage, id=Kaldor
 #: data/campaigns/Eastern_Invasion/scenarios/15_The_Council.cfg:72
