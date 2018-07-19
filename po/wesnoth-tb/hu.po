@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: hu-tb\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-16 23:35+0200\n"
+"PO-Revision-Date: 2018-07-19 21:41+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -1428,7 +1428,7 @@ msgid ""
 "Recruit or Recall some high-move units to be able to see as far as possible "
 "through the fog for approaching units."
 msgstr ""
-"Toborozz vagy hívj vissza néhány sokat lépő egységet, hogy olyan messziről "
+"Toborozz vagy hívj vissza néhány gyors egységet, hogy olyan messziről "
 "észrevedd a közelgő ellenséget a ködben, amennyire csak lehet."
 
 #. [message]: speaker=Arvith
@@ -1501,7 +1501,7 @@ msgstr "Örvendek, hogy viszontláthatlak titeket!"
 #. [message]: speaker=Baran
 #: data/campaigns/Two_Brothers/scenarios/04_Return_to_the_Village.cfg:255
 msgid "No gladder than I am to be here. But what has happened to Maghre?"
-msgstr "Nem jobban, mint én, hogy itt lehetek. De mi történt Maghrevel?"
+msgstr "Nem jobban mint én annak, hogy itt lehetek. De mi történt Maghrevel?"
 
 #. [message]: speaker=Reeve Hoban
 #: data/campaigns/Two_Brothers/scenarios/04_Return_to_the_Village.cfg:260
