@@ -1,6 +1,6 @@
 /*
    Copyright (C) 2003 - 2018 by David White <dave@whitevine.net>
-   Part of the Battle for Wesnoth Project http://www.wesnoth.org/
+   Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -547,6 +547,9 @@ std::vector<topic> generate_ability_topics(const bool sort_generated)
 	}
 
 	for(const auto& a : ability_topic_data) {
+		if (a.second->name.empty()) {
+			continue;
+		}
 		std::ostringstream text;
 		text << a.second->description;
 		text << "\n\n" << _("<header>text='Units with this ability'</header>") << "\n";

@@ -1,6 +1,6 @@
 /*
    Copyright (C) 2003 - 2018 by David White <dave@whitevine.net>
-   Part of the Battle for Wesnoth Project http://www.wesnoth.org/
+   Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -25,6 +25,7 @@
 #include "reports.hpp"
 #include "color.hpp"
 #include "team.hpp"
+#include "terrain/movement.hpp"
 #include "tod_manager.hpp"
 #include "units/unit.hpp"
 #include "units/helper.hpp"
@@ -583,50 +584,48 @@ static config unit_moves(reports::context & rc, const unit* u)
 	if (!u) return config();
 	std::ostringstream str, tooltip;
 	double movement_frac = 1.0;
+
+	std::set<terrain_movement> terrain_moves;
+
 	if (u->side() == rc.screen().playing_side()) {
 		movement_frac = double(u->movement_left()) / std::max<int>(1, u->total_movement());
 		if (movement_frac > 1.0)
 			movement_frac = 1.0;
 	}
 
-	std::set<t_translation::terrain_code>::const_iterator terrain_it =
-				preferences::encountered_terrains().begin();
-
 	tooltip << _("Movement Costs:") << "\n";
-	for (; terrain_it != preferences::encountered_terrains().end();
-			++terrain_it) {
-		const t_translation::terrain_code terrain = *terrain_it;
+	for (t_translation::terrain_code terrain : preferences::encountered_terrains()) {
 		if (terrain == t_translation::FOGGED || terrain == t_translation::VOID_TERRAIN || t_translation::terrain_matches(terrain, t_translation::ALL_OFF_MAP))
 			continue;
 
 		const terrain_type& info = rc.map().get_terrain_info(terrain);
 
 		if (info.union_type().size() == 1 && info.union_type()[0] == info.number() && info.is_nonnull()) {
-
-			const std::string& name = info.name();
-			const int moves = u->movement_cost(terrain);
-
-			tooltip << name << ": ";
-
-			std::string color;
-			//movement  -  range: 1 .. 5, movetype::UNREACHABLE=impassable
-			const bool cannot_move = moves > u->total_movement();
-			if (cannot_move)		// cannot move in this terrain
-				color = "red";
-			else if (moves > 1)
-				color = "yellow";
-			else
-				color = "white";
-			tooltip << "<span foreground=\"" << color << "\">";
-			// A 5 MP margin; if the movement costs go above
-			// the unit's max moves + 5, we replace it with dashes.
-			if(cannot_move && (moves > u->total_movement() + 5)) {
-				tooltip << font::unicode_figure_dash;
-			} else {
-				tooltip << moves;
-			}
-			tooltip << naps << '\n';
+			terrain_moves.emplace(info.name(), u->movement_cost(terrain));
 		}
+	}
+
+	for (const terrain_movement& tm : terrain_moves) {
+		tooltip << tm.name << ": ";
+		
+		std::string color;
+		//movement  -  range: 1 .. 5, movetype::UNREACHABLE=impassable
+		const bool cannot_move = tm.moves > u->total_movement();
+		if (cannot_move)		// cannot move in this terrain
+			color = "red";
+		else if (tm.moves > 1)
+			color = "yellow";
+		else
+			color = "white";
+		tooltip << "<span foreground=\"" << color << "\">";
+		// A 5 MP margin; if the movement costs go above
+		// the unit's max moves + 5, we replace it with dashes.
+		if (cannot_move && (tm.moves > u->total_movement() + 5)) {
+			tooltip << font::unicode_figure_dash;
+		} else {
+			tooltip << tm.moves;
+		}
+		tooltip << naps << '\n';
 	}
 
 	int grey = 128 + int((255 - 128) * movement_frac);

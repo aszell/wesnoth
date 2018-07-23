@@ -1,6 +1,6 @@
 /*
    Copyright (C) 2014 - 2018 by Chris Beck <render787@gmail.com>
-   Part of the Battle for Wesnoth Project http://www.wesnoth.org/
+   Part of the Battle for Wesnoth Project https://www.wesnoth.org/
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -675,7 +675,9 @@ bool lua_kernel_base::protected_call(lua_State * L, int nArgs, int nRets, error_
 
 bool lua_kernel_base::load_string(char const * prog, error_handler e_h)
 {
-	int errcode = luaL_loadstring(mState, prog);
+	// pass 't' to prevent loading bytecode which is unsafe and can be used to escape the sandbox.
+	// todo: maybe allow a 'name' parameter to give better error messages.
+	int errcode = luaL_loadbufferx(mState, prog, strlen(prog), /*name*/ prog, "t");
 	if (errcode != LUA_OK) {
 		char const * msg = lua_tostring(mState, -1);
 		std::string message = msg ? msg : "null string";
