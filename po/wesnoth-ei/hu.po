@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-23 19:12+0200\n"
+"PO-Revision-Date: 2018-07-23 21:53+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -102,7 +102,7 @@ msgstr "Hadjárat utószó és illesztés"
 #. [about]
 #: data/campaigns/Eastern_Invasion/_main.cfg:53
 msgid "Prose and Story Edits"
-msgstr "Szöveg és a történet szerkesztése"
+msgstr "Szöveg és történet szerkesztése"
 
 #. [about]
 #: data/campaigns/Eastern_Invasion/_main.cfg:59
@@ -131,7 +131,7 @@ msgid ""
 "in the Estmark Hills on the eastern border of Wesnoth began."
 msgstr ""
 "II. Konrad uralkodásának tizenharmadik éve volt, amikor különös események "
-"történtek az Estmark-dombságban, Wesnoth keleti határán."
+"vették kezdetüket az Estmark-dombságban, Wesnoth keleti határán."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:25
@@ -487,8 +487,8 @@ msgid ""
 "This outpost is already lost. We must defeat this evil if Wesnoth is to "
 "survive. Now, come on, we do not have much time to spare!"
 msgstr ""
-"Ez a helyőrség már elveszett. E gonoszt kell legyőznünk, ha Wesnothot meg "
-"akarjuk menteni! Most gyertek, nincs vesztegetni való időnk!"
+"Ez a helyőrség már elveszett. Wesnoth megmentéséhez ezt a gonoszt kell "
+"legyőznünk! Most gyertek, nincs vesztegetni való időnk!"
 
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:436
@@ -748,7 +748,7 @@ msgid ""
 "to attack the western one, so we can return to Wesnoth."
 msgstr ""
 "Jó ötlet. Aztán pedig elég lesz az egyik sötét varázslót legyőznünk. Én a "
-"nyugat felé lévőre gondoltam, hogy Wesnothba visszatérhessünk."
+"nyugatira gondoltam, így utána visszatérhetünk Wesnothba."
 
 #. [message]: speaker=Mal-Skraat
 #: data/campaigns/Eastern_Invasion/scenarios/03_An_Unexpected_Appearance.cfg:231
@@ -842,7 +842,7 @@ msgid ""
 "you to join us, and head north."
 msgstr ""
 "Jó. Nos, figyelmeztetünk: az élőholt hadúr óriási erővel bír. Ha nyíltan "
-"szembeszállsz vele, még ha győzedelmeskedsz is, csak kevesek élnék túl a "
+"szembeszálltok vele, még ha győzedelmeskedtek is, csak kevesen élitek túl a "
 "csatát. Azt tanácsolom, hogy együtt induljunk tovább északra."
 
 #. [message]: speaker=Volas
@@ -862,7 +862,7 @@ msgid ""
 "comrades there."
 msgstr ""
 "Ez nem túl bölcs döntés, de a te felelősséged. Ha nem is csatlakoztok, "
-"segítetek legalább elérni az északi helyőrséget? Ottani társainkat is "
+"segítenétek legalább az északi őrhelyet elérni? Ottani társainkat is "
 "értesítenünk kell."
 
 #. [message]: speaker=Volas
@@ -1025,7 +1025,7 @@ msgid ""
 msgstr ""
 "Akit üldözöl, nem egy átlagos delevény. Még ha rá is találsz, hogyan "
 "akadályozod meg, hogy egyszerűen elteleportáljon? Északra kell mennünk, még "
-"sok mindent ki kell derítenem, mielőtt szembenézünk ezzel a veszedelemmel."
+"sok mindent ki kell derítenem, mielőtt szembeszállunk ezzel a veszedelemmel."
 
 #. [message]: speaker=Mal-Skraat
 #: data/campaigns/Eastern_Invasion/scenarios/04b_The_Undead_Border_Patrol.cfg:150
@@ -1044,7 +1044,7 @@ msgstr "Most már soha nem leszek előléptetve!"
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/04b_The_Undead_Border_Patrol.cfg:172
 msgid "Come, let us return to Wesnoth and head for the Northern Outpost."
-msgstr "Gyertek, térjünk vissza Wesnothba, irány az Északi Őrhely!"
+msgstr "Gyertek, térjünk vissza Wesnothba, irány az Északi őrhely!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/04b_The_Undead_Border_Patrol.cfg:193
@@ -1295,8 +1295,8 @@ msgid ""
 "Merely departed. He will return once he has recovered; we would best be away "
 "from here by then."
 msgstr ""
-"Csupán eltávozott. Vissza fog jönni, amint magához tér, addigra az lenne a "
-"legjobb, ha messzire járnánk."
+"Csupán eltávozott. Vissza fog jönni, amint magához tér, addigra jobb lenne, "
+"ha messzire járnánk."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Eastern_Invasion/scenarios/04c_Mal-Ravanals_Capital.cfg:597
@@ -1306,7 +1306,7 @@ msgid ""
 "Estmarks, they were greatly relieved to see the valley of the Weldyn open "
 "before them on the other side."
 msgstr ""
-"Gweddry emberi gyorsan visszavonultak a Zord-mocsárból  északra, nyugatra, "
+"Gweddry emberi gyorsan visszavonultak a Zord-mocsárból északra, nyugatra, "
 "amerre csak menekülni tudtak. Találtak egy alacsony hágót, amely Estmark "
 "északi részén vitt keresztül, s aminek a másik oldalán nagy "
 "megkönnyebbülésükre Weldyn ismerős völgye tárult fel."
@@ -3129,7 +3129,7 @@ msgid ""
 "We barely escaped the Southern Outpost with our lives; Mal-Ravanal’s army "
 "cannot be defeated by even the might of all Wesnoth."
 msgstr ""
-"Alig tudtunk élve elmenekülni a Déli Őrhelyről, Mal-Ravanal hadseregét "
+"Alig tudtunk élve elmenekülni a Déli őrhelyről, Mal-Ravanal hadseregét "
 "Wesnoth összes hadereje sem tudja elpusztítani."
 
 #. [message]: speaker=Kaldor
