@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-23 21:53+0200\n"
+"PO-Revision-Date: 2018-07-24 06:39+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -979,7 +979,7 @@ msgstr ""
 #: data/campaigns/Eastern_Invasion/scenarios/04a_An_Elven_Alliance.cfg:363
 msgid "Very well. I will send guides to lead you north to your allies."
 msgstr ""
-"Úgy is jó. Küldök segítséget, akik elvezetnek északi szövetségeseitekhez."
+"Úgy is jó. Küldök segítséget, akik elvezetnek északra szövetségeseitekhez."
 
 #. [scenario]: id=04b_The_Undead_Border_Patrol
 #: data/campaigns/Eastern_Invasion/scenarios/04b_The_Undead_Border_Patrol.cfg:5
