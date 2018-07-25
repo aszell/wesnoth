@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: wesnoth-ei 1.4 branch\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-24 21:49+0200\n"
+"PO-Revision-Date: 2018-07-25 21:25+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -74,9 +74,9 @@ msgid ""
 "the villagers and find out what is happening.\n"
 "\n"
 msgstr ""
-"Az a hír járja, hogy Wesnoth keleti határait élőholt támadások sértették "
-"meg. Téged, a Királyi Hadsereg egyik tisztjét, a helyszínre küldtek, hogy "
-"megvédd a helyi lakosokat és fényt deríts a történtekre.\n"
+"Az a hír járja, hogy Wesnoth keleti határát élőholt támadások érték. Téged, "
+"a Királyi Hadsereg egyik tisztjét küldték a helyszínre, hogy megvédd a helyi "
+"lakosokat és fényt deríts a történtekre.\n"
 "\n"
 
 #. [campaign]: id=Eastern_Invasion
@@ -143,10 +143,10 @@ msgid ""
 "swamp."
 msgstr ""
 "Elhullott szarvasmarhákat és teherhordó állatokat találtak a mezőn, az "
-"emberek minden nyom nélkül (kivéve egy csöpp fekete vérfoltot, ami mindenhol "
-"jelen volt) eltűntek házaikból. Kezdetben a lakosok sivatagi portyázókra "
-"gyanakodtak, de a felderítők keleten csak egy alacsony hegyláncot, amögött "
-"csak több mérföldnyi mocsarat találtak."
+"emberek (egy csöpp fekete vérfoltot leszámítva) minden nyom nélkül eltűntek "
+"házaikból. Kezdetben a lakosok sivatagi portyázókra gyanakodtak, de a "
+"felderítők keleten csak egy alacsony hegyláncot, és mögötte több mérföldnyi "
+"mocsarat találtak."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:29
@@ -170,8 +170,8 @@ msgid ""
 msgstr ""
 "Amikor a király megtudta, mi a baj, tanácsadója, Dacyn kért szót. "
 "Nyilvánvalóan ezek a támadások összefüggtek a déli határnál korábban "
-"megtapasztaltakkal, amelyeket élőholtak indítottak. Dacyn felvázolt egy "
-"tervet, hogy hogyan harcoljanak a betolakodókkal."
+"tapasztaltakkal, amelyeket élőholtak indítottak. Dacyn felvázolt egy tervet, "
+"hogy hogyan harcoljanak a betolakodókkal."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:40
@@ -182,10 +182,10 @@ msgid ""
 "River Guard posts had been abandoned, as colonists spread into the Estmarks "
 "and the orcs were driven in retreat north of the Great River."
 msgstr ""
-"I. Garard király idejében két állást építettek ki Weldyn közelében "
+"I. Garard király idejében két őrhelyet építettek ki Weldyn közelében "
 "Soradoctól délre, hogy megállítsák az Estmark-dombságon túl portyázó "
 "banditákat és orkokat, még mielőtt Wesnoth földjére lépnének. Ám a későbbi "
-"években feladták a folyó menti őrhelyeket, ahogy a telepesek felköltöztek az "
+"években feladták a folyó menti állásokat, ahogy a telepesek felköltöztek az "
 "Estmark-hegységbe, és az orkok visszaszorultak a Nagy-folyótól északra eső "
 "területekre."
 
@@ -200,8 +200,8 @@ msgstr ""
 "A keletről fenyegető ismeretlen ellenségek ellen II. Konrad elhatározta, "
 "hogy újraépíti és megerősíti a folyami helyőrségeket. Ezek a garnizonok "
 "voltak hivatottak a Weldyn alatti területek telepes világának megóvására és "
-"felügyelésére. Két ígéretesnek tűnő fiatal tisztet küldött a két fontos "
-"poszt parancsnokául."
+"felügyeletére. Két ígéretesnek tűnő fiatal tisztet nevezett ki a két fontos "
+"poszt parancsnokává."
 
 #. [part]
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:48
@@ -348,7 +348,7 @@ msgstr "Mal-Uldhar"
 #. [objective]: condition=win
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:209
 msgid "Defend the outpost"
-msgstr "Védd meg a helyőrséget"
+msgstr "Megvéded a helyőrséget"
 
 #. [objective]: condition=lose
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:213
@@ -2758,8 +2758,8 @@ msgstr "<big><i>BUMM!!</i></big>"
 msgid ""
 "Good, we have escaped from the orcs. Now we must return to save Wesnoth."
 msgstr ""
-"Nagyszerű! Megmenekültünk az orkok elől. Most vissza kell térnünk megmenteni "
-"Wesnoth népét."
+"Nagyszerű! Megmenekültünk az orkok elől. Most vissza kell térnünk Wesnothba, "
+"hogy megmentsük."
 
 #. [option]
 #: data/campaigns/Eastern_Invasion/scenarios/12_Evacuation.cfg:317
@@ -2783,7 +2783,7 @@ msgid ""
 "save Wesnoth."
 msgstr ""
 "Nem kellett felrobbantanunk a hidat végül. Most vissza kell térnünk "
-"megmenteni Wesnoth népét."
+"Wesnothba, hogy megmentsük."
 
 #. [message]: speaker=Owaec
 #: data/campaigns/Eastern_Invasion/scenarios/12_Evacuation.cfg:356
