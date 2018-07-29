@@ -1182,8 +1182,8 @@ msgstr "Elvezeted Baldrast a felkelés vezetőjéhez"
 msgid ""
 "Remember that in fog, units always see one hex further than they can move."
 msgstr ""
-"Tartsd észben, hogy ködben az egységek mindig egy mezővel tovább látnak mint"
-" amennyit lépni tudnak."
+"Tartsd észben, hogy ködben az egységek mindig egy mezővel tovább látnak mint "
+"amennyit lépni tudnak."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:310
@@ -2823,12 +2823,6 @@ msgstr "Hogy történhetett ez? Elvesztünk."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/utils/utils.cfg:78
-#, fuzzy
-#| msgid ""
-#| "They returned to their village to find it destroyed, with those who "
-#| "fought left dead and the few survivors born away to unguessable fates. It "
-#| "was a bitter doom, but as Asheviere’s grip tightened they would live to "
-#| "see worse."
 msgid ""
 "They returned to their village to find it destroyed, with those who fought "
 "left dead and the few survivors borne away to unknown fates. It was a bitter "
