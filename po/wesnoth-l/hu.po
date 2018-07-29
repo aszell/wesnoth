@@ -21,8 +21,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #. [campaign]: id=Liberty
 #: data/campaigns/Liberty/_main.cfg:10 data/campaigns/Liberty/_main.cfg:11
@@ -31,8 +31,6 @@ msgstr "Szabadság"
 
 #. [campaign]: id=Liberty
 #: data/campaigns/Liberty/_main.cfg:19
-#, fuzzy
-#| msgid "(Easy)"
 msgid "Easy"
 msgstr "könnyű"
 
@@ -43,8 +41,6 @@ msgstr "Paraszt"
 
 #. [campaign]: id=Liberty
 #: data/campaigns/Liberty/_main.cfg:20
-#, fuzzy
-#| msgid "(Normal)"
 msgid "Normal"
 msgstr "átlagos"
 
@@ -55,8 +51,6 @@ msgstr "Törvényen kívüli"
 
 #. [campaign]: id=Liberty
 #: data/campaigns/Liberty/_main.cfg:21
-#, fuzzy
-#| msgid "(Difficult)"
 msgid "Difficult"
 msgstr "nehéz"
 
@@ -883,12 +877,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:271
-#, fuzzy
-#| msgid ""
-#| "Baldras and Relana returned to their villages to find them destroyed, "
-#| "with those who fought left dead and the few survivors born away to "
-#| "unguessable fates. It was a bitter doom, and as Wesnoth descended into "
-#| "darkness they would live to see worse."
 msgid ""
 "Baldras and Relana returned to their villages to find them destroyed, with "
 "those who fought left dead and the few survivors borne away to unknown "
@@ -1061,11 +1049,10 @@ msgstr ""
 
 #. [wml_message]
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:317
-#, fuzzy
 msgid "Could not convert a $stored_changers[$i].type, please report!"
 msgstr ""
-"A konvertálás nem sikerült: $stored_changers[$i].type, kérlek jelentsd a"
-" hibát!"
+"A konvertálás nem sikerült: $stored_changers[$i].type, kérlek jelentsd a "
+"hibát!"
 
 #. [message]: speaker=Harper
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:598
@@ -1192,7 +1179,6 @@ msgstr "Elvezeted Baldrast a felkelés vezetőjéhez"
 
 #. [note]
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:129
-#, fuzzy
 msgid ""
 "Remember that in fog, units always see one hex further than they can move."
 msgstr ""
