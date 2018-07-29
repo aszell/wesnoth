@@ -1,12 +1,13 @@
 # Kelemen Zoltán, 2011.
 # Barthalos Márton, 2012.
 # Tamás Krutki <krtamas@0x64.org>, 2018.
+# Széll András <szell.andris@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-17 15:09+0100\n"
+"PO-Revision-Date: 2018-07-29 12:30+0200\n"
 "Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -14,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:13
@@ -28,8 +29,6 @@ msgstr "HV"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:18
-#, fuzzy
-#| msgid "(Beginner)"
 msgid "Beginner"
 msgstr "kezdő"
 
@@ -45,15 +44,11 @@ msgstr "Harcos"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:19
-#, fuzzy
-#| msgid "(Normal)"
 msgid "Normal"
 msgstr "átlagos"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:20
-#, fuzzy
-#| msgid "(Challenging)"
 msgid "Challenging"
 msgstr "kihívást jelentő"
 
@@ -64,8 +59,6 @@ msgstr "Gárdista"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:21
-#, fuzzy
-#| msgid "(Difficult)"
 msgid "Difficult"
 msgstr "nehéz"
 
@@ -115,11 +108,10 @@ msgstr "Művészeti munkák"
 
 #. [lua]: wesnoth.theme_items.unit_status
 #: data/campaigns/Dead_Water/_main.cfg:88
-#, fuzzy
 msgid "stunned: This unit is stunned. It cannot enforce its Zone of Control."
 msgstr ""
-"összezavarva: Ez az egység össze van zavarodva. Nem képes védelmi zónáját"
-" fenntartani."
+"összezavarva: Ez az egység össze van zavarodva. Nem képes védelmi zónáját "
+"fenntartani."
 
 #. [scenario]: id=01_Invasion
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:36
@@ -167,7 +159,7 @@ msgstr ""
 "öntötte el, s félelmetes harag gyúlt szívében. Rendezte a serege sorait, s "
 "megindult az orkok nyomában. Állítása szerint nem a bosszú vezérelte, hanem "
 "a vágy, hogy egy életre szóló leckét adjon az orkoknak, miért nem tanácsos a "
-"sellőket zargatniuk. A sellők serege Tirigaznál érte be az ork hordát."
+"sellőket zaklatniuk. A sellők serege Tirigaznál érte be az ork hordát."
 
 #. [part]
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:55
@@ -207,9 +199,9 @@ msgstr ""
 "Ahogy Kai is tervezte, a csata olyan lecke volt, amit az orkok egy életre "
 "megjegyeztek; de a sellők is drágán fizettek a tanításért. Kai Laudiss egy "
 "mérgezett ork dárdától esett el, és a sellők seregének nagy része is "
-"megsemmisült. Amikor a túlélők visszatértek Jothába, Krellisnek, Kai Laudiss "
-"fiának szembesülnie kellett azzal, hogy neki kell elfoglalnia apja üresen "
-"maradt trónját."
+"megsemmisült. Amikor a túlélők visszatértek Jothába, Kai Laudiss fia, "
+"Krellis azzal szembesült, hogy neki kell elfoglalnia apja üresen maradt "
+"trónját."
 
 #. [part]
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:65
@@ -346,7 +338,7 @@ msgstr ""
 #. [message]: speaker=Mal-Kevek
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:391
 msgid "Rise, my slaves! We will create an army for Lord Ravanal."
-msgstr "Fel, fel, rabszolgák! Lord Ravanalnak lesztek a serege! "
+msgstr "Fel, fel, rabszolgák! Lord Ravanal seregei lesztek! "
 
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:400
@@ -380,12 +372,12 @@ msgstr "Minden falunkból föltámasztja a holtakat!"
 #. [message]: speaker=Gwabbo
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:596
 msgid "This will be a dark day, but we <i>will</i> prevail."
-msgstr "Sötét nap lesz, de mi <i>fogunk</i> győzedelmeskedni."
+msgstr "Sötét napnak ígérkezik, de győznünk <i>kell</i>."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:622
 msgid "Hey, I did it!"
-msgstr "Héjj! Megcsináltam!"
+msgstr "Hej, megcsináltam!"
 
 #. [message]: speaker=Gwabbo
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:626
@@ -428,7 +420,7 @@ msgstr ""
 "küldött szét, hogy támadják meg az orkokat, de még a tündéket is, hogy "
 "különböző fajokból gyarapítsa élőholt seregét. Úgy tűnt, hogy igényt tart "
 "sellő rabszolgákra is. Krellis felderítői azt is jelentették, hogy újabb "
-"sötét hordák tartanak észak felé. "
+"sötét hordák tartanak észak felé."
 
 #. [part]
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:46
@@ -526,7 +518,7 @@ msgstr ""
 "Attól tartok, sehogy. Segítségre lesz szükségünk. Régi mesterem, Tyegëa "
 "innen északra, egy szigeten tanít. Ő és papnői nagyon erősek. A "
 "segítségükkel talán megsemmisíthetjük ezeket a támadókat is. Meg kell "
-"győznünk Tyegëát, hogy hagyja el a paradicsomát."
+"győznünk Tyegëát, hogy hagyja el birtokát."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:302
@@ -571,7 +563,7 @@ msgstr ""
 "szigetre. Tyegëa Bilheldtől nyugatra, egy kis szigeten él, amely Tirigaz "
 "kikötőjétől nyugat-délnyugatra van az óceánban. Mindannyiunknak mennünk "
 "kell; halálos veszélyben van, aki itt marad, s a Tirigaztól nyugatra fekvő "
-"nyílt óceán szintén rejt veszélyeket. "
+"nyílt óceán szintén rejt veszélyeket."
 
 #. [message]: speaker=Gwabbo
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:352
@@ -757,8 +749,6 @@ msgstr "Úgy tűnik, szereztél egy házi denevért."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:629
-#, fuzzy
-#| msgid "Look! There is a massive bat back here."
 msgid "Look! There is a bat."
 msgstr "Nézzétek! Egy denevér."
 
@@ -776,10 +766,8 @@ msgstr "Nézzetek ide! Egy denevér gunnyaszt a sarokban."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:656
-#, fuzzy
-#| msgid "Well, kill it, and lets keep moving."
 msgid "Well, kill it, and let’s keep moving."
-msgstr "Döfd le, aztán menjünk tovább!"
+msgstr "Öld meg, aztán menjünk tovább!"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:660
@@ -803,10 +791,6 @@ msgstr "Élőholt denevér"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:742
-#, fuzzy
-#| msgid ""
-#| "Look! There is a bat in the corner here. It is moving, but it looks half "
-#| "dead."
 msgid "Look! There is a bat. It is moving, but it looks half dead."
 msgstr "Nézzétek! Egy denevér. Mozog, de alig él."
 
@@ -833,7 +817,7 @@ msgid ""
 "I believe it is undead and has no will of its own, but the Kai may have the "
 "will power to direct it."
 msgstr ""
-"Szerintem élőholt, és nincs saját akarata, de Kainak talán van akkora "
+"Szerintem élőholt, és nincs saját akarata, de talán a Kainak van akkora "
 "akaratereje, hogy irányíthassa."
 
 #. [message]: speaker=Kai Krellis
@@ -891,7 +875,7 @@ msgstr "Farkas-part"
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:21
 msgid "Distrustful of the open ocean, Kai Krellis led his people up the coast."
 msgstr ""
-"Nem bízván a nyílt óceánban Kai Krellis a part mentén vezette az embereit."
+"Nem bízván a nyílt óceánban, Kai Krellis a part mentén vezette az embereit."
 
 #. [part]
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:26
@@ -934,8 +918,8 @@ msgid ""
 "Smells like lots of death in the south. There must be a good feast near that "
 "merman town."
 msgstr ""
-"Sokak halálának illatát hozza a szél délről. Pompás lakoma lehet annál a "
-"sellő városnál."
+"Hullaszagot hozz a szél délről. Rengeteg halott - pompás lakoma lehet annál "
+"a sellő városnál."
 
 #. [message]: speaker=Vrunt
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:215
@@ -977,8 +961,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:299
-#, fuzzy
-#| msgid "The trident is 14-2, magical, ranged, with <i>fire</i> damage."
 msgid "The trident is 14×2, magical, ranged, with <i>fire</i> damage."
 msgstr "A szigony támadása 14×2, mágikus, távolsági, <i>tűz</i> típusú."
 
@@ -1016,7 +998,7 @@ msgid ""
 msgstr ""
 "Most már sokkal messzebb jártak az otthonuktól, mint amennyire a sellők "
 "általában elmerészkednek. Csak Cylanna és néhány harcos járt még ennél is "
-"távolabbi vizeken."
+"távolabb."
 
 #. [side]
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:86
@@ -1116,15 +1098,11 @@ msgstr "Bátor és igaz szívű elhatározás, Kai. Én sem tűröm a rabszolgas
 #. 'words of a human' here; it signifies rather 'words of a
 #. moral adult' as opposed to a child or dependant.
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:382
-#, fuzzy
-#| msgid ""
-#| "Those were the words of a merman, Kai Krellis, and well spoken. The folk "
-#| "are truly yours now."
 msgid ""
 "Those were the words of a man and a leader, Kai Krellis, and well spoken. "
 "The folk are truly yours now."
 msgstr ""
-"Ezek egy érett sellő szavai voltak, Kai Krellis, s nagyon igazad van. Most "
+"Ezek egy érett vezető szavai voltak, Kai Krellis, s nagyon igazad van. Most "
 "már végérvényesen elnyerted a néped bizalmát."
 
 #. [message]: speaker=narrator
@@ -1188,7 +1166,7 @@ msgid ""
 "It might be better to wait."
 msgstr ""
 "Aligha kétséges, hogy felkelnének, de sokukat lemészárolnák, ha most hívnád "
-"fel őket. Inkább várj még ezzel!"
+"őket. Inkább várj még ezzel!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:435
@@ -1256,7 +1234,7 @@ msgid ""
 "fearsome, but honorable, creatures. I think we can let him out of the cage."
 msgstr ""
 "Úgy látom, a denevérünk meg van illetődve! Ez biztosan egy perzsekény. Úgy "
-"hallottam, hogy félelmetes, de becsületes lények. Szerintem ki engedhetjük a "
+"hallottam, hogy félelmetes, de becsületes lények. Szerintem kiengedhetjük a "
 "ketrecből."
 
 #. [message]: speaker=Kai Krellis
@@ -1457,7 +1435,7 @@ msgid ""
 msgstr ""
 "Tartottam tőle, hogy ez fog történni. Túl sok időt fecséreltünk el, amíg a "
 "gyíkokkal harcoltunk, s az élőholtak utolértek minket. Éjszakára "
-"beszorultunk ebbe az erődbe, de reggel… "
+"beszorultunk ebbe az erődbe, de reggel…"
 
 #. [message]: speaker=Marg-Tonz
 #: data/campaigns/Dead_Water/scenarios/05_Tirigaz.cfg:362
@@ -1497,7 +1475,7 @@ msgid ""
 "Forget about it! We don’t want no trouble, but get off our land! Ghosts who "
 "don’t like fish are your problem."
 msgstr ""
-"Felejtsd el! Nem érdekelnek a problémáitok, tűnj a földünkről! Ha a "
+"Felejtsd el! Nem érdekelnek a problémáitok, tűnjetek a földünkről! Ha a "
 "szellemek ki nem állhatják a halakat, az a ti bajotok!"
 
 #. [message]: speaker=Kai Krellis
@@ -1603,10 +1581,8 @@ msgstr ""
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/05_Tirigaz.cfg:745
-#, fuzzy
-#| msgid "Destroy all the undead"
 msgid "Now we must defeat the undead."
-msgstr "Most le kell győznünk az összes élőholtat."
+msgstr "Most le kell győznünk az élőholtakat."
 
 #. [message]: speaker=Marg-Tonz
 #. orc's boss' last breath, deliberately gendered instead of changing to "merfolk"
@@ -1655,7 +1631,7 @@ msgstr "Házi kedvenc"
 msgid ""
 "Uh oh. There is someone else here. Hey! He is being attacked by a cuttle "
 "fish!"
-msgstr "Hú, jaj. Valaki más is van itt. Hejj! Megtámadta egy tintahal!"
+msgstr "Hú, jaj. Valaki más is van itt. Hé! Megtámadta egy tintahal!"
 
 #. [message]: speaker=Growloff
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:170
@@ -1665,7 +1641,7 @@ msgstr "Nézd, szépségem, micsoda finom falatok!"
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:174
 msgid "Or...is he <i>talking</i> to it?!"
-msgstr "Vagy… tényleg <i>beszél</i> a tintahalhoz!?"
+msgstr "Vagy… tényleg <i>beszél</i> a tintahalhoz?!"
 
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:178
@@ -1721,7 +1697,7 @@ msgstr ""
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:254
 msgid "I do not want a dangerous beast like that!"
-msgstr "Nekem nem kell egy ilyen veszélyes háziállat!"
+msgstr "Nekem nem kell egy ilyen veszélyes jószág!"
 
 #. [message]: speaker=Growloff
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:258
@@ -1735,7 +1711,7 @@ msgstr ""
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:262
 msgid "Maybe we could use a pet sea monster."
-msgstr "Talán hasznát vehetjük még egy tengeri szörnynek is…"
+msgstr "Talán hasznát vehetjük még egy háziasított tengeri szörnynek is…"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:266
@@ -1792,8 +1768,6 @@ msgstr "Vlagnor"
 
 #. [message]: speaker=Vlagnor
 #: data/campaigns/Dead_Water/scenarios/07_Bilheld.cfg:124
-#, fuzzy
-#| msgid "What are you mermen doing here?"
 msgid "What are you merfolk doing here?"
 msgstr "Mit kerestek itt, sellők?"
 
@@ -1819,10 +1793,6 @@ msgstr "Boszorkány?"
 
 #. [message]: speaker=Vlagnor
 #: data/campaigns/Dead_Water/scenarios/07_Bilheld.cfg:144
-#, fuzzy
-#| msgid ""
-#| "She kill drakes. If you are her friend, we will kill you. We do not want "
-#| "MORE mermen blasting and stabbing."
 msgid ""
 "She kill drakes. If you are her friend, we will kill you. We do not want "
 "MORE merfolk blasting and stabbing."
@@ -1853,7 +1823,7 @@ msgstr "Ők a barátaim. Az ő oldalukon fogok harcolni."
 #. [message]: speaker=Vlagnor
 #: data/campaigns/Dead_Water/scenarios/07_Bilheld.cfg:170
 msgid "Then you will die with them!"
-msgstr "Akkor ő oldalukon fogsz is meghalni!"
+msgstr "Akkor meghalni is az ő oldalukon fogsz!"
 
 #. [scenario]: id=08_Talking_to_Tyegea
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:7
@@ -1936,8 +1906,8 @@ msgid ""
 "We were forced to flee for our lives from legions of undead. If you help us, "
 "we can remove these spirits from our home."
 msgstr ""
-"Menekülni kényszerültünk az élőholtak légiói elől. Ha segítesz, kiűzhetjük a "
-"szellemeket az otthonunkból."
+"Menekülni kényszerültünk az élőholtak légiói elől. Ha segítesz, kiűzhetjük "
+"őket az otthonunkból."
 
 #. [message]: speaker=Tyegea
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:135
@@ -1946,7 +1916,7 @@ msgid ""
 "by attacking armies of undead?"
 msgstr ""
 "S miből gondolod, hogy feladom a kényelmes otthonomat, és kockára teszem az "
-"életemet az élőholtak megtámadásával? "
+"életemet az élőholtak megtámadásával?"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:139
@@ -2009,8 +1979,7 @@ msgstr ""
 #. [message]: speaker=Tyegea
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:171
 msgid "That was quite a scandal, too, but I was not cut out to be a mother."
-msgstr ""
-"Szép kis botrány is volt, de én amúgy sem lettem volna alkalmas anyának."
+msgstr "Szép kis botrány volt, de én amúgy sem lettem volna alkalmas anyának."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:175
@@ -2030,11 +1999,10 @@ msgid ""
 "prove that my blood flows in your veins. Prove that your are, despite "
 "appearances, courageous, and worthy of my help."
 msgstr ""
-"Azt majd meglátjuk. Kissé feszélyez, hogy egy király – és az én "
-"leszármazottam – idáig rohan, hogy a segítségemért esedezzen. Mielőtt "
-"beleegyeznék, bizonyítanod kell, hogy az én vérem folyik az ereidben. "
-"Bizonyítanod kell, hogy a látszat ellenére bátor vagy, és méltó a "
-"segítségemre."
+"Azt majd meglátjuk. Kissé feszélyez, hogy egy Kai – és az én leszármazottam "
+"– idáig rohan, hogy a segítségemért esedezzen. Mielőtt beleegyeznék, "
+"bizonyítanod kell, hogy az én vérem folyik az ereidben. Bizonyítanod kell, "
+"hogy a látszat ellenére bátor vagy, és méltó a segítségemre."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:183
@@ -2083,7 +2051,7 @@ msgid ""
 msgstr ""
 "Régi vágyam, hogy a kard visszakerüljön a sellők tulajdonába, mivel minket "
 "illet. Ha visszaszerzed, elismerem, hogy érdemes vagy minden segítségre, "
-"amit csak nyújthatok. Nem tudom pontosan, hol lehet a kard, de tudok "
+"amit csak nyújthatok. Nem tudom pontosan, hol lehet a kard, de ismerek "
 "valakit, aki tudja. A Pusztulás Mocsarától délre, egy romos kastélyban él "
 "egy Caladon nevű mágus. Évek óta sóvárog a kard után, úgyhogy ő biztosan "
 "tudja, hol van a delevény, aki őrzi."
@@ -2264,7 +2232,7 @@ msgstr "Níííp, níííp, níííp!"
 #. [message]: speaker=unit
 #: data/campaigns/Dead_Water/scenarios/09_The_Mage.cfg:427
 msgid "Hey, I found somebody!"
-msgstr "Hejj, itt van valaki!"
+msgstr "Hé, itt van valaki!"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/09_The_Mage.cfg:435
@@ -2483,8 +2451,8 @@ msgid ""
 msgstr ""
 "Amire én emlékszem, te vén bolond, az az, ahogy hanyatt-homlok iszkolsz, "
 "hátrahagyva a kardom elorzásához felbérelt orkok füstölgő hulláit. Most "
-"sellőket hozol. Amikor kiterítve fekszenek, mint a partra vetett halak, "
-"ezúttal talán nem menekülnél? Ne beszélj <i>nekem</i> félelemről!"
+"sellőket hozol. Ezúttal talán nem menekülsz majd, mikor kiterülnek, mint a "
+"partra vetett halak?! Ne beszélj <i>nekem</i> félelemről!"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:306
@@ -2688,14 +2656,11 @@ msgstr "Én nem tartok veletek. Valakinek a népedből kellene a kardot vinni."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:967
-#, fuzzy
 msgid "This is not food. And it is definitely not a toy. Leave it."
 msgstr "Ez nem ennivaló, és egészen biztosan nem egy játék. Hagyd!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:996
-#, fuzzy
-#| msgid "This sword is 8-4, magical, with <i>fire</i> damage."
 msgid "This sword is 8×4, magical, with <i>fire</i> damage."
 msgstr ""
 "Ennek a kardnak a sebzése 8×4, mágikus, <i>tűz</i> típusú támadása van."
@@ -2786,7 +2751,7 @@ msgid ""
 msgstr ""
 "Nem baj. Egy ostoba alak volt. Sikeresen teljesítettétek a feladatot, amit "
 "megszabtam, unokám, tehát most rajtam a sor, veletek megyek, és segítek "
-"kiebrudalni a nyughatatlan szellemeket az otthonotokból. A papnőim is velem "
+"kiebrudalni a nyughatatlan lelkeket az otthonotokból. A papnőim is velem "
 "jönnek, s rendelkezésetekre állnak."
 
 #. [message]: speaker=narrator
@@ -2875,7 +2840,7 @@ msgid ""
 "fouling the waters and making the bay more to their liking. We worry that "
 "they will soon be back to finish with us, and I fear we will not survive."
 msgstr ""
-"Nem, bizony, habár csak kisebb összetűzésekbe keveredtünk. A lények most épp "
+"Nem bizony, habár csak kisebb összetűzésekbe keveredtünk. A lények most épp "
 "azon dolgoznak, hogy beszennyezzék az öblöt, és számukra kedvezőbb tereppé "
 "alakítsák. Aggódunk, hogy hamarosan visszatérnek, hogy végezzenek velünk, és "
 "félő, hogy nem éljük túl."
@@ -2899,14 +2864,12 @@ msgid ""
 "much easier to move through now."
 msgstr ""
 "Remek! Csatlakozunk hozzátok. Meg fogsz lepődni, hogy Tabomo milyen gyorsan "
-"veri szét a csontvázakat. Azt hiszem, azt a romos várat használhatnánk a "
-"műveleti bázisunknak. Az élőholtak kivágták a fákat, hogy hidakat építsenek, "
-"úgyhogy könnyebben lehet mozogni is."
+"veri szét a csontvázakat. Azt hiszem, azt a romos várat használhatnánk hadi "
+"központnak. Az élőholtak kivágták a fákat, hogy hidakat építsenek, úgyhogy "
+"könnyebben lehet mozogni is."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:491
-#, fuzzy
-#| msgid "At dawn, the mermen got a good look at their opponents."
 msgid "At dawn, the merfolk got a good look at their opponents."
 msgstr "Hajnalban a sellők alaposan szemügyre vették az ellenséget."
 
@@ -2995,14 +2958,14 @@ msgstr "Tyegëa! Ne!"
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:797
 msgid "Inky has found something. Someone should check it out."
-msgstr "Tintás talált valamit. Valakinek meg kellene néznie mi az."
+msgstr "Tintás talált valamit. Valakinek meg kellene néznie, mi az."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:819
 msgid "Something must be there! Good bat! Someone should find out what it is."
 msgstr ""
-"Kell, hogy legyen ott valami! Jó denevér! Valakinek ki kellene derítenie mi"
-" az."
+"Kell, hogy legyen ott valami! Jó denevér! Valakinek ki kellene derítenie, mi "
+"az."
 
 #. [message]: speaker=unit
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:853
@@ -3049,15 +3012,6 @@ msgstr "Epilógus"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/13_Epilogue.cfg:33
-#, fuzzy
-#| msgid ""
-#| "After destroying Mal-Ravanal’s henchmen, Kai Krellis awaited another "
-#| "attack. But it never came. Krellis sent some messengers south to discover "
-#| "what they could. The news that came back was better than good. Mal-"
-#| "Ravanal was dead! Soldiers of Wesnoth had defeated him at about the same "
-#| "time the mermen had defeated the undead at Jotha. With the evil wizard "
-#| "gone, the mermen relaxed and began rebuilding in earnest, and soon Jotha "
-#| "was restored."
 msgid ""
 "After destroying Mal-Ravanal’s henchmen, Kai Krellis awaited another attack. "
 "But it never came. Krellis sent some messengers south to discover what they "
@@ -3077,14 +3031,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/13_Epilogue.cfg:39
-#, fuzzy
-#| msgid ""
-#| "Not everything was as before, of course. Many good merfolk had been lost "
-#| "in the first attacks and on the journey. The visiting priestesses did "
-#| "much to console the families of the dead, and as it always does, life "
-#| "continued. In a few months, the giggles of children could be heard "
-#| "echoing through shallows. Many of those children were named after Kai "
-#| "Krellis, Gwabbo, Cylanna, and the other heroes."
 msgid ""
 "Not everything was as before, of course. Many good merfolk had been lost in "
 "the first attacks and on the journey. The visiting priestesses did much to "
@@ -3094,9 +3040,9 @@ msgid ""
 "Cylanna, and the other heroes."
 msgstr ""
 "Természetesen nem minden volt ugyanolyan, mint régen. Számos kiváló sellő "
-"halt meg az első támadás és az út során. A papnők sokakat felkerestek, hogy "
-"vigaszt nyújtsanak a gyászoló családoknak. Ahogy az lenni szokott, az élet "
-"ment tovább. Néhány hónap múlva gyerekzsivaj visszhangzott a part menti "
+"halt meg az első támadások és az út során. A papnők sokakat felkerestek, "
+"hogy vigaszt nyújtsanak a gyászoló családoknak. Ahogy az lenni szokott, az "
+"élet ment tovább. Néhány hónap múlva gyerekzsivaj visszhangzott a part menti "
 "vizekben. A gyerekek közül sokan viselték Kai Krellis, Gwabbo, Cylanna és "
 "más hősök neveit."
 
@@ -3113,23 +3059,16 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/13_Epilogue.cfg:63
-#, fuzzy
-#| msgid ""
-#| "Cylanna never traveled far again, but stayed in Jotha as a respected "
-#| "elder. She remained a royal advisor, but her main work was healing the "
-#| "sick, and presiding at christenings and weddings. All this agreed with "
-#| "her disposition much better than battling undead."
 msgid ""
 "Cylanna never traveled far again, but stayed in Jotha as a respected elder. "
 "She remained a royal advisor, but her main work was healing the sick, and "
 "presiding at naming ceremonies and weddings. All this agreed with her "
 "disposition much better than battling undead."
 msgstr ""
-"Cylanna soha többé nem tett nagyobb utazást, hanem Jotha köztiszteletben "
-"álló véneként ténykedett. A király tanácsadója maradt, de fő feladata a "
-"betegek gyógyítása, valamint a névadó ünnepségek és esküvők levezénylése"
-" volt. "
-"Mindez jobban kielégítette, mint az élőholtak elleni csatározás."
+"Cylanna soha többé nem tett nagyobb utazást, hanem csatlakozott Jotha "
+"köztiszteletben álló vénjeihez. A király tanácsadója maradt, de fő feladata "
+"a betegek gyógyítása, valamint a névadó ünnepségek és esküvők levezénylése "
+"volt. Mindez jobban kielégítette, mint az élőholtak elleni csatározás."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/13_Epilogue.cfg:70
@@ -3336,7 +3275,6 @@ msgstr ""
 
 #. shown in the status table
 #: data/campaigns/Dead_Water/utils/dw-utils.cfg:73
-#, fuzzy
 msgid "user_team_name^Merfolk"
 msgstr "Sellők"
 
@@ -3351,18 +3289,14 @@ msgstr "Viharszigony"
 
 #. [object]: id={ID}
 #: data/campaigns/Dead_Water/utils/items.cfg:11
-#, fuzzy
-#| msgid "This weapon shoots powerful lightning bolts at your enemies."
 msgid ""
 "This trident gives merfolk the power to throw lightning at their enemies."
-msgstr "Ez a szigony félelmetes villámokat lövell az ellenségeidre."
+msgstr "Ez a szigony félelmetes villámokat szór az ellenségeidre."
 
 #. [object]: id={ID}
 #: data/campaigns/Dead_Water/utils/items.cfg:13
-#, fuzzy
-#| msgid "Only a merman can use this item."
 msgid "Only the merfolk can use this item."
-msgstr "Ezt a tárgyat csak egy sellő használhatja."
+msgstr "Ezt a tárgyat csak sellő használhatja."
 
 #. [effect]: type=fire
 #: data/campaigns/Dead_Water/utils/items.cfg:33
@@ -3410,14 +3344,11 @@ msgstr "Viselje a denevér a gyűrűt. Szolgálatkészebb lesz tőle."
 
 #. [option]
 #: data/campaigns/Dead_Water/utils/items.cfg:219
-#, fuzzy
-#| msgid "Someone take that off of him before he hurts himself."
 msgid "Someone take that off him before he hurts himself."
 msgstr "Valaki vegye el tőle, mielőtt még megsebzi magát!"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/utils/items.cfg:239
-#, fuzzy
 msgid "Leave it."
 msgstr "Hagyd!"
 
@@ -3487,19 +3418,13 @@ msgstr "összezavarás"
 
 #. [damage]: id=tail_stun
 #: data/campaigns/Dead_Water/utils/specials.cfg:10
-#, fuzzy
-#| msgid ""
-#| "This attack hits so hard that the defender is dazed and can no longer "
-#| "enforce a zone of control. The effect wears off on the defender’s next "
-#| "turn."
 msgid ""
 "This attack hits so hard that the opponent is dazed and can no longer "
 "enforce a zone of control. The effect wears off on the opponent’s next turn."
 msgstr ""
-"Ez a támadás akkorát üt, hogy az ellenséget úgy összezavarja, hogy nem képes "
-"a védelmi zónáját ellenőrizni. A hatás elmúlik, amikor az ellenfél"
-" legközelebb "
-"sorra kerül."
+"Ez a támadás egy nagy ütéssel az ellenséget úgy összezavarja, hogy az nem "
+"lesz képes a védelmi zónáját ellenőrizni. A hatás elmúlik, amikor az "
+"ellenfél legközelebb sorra kerül."
 
 #~ msgid "Merman Forces"
 #~ msgstr "Sellő sereg"
