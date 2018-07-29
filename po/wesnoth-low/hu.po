@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: hu-low_1.5(frozen)\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-17 15:58+0100\n"
+"PO-Revision-Date: 2018-07-29 15:38+0100\n"
 "Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -50,7 +50,6 @@ msgstr "(Középhaladó szint, 18 pálya)"
 
 #. [campaign]: id=LOW, type=hybrid
 #: data/campaigns/Legend_of_Wesmere/_main.cfg:55
-#, fuzzy
 #| msgid "(Easy)"
 msgid "Easy"
 msgstr "könnyű"
@@ -1400,12 +1399,12 @@ msgstr "Hraurg"
 msgid "Spahr"
 msgstr "Spahr"
 
+# Az eredeti angol szövegben egyértelműen ló van, viszont szerintem lovasra gondolt.
 #. [objective]: condition=win
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/05_The_Saurian_Treasury.cfg:204
-#, fuzzy
 #| msgid "Enter the Saurian Treasury and leave with the gold"
 msgid "Enter the Saurian Treasury with a horse and leave with the gold"
-msgstr "Bejutsz a Gyík Kincstárba egy lóval, és megszerzed az aranyat"
+msgstr "Bejutsz a Gyík Kincstárba egy lovassal, és megszerzed az aranyat"
 
 #. [message]: id=Kalenz
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/05_The_Saurian_Treasury.cfg:271
@@ -1574,7 +1573,6 @@ msgstr "Traur"
 
 #. [note]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/06_Acquaintance_in_Need.cfg:247
-#, fuzzy
 msgid "Try to save leveled dwarf units"
 msgstr "Próbálj meg szintet lépett törp egységeket megmenteni"
 
@@ -1943,10 +1941,6 @@ msgstr "Talán az arany megnyomja a szavaink súlyát."
 #. [message]: speaker=narrator
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/07_Elves_Last_Stand.cfg:568
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/07_Elves_Last_Stand.cfg:574
-#, fuzzy
-#| msgid ""
-#| " has left the recovered gold into the elvish treasury. You will start the "
-#| "next scenario with a preset amount."
 msgid ""
 " has returned any remaining gold into the elvish treasury. You will start "
 "the next scenario with a preset amount."
@@ -4920,14 +4914,11 @@ msgstr "Kitartasz hat napig"
 
 #. [objective]: condition=lose
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/22_Northern_Battle.cfg:318
-#, fuzzy
-#| msgid "Survive for six days"
 msgid "Kalenz survives for six days"
 msgstr "Kalenz túlél hat napot"
 
 #. [note]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/22_Northern_Battle.cfg:329
-#, fuzzy
 msgid ""
 "If you lose you still have a chance to defeat Kalenz in the next scenario."
 msgstr ""
@@ -5174,25 +5165,21 @@ msgstr ""
 
 #. [unit_type]: id=Great Ogre, race=ogre
 #: data/campaigns/Legend_of_Wesmere/units/ogres/Great_Ogre.cfg:6
-#, fuzzy
-#| msgid "Creatures"
 msgid "Great Ogre"
 msgstr "Hatalmas ogre"
 
 #. [unit_type]: id=Great Ogre, race=ogre
 #: data/campaigns/Legend_of_Wesmere/units/ogres/Great_Ogre.cfg:34
-#, fuzzy
 msgid ""
 "Great Ogres are giant creatures that usually live alone in the wilderness, "
 "remarkably similar to humans in form, though large and misshapen. While they "
 "can be easily outrun or outsmarted, their strength is not to be "
 "underestimated."
 msgstr ""
-"A hatalmas ogrék nagydarab, ostoba lények, akik bár külsőre meglehetősen"
-" hasonlóak "
-"az emberekhez, nagyobbak és torzabbak náluk. Egyedül élnek a vadonban. "
-"Könnyedén el lehet futni előlük, vagy be lehet csapni őket, ám nyers "
-"erejüket nem szabad alábecsülni."
+"A hatalmas ogrék nagydarab, ostoba lények, akik bár külsőre meglehetősen "
+"hasonlóak az emberekhez, nagyobbak és torzabbak náluk. Egyedül élnek a "
+"vadonban. Könnyedén el lehet futni előlük, vagy be lehet csapni őket, ám "
+"nyers erejüket nem szabad alábecsülni."
 
 #. [leadership]: id=elates_kalenz
 #: data/campaigns/Legend_of_Wesmere/utils/abilities.cfg:10
@@ -5230,9 +5217,9 @@ msgstr "gyógyítja Kalenzet +4"
 msgid "female^heals Kalenz +4"
 msgstr "gyógyítja Kalenzet +4"
 
+# megnő a gyógyítási képessége is irányában → megnő a gyógyítási képessége is annak irányában
 #. [heals]: id=heals_kalenz
 #: data/campaigns/Legend_of_Wesmere/utils/abilities.cfg:34
-#, fuzzy
 #| msgid ""
 #| "heals +4:\n"
 #| "If a shyde has developed a special bond to a person her healing abilities "
@@ -5244,8 +5231,9 @@ msgid ""
 "at the beginning of your turn."
 msgstr ""
 "Ha egy erdőtündér különleges kapcsolatba kerül egy másik személlyel, megnő a "
-"gyógyítási képessége is irányában. Cleodil ezért Kalenzet plusz pontokkal "
-"gyógyítja."
+"gyógyítási képessége is annak irányában. Cleodil ezért Kalenzet plusz"
+" pontokkal "
+"gyógyítja köröd kezdetén."
 
 #: data/campaigns/Legend_of_Wesmere/utils/characters.cfg:53
 msgid "Huraldur"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-29 12:30+0200\n"
+"PO-Revision-Date: 2018-07-29 15:46+0100\n"
 "Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.9\n"
+"X-Generator: Lokalize 2.0\n"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:13
@@ -1907,7 +1907,7 @@ msgid ""
 "we can remove these spirits from our home."
 msgstr ""
 "Menekülni kényszerültünk az élőholtak légiói elől. Ha segítesz, kiűzhetjük "
-"őket az otthonunkból."
+"ezeket a szellemeket otthonunkból."
 
 #. [message]: speaker=Tyegea
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:135
