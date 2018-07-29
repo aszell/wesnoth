@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:13
@@ -2864,9 +2864,9 @@ msgid ""
 "much easier to move through now."
 msgstr ""
 "Remek! Csatlakozunk hozzátok. Meg fogsz lepődni, hogy Tabomo milyen gyorsan "
-"veri szét a csontvázakat. Azt hiszem, azt a romos várat használhatnánk hadi "
-"központnak. Az élőholtak kivágták a fákat, hogy hidakat építsenek, úgyhogy "
-"könnyebben lehet mozogni is."
+"veri szét a csontvázakat. Azt hiszem, azt a romos várat használhatnánk "
+"támaszpontnak. Az élőholtak kivágták a fákat, hogy hidakat építsenek, "
+"úgyhogy könnyebben lehet mozogni is."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:491
@@ -3065,10 +3065,10 @@ msgid ""
 "presiding at naming ceremonies and weddings. All this agreed with her "
 "disposition much better than battling undead."
 msgstr ""
-"Cylanna soha többé nem tett nagyobb utazást, hanem csatlakozott Jotha "
-"köztiszteletben álló vénjeihez. A király tanácsadója maradt, de fő feladata "
-"a betegek gyógyítása, valamint a névadó ünnepségek és esküvők levezénylése "
-"volt. Mindez jobban kielégítette, mint az élőholtak elleni csatározás."
+"Cylanna soha többé nem tett nagyobb utazást, hanem Jotha köztiszteletben "
+"álló véne lett. A király tanácsadója maradt, de fő feladata a betegek "
+"gyógyítása, valamint a névadó ünnepségek és esküvők levezénylése volt. "
+"Mindez jobban kielégítette, mint az élőholtak elleni csatározás."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/13_Epilogue.cfg:70
