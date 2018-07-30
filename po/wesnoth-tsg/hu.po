@@ -5,12 +5,13 @@
 # Gábor Udvari <gabor.udvari@gmail.com>, 2011.
 # Széll András <szell.andris@gmail.com>, 2018.
 # Tamás Krutki <krtamas@0x64.org>, 2018.
+# Pazurik L. Ádám <pazurik.laszlo.adam@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-tsg_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-22 11:32 UTC\n"
-"PO-Revision-Date: 2018-07-17 21:58+0200\n"
+"PO-Revision-Date: 2018-07-30 14:55+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -603,7 +604,7 @@ msgid ""
 "see reinforcements — Did Sir Loris send word of our plight?"
 msgstr ""
 "Urza Mathin meghalt! Gratulálok, parancsnok! Azt hittük, sose látjuk az "
-"utánpótlást — Sir Loris küldött üzenetet az itteni állapotokról?"
+"erősítést — Sir Loris küldött üzenetet az itteni állapotokról?"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:731
@@ -1074,7 +1075,7 @@ msgid ""
 msgstr ""
 "Most már huszárokat is toborozhatsz. Gyorsak és halálosak füves területeken, "
 "de erdőben gyengék, a hegyeken pedig nem tudnak átjutni. Képesek lépést "
-"tartani Deorannal, így védhetik!"
+"tartani Deorannal, így megvédhetik őt!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:299
@@ -1222,7 +1223,7 @@ msgstr ""
 "Valóban elég bátor vagy, hogy szembeszállsz velük. De félek, hogy egyedül "
 "bukásra vagy ítélve. Még él egy tünde, aki emlékszik az élőholtak titkára, "
 "amit akkor tanultunk meg, amikor I. Haldric a földünkre jött. A neve Mebrin, "
-"és a közeli dombok közt él. Elviszlek hozzá."
+"és a közeli, félreeső dombok közt él. Elviszlek hozzá."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:436
@@ -1634,7 +1635,7 @@ msgstr "Rendben. Átkutatjuk a folyót és kifürkésszük titkait."
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:258
 msgid "Investigate the areas to the south of the Black River"
-msgstr "Felderíted a Fekete-folyótól délre lévő területeket"
+msgstr "Felderíted a Fekete-folyótól délre fekvő területeket"
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:268
@@ -2034,7 +2035,7 @@ msgid ""
 "borders. Who knows how many more of these undead are hiding in the forest?"
 msgstr ""
 "Valakinek hírt kell vinnie vissza Wesnothba erről az új gonoszról, ami már a "
-"határainknál leselkedik. Ki tudja, mennyi élőholt rejtőzik még az erdőben."
+"határainknál leselkedik. Ki tudja, mennyi élőholt rejtőzik még az erdőben!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:907
@@ -2310,7 +2311,7 @@ msgid ""
 "dwell in these lands. Surely you have come from him?"
 msgstr ""
 "Utazók ezen a sivár földön! Azt a sötét bölcset keresem, aki a szóbeszéd "
-"szerint ezen a vidéken lakozik. Bizonyára tőle jöttetek?"
+"szerint ezen a vidéken lakozik. Bizonyára tőle jöttetek!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/06a_Tidings_Good_and_Ill.cfg:412
@@ -2333,7 +2334,7 @@ msgid ""
 "Deoran and Ethiliel!"
 msgstr ""
 "Ezek a nagák még mindig ellenőrzésük alatt tartják a kulcsfontosságú "
-"helyeket. Tisztára kell sepernünk az utat Deorannak és Ethilielnek! "
+"helyeket. Tisztára kell sepernünk az utat Deorannak és Ethilielnek!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/06a_Tidings_Good_and_Ill.cfg:450
@@ -2603,7 +2604,7 @@ msgstr ""
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/07a_Into_the_Depths.cfg:296
 msgid "Find the source of the undead under the citadel"
-msgstr "Megtalálod az élőholtak fészkét a fellegvár alatt."
+msgstr "Megtalálod az élőholtak fészkét a fellegvár alatt"
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/07a_Into_the_Depths.cfg:307
@@ -3828,7 +3829,7 @@ msgid ""
 "had a mission for him."
 msgstr ""
 "Haldric király magához hívatott egy fiatal, eleddig ismeretlen, de ígéretes "
-"lovassági tisztet, akit Deorannak hívtak. Haldiel fia volt, aki hősies "
+"lovassági tisztet, akit Deorannak hívtak. Haldiel unokája volt, aki hősies "
 "odaadással harcolt I. Konrad oldalán az orkokkal vívott háborúban. A király "
 "most egy küldetést szánt neki."
 
@@ -3929,7 +3930,7 @@ msgid ""
 msgstr ""
 "Bogyókat és vadhúst nemigen lehetett találni a homályos erdőkben. Az emberek "
 "lelkét az otthon gondolata melegítette, de testük csont és bőr volt. A "
-"hosszú heteken át tartó menetelésnek ára volt. "
+"hosszú heteken át tartó menetelésnek ára volt."
 
 #. [part]
 #: data/campaigns/The_South_Guard/utils/sg_story.cfg:88
@@ -4011,8 +4012,8 @@ msgid ""
 "King Haldric himself. Dark clouds were brewing throughout the realm, and "
 "every commander would be needed to weather the storm..."
 msgstr ""
-"Sir Deorant, Wesnoth lovagját, tanácskozásra hívták Weldynbe magához Haldric "
-"királyhoz. Sötét felhők gyülekeztek a birodalom felett, és minden "
+"Sir Deorant, Wesnoth lovagját, tanácskozásra hívták Weldynbe, magához "
+"Haldric királyhoz. Sötét felhők gyülekeztek a birodalom felett, és minden "
 "parancsnokra szükség volt, hogy átvészelhessék az eljövendőket..."
 
 #. [part]
