@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu-tsg_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-22 11:32 UTC\n"
-"PO-Revision-Date: 2018-07-30 14:55+0200\n"
+"PO-Revision-Date: 2018-08-01 00:18+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.9\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. [campaign]: id=The_South_Guard
 #: data/campaigns/The_South_Guard/_main.cfg:9
@@ -2034,8 +2034,8 @@ msgid ""
 "Someone must take news back to Wesnoth of this new evil that lurks near our "
 "borders. Who knows how many more of these undead are hiding in the forest?"
 msgstr ""
-"Valakinek hírt kell vinnie vissza Wesnothba erről az új gonoszról, ami már a "
-"határainknál leselkedik. Ki tudja, mennyi élőholt rejtőzik még az erdőben!"
+"Valakinek hírt kell vinnie Wesnothba a határainknál leselkedő új gonoszról! "
+"Ki tudja, mennyi élőholt rejtőzik még az erdőben!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:907
