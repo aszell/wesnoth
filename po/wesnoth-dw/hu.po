@@ -918,8 +918,8 @@ msgid ""
 "Smells like lots of death in the south. There must be a good feast near that "
 "merman town."
 msgstr ""
-"Hullaszagot hozz a szél délről. Rengeteg halott - pompás lakoma lehet annál "
-"a sellő városnál."
+"Hullaszagot hoz a szél délről. Rengeteg halott - pompás lakoma lehet annál "
+"a sellő városnál!"
 
 #. [message]: speaker=Vrunt
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:215
@@ -998,7 +998,7 @@ msgid ""
 msgstr ""
 "Most már sokkal messzebb jártak az otthonuktól, mint amennyire a sellők "
 "általában elmerészkednek. Csak Cylanna és néhány harcos járt még ennél is "
-"távolabb."
+"távolabbi vizeken."
 
 #. [side]
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:86
@@ -2751,7 +2751,7 @@ msgid ""
 msgstr ""
 "Nem baj. Egy ostoba alak volt. Sikeresen teljesítettétek a feladatot, amit "
 "megszabtam, unokám, tehát most rajtam a sor, veletek megyek, és segítek "
-"kiebrudalni a nyughatatlan lelkeket az otthonotokból. A papnőim is velem "
+"kiebrudalni a nyughatatlan szellemeket az otthonotokból. A papnőim is velem "
 "jönnek, s rendelkezésetekre állnak."
 
 #. [message]: speaker=narrator
