@@ -1,4 +1,15 @@
 ## Version 1.14.4+dev
+ ### Campaigns
+   * Secrets of the Ancients:
+     * Fix dialog said by wrong unit & revert previous fix (issue #3294)
+   * Tutorial:
+     * Added more information to the Status Table prompt about how to access it (issue #2883).
+   * Under the Burning Suns:
+     * New graphics for Eloh.
+ ### Language and i18n
+   * Updated translations: British English, Chinese (Traditional), French, Italian
+ ### User Interface
+   * MacOS: fixed moving the mouse with a touchpad also scrolling GUI dialogs
 
 ## Version 1.14.4
  ### Security Fixes

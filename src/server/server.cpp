@@ -31,6 +31,7 @@
 #include "serialization/unicode.hpp"
 #include "utils/functional.hpp"
 #include "utils/iterable_pair.hpp"
+#include "version.hpp"
 
 #include "server/ban.hpp"
 #include "server/game.hpp"
@@ -84,6 +85,7 @@ namespace wesnothd
 {
 // we take profiling info on every n requests
 int request_sample_frequency = 1;
+version_info secure_version = version_info("1.14.4");
 
 static void make_add_diff(
 		const simple_wml::node& src, const char* gamelist, const char* type, simple_wml::document& out, int index = -1)
@@ -489,6 +491,7 @@ void server::load_config()
 	// remember to make new one as a daemon or it will block old one
 	restart_command = cfg_["restart_command"].str();
 
+	recommended_version_ = cfg_["recommended_version"].str();
 	accepted_versions_.clear();
 	const std::string& versions = cfg_["versions_accepted"];
 	if(versions.empty() == false) {
@@ -984,6 +987,12 @@ void server::add_player(socket_ptr socket, const wesnothd::player& player)
 
 	if(!motd_.empty()) {
 		send_server_message(socket, motd_);
+	}
+	if(version_info(player.version()) < secure_version ){
+		send_server_message(socket, "You are using version " + player.version() + " which has known security issues that can be used to compromise your computer. We strongly recommend updating to a newer Wesnoth version!");
+	}
+	if(version_info(player.version()) < version_info(recommended_version_)) {
+		send_server_message(socket, "A newer Wesnoth version, " + recommended_version_ + ", is out!");
 	}
 
 	read_from_player(socket);
@@ -1553,8 +1562,11 @@ void server::handle_player_in_game(socket_ptr socket, std::shared_ptr<simple_wml
 		// Update the game's description.
 		// If there is no shroud, then tell players in the lobby
 		// what the map looks like
+		const simple_wml::node& s = *wesnothd::game::starting_pos(g.level().root());
+		// fixme: the hanlder of [store_next_scenario] below searches for 'mp_shroud' in [scenario]
+		//        at least of the these cosed is likely wrong.
 		if(!data["mp_shroud"].to_bool()) {
-			desc.set_attr_dup("map_data", (*wesnothd::game::starting_pos(data.root()))["map_data"]);
+			desc.set_attr_dup("map_data", s["map_data"]);
 		}
 
 		if(const simple_wml::node* e = data.child("era")) {
@@ -1563,7 +1575,7 @@ void server::handle_player_in_game(socket_ptr socket, std::shared_ptr<simple_wml
 			}
 		}
 
-		if(data.attr("require_scenario").to_bool(false)) {
+		if(s["require_scenario"].to_bool(false)) {
 			desc.set_attr("require_scenario", "yes");
 		}
 
@@ -1658,7 +1670,7 @@ void server::handle_player_in_game(socket_ptr socket, std::shared_ptr<simple_wml
 			}
 		}
 
-		if(data.attr("require_scenario").to_bool(false)) {
+		if(s["require_scenario"].to_bool(false)) {
 			desc.set_attr("require_scenario", "yes");
 		}
 
@@ -2371,7 +2383,7 @@ void server::status_handler(
 	// If a simple username is given we'll check for its IP instead.
 	if(utils::isvalid_username(parameters)) {
 		for(const auto& player : player_connections_) {
-			if(parameters == player.info().name()) {
+			if(utf8::lowercase(parameters) == utf8::lowercase(player.info().name())) {
 				parameters = client_address(player.socket());
 				found_something = true;
 				break;
@@ -2390,7 +2402,7 @@ void server::status_handler(
 	for(const auto& player : player_connections_) {
 		if(parameters.empty() || parameters == "*" ||
 			(match_ip  && utils::wildcard_string_match(client_address(player.socket()), parameters)) ||
-			(!match_ip && utils::wildcard_string_match(player.info().name(), parameters))
+			(!match_ip && utils::wildcard_string_match(utf8::lowercase(player.info().name()), utf8::lowercase(parameters)))
 		) {
 			found_something = true;
 			*out << std::endl << player_status(player);
@@ -2838,7 +2850,7 @@ void server::searchlog_handler(const std::string& /*issuer_name*/,
 		const std::string& ip = i.ip;
 
 		if((match_ip && utils::wildcard_string_match(ip, parameters)) ||
-		  (!match_ip && utils::wildcard_string_match(username, parameters))
+		  (!match_ip && utils::wildcard_string_match(utf8::lowercase(username), utf8::lowercase(parameters)))
 		) {
 			found_something = true;
 			auto player = player_connections_.get<name_t>().find(username);
