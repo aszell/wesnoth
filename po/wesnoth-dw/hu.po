@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.9\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:13
@@ -918,8 +918,8 @@ msgid ""
 "Smells like lots of death in the south. There must be a good feast near that "
 "merman town."
 msgstr ""
-"Hullaszagot hoz a szél délről. Rengeteg halott - pompás lakoma lehet annál "
-"a sellő városnál!"
+"Hullaszagot hoz a szél délről. Rengeteg halott - pompás lakoma lehet annál a "
+"sellő városnál!"
 
 #. [message]: speaker=Vrunt
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:215
@@ -1907,7 +1907,7 @@ msgid ""
 "we can remove these spirits from our home."
 msgstr ""
 "Menekülni kényszerültünk az élőholtak légiói elől. Ha segítesz, kiűzhetjük "
-"ezeket a szellemeket otthonunkból."
+"ezeket a szellemeket az otthonunkból."
 
 #. [message]: speaker=Tyegea
 #: data/campaigns/Dead_Water/scenarios/08_Talking_to_Tyegea.cfg:135
