@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: wesnoth-anl\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
-"PO-Revision-Date: 2018-07-17 17:20+0100\n"
-"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"PO-Revision-Date: 2018-08-07 13:26+0100\n"
+"Last-Translator: Tamás Krutki <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +63,6 @@ msgstr "Kitartasz 25 körön keresztül."
 #: data/multiplayer/scenarios/4p_A_New_Land.cfg:71
 #: data/multiplayer/scenarios/4p_A_New_Land.cfg:86
 #: data/multiplayer/scenarios/4p_A_New_Land.cfg:101
-#, fuzzy
 #| msgid "teamname^Team 1"
 msgid "teamname^Settlers"
 msgstr "Telepesek"
@@ -74,7 +73,6 @@ msgstr "Telepesek"
 #: data/multiplayer/scenarios/4p_A_New_Land.cfg:151
 #: data/multiplayer/scenarios/4p_A_New_Land.cfg:182
 #: data/multiplayer/scenarios/4p_A_New_Land.cfg:213
-#, fuzzy
 #| msgid "teamname^Team 1"
 msgid "teamname^Enemies"
 msgstr "Ellenségek"
@@ -101,7 +99,6 @@ msgstr "Mal Shiki"
 
 #. [side]
 #: data/multiplayer/scenarios/4p_A_New_Land.cfg:248
-#, fuzzy
 #| msgid "teamname^Team 1"
 msgid "teamname^Prisoners"
 msgstr "Rabok"
