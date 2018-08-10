@@ -1574,9 +1574,6 @@ msgstr ""
 # óriási → nagyszerű
 #. [message]: speaker=Burin the Lost
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/04b_The_Midlands.cfg:410
-#| msgid ""
-#| "Oh great, now a forest. I should have stayed at home and took my chances "
-#| "with the orcs!"
 msgid ""
 "Oh great, now a forest. I should have stayed at home and taken my chances "
 "with the orcs!"
@@ -4327,13 +4324,12 @@ msgstr "Eowarar"
 #. [objective]: condition=win
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:244
 msgid "(the scenario ends when any unit perishes)"
-msgstr "(a küldetés véget ér ha bármely egység meghal)"
+msgstr "(a küldetés véget ér, ha bármely egység meghal)"
 
 #. [objective]: condition=win
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:244
-#| msgid "Avoid engagement for as long as possible"
 msgid "Avoid deaths for as long as possible"
-msgstr "Kerüld el egységek halálát minél tovább"
+msgstr "Kerüld el az egységek halálát minél tovább"
 
 #. [note]
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:264
@@ -4431,7 +4427,6 @@ msgstr "Békével jöttünk. A népeink élhetnének..."
 msgid "Get them!"
 msgstr "Elkapni őket!"
 
-# Biztos → Biztosan
 #. [message]: speaker=Lady Jessene
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/15_A_New_Land.cfg:384
 msgid ""
@@ -4440,7 +4435,7 @@ msgid ""
 "them off. There has to be a peaceful resolution to this."
 msgstr ""
 "Lásd be, hiába gyakoroltad napokig a beszéded. Akkor ennyit a diplomáciáról. "
-"Haldric, el kéne kerülnünk a túlzott vérontást, még akkor is ha védekeznünk "
+"Haldric, el kéne kerülnünk a túlzott vérontást, még akkor is, ha védekeznünk "
 "kell ellenük. Biztosan találunk majd békés megoldást."
 
 #. [message]: speaker=Burin the Lost
@@ -7015,16 +7010,8 @@ msgstr ""
 "Haldricot néha emlékeztetnie kell valakinek, hogy nem villámokat szokott "
 "ebédelni és a szellentése sem mennydörgés... Elfogadom az ajánlatodat."
 
-# szálak → vérvonalak
 #. [message]: speaker=narrator
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/23_Epilogue.cfg:312
-#| msgid ""
-#| "It was never said afterwards that the marriage of Haldric and Jessene was "
-#| "exactly tranquil. But it was also said that neither could stand be long "
-#| "separated from the other, and she bore him strong children that mingled "
-#| "the blood of their diverse ancestries. Many followed their example, and "
-#| "the two refugee peoples from the Green Isles became fused into one in the "
-#| "new kingdom."
 msgid ""
 "It was never said afterwards that the marriage of Haldric and Jessene was "
 "exactly tranquil. But it was also said that neither could long stand to be "
@@ -7239,10 +7226,6 @@ msgstr "megzavarás"
 
 #. [skirmisher]: id=distract
 #: data/campaigns/The_Rise_Of_Wesnoth/utils/trow-abilities.cfg:7
-#| msgid ""
-#| "Distract:\n"
-#| "This unit negates enemy Zones of Control around itself for allied units "
-#| "(but not for itself)."
 msgid ""
 "This unit negates enemy Zones of Control around itself for allied units (but "
 "not for itself)."

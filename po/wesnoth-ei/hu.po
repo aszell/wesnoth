@@ -143,7 +143,7 @@ msgid ""
 "swamp."
 msgstr ""
 "Elhullott szarvasmarhákat és teherhordó állatokat találtak a mezőn, az "
-"emberek (egy csöpp fekete vérfoltot leszámítva) minden nyom nélkül eltűntek "
+"emberek minden nyom nélkül (egy csöpp fekete vérfoltot leszámítva) eltűntek "
 "házaikból. Kezdetben a lakosok sivatagi portyázókra gyanakodtak, de a "
 "felderítők keleten csak egy alacsony hegyláncot, és mögötte több mérföldnyi "
 "mocsarat találtak."
@@ -443,7 +443,7 @@ msgstr ""
 #. [message]: speaker=Mal-Talar
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:318
 msgid "Apologies, Dark Archon. They will die. And then?"
-msgstr "Szörnyen sajnáljuk, Sötét Archon. Meg fognak halni. És aztán?"
+msgstr "Szörnyen sajnáljuk, Sötét Arkhón. Meg fognak halni. És aztán?"
 
 #. [message]: speaker=Mal-Ravanal
 #: data/campaigns/Eastern_Invasion/scenarios/01_The_Outpost.cfg:323
@@ -2064,7 +2064,7 @@ msgstr ""
 #. [message]: speaker=Prok-Bak
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:214
 msgid "You human! Call us foul, will you?!"
-msgstr "Te ember! Minket merészeltél ocsmánynak nevezni!?!"
+msgstr "Te ember! Minket merészeltél ocsmánynak nevezni?!"
 
 #. [message]: speaker=Pelathsil
 #: data/campaigns/Eastern_Invasion/scenarios/09_Xenophobia.cfg:218
@@ -2491,7 +2491,7 @@ msgstr "Megpróbálok elsurranni a trollok mellett. Itt várjatok."
 #. [message]: speaker=King Dra-Nak
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:728
 msgid "Ha-ha! These humans will make excellent slaves in my mines!"
-msgstr "Ha-ha! Ezekből az emberek kitűnő rabszolgák lesznek a bányáimban!"
+msgstr "Ha-ha! Ezekből az emberekből kitűnő rabszolgák lesznek a bányáimban!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:733
@@ -2545,7 +2545,7 @@ msgstr "No tűnjünk innen!"
 #. [message]: speaker=King Dra-Nak
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:974
 msgid "What? Who's there? Get them!"
-msgstr "Mi? Ki az ott! Kapjátok el őket!"
+msgstr "Mi? Ki az ott?! Kapjátok el őket!"
 
 #. [message]: speaker=Dacyn
 #: data/campaigns/Eastern_Invasion/scenarios/11_Captured.cfg:1012
@@ -3698,7 +3698,7 @@ msgid ""
 msgstr ""
 "Grug, Gweddry elmondta nekem, mennyit segítettél te és a törzsed az "
 "embereinek. Új otthont ajánlunk nektek az Estmark-dombságban, emellett "
-"fogadjátok hálás köszönetünk."
+"fogadjátok hálás köszönetünket."
 
 #. [message]: speaker=Grug
 #: data/campaigns/Eastern_Invasion/scenarios/18_Epilogue.cfg:168
@@ -3878,7 +3878,7 @@ msgstr ""
 #. [unit_type]: id=Skeleton Rider, race=undead
 #: data/campaigns/Eastern_Invasion/units/Skeleton_Rider.cfg:5
 msgid "Skeleton Rider"
-msgstr "Csontvázlovas"
+msgstr "Csontlovas"
 
 #. [unit_type]: id=Skeleton Rider, race=undead
 #: data/campaigns/Eastern_Invasion/units/Skeleton_Rider.cfg:33
