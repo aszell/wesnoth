@@ -2,6 +2,7 @@
 # Barthalos Márton, 2012.
 # Tamás Krutki <krtamas@0x64.org>, 2018.
 # Széll András <szell.andris@gmail.com>, 2018.
+# Pazurik L. Ádám <pazurik.laszlo.adam@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
@@ -156,7 +157,7 @@ msgstr ""
 "Kai Laudiss király vezette a védőket. A csata a szokásos eredménnyel zárult, "
 "bár a sellők veszteségei ezúttal a szokottnál komolyabbak voltak, s Kai "
 "Laudiss felesége is az áldozatok közt volt. A királyt mérhetetlen fájdalom "
-"öntötte el, s félelmetes harag gyúlt szívében. Rendezte a serege sorait, s "
+"öntötte el, s félelmetes harag gyúlt szívében. Rendezte serege sorait, s "
 "megindult az orkok nyomában. Állítása szerint nem a bosszú vezérelte, hanem "
 "a vágy, hogy egy életre szóló leckét adjon az orkoknak, miért nem tanácsos a "
 "sellőket zaklatniuk. A sellők serege Tirigaznál érte be az ork hordát."
@@ -338,7 +339,7 @@ msgstr ""
 #. [message]: speaker=Mal-Kevek
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:391
 msgid "Rise, my slaves! We will create an army for Lord Ravanal."
-msgstr "Fel, fel, rabszolgák! Lord Ravanal seregei lesztek! "
+msgstr "Fel, fel, szolgáim! Lord Ravanal seregei lesztek!"
 
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:400
@@ -962,7 +963,7 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:299
 msgid "The trident is 14×2, magical, ranged, with <i>fire</i> damage."
-msgstr "A szigony támadása 14×2, mágikus, távolsági, <i>tűz</i> típusú."
+msgstr "A szigony sebzése 14×2, mágikus, távolsági, <i>tűz</i> típusú."
 
 #. [option]
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:306
@@ -2662,8 +2663,7 @@ msgstr "Ez nem ennivaló, és egészen biztosan nem egy játék. Hagyd!"
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:996
 msgid "This sword is 8×4, magical, with <i>fire</i> damage."
-msgstr ""
-"Ennek a kardnak a sebzése 8×4, mágikus, <i>tűz</i> típusú támadása van."
+msgstr "Ennek a kardnak a sebzése 8×4, mágikus, <i>tűz</i> típusú."
 
 #. [option]
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:1003
