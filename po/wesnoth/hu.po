@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. [multiplayer_side]: id=Custom
 #: data/_main.cfg:22
@@ -1645,8 +1645,8 @@ msgstr "Hagyd ott!"
 #: data/core/macros/items.cfg:276
 msgid "$unit.name has no need for this Holy Water! Let another take it."
 msgstr ""
-"$unit.name nem tud mit kezdeni ezzel a Szenteltvízzel! Vegye magához "
-"valaki más."
+"$unit.name nem tud mit kezdeni ezzel a Szenteltvízzel! Vegye magához valaki "
+"más."
 
 #. [object]
 #: data/core/macros/items.cfg:281
@@ -4589,7 +4589,6 @@ msgstr ""
 "beléphet, és megtámadhat, miközben élvezi a falu nyújtotta védelmet és "
 "gyógyulást."
 
-
 #. [tip]
 #: data/tips.cfg:152
 msgid ""
@@ -5041,7 +5040,7 @@ msgstr "Csatlakozás a $server_address| kiszolgálóhoz..."
 
 #: src/addon/client.cpp:89
 msgid "Downloading list of add-ons..."
-msgstr "A kiegészítések listájának letöltése..."
+msgstr "A kiegészítők listájának letöltése..."
 
 #: src/addon/client.cpp:103
 msgid "Requesting distribution terms..."
@@ -5060,7 +5059,7 @@ msgid ""
 "The add-on <i>$addon_title</i> has a file or directory containing invalid "
 "characters and cannot be published."
 msgstr ""
-"A(z) „<i>$addon_title</i>” kiegészítésben egy fájl vagy könyvtár érvénytelen "
+"A(z) „<i>$addon_title</i>” kiegészítőben egy fájl vagy könyvtár érvénytelen "
 "karaktereket tartalmaz és így nem közzétehető."
 
 #: src/addon/client.cpp:161
@@ -5072,12 +5071,11 @@ msgid ""
 "\n"
 "&quot; * / : &lt; &gt; ? \\ | ~"
 msgstr ""
-"A(z) „<i>$addon_title</i>” kiegészítésben érvénytelen fájl- vagy könyvtárnév "
-"szerepel, és így nem közzétehető. A fájl- vagy könyvtárnév nem lehet hosszabb "
-"255 karakternél, nem tartalmazhatja a '..' karaktereket és nem végződhet"
-" '.'-ra. "
-"Szintén nem tartalmazhat szóközt, vezérlő karaktereket vagy a következő"
-" karakterek bármelyikét:\n"
+"A(z) „<i>$addon_title</i>” kiegészítőben érvénytelen fájl- vagy könyvtárnév "
+"szerepel, és így nem közzétehető. A fájl- vagy könyvtárnév nem lehet "
+"hosszabb 255 karakternél, nem tartalmazhatja a '..' karaktereket és nem "
+"végződhet '.'-ra. Szintén nem tartalmazhat szóközt, vezérlő karaktereket "
+"vagy a következő karakterek bármelyikét:\n"
 "\n"
 "&quot; * / : &lt; &gt; ? \\ | ~"
 
@@ -5087,28 +5085,28 @@ msgid ""
 "conflicts. File or directory names may not be differently-cased versions of "
 "the same string."
 msgstr ""
-"A(z) „<i>$addon_title</i>” kiegészítésben ütközést okozó fájlok vagy "
+"A(z) „<i>$addon_title</i>” kiegészítőben ütközést okozó fájlok vagy "
 "könyvtárak vannak. Fájl- vagy könyvtárnevek nem lehetnek ugyanazon "
 "karakterlánc csupán kis- és nagybetűk használatában eltérő változatai."
 
 #: src/addon/client.cpp:184
 msgid "Sending add-on <i>$addon_title</i>..."
-msgstr "A(z) „<i>$addon_title</i>” kiegészítés küldése..."
+msgstr "A(z) „<i>$addon_title</i>” kiegészítő küldése..."
 
 #: src/addon/client.cpp:217
 msgid "Removing add-on <i>$addon_title</i> from the server..."
-msgstr "A(z) „<i>$addon_title<i/>” kiegészítés eltávolítása a kiszolgálóról..."
+msgstr "A(z) „<i>$addon_title<i/>” kiegészítő eltávolítása a kiszolgálóról..."
 
 #: src/addon/client.cpp:244
 msgid "Downloading add-on <i>$addon_title</i>..."
-msgstr "A(z) „<i>$addon_title</i>” kiegészítés letöltése..."
+msgstr "A(z) „<i>$addon_title</i>” kiegészítő letöltése..."
 
 #: src/addon/client.cpp:258
 msgid ""
 "The add-on <i>$addon_title</i> has an invalid file or directory name and "
 "cannot be installed."
 msgstr ""
-"A(z) „<i>$addon_title</i>” kiegészítésben érvénytelen fájl- vagy könyvtárnév "
+"A(z) „<i>$addon_title</i>” kiegészítőben érvénytelen fájl- vagy könyvtárnév "
 "szerepel, nem lehet telepíteni."
 
 #: src/addon/client.cpp:264
@@ -5116,9 +5114,8 @@ msgid ""
 "The add-on <i>$addon_title</i> has file or directory names with case "
 "conflicts. This may cause problems."
 msgstr ""
-"A(z) „<i>$addon_title</i>” kiegészítésben ütköző, "
-"csupán kis- és nagybetűk használatában eltérő"
-"fájl- vagy könyvtárnevek vannak. Ez problémákat okozhat."
+"A(z) „<i>$addon_title</i>” kiegészítőben ütköző, csupán kis- és nagybetűk "
+"használatában eltérőfájl- vagy könyvtárnevek vannak. Ez problémákat okozhat."
 
 #: src/addon/client.cpp:321
 msgid "The server responded with an error:"
@@ -5132,13 +5129,13 @@ msgid_plural ""
 "The selected add-on has the following dependencies, which are not currently "
 "installed or available from the server. Do you wish to continue?"
 msgstr[0] ""
-"Az alábbi csomag a kiválasztott kiegészítés függősége, azonban jelenleg "
+"Az alábbi csomag a kiválasztott kiegészítő függősége, azonban jelenleg "
 "nincs telepítve és nem található a kiszolgálón. Szeretnéd telepíteni a "
-"kiegészítést?"
+"kiegészítőt?"
 msgstr[1] ""
-"Az alábbi csomagok a kiválasztott kiegészítés függőségei, azonban jelenleg "
+"Az alábbi csomagok a kiválasztott kiegészítő függőségei, azonban jelenleg "
 "nincsenek telepítve és nem találhatók a kiszolgálón. Szeretnéd telepíteni a "
-"kiegészítést?"
+"kiegészítőt?"
 
 #: src/addon/client.cpp:380
 msgid "Broken Dependencies"
@@ -5153,10 +5150,10 @@ msgid_plural ""
 "continue?"
 msgstr[0] ""
 "Az alábbi függőséget nem sikerült telepíteni. Szeretnéd folytatni a "
-"kiegészítés telepítését?"
+"kiegészítő telepítését?"
 msgstr[1] ""
 "Az alábbi függőségeket nem sikerült telepíteni. Szeretnéd folytatni a "
-"kiegészítés telepítését?"
+"kiegészítő telepítését?"
 
 #: src/addon/client.cpp:426
 msgid "Dependencies Installation Failed"
@@ -5167,7 +5164,7 @@ msgid ""
 "The add-on '$addon|' is already installed and contains additional "
 "information that will be permanently lost if you continue:"
 msgstr ""
-"A(z) „$addon|” kiegészítés már telepítve van, és többlet információt "
+"A(z) „$addon|” kiegészítő már telepítve van, és többlet információt "
 "tartalmaz, amely végleg elveszik, ha folytatod:"
 
 #: src/addon/client.cpp:453
@@ -5189,7 +5186,7 @@ msgstr "Megerősítés"
 
 #: src/addon/client.cpp:583
 msgid "Add-ons Manager"
-msgstr "Kiegészítéskezelő"
+msgstr "Kiegészítőkezelő"
 
 #: src/addon/info.cpp:157
 msgid "addon_type^Campaign"
@@ -5260,7 +5257,7 @@ msgstr "A távoli kiszolgáló lekapcsolódott."
 msgid ""
 "A problem occurred when trying to create the files necessary to install this "
 "add-on."
-msgstr "Hiba a kiegészítés telepítéséhez szükséges fájlok létrehozása során."
+msgstr "Hiba a kiegészítő telepítéséhez szükséges fájlok létrehozása során."
 
 #: src/addon/manager_ui.cpp:97 src/addon/manager_ui.cpp:308
 msgid ""
@@ -5269,24 +5266,24 @@ msgid ""
 "File: $path\n"
 "Error message: $msg"
 msgstr ""
-"Nem sikerült olvasni egy kiegészítés-közzétételi információval rendelkező "
+"Nem sikerült olvasni egy kiegészítő-közzétételi információval rendelkező "
 "helyi fájlt. \n"
 "Fájl: $path\n"
 "Hibaüzenet: „$msg”"
 
 #: src/addon/manager_ui.cpp:105 src/addon/manager_ui.cpp:314
 msgid "The add-ons server address specified is not valid."
-msgstr "A kiegészítéseket kezelő kiszolgáló megadott címe érvénytelen."
+msgstr "A kiegészítőket kezelő kiszolgáló megadott címe érvénytelen."
 
 #: src/addon/manager_ui.cpp:118
 msgid "You have no add-ons installed."
-msgstr "Nincsen kiegészítés telepítve."
+msgstr "Nincsen kiegészítő telepítve."
 
 #: src/addon/manager_ui.cpp:169
 msgid "Are you sure you want to remove the following installed add-on?"
 msgid_plural "Are you sure you want to remove the following installed add-ons?"
-msgstr[0] "Biztosan el akarod távolítani az alábbi kiegészítést?"
-msgstr[1] "Biztosan el akarod távolítani az alábbi kiegészítéseket?"
+msgstr[0] "Biztosan el akarod távolítani az alábbi kiegészítőt?"
+msgstr[1] "Biztosan el akarod távolítani az alábbi kiegészítőket?"
 
 #: src/addon/manager_ui.cpp:195
 msgid ""
@@ -5296,39 +5293,39 @@ msgid_plural ""
 "The following add-ons appear to have publishing or version control "
 "information stored locally, and will not be removed:"
 msgstr[0] ""
-"Úgy tűnik, hogy az alábbi kiegészítés helyben tárolt közzétételi és "
+"Úgy tűnik, hogy az alábbi kiegészítő helyben tárolt közzétételi és "
 "verziókövetési információkat tartalmaz, ezért nem lesz eltávolítva:"
 msgstr[1] ""
-"Úgy tűnik, hogy az alábbi kiegészítések helyben tárolt közzétételi és "
+"Úgy tűnik, hogy az alábbi kiegészítők helyben tárolt közzétételi és "
 "verziókövetési információkat tartalmaznak, ezért nem lesznek eltávolítva:"
 
 #: src/addon/manager_ui.cpp:205
 msgid "The following add-on could not be deleted properly:"
 msgid_plural "The following add-ons could not be deleted properly:"
-msgstr[0] "Az alábbi kiegészítést nem sikerült törölni:"
-msgstr[1] "Az alábbi kiegészítéseket nem sikerült törölni:"
+msgstr[0] "Az alábbi kiegészítőt nem sikerült törölni:"
+msgstr[1] "Az alábbi kiegészítőket nem sikerült törölni:"
 
 #: src/addon/manager_ui.cpp:212
 msgid "Add-on Deleted"
 msgid_plural "Add-ons Deleted"
-msgstr[0] "Kiegészítés törölve"
-msgstr[1] "Kiegészítések törölve"
+msgstr[0] "Kiegészítő törölve"
+msgstr[1] "Kiegészítők törölve"
 
 #: src/addon/manager_ui.cpp:214
 msgid "The following add-on was successfully deleted:"
 msgid_plural "The following add-ons were successfully deleted:"
-msgstr[0] "Az alábbi kiegészítés sikeresen törlődött:"
-msgstr[1] "Az alábbi kiegészítések sikeresen törlődtek:"
+msgstr[0] "Az alábbi kiegészítő sikeresen törlődött:"
+msgstr[1] "Az alábbi kiegészítők sikeresen törlődtek:"
 
 #: src/addon/manager_ui.cpp:270
 msgid "An error occurred while downloading the add-ons list from the server."
-msgstr "Hiba a kiegészítések listájának kiszolgálóról való letöltése közben."
+msgstr "Hiba a kiegészítők listájának kiszolgálóról való letöltése közben."
 
 #: src/addon/manager_ui.cpp:284
 msgid "Could not find an add-on matching id $addon_id on the add-on server."
 msgstr ""
-"Ezen a kiszolgálón nem található a következő azonosítójú kiegészítő:"
-" $addon_id."
+"Ezen a kiszolgálón nem található a következő azonosítójú kiegészítő: "
+"$addon_id."
 
 #: src/chat_command_handler.cpp:111
 msgid "Added to ignore list: $nick"
@@ -5600,8 +5597,8 @@ msgstr "$elem elavulttá lett nyilvánítva határozatlan időre."
 #: src/deprecation.cpp:47
 msgid "$elem has been deprecated and may be removed in version $version."
 msgstr ""
-"$elem elavulttá lett nyilvánítva és lehet, hogy el lesz távolítva a(z)"
-" $version verzióban."
+"$elem elavulttá lett nyilvánítva és lehet, hogy el lesz távolítva a(z) "
+"$version verzióban."
 
 #: src/deprecation.cpp:49
 msgid "$elem has been deprecated and may be removed at any time."
@@ -5610,7 +5607,8 @@ msgstr "$elem elavulttá lett nyilvánítva és bármikor eltávolításra kerü
 #: src/deprecation.cpp:56
 msgid "$elem has been deprecated and will be removed in version $version."
 msgstr ""
-"$elem elavulttá lett nyilvánítva és el lesz távolítva a(z) $version verzióban."
+"$elem elavulttá lett nyilvánítva és el lesz távolítva a(z) $version "
+"verzióban."
 
 #: src/deprecation.cpp:61
 msgid "$elem has been deprecated and removed."
@@ -5713,7 +5711,7 @@ msgid ""
 "Error loading custom game configuration files. The game will try without "
 "loading add-ons."
 msgstr ""
-"Hiba a konfigurációs fájlok betöltésekor. A játék megpróbálja kiegészítések "
+"Hiba a konfigurációs fájlok betöltésekor. A játék megpróbálja kiegészítők "
 "nélkül betölteni magát."
 
 #: src/game_config_manager.cpp:320
@@ -5729,23 +5727,23 @@ msgstr ""
 msgid ""
 "Error loading default core game configuration files. The game will now exit."
 msgstr ""
-"Hiba az alapértelmezett játék-konfigurációs fájlok betöltésekor. A játék most"
-" befejezi a futást."
+"Hiba az alapértelmezett játék-konfigurációs fájlok betöltésekor. A játék "
+"most befejezi a futást."
 
 #: src/game_config_manager.cpp:472
 msgid "The following add-on had errors and could not be loaded:"
 msgid_plural "The following add-ons had errors and could not be loaded:"
-msgstr[0] "Hiba a következő kiegészítésben, a betöltés sikertelen:"
-msgstr[1] "Hiba a következő kiegészítésekben, a betöltés sikertelen:"
+msgstr[0] "Hiba a következő kiegészítőben, a betöltés sikertelen:"
+msgstr[1] "Hiba a következő kiegészítőkben, a betöltés sikertelen:"
 
 #: src/game_config_manager.cpp:476
 msgid "Please report this to the author or maintainer of this add-on."
 msgid_plural ""
 "Please report this to the respective authors or maintainers of these add-ons."
 msgstr[0] ""
-"Légy szíves, jelentsd ezt a kiegészítés szerzőjének vagy karbantartójának."
+"Légy szíves, jelentsd ezt a kiegészítő szerzőjének vagy karbantartójának."
 msgstr[1] ""
-"Légy szíves, jelentsd ezt a kiegészítések felelős szerzőinek vagy "
+"Légy szíves, jelentsd ezt a kiegészítők felelős szerzőinek vagy "
 "karbantartóinak."
 
 #: src/game_events/pump.cpp:476 src/game_launcher.cpp:911
@@ -5926,8 +5924,8 @@ msgid ""
 "The host's version of <i>$addon</i> is incompatible. They have version <b>"
 "$host_ver</b> while you have version <b>$local_ver</b>."
 msgstr ""
-"A játékgazda <i>$addon</i> kiegészítőjének verziója inkompatibilis. "
-"Az ő kiegészítője <b>$host_ver</b> verziójú, a tied <b>$local_ver</b>."
+"A játékgazda <i>$addon</i> kiegészítőjének verziója inkompatibilis. Az ő "
+"kiegészítője <b>$host_ver</b> verziójú, a tied <b>$local_ver</b>."
 
 #: src/game_initialization/lobby_data.cpp:521
 msgid ""
@@ -5950,8 +5948,8 @@ msgid ""
 "The server accepts versions '$required_version', but you are using version "
 "'$your_version'"
 msgstr ""
-"A kiszolgáló a(z) '$required_version' verzió(k) használatát igényli, de te"
-" a(z) '$your_version' verziót használod."
+"A kiszolgáló a(z) '$required_version' verzió(k) használatát igényli, de te "
+"a(z) '$your_version' verziót használod."
 
 #: src/game_initialization/multiplayer.cpp:134
 msgid "Server-side redirect loop"
@@ -6239,7 +6237,6 @@ msgstr ""
 "Az összekapcsolt '$id' csoportnak szüksége van egy 'fixed_width' vagy egy "
 "'fixed_height' kulcsra."
 
-
 #: src/gui/dialogs/addon/install_dependencies.cpp:38
 msgid ""
 "The selected add-on has the following dependency, which is outdated or not "
@@ -6248,10 +6245,10 @@ msgid_plural ""
 "The selected add-on has the following dependencies, which are outdated or "
 "not currently installed. Do you wish to install them before continuing?"
 msgstr[0] ""
-"Az alábbi csomag a kiválasztott kiegészítés függősége, azonban jelenleg "
+"Az alábbi csomag a kiválasztott kiegészítő függősége, azonban jelenleg "
 "elavult vagy nincs telepítve. Szeretnéd telepíteni?"
 msgstr[1] ""
-"Az alábbi csomagok a kiválasztott kiegészítés függőségei, azonban jelenleg "
+"Az alábbi csomagok a kiválasztott kiegészítő függőségei, azonban jelenleg "
 "elavultak és nincsenek telepítve. Szeretnéd telepíteni őket?"
 
 #: src/gui/dialogs/game_load.hpp:40
@@ -7082,8 +7079,8 @@ msgid ""
 "Do not continue unless you really know what you are doing."
 msgstr ""
 "A Lua-kód ilyen módban való futtatása biztonsági rést nyit a számítógépen, "
-"amelyet a telepített rosszindulatú bővítmények vagy más programok"
-" kihasználhatnak.\n"
+"amelyet a telepített rosszindulatú bővítmények vagy más programok "
+"kihasználhatnak.\n"
 "\n"
 "Csak akkor folytasd, ha tudod mit csinálsz!"
 
@@ -7851,8 +7848,7 @@ msgstr "(ismeretlen játékos)"
 
 #: src/synced_commands.cpp:415
 msgid "The :$command debug command was used during $player’s turn"
-msgstr ""
-"A :$command hibakereső parancsot használta $player játékos a körében"
+msgstr "A :$command hibakereső parancsot használta $player játékos a körében"
 
 #: src/synced_commands.cpp:423
 msgid ""
@@ -7876,8 +7872,7 @@ msgstr "Hibakereső parancs használva"
 
 #: src/synced_commands.cpp:516
 msgid "A unit was created using debug mode during $player’s turn"
-msgstr ""
-"Egy egységet hibakereső módban hozott létre $player játékos a körében"
+msgstr "Egy egységet hibakereső módban hozott létre $player játékos a körében"
 
 #: src/synced_user_choice.cpp:327
 msgid "waiting for $desc from side $sides"
