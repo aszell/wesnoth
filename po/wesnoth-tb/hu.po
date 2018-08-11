@@ -2,9 +2,9 @@
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2008, 2009, 2010, 2011, 2012.
 # Pintér Csaba <piere-d-siorac@freemail.hu>, 2008.
 # Kelemen Zoltán <kelemen_zoltan@freemail.hu>, 2008.
-# Gábor Udvari <gabor.udvari@gmail.com>, 2011.
+# Udvari Gábor <gabor.udvari@gmail.com>, 2011.
 # Széll András <szell.andris@gmail.com>, 2018.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-tb\n"
