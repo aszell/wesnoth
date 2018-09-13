@@ -6344,7 +6344,7 @@ msgstr "Visszahívás"
 
 #: src/gui/dialogs/statistics_dialog.cpp:183
 msgid "Advancements"
-msgstr "Szakértői beállítások"
+msgstr "Szintlépések"
 
 #: src/gui/dialogs/statistics_dialog.cpp:184
 msgid "Losses"

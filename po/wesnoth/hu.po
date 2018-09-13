@@ -4934,7 +4934,7 @@ msgstr ""
 # (JF) Nem találtam meg a játékban.
 #: src/actions/advancement.cpp:225
 msgid "an advancement choice"
-msgstr "szintfejlődés választás"
+msgstr "szintlépés választás"
 
 #: src/actions/attack.cpp:386 src/actions/attack.cpp:656
 #: src/actions/attack.cpp:1417
@@ -7313,7 +7313,7 @@ msgstr "Szint: "
 
 #: src/reports.cpp:238
 msgid "No advancement"
-msgstr "Nincs szintfejlődés"
+msgstr "Nincs szintlépés"
 
 #: src/reports.cpp:240
 msgid "Advances to:"
@@ -8813,7 +8813,7 @@ msgstr "Lépéstervező beállítása"
 #~ msgstr "Visszahívások"
 
 #~ msgid "Advancements"
-#~ msgstr "Szintfejlődések"
+#~ msgstr "Szintlépések"
 
 #~ msgid "Losses"
 #~ msgstr "Veszteségek"
