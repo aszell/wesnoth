@@ -3141,13 +3141,11 @@ msgstr ""
 msgid "Nunc Dimittis"
 msgstr ""
 
-# (JF) zenecím, nem kell fordítani, eddig sem volt
 #. [music]
 #: data/core/macros/sound-utils.cfg:265
 msgid "Revelation"
 msgstr ""
 
-# (JF) zenecím, nem kell fordítani, eddig sem volt
 #. [music]
 #: data/core/macros/sound-utils.cfg:271
 msgid "Sad"
@@ -3178,13 +3176,11 @@ msgstr ""
 msgid "The Dangerous Symphony"
 msgstr ""
 
-# (JF) zenecím, nem kell fordítani, eddig sem volt
 #. [music]
 #: data/core/macros/sound-utils.cfg:307
 msgid "The Deep Path"
 msgstr ""
 
-# (JF) zenecím, nem kell fordítani, eddig sem volt
 #. [music]
 #: data/core/macros/sound-utils.cfg:313
 msgid "The King is Dead"
@@ -3215,7 +3211,6 @@ msgstr ""
 msgid "Still Another Wanderer"
 msgstr ""
 
-# (JF) zenecím, nem kell fordítani, eddig sem volt
 #. [music]
 #: data/core/macros/sound-utils.cfg:349
 msgid "Weight of Revenge"
@@ -3416,8 +3411,6 @@ msgstr "Eltakarás"
 msgid "Wesnoth (Default)"
 msgstr "Wesnoth (alapértelmezett)"
 
-# (JF) core > mag ? v. rendszermag ?
-# játékmag (T)
 #. [core]: id=default
 #: data/cores.cfg:8
 msgid "The standard Wesnoth core."
@@ -4936,7 +4929,6 @@ msgstr ""
 "falvakat. Még ha el is foglalnak egy falut, nem nyújt jobb védelmet "
 "számukra, habár a többi egységhez hasonlóan gyógyulnak."
 
-# (JF) Nem találtam meg a játékban.
 #: src/actions/advancement.cpp:225
 msgid "an advancement choice"
 msgstr "szintlépés választás"
@@ -5229,7 +5221,6 @@ msgstr "Többjátékos hadjárat"
 msgid "addon_type^Modification"
 msgstr "Módosító"
 
-# (JF) esetleg "Mag" vagy  "Mag-forrás" ?
 #: src/addon/info.cpp:175
 msgid "addon_type^Core"
 msgstr "Játékmag"
@@ -5504,14 +5495,10 @@ msgstr "Verzióinformáció megjelenítése."
 msgid "<password> <email (optional)>"
 msgstr "<jelszó> <villevél (nem kötelező)>"
 
-# (JF) nem tudom, hol található a játékban. Kapcsolódik a 735-ös sorhoz. nickname = felhasználónév/becenév ?
-# chat parancs (T)
 #: src/chat_command_handler.hpp:131
 msgid "Register your nickname"
 msgstr "Felhasználónév regisztrálása"
 
-# (JF) nem tudom, hol található. A 734-es sorral milyen összefüggéssel lehet?
-# chat parancs (T)
 #: src/chat_command_handler.hpp:133
 msgid "Drop your nickname."
 msgstr "Felhasználónév elfelejtése."
@@ -6532,7 +6519,7 @@ msgid "Defense"
 msgstr "Védekezés"
 
 # súgó/egységek
-#: src/help/help_topic_generators.cpp:627
+#: src/help/help_topic_generators.cpp:643
 msgid "Movement Cost"
 msgstr "Lépéspont költség"
 
