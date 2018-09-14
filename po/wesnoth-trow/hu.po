@@ -7,15 +7,15 @@
 # Gáspár Tamás <tomig90@freemail.hu>, 2008.
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2008, 2009, 2010.
 # Kelemen Zoltán <kelemen_zoltan@freemail.hu>, 2009.
-# Gábor Udvari <gabor.udvari@gmail.com>, 2011.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Udvari Gábor <gabor.udvari@gmail.com>, 2011.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-trow\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:50 UTC\n"
 "PO-Revision-Date: 2018-08-02 13:58+0100\n"
-"Last-Translator: Tamás Krutki <krtamas-wesnoth@0x64.org>\n"
+"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
