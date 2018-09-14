@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu-tsg_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-08-01 00:18+0200\n"
+"PO-Revision-Date: 2018-09-14 22:26+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -664,8 +664,6 @@ msgstr "Bűnöző"
 
 #. [do]
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:179
-#, fuzzy
-#| msgid "Criminal"
 msgid "female^Criminal"
 msgstr "Bűnöző"
 
@@ -828,19 +826,14 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:423
-#, fuzzy
-#| msgid ""
-#| "It grieves me to learn of his death, foolish though he may have been! "
-#| "Now, though, there are more pressing matters. Rise, men of Wesnoth! We "
-#| "must drive these bandits from our city!"
 msgid ""
 "It grieves me to learn of his death, foolish though he may have been! At "
 "least we managed to defeat some of these bandits here and now. What else "
 "happened?"
 msgstr ""
-"Szomorúan hallom, hogy meghalt, de ostoba módon viselkedett! Azonban most "
-"sürgős dolgunk van. Lóra, Wesnoth emberei! El kell üldöznünk a banditákat a "
-"városunkból!"
+"Szomorúan hallom, hogy meghalt, bármilyen ostoba módon viselkedett! De most "
+"legalább sikerült párat legyőznünk ezek közül a banditák közül. Mi történt "
+"még?"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:445
@@ -941,20 +934,18 @@ msgstr "Hogy tudták a banditák megidézni a halottakat?"
 
 #. [message]: speaker=Ufes
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:645
-#, fuzzy
-#| msgid "The master of the undead is defeated!"
 msgid "The bandits are defeated!"
-msgstr "Az élőhalottak mestere vereséget szenvedett!"
+msgstr "A banditák vereséget szenvedtek!"
 
 #. [message]: speaker=Makees
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:655
 msgid "Westin is safe again."
-msgstr ""
+msgstr "Westin újra biztonságban."
 
 #. [message]: speaker=Makees
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:661
 msgid "Westin will soon be safe again."
-msgstr ""
+msgstr "Westin rövidesen újra biztonságban lesz."
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:675
@@ -1086,8 +1077,8 @@ msgid ""
 "a force strong enough to drive off the bandits before moving Deoran from his "
 "encampment!"
 msgstr ""
-"Deorannak a tünde fellegvár közepébe kell mennie. Mielőtt Deoran elhagyja a "
-"táborát, toborozz elegendő harcost, hogy elűzhessék a banditákat!"
+"Deorannak a tünde fellegvár közepébe kell mennie. Mielőtt elhagyná táborát, "
+"toborozz vele elegendő harcost, hogy elűzhessék a banditákat!"
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:254
@@ -1470,10 +1461,8 @@ msgstr "Tünde testőr"
 
 #. [then]
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:508
-#, fuzzy
-#| msgid "Elvish Bodyguard"
 msgid "female^Elvish Bodyguard"
-msgstr "Tünde testőr"
+msgstr "Tünde testőrnő"
 
 #. [message]: role=Elvish Bodyguard
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:521
@@ -1597,7 +1586,7 @@ msgstr "Gruth"
 #. [unit]: type=Soulless, id=Gerd
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:108
 msgid "Gerd"
-msgstr ""
+msgstr "Gerd"
 
 #. [side]: type=Lich, id=Mal M'Brin
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:138
@@ -1712,7 +1701,7 @@ msgstr "Urza Afalas elesik"
 #. There is a second one, a few hexes next to him, the player most likely saw him already.
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:382
 msgid "He was not alone."
-msgstr ""
+msgstr "Nem volt egyedül."
 
 #. [message]: speaker=second_unit
 #. [message]: speaker=Sir Gerrick
@@ -1720,10 +1709,8 @@ msgstr ""
 #. Note that masters is in plural.
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:425
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:433
-#, fuzzy
-#| msgid "The master of the undead is defeated!"
 msgid "The masters of the undead are defeated!"
-msgstr "Az élőhalottak mestere vereséget szenvedett!"
+msgstr "Az élőholtak mesterei vereséget szenvedtek!"
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:440
@@ -1733,42 +1720,32 @@ msgstr "Nem... attól tartok, hogy a gonosz még nagyon is jelen van."
 #. [message]: speaker=Deoran
 #. Note that servants is in plural.
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:446
-#, fuzzy
-#| msgid ""
-#| "Surely the undead infestation cannot be dispatched so easily. We have "
-#| "merely destroyed a servant of a far darker master."
 msgid ""
 "Surely the undead infestation cannot be dispatched so easily. We have merely "
 "destroyed servants of a far darker master."
 msgstr ""
 "Az élőholt megszállásnak minden bizonnyal nem lehet ilyen könnyen véget "
-"vetni. Csupán egy sokkal sötétebb mester tanítványát pusztítottuk el."
+"vetni. Csupán egy sokkal sötétebb mester tanítványait pusztítottuk el."
 
 #. [message]: speaker=second_unit
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:468
 msgid "Two undead leaders have fallen…"
-msgstr ""
+msgstr "Két élőholt vezér elbukott..."
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:472
-#, fuzzy
-#| msgid ""
-#| "Surely the undead infestation cannot be dispatched so easily. We have "
-#| "merely destroyed a servant of a far darker master."
 msgid "Though we have merely destroyed the servants of a far darker master…"
-msgstr ""
-"Az élőholt megszállásnak minden bizonnyal nem lehet ilyen könnyen véget "
-"vetni. Csupán egy sokkal sötétebb mester tanítványát pusztítottuk el."
+msgstr "Noha csupán egy sokkal sötétebb mester tanítványait pusztítottuk el…"
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:479
 msgid "They were just servants of a far darker master…"
-msgstr ""
+msgstr "Ők csak egy sötétebb mester tanítványai voltak…"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:488
 msgid "One less evil in this forest…"
-msgstr ""
+msgstr "Eggyel kevesebb gonosz ebben az erdőben…"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:512
@@ -2450,16 +2427,12 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/06a_Tidings_Good_and_Ill.cfg:471
-#, fuzzy
-#| msgid ""
-#| "While the council debated the best course of action, Deoran and Ethiliel "
-#| "prepared to enter the caves under Mebrin’s fortress..."
 msgid ""
 "While the council debated the best course of action, Deoran and Ethiliel "
 "prepared to enter the caves under the fortress..."
 msgstr ""
 "Amíg a tanács vitázott a teendőkön, Deoran és Ethiliel felkészült, hogy "
-"leereszkedjenek a Mebrin erődje alatti barlangokba..."
+"leereszkedjenek az erőd alatti barlangokba..."
 
 #. [scenario]: id=06b_The_Long_March
 #: data/campaigns/The_South_Guard/scenarios/06b_The_Long_March.cfg:5
@@ -3610,8 +3583,6 @@ msgstr "Eljuttatod Ethilielt a Nagy Fához, és beszélsz Itheldennel"
 
 #. [then]
 #: data/campaigns/The_South_Guard/scenarios/09a_Vengeance.cfg:301
-#, fuzzy
-#| msgid "Disciple of Mebrin"
 msgid "female^Disciple of Mebrin"
 msgstr "Mebrin tanítványa"
 
