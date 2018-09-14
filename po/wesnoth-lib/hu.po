@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-09 11:38+0300\n"
-"PO-Revision-Date: 2018-08-08 22:18+0100\n"
-"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
+"PO-Revision-Date: 2018-09-14 21:45+0200\n"
+"Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -2464,7 +2464,7 @@ msgstr "Dátumok"
 #. [toggle_button]: id=sort_time
 #: data/gui/window/campaign_dialog.cfg:240
 msgid "Sort in approximate chronological order of story events"
-msgstr "Rendezés a történetbeli események megközelítőleges időpontja szerint"
+msgstr "Rendezés a történetbeli események közelítőleges időpontja szerint"
 
 #. [label]
 #: data/gui/window/campaign_dialog.cfg:276
@@ -3455,7 +3455,7 @@ msgstr "Dombok száma:"
 #. [grid]
 #: data/gui/window/generator_settings.cfg:113
 msgid "Max Hill Size:"
-msgstr "Dombok maximális magassága:"
+msgstr "Dombok maximális mérete:"
 
 #. [grid]
 #: data/gui/window/generator_settings.cfg:115
@@ -4031,7 +4031,7 @@ msgstr "Cselekvés bónusz"
 #. [grid]
 #: data/gui/window/mp_create_game.cfg:457
 msgid "Time for each attack, recruit, and capture"
-msgstr "Támadásra, toborzásra és falu elfoglalásra járó idő"
+msgstr "Támadásra, toborzásra és falu elfoglalásra jutó idő"
 
 #. [widget]: id=tab_label
 #. [widget]: id=label
@@ -4523,7 +4523,7 @@ msgstr "Cselekvés"
 #. [toggle_button]: id=sort_1
 #: data/gui/window/preferences/02_hotkeys.cfg:93
 msgid "Hotkey"
-msgstr "Gyorsbillentyű"
+msgstr "Gyorsbill."
 
 #. [toggle_button]: id=sort_2
 #: data/gui/window/preferences/02_hotkeys.cfg:104
@@ -5568,9 +5568,9 @@ msgstr "Típus ($order)"
 #: src/gui/dialogs/addon/manager.cpp:229
 msgid "addons_order^Last updated ($datelike_order)"
 msgstr "Utoljára frissítve ($datelike_order)"
-#: src/gui/dialogs/addon/manager.cpp:232
-msgid "addons_order^First uploaded ($datelike_order)"msgstr "Először feltöltve ($datelike_order)"
-#: src/gui/dialogs/addon/manager.cpp:261 src/gui/widgets/addon_list.cpp:103
+
+#: src/gui/dialogs/addon/manager.cpp:232 src/gui/dialogs/addon/manager.cpp:261
+#: src/gui/widgets/addon_list.cpp:103
 msgid "addon_state^Not installed"
 msgstr "Nincs telepítve"
 
@@ -6888,7 +6888,7 @@ msgstr "Ellenséges lépések mutatása"
 
 #: src/hotkey/hotkey_command.cpp:130
 msgid "Best Possible Enemy Moves"
-msgstr "Legjobb lehetséges ellenséges lépések"
+msgstr "Legjobb ellenséges lépéslehetőségek"
 
 #: src/hotkey/hotkey_command.cpp:132
 msgid "Play Replay"
@@ -7027,11 +7027,11 @@ msgstr "Térképinformáció"
 
 #: src/hotkey/hotkey_command.cpp:181
 msgid "Clear Selected Item Set"
-msgstr "A kiválasztott tárgykészlet törlése"
+msgstr "Kiválasztott tárgykészlet törlése"
 
 #: src/hotkey/hotkey_command.cpp:182
 msgid "Swap Foreground/Background Palette Item"
-msgstr "Az előtér/háttér palettaelem felcserélése"
+msgstr "Előtér/háttér palettaelem felcserélése"
 
 #: src/hotkey/hotkey_command.cpp:183
 msgid "Change Palette Group"
@@ -7186,7 +7186,7 @@ msgstr "A kiválasztott egységkészlet beállítása toborzási listaként."
 
 #: src/hotkey/hotkey_command.cpp:206
 msgid "Change Unit ID"
-msgstr "Egység azonosítójának megváltoztatása"
+msgstr "Egységazonosító megváltoztatása"
 
 #: src/hotkey/hotkey_command.cpp:207
 msgid "Loyal"
@@ -7194,23 +7194,23 @@ msgstr "Hűséges"
 
 #: src/hotkey/hotkey_command.cpp:210
 msgid "Toggle Minimap Unit Coding"
-msgstr "Egységkódolás átkapcsolása a kis térképen"
+msgstr "Egységkódolás átkapcs. a kis térképen"
 
 #: src/hotkey/hotkey_command.cpp:211
 msgid "Toggle Minimap Terrain Coding"
-msgstr "Terepkódolás átkapcsolása a kis térképen"
+msgstr "Terepkódolás átkapcs. a kis térképen"
 
 #: src/hotkey/hotkey_command.cpp:213
 msgid "Toggle Minimap Unit Drawing"
-msgstr "Egységrajzolás átkapcsolása a kis térképen"
+msgstr "Egységrajzolás átkapcs. a kis térképen"
 
 #: src/hotkey/hotkey_command.cpp:214
 msgid "Toggle Minimap Village Drawing"
-msgstr "Falurajzolás átkapcsolása a kis térképen"
+msgstr "Falurajzolás átkapcs. a kis térképen"
 
 #: src/hotkey/hotkey_command.cpp:215
 msgid "Toggle Minimap Terrain Drawing"
-msgstr "Tereprajzolás átkapcsolása a kis térképen"
+msgstr "Tereprajzolás átkapcs. a kis térképen"
 
 #: src/hotkey/hotkey_command.cpp:217
 msgid "Next Brush"
@@ -7261,7 +7261,7 @@ msgstr "Beillesztés"
 
 #: src/hotkey/hotkey_command.cpp:228
 msgid "Export Selected Coordinates to System Clipboard"
-msgstr "A kijelölt koordináták exportálása a vágólapra"
+msgstr "Kijelölt koordináták exportálása a vágólapra"
 
 #: src/hotkey/hotkey_command.cpp:229
 msgid "Select All"
@@ -7277,31 +7277,31 @@ msgstr "Kijelölés törlése"
 
 #: src/hotkey/hotkey_command.cpp:232
 msgid "Rotate Clipboard Clockwise"
-msgstr "A vágólap elforgatása az óramutató járásának megfelelően "
+msgstr "Vágólap elforgatása óramutató szerint"
 
 #: src/hotkey/hotkey_command.cpp:233
 msgid "Rotate Clipboard Counter-Clockwise"
-msgstr "A vágólap elforgatása az óramutató járásával ellentétesen"
+msgstr "Vágólap forg. óramutatóval ellentétesen"
 
 #: src/hotkey/hotkey_command.cpp:234
 msgid "Flip Clipboard Horizontally"
-msgstr "A vágólap vízszintes tükrözése"
+msgstr "Vágólap vízszintes tükrözése"
 
 #: src/hotkey/hotkey_command.cpp:235
 msgid "Flip Clipboard Vertically"
-msgstr "A vágólap függőleges tükrözése"
+msgstr "Vágólap függőleges tükrözése"
 
 #: src/hotkey/hotkey_command.cpp:236
 msgid "Rotate Selection"
-msgstr "A kijelölt terület elforgatása"
+msgstr "Kijelölt terület elforgatása"
 
 #: src/hotkey/hotkey_command.cpp:237
 msgid "Flip Selection"
-msgstr "A kijelölt terület tükrözése"
+msgstr "Kijelölt terület tükrözése"
 
 #: src/hotkey/hotkey_command.cpp:238
 msgid "Fill Selection"
-msgstr "A kijelölt terület kitöltése"
+msgstr "Kijelölt terület kitöltése"
 
 #: src/hotkey/hotkey_command.cpp:239
 msgid "Generate Tiles in Selection"
@@ -7309,7 +7309,7 @@ msgstr "Mezők rajzolása a kijelölt területen"
 
 #: src/hotkey/hotkey_command.cpp:240
 msgid "Randomize Tiles in Selection"
-msgstr "Mezők véletlenszerűvé tétele a kijelölt területen"
+msgstr "Mezők véletlenszerűen a kijelölt ter."
 
 #: src/hotkey/hotkey_command.cpp:242
 msgid "Rotate Map"
@@ -7333,7 +7333,7 @@ msgstr "Terepáttűnések frissítése"
 
 #: src/hotkey/hotkey_command.cpp:251
 msgid "Toggle Terrain Transition Update"
-msgstr "Terepáttűnések frissítésének bekapcsolása/kikapcsolása"
+msgstr "Terepáttűnések frissítése be/ki"
 
 #: src/hotkey/hotkey_command.cpp:253
 msgid "Auto-update Terrain Transitions"
@@ -7366,15 +7366,15 @@ msgstr "Bittérképek számának rajzolása"
 
 #: src/hotkey/hotkey_command.cpp:262
 msgid "Save Selection to Area"
-msgstr "A kijelölés mentése a területre"
+msgstr "Kijelölés mentése a területre"
 
 #: src/hotkey/hotkey_command.cpp:263
 msgid "Rename Selected Area"
-msgstr "A kijelölt terület átnevezése"
+msgstr "Kijelölt terület átnevezése"
 
 #: src/hotkey/hotkey_command.cpp:264
 msgid "Remove Selected Area"
-msgstr "A kijelölt terület eltávolítása"
+msgstr "Kijelölt terület eltávolítása"
 
 #: src/hotkey/hotkey_command.cpp:265
 msgid "Add New Area"
@@ -7491,7 +7491,7 @@ msgstr "Eszközleírás mutatása"
 
 #: src/hotkey/hotkey_command.cpp:299
 msgid "Show Lua Console"
-msgstr "A Lua konzol megjelenítése"
+msgstr "Lua konzol megjelenítése"
 
 #: src/hotkey/hotkey_command.cpp:302
 msgid "Unrecognized Command"
