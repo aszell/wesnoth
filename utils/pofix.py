@@ -84,6 +84,12 @@ game_stringfixes = {
 ("http://wiki.wesnoth.org/Micro_AIs", "https://wiki.wesnoth.org/Micro_AIs"),
 ),
 
+"wesnoth-aoi": (
+# conversion added in 1.14.4+dev
+("the bodies of both sides, ", "the bodies of both sides."),
+("there was no hale orc in sight,", "There was no hale orc in sight,"),
+),
+
 "wesnoth-editor" : (
 # conversion added in 1.11.10+dev
 ("Choose file", "Choose File"),
@@ -106,6 +112,11 @@ game_stringfixes = {
 ("The Dunefolk's inclination", "The Dunefolk’s inclination"),
 ("The Dunefolk's inquisitive", "The Dunefolk’s inquisitive"),
 ("the heritage of the Dunefolk's", "the heritage of the Dunefolk’s"),
+),
+
+"wesnoth-l" : (
+# conversion added in 1.14.4+dev
+("Retreat!!", "Retreat!"),
 ),
 
 "wesnoth-lib" : (
@@ -134,7 +145,9 @@ game_stringfixes = {
 ("with the greatest generals, and battle tactics", "with the greatest generals and battle tactics"),
 # fixes added in 1.14.3+dev
 ("Whatever.... I still think we should make an effort", "Whatever... I still think we should make an effort"),
-("That is so very encouraging....","That is so very encouraging...")
+("That is so very encouraging....","That is so very encouraging..."),
+# fix added in 1.14.4+dev
+("can now aid those around her in the art of combat.", "can aid those around her in the art of combat."),
 ),
 
 "wesnoth-low" : (
@@ -179,6 +192,11 @@ game_stringfixes = {
 
 "wesnoth-tb" : (
 ("try to force him off of his keep", "try to force him off his keep"),
+),
+
+"wesnoth-tsg": (
+# fixes added in 1.14.4+dev
+("Bury me deeply my friends...", "Bury me deeply, my friends..."),
 ),
 
 "wesnoth-trow" : (
@@ -229,6 +247,9 @@ website_stringfixes = {
 
 "1.14-announcement" : (
 ("better ingrate them", "better integrate them"),
+
+# Lua version number
+("5.3.4", "5.3"),
 
 # Yes, these are really flimsy. In hindsight it was a bad idea to include
 # download sizes in the announcement. Hopefully we won't end up with
@@ -282,7 +303,7 @@ def process_file(path):
         # In case of screwed-up pairs that are hard to find, uncomment the following:
         #for fix in fixes:
         #    if len(fix) != 2:
-        #        print fix
+        #        print(fix)
         for (old, new) in fixes:
             if old is new:
                 #complain loudly

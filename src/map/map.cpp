@@ -238,10 +238,10 @@ void gamemap::overlay(const gamemap& m, const config& rules_cfg, map_location lo
 	for(size_t i = 0; i <rules.size(); ++i)
 	{
 		const config& cfg = rules_cfg.child("rule", i);
-		rules[i].old_ = t_translation::read_list(cfg["old"]);
-		rules[i].new_ = t_translation::read_list(cfg["new"]);
+		rules[i].old_ = t_translation::read_list(cfg["old"].str());
+		rules[i].new_ = t_translation::read_list(cfg["new"].str());
 		rules[i].mode_ = cfg["layer"] == "base" ? terrain_type_data::BASE : cfg["layer"] == "overlay" ? terrain_type_data::OVERLAY : terrain_type_data::BOTH;
-		const t_translation::ter_list& terrain = t_translation::read_list(cfg["terrain"]);
+		const t_translation::ter_list& terrain = t_translation::read_list(cfg["terrain"].str());
 		if(!terrain.empty()) {
 			rules[i].terrain_ = terrain[0];
 		}
@@ -379,6 +379,7 @@ bool gamemap::on_board_with_border(const map_location& loc) const
 
 void gamemap::set_terrain(const map_location& loc, const t_translation::terrain_code & terrain, const terrain_type_data::merge_mode mode, bool replace_if_failed) {
 	if(!on_board_with_border(loc)) {
+		DBG_G << "set_terrain: " << loc << " is not on the map.\n";
 		// off the map: ignore request
 		return;
 	}

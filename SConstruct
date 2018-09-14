@@ -507,7 +507,8 @@ for env in [test_env, client_env, env]:
 
         if env['harden'] and env["PLATFORM"] != 'win32':
             env.AppendUnique(CCFLAGS = ["-fPIE"])
-            if not env["have_fortify"] : env.AppendUnique(CPPDEFINES = ["_FORTIFY_SOURCE=2"])
+            if not env["have_fortify"] and "-O0" not in env["opt"]:
+                env.AppendUnique(CPPDEFINES = ["_FORTIFY_SOURCE=2"])
             
             if env["PLATFORM"] == 'darwin':
                 env.AppendUnique(LINKFLAGS = ["-fPIE", "-Wl,-pie"])
@@ -615,6 +616,7 @@ for env in [test_env, client_env, env]:
 
     if env["PLATFORM"] == 'darwin':            # Mac OS X
         env.Append(FRAMEWORKS = "Cocoa")            # Cocoa GUI
+        env.Append(FRAMEWORKS = "IOKit")            # IOKit
 
 if not env['static_test']:
     test_env.Append(CPPDEFINES = "BOOST_TEST_DYN_LINK")

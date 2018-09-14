@@ -77,6 +77,7 @@
 #include "variable_info.hpp"
 
 #include <cassert>
+#include <iomanip>
 
 static lg::log_domain log_engine("engine");
 #define ERR_NG LOG_STREAM(err, log_engine)
@@ -134,7 +135,9 @@ void saved_game::set_random_seed()
 		return;
 	}
 
-	carryover_["random_seed"] = randomness::generator->get_random_int(0, INT_MAX);
+	std::stringstream stream;
+	stream << std::setfill('0') << std::setw(8) << std::hex << randomness::generator->get_random_int(0, INT_MAX);
+	carryover_["random_seed"] = stream.str();
 	carryover_["random_calls"] = 0;
 }
 
