@@ -2,14 +2,14 @@
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2008, 2009, 2010, 2011, 2012.
 # Pintér Csaba <piere-d-siorac@freemail.hu>, 2008.
 # Kelemen Zoltán <kelemen_zoltan@freemail.hu>, 2008.
-# Gábor Udvari <gabor.udvari@gmail.com>, 2011.
+# Udvari Gábor <gabor.udvari@gmail.com>, 2011.
 # Széll András <szell.andris@gmail.com>, 2018.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-tb\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-07-08 08:51 UTC\n"
+"POT-Creation-Date: 2018-09-09 08:38 UTC\n"
 "PO-Revision-Date: 2018-07-19 21:41+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -225,9 +225,9 @@ msgstr ""
 msgid "Humans"
 msgstr "Emberek"
 
-#. [side]: type=Orcish Warlord, id=Tairach
 #. [side]: type=Dark Sorcerer, id=Rotharik
 #. [side]
+#. [side]: type=Orcish Warlord, id=Tairach
 #. [side]: type=Dark Sorcerer, id=Mordak
 #: data/campaigns/Two_Brothers/scenarios/01_Rooting_Out_a_Mage.cfg:114
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:81
