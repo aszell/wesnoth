@@ -1,15 +1,60 @@
 ## Version 1.14.4+dev
+ ### AI
+  * Fix AI ignoring teleport locations when moving leader to leader goals.
  ### Campaigns
-   * Secrets of the Ancients:
-     * Fix dialog said by wrong unit & revert previous fix (issue #3294)
+  * Northern Rebirth:
+    * S12: empty sides are hidden
+    * S13: allied leaders whose death causes defeat won't leave their keep and
+      the lich brothers and Krash got more gold
+  * Secrets of the Ancients:
+    * Fix dialog said by wrong unit & revert previous fix (issue #3294)
+  * The South Guard:
+    * S2: the case where Deoran is not sent to the Citadel is handled better.
+    * S2: enemy units will no longer neutralize villages instead of capturing or burning them.
+      This also means certain units will no longer be hidden in the Game Stats list.
+    * S4: bodyguards are never spawned next to other units, and always in forest.
+    * S5: zombies have now one castle with two leaders.
+    * S6a: mermen leave after this scenario and will no longer be available.
+    * S7a & S8a: some heroes may now die.
    * Tutorial:
      * Added more information to the Status Table prompt about how to access it (issue #2883).
    * Under the Burning Suns:
      * New graphics for Eloh.
  ### Language and i18n
-   * Updated translations: British English, Chinese (Traditional), French, Italian
+   * Updated translations: British English, Chinese (Traditional), French,
+     German, Italian, Ukrainian
  ### User Interface
-   * MacOS: fixed moving the mouse with a touchpad also scrolling GUI dialogs
+   * On laptop computers we now show how much battery you have left
+   * MacOS: Fixed moving the mouse with a touchpad also scrolling GUI dialogs
+   * MacOS: Add build number to OS version report
+   * Fix layout of Preferences window with some localizations (such as Czech)
+   * Load Game now shows the chosen difficulty with the same name that you originally selected
+   * Force leader sprites larger than 72x72 to be downscaled in Load Game (issue #3474)
+ ### WML engine
+   * Fixed [animate_unit] and [heal_unit] preventing unit halo from disappearing if the unit
+     dies later (issue #3509)
+ ### Miscellaneous and bug fixes
+   * Fix some minor problems with the macOS package
+   * Fixed crash when trying to attack with a unit without usable weapons (issue #3424)
+   * Fast Micro AI: Fix bug crashing the AI when units with chance-to-hit
+     specials without id are on map
+   * Fixed the debug mode Create Unit dialog crashing when changing the gender
+     of the previous selection after causing the list to come up empty using
+     the filter box.
+   * Allow searching by race and internal unit type id with the Create Unit
+     filter box as well.
+   * wmlxgettext is now included in release packages, so a separate download is no longer required to use it with GUI.pyw.
+   * Fixed possible crash when leaving a game as an observer #3017
+   * Fixed require_scenario and require_era attributes.
+   * Fixed skip replay when joining mp campaigns.
+   * Fixed oos errors when undoing after ally chat.
+   * Fixed crash whe pressing Reset replay. #3439
+   * Fixed 'start game' locked when other players abort flg dialog.  #3452
+   * Fixed game freezes on droiding when using dsu. #3453
+   * Fixed editor cannot add starting location for > 9 players.
+   * Fixed crash in ai code when a side has multiple leaders.
+   * Fixed random start time not working. #3515
+   * Fixed crash in lua tstring comparision. #3541
 
 ## Version 1.14.4
  ### Security Fixes

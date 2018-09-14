@@ -143,10 +143,7 @@ void menu_handler::objectives()
 		return;
 	}
 
-	config cfg;
-	cfg["side"] = gui_->viewing_side();
-	gamestate().lua_kernel_->run_wml_action("show_objectives", vconfig(cfg),
-			game_events::queued_event("_from_interface", "", map_location(), map_location(), config()));
+	pc_.refresh_objectives();
 	pc_.show_objectives();
 }
 
@@ -383,6 +380,10 @@ void menu_handler::recall(int side_num, const map_location& last_hex)
 	}
 
 	int res = dlg.get_selected_index();
+	if (res < 0) {
+		gui2::show_transient_message("", _("No unit recalled"));
+		return;
+	}
 	int unit_cost = current_team.recall_cost();
 
 	// we need to check if unit has a specific recall cost
@@ -587,7 +588,8 @@ bool menu_handler::end_turn(int side_num)
 void menu_handler::goto_leader(int side_num)
 {
 	unit_map::const_iterator i = units().find_leader(side_num);
-	if(i != units().end()) {
+	const display_context& dc = gui_->get_disp_context();
+	if(i != units().end() && i->is_visible_to_team(dc.get_team(gui_->viewing_side()), dc, false)) {
 		gui_->scroll_to_tile(i->get_location(), game_display::WARP);
 	}
 }

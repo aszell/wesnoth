@@ -1,23 +1,23 @@
 # Translators:
 #  Nils Kneuper <crazy-ivanovic@gmx.net>, 2005
 #  Christoph Berg <Christoph.Berg@kpm-sport.de>, 2005 - 2007
-#  Gerfried Fuchs <rhonda@deb.at>, 2006, 2008 - 2009, 2011, 2014
+#  Rhonda D'Vine <rhonda@deb.at>, 2006, 2008 - 2009, 2011, 2014, 2018
 #  HaJo Gurt <gurt@gmx.de>, 2007
 #  Tobias 'SonIcco' Schönau <tobias.schoenau@eagerbyte.com>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: Battle for Wesnoth 1.12\n"
+"Project-Id-Version: Battle for Wesnoth 1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-07-22 11:33 UTC\n"
-"PO-Revision-Date: 2018-06-04 01:31+0200\n"
-"Last-Translator: Gerfried Fuchs <rhonda@deb.at>\n"
+"POT-Creation-Date: 2018-09-09 08:38 UTC\n"
+"PO-Revision-Date: 2018-09-11 12:46+0200\n"
+"Last-Translator: Rhonda D'Vine <rhonda@deb.at>\n"
 "Language-Team: irc://irc.freenode.net/#wesnoth-de\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. [lua]: wml_actions.select_character
 #: data/campaigns/tutorial/lua/character_selection.lua:25
@@ -311,8 +311,8 @@ msgstr "Soll ich mich zurückziehen?"
 msgid "female^Should I retreat?"
 msgstr "Soll ich mich zurückziehen?"
 
-#. [message]: speaker=Galdrad
 #. [message]: speaker=Delfador
+#. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:401
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:768
 msgid "Good idea!"
@@ -394,7 +394,7 @@ msgstr ""
 "menschlichen Spielern kontrolliert, werden dann ihren Zug machen. Einige "
 "Szenarien müssen in einer bestimmten Anzahl von Runden abgeschlossen werden. "
 "Oben am Bildschirm befindet sich ein Flaggensymbol, neben dem die momentane "
-"Runde und das Rundenlimit zu sehen ist"
+"Runde und das Rundenlimit zu sehen ist."
 
 #. [event]
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:465
@@ -471,7 +471,7 @@ msgid ""
 "hitpoints."
 msgstr ""
 "Da du zu Beginn deines Zuges in einem Dorf warst wurdest du geheilt. Dörfer "
-"heilen Einheiten um 8 Lebenspunkte pro Runde. "
+"heilen Einheiten um 8 Lebenspunkte pro Runde."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/tutorial/scenarios/01_Tutorial_part_1.cfg:547
@@ -1180,7 +1180,7 @@ msgstr ""
 "Die Elfenschamanin ist eine ziemlich schwache Einheit, beherrscht aber die "
 "Fertigkeit, alle Einheiten in direkt benachbarten Feldern zu <i>heilen</i>. "
 "Sie hat auch einen speziellen Angriff, der Feinde <i>verlangsamt</i> und "
-"dadurch den Schaden, den sie verursachen, halbiert!"
+"dadurch den Schaden, den sie verursachen, halbiert."
 
 #. [message]: speaker=narrator
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:288
@@ -1313,14 +1313,15 @@ msgstr "Spielübersicht"
 msgid ""
 "The Status Table details the sides’ current status and starting conditions. "
 "Fog and shroud will affect what you can see in this table, and occasionally "
-"a side may be hidden. It is useful to check this table when a scenario "
-"begins."
+"a side may be hidden; however, it is still useful to check this table when a "
+"scenario begins. You can access it in the <b>Menu</b> menu."
 msgstr ""
-"Die Spielübersicht zeigt zu Informationen über den Stand der verschiedenen "
+"Die Spielübersicht zeigt Informationen über den Stand der verschiedenen "
 "Parteien als auch über das Szenario. Sowohl Nebel als auch der Schleier der "
 "Finsternis, welche es in manchen Szenarien gibt, beeinflussen die "
-"angezeigten Informationen, und in manchen Fällen wird eine Partei verborgen. "
-"Es ist vorteilhaft die Spielübersicht zu Beginn des Spiels zu begutachten."
+"angezeigten Informationen, und in manchen Fällen wird eine Partei verborgen; "
+"es ist jedoch trotzdem vorteilhaft die Spielübersicht zu Beginn des Spiels "
+"zu begutachten. Ihr könnt es im <b>Menü</b> finden."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:403
@@ -1376,7 +1377,7 @@ msgstr ""
 "Wald haben, schlage ich vor bei den Bäumen in Deckung zu bleiben und die "
 "Orks von dort anzugreifen, dort ist die Chance getroffen zu werden "
 "wesentlich niedriger; 40% für Elfenkrieger, und nur 30% für Bogenschützen "
-"und Schamaninnen. "
+"und Schamaninnen."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:425
@@ -1740,8 +1741,8 @@ msgstr "Siegesbedingungen"
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:715
 msgid ""
 "In this scenario, you only need to defeat the orc leader to win. Victory "
-"conditions for a scenario are given under <b>Scenario Objectives</b> in "
-"<b>Menu</b>."
+"conditions for a scenario are given under <b>Scenario Objectives</b> in the "
+"<b>Menu</b> menu."
 msgstr ""
 "In diesem Szenario müsst Ihr einzig den Orkhäuptling besiegen, um zu "
 "gewinnen. Die Siegesbedingungen sind unter den <b>Missionszielen</b> im "
@@ -1903,7 +1904,7 @@ msgstr ""
 "Eine Stufe aufzusteigen, hat mich komplett geheilt! Meine Heilkräfte haben "
 "sich verbessert, ich kann nun Einheiten um 8 Lebenspunkte heilen anstatt 4, "
 "und ich kann Vergiftungen kurieren. Ich verfüge nun auch über einen Angriff "
-"mit <i>Magie<i/>, solche Angriffe haben immer eine 70% Trefferchance. Er ist "
+"mit <i>Magie</i>, solche Angriffe haben immer eine 70% Trefferchance. Er ist "
 "aber nicht so stark wie der vergleichbare Angriff der Elfenzauberin."
 
 #. [message]: speaker=unit
@@ -1998,7 +1999,7 @@ msgstr ""
 "Eine Stufe aufzusteigen hat mich komplett geheilt! Ich bin besonders gut im "
 "Umgang mit dem Schwert und verursache 8 Schadenspunkte mit jedem meiner 4 "
 "Angriffe. Im Gegensatz zum Elfenhauptmann verfüge ich nicht über die "
-"Führungsqualitäten Fertigkeit, verursache aber etwas mehr Schaden."
+"Fertigkeit Führungsqualitäten, verursache aber etwas mehr Schaden."
 
 #. [message]: speaker=Galdrad
 #: data/campaigns/tutorial/scenarios/02_Tutorial_part_2.cfg:1073

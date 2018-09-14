@@ -31,7 +31,7 @@
 #include "serialization/unicode.hpp"
 #include "utils/functional.hpp"
 #include "utils/iterable_pair.hpp"
-#include "version.hpp"
+#include "game_version.hpp"
 
 #include "server/ban.hpp"
 #include "server/game.hpp"
@@ -989,7 +989,7 @@ void server::add_player(socket_ptr socket, const wesnothd::player& player)
 		send_server_message(socket, motd_);
 	}
 	if(version_info(player.version()) < secure_version ){
-		send_server_message(socket, "You are using version " + player.version() + " which has known security issues that can be used to compromise your computer. We strongly recommend updating to a newer Wesnoth version!");
+		send_server_message(socket, "You are using version " + player.version() + " which has known security issues that can be used to compromise your computer. We strongly recommend updating to a Wesnoth version " + secure_version.str() + " or newer!");
 	}
 	if(version_info(player.version()) < version_info(recommended_version_)) {
 		send_server_message(socket, "A newer Wesnoth version, " + recommended_version_ + ", is out!");
@@ -1562,7 +1562,7 @@ void server::handle_player_in_game(socket_ptr socket, std::shared_ptr<simple_wml
 		// Update the game's description.
 		// If there is no shroud, then tell players in the lobby
 		// what the map looks like
-		const simple_wml::node& s = *wesnothd::game::starting_pos(g.level().root());
+		const simple_wml::node& s = *wesnothd::game::starting_pos(data.root());
 		// fixme: the hanlder of [store_next_scenario] below searches for 'mp_shroud' in [scenario]
 		//        at least of the these cosed is likely wrong.
 		if(!data["mp_shroud"].to_bool()) {
@@ -1629,6 +1629,7 @@ void server::handle_player_in_game(socket_ptr socket, std::shared_ptr<simple_wml
 			return;
 		}
 
+		g.new_scenario(socket);
 		g.save_replay();
 		g.reset_last_synced_context_id();
 
@@ -1871,7 +1872,7 @@ void server::handle_player_in_game(socket_ptr socket, std::shared_ptr<simple_wml
 using SendQueue = std::map<socket_ptr, std::deque<std::shared_ptr<simple_wml::document>>>;
 SendQueue send_queue;
 
-void handle_send_to_player(socket_ptr socket)
+static void handle_send_to_player(socket_ptr socket)
 {
 	if(send_queue[socket].empty()) {
 		send_queue.erase(socket);

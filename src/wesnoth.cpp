@@ -34,7 +34,7 @@
 #include "gui/dialogs/message.hpp"      // for show_error_message
 #include "gui/dialogs/title_screen.hpp" // for title_screen, etc
 #include "gui/gui.hpp"                  // for init
-#include "image.hpp"                    // for flush_cache, etc
+#include "picture.hpp"            // for flush_cache, etc
 #include "log.hpp"                      // for LOG_STREAM, general, logger, etc
 #include "preferences/general.hpp"      // for core_id, etc
 #include "scripting/application_lua_kernel.hpp"
@@ -50,7 +50,7 @@
 #include "sound.hpp"                   // for commit_music_changes, etc
 #include "statistics.hpp"              // for fresh_stats
 #include "utils/functional.hpp"
-#include "version.hpp"        // for version_info
+#include "game_version.hpp"// for version_info
 #include "video.hpp"          // for CVideo
 #include "wesconfig.h"        // for PACKAGE
 #include "widgets/button.hpp" // for button
@@ -1102,6 +1102,14 @@ int main(int argc, char** argv)
 	sigaction(SIGTERM, &terminate_handler, nullptr);
 	sigaction(SIGINT, &terminate_handler, nullptr);
 #endif
+
+	// Mac's touchpad generates touch events too.
+	// Ignore them until Macs have a touchscreen: https://forums.libsdl.org/viewtopic.php?p=45758
+#if defined(__APPLE__) && !defined(__IPHONEOS__) 
+	SDL_EventState(SDL_FINGERMOTION, SDL_DISABLE);
+	SDL_EventState(SDL_FINGERDOWN, SDL_DISABLE);
+	SDL_EventState(SDL_FINGERUP, SDL_DISABLE);
+#endif	
 
 	// declare this here so that it will always be at the front of the event queue.
 	events::event_context global_context;

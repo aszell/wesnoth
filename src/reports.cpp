@@ -14,6 +14,7 @@
 
 #include "actions/attack.hpp"
 #include "attack_prediction.hpp"
+#include "desktop/battery_info.hpp"
 #include "font/pango/escape.hpp"
 #include "font/text_formatting.hpp"
 #include "formatter.hpp"
@@ -35,6 +36,8 @@
 #include <ctime>
 #include <iomanip>
 #include <boost/dynamic_bitset.hpp>
+#include <boost/format.hpp>
+#include <boost/lexical_cast.hpp>
 
 #include "utils/io.hpp"
 
@@ -465,8 +468,13 @@ static config unit_xp(const unit* u)
 {
 	if (!u) return config();
 	std::ostringstream str, tooltip;
-	str << span_color(u->xp_color()) << u->experience()
-		<< '/' << u->max_experience() << naps;
+	str << span_color(u->xp_color());
+	if(u->can_advance()) {
+		str << u->experience() << '/' << u->max_experience();
+	} else {
+		str << font::unicode_en_dash;
+	}
+	str << naps;
 
 	int exp_mod = unit_experience_accelerator::get_acceleration();
 	tooltip << _("Experience Modifier: ") << exp_mod << '%';
@@ -1531,6 +1539,9 @@ REPORT_GENERATOR(edit_left_button_function)
 
 REPORT_GENERATOR(report_clock, /*rc*/)
 {
+	config report;
+	add_image(report, game_config::images::time_icon, "");
+
 	std::ostringstream ss;
 
 	const char* format = preferences::use_twelve_hour_clock_format()
@@ -1539,8 +1550,22 @@ REPORT_GENERATOR(report_clock, /*rc*/)
 
 	time_t t = std::time(nullptr);
 	ss << utils::put_time(std::localtime(&t), format);
+	add_text(report, ss.str(), _("Clock"));
 
-	return text_report(ss.str(), _("Clock"));
+	return report;
+}
+
+
+REPORT_GENERATOR(battery, /*rc*/)
+{
+	config report;
+
+	if(desktop::battery_info::does_device_have_battery()) {
+		add_image(report, game_config::images::battery_icon, "");
+		add_text(report, (boost::format("%.0f %%") % desktop::battery_info::get_battery_percentage()).str(), _("Battery"));
+	}
+
+	return report;
 }
 
 REPORT_GENERATOR(report_countdown, rc)
