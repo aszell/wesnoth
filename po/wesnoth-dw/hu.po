@@ -1,15 +1,15 @@
 # Kelemen Zoltán, 2011.
 # Barthalos Márton, 2012.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 # Széll András <szell.andris@gmail.com>, 2018.
 # Pazurik L. Ádám <pazurik.laszlo.adam@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-07-08 08:51 UTC\n"
+"POT-Creation-Date: 2018-09-09 08:37 UTC\n"
 "PO-Revision-Date: 2018-07-29 15:46+0100\n"
-"Last-Translator: Széll András <szell.andris@gmail.com>\n"
+"Last-Translator: Krutki Tamás <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -732,8 +732,8 @@ msgstr "Miért nem nyuvasztod meg? Sietnünk kell!"
 msgid "I would feel bad about that. It is, uh, licking my hand."
 msgstr "Nem lennék rá képes. Ez… nyalogatja a kezemet."
 
-#. [message]: speaker=unit
 #. [message]: speaker=Friendly Bat
+#. [message]: speaker=unit
 #. This should just be "translated" to whatever noise a bat makes in your language.
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:607
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:641
@@ -2202,8 +2202,8 @@ msgid ""
 msgstr ""
 "Ez nagyon alkalmas lakhely nagyobb rajnak is, úgyhogy képzelem, lesznek még."
 
-#. [side]
 #. [unit]: type=Silver Mage, id=Caladon
+#. [side]
 #: data/campaigns/Dead_Water/scenarios/09_The_Mage.cfg:383
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:95
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:97

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-07-22 07:33-0400\n"
+"POT-Creation-Date: 2018-09-09 11:38+0300\n"
 "PO-Revision-Date: 2018-08-08 22:18+0100\n"
 "Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
@@ -1965,10 +1965,10 @@ msgid "Search"
 msgstr "Keresés"
 
 #. [toggle_button]: id=sort_0
+#. [label]: id=name
+#. [label]
 #. [toggle_button]: id=sort_1
 #. [toggle_button]: id=sort_name
-#. [label]
-#. [label]: id=name
 #: data/gui/widget/addon_list.cfg:78 data/gui/window/campaign_dialog.cfg:226
 #: data/gui/window/game_load.cfg:157 data/gui/window/mp_server_list.cfg:107
 #: data/gui/window/terrain_layers.cfg:45 data/gui/window/unit_list.cfg:93
@@ -2026,7 +2026,7 @@ msgstr "Kiegészítő közzététele"
 #. [button]: id=single_uninstall
 #. [button]: id=uninstall
 #: data/gui/widget/addon_list.cfg:435 data/gui/window/addon_manager.cfg:247
-#: src/gui/dialogs/addon/manager.cpp:805
+#: src/gui/dialogs/addon/manager.cpp:807
 msgid "Uninstall add-on"
 msgstr "Kiegészítő eltávolítása"
 
@@ -2035,8 +2035,8 @@ msgstr "Kiegészítő eltávolítása"
 msgid "Messages waiting"
 msgstr "Kézbesítetlen üzenetek"
 
-#. [button]: id=close_window
 #. [button]: id=click_dismiss
+#. [button]: id=close_window
 #. [button]: id=cancel
 #. [button]: id=ok
 #: data/gui/widget/chatbox.cfg:51 data/gui/widget/window_default.cfg:106
@@ -2120,7 +2120,7 @@ msgstr "Kapcsolódás"
 #: data/gui/window/editor_resize_map.cfg:284
 #: data/gui/window/editor_set_starting_position.cfg:175
 #: data/gui/window/file_dialog.cfg:450 data/gui/window/folder_create.cfg:133
-#: data/gui/window/game_load.cfg:594 data/gui/window/game_save.cfg:134
+#: data/gui/window/game_load.cfg:596 data/gui/window/game_save.cfg:134
 #: data/gui/window/label_settings.cfg:149
 #: data/gui/window/language_selection.cfg:162 data/gui/window/logging.cfg:177
 #: data/gui/window/message.cfg:149 data/gui/window/mp_change_control.cfg:216
@@ -2202,7 +2202,7 @@ msgid "Dependencies:"
 msgstr "Függőségek:"
 
 #. [label]: id=dependencies
-#: data/gui/window/addon_manager.cfg:523 src/gui/dialogs/addon/manager.cpp:890
+#: data/gui/window/addon_manager.cfg:523 src/gui/dialogs/addon/manager.cpp:892
 msgid "addon_dependencies^None"
 msgstr "Nincs"
 
@@ -2212,7 +2212,7 @@ msgid "Translations:"
 msgstr "Fordítások:"
 
 #. [label]: id=translations
-#: data/gui/window/addon_manager.cfg:557 src/gui/dialogs/addon/manager.cpp:904
+#: data/gui/window/addon_manager.cfg:557 src/gui/dialogs/addon/manager.cpp:906
 msgid "translations^None"
 msgstr "Egy sincs"
 
@@ -2267,8 +2267,8 @@ msgid "Add-ons Manager"
 msgstr "Kiegészítőkezelő"
 
 #. [button]: id=details_toggle
-#: data/gui/window/addon_manager.cfg:946 src/gui/dialogs/addon/manager.cpp:457
-#: src/gui/dialogs/addon/manager.cpp:644
+#: data/gui/window/addon_manager.cfg:946 src/gui/dialogs/addon/manager.cpp:459
+#: src/gui/dialogs/addon/manager.cpp:646
 msgid "Addon Details"
 msgstr "Kiegészítő részletei"
 
@@ -2369,7 +2369,7 @@ msgstr "Mezőhöz skálázva"
 #: data/gui/window/editor_edit_side.cfg:443
 #: data/gui/window/editor_set_starting_position.cfg:162
 #: data/gui/window/file_dialog.cfg:437 data/gui/window/folder_create.cfg:119
-#: data/gui/window/game_load.cfg:581 data/gui/window/game_save.cfg:120
+#: data/gui/window/game_load.cfg:583 data/gui/window/game_save.cfg:120
 #: data/gui/window/label_settings.cfg:137
 #: data/gui/window/language_selection.cfg:148 data/gui/window/logging.cfg:167
 #: data/gui/window/mp_change_control.cfg:203
@@ -2486,8 +2486,8 @@ msgstr ""
 "A véletlenszám-generátor a játék újratöltése után is ugyanazokat az "
 "eredményeket fogja adni"
 
-#. [slider]: id=enemey_gold_factor
 #. [label]: id=title
+#. [slider]: id=enemey_gold_factor
 #: data/gui/window/campaign_difficulty.cfg:53
 #: data/multiplayer/scenarios/2p_Dark_Forecast.cfg:251
 msgid "Difficulty"
@@ -2650,7 +2650,7 @@ msgstr "Napszak törlése"
 
 #. [label]
 #: data/gui/window/depcheck_confirm_change.cfg:40
-#: src/gui/dialogs/addon/manager.cpp:778 src/gui/dialogs/file_dialog.cpp:307
+#: src/gui/dialogs/addon/manager.cpp:780 src/gui/dialogs/file_dialog.cpp:307
 #: src/gui/dialogs/file_dialog.cpp:733
 msgid "Confirm"
 msgstr "Megerősítés"
@@ -2878,8 +2878,8 @@ msgstr "Pálya generálása"
 msgid "Choose a map generator:"
 msgstr "Pályarajzoló kiválasztása:"
 
-#. [button]: id=random_map_settings
 #. [button]: id=settings
+#. [button]: id=random_map_settings
 #: data/gui/window/editor_generate_map.cfg:128
 #: data/gui/window/mp_create_game.cfg:877
 #: src/gui/dialogs/multiplayer/lobby.cpp:478
@@ -2901,15 +2901,15 @@ msgstr "Megrajzolás"
 msgid "New Map"
 msgstr "Új pálya"
 
-#. [grid]
 #. [label]
+#. [grid]
 #: data/gui/window/editor_new_map.cfg:55
 #: data/gui/window/generator_settings.cfg:107
 msgid "Width:"
 msgstr "Szélesség:"
 
-#. [grid]
 #. [label]
+#. [grid]
 #: data/gui/window/editor_new_map.cfg:82
 #: data/gui/window/generator_settings.cfg:109
 msgid "Height:"
@@ -2992,7 +2992,7 @@ msgstr "Eltávolítja a jelenlegi könyvjelzőt"
 
 #. [button]: id=delete_file
 #. [button]: id=delete
-#: data/gui/window/file_dialog.cfg:339 data/gui/window/game_load.cfg:480
+#: data/gui/window/file_dialog.cfg:339 data/gui/window/game_load.cfg:482
 msgid "Delete"
 msgstr "Törlés"
 
@@ -3121,8 +3121,8 @@ msgstr "Mentés törlése"
 msgid "Do you really want to delete this game?"
 msgstr "Biztosan törölni akarod ezt az játékot?"
 
-#. [toggle_button]: id=do_not_show_again
 #. [toggle_button]: id=dont_ask_again
+#. [toggle_button]: id=do_not_show_again
 #: data/gui/window/game_delete.cfg:80
 #: data/gui/window/mp_host_game_prompt.cfg:79
 msgid "Do not show again"
@@ -3148,46 +3148,46 @@ msgstr "Tartalékosok:"
 msgid "Date"
 msgstr "Dátum"
 
-#. [label]: id=lblTitle
 #. [button]: id=load_game
+#. [label]: id=lblTitle
 #: data/gui/window/game_load.cfg:286 data/gui/window/mp_create_game.cfg:898
 #: src/hotkey/hotkey_command.cpp:102
 msgid "Load Game"
 msgstr "Játék betöltése"
 
 #. [toggle_button]: id=change_difficulty
-#: data/gui/window/game_load.cfg:463
+#: data/gui/window/game_load.cfg:465
 msgid "Change difficulty"
 msgstr "Nehézségi szint megváltoztatása"
 
 #. [toggle_button]: id=change_difficulty
-#: data/gui/window/game_load.cfg:464
+#: data/gui/window/game_load.cfg:466
 msgid "Change campaign difficulty before loading"
 msgstr "A hadjárat nehézségi szintjének megváltoztatása a betöltés előtt"
 
 #. [toggle_button]: id=show_replay
-#: data/gui/window/game_load.cfg:505
+#: data/gui/window/game_load.cfg:507
 msgid "Show replay"
 msgstr "Visszajátszás mutatása"
 
 #. [toggle_button]: id=show_replay
-#: data/gui/window/game_load.cfg:506
+#: data/gui/window/game_load.cfg:508
 msgid "Play the embedded replay from the saved game if applicable"
 msgstr ""
 "Az elmentett játékba beágyazott visszajátszás megtekintése, ha lehetséges"
 
 #. [toggle_button]: id=cancel_orders
-#: data/gui/window/game_load.cfg:525
+#: data/gui/window/game_load.cfg:527
 msgid "Cancel orders"
 msgstr "Parancsok visszavonása"
 
 #. [toggle_button]: id=cancel_orders
-#: data/gui/window/game_load.cfg:526
+#: data/gui/window/game_load.cfg:528
 msgid "Cancel any pending unit movements in the saved game"
 msgstr "A függőben lévő egységmozgások visszavonása a mentett játékban"
 
 #. [button]: id=browse_saves_folder
-#: data/gui/window/game_load.cfg:566
+#: data/gui/window/game_load.cfg:568
 msgid "Open saves folder"
 msgstr "Játékmentések mappájának megnyitása"
 
@@ -3524,8 +3524,8 @@ msgstr "Játékok"
 msgid "Requires a password to join"
 msgstr "A csatlakozáshoz jelszó szükséges"
 
-#. [toggle_button]: id=filter_with_friends
 #. [widget]: id=tab_label
+#. [toggle_button]: id=filter_with_friends
 #: data/gui/window/lobby_main.cfg:338
 #: data/gui/window/preferences/05_multiplayer.cfg:415
 msgid "Friends"
@@ -3551,9 +3551,9 @@ msgstr "Szűrés megfordítása"
 msgid "Log Out"
 msgstr "Kijelentkezés"
 
-#. [button]: id=create
 #. [label]
 #. [button]: id=ok
+#. [button]: id=create
 #: data/gui/window/lobby_main.cfg:407 data/gui/window/lobby_main.cfg:573
 #: data/gui/window/mp_create_game/default_resolution.cfg:45
 #: data/gui/window/mp_create_game/default_resolution.cfg:446
@@ -3564,9 +3564,9 @@ msgstr "Kijelentkezés"
 msgid "Create Game"
 msgstr "Játék létrehozása"
 
+#. [grid]
 #. [button]: id=show_preferences
 #. [label]: id=title
-#. [grid]
 #: data/gui/window/lobby_main.cfg:417 data/gui/window/lobby_main.cfg:561
 #: data/gui/window/preferences.cfg:212 data/gui/window/title_screen.cfg:259
 #: src/hotkey/hotkey_command.cpp:118
@@ -3736,8 +3736,8 @@ msgstr ""
 msgid "Event"
 msgstr "Esemény"
 
-#. [widget]: id=label
 #. [label]
+#. [widget]: id=label
 #: data/gui/window/mp_alerts_options.cfg:154
 #: data/gui/window/preferences.cfg:346
 msgid "Sound"
@@ -3844,9 +3844,9 @@ msgstr "Körváltás:"
 msgid "When a new turn has begun"
 msgstr "Amikor egy új kör kezdődött"
 
-#. [button]: id=orb_defaults
 #. [button]: id=revert_to_defaults
 #. [button]: id=btn_reset_hotkeys
+#. [button]: id=orb_defaults
 #: data/gui/window/mp_alerts_options.cfg:234
 #: data/gui/window/preferences/02_hotkeys.cfg:263
 #: data/gui/window/select_orb_colors.cfg:102
@@ -4033,8 +4033,8 @@ msgstr "Cselekvés bónusz"
 msgid "Time for each attack, recruit, and capture"
 msgstr "Támadásra, toborzásra és falu elfoglalásra járó idő"
 
-#. [widget]: id=label
 #. [widget]: id=tab_label
+#. [widget]: id=label
 #: data/gui/window/mp_create_game.cfg:533 data/gui/window/preferences.cfg:291
 #: data/gui/window/preferences/05_multiplayer.cfg:402
 #: src/hotkey/hotkey_command.cpp:38
@@ -4174,8 +4174,8 @@ msgstr "Szövetség kiválasztása"
 msgid "Starting position:"
 msgstr "Kezdő pozíció:"
 
-#. [widget]: id=name
 #. [label]
+#. [widget]: id=name
 #: data/gui/window/mp_host_game_prompt.cfg:40
 #: data/gui/window/mp_method_selection.cfg:273
 msgid "Host Networked Game"
@@ -4256,12 +4256,12 @@ msgstr "Bejelentkezés:"
 msgid "Save password locally (encrypted)"
 msgstr "Jelszó mentése a helyi számítógépre (titkosított)"
 
-#. [widget]: id=label
-#. [label]
 #. [grid]
+#. [label]
+#. [widget]: id=label
 #: data/gui/window/mp_method_selection.cfg:46
 #: data/gui/window/preferences.cfg:364 data/gui/window/title_screen.cfg:253
-#: src/gui/dialogs/game_load.cpp:337
+#: src/gui/dialogs/game_load.cpp:357
 msgid "Multiplayer"
 msgstr "Többjátékos"
 
@@ -5093,7 +5093,7 @@ msgid "Start a tutorial to familiarize yourself with the game"
 msgstr "A gyakorlópálya indítása a játékkal való ismerkedéshez"
 
 #. [grid]
-#: data/gui/window/title_screen.cfg:251 src/gui/dialogs/game_load.cpp:340
+#: data/gui/window/title_screen.cfg:251 src/gui/dialogs/game_load.cpp:360
 msgid "Tutorial"
 msgstr "Gyakorlás"
 
@@ -5232,23 +5232,23 @@ msgstr "Állapot"
 msgid "HP"
 msgstr "ÉP"
 
-#. [toggle_button]: id=sort_2
 #. [toggle_button]: id=sort_4
+#. [toggle_button]: id=sort_2
 #: data/gui/window/unit_list.cfg:149 data/gui/window/unit_recall.cfg:61
 msgid "Lvl"
 msgstr "Sz"
 
-#. [toggle_button]: id=sort_3
 #. [toggle_button]: id=sort_5
+#. [toggle_button]: id=sort_3
 #: data/gui/window/unit_list.cfg:163 data/gui/window/unit_recall.cfg:75
 msgid "XP"
 msgstr "TP"
 
-#. [toggle_button]: id=sort_4
 #. [toggle_button]: id=sort_6
+#. [toggle_button]: id=sort_4
 #: data/gui/window/unit_list.cfg:177 data/gui/window/unit_recall.cfg:89
-#: src/gui/widgets/unit_preview_pane.cpp:345
-#: src/gui/widgets/unit_preview_pane.cpp:488
+#: src/gui/widgets/unit_preview_pane.cpp:351
+#: src/gui/widgets/unit_preview_pane.cpp:494
 msgid "Traits"
 msgstr "Jellemvonások"
 
@@ -5263,9 +5263,10 @@ msgid "Recall Unit"
 msgstr "Egység visszahívása"
 
 #. [button]: id=rename
-#: data/gui/window/unit_recall.cfg:393 src/gui/dialogs/unit_recall.cpp:258
-#: src/hotkey/hotkey_command.cpp:96
-msgid "Rename Unit"
+#: data/gui/window/unit_recall.cfg:393
+#, fuzzy
+#| msgid "Rename Unit"
+msgid "Rename"
 msgstr "Egység átnevezése"
 
 #. [button]: id=dismiss
@@ -5357,7 +5358,7 @@ msgstr "Saját mappa"
 msgid "filesystem_path_system^Root"
 msgstr "Gyökér"
 
-#: src/desktop/version.cpp:292
+#: src/desktop/version.cpp:274
 msgid "operating_system^<unknown>"
 msgstr "<ismeretlen>"
 
@@ -5366,7 +5367,9 @@ msgid "The maximum text width is less than 1."
 msgstr "A legnagyobb szövegszélesség kisebb, mint 1."
 
 #: src/font/text.cpp:761
-msgid "The text contains invalid markup: "
+#, fuzzy
+#| msgid "The text contains invalid markup: "
+msgid "The text contains invalid Pango markup: "
 msgstr "A szöveg érvénytelen elemet tartalmaz: "
 
 #. TRANSLATORS: Formats a two-element conjunctive list.
@@ -5452,7 +5455,7 @@ msgid "Linked '$id' group has multiple definitions."
 msgstr "A következő csoport több definícióval is rendelkezik: „$id”."
 
 #: src/gui/core/window_builder.cpp:314 src/gui/widgets/addon_list.cpp:429
-#: src/gui/widgets/chatbox.cpp:798 src/gui/widgets/listbox.cpp:808
+#: src/gui/widgets/chatbox.cpp:804 src/gui/widgets/listbox.cpp:808
 #: src/gui/widgets/multi_page.cpp:196 src/gui/widgets/panel.cpp:194
 #: src/gui/widgets/scroll_label.cpp:220 src/gui/widgets/scrollbar_panel.cpp:98
 #: src/gui/widgets/size_lock.cpp:125 src/gui/widgets/stacked_widget.cpp:241
@@ -5563,13 +5566,10 @@ msgid "addons_order^Type ($order)"
 msgstr "Típus ($order)"
 
 #: src/gui/dialogs/addon/manager.cpp:229
-msgid "addons_order^Last updated ($order)"
-msgstr "Utoljára frissítve ($order)"
-
+msgid "addons_order^Last updated ($datelike_order)"
+msgstr "Utoljára frissítve ($datelike_order)"
 #: src/gui/dialogs/addon/manager.cpp:232
-msgid "addons_order^First uploaded ($order)"
-msgstr "Először feltöltve ($order)"
-
+msgid "addons_order^First uploaded ($datelike_order)"msgstr "Először feltöltve ($datelike_order)"
 #: src/gui/dialogs/addon/manager.cpp:261 src/gui/widgets/addon_list.cpp:103
 msgid "addon_state^Not installed"
 msgstr "Nincs telepítve"
@@ -5630,44 +5630,56 @@ msgstr "Közzé téve, hibás"
 msgid "addon_state^Unknown"
 msgstr "Ismeretlen"
 
-#. TRANSLATORS: ascending
-#: src/gui/dialogs/addon/manager.cpp:364
-msgid "asc"
+#: src/gui/dialogs/addon/manager.cpp:363
+#, fuzzy
+#| msgid "sort^Ascending"
+msgid "ascending"
+msgstr "Növekvő sorrendben"
+
+#. TRANSLATORS: Sorting order of dates, oldest first
+#: src/gui/dialogs/addon/manager.cpp:365
+msgid "oldest to newest"
 msgstr "növekvő"
 
-#. TRANSLATORS: descending
 #: src/gui/dialogs/addon/manager.cpp:368
-msgid "desc"
+#, fuzzy
+#| msgid "sort^Descending"
+msgid "descending"
+msgstr "Csökkenő sorrendben"
+
+#. TRANSLATORS: Sorting order of dates, newest first
+#: src/gui/dialogs/addon/manager.cpp:370
+msgid "newest to oldest"
 msgstr "csökkenő"
 
-#: src/gui/dialogs/addon/manager.cpp:386 src/gui/dialogs/chat_log.cpp:420
+#: src/gui/dialogs/addon/manager.cpp:388 src/gui/dialogs/chat_log.cpp:420
 #: src/gui/dialogs/game_cache_options.cpp:105
-#: src/gui/dialogs/game_version.cpp:186
+#: src/gui/dialogs/game_version_dialog.cpp:186
 #: src/gui/dialogs/gamestate_inspector.cpp:428
-#: src/gui/dialogs/lua_interpreter.cpp:490
+#: src/gui/dialogs/lua_interpreter.cpp:491
 #: src/gui/dialogs/screenshot_notification.cpp:102
 #: src/gui/dialogs/wml_error.cpp:229
 msgid "Clipboard support not found, contact your packager"
 msgstr ""
 "Vágólap támogatás nem található, vedd fel a kapcsolatot a csomag készítőjével"
 
-#: src/gui/dialogs/addon/manager.cpp:454
+#: src/gui/dialogs/addon/manager.cpp:456
 msgid "addons^Back to List"
 msgstr "Vissza a listához"
 
-#: src/gui/dialogs/addon/manager.cpp:466
+#: src/gui/dialogs/addon/manager.cpp:468
 msgid "An error occurred while downloading the add-ons list from the server."
 msgstr "Hiba történt a kiegészítők listájának letöltése közben."
 
-#: src/gui/dialogs/addon/manager.cpp:502
+#: src/gui/dialogs/addon/manager.cpp:504
 msgid "No Add-ons Available"
 msgstr "Nincs elérhető kiegészítő"
 
-#: src/gui/dialogs/addon/manager.cpp:502
+#: src/gui/dialogs/addon/manager.cpp:504
 msgid "There are no add-ons available for download from this server."
 msgstr "Nincsenek letölthető kiegészítők ezen a kiszolgálón."
 
-#: src/gui/dialogs/addon/manager.cpp:677
+#: src/gui/dialogs/addon/manager.cpp:679
 msgid ""
 "The following add-on appears to have publishing or version control "
 "information stored locally, and will not be removed:"
@@ -5675,15 +5687,15 @@ msgstr ""
 "Úgy néz ki, hogy az alábbi kiegészítőkhöz közzétételi vagy verziókezelési "
 "információk találhatók ezen a gépen, így nem lesznek eltávolítva:"
 
-#: src/gui/dialogs/addon/manager.cpp:685
+#: src/gui/dialogs/addon/manager.cpp:687
 msgid "The following add-on could not be deleted properly:"
 msgstr "Az alábbi kiegészítőt nem sikerült törölni:"
 
-#: src/gui/dialogs/addon/manager.cpp:731
+#: src/gui/dialogs/addon/manager.cpp:733
 msgid "Warning"
 msgstr "Figyelmeztetés"
 
-#: src/gui/dialogs/addon/manager.cpp:732
+#: src/gui/dialogs/addon/manager.cpp:734
 msgid ""
 "The remote version of this add-on is greater or equal to the version being "
 "uploaded. Do you really wish to continue?"
@@ -5691,27 +5703,27 @@ msgstr ""
 "A kiegészítő távoli kiszolgálón található verziója nagyobb vagy egyenlő a "
 "feltöltendőjénél. Biztos, hogy folytatod?"
 
-#: src/gui/dialogs/addon/manager.cpp:741
+#: src/gui/dialogs/addon/manager.cpp:743
 msgid "Invalid icon path. Make sure the path points to a valid image."
 msgstr ""
 "Érvénytelen ikon útvonal. Győződj meg róla, hogy az útvonal egy érvényes "
 "képre mutat."
 
-#: src/gui/dialogs/addon/manager.cpp:744 src/gui/dialogs/addon/manager.cpp:747
-#: src/gui/dialogs/addon/manager.cpp:786
+#: src/gui/dialogs/addon/manager.cpp:746 src/gui/dialogs/addon/manager.cpp:749
+#: src/gui/dialogs/addon/manager.cpp:788
 msgid "The server responded with an error:"
 msgstr "A kiszolgáló a következő hibával válaszolt:"
 
-#: src/gui/dialogs/addon/manager.cpp:745
+#: src/gui/dialogs/addon/manager.cpp:747
 msgid "Terms"
 msgstr "Feltételek"
 
-#: src/gui/dialogs/addon/manager.cpp:762 src/gui/dialogs/addon/manager.cpp:789
+#: src/gui/dialogs/addon/manager.cpp:764 src/gui/dialogs/addon/manager.cpp:791
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:507
 msgid "Response"
 msgstr "Válasz"
 
-#: src/gui/dialogs/addon/manager.cpp:774
+#: src/gui/dialogs/addon/manager.cpp:776
 msgid ""
 "Deleting '$addon|' will permanently erase its download and upload counts on "
 "the add-ons server. Do you really wish to continue?"
@@ -5719,7 +5731,7 @@ msgstr ""
 "„$addon|” törlése végérvényesen törölni fogja a letöltéseinek és "
 "feltöltéseinek számát a kiegészítő-kiszolgálón. Biztos, hogy folytatod?"
 
-#: src/gui/dialogs/addon/manager.cpp:806
+#: src/gui/dialogs/addon/manager.cpp:808
 msgid "Do you want to uninstall '$addon|'?"
 msgstr "Törölni akarod ezt a kiegészítőt: '$addon|'?"
 
@@ -5879,37 +5891,43 @@ msgstr "A gyorsítótár teljes tartalma törölve lett."
 msgid "The game data cache could not be purged."
 msgstr "Nem sikerült a gyorsítótárbeli játékadatok teljes törlése."
 
-#: src/gui/dialogs/game_load.cpp:301
+#: src/gui/dialogs/game_load.cpp:311
 msgid "(Invalid)"
 msgstr "(Érvénytelen)"
 
-#: src/gui/dialogs/game_load.cpp:328
+#: src/gui/dialogs/game_load.cpp:348
 msgid "Campaign: $campaign_name"
 msgstr "Hadjárat: $campaign_name"
 
-#: src/gui/dialogs/game_load.cpp:343
+#: src/gui/dialogs/game_load.cpp:363
 msgid "Test scenario"
 msgstr "Próbapálya"
 
-#: src/gui/dialogs/game_load.cpp:353
+#: src/gui/dialogs/game_load.cpp:373
 msgid "Replay"
 msgstr "Visszajátszás"
 
-#: src/gui/dialogs/game_load.cpp:355
+#: src/gui/dialogs/game_load.cpp:375
 msgid "Turn"
 msgstr "Kör"
 
-#: src/gui/dialogs/game_load.cpp:357
+#: src/gui/dialogs/game_load.cpp:377
 msgid "Scenario start"
 msgstr "Pálya indítása"
 
-#: src/gui/dialogs/game_load.cpp:360
+#: src/gui/dialogs/game_load.cpp:380
 msgid "Difficulty: "
 msgstr "Nehézség: "
 
-#: src/gui/dialogs/game_load.cpp:364
+#: src/gui/dialogs/game_load.cpp:384
 msgid "Version: "
 msgstr "Verzió: "
+
+#: src/gui/dialogs/game_load.cpp:389
+#, fuzzy
+#| msgid "Choose Modifications"
+msgid "Modifications: "
+msgstr "Módosítók kiválasztása"
 
 #: src/gui/dialogs/game_stats.cpp:78
 msgid "controller^AI"
@@ -5933,15 +5951,16 @@ msgstr "nem"
 msgid "yes"
 msgstr "igen"
 
-#: src/gui/dialogs/game_version.cpp:137 src/gui/dialogs/title_screen.cpp:241
+#: src/gui/dialogs/game_version_dialog.cpp:137
+#: src/gui/dialogs/title_screen.cpp:241
 msgid "Version $version"
 msgstr "Verzió: $version"
 
-#: src/gui/dialogs/game_version.cpp:141
+#: src/gui/dialogs/game_version_dialog.cpp:141
 msgid "Running on $os"
 msgstr "$os rendszeren futtatva"
 
-#: src/gui/dialogs/game_version.cpp:226
+#: src/gui/dialogs/game_version_dialog.cpp:226
 msgid "version^N/A"
 msgstr "N/A"
 
@@ -6040,6 +6059,16 @@ msgstr "Játékadatok megszerzése"
 #: src/gui/dialogs/loading_screen.cpp:72
 msgid "Downloading lobby data"
 msgstr "Játékcsarnok adatainak letöltése"
+
+#: src/gui/dialogs/lua_interpreter.cpp:690
+msgid "The lua console can only be used in debug mode! (Run ':debug' first)"
+msgstr ""
+
+#: src/gui/dialogs/lua_interpreter.cpp:691
+#, fuzzy
+#| msgid "Clean Gray Cobbles"
+msgid "lua console"
+msgstr "Szürke utcakő"
 
 #: src/gui/dialogs/multiplayer/lobby.cpp:106
 msgid "Selected Game"
@@ -6142,7 +6171,13 @@ msgstr "Megfigyelés engedélyezve"
 msgid "Observers not allowed"
 msgstr "Megfigyelés letiltva"
 
-#: src/gui/dialogs/multiplayer/lobby.cpp:952
+#: src/gui/dialogs/multiplayer/lobby.cpp:797
+#, fuzzy
+#| msgid "Lobby"
+msgid "lobby"
+msgstr "Játékcsarnok"
+
+#: src/gui/dialogs/multiplayer/lobby.cpp:957
 msgid ""
 "Something is wrong with the addon version check database supporting the "
 "multiplayer lobby. Please report this at https://bugs.wesnoth.org."
@@ -6254,6 +6289,13 @@ msgstr "Betölthető hely"
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:226
 msgid "empty"
 msgstr "üres"
+
+#: src/gui/dialogs/multiplayer/mp_join_game.cpp:253
+#: src/gui/dialogs/multiplayer/mp_staging.cpp:109
+#, fuzzy
+#| msgid "Quit Game"
+msgid "this game"
+msgstr "Kilépés a játékból"
 
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:365
 #: src/gui/dialogs/multiplayer/mp_staging.cpp:168
@@ -6370,6 +6412,10 @@ msgstr "$count|× $name"
 msgid "Choose Test"
 msgstr "Teszt kiválasztása"
 
+#: src/gui/dialogs/unit_recall.cpp:258 src/hotkey/hotkey_command.cpp:96
+msgid "Rename Unit"
+msgstr "Egység átnevezése"
+
 #: src/gui/dialogs/unit_recall.cpp:291
 msgid "This unit is loyal and requires no upkeep."
 msgstr "Ez az egység hűséges, így nincs fenntartási költsége."
@@ -6437,11 +6483,11 @@ msgstr ""
 "szeretnél üzeneteket kapni tőle, írd be a következő parancsot: <i>/ignore "
 "$name</i>"
 
-#: src/gui/widgets/chatbox.cpp:625
+#: src/gui/widgets/chatbox.cpp:631
 msgid "$player has entered the room"
 msgstr "$player belépett a szobába"
 
-#: src/gui/widgets/chatbox.cpp:667
+#: src/gui/widgets/chatbox.cpp:673
 msgid "$player has left the room"
 msgstr "$player elhagyta a szobát"
 
@@ -6577,8 +6623,6 @@ msgstr "ÉP: "
 msgid "XP: "
 msgstr "TP: "
 
-#: src/gui/widgets/unit_preview_pane.cpp:328
-#: src/gui/widgets/unit_preview_pane.cpp:481
 msgid "Experience Modifier: "
 msgstr "Szintlépési küszöb: "
 
@@ -7463,7 +7507,7 @@ msgstr "Ismeretlen parancs"
 #. other's resources rather than duplicating them. For example,
 #. Swedish (sv) and Danish (da) are such, so Swedish translator could
 #. translate this message as "sv,da", while Danish as "da,sv".
-#: src/image.cpp:538
+#: src/picture.cpp:538
 msgid "language code for localized resources^en_US"
 msgstr "hu"
 
@@ -7804,12 +7848,6 @@ msgstr ""
 
 #~ msgid "sort^By first upload"
 #~ msgstr "Első feltöltés szerint"
-
-#~ msgid "sort^Ascending"
-#~ msgstr "Növekvő sorrendben"
-
-#~ msgid "sort^Descending"
-#~ msgstr "Csökkenő sorrendben"
 
 #~ msgid "Filter:"
 #~ msgstr "Szűrés:"
