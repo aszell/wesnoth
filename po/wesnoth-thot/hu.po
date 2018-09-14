@@ -6,15 +6,15 @@
 #
 # Majsa Norbert <nmajsa@monocom.hu>, 2008.
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2008, 2009.
-# Gabor Udvari <gabor.udvari@gmail.com>, 2008, 2009, 2011.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Udvari Gabor <gabor.udvari@gmail.com>, 2008, 2009, 2011.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-thot_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-22 11:33 UTC\n"
 "PO-Revision-Date: 2018-07-29 15:26+0100\n"
-"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"Last-Translator: Krutki Tamás <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,6 @@ msgstr "ThP"
 
 #. [campaign]: id=The_Hammer_of_Thursagan
 #: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:19
-#| msgid "(Easy)"
 msgid "Easy"
 msgstr "könnyű"
 
@@ -46,7 +45,6 @@ msgstr "Harcos"
 
 #. [campaign]: id=The_Hammer_of_Thursagan
 #: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:20
-#| msgid "(Normal)"
 msgid "Normal"
 msgstr "átlagos"
 
@@ -57,7 +55,6 @@ msgstr "Vértes"
 
 #. [campaign]: id=The_Hammer_of_Thursagan
 #: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:21
-#| msgid "(Challenging)"
 msgid "Challenging"
 msgstr "kihívást jelentő"
 
@@ -118,14 +115,6 @@ msgstr "A Keleti-kapunál"
 
 #. [part]
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:26
-#| msgid ""
-#| "In the first few years after the founding of the Northern Alliance, the "
-#| "dwarves of Knalga and the human population of Dwarven Doors were fully "
-#| "preoccupied with rebuilding what had been broken by the long orcish "
-#| "occupation. But soon enough they prospered once again. The dwarves begin "
-#| "mining their past for inspiration in ways to rebuild Knalga so it would "
-#| "be even greater than before, and began also reaching out for contact with "
-#| "their scattered kinfolk."
 msgid ""
 "In the first few years after the founding of the Northern Alliance, the "
 "dwarves of Knalga and the human population of Dwarven Doors were fully "
@@ -502,7 +491,6 @@ msgstr "Igenis, Hamel uram."
 
 #. [message]: speaker=Angarthing
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:220
-#| msgid "The Order thanks you, Lord Hamel"
 msgid "The Order thanks you, Lord Hamel."
 msgstr "A rend köszöni neked, Hamel nagyúr."
 
@@ -1103,14 +1091,8 @@ msgstr ""
 "veletek tarthatna keletre. Itt az ideje, hogy utazzanak... és úgy érzem, "
 "valami olyan van születőben keleten, ami nem tetszene nekem."
 
-#  Itt az ideje, hogy utazzanak → Itt az ideje hogy utazon
 #. [message]: speaker=Master Perrin
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Mages_and_Drakes.cfg:203
-#| msgid ""
-#| "We’re grateful for your assistance. And I’d like to send at least one of "
-#| "our senior apprentices with you to the east. It has come time for them to "
-#| "be journeymen... and I sense something being born to the east that I do "
-#| "not like the feel of."
 msgid ""
 "We’re grateful for your assistance. And I’d like to send one of our senior "
 "apprentices with you to the east. It has come time for him to be a "
@@ -2010,10 +1992,6 @@ msgstr ""
 
 #. [message]: speaker=Angarthing
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/12_The_Underlevels.cfg:542
-#| msgid ""
-#| "I sense these bindings to be the work of common sorcery, not the power of "
-#| "the Hammer. Usually to each such locking spell there is some sort of key. "
-#| "If we can but find the key, we will able to open these doors."
 msgid ""
 "I sense these bindings to be the work of common sorcery, not the power of "
 "the Hammer. Usually to each such locking spell there is some sort of key. If "
@@ -2146,9 +2124,6 @@ msgstr ""
 
 #. [message]: speaker=Angarthing
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/12_The_Underlevels.cfg:871
-#| msgid ""
-#| "Freeing these prisoners is more of a blow to Karrag then we thought, for "
-#| "now he is unable to continue his foul sorcery."
 msgid ""
 "Freeing these prisoners is more of a blow to Karrag than we thought, for now "
 "he is unable to continue his foul sorcery."
@@ -2569,7 +2544,6 @@ msgstr "ösztönzés"
 
 #. [leadership]: id=inspire
 #: data/campaigns/The_Hammer_of_Thursagan/utils/abilities.cfg:14
-#| msgid "inspire"
 msgid "female^inspire"
 msgstr "ösztönzés"
 

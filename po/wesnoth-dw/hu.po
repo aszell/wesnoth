@@ -1,6 +1,6 @@
 # Kelemen Zoltán, 2011.
 # Barthalos Márton, 2012.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 # Széll András <szell.andris@gmail.com>, 2018.
 # Pazurik L. Ádám <pazurik.laszlo.adam@gmail.com>, 2018.
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
 "PO-Revision-Date: 2018-07-29 15:46+0100\n"
-"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"Last-Translator: Krutki Tamás <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -768,7 +768,7 @@ msgstr "Nézzetek ide! Egy denevér gunnyaszt a sarokban."
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:656
 msgid "Well, kill it, and let’s keep moving."
-msgstr "Öld meg, aztán menjünk tovább!"
+msgstr "Jól van, öld meg, aztán menjünk tovább!"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:660
@@ -2565,9 +2565,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:569
-#| msgid ""
-#| "The mermen clapped their hands over their ears as a terrible wail echoed "
-#| "off the castle walls."
 msgid ""
 "The merfolk clapped their hands over their ears as a terrible wail echoed "
 "off the castle walls."
@@ -2792,13 +2789,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:17
-#| msgid ""
-#| "The tribe that had fled Jotha unable to fight returned as an army "
-#| "stiffened by veteran fighters and led by a warrior king. Though they were "
-#| "tired from their journey, weariness fell from them as they neared home. "
-#| "The mermen arrived during the night, and found the mouth of their bay "
-#| "guarded, so they headed south along the coast to some outlying villages "
-#| "to gather news of the invaders."
 msgid ""
 "The tribe that had fled Jotha unable to fight returned as an army stiffened "
 "by veteran fighters and led by a warrior king. Though they were tired from "
@@ -3197,9 +3187,6 @@ msgstr "Sellő polgár"
 
 #. [unit_type]: id=Merman Citizen, race=merman
 #: data/campaigns/Dead_Water/units/Citizen.cfg:17
-#| msgid ""
-#| "Mermen are mostly peaceful, but will fight to defend their homes. In this "
-#| "situation, even mermen with no weapons or training can be dangerous."
 msgid ""
 "Merfolk are mostly peaceful, but will fight to defend their homes. In this "
 "situation, even merfolk with no weapons or training can be dangerous."

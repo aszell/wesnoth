@@ -1734,7 +1734,9 @@ msgstr ""
 #: data/core/macros/items.cfg:521
 msgid ""
 "This trident gives merfolk the power to throw lightning at their enemies."
-msgstr "Ez a szigony félelmetes villámokat szór az ellenségeidre."
+msgstr ""
+"Ez a szigony a sellőket képessé teszi arra, hogy villámokat szórjanak az "
+"ellenségeikre."
 
 #. [effect]: type=fire
 #: data/core/macros/items.cfg:525
@@ -4598,10 +4600,9 @@ msgid ""
 "to dislodge from a village! Plan your movements accordingly."
 msgstr ""
 "A győzelemhez minden játékos számára kulcsfontosságú, hogy elfoglalja a "
-"falvakat. Használd ezt a tudást és csald csapdába ellenfeleidet, hogy "
-"elfoglalják az elhagyott falvaidat, de ne felejtsd el, hogy az ellenséges "
-"egységet nehezebb lesz kimozdítani a faluból. Ennek megfelelően tervezd az "
-"egységeid mozgását."
+"falvakat. Használd ezt a tudást és csald csapdába ellenfeleidet néhány falu "
+"üresen hagyásával, de ne felejtsd el, hogy az ellenséges egységet nehezebb "
+"lesz kimozdítani a faluból. Ennek megfelelően tervezd az egységeid mozgását."
 
 #. [tip]
 #: data/tips.cfg:153
@@ -4933,7 +4934,7 @@ msgstr ""
 # (JF) Nem találtam meg a játékban.
 #: src/actions/advancement.cpp:225
 msgid "an advancement choice"
-msgstr "szintfejlődés választás"
+msgstr "szintlépés választás"
 
 #: src/actions/attack.cpp:386 src/actions/attack.cpp:656
 #: src/actions/attack.cpp:1417
@@ -5129,9 +5130,8 @@ msgid_plural ""
 "The selected add-on has the following dependencies, which are not currently "
 "installed or available from the server. Do you wish to continue?"
 msgstr[0] ""
-"Az alábbi csomag a kiválasztott kiegészítő függősége, azonban jelenleg "
-"nincs telepítve és nem található a kiszolgálón. Szeretnéd telepíteni a "
-"kiegészítőt?"
+"Az alábbi csomag a kiválasztott kiegészítő függősége, azonban jelenleg nincs "
+"telepítve és nem található a kiszolgálón. Szeretnéd telepíteni a kiegészítőt?"
 msgstr[1] ""
 "Az alábbi csomagok a kiválasztott kiegészítő függőségei, azonban jelenleg "
 "nincsenek telepítve és nem találhatók a kiszolgálón. Szeretnéd telepíteni a "
@@ -6418,11 +6418,11 @@ msgstr "Szint: "
 
 #: src/help/help_topic_generators.cpp:306
 msgid "Advances from: "
-msgstr "Szintlépés ebből: "
+msgstr "Előző szint: "
 
 #: src/help/help_topic_generators.cpp:308
 msgid "Advances to: "
-msgstr "Szintlépés ezzé: "
+msgstr "Következő szint: "
 
 #: src/help/help_topic_generators.cpp:337
 msgid "Base unit: "
@@ -6532,7 +6532,7 @@ msgstr "Lépéspont költség"
 
 #: src/help/help_topic_generators.cpp:631
 msgid "Defense Cap"
-msgstr "Védekezési határ"
+msgstr "Védekezési limit"
 
 #: src/help/help_topic_generators.cpp:636
 msgid "Vision Cost"
@@ -7139,7 +7139,7 @@ msgstr "Nincs tükör"
 
 #: src/mp_game_settings.hpp:72
 msgid "No Ally Mirror"
-msgstr "Nincs szövetséges tükör"
+msgstr "Nincs tükör szövetségesek közt"
 
 #: src/mp_ui_alerts.cpp:66
 msgid "A player has joined"
@@ -7313,7 +7313,7 @@ msgstr "Szint: "
 
 #: src/reports.cpp:238
 msgid "No advancement"
-msgstr "Nincs szintfejlődés"
+msgstr "Nincs szintlépés"
 
 #: src/reports.cpp:240
 msgid "Advances to:"
@@ -8813,7 +8813,7 @@ msgstr "Lépéstervező beállítása"
 #~ msgstr "Visszahívások"
 
 #~ msgid "Advancements"
-#~ msgstr "Szintfejlődések"
+#~ msgstr "Szintlépések"
 
 #~ msgid "Losses"
 #~ msgstr "Veszteségek"

@@ -3,14 +3,14 @@
 # Kelemen Zoltán <kelemen_zoltan@freemail.hu>, 2008., 2009.
 # Gabor Udvari <gabor.udvari@gmail.com>, 2008.
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2010, 2012.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-low_1.5(frozen)\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
 "PO-Revision-Date: 2018-07-29 15:38+0100\n"
-"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"Last-Translator: Krutki Tamás <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,6 @@ msgstr "(Középhaladó szint, 18 pálya)"
 
 #. [campaign]: id=LOW, type=hybrid
 #: data/campaigns/Legend_of_Wesmere/_main.cfg:55
-#| msgid "(Easy)"
 msgid "Easy"
 msgstr "könnyű"
 
@@ -66,7 +65,6 @@ msgstr "Úr"
 
 #. [campaign]: id=LOW, type=hybrid
 #: data/campaigns/Legend_of_Wesmere/_main.cfg:56
-#| msgid "(Normal)"
 msgid "Normal"
 msgstr "átlagos"
 
@@ -268,17 +266,11 @@ msgstr "Gyökeres változás"
 
 #. [scenario]: id=01_The_Uprooting
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter1/01_The_Uprooting.cfg:9
-#| msgid ""
-#| "Chapter One,\n"
-#| "<i>Flight and fight</i>"
 msgid "Chapter One: Flight and Fight"
 msgstr "Első fejezet: Küzdelem és menekülés"
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter1/01_The_Uprooting.cfg:30
-#| msgid ""
-#| "<i>The Legend of Wesmere</i>,\n"
-#| "Chapter One"
 msgid ""
 "<i>The Legend of Wesmere</i>\n"
 "Chapter One"
@@ -288,9 +280,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter1/01_The_Uprooting.cfg:34
-#| msgid ""
-#| "Chapter One,\n"
-#| "<i>Flight and fight</i>"
 msgid ""
 "Chapter One\n"
 "<i>Flight and Fight</i>"
@@ -649,9 +638,6 @@ msgstr "Harcosokra van szükségünk, ahogy megtalálom őket, visszatérünk."
 
 #. [message]: id=Landar
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter1/01_The_Uprooting.cfg:488
-#| msgid ""
-#| "Velon has fallen. He counseled weakness, but did not deserved such an "
-#| "ugly death. We shall return with swords to avenge him!"
 msgid ""
 "Velon has fallen. He counseled weakness, but did not deserve such an ugly "
 "death. We shall return with swords to avenge him!"
@@ -1158,17 +1144,11 @@ msgstr "A Tünde Kincstár"
 
 #. [scenario]: id=04_The_Elvish_Treasury
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/04_The_Elvish_Treasury.cfg:19
-#| msgid ""
-#| "Chapter Two,\n"
-#| "<i>The Treasury</i>"
 msgid "Chapter Two: The Treasury"
 msgstr "Második fejezet: Kincstár"
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/04_The_Elvish_Treasury.cfg:42
-#| msgid ""
-#| "<i>The Legend of Wesmere</i>,\n"
-#| "Chapter Two"
 msgid ""
 "<i>The Legend of Wesmere</i>\n"
 "Chapter Two"
@@ -1178,9 +1158,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/04_The_Elvish_Treasury.cfg:47
-#| msgid ""
-#| "Chapter Two,\n"
-#| "<i>The Treasury</i>"
 msgid ""
 "Chapter Two\n"
 "<i>The Treasury</i>"
@@ -1399,10 +1376,8 @@ msgstr "Hraurg"
 msgid "Spahr"
 msgstr "Spahr"
 
-# Az eredeti angol szövegben egyértelműen ló van, viszont szerintem lovasra gondolt.
 #. [objective]: condition=win
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/05_The_Saurian_Treasury.cfg:204
-#| msgid "Enter the Saurian Treasury and leave with the gold"
 msgid "Enter the Saurian Treasury with a horse and leave with the gold"
 msgstr "Bejutsz a Gyík Kincstárba egy lovassal, és megszerzed az aranyat"
 
@@ -1736,9 +1711,6 @@ msgstr "Truugl"
 
 #. [objective]: condition=win
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/07_Elves_Last_Stand.cfg:294
-#| msgid ""
-#| "You must own the field and be capable of overwhelming your opponents. "
-#| "(Player(s) own more than 25 units while the foes’ numbers fell below 15)"
 msgid ""
 "You must own the field and be capable of overwhelming your opponents. "
 "(Player(s) own more than 25 units while the foes’ numbers fall below 15.)"
@@ -1770,9 +1742,6 @@ msgstr ""
 
 #. [message]: id=Galtrid
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/07_Elves_Last_Stand.cfg:379
-#| msgid ""
-#| "She is right. Don’t let them lure you away from the Ka’lian, preparations "
-#| "for when more of them arrive return must be made."
 msgid ""
 "She is right. Don’t let them lure you away from the Ka’lian, preparations "
 "for when more of them arrive must be made."
@@ -1934,7 +1903,6 @@ msgstr "És elhoztuk a tünde kincstár maradékát is!"
 
 #. [message]: id=Landar
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter2/07_Elves_Last_Stand.cfg:562
-#| msgid "Perhaps the gold will our word weight with the council."
 msgid "Perhaps the gold will give our words more weight with the council."
 msgstr "Talán az arany megnyomja a szavaink súlyát."
 
@@ -1946,7 +1914,7 @@ msgid ""
 "the next scenario with a preset amount."
 msgstr ""
 " visszatette a visszaszerzett aranyat a tünde kincstárba. A következő pályát "
-"egy előre meghatározott kezdő arannyal kezded."
+"az előre meghatározott kezdő arannyal kezded."
 
 #. [part]
 #. [message]: speaker=narrator
@@ -2308,17 +2276,11 @@ msgstr "Szerencsevadászok"
 
 #. [scenario]: id=09_Bounty_Hunters
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter3/09_Bounty_Hunters.cfg:9
-#| msgid ""
-#| "Chapter Three,\n"
-#| "<i>The Book of Crelanu</i>"
 msgid "Chapter Three: The Book of Crelanu"
 msgstr "Harmadik fejezet: Crelanu könyve"
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter3/09_Bounty_Hunters.cfg:28
-#| msgid ""
-#| "<i>The Legend of Wesmere</i>,\n"
-#| "Chapter Three"
 msgid ""
 "<i>The Legend of Wesmere</i>\n"
 "Chapter Three"
@@ -2328,9 +2290,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter3/09_Bounty_Hunters.cfg:35
-#| msgid ""
-#| "Chapter Three,\n"
-#| "<i>The Book of Crelanu</i>"
 msgid ""
 "Chapter Three\n"
 "<i>The Book of Crelanu</i>"
@@ -2443,10 +2402,6 @@ msgstr ""
 
 #. [message]: id=Cleodil
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter3/09_Bounty_Hunters.cfg:360
-#| msgid ""
-#| "Indeed, this river is, I believe, Arkan-Thoria. There are fell legends "
-#| "about it. May be they are but children’s tales... Still, be very careful "
-#| "when you cross it."
 msgid ""
 "Indeed, this river is, I believe, Arkan-Thoria. There are fell legends about "
 "it. Maybe they are but children’s tales... Still, be very careful when you "
@@ -3280,9 +3235,6 @@ msgstr "Hírek a frontról"
 
 #. [scenario]: id=13_News_from_the_Front
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter4/13_News_from_the_Front.cfg:13
-#| msgid ""
-#| "Chapter Four,\n"
-#| "<i>The Alliance</i>"
 msgid "Chapter Four: The Alliance"
 msgstr "Negyedik fejezet: A szövetség"
 
@@ -3330,14 +3282,11 @@ msgstr "Eonihar"
 
 #. [message]: id=Eonihar
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter4/13_News_from_the_Front.cfg:163
-#| msgid ""
-#| "At last I have found, you alive and well! We need you back at once! The "
-#| "orcs have attacked the humans."
 msgid ""
 "At last I have found you, alive and well! We need you back at once! The orcs "
 "have attacked the humans."
 msgstr ""
-"Végre épségben és egészben találtalak meg titeket! Azonnal vissza kell "
+"Végre megtaláltalak titeket, épségben és egészben! Azonnal vissza kell "
 "térjetek! Az orkok megtámadták az embereket."
 
 #. [message]: id=Kalenz
@@ -3407,9 +3356,6 @@ msgstr "Emberi szövetség"
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter4/14_Human_Alliance.cfg:42
-#| msgid ""
-#| "<i>The Legend of Wesmere</i>,\n"
-#| "Chapter Four"
 msgid ""
 "<i>The Legend of Wesmere</i>\n"
 "Chapter Four"
@@ -3419,9 +3365,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter4/14_Human_Alliance.cfg:47
-#| msgid ""
-#| "Chapter Four,\n"
-#| "<i>The Alliance</i>"
 msgid ""
 "Chapter Four\n"
 "<i>The Alliance</i>"
@@ -3717,13 +3660,6 @@ msgstr "Csendet! Hogy merészelsz így beszélni a királyról?!"
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter4/15_The_Treaty.cfg:42
-#| msgid ""
-#| "Calm down, Aldar! The elf is right to reproach us. My father did not help "
-#| "when the orcs attacked you. But my father is dead. There are a lot of "
-#| "things my father did that I can not understand; he grew suspicious and "
-#| "strange in his last days. But <i>I</i> am the King of Wesnoth now, not my "
-#| "father! And it is my intention to renew our alliance by signing a new "
-#| "treaty here, with you."
 msgid ""
 "Calm down, Aldar! The elf is right to reproach us. My father did not help "
 "when the orcs attacked you. But my father is dead. There are a lot of things "
@@ -4061,12 +3997,6 @@ msgstr "láthatatlan"
 #. [hides]: id=invisible
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter4/16_The_Chief_Must_Die.cfg:598
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter4/16_The_Chief_Must_Die.cfg:599
-#| msgid ""
-#| "invisible:\n"
-#| "Enemy units cannot see this unit, except for wolf-based units who can "
-#| "smell it if close enough. Hence except for wolf-based units, enemy units "
-#| "will not initiate an attack on this unit. Defense is at 80 percent for "
-#| "every terrain except water, where it is 70 percent."
 msgid ""
 "Enemy units cannot see this unit, except for wolf-based units who can smell "
 "it if close enough. Hence except for wolf-based units, enemy units will not "
@@ -4390,17 +4320,11 @@ msgstr "A bosszúnak ára van"
 
 #. [scenario]: id=19_Costly_Revenge
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/19_Costly_Revenge.cfg:11
-#| msgid ""
-#| "Chapter Five,\n"
-#| "<i>Civil War</i>"
 msgid "Chapter Five: Civil War"
 msgstr "Ötödik fejezet: Polgárháború"
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/19_Costly_Revenge.cfg:35
-#| msgid ""
-#| "<i>The Legend of Wesmere</i>,\n"
-#| "Chapter Five"
 msgid ""
 "<i>The Legend of Wesmere</i>\n"
 "Chapter Five"
@@ -4410,9 +4334,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/19_Costly_Revenge.cfg:40
-#| msgid ""
-#| "Chapter Five,\n"
-#| "<i>Civil War</i>"
 msgid ""
 "Chapter Five\n"
 "<i>Civil War</i>"
@@ -4488,9 +4409,6 @@ msgstr "Megölöd az összes ellenséges egységet, és lerombolod az összes fa
 
 #. [message]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/19_Costly_Revenge.cfg:243
-#| msgid ""
-#| "We have finally reached Saurgrath, their capitol. Remember whose side "
-#| "they have taken in the war against us."
 msgid ""
 "We have finally reached Saurgrath, their capital. Remember whose side they "
 "have taken in the war against us."
@@ -4583,7 +4501,6 @@ msgstr "Ez a bosszú irtózatos! Féltem a fajtánkat."
 
 #. [message]
 #: data/campaigns/Legend_of_Wesmere/scenarios/chapter5/19_Costly_Revenge.cfg:388
-#| msgid "Don’t flee. We cannot abandon our capitol."
 msgid "Don’t flee. We cannot abandon our capital."
 msgstr "Ne meneküljetek! Nem hagyhatjuk a fővárosunkat!"
 
@@ -5193,11 +5110,6 @@ msgstr "felajzza Kalenzet"
 
 #. [leadership]: id=elates_kalenz
 #: data/campaigns/Legend_of_Wesmere/utils/abilities.cfg:13
-#| msgid ""
-#| "elates Kalenz:\n"
-#| "Through the special bond between Kalenz and Cleodil, she elates him to "
-#| "fight better.\n"
-#| "Adjacent to Cleodil, Kalenz will do 25% more damage in battle."
 msgid ""
 "Through the special bond between Kalenz and Cleodil, she elates him to fight "
 "better.\n"
@@ -5217,14 +5129,8 @@ msgstr "gyógyítja Kalenzet +4"
 msgid "female^heals Kalenz +4"
 msgstr "gyógyítja Kalenzet +4"
 
-# megnő a gyógyítási képessége is irányában → megnő a gyógyítási képessége is annak irányában
 #. [heals]: id=heals_kalenz
 #: data/campaigns/Legend_of_Wesmere/utils/abilities.cfg:34
-#| msgid ""
-#| "heals +4:\n"
-#| "If a shyde has developed a special bond to a person her healing abilities "
-#| "increase for him.  This allows Cleodil to give Kalenz extra points of "
-#| "healing at the beginning of your turn."
 msgid ""
 "If a shyde has developed a special bond to a person her healing abilities "
 "increase for him. This allows Cleodil to give Kalenz extra points of healing "
@@ -5232,8 +5138,7 @@ msgid ""
 msgstr ""
 "Ha egy erdőtündér különleges kapcsolatba kerül egy másik személlyel, megnő a "
 "gyógyítási képessége is annak irányában. Cleodil ezért Kalenzet plusz"
-" pontokkal "
-"gyógyítja köröd kezdetén."
+" pontokkal gyógyítja köröd kezdetén."
 
 #: data/campaigns/Legend_of_Wesmere/utils/characters.cfg:53
 msgid "Huraldur"

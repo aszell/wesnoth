@@ -3,14 +3,14 @@
 #
 # Gabor Udvari <gabor.udvari@gmail.com>, 2009.
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2007-2009, 2011, 2015.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-editor_1.5\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 04:51-0400\n"
 "PO-Revision-Date: 2018-08-08 15:08+0100\n"
-"Last-Translator: Tamás Krutki <krtamas-wesnoth@0x64.org>\n"
+"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -34,13 +34,11 @@ msgstr "1 mező sugarú terület"
 msgid "Radius 2 Hex"
 msgstr "2 mező sugarú terület"
 
-# ÉNy-DK (irányú) vonal
 #. [brush]: id=brush-nw-se
 #: data/core/editor/brushes.cfg:47
 msgid "Hex Line NW-SE"
 msgstr "ÉNy-DK vonal"
 
-# DNy-ÉK (irányú) vonal
 #. [brush]: id=brush-sw-ne
 #: data/core/editor/brushes.cfg:63
 msgid "Hex Line SW-NE"
@@ -284,11 +282,7 @@ msgstr "Végzetes hiba"
 msgid "Do you really want to quit?"
 msgstr "Valóban ki akarsz lépni?"
 
-# esetleg "a térkép utolsó változtatásai elfognak veszni" lehetne de ígyis jó
 #: src/editor/controller/editor_controller.cpp:210
-#| msgid ""
-#| "Do you really want to quit? Changes in the map since the last save will "
-#| "be lost."
 msgid ""
 "Do you really want to quit? Changes to this map since the last save will be "
 "lost."
@@ -329,12 +323,10 @@ msgid "Load Map"
 msgstr "Térkép betöltése"
 
 #: src/editor/map/context_manager.cpp:273 src/editor/map/map_context.cpp:838
-#| msgid "(New Map)"
 msgid "New Map"
 msgstr "Új térkép"
 
 #: src/editor/map/context_manager.cpp:286 src/editor/map/map_context.cpp:838
-#| msgid "(New Scenario)"
 msgid "New Scenario"
 msgstr "Új küldetés"
 
@@ -343,12 +335,10 @@ msgid "No Recent Files"
 msgstr "Nincsenek nemrég használt fájlok"
 
 #: src/editor/map/context_manager.cpp:380
-#| msgid "(Unnamed Area)"
 msgid "Unnamed Area"
 msgstr "Névtelen terület"
 
 #: src/editor/map/context_manager.cpp:411
-#| msgid "(New Map)"
 msgid "New Side"
 msgstr "Új oldal"
 
@@ -378,12 +368,10 @@ msgid "Error loading map"
 msgstr "Hiba a térkép betöltése közben"
 
 #: src/editor/map/context_manager.cpp:645
-#| msgid "Save the Map As"
 msgid "Save Map As"
 msgstr "Térkép mentése másként"
 
 #: src/editor/map/context_manager.cpp:666
-#| msgid "Save the Scenario As"
 msgid "Save Scenario As"
 msgstr "Küldetés mentése másként"
 
@@ -407,7 +395,6 @@ msgstr ""
 "végeztél?"
 
 #: src/editor/map/context_manager.cpp:789
-#| msgid "This map is already open."
 msgid "This scenario is already open."
 msgstr "A küldetés már nyitva van."
 
@@ -443,7 +430,6 @@ msgstr ""
 
 #: src/editor/map/editor_map.cpp:148
 #: src/editor/palette/location_palette.cpp:119
-#| msgid "Player $player_number"
 msgid "Player $side_num"
 msgstr "$side_num. oldal"
 

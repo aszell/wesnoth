@@ -1,13 +1,13 @@
 # translation of hu-sof_1.5befejezni.po to Hungarian
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2007, 2008, 2009, 2012.
-# Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-sof_1.5befejezni\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-07-08 08:51 UTC\n"
 "PO-Revision-Date: 2018-07-29 15:39+0100\n"
-"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"Last-Translator: Krutki Tamás <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -33,13 +33,11 @@ msgstr "Harcos"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:20
-#| msgid "(Normal)"
 msgid "Normal"
 msgstr "átlagos"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:21
-#| msgid "(Challenging)"
 msgid "Challenging"
 msgstr "kihívást jelentő"
 
@@ -50,7 +48,6 @@ msgstr "Vértes"
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:22
-#| msgid "(Difficult)"
 msgid "Difficult"
 msgstr "nehéz"
 
@@ -403,12 +400,8 @@ msgstr ""
 "barátságosabban bánik a jövendőbeli pártfogójával. Nem ti vagytok az "
 "egyetlen kovácsok Északföldén!"
 
-# Jaj, ne várj csak! → Jaj(j), várj csak!
 #. [message]: speaker=Rugnur
 #: data/campaigns/Sceptre_of_Fire/scenarios/1_A_Bargain_is_Struck.cfg:277
-#| msgid ""
-#| "Uh, no, wait! Lets talk business — how much will you pay us to do this "
-#| "for you?"
 msgid ""
 "Uh, no, wait! Let’s talk business — how much will you pay us to do this for "
 "you?"
@@ -1430,7 +1423,7 @@ msgstr "Kawn"
 #. "I see a house in the distance!"
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:427
 msgid "Iii zeee hoose iiin eee d’zztaaan’eee!"
-msgstr "Ekkrr hkrházzatt rrklátokrr akrk krrrtávolbakrkr!"
+msgstr "Ekkrr hrházzatt rrklátokrr akrk krrrtávolbakrkr!"
 
 #. [message]: speaker=unit
 #: data/campaigns/Sceptre_of_Fire/scenarios/3_Searching_for_the_Runecrafter.cfg:433
@@ -2756,11 +2749,6 @@ msgstr ""
 
 #. [message]: speaker=Thursagan
 #: data/campaigns/Sceptre_of_Fire/scenarios/6_Towards_the_Caves.cfg:271
-#| msgid ""
-#| "You don’t have authority over me, Durstorn. And I wouldn’t give the "
-#| "Sceptre to them even if you did. It’s not yours to give, its mine, and "
-#| "Rugnur’s, and Baglur’s. Krawg’s done more for its existence than you "
-#| "have! And yet, you still get the profits from selling it to Haldric."
 msgid ""
 "You don’t have authority over me, Durstorn. And I wouldn’t give the Sceptre "
 "to them even if you did. It’s not yours to give, it’s mine, and Rugnur’s, "
@@ -2906,7 +2894,6 @@ msgid "... and then ride south until you reach one of your outposts."
 msgstr ""
 "... aztán addig nyargalnál dél felé, míg el nem érnéd az egyik őrhelyeteket."
 
-#  szívesebben harcolnék inkább veletek. → szívesebben harcolnék inkább veletek!
 #. [message]: speaker=Alanin
 #: data/campaigns/Sceptre_of_Fire/scenarios/6_Towards_the_Caves.cfg:426
 msgid ""
