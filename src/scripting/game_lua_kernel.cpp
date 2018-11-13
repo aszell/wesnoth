@@ -437,7 +437,7 @@ static int impl_add_animation(lua_State* L)
 	return 0;
 }
 
-static int impl_run_animation(lua_State* L)
+int game_lua_kernel::impl_run_animation(lua_State* L)
 {
 	CVideo& v = CVideo::get_singleton();
 	if(v.update_locked() || v.faked()) {
@@ -445,6 +445,7 @@ static int impl_run_animation(lua_State* L)
 	}
 	events::command_disabler command_disabler;
 	unit_animator& anim = *static_cast<unit_animator*>(luaL_checkudata(L, 1, animatorKey));
+	play_controller_.play_slice(false);
 	anim.start_animations();
 	anim.wait_for_end();
 	anim.set_all_standing();
@@ -464,7 +465,7 @@ static int impl_animator_get(lua_State* L)
 	return luaW_getmetafield(L, 1, m);
 }
 
-static int intf_create_animator(lua_State* L)
+int game_lua_kernel::intf_create_animator(lua_State* L)
 {
 	new(L) unit_animator;
 	if(luaL_newmetatable(L, animatorKey)) {
@@ -472,7 +473,7 @@ static int intf_create_animator(lua_State* L)
 			{"__gc", impl_animator_collect},
 			{"__index", impl_animator_get},
 			{"add", impl_add_animation},
-			{"run", impl_run_animation},
+			{"run", &dispatch<&game_lua_kernel::impl_run_animation>},
 			{"clear", impl_clear_animation},
 			{nullptr, nullptr},
 		};
@@ -1522,7 +1523,7 @@ int game_lua_kernel::impl_end_level_data_set(lua_State* L)
 static int impl_end_level_data_collect(lua_State* L)
 {
 	end_level_data* data = static_cast<end_level_data*>(lua_touserdata(L, 1));
-	(void)data; // Suppress an erroneous MSVC warning (a destructor call doesn't count as a reference)
+	UNUSED(data); // Suppress an erroneous MSVC warning (a destructor call doesn't count as a reference)
 	data->~end_level_data();
 	return 0;
 }
@@ -1659,7 +1660,7 @@ int game_lua_kernel::intf_find_path(lua_State *L)
 		lua_rawget(L, arg);
 		if (!lua_isnil(L, -1)) {
 			int i = luaL_checkinteger(L, -1);
-			if (i >= 1 && i <= int(teams().size())) viewing_side = i;
+			if (i >= 1 && i <= static_cast<int>(teams().size())) viewing_side = i;
 			else see_all = true;
 		}
 		lua_pop(L, 1);
@@ -1756,7 +1757,7 @@ int game_lua_kernel::intf_find_reach(lua_State *L)
 		lua_rawget(L, arg);
 		if (!lua_isnil(L, -1)) {
 			int i = luaL_checkinteger(L, -1);
-			if (i >= 1 && i <= int(teams().size())) viewing_side = i;
+			if (i >= 1 && i <= static_cast<int>(teams().size())) viewing_side = i;
 			else see_all = true;
 		}
 		lua_pop(L, 1);
@@ -1910,7 +1911,7 @@ int game_lua_kernel::intf_find_cost_map(lua_State *L)
 		if (!lua_isnil(L, -1))
 		{
 			int i = luaL_checkinteger(L, -1);
-			if (i >= 1 && i <= int(teams().size()))
+			if (i >= 1 && i <= static_cast<int>(teams().size()))
 			{
 				viewing_side = i;
 				see_all = false;
@@ -2180,7 +2181,7 @@ int game_lua_kernel::intf_put_recall_unit(lua_State *L)
 	lua_unit *lu = nullptr;
 	unit_ptr u = unit_ptr();
 	int side = lua_tointeger(L, 2);
-	if (unsigned(side) > teams().size()) side = 0;
+	if (static_cast<unsigned>(side) > teams().size()) side = 0;
 
 	if(luaW_isunit(L, 1)) {
 		lu = luaW_checkunit_ref(L, 1);
@@ -2533,7 +2534,7 @@ int game_lua_kernel::intf_simulate_combat(lua_State *L)
 	++arg_num;
 	if (lua_isnumber(L, arg_num)) {
 		att_w = lua_tointeger(L, arg_num) - 1;
-		if (att_w < 0 || att_w >= int(att.attacks().size()))
+		if (att_w < 0 || att_w >= static_cast<int>(att.attacks().size()))
 			return luaL_argerror(L, arg_num, "weapon index out of bounds");
 		++arg_num;
 	}
@@ -2542,7 +2543,7 @@ int game_lua_kernel::intf_simulate_combat(lua_State *L)
 	++arg_num;
 	if (lua_isnumber(L, arg_num)) {
 		def_w = lua_tointeger(L, arg_num) - 1;
-		if (def_w < 0 || def_w >= int(def.attacks().size()))
+		if (def_w < 0 || def_w >= static_cast<int>(def.attacks().size()))
 			return luaL_argerror(L, arg_num, "weapon index out of bounds");
 		++arg_num;
 	}
@@ -2693,7 +2694,7 @@ int game_lua_kernel::intf_deselect_hex(lua_State*)
  */
 int game_lua_kernel::intf_is_skipping_messages(lua_State *L)
 {
-	bool skipping = play_controller_.is_skipping_replay();
+	bool skipping = play_controller_.is_skipping_replay() || play_controller_.is_skipping_story();
 	if (!skipping) {
 		skipping = game_state_.events_manager_->pump().context_skip_messages();
 	}
@@ -3330,7 +3331,7 @@ int game_lua_kernel::intf_delay(lua_State *L)
 	do {
 		play_controller_.play_slice(false);
 		CVideo::delay(10);
-	} while (int(final - SDL_GetTicks()) > 0);
+	} while (static_cast<int>(final - SDL_GetTicks()) > 0);
 	return 0;
 }
 
@@ -4039,7 +4040,7 @@ game_lua_kernel::game_lua_kernel(game_state & gs, play_controller & pc, reports 
 		{ "add_modification",         &intf_add_modification         },
 		{ "advance_unit",             &intf_advance_unit             },
 		{ "copy_unit",                &intf_copy_unit                },
-		{ "create_animator",          &intf_create_animator          },
+		{ "create_animator",          &dispatch<&game_lua_kernel::intf_create_animator>          },
 		{ "create_unit",              &intf_create_unit              },
 		{ "debug_ai",                 &intf_debug_ai                 },
 		{ "eval_conditional",         &intf_eval_conditional         },

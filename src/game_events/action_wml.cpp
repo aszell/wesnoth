@@ -469,7 +469,7 @@ WML_HANDLER_FUNCTION(recall,, cfg)
 	vconfig unit_filter_cfg(temp_config);
 	const vconfig & leader_filter = cfg.child("secondary_unit");
 
-	for(int index = 0; index < int(resources::gameboard->teams().size()); ++index) {
+	for(int index = 0; index < static_cast<int>(resources::gameboard->teams().size()); ++index) {
 		LOG_NG << "for side " << index + 1 << "...\n";
 		const std::string player_id = resources::gameboard->teams()[index].save_id_or_number();
 
@@ -711,7 +711,7 @@ WML_HANDLER_FUNCTION(set_variables,, cfg)
 
 				for(std::vector<std::string>::iterator i=split_vector.begin(); i!=split_vector.end(); ++i)
 				{
-					data.emplace_back(config {key_name, *i});
+					data.emplace_back(key_name, *i);
 				}
 			}
 		}

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: en_GB\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 11:38+0300\n"
-"PO-Revision-Date: 2018-07-23 17:50+1000\n"
+"POT-Creation-Date: 2018-09-16 10:03+0300\n"
+"PO-Revision-Date: 2018-09-12 16:34+1000\n"
 "Last-Translator: Wedge009 <wedge009@wedge009.net>\n"
 "Language-Team: English (British) <http://wiki.wesnoth.org/"
 "EnglishGBTranslation>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.9\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. [terrain_type]: id=farmer-fence  # AI-animal-proof fences from first scenario
 #. [terrain_type]: id=fence
@@ -2587,7 +2587,7 @@ msgstr "Edit Time Schedule"
 #: data/gui/window/game_save_message.cfg:92
 #: data/gui/window/game_save_oos.cfg:90
 #: data/gui/window/screenshot_notification.cfg:120
-#: src/gui/dialogs/unit_recall.cpp:259
+#: src/gui/dialogs/unit_recall.cpp:264
 msgid "Name:"
 msgstr "Name:"
 
@@ -5234,7 +5234,7 @@ msgstr "XP"
 #. [toggle_button]: id=sort_4
 #: data/gui/window/unit_list.cfg:177 data/gui/window/unit_recall.cfg:89
 #: src/gui/widgets/unit_preview_pane.cpp:351
-#: src/gui/widgets/unit_preview_pane.cpp:494
+#: src/gui/widgets/unit_preview_pane.cpp:500
 msgid "Traits"
 msgstr "Traits"
 
@@ -5251,10 +5251,8 @@ msgstr "Recall Unit"
 
 #. [button]: id=rename
 #: data/gui/window/unit_recall.cfg:393
-#, fuzzy
-#| msgid "Rename Unit"
 msgid "Rename"
-msgstr "Rename Unit"
+msgstr "Rename"
 
 #. [button]: id=dismiss
 #: data/gui/window/unit_recall.cfg:405
@@ -5358,10 +5356,8 @@ msgid "The maximum text width is less than 1."
 msgstr "The maximum text width is less than 1."
 
 #: src/font/text.cpp:761
-#, fuzzy
-#| msgid "The text contains invalid markup: "
 msgid "The text contains invalid Pango markup: "
-msgstr "The text contains invalid markup: "
+msgstr "The text contains invalid Pango mark-up: "
 
 #. TRANSLATORS: Formats a two-element conjunctive list.
 #: src/formula/string_utils.cpp:251
@@ -5450,7 +5446,7 @@ msgstr "Linked '$id' group has multiple definitions."
 #: src/gui/widgets/scroll_label.cpp:220 src/gui/widgets/scrollbar_panel.cpp:98
 #: src/gui/widgets/size_lock.cpp:125 src/gui/widgets/stacked_widget.cpp:241
 #: src/gui/widgets/toggle_panel.cpp:402 src/gui/widgets/tree_view.cpp:313
-#: src/gui/widgets/unit_preview_pane.cpp:580
+#: src/gui/widgets/unit_preview_pane.cpp:586
 msgid "No grid defined."
 msgstr "No grid defined."
 
@@ -5555,16 +5551,12 @@ msgid "addons_order^Type ($order)"
 msgstr "Type ($order)"
 
 #: src/gui/dialogs/addon/manager.cpp:229
-#, fuzzy
-#| msgid "addons_order^Last updated ($order)"
 msgid "addons_order^Last updated ($datelike_order)"
-msgstr "Last updated ($order)"
+msgstr "Last updated ($datelike_order)"
 
 #: src/gui/dialogs/addon/manager.cpp:232
-#, fuzzy
-#| msgid "addons_order^First uploaded ($order)"
 msgid "addons_order^First uploaded ($datelike_order)"
-msgstr "First uploaded ($order)"
+msgstr "First uploaded ($datelike_order)"
 
 #: src/gui/dialogs/addon/manager.cpp:261 src/gui/widgets/addon_list.cpp:103
 msgid "addon_state^Not installed"
@@ -5627,26 +5619,22 @@ msgid "addon_state^Unknown"
 msgstr "Unknown"
 
 #: src/gui/dialogs/addon/manager.cpp:363
-#, fuzzy
-#| msgid "sort^Ascending"
 msgid "ascending"
-msgstr "Ascending"
+msgstr "ascending"
 
 #. TRANSLATORS: Sorting order of dates, oldest first
 #: src/gui/dialogs/addon/manager.cpp:365
 msgid "oldest to newest"
-msgstr ""
+msgstr "oldest to newest"
 
 #: src/gui/dialogs/addon/manager.cpp:368
-#, fuzzy
-#| msgid "sort^Descending"
 msgid "descending"
-msgstr "Descending"
+msgstr "descending"
 
 #. TRANSLATORS: Sorting order of dates, newest first
 #: src/gui/dialogs/addon/manager.cpp:370
 msgid "newest to oldest"
-msgstr ""
+msgstr "newest to oldest"
 
 #: src/gui/dialogs/addon/manager.cpp:388 src/gui/dialogs/chat_log.cpp:420
 #: src/gui/dialogs/game_cache_options.cpp:105
@@ -5917,10 +5905,8 @@ msgid "Version: "
 msgstr "Version: "
 
 #: src/gui/dialogs/game_load.cpp:389
-#, fuzzy
-#| msgid "Modifications:"
 msgid "Modifications: "
-msgstr "Modifications:"
+msgstr "Modifications: "
 
 #: src/gui/dialogs/game_stats.cpp:78
 msgid "controller^AI"
@@ -6055,13 +6041,11 @@ msgstr "Downloading lobby data"
 
 #: src/gui/dialogs/lua_interpreter.cpp:690
 msgid "The lua console can only be used in debug mode! (Run ':debug' first)"
-msgstr ""
+msgstr "The lua console can only be used in debug mode! (Run ':debug' first)"
 
 #: src/gui/dialogs/lua_interpreter.cpp:691
-#, fuzzy
-#| msgid "Lua Console"
 msgid "lua console"
-msgstr "Lua Console"
+msgstr "lua console"
 
 #: src/gui/dialogs/multiplayer/lobby.cpp:106
 msgid "Selected Game"
@@ -6164,10 +6148,8 @@ msgid "Observers not allowed"
 msgstr "Observers not allowed"
 
 #: src/gui/dialogs/multiplayer/lobby.cpp:797
-#, fuzzy
-#| msgid "Lobby"
 msgid "lobby"
-msgstr "Lobby"
+msgstr "lobby"
 
 #: src/gui/dialogs/multiplayer/lobby.cpp:957
 msgid ""
@@ -6280,10 +6262,8 @@ msgstr "empty"
 
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:253
 #: src/gui/dialogs/multiplayer/mp_staging.cpp:109
-#, fuzzy
-#| msgid "Quit game"
 msgid "this game"
-msgstr "Quit game"
+msgstr "this game"
 
 #: src/gui/dialogs/multiplayer/mp_join_game.cpp:365
 #: src/gui/dialogs/multiplayer/mp_staging.cpp:168
@@ -6397,33 +6377,33 @@ msgstr "$count|× $name"
 msgid "Choose Test"
 msgstr "Choose Test"
 
-#: src/gui/dialogs/unit_recall.cpp:258 src/hotkey/hotkey_command.cpp:96
+#: src/gui/dialogs/unit_recall.cpp:263 src/hotkey/hotkey_command.cpp:96
 msgid "Rename Unit"
 msgstr "Rename Unit"
 
-#: src/gui/dialogs/unit_recall.cpp:291
+#: src/gui/dialogs/unit_recall.cpp:296
 msgid "This unit is loyal and requires no upkeep."
 msgstr "This unit is loyal and requires no upkeep."
 
-#: src/gui/dialogs/unit_recall.cpp:292 src/gui/dialogs/unit_recall.cpp:297
-#: src/gui/dialogs/unit_recall.cpp:302
+#: src/gui/dialogs/unit_recall.cpp:297 src/gui/dialogs/unit_recall.cpp:302
+#: src/gui/dialogs/unit_recall.cpp:307
 msgid "Do you really want to dismiss him?"
 msgstr "Do you really want to dismiss him?"
 
-#: src/gui/dialogs/unit_recall.cpp:293 src/gui/dialogs/unit_recall.cpp:298
-#: src/gui/dialogs/unit_recall.cpp:303
+#: src/gui/dialogs/unit_recall.cpp:298 src/gui/dialogs/unit_recall.cpp:303
+#: src/gui/dialogs/unit_recall.cpp:308
 msgid "Do you really want to dismiss her?"
 msgstr "Do you really want to dismiss her?"
 
-#: src/gui/dialogs/unit_recall.cpp:296
+#: src/gui/dialogs/unit_recall.cpp:301
 msgid "This unit is an experienced one, having advanced levels."
 msgstr "This unit is an experienced one, having advanced levels."
 
-#: src/gui/dialogs/unit_recall.cpp:301
+#: src/gui/dialogs/unit_recall.cpp:306
 msgid "This unit is close to advancing a level."
 msgstr "This unit is close to advancing a level."
 
-#: src/gui/dialogs/unit_recall.cpp:307
+#: src/gui/dialogs/unit_recall.cpp:312
 msgid "Dismiss Unit"
 msgstr "Dismiss Unit"
 
@@ -6592,29 +6572,29 @@ msgstr "Lvl $lvl"
 #: src/gui/widgets/unit_preview_pane.cpp:308
 #: src/gui/widgets/unit_preview_pane.cpp:321
 #: src/gui/widgets/unit_preview_pane.cpp:461
-#: src/gui/widgets/unit_preview_pane.cpp:474
+#: src/gui/widgets/unit_preview_pane.cpp:480
 msgid "HP: "
 msgstr "HP: "
 
 #: src/gui/widgets/unit_preview_pane.cpp:310
 #: src/gui/widgets/unit_preview_pane.cpp:326
-#: src/gui/widgets/unit_preview_pane.cpp:464
-#: src/gui/widgets/unit_preview_pane.cpp:479
+#: src/gui/widgets/unit_preview_pane.cpp:463
+#: src/gui/widgets/unit_preview_pane.cpp:485
 msgid "XP: "
 msgstr "XP: "
 
 #: src/gui/widgets/unit_preview_pane.cpp:328
-#: src/gui/widgets/unit_preview_pane.cpp:481
+#: src/gui/widgets/unit_preview_pane.cpp:487
 msgid "Experience Modifier: "
 msgstr "Experience Modifier: "
 
 #: src/gui/widgets/unit_preview_pane.cpp:331
-#: src/gui/widgets/unit_preview_pane.cpp:484
+#: src/gui/widgets/unit_preview_pane.cpp:490
 msgid "MP: "
 msgstr "MP: "
 
 #: src/gui/widgets/unit_preview_pane.cpp:369
-#: src/gui/widgets/unit_preview_pane.cpp:512
+#: src/gui/widgets/unit_preview_pane.cpp:518
 msgid "Abilities"
 msgstr "Abilities"
 

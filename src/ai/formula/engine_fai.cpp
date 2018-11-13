@@ -87,7 +87,7 @@ void engine_fai::do_parse_candidate_action_from_config( rca_context &context, co
 		DBG_AI_ENGINE_FAI << "config snippet contains: " << std::endl << cfg << std::endl;
 		return;
 	}
-	candidate_action_ptr ca = candidate_action_ptr(new fai_candidate_action_wrapper(context,cfg,fai_ca,*formula_ai_));
+	auto ca = std::make_shared<fai_candidate_action_wrapper>(context, cfg, fai_ca, *formula_ai_);
 	*b = ca;
 
 }
@@ -105,9 +105,9 @@ void engine_fai::do_parse_stage_from_config( ai_context &context, const config &
 	//	st_ptr = stage_ptr(new stage_rca_formulas(context,cfg,formula_ai_));
 
 	if (name=="side_formulas") {
-		st_ptr = stage_ptr(new stage_side_formulas(context,cfg,*formula_ai_));
+		st_ptr = std::make_shared<stage_side_formulas>(context, cfg, *formula_ai_);
 	} else if (name=="unit_formulas") {
-		st_ptr = stage_ptr(new stage_unit_formulas(context,cfg,*formula_ai_));
+		st_ptr = std::make_shared<stage_unit_formulas>(context, cfg, *formula_ai_);
 	} else {
 		ERR_AI_ENGINE_FAI << "unknown type of formula_ai stage: ["<< name <<"]"<<std::endl;
 	}

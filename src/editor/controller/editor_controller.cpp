@@ -61,13 +61,13 @@ static std::vector<std::string> saved_windows_;
 
 namespace editor {
 
-editor_controller::editor_controller(const config &game_config)
-	: controller_base(game_config)
+editor_controller::editor_controller()
+	: controller_base()
 	, mouse_handler_base()
 	, quit_confirmation(std::bind(&editor_controller::quit_confirm, this))
 	, active_menu_(editor::MAP)
 	, reports_(new reports())
-	, gui_(new editor_display(*this, *reports_, controller_base::get_theme(game_config, "editor")))
+	, gui_(new editor_display(*this, *reports_, controller_base::get_theme(game_config_, "editor")))
 	, tods_()
 	, context_manager_(new context_manager(*gui_.get(), game_config_))
 	, toolkit_(nullptr)
@@ -80,11 +80,11 @@ editor_controller::editor_controller(const config &game_config)
 {
 	init_gui();
 	toolkit_.reset(new editor_toolkit(*gui_.get(), key_, game_config_, *context_manager_.get()));
-	help_manager_.reset(new help::help_manager(&game_config));
+	help_manager_.reset(new help::help_manager(&game_config_));
 	context_manager_->locs_ = toolkit_->get_palette_manager()->location_palette_.get();
 	context_manager_->switch_context(0, true);
-	init_tods(game_config);
-	init_music(game_config);
+	init_tods(game_config_);
+	init_music(game_config_);
 	get_current_map_context().set_starting_position_labels(gui());
 	cursor::set(cursor::NORMAL);
 
@@ -651,7 +651,7 @@ bool editor_controller::do_execute_command(const hotkey::hotkey_command& cmd, in
 					sound::play_music_once(music_tracks_[index].id());
 					get_current_map_context().add_to_playlist(music_tracks_[index]);
 					std::vector<config> items;
-					items.emplace_back(config {"id", "editor-playlist"});
+					items.emplace_back("id", "editor-playlist");
 					std::shared_ptr<gui::button> b = gui_->find_menu_button("menu-playlist");
 					show_menu(items, b->location().x +1, b->location().y + b->height() +1, false, *gui_);
 					return true;
@@ -1020,7 +1020,7 @@ void editor_controller::show_menu(const std::vector<config>& items_arg, int xloc
 		if((can_execute_command(command) && (!context_menu || in_context_menu(command.id)))
 			|| command.id == hotkey::HOTKEY_NULL)
 		{
-			items.emplace_back(config {"id", id});
+			items.emplace_back("id", id);
 		}
 	}
 
@@ -1071,7 +1071,7 @@ void editor_controller::show_menu(const std::vector<config>& items_arg, int xloc
 		active_menu_ = editor::UNIT_FACING;
 		auto pos = items.erase(items.begin());
 		int dir = 0;
-		std::generate_n(std::inserter<std::vector<config>>(items, pos), int(map_location::NDIRECTIONS), [&dir]() -> config {
+		std::generate_n(std::inserter<std::vector<config>>(items, pos), static_cast<int>(map_location::NDIRECTIONS), [&dir]() -> config {
 			return config {"label", map_location::write_translated_direction(map_location::DIRECTION(dir++))};
 		});
 	}

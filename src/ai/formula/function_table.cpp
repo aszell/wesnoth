@@ -625,7 +625,7 @@ DEFINE_WFL_FUNCTION(calculate_outcome, 3, 4)
 	while (it != hp_dist.end()) {
 		if (*it != 0) {
 			hitLeft.emplace_back(i);
-			prob.emplace_back(int(*it*10000));
+			prob.emplace_back(static_cast<int>(*it*10000));
 		}
 		++it;
 		++i;
@@ -649,7 +649,7 @@ DEFINE_WFL_FUNCTION(calculate_outcome, 3, 4)
 	while (it != hp_dist.end()) {
 		if (*it != 0) {
 			hitLeft.emplace_back(i);
-			prob.emplace_back(int(*it*10000));
+			prob.emplace_back(static_cast<int>(*it*10000));
 		}
 		++it;
 		++i;
@@ -892,7 +892,7 @@ DEFINE_WFL_FUNCTION(set_unit_var, 3, 3)
 
 DEFINE_WFL_FUNCTION(fallback, 0, 1)
 {
-	(void)fdb;
+	UNUSED(fdb);
 	// The parameter is not used, but is accepted for legacy compatibility
 	if(args().size() == 1 && args()[0]->evaluate(variables).as_string() != "human")
 		return variant();
@@ -1092,7 +1092,7 @@ protected:
 public:
 	ai_formula_function(const std::string& name, ai::formula_ai& ai) : formula_function(name), ai_(ai) {}
 	function_expression_ptr generate_function_expression(const std::vector<expression_ptr>& args) const {
-		return function_expression_ptr(new T(args, ai_));
+		return std::make_shared<T>(args, ai_);
 	}
 };
 

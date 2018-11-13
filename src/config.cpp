@@ -86,8 +86,8 @@ struct config_implementation
 		config->check_valid();
 
 		assert(!parent.empty());
-		assert(parent[0] == '[');
-		assert(parent[parent.size() - 1] == ']');
+		assert(parent.front() == '[');
+		assert(parent.back() == ']');
 
 		if(config->has_child(key)) {
 			return *(config->children_.find(key)->second.front());
@@ -1234,7 +1234,7 @@ std::ostream& operator<<(std::ostream& outstream, const config& cfg)
 		}
 
 		for(int j = 0; j < i - 1; j++) {
-			outstream << char(9);
+			outstream << '\t';
 		}
 
 		outstream << val.first << " = " << val.second << '\n';
@@ -1242,14 +1242,14 @@ std::ostream& operator<<(std::ostream& outstream, const config& cfg)
 
 	for(const config::any_child& child : cfg.all_children_range()) {
 		for(int j = 0; j < i - 1; ++j) {
-			outstream << char(9);
+			outstream << '\t';
 		}
 
 		outstream << "[" << child.key << "]\n";
 		outstream << child.cfg;
 
 		for(int j = 0; j < i - 1; ++j) {
-			outstream << char(9);
+			outstream << '\t';
 		}
 
 		outstream << "[/" << child.key << "]\n";

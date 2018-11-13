@@ -5137,8 +5137,8 @@ msgid ""
 "at the beginning of your turn."
 msgstr ""
 "Ha egy erdőtündér különleges kapcsolatba kerül egy másik személlyel, megnő a "
-"gyógyítási képessége is annak irányában. Cleodil ezért Kalenzet plusz"
-" pontokkal gyógyítja köröd kezdetén."
+"gyógyítási képessége is annak irányában. Cleodil ezért Kalenzet plusz "
+"pontokkal gyógyítja köröd kezdetén."
 
 #: data/campaigns/Legend_of_Wesmere/utils/characters.cfg:53
 msgid "Huraldur"

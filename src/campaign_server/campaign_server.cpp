@@ -452,7 +452,7 @@ void server::fire(const std::string& hook, const std::string& addon)
 	}
 
 #if defined(_WIN32)
-	(void)addon;
+	UNUSED(addon);
 	ERR_CS << "Tried to execute a script on an unsupported platform\n";
 	return;
 #else
@@ -805,7 +805,8 @@ void server::handle_upload(const server::request& req)
 		LOG_CS << "Upload aborted - invalid file names in add-on data (" << badnames.size() << " entries).\n";
 		send_error(
 			"Add-on rejected: The add-on contains files or directories with illegal names. "
-			"File or directory names may not contain whitespace, control characters or any of the following characters: '\" * / : < > ? \\ | ~'. "
+			// Note: the double double quote will be flattened to a single double quote.
+			"File or directory names may not contain whitespace, control characters or any of the following characters: '\"\" * / : < > ? \\ | ~'. "
 			"It also may not contain '..' end with '.' or be longer than 255 characters.",
 			filelist, req.sock);
 	} else if(!check_case_insensitive_duplicates(data, &badnames)) {

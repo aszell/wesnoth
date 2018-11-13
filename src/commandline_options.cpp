@@ -65,6 +65,7 @@ commandline_options::commandline_options (const std::vector<std::string>& args) 
 	campaign(),
 	campaign_difficulty(),
 	campaign_scenario(),
+	campaign_skip_story(false),
 	clock(false),
 	data_path(false),
 	data_dir(),
@@ -176,7 +177,7 @@ commandline_options::commandline_options (const std::vector<std::string>& args) 
 		("password", po::value<std::string>(), "uses <password> when connecting to a server, ignoring other preferences.")
 		("path", "prints the path to the data directory and exits.")
 		("plugin", po::value<std::string>(), "(experimental) load a script which defines a wesnoth plugin. similar to --script below, but lua file should return a function which will be run as a coroutine and periodically woken up with updates.")
-		("render-image", po::value<two_strings>()->multitoken(), "takes two arguments: <image> <output>. Like screenshot, but instead of a map, takes a valid wesnoth 'image path string' with image path functions, and outputs to a windows .bmp file."
+		("render-image", po::value<two_strings>()->multitoken(), "takes two arguments: <image> <output>. Like screenshot, but instead of a map, takes a valid wesnoth 'image path string' with image path functions, and writes it to a .png file."
 #ifdef _WIN32
 		 " Implies --wconsole."
 #endif // _WIN32
@@ -215,6 +216,7 @@ commandline_options::commandline_options (const std::vector<std::string>& args) 
 		("campaign,c", po::value<std::string>()->implicit_value(std::string()), "goes directly to the campaign with id <arg>. A selection menu will appear if no id was specified.")
 		("campaign-difficulty", po::value<int>(), "The difficulty of the specified campaign (1 to max). If none specified, the campaign difficulty selection widget will appear.")
 		("campaign-scenario", po::value<std::string>(),"The id of the scenario from the specified campaign. The default is the first scenario.")
+		("campaign-skip-story", "Skip [story] tags of the specified campaign.")
 		;
 
 	po::options_description display_opts("Display options");
@@ -312,6 +314,8 @@ commandline_options::commandline_options (const std::vector<std::string>& args) 
 		campaign_difficulty = vm["campaign-difficulty"].as<int>();
 	if (vm.count("campaign-scenario"))
 		campaign_scenario = vm["campaign-scenario"].as<std::string>();
+	if (vm.count("campaign-skip-story"))
+		campaign_skip_story = true;
 	if (vm.count("clock"))
 		clock = true;
 	if (vm.count("core"))

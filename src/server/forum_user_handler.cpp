@@ -166,7 +166,7 @@ void fuh::set_is_moderator(const std::string& name, const bool& is_moderator) {
 	if(!user_exists(name)) return;
 
 	try {
-		write_detail(name, "user_is_moderator", int(is_moderator));
+		write_detail(name, "user_is_moderator", static_cast<int>(is_moderator));
 	} catch (const sql_error& e) {
 		ERR_UH << "Could not set is_moderator for user '" << name << "' :" << e.message << std::endl;
 	}
@@ -182,8 +182,12 @@ fuh::BAN_TYPE fuh::user_is_banned(const std::string& name, const std::string& ad
 	//       for the time being.
 	//
 
+	// NOTE: A ban end time of 0 is a permanent ban.
+	const std::string& is_extant_ban_sql =
+		"ban_exclude = 0 AND (ban_end = 0 OR ban_end >=" + std::to_string(std::time(nullptr)) + ")";
+
 	try {
-		if(!addr.empty() && prepared_statement<bool>("SELECT 1 FROM `" + db_banlist_table_ + "` WHERE UPPER(ban_ip) = UPPER(?) AND ban_exclude = 0", addr)) {
+		if(!addr.empty() && prepared_statement<bool>("SELECT 1 FROM `" + db_banlist_table_ + "` WHERE UPPER(ban_ip) = UPPER(?) AND " + is_extant_ban_sql, addr)) {
 			LOG_UH << "User '" << name << "' ip " << addr << " banned by IP address\n";
 			return BAN_IP;
 		}
@@ -199,14 +203,14 @@ fuh::BAN_TYPE fuh::user_is_banned(const std::string& name, const std::string& ad
 
 		if(uid == 0) {
 			ERR_UH << "Invalid user id for user '" << name << "'\n";
-		} else if(prepared_statement<bool>("SELECT 1 FROM `" + db_banlist_table_ + "` WHERE ban_userid = ? AND ban_exclude = 0", uid)) {
+		} else if(prepared_statement<bool>("SELECT 1 FROM `" + db_banlist_table_ + "` WHERE ban_userid = ? AND " + is_extant_ban_sql, uid)) {
 			LOG_UH << "User '" << name << "' uid " << uid << " banned by uid\n";
 			return BAN_USER;
 		}
 
 		auto email = get_detail_for_user<std::string>(name, "user_email");
 
-		if(!email.empty() && prepared_statement<bool>("SELECT 1 FROM `" + db_banlist_table_ + "` WHERE UPPER(ban_email) = UPPER(?) AND ban_exclude = 0", email)) {
+		if(!email.empty() && prepared_statement<bool>("SELECT 1 FROM `" + db_banlist_table_ + "` WHERE UPPER(ban_email) = UPPER(?) AND " + is_extant_ban_sql, email)) {
 			LOG_UH << "User '" << name << "' email " << email << " banned by email address\n";
 			return BAN_EMAIL;
 		}
@@ -295,7 +299,7 @@ time_t fuh::get_registrationdate(const std::string& user) {
 void fuh::set_lastlogin(const std::string& user, const time_t& lastlogin) {
 
 	try {
-		write_detail(user, "user_lastvisit", int(lastlogin));
+		write_detail(user, "user_lastvisit", static_cast<int>(lastlogin));
 	} catch (const sql_error& e) {
 		ERR_UH << "Could not set last visit for user '" << user << "' :" << e.message << std::endl;
 	}

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-07-14 15:07+0200\n"
+"POT-Creation-Date: 2018-09-16 07:03 UTC\n"
+"PO-Revision-Date: 2018-09-13 19:02+0200\n"
 "Last-Translator: Aaron Winter <winter.aaron93@gmail.com>\n"
 "Language-Team: irc://irc.freenode.net/#wesnoth-de\n"
 "Language: de_DE\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 
 # Thursagan war ein Meisterschmied der Zwerge, und war der letzte der den Hammer ohne zu sterben nutzen konnte. Der Hammer ist eine der Gründungsreliquie der Zwergenstämme.
 #. [campaign]: id=The_Hammer_of_Thursagan
@@ -881,6 +881,8 @@ msgid ""
 "There’s a scent of scorched gryphon meat in the air, emanating from that hut "
 "yonder. We should investigate."
 msgstr ""
+"Es riecht nach verbranntem Greif, es scheint von der Hütte dort zu kommen. "
+"Wir sollten mal nachschauen."
 
 #. [message]: speaker=Ratheln
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_High_Pass.cfg:345
@@ -1225,7 +1227,7 @@ msgstr "Furcht"
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/12_The_Underlevels.cfg:176
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/12_The_Underlevels.cfg:212
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/12_The_Underlevels.cfg:291
-#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:183
+#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:170
 msgid "Masked Dwarf"
 msgstr "Maskierter Zwerg"
 
@@ -1572,10 +1574,8 @@ msgstr "Westtor"
 
 #. [objective]: condition=win
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Siege_of_Kal_Kartha.cfg:219
-#, fuzzy
-#| msgid "Defeat the Masked Dwarf"
 msgid "Defeat the orcish leaders"
-msgstr "Besiegt den maskierten Zwerg"
+msgstr "Besiegt die Anführer der Orks"
 
 #. [objective]: condition=lose
 #: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Siege_of_Kal_Kartha.cfg:231
@@ -2488,15 +2488,6 @@ msgstr "Heimlicher Zwergenfürst"
 
 #. [unit_type]: id=Dwarvish Masked Lord, race=dwarf
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Lord.cfg:17
-#, fuzzy
-#| msgid ""
-#| "Feared in dwarven legend is the Dwarf Lord who masks his face, using the "
-#| "formidable fighting powers of his kind without accounting to his peers "
-#| "and the loremasters of Dwarven-kind for the dark and bloody uses to which "
-#| "he puts his weapons. Like his barefaced kin, the Dwarf Lord wields axe "
-#| "and hammer with masterful skill, and can hit a target with a thrown hand "
-#| "axe at several paces. Though slow on their feet, these dwarves are a "
-#| "testament to the prowess of their kind."
 msgid ""
 "Feared in dwarven legend is the Dwarf Lord who masks his face, using the "
 "formidable fighting powers of his kind without accounting to his peers and "
@@ -2506,14 +2497,14 @@ msgid ""
 "several paces. Though slow on their feet, these dwarves are a testament to "
 "the prowess of their kind."
 msgstr ""
-"Von dem heimlichen Fürsten wird in den uralten Legenden der Zwerge nur "
-"hinter vorgehaltener Hand geflüstert, von dem, der seine Kräfte, seine Macht "
-"und seine blutrünstigen Taten weder vor seinesgleichen noch vor der "
-"Bruderschaft der Skalden verantworten muss. Wie die aufrechten und ehrlichen "
-"Zwergenfürsten schwingen sie Axt und Hammer mit meisterlichem Geschick, "
-"treffen ihr Ziel mit dem Wurfbeil auch von weitem und gleichen damit ihrer "
-"bedächtige Fortbewegung aus. Sie verkörpern für ihre Anhänger Heldenmut und "
-"Tapferkeit."
+"Von den heimlichen Fürsten wird in den uralten Legenden der Zwerge nur "
+"hinter vorgehaltener Hand geflüstert, von jenen, die ihre Kräfte, ihre Macht "
+"und ihre blutrünstigen Taten weder vor ihresgleichen noch vor der "
+"Bruderschaft der Skalden verantworten müssen. Wie die aufrechten und "
+"ehrlichen Zwergenfürsten schwingen sie Axt und Hammer mit meisterlichem "
+"Geschick, treffen ihr Ziel mit dem Wurfbeil auch von weitem und gleichen "
+"damit ihrer bedächtige Fortbewegung aus. Sie verkörpern für ihre Anhänger "
+"Heldenmut und Tapferkeit."
 
 #. [unit_type]: id=Dwarvish Masked Sentinel, race=dwarf
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Sentinel.cfg:4
@@ -2657,7 +2648,7 @@ msgstr ""
 "gegen uns stellen. Unsere Mission ist gescheitert."
 
 #. [message]: speaker=narrator
-#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:43
+#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:31
 msgid ""
 "Without magic users from Master Perrin’s academy in your party, you can no "
 "longer recruit new ones."
@@ -2666,17 +2657,17 @@ msgstr ""
 "Seite könnt Ihr keine neuen Magier rekrutieren.</span>"
 
 #. [message]: speaker=unit
-#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:67
+#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:55
 msgid "There an altar in this temple, and a staff lies upon it."
 msgstr "Dort ist ein Altar im Tempel, und ein Stab liegt auf diesem."
 
 #. [object]: id=sorf	# Prevent it from being picked up more than once.
-#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:81
+#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:69
 msgid "Staff of Righteous Flame"
 msgstr "Stab der auflodernden Gerechtigkeit"
 
 #. [object]: id=sorf	# Prevent it from being picked up more than once.
-#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:84
+#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:72
 msgid ""
 "This staff gives a dying mage a final strike that will destroy all nearby "
 "enemies."
@@ -2685,12 +2676,12 @@ msgstr ""
 "Schlag zur Vernichtung aller ihn umgebenden Feinde."
 
 #. [object]: id=sorf	# Prevent it from being picked up more than once.
-#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:85
+#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:73
 msgid "Only a mage may wield this Staff."
 msgstr "Nur Magier können diesen Stab führen."
 
 #. [message]: speaker=unit
-#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:110
+#: data/campaigns/The_Hammer_of_Thursagan/utils/macros.cfg:98
 msgid ""
 "Aaarrgh! Though I die, the flame of righteousness shall send you down to "
 "darkness!"

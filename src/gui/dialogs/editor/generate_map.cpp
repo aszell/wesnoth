@@ -19,11 +19,7 @@
 
 #include "gui/widgets/button.hpp"
 #include "gui/widgets/label.hpp"
-#ifdef GUI2_EXPERIMENTAL_LISTBOX
-#include "gui/widgets/list.hpp"
-#else
 #include "gui/widgets/listbox.hpp"
-#endif
 #include "gui/widgets/settings.hpp"
 #include "gui/widgets/text_box.hpp"
 #include "gui/widgets/window.hpp"
@@ -77,7 +73,7 @@ void editor_generate_map::do_generator_selected(window& window)
 	listbox& list = find_widget<listbox>(&window, "generators_list", false);
 	const int current = list.get_selected_row();
 
-	if(current == -1 || unsigned(current) > map_generators_.size()) {
+	if(current == -1 || static_cast<unsigned>(current) > map_generators_.size()) {
 		return; // shouldn't happen!
 	}
 

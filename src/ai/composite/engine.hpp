@@ -154,7 +154,7 @@ public:
 	}
 
 	virtual engine_ptr get_new_instance( readonly_context &ai, const config &cfg ){
-		engine_ptr e = engine_ptr(new ENGINE(ai,cfg));
+		engine_ptr e = std::make_shared<ENGINE>(ai, cfg);
 		if (!e->is_ok()) {
 			return engine_ptr();
 		}
@@ -165,7 +165,7 @@ public:
 		config cfg;
 		cfg["name"] = name;
 		cfg["engine"] = "cpp"; // @Crab: what is the purpose of this line(neph)
-		return engine_ptr(new ENGINE(ai,cfg));
+		return std::make_shared<ENGINE>(ai, cfg);
 	}
 };
 

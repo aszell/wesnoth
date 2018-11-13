@@ -19,11 +19,7 @@
 #include "gui/auxiliary/find_widget.hpp"
 #include "gui/widgets/button.hpp"
 #include "gui/widgets/image.hpp"
-#ifdef GUI2_EXPERIMENTAL_LISTBOX
-#include "gui/widgets/list.hpp"
-#else
 #include "gui/widgets/listbox.hpp"
-#endif
 #include "gui/widgets/multi_page.hpp"
 #include "gui/widgets/multimenu_button.hpp"
 #include "gui/widgets/scroll_label.hpp"
@@ -260,7 +256,7 @@ void campaign_selection::pre_show(window& window)
 		for(const auto& mod : engine_.get_const_extras_by_type(ng::create_engine::MOD)) {
 			const bool active = std::find(enabled.begin(), enabled.end(), mod->id) != enabled.end();
 
-			mod_menu_values.emplace_back(config {"label", mod->name, "checkbox", active});
+			mod_menu_values.emplace_back("label", mod->name, "checkbox", active);
 
 			mod_states_.push_back(active);
 		}

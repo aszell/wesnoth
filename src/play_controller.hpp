@@ -76,7 +76,6 @@ class play_controller : public controller_base, public events::observer, public 
 {
 public:
 	play_controller(const config& level, saved_game& state_of_game,
-		const config& game_config,
 		const ter_data_cache& tdata, bool skip_replay);
 	virtual ~play_controller();
 
@@ -188,6 +187,8 @@ public:
 	void toggle_skipping_replay();
 	bool is_linger_mode() const { return linger_; }
 	void do_autosave();
+
+	bool is_skipping_story() const { return skip_story_; }
 
 	void do_consolesave(const std::string& filename);
 
@@ -339,6 +340,7 @@ protected:
 	std::unique_ptr<replay> replay_;
 
 	bool skip_replay_;
+	bool skip_story_;
 	bool linger_;
 	/**
 	 * Whether we did init sides in this session

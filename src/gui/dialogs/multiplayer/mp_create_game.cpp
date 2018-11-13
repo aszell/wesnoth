@@ -28,11 +28,7 @@
 #include "gui/widgets/integer_selector.hpp"
 #include "gui/widgets/menu_button.hpp"
 #include "preferences/game.hpp"
-#ifdef GUI2_EXPERIMENTAL_LISTBOX
-#include "gui/widgets/list.hpp"
-#else
 #include "gui/widgets/listbox.hpp"
-#endif
 #include "formatter.hpp"
 #include "formula/string_utils.hpp"
 #include "game_config.hpp"
@@ -48,12 +44,7 @@
 #include "savegame.hpp"
 #include "map_settings.hpp"
 
-#ifdef GUI2_EXPERIMENTAL_LISTBOX
-#include "utils/functional.hpp"
-#endif
-
 #include <boost/algorithm/string.hpp>
-
 
 static lg::log_domain log_mp_create("mp/create");
 
@@ -181,7 +172,7 @@ void mp_create_game::pre_show(window& win)
 	//
 	std::vector<config> game_types;
 	for(level_type_info& type_info : level_types_) {
-		game_types.emplace_back(config {"label", type_info.second});
+		game_types.emplace_back("label", type_info.second);
 	}
 
 	if(game_types.empty()) {
@@ -249,7 +240,7 @@ void mp_create_game::pre_show(window& win)
 
 	std::vector<config> era_names;
 	for(const auto& era : create_engine_.get_const_extras_by_type(ng::create_engine::ERA)) {
-		era_names.emplace_back(config {"label", era->name, "tooltip", era->description});
+		era_names.emplace_back("label", era->name, "tooltip", era->description);
 	}
 
 	if(era_names.empty()) {

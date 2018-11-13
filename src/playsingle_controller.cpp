@@ -65,9 +65,8 @@ static lg::log_domain log_enginerefac("enginerefac");
 #define LOG_RG LOG_STREAM(info, log_enginerefac)
 
 playsingle_controller::playsingle_controller(const config& level,
-	saved_game& state_of_game,
-	const config& game_config, const ter_data_cache & tdata, bool skip_replay)
-	: play_controller(level, state_of_game, game_config, tdata, skip_replay)
+	saved_game& state_of_game, const ter_data_cache & tdata, bool skip_replay)
+	: play_controller(level, state_of_game, tdata, skip_replay)
 	, cursor_setter_(cursor::NORMAL)
 	, textbox_info_()
 	, replay_sender_(*resources::recorder)
@@ -76,7 +75,7 @@ playsingle_controller::playsingle_controller(const config& level,
 	, end_turn_(END_TURN_NONE)
 	, skip_next_turn_(false)
 	, ai_fallback_(false)
-	, replay_()
+	, replay_controller_()
 {
 	hotkey_handler_.reset(new hotkey_handler(*this, saved_game_)); //upgrade hotkey handler to the sp (whiteboard enabled) version
 
@@ -209,11 +208,11 @@ void playsingle_controller::play_scenario_main_loop()
 				resources::gameboard->teams()[i].set_local(local_players[i]);
 			}
 			play_scenario_init();
-			if (replay_ == nullptr) {
-				replay_.reset(new replay_controller(*this, false, ex.level, [this](){ on_replay_end(false); } ));
+			if (replay_controller_ == nullptr) {
+				replay_controller_.reset(new replay_controller(*this, false, ex.level, [this](){ on_replay_end(false); } ));
 			}
 			if(ex.start_replay) {
-				replay_->play_replay();
+				replay_controller_->play_replay();
 			}
 		}
 	} //end for loop
@@ -229,7 +228,7 @@ LEVEL_RESULT playsingle_controller::play_scenario(const config& level)
 	}
 	sound::commit_music_changes();
 
-	if(!this->is_skipping_replay()) {
+	if(!this->is_skipping_replay() && !this->is_skipping_story()) {
 		// Combine all the [story] tags into a single config. Handle this here since
 		// storyscreen::controller doesn't have a default constructor.
 		config cfg;
@@ -360,14 +359,14 @@ void playsingle_controller::play_side_impl()
 	if (!skip_next_turn_) {
 		end_turn_ = END_TURN_NONE;
 	}
-	if(replay_.get() != nullptr) {
+	if(replay_controller_.get() != nullptr) {
 		init_side_done_now_ = false;
-		REPLAY_RETURN res = replay_->play_side_impl();
+		REPLAY_RETURN res = replay_controller_->play_side_impl();
 		if(res == REPLAY_FOUND_END_TURN) {
 			end_turn_ = END_TURN_SYNCED;
 		}
 		if (player_type_changed_) {
-			replay_.reset();
+			replay_controller_.reset();
 		}
 	} else if((current_team().is_local_human() && current_team().is_proxy_human())) {
 		LOG_NG << "is human...\n";
@@ -653,8 +652,8 @@ void playsingle_controller::sync_end_turn()
 
 void playsingle_controller::update_viewing_player()
 {
-	if(replay_ && replay_->is_controlling_view()) {
-		replay_->update_viewing_player();
+	if(replay_controller_ && replay_controller_->is_controlling_view()) {
+		replay_controller_->update_viewing_player();
 	}
 	//Update viewing team in case it has changed during the loop.
 	else if(int side_num = play_controller::find_last_visible_team()) {
@@ -666,9 +665,9 @@ void playsingle_controller::update_viewing_player()
 
 void playsingle_controller::reset_replay()
 {
-	if(replay_ && replay_->allow_reset_replay()) {
-		replay_->stop_replay();
-		throw reset_gamestate_exception(replay_->get_reset_state(), false);
+	if(replay_controller_ && replay_controller_->allow_reset_replay()) {
+		replay_controller_->stop_replay();
+		throw reset_gamestate_exception(replay_controller_->get_reset_state(), false);
 	}
 	else {
 		ERR_NG << "received invalid reset replay\n";
@@ -677,9 +676,9 @@ void playsingle_controller::reset_replay()
 
 void playsingle_controller::enable_replay(bool is_unit_test)
 {
-	replay_.reset(new replay_controller(*this, gamestate().has_human_sides(), std::shared_ptr<config>( new config(saved_game_.get_replay_starting_pos())), std::bind(&playsingle_controller::on_replay_end, this, is_unit_test)));
+	replay_controller_.reset(new replay_controller(*this, gamestate().has_human_sides(), std::shared_ptr<config>( new config(saved_game_.get_replay_starting_point())), std::bind(&playsingle_controller::on_replay_end, this, is_unit_test)));
 	if(is_unit_test) {
-		replay_->play_replay();
+		replay_controller_->play_replay();
 	}
 }
 
@@ -688,7 +687,7 @@ bool playsingle_controller::should_return_to_play_side() const
 	if(player_type_changed_ || is_regular_game_end()) {
 		return true;
 	}
-	else if (end_turn_ == END_TURN_NONE || replay_.get() != 0 || current_team().is_network()) {
+	else if (end_turn_ == END_TURN_NONE || replay_controller_.get() != 0 || current_team().is_network()) {
 		return false;
 	}
 	else {
@@ -702,7 +701,7 @@ void playsingle_controller::on_replay_end(bool is_unit_test)
 		set_player_type_changed();
 	}
 	else if(is_unit_test) {
-		replay_->return_to_play_side();
+		replay_controller_->return_to_play_side();
 		if(!is_regular_game_end()) {
 			end_level_data e;
 			e.proceed_to_next_level = false;

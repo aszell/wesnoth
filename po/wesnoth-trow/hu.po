@@ -38,7 +38,6 @@ msgstr "WeFe"
 
 #. [campaign]: id=The_Rise_of_Wesnoth
 #: data/campaigns/The_Rise_Of_Wesnoth/_main.cfg:20
-#| msgid "(Easy)"
 msgid "Easy"
 msgstr "könnyű"
 
@@ -54,13 +53,11 @@ msgstr "Parancsnok"
 
 #. [campaign]: id=The_Rise_of_Wesnoth
 #: data/campaigns/The_Rise_Of_Wesnoth/_main.cfg:21
-#| msgid "Normal:"
 msgid "Normal"
 msgstr "átlagos"
 
 #. [campaign]: id=The_Rise_of_Wesnoth
 #: data/campaigns/The_Rise_Of_Wesnoth/_main.cfg:22
-#| msgid "(Challenging)"
 msgid "Challenging"
 msgstr "kihívást jelentő"
 
@@ -7022,9 +7019,9 @@ msgstr ""
 "Később sosem úgy regélték, hogy Haldric és Jessene házassága tökéletesen "
 "nyugodt lett volna... viszont az is igaz, hogy egyikük sem tudott hosszú "
 "időn keresztül a másik nélkül meglenni. Jessene erős gyermekeket szült "
-"Haldricnak, akikben összefonódtak az egymástól oly elkülönülő ősi vérvonalak. "
-"Sokan követték az ő példájukat, és a Zöld Sziget két száműzött népe "
-"hamarosan egybeolvadt az új királyságban."
+"Haldricnak, akikben összefonódtak az egymástól oly elkülönülő ősi "
+"vérvonalak. Sokan követték az ő példájukat, és a Zöld Sziget két száműzött "
+"népe hamarosan egybeolvadt az új királyságban."
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_Rise_Of_Wesnoth/scenarios/23_Epilogue.cfg:317
@@ -7229,9 +7226,8 @@ msgid ""
 "This unit negates enemy Zones of Control around itself for allied units (but "
 "not for itself)."
 msgstr ""
-"Ez az egység semlegesíti az ellenséges ellenőrzési zónákat maga körül a"
-" baráti "
-"egységek számára (de önmagának nem)."
+"Ez az egység semlegesíti az ellenséges ellenőrzési zónákat maga körül a "
+"baráti egységek számára (de önmagának nem)."
 
 #: data/campaigns/The_Rise_Of_Wesnoth/utils/trow-abilities.cfg:16
 msgid ""

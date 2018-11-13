@@ -37,7 +37,7 @@ class playsingle_controller : public play_controller
 {
 public:
 	playsingle_controller(const config& level, saved_game& state_of_game,
-		const config& game_config, const ter_data_cache & tdata, bool skip_replay);
+		const ter_data_cache & tdata, bool skip_replay);
 
 	LEVEL_RESULT play_scenario(const config& level);
 	void play_scenario_init();
@@ -58,7 +58,7 @@ public:
 	bool get_player_type_changed() const { return player_type_changed_; }
 	void set_player_type_changed() { player_type_changed_ = true; }
 	virtual bool should_return_to_play_side() const override;
-	replay_controller * get_replay_controller() { return replay_.get(); }
+	replay_controller * get_replay_controller() { return replay_controller_.get(); }
 	bool is_replay() override { return get_replay_controller() != nullptr; }
 	void enable_replay(bool is_unit_test = false);
 	void on_replay_end(bool is_unit_test);
@@ -93,7 +93,7 @@ protected:
 	};
 	END_TURN_STATE end_turn_;
 	bool skip_next_turn_, ai_fallback_;
-	std::unique_ptr<replay_controller> replay_;
+	std::unique_ptr<replay_controller> replay_controller_;
 	void linger();
 	void sync_end_turn() override;
 	void update_viewing_player() override;

@@ -29,6 +29,7 @@
 
 struct map_location;
 class team;
+struct time_of_day;
 class unit;
 class unit_map;
 class gamemap;
@@ -188,9 +189,11 @@ public:
 	/** Used by the AI which caches battle_context_unit_stats */
 	battle_context(const battle_context_unit_stats& att, const battle_context_unit_stats& def);
 
-	battle_context(const battle_context& other);
+	battle_context(const battle_context& other) = delete;
+	battle_context(battle_context&& other);
 
-	battle_context& operator=(const battle_context& other);
+	battle_context& operator=(const battle_context& other) = delete;
+	battle_context& operator=(battle_context&& other);
 
 	/** This method returns the statistics of the attacker. */
 	const battle_context_unit_stats& get_attacker_stats() const
@@ -210,6 +213,8 @@ public:
 
 	/** Given this harm_weight, is this attack better than that? */
 	bool better_attack(class battle_context& that, double harm_weight);
+	/** Given this harm_weight, is this attack better than that? */
+	bool better_defense(class battle_context& that, double harm_weight);
 
 	static bool better_combat(const combatant& us_a,
 			const combatant& them_a,
@@ -217,17 +222,26 @@ public:
 			const combatant& them_b,
 			double harm_weight);
 
+	void simulate(const combatant* prev_def);
 private:
-	int choose_attacker_weapon(const unit& attacker,
+	battle_context(
+			const unit& attacker,
+			const map_location& attacker_loc,
+			int attacker_weapon,
+			const unit& defender,
+			const map_location& defender_loc,
+			int defender_weapon,
+			const unit_map& units);
+
+	static battle_context choose_attacker_weapon(const unit& attacker,
 			const unit& defender,
 			const unit_map& units,
 			const map_location& attacker_loc,
 			const map_location& defender_loc,
 			double harm_weight,
-			int* defender_weapon,
 			const combatant* prev_def);
 
-	int choose_defender_weapon(const unit& attacker,
+	static battle_context choose_defender_weapon(const unit& attacker,
 			const unit& defender,
 			unsigned attacker_weapon,
 			const unit_map& units,
@@ -263,10 +277,9 @@ void attack_unit_and_advance(const map_location& attacker,
  * Tests if the unit at loc is currently affected by leadership.
  * (i.e. has a higher-level unit with the 'leadership' ability next to it).
  *
- * Returns a pair of bonus percentage and the leader's location if the unit is affected,
- * or 0 and map_location::null_location() otherwise.
+ * Returns the bonus percentage (possibly 0 if there's no leader adjacent).
  */
-std::pair<int, map_location> under_leadership(const unit_map& units, const map_location& loc);
+int under_leadership(const unit &u, const map_location& loc);
 
 /**
  * Returns the amount that a unit's damage should be multiplied by
@@ -275,6 +288,14 @@ std::pair<int, map_location> under_leadership(const unit_map& units, const map_l
 int combat_modifier(const unit_map& units,
 		const gamemap& map,
 		const map_location& loc,
+		unit_type::ALIGNMENT alignment,
+		bool is_fearless);
+
+/**
+ * Returns the amount that a unit's damage should be multiplied by
+ * due to the current time of day.
+ */
+int combat_modifier(const time_of_day& effective_tod,
 		unit_type::ALIGNMENT alignment,
 		bool is_fearless);
 

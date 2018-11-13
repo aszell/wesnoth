@@ -22,11 +22,7 @@
 #include "gui/widgets/button.hpp"
 #include "gui/widgets/label.hpp"
 #include "gui/widgets/image.hpp"
-#ifdef GUI2_EXPERIMENTAL_LISTBOX
-#include "gui/widgets/list.hpp"
-#else
 #include "gui/widgets/listbox.hpp"
-#endif
 #include "gui/widgets/settings.hpp"
 #include "gui/widgets/unit_preview_pane.hpp"
 #include "gui/widgets/window.hpp"
@@ -75,12 +71,12 @@ REGISTER_DIALOG(unit_attack)
 
 unit_attack::unit_attack(const unit_map::iterator& attacker_itor,
 						   const unit_map::iterator& defender_itor,
-						   const std::vector<battle_context>& weapons,
+						   std::vector<battle_context>&& weapons,
 						   const int best_weapon)
 	: selected_weapon_(-1)
 	, attacker_itor_(attacker_itor)
 	, defender_itor_(defender_itor)
-	, weapons_(weapons)
+	, weapons_(std::move(weapons))
 	, best_weapon_(best_weapon)
 {
 }

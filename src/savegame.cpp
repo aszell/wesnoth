@@ -100,7 +100,7 @@ bool loadgame::show_difficulty_dialog()
 		difficulty_dlg.show();
 
 		// Return if canceled, since otherwise load_data_.difficulty will be set to 'CANCEL'
-		if (difficulty_dlg.get_retval() != gui2::retval::OK) {
+		if(!difficulty_dlg.show()) {
 			return false;
 		}
 
@@ -634,14 +634,14 @@ std::string ingame_savegame::create_initial_filename(unsigned int turn_number) c
 void ingame_savegame::write_game(config_writer &out) {
 	log_scope("write_game");
 
-	if(!gamestate().get_starting_pos().validate_wml()) {
+	if(!gamestate().get_starting_point().validate_wml()) {
 		throw game::save_game_failed(_("Game state is corrupted"));
 	}
 
 	savegame::write_game(out);
 
 	gamestate().write_carryover(out);
-	out.write_child("snapshot",gamestate().get_starting_pos());
+	out.write_child("snapshot",gamestate().get_starting_point());
 	out.write_child("replay_start", gamestate().replay_start());
 	out.open_child("replay");
 	gamestate().get_replay().write(out);

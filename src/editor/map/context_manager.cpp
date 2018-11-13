@@ -326,7 +326,7 @@ void context_manager::expand_open_maps_menu(std::vector<config>& items, int i)
 		const std::string label = ss.str();
 		const std::string details = get_menu_marker(changed);
 
-		contexts.emplace_back(config {"label", label, "details", details});
+		contexts.emplace_back("label", label, "details", details);
 	}
 
 	items.insert(pos, contexts.begin(), contexts.end());
@@ -389,7 +389,7 @@ void context_manager::expand_areas_menu(std::vector<config>& items, int i)
 		const std::string label = ss.str();
 		const std::string details = get_menu_marker(changed);
 
-		area_entries.emplace_back(config {"label", label, "details", details});
+		area_entries.emplace_back("label", label, "details", details);
 	}
 
 	items.insert(pos, area_entries.begin(), area_entries.end());
@@ -413,7 +413,7 @@ void context_manager::expand_sides_menu(std::vector<config>& items, int i)
 			label << teamname;
 		}
 
-		contexts.emplace_back(config {"label", label.str()});
+		contexts.emplace_back("label", label.str());
 	}
 
 	items.insert(pos, contexts.begin(), contexts.end());
@@ -429,10 +429,10 @@ void context_manager::expand_time_menu(std::vector<config>& items, int i)
 	assert(tod_m != nullptr);
 
 	for(const time_of_day& time : tod_m->times()) {
-		times.emplace_back(config {
+		times.emplace_back(
 			"details", time.name, // Use 'details' field here since the image will take the first column
-			"image", time.image,
-		});
+			"image", time.image
+		);
 	}
 
 	items.insert(pos, times.begin(), times.end());
@@ -446,10 +446,10 @@ void context_manager::expand_local_time_menu(std::vector<config>& items, int i)
 	tod_manager* tod_m = get_map_context().get_time_manager();
 
 	for(const time_of_day& time : tod_m->times(get_map_context().get_active_area())) {
-		times.emplace_back(config {
+		times.emplace_back(
 			"details", time.name, // Use 'details' field here since the image will take the first column
-			"image", time.image,
-		});
+			"image", time.image
+		);
 	}
 
 	items.insert(pos, times.begin(), times.end());
@@ -701,9 +701,8 @@ void context_manager::generate_map_dialog()
 
 	gui2::dialogs::editor_generate_map dialog(map_generators_);
 	dialog.select_map_generator(last_map_generator_);
-	dialog.show();
 
-	if(dialog.get_retval() == gui2::retval::OK) {
+	if(dialog.show()) {
 		std::string map_string;
 		map_generator* const map_generator = dialog.get_selected_map_generator();
 		try {

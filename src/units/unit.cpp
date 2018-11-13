@@ -1037,7 +1037,7 @@ static color_t hp_color_impl(int hitpoints, int max_hitpoints)
 	color_t energy_color {0,0,0,255};
 
 	if(max_hitpoints > 0) {
-		unit_energy = double(hitpoints)/double(max_hitpoints);
+		unit_energy = static_cast<double>(hitpoints)/static_cast<double>(max_hitpoints);
 	}
 
 	if(1.0 == unit_energy) {
@@ -1669,7 +1669,7 @@ std::vector<config> unit::get_modification_advances() const
 			continue;
 		}
 
-		if(modification_count("advancement", adv["id"]) >= unsigned(adv["max_times"].to_int(1))) {
+		if(modification_count("advancement", adv["id"]) >= static_cast<unsigned>(adv["max_times"].to_int(1))) {
 			continue;
 		}
 
@@ -1865,7 +1865,7 @@ void unit::apply_builtin_effect(std::string apply_to, const config& effect)
 		const bool violate_max = effect["violate_maximum"].to_bool();
 
 		if(!set_hp.empty()) {
-			if(set_hp[set_hp.size()-1] == '%') {
+			if(set_hp.back() == '%') {
 				hit_points_ = lexical_cast_default<int>(set_hp)*max_hit_points_/100;
 			} else {
 				hit_points_ = lexical_cast_default<int>(set_hp);
@@ -1873,7 +1873,7 @@ void unit::apply_builtin_effect(std::string apply_to, const config& effect)
 		}
 
 		if(!set_total.empty()) {
-			if(set_total[set_total.size()-1] == '%') {
+			if(set_total.back() == '%') {
 				max_hit_points_ = lexical_cast_default<int>(set_total)*max_hit_points_/100;
 			} else {
 				max_hit_points_ = lexical_cast_default<int>(set_total);
@@ -1939,7 +1939,7 @@ void unit::apply_builtin_effect(std::string apply_to, const config& effect)
 		const std::string& set = effect["set"];
 
 		if(!set.empty()) {
-			if(set[set.size()-1] == '%') {
+			if(set.back() == '%') {
 				experience_ = lexical_cast_default<int>(set)*max_experience_/100;
 			} else {
 				experience_ = lexical_cast_default<int>(set);
@@ -1954,7 +1954,7 @@ void unit::apply_builtin_effect(std::string apply_to, const config& effect)
 		const std::string& set = effect["set"];
 
 		if(set.empty() == false) {
-			if(set[set.size()-1] == '%') {
+			if(set.back() == '%') {
 				max_experience_ = lexical_cast_default<int>(set)*max_experience_/100;
 			} else {
 				max_experience_ = lexical_cast_default<int>(set);
@@ -2117,7 +2117,7 @@ void unit::apply_builtin_effect(std::string apply_to, const config& effect)
 		const int recall_cost = recall_cost_ < 0 ? resources::gameboard->teams().at(side_).recall_cost() : recall_cost_;
 
 		if(!set.empty()) {
-			if(set[set.size()-1] == '%') {
+			if(set.back() == '%') {
 				recall_cost_ = lexical_cast_default<int>(set)*recall_cost/100;
 			} else {
 				recall_cost_ = lexical_cast_default<int>(set);
@@ -2358,6 +2358,11 @@ bool unit::invisible(const map_location& loc, const display_context& dc, bool se
 bool unit::is_visible_to_team(const team& team,const  display_context& dc, bool const see_all) const
 {
 	const map_location& loc = get_location();
+	return is_visible_to_team(loc, team, dc, see_all);
+}
+
+bool unit::is_visible_to_team(const map_location& loc, const team& team, const  display_context& dc, bool const see_all) const
+{
 	if(!dc.map().on_board(loc)) {
 		return false;
 	}

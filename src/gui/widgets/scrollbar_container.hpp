@@ -43,9 +43,7 @@ class scrollbar_container : public container_base
 
 	friend struct implementation::builder_scroll_label;
 	friend struct implementation::builder_scrollbar_panel;
-#ifndef GUI2_EXPERIMENTAL_LISTBOX
 	friend class listbox;
-#endif
 	friend class tree_view;
 	friend struct scrollbar_container_implementation;
 
@@ -525,6 +523,11 @@ private:
 	/** Helper function which needs to be called after the scollbar moved. */
 	void scrollbar_moved();
 
+public:
+	/** Static type getter that does not rely on the widget being constructed. */
+	static const std::string& type();
+
+private:
 	/** See @ref styled_widget::get_control_type. */
 	virtual const std::string& get_control_type() const override;
 

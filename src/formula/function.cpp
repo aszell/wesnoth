@@ -608,8 +608,8 @@ DEFINE_WFL_FUNCTION(exp, 1, 1)
 
 DEFINE_WFL_FUNCTION(pi, 0, 0)
 {
-	(void)variables;
-	(void)fdb;
+	UNUSED(variables);
+	UNUSED(fdb);
 	return variant(pi<double>(), variant::DECIMAL_VARIANT);
 }
 
@@ -1367,8 +1367,8 @@ formula_function_expression::formula_function_expression(const std::string& name
 	, arg_names_(arg_names)
 	, star_arg_(-1)
 {
-	for(size_t n = 0; n != arg_names_.size(); ++n) {
-		if(arg_names_.empty() == false && arg_names_[n][arg_names_[n].size() - 1] == '*') {
+	for(std::size_t n = 0; n != arg_names_.size(); ++n) {
+		if(arg_names_[n].empty() == false && arg_names_[n].back() == '*') {
 			arg_names_[n].resize(arg_names_[n].size() - 1);
 			star_arg_ = n;
 			break;

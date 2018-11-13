@@ -50,7 +50,7 @@ const unsigned CONTROL_STACK_LAYER_PUBLISH = 2;
 REGISTER_WIDGET(addon_list)
 
 addon_list::addon_list(const implementation::builder_addon_list& builder)
-	: container_base(builder, get_control_type())
+	: container_base(builder, type())
 	, addon_vector_()
 	, install_status_visibility_(visibility::visible)
 	, install_buttons_visibility_(visibility::invisible)
@@ -167,7 +167,7 @@ void addon_list::set_addons(const addons_list& addons)
 			item["label"] = addon.display_title();
 			data.emplace("name", item);
 		} else {
-			item["label"] = addon.display_icon() + "~BLIT(icons/icon-addon-publish.png)";
+			item["label"] = addon.display_icon() + "~SCALE(72,72)~BLIT(icons/icon-addon-publish.png,8,8)";
 			data.emplace("icon", item);
 
 			const std::string publish_name = formatter()

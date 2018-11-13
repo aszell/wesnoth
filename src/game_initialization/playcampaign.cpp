@@ -186,12 +186,12 @@ void campaign_controller::show_carryover_message(playsingle_controller& playcont
 
 LEVEL_RESULT campaign_controller::playsingle_scenario(end_level_data &end_level)
 {
-	playsingle_controller playcontroller(is_replay_ ? state_.get_replay_starting_pos() : state_.get_starting_pos(), state_, game_config_, tdata_, false);
+	playsingle_controller playcontroller(is_replay_ ? state_.get_replay_starting_point() : state_.get_starting_point(), state_, tdata_, false);
 	LOG_NG << "created objects... " << (SDL_GetTicks() - playcontroller.get_ticks()) << "\n";
 	if(is_replay_) {
 		playcontroller.enable_replay(is_unit_test_);
 	}
-	LEVEL_RESULT res = playcontroller.play_scenario(is_replay_ ? state_.get_replay_starting_pos() : state_.get_starting_pos());
+	LEVEL_RESULT res = playcontroller.play_scenario(is_replay_ ? state_.get_replay_starting_point() : state_.get_starting_point());
 
 	if (res == LEVEL_RESULT::QUIT)
 	{
@@ -220,9 +220,9 @@ LEVEL_RESULT campaign_controller::playsingle_scenario(end_level_data &end_level)
 LEVEL_RESULT campaign_controller::playmp_scenario(end_level_data &end_level)
 {
 
-	playmp_controller playcontroller(state_.get_starting_pos(), state_,
-		game_config_, tdata_, mp_info_);
-	LEVEL_RESULT res = playcontroller.play_scenario(state_.get_starting_pos());
+	playmp_controller playcontroller(state_.get_starting_point(), state_,
+		tdata_, mp_info_);
+	LEVEL_RESULT res = playcontroller.play_scenario(state_.get_starting_point());
 
 	//Check if the player started as mp client and changed to host
 
@@ -352,7 +352,7 @@ LEVEL_RESULT campaign_controller::play_game()
 
 		if (mp_info_ && !mp_info_->is_host) {
 			// Opens join game dialog to get a new gamestate.
-			if(!mp::goto_mp_wait(state_, game_config_, &mp_info_->connection, res == LEVEL_RESULT::OBSERVER_END)) {
+			if(!mp::goto_mp_wait(state_, &mp_info_->connection, res == LEVEL_RESULT::OBSERVER_END)) {
 				return LEVEL_RESULT::QUIT;
 			}
 
@@ -363,7 +363,7 @@ LEVEL_RESULT campaign_controller::play_game()
 
 			if (state_.valid()) {
 				//note that although starting_pos is const it might be changed by gamestate.some_non_const_operation()  .
-				const config& starting_pos = state_.get_starting_pos();
+				const config& starting_pos = state_.get_starting_point();
 
 				const bool is_mp = state_.classification().is_normal_mp_game();
 				state_.mp_settings().num_turns = starting_pos["turns"].to_int(-1);
@@ -374,7 +374,7 @@ LEVEL_RESULT campaign_controller::play_game()
 
 				if (!connect_engine->can_start_game() || (game_config::debug && game_type == game_classification::CAMPAIGN_TYPE::MULTIPLAYER)) {
 					// Opens staging dialog to allow users to make an adjustments for scenario.
-					if(!mp::goto_mp_connect(*connect_engine, game_config_, mp_info_ ? &mp_info_->connection : nullptr)) {
+					if(!mp::goto_mp_connect(*connect_engine, mp_info_ ? &mp_info_->connection : nullptr)) {
 						return LEVEL_RESULT::QUIT;
 					}
 				} else {

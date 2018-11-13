@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-07-24 03:01-0700\n"
+"POT-Creation-Date: 2018-09-16 07:03 UTC\n"
+"PO-Revision-Date: 2018-09-09 17:52+0200\n"
 "Last-Translator: Antonio 'Antro' Rosella <arosella@yahoo.com>\n"
 "Language-Team: Italiano <wesnoth-l10n-it@cirulla.net>\n"
 "Language: it\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. [generic_multiplayer]: id=user_map
@@ -545,7 +545,7 @@ msgstr ""
 #: data/multiplayer/scenarios/2p_Fallenstar_Lake.cfg:35
 #: data/multiplayer/scenarios/2p_Ruined_Passage.cfg:40
 #: data/multiplayer/scenarios/2p_Silverhead_Crossing.cfg:32
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:103
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:107
 #: data/multiplayer/scenarios/3p_Alirok_Marsh.cfg:31
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:31
 #: data/multiplayer/scenarios/3p_Morituri.cfg:31
@@ -579,7 +579,7 @@ msgstr "Est"
 #: data/multiplayer/scenarios/2p_Fallenstar_Lake.cfg:24
 #: data/multiplayer/scenarios/2p_Ruined_Passage.cfg:24
 #: data/multiplayer/scenarios/2p_Silverhead_Crossing.cfg:21
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:115
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:119
 #: data/multiplayer/scenarios/3p_Alirok_Marsh.cfg:42
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:42
 #: data/multiplayer/scenarios/3p_Morituri.cfg:42
@@ -1818,8 +1818,10 @@ msgstr "2g - La fortezza dai mille pungiglioni"
 
 #. [multiplayer]: id=multiplayer_thousand_stings_garrison
 #: data/multiplayer/scenarios/2p_Thousand_Stings_Garrison.cfg:39
+#, fuzzy
+#| msgid "A strange place. Designed by Doc Paterson"
 msgid "A strange place. Designed by Doc Paterson."
-msgstr "Uno strano posto. Progettato da Doc Paterson."
+msgstr "Uno strano posto. Progettato da Doc Paterson"
 
 #. [side]
 #: data/multiplayer/scenarios/2p_Thousand_Stings_Garrison.cfg:93
@@ -1913,7 +1915,7 @@ msgstr ""
 "hanno deciso di darsi battaglia in questo posto."
 
 #. [note]
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:157
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:161
 msgid ""
 "The map contains mausoleums and campfires that shift the time of the day by "
 "one step toward night and day, respectively."
@@ -1922,7 +1924,7 @@ msgstr ""
 "giorno in avanti rispettivamente di notte e di giorno."
 
 #. [note]
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:160
+#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:164
 msgid ""
 "The tile in the centre, which contains the casket of the titular "
 "necromancer, is always covered in pitch black fog."

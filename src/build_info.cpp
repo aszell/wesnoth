@@ -32,8 +32,10 @@
 
 #include <boost/version.hpp>
 
+#ifndef __APPLE__
 #include <openssl/crypto.h>
 #include <openssl/opensslv.h>
+#endif
 
 #include <pango/pangocairo.h>
 
@@ -67,15 +69,17 @@ std::string format_version(unsigned a, unsigned b, unsigned c)
 
 std::string format_version(const SDL_version& v)
 {
-	return formatter() << unsigned(v.major) << '.'
-						<< unsigned(v.minor) << '.'
-						<< unsigned(v.patch);
+	return formatter() << static_cast<unsigned>(v.major) << '.'
+						<< static_cast<unsigned>(v.minor) << '.'
+						<< static_cast<unsigned>(v.patch);
 }
+
+#ifndef __APPLE__
 
 std::string format_openssl_patch_level(uint8_t p)
 {
 	return p <= 26
-		? std::string(1, 'a' + char(p) - 1)
+		? std::string(1, 'a' + static_cast<char>(p) - 1)
 		: "patch" + std::to_string(p);
 }
 
@@ -158,6 +162,8 @@ std::string format_openssl_version(long v)
 
 }
 
+#endif
+
 version_table_manager::version_table_manager()
 	: compiled(LIB_COUNT, "")
 	, linked(LIB_COUNT, "")
@@ -233,9 +239,11 @@ version_table_manager::version_table_manager()
 	// OpenSSL/libcrypto
 	//
 
+#ifndef __APPLE__
 	compiled[LIB_CRYPTO] = format_openssl_version(OPENSSL_VERSION_NUMBER);
 	linked[LIB_CRYPTO] = format_openssl_version(SSLeay());
 	names[LIB_CRYPTO] = "OpenSSL/libcrypto";
+#endif
 
 	//
 	// Cairo

@@ -268,7 +268,7 @@ public:
 			std::vector< aspect_ptr > default_aspects;
 			engine::parse_aspect_from_config(*this,_default,parent_id_,std::back_inserter(default_aspects));
 			if (!default_aspects.empty()) {
-				typename aspect_type<T>::typesafe_ptr b = std::dynamic_pointer_cast< typesafe_aspect<T>>(default_aspects.front());
+				typesafe_aspect_ptr<T> b = std::dynamic_pointer_cast< typesafe_aspect<T>>(default_aspects.front());
 				if (composite_aspect<T>* c = dynamic_cast<composite_aspect<T>*>(b.get())) {
 					c->parent_id_ = parent_id_;
 				}
@@ -276,7 +276,7 @@ public:
 			}
 		}
 
-		std::function<void(typename aspect_type<T>::typesafe_ptr_vector&, const config&)> factory_facets =
+		std::function<void(typesafe_aspect_vector<T>&, const config&)> factory_facets =
                         std::bind(&ai::composite_aspect<T>::create_facet,*this,_1,_2);
 
 		register_facets_property(this->property_handlers(),"facet",facets_,default_, factory_facets);
@@ -284,12 +284,12 @@ public:
 	}
 
 
-	void create_facet(  typename aspect_type<T>::typesafe_ptr_vector &facets, const config &cfg)
+	void create_facet(typesafe_aspect_vector<T>& facets, const config &cfg)
 	{
 		std::vector<aspect_ptr> facets_base;
 		engine::parse_aspect_from_config(*this,cfg,parent_id_,std::back_inserter(facets_base));
 		for (aspect_ptr a : facets_base) {
-			typename aspect_type<T>::typesafe_ptr b = std::dynamic_pointer_cast< typesafe_aspect<T>> (a);
+			typesafe_aspect_ptr<T> b = std::dynamic_pointer_cast< typesafe_aspect<T>> (a);
 			if (composite_aspect<T>* c = dynamic_cast<composite_aspect<T>*>(b.get())) {
 				c->parent_id_ = parent_id_;
 			}
@@ -318,7 +318,7 @@ public:
 	virtual config to_config() const
 	{
 		config cfg = aspect::to_config();
-		for (const typename aspect_type<T>::typesafe_ptr f : facets_) {
+		for (const typesafe_aspect_ptr<T> f : facets_) {
 			cfg.add_child("facet",f->to_config());
 		}
 		if (default_) {
@@ -338,7 +338,7 @@ public:
 		engine::parse_aspect_from_config(*this,cfg,parent_id_,std::back_inserter(facets));
 		int j=0;
 		for (aspect_ptr a : facets) {
-			typename aspect_type<T>::typesafe_ptr b = std::dynamic_pointer_cast< typesafe_aspect<T>> (a);
+			typesafe_aspect_ptr<T> b = std::dynamic_pointer_cast< typesafe_aspect<T>> (a);
 			if (composite_aspect<T>* c = dynamic_cast<composite_aspect<T>*>(b.get())) {
 				c->parent_id_ = parent_id_;
 			}
@@ -367,8 +367,8 @@ public:
 	}
 
 protected:
-	typename aspect_type<T>::typesafe_ptr_vector facets_;
-	typename aspect_type<T>::typesafe_ptr default_;
+	typesafe_aspect_vector<T> facets_;
+	typesafe_aspect_ptr<T> default_;
 	std::string parent_id_;
 
 };
@@ -380,8 +380,7 @@ public:
 		: typesafe_aspect<T>(context, cfg, id)
 	{
 		this->name_ = "standard_aspect";
-		std::shared_ptr<T> value(new T(config_value_translator<T>::cfg_to_value(this->cfg_)));
-		this->value_= value;
+		this->value_ = std::make_shared<T>(config_value_translator<T>::cfg_to_value(this->cfg_));
 		LOG_STREAM(debug, aspect::log()) << "standard aspect has value: "<< std::endl << config_value_translator<T>::value_to_cfg(this->get()) << std::endl;
 	}
 
@@ -503,8 +502,7 @@ public:
 
 	aspect_ptr get_new_instance( readonly_context &context, const config &cfg, const std::string &id)
 	{
-		std::shared_ptr<ASPECT> _a(new ASPECT(context,cfg,id));
-		aspect_ptr a = _a;
+		aspect_ptr a = std::make_shared<ASPECT>(context, cfg, id);
 		a->on_create();
 		return a;
 	}
@@ -545,8 +543,7 @@ public:
 
 	aspect_ptr get_new_instance( readonly_context &context, const config &cfg, const std::string &id, std::shared_ptr<lua_ai_context>& l_ctx)
 	{
-		std::shared_ptr<ASPECT> _a(new ASPECT(context,cfg,id,l_ctx));
-		aspect_ptr a = _a;
+		aspect_ptr a = std::make_shared<ASPECT>(context, cfg, id, l_ctx);
 		a->on_create();
 		return a;
 	}
