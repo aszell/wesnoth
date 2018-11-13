@@ -6,20 +6,21 @@
 # Széll Tamás <tomi@digiflex.hu>, 2005.
 # Máthé katalin <katkadu@gmail.com>, 2008.
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2008., 2009, 2010, 2011, 2014.
+# Krutki Tamás <krtamas-wesnoth@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-multiplayer\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-16 07:03 UTC\n"
-"PO-Revision-Date: 2014-05-09 00:09+0200\n"
-"Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
-"Language-Team: Hungarian <wesnoth-hungtrans@gna.org>\n"
+"PO-Revision-Date: 2018-11-13 22:31+0100\n"
+"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
+"Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #. [generic_multiplayer]: id=user_map
 #: data/multiplayer/_main.cfg:8
@@ -64,11 +65,10 @@ msgstr ""
 #. [era]: id=era_dunefolk
 #: data/multiplayer/eras.cfg:83
 msgid "Default + Dunefolk"
-msgstr ""
+msgstr "Alapértelmezett + Dűnenép"
 
 #. [era]: id=era_dunefolk
 #: data/multiplayer/eras.cfg:84
-#, fuzzy
 #| msgid ""
 #| "An era featuring an additional faction besides the six factions from "
 #| "Default Era. Khalifate units use no magic, but instead rely on careful "
@@ -84,9 +84,9 @@ msgid ""
 "This era is still under development, so please be sure to report any "
 "problems that arise."
 msgstr ""
-"Egy korszak, amelyben az alapértelmezett kor hat szövetsége mellett egy "
-"további is megtalálható. A Kalifátus egységei nem használnak mágiát, hanem a "
-"terep, valamint a hajnali és alkonyati hadműveletek aprólékos "
+"Egy korszak, amelyben az alapértelmezett kor hat szövetsége mellett "
+"egy további is megtalálható. A dűnenép egységei a terep, "
+"valamint a hajnali és alkonyati hadműveletek aprólékos "
 "megválasztására támaszkodnak.\n"
 "\n"
 "Ez a korszak még mindig fejlesztés alatt áll, ezért kérünk, jelents minden "
@@ -94,14 +94,12 @@ msgstr ""
 
 #. [era]: id=era_dunefolk_heroes
 #: data/multiplayer/eras.cfg:94
-#, fuzzy
 #| msgid "Age of Heroes"
 msgid "Age of Heroes + Dunefolk"
-msgstr "Hősök kora"
+msgstr "Hősök kora + Dűnenép"
 
 #. [era]: id=era_dunefolk_heroes
 #: data/multiplayer/eras.cfg:95
-#, fuzzy
 #| msgid ""
 #| "An era featuring an additional faction besides the six factions from Age "
 #| "of Heroes Era. Khalifate units use no magic, but instead rely on careful "
@@ -117,8 +115,8 @@ msgid ""
 "This era is still under development, so please be sure to report any "
 "problems that arise."
 msgstr ""
-"Egy korszak, amelyben a hősök korának hat szövetsége mellett egy további is "
-"megtalálható. A Kalifátus egységei nem használnak mágiát, hanem a terep, "
+"Egy korszak, amelyben a hősök korának hat szövetsége mellett "
+"egy további is megtalálható. A Dűnenép egységei a terep, "
 "valamint a hajnali és alkonyati hadműveletek aprólékos megválasztására "
 "támaszkodnak.\n"
 "\n"
@@ -178,7 +176,7 @@ msgstr ""
 #: data/multiplayer/factions/dunefolk-aoh.cfg:4
 #: data/multiplayer/factions/dunefolk-default.cfg:4
 msgid "Dunefolk"
-msgstr ""
+msgstr "Dűnenép"
 
 #. [multiplayer_side]: id=Dunefolk, type=random
 #: data/multiplayer/factions/dunefolk-aoh.cfg:14
@@ -405,10 +403,9 @@ msgstr "Dél"
 
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:289
-#, fuzzy
 #| msgid "Death of your team leaders"
 msgid "Defeat enemy leader(s)"
-msgstr "Csapatod összes vezetője elesik"
+msgstr "Legyőzöd az (összes) ellenfél vezérét"
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:293
@@ -572,12 +569,12 @@ msgstr ""
 
 #. [side]
 #: data/multiplayer/scenarios/2p_Caves_of_the_Basilisk.cfg:89
+#, fuzzy
 #: data/multiplayer/scenarios/2p_Sullas_Ruins.cfg:95
 #: data/multiplayer/scenarios/2p_Thousand_Stings_Garrison.cfg:91
-#, fuzzy
 #| msgid "teamname^Southwest"
 msgid "teamname^Statues"
-msgstr "Délnyugat"
+msgstr "Szobrok"
 
 #. [unit]
 #: data/multiplayer/scenarios/2p_Caves_of_the_Basilisk.cfg:94
@@ -1037,7 +1034,7 @@ msgstr ""
 #, fuzzy
 #| msgid "4p — Clash"
 msgid "2p — Clearing Gushes"
-msgstr "4j - Összecsapás"
+msgstr "2j - Tisztító áradatok"
 
 #. [multiplayer]: id=multiplayer_Clearing_Gushes
 #: data/multiplayer/scenarios/2p_Clearing_Gushes.cfg:8
@@ -1365,7 +1362,7 @@ msgstr ""
 #, fuzzy
 #| msgid "2p — Hamlets"
 msgid "2p — Hellhole"
-msgstr "2j - Falvacskák"
+msgstr "2j - Pokolfészek"
 
 #. [multiplayer]: id=multiplayer_Hellhole
 #: data/multiplayer/scenarios/2p_Hellhole.cfg:8
@@ -1509,8 +1506,9 @@ msgstr ""
 
 #. [multiplayer]: id=multiplayer_Ruined_Passage
 #: data/multiplayer/scenarios/2p_Ruined_Passage.cfg:7
+#, fuzzy
 msgid "2p — Ruined Passage"
-msgstr ""
+msgstr "2j - Romos átjáró"
 
 #. [multiplayer]: id=multiplayer_Ruined_Passage
 #: data/multiplayer/scenarios/2p_Ruined_Passage.cfg:8
@@ -1527,8 +1525,9 @@ msgstr ""
 
 #. [multiplayer]: id=multiplayer_Ruphus_Isle
 #: data/multiplayer/scenarios/2p_Ruphus_Isle.cfg:7
+#, fuzzy
 msgid "2p — Ruphus Isle"
-msgstr ""
+msgstr "2j - Rufusz-sziget"
 
 #. [multiplayer]: id=multiplayer_Ruphus_Isle
 #: data/multiplayer/scenarios/2p_Ruphus_Isle.cfg:8
@@ -1570,7 +1569,7 @@ msgstr ""
 #, fuzzy
 #| msgid "teamname^Center"
 msgid "teamname^Shapeshifter"
-msgstr "Közép"
+msgstr "Alakváltó"
 
 #. [unit]: type=Tentacle of the Deep
 #: data/multiplayer/scenarios/2p_Silverhead_Crossing.cfg:52
@@ -1665,10 +1664,9 @@ msgstr "Ez Lo-bsangnak, Sulla szolgálójának kőből faragott képmása."
 
 #. [multiplayer]: id=multiplayer_Swamp_of_Dread
 #: data/multiplayer/scenarios/2p_Swamp_of_Dread.cfg:7
-#, fuzzy
 #| msgid "2p — Sablestone Delta"
 msgid "2p — Swamp of Dread"
-msgstr "2j - Gyászos kövek deltavidéke"
+msgstr "2j - Holtláp"
 
 #. [multiplayer]: id=multiplayer_Swamp_of_Dread
 #: data/multiplayer/scenarios/2p_Swamp_of_Dread.cfg:8
@@ -1709,10 +1707,9 @@ msgstr ""
 
 #. [multiplayer]: id=multiplayer_The_Walls_of_Pyrennis
 #: data/multiplayer/scenarios/2p_The_Walls_of_Pyrennis.cfg:7
-#, fuzzy
 #| msgid "2p — Den of Onis"
 msgid "2p — The Walls of Pyrennis"
-msgstr "2j - Az onik odúja"
+msgstr "2j - Pyrennis falai"
 
 #. [multiplayer]: id=multiplayer_The_Walls_of_Pyrennis
 #: data/multiplayer/scenarios/2p_The_Walls_of_Pyrennis.cfg:8
@@ -1736,7 +1733,6 @@ msgstr "2j - Ezer méregtüskés őrség"
 
 #. [multiplayer]: id=multiplayer_thousand_stings_garrison
 #: data/multiplayer/scenarios/2p_Thousand_Stings_Garrison.cfg:39
-#, fuzzy
 #| msgid "A strange place. Designed by Doc Paterson"
 msgid "A strange place. Designed by Doc Paterson."
 msgstr ""
@@ -1819,7 +1815,7 @@ msgstr "Szobor"
 #, fuzzy
 #| msgid "5p — Forest of Fear"
 msgid "2p — Tombs of Kesorak"
-msgstr "5j - A félelem erdeje"
+msgstr "2j - Kesorak sírhelye"
 
 #. [multiplayer]: id=multiplayer_Tombs_of_Kesorak
 #: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:8
@@ -1840,10 +1836,13 @@ msgstr ""
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:164
+#, fuzzy
 msgid ""
 "The tile in the centre, which contains the casket of the titular "
 "necromancer, is always covered in pitch black fog."
 msgstr ""
+"A középső mezőt, mely a névadó holtidéző koporsóját tartalmazza, "
+"mindig koromfekete köd borítja."
 
 #. [multiplayer]: id=multiplayer_Weldyn_Channel
 #: data/multiplayer/scenarios/2p_Weldyn_Channel.cfg:5
@@ -1906,7 +1905,6 @@ msgstr "3j - A Horatiak szigete"
 
 #. [multiplayer]: id=multiplayer_Island_of_the_Horatii
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:6
-#, fuzzy
 #| msgid ""
 #| "Controlling the central island is often the key to victory in this "
 #| "21x21hex 3 player free for all map."
@@ -1915,8 +1913,7 @@ msgid ""
 "free for all map."
 msgstr ""
 "A középen elhelyezkedő sziget feletti ellenőrzés jelenti a győzelem kulcsát "
-"ezen a 21×21 hatszög méretű, három játékosra tervezett (mindenki mindenki "
-"ellen, MME) pályán."
+"ezen a három játékosra tervezett (mindenki mindenki ellen, MME) pályán."
 
 #. [multiplayer]: id=multiplayer_3p_Morituri
 #: data/multiplayer/scenarios/3p_Morituri.cfg:5
@@ -1937,7 +1934,7 @@ msgstr ""
 #, fuzzy
 #| msgid "4p — Paths of Daggers"
 msgid "4p — Bath of Glory"
-msgstr "4j - A tőrök útja"
+msgstr "4p - Dicsőség Fürdője"
 
 #. [multiplayer]: id=multiplayer_Bath_of_Glory
 #: data/multiplayer/scenarios/4p_Bath_of_Glory.cfg:9
@@ -2021,7 +2018,7 @@ msgstr "Egy kis térkép 2-2 elleni játékhoz."
 #, fuzzy
 #| msgid "2p — Aethermaw"
 msgid "4p — Geothermal"
-msgstr "2j - Étercsapda"
+msgstr "4j - Geotermikus"
 
 #. [multiplayer]: id=multiplayer_Geothermal
 #: data/multiplayer/scenarios/4p_Geothermal.cfg:9
@@ -2054,7 +2051,6 @@ msgstr "4j - Isar keresztje"
 
 #. [multiplayer]: id=multiplayer_Isars_Cross
 #: data/multiplayer/scenarios/4p_Isars_Cross.cfg:9
-#, fuzzy
 #| msgid ""
 #| "A very small 2 vs. 2 map. Close quarters fighting means the successful "
 #| "rotation of units and planning of moves is important. Teams set for "
@@ -2116,7 +2112,6 @@ msgstr ""
 
 #. [multiplayer]: id=multiplayer_King_of_the_Hill
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:9
-#, fuzzy
 #| msgid ""
 #| "Controlling the area around the central keep is very lucrative in this "
 #| "36X36 4 player FFA map. Works fine 2 vs. 2 as well. There are 36 villages."
@@ -2125,7 +2120,7 @@ msgid ""
 "player FFA map. Works fine 2 vs. 2 as well. There are 36 villages."
 msgstr ""
 "Létfontosságú a középen elhelyezkedő várat és környékét ellenőrzés alatt "
-"tartani ezen a 36×36 hatszög méretű, négy játékosnak (mindenki mindenki "
+"tartani ezen a négy játékosnak (mindenki mindenki "
 "ellen, MME) szánt pályán. Remekül működik 2 fős csapatokkal is. A térképen "
 "36 falu található."
 
@@ -2158,7 +2153,6 @@ msgstr "4j - Loris-folyó"
 
 #. [multiplayer]: id=multiplayer_Loris_River
 #: data/multiplayer/scenarios/4p_Loris_River.cfg:9
-#, fuzzy
 #| msgid ""
 #| "A 25x25 2 vs. 2 map centered around a river with keeps in opposite "
 #| "corners. Designed for players 1&4 vs. 2&3. There are 28 villages."
@@ -2166,7 +2160,7 @@ msgid ""
 "2 vs. 2 map centered around a river with keeps in opposite corners. Designed "
 "for players 1 &amp; 4 vs. 2 &amp; 3. There are 28 villages."
 msgstr ""
-"Egy 25×25 hatszög méretű 2-2 elleni pálya, melyen a térkép sarkaiból 2-2 "
+"Egy 2-2 elleni pálya, melyen a térkép sarkaiból 2-2 "
 "várkastély néz farkasszemet egymással a folyó fölött. A csapatbeállítások a "
 "következők: az 1-es és a 4-es játékos kontra a 2-es és a 3-as játékos. A "
 "térképen 28 falu található."
@@ -2195,7 +2189,6 @@ msgstr ""
 
 #. [multiplayer]: id=multiplayer_Paths_of_Daggers
 #: data/multiplayer/scenarios/4p_Paths_of_Daggers.cfg:9
-#, fuzzy
 #| msgid ""
 #| "A 35X27 2 vs. 2 map with 5 separate paths of engagement. Balanced to be "
 #| "played east vs. west (1&4 vs. 2&3), but works well with any teams or FFA."
@@ -2204,7 +2197,7 @@ msgid ""
 "east vs. west (1 &amp; 4 vs. 2 &amp; 3), but works well with any teams or "
 "FFA."
 msgstr ""
-"Egy 35×27 hatszög méretű 2-2 elleni pálya, melyen öt különböző útvonalon "
+"Egy 2-2 elleni pálya, melyen öt különböző útvonalon "
 "keresztül lehet egymás torkának esni. A térkép a kelet kontra nyugat (az 1-"
 "es és a 4-es játékos kontra a 2-es és a 3-as játékos) játék esetén a "
 "legkiegyensúlyozottabb, de bármilyen csapatbeállítással, vagy mindenki "
@@ -2217,7 +2210,6 @@ msgstr "4j - Terra-Dwelve romjai"
 
 #. [multiplayer]: id=multiplayer_Ruins_of_Terra-Dwelve
 #: data/multiplayer/scenarios/4p_Ruins_of_Terra-Dwelve.cfg:7
-#, fuzzy
 #| msgid ""
 #| "Battle over the legendary treasures of the ancient ruins of Terra-Dwelve. "
 #| "Large multi-fronted 2vs2 set in a vast underground complex."
@@ -2235,7 +2227,6 @@ msgstr "4j - Ostromlott várak"
 
 #. [multiplayer]: id=multiplayer_Siege_Castles
 #: data/multiplayer/scenarios/4p_Siege_Castles.cfg:9
-#, fuzzy
 #| msgid ""
 #| "36X36 4 player map where 4 mighty castles face off at the convergence of "
 #| "two rivers. Works well as 2 vs. 2 or FFA. There are approximately 45 "
@@ -2244,7 +2235,7 @@ msgid ""
 "A 4 player map where 4 mighty castles face off at the convergence of two "
 "rivers. Works well as 2 vs. 2 or FFA. There are approximately 45 villages."
 msgstr ""
-"Egy 36×36 hatszög méretű, négy játékosnak szánt pálya, melyen négy hatalmas "
+"Egy 4 játékosnak szánt pálya, melyen négy hatalmas "
 "várkastély néz farkasszemet egymással két folyó megközelítőleg T alakú "
 "találkozásánál. 2-2 ellen, és mindenki mindenki ellen (MME) játszva is "
 "élvezetes. A térképen körülbelül 45 falu található."
@@ -2266,7 +2257,6 @@ msgstr "4j - Xanthe káosz"
 
 #. [multiplayer]: id=multiplayer_Xanthe_Chaos
 #: data/multiplayer/scenarios/4p_Xanthe_Chaos.cfg:9
-#, fuzzy
 #| msgid ""
 #| "A 24X28 2 vs. 2 map with auxiliary keeps, and a large messy battle in the "
 #| "center common."
@@ -2274,8 +2264,8 @@ msgid ""
 "A 2 vs. 2 map with auxiliary keeps, and a large messy battle in the center "
 "common."
 msgstr ""
-"Egy 24×28 hatszög méretű 2-2 elleni pálya, melyen kisegítő várak is "
-"fellelhetők. A térkép közepén nem ritka a rendkívül zavaros, nagy horderejű "
+"Egy 2-2 elleni pálya, melyen kisegítő várak is fellelhetők. "
+"A térkép közepén nem ritka a rendkívül zavaros, nagy horderejű "
 "csatározás."
 
 #. [multiplayer]: id=multiplayer_Auction-X
@@ -2285,7 +2275,6 @@ msgstr "5j - X-árverés"
 
 #. [multiplayer]: id=multiplayer_Auction-X
 #: data/multiplayer/scenarios/5p_Auction-X.cfg:7
-#, fuzzy
 #| msgid ""
 #| "4 players surround a central keep, play vs the AI survival style, or as a "
 #| "FFA or 4 vs. 1. The center player will need more gold in a 4 vs. 1 or "
@@ -2480,7 +2469,6 @@ msgstr "6j - A manzivai csapdák"
 
 #. [multiplayer]: id=multiplayer_The_Manzivan_Traps
 #: data/multiplayer/scenarios/6p_The_Manzivan_Traps.cfg:10
-#, fuzzy
 #| msgid ""
 #| "A 40X20 3 vs. 3 map. The Manzivan Traps are widely known as a difficult "
 #| "and confusing area of terrain where it is easy to end up out of position "
@@ -2492,7 +2480,7 @@ msgid ""
 "extended. Teams set for players 145 vs. 236 (east vs. west). Designed for "
 "100 starting gold, has 33 villages."
 msgstr ""
-"Ez egy 40×20 hatszög méretű 3-3 elleni pálya. A manzivai csapdák széles "
+"Egy 3-3 elleni pálya. A manzivai csapdák széles "
 "körben úgy ismertek, mint egy olyan bonyolult, zavarba ejtő vidék, ahol az "
 "ember könnyen otthagyhatja a fogát, ha nem a megfelelő helyen van, vagy "
 "túlzott mértékben terjeszkedik. A csapatbeállítások a következők: az 145-ös "
@@ -2506,7 +2494,6 @@ msgstr "6j - Vulkán"
 
 #. [multiplayer]: id=multiplayer_Volcano
 #: data/multiplayer/scenarios/6p_Volcano.cfg:9
-#, fuzzy
 #| msgid ""
 #| "A 3vs3 battle to control the ashes of a kingdom long ago collapsed from a "
 #| "volcanic eruption. It has 36 villages."
@@ -2524,7 +2511,6 @@ msgstr "6j - Waterlooi naplemente"
 
 #. [multiplayer]: id=multiplayer_Waterloo_Sunset
 #: data/multiplayer/scenarios/6p_Waterloo_Sunset.cfg:9
-#, fuzzy
 #| msgid ""
 #| "A 40X30 3 vs. 3 map. Flexible coordination of your alliance is required "
 #| "to avoid being outnumbered. Teams set for players 145 vs. 236 (north vs. "
@@ -2536,8 +2522,8 @@ msgid ""
 "having players 146 or 136 as a team is also interesting. Designed for 150 "
 "starting gold, has 44 villages."
 msgstr ""
-"Ez egy 40×40 hatszög méretű 3-3 elleni pálya. A szövetségeknek rugalmasan "
-"kell működniük, különben egyiküket elsöpörheti a túlerővel érkező támadás. "
+"Ez egy 3-3 elleni pálya. A szövetségeknek rugalmasan kell működniük, "
+"különben egyiküket elsöpörheti a túlerővel érkező támadás. "
 "Kezdéshez 150 arany beállítása javasolt. A csapatbeállítások a következők: "
 "az 1,4,5-ös játékosok a 2,3,6-os játékosok ellen (észak kontra dél), de az "
 "1,4,6-os, vagy az 1,3,6-os játékosok is jó csapatot alkothatnak. A pályán 44 "

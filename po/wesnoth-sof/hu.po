@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: hu-sof_1.5befejezni\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-16 07:03 UTC\n"
-"PO-Revision-Date: 2018-07-29 15:39+0100\n"
-"Last-Translator: Krutki Tamás <krtamas@0x64.org>\n"
+"PO-Revision-Date: 2018-11-13 22:05+0100\n"
+"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -3280,7 +3280,6 @@ msgstr "Az a csinos kis fém szikla az enyém! Tűnjetek onnan!"
 
 #. [message]: speaker=Thursagan
 #: data/campaigns/Sceptre_of_Fire/scenarios/8_The_Dragon.cfg:422
-#, fuzzy
 #| msgid ""
 #| "This forge will work perfectly. Give me a few days here, and I can "
 #| "reforge the Sceptre of Fire to fulfill its purpose."
@@ -3288,7 +3287,8 @@ msgid ""
 "This forge will work perfectly. Give me a day or two here, and I can reforge "
 "the Sceptre of Fire to fulfill its purpose."
 msgstr ""
-"Ez a kovácsműhely tökéletesen megfelel. Adjatok pár napot, annyi idő alatt "
+"Ez a kovácsműhely tökéletesen megfelel. Adjatok egy vagy két napot, annyi idő"
+" alatt "
 "újra tudom kovácsolni a Jogart, hogy képes legyen betölteni feladatát."
 
 #. [message]: speaker=narrator
@@ -3338,7 +3338,6 @@ msgstr "Orkok"
 #. [part]
 #. The text in 1.14.4 mentioned Knalga. Geographically, these caves are in Knalga, but the text was confusing if the reader thought of the Knalgan Alliance.
 #: data/campaigns/Sceptre_of_Fire/scenarios/9_Caverns_of_Flame.cfg:161
-#, fuzzy
 #| msgid ""
 #| "There was no exit from the caverns of Knalga. They had reached the realms "
 #| "of the orcs, with the elves hot on their trail. And there was no exit "
@@ -3347,8 +3346,8 @@ msgid ""
 "There was no exit for the dwarves. They had reached the realms of the orcs, "
 "with the elves hot on their trail. There was truly no exit from these caves."
 msgstr ""
-"Nem volt kiút Knalga tárnáiból. Rugnurék elérték az orkok területeit, "
-"miközben a tündék szorosan a nyomukban voltak. És nem volt kiút azokból a "
+"Nem volt kiút a törpök számára. Elérték az orkok területeit, "
+"miközben a tündék szorosan a nyomukban voltak. És nem volt kiút ezekből a "
 "barlangokból..."
 
 #. [part]
