@@ -14,15 +14,15 @@ msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2014-04-30 14:49+0200\n"
-"Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
-"Language-Team: American English <kde-l10n-hu@kde.org>\n"
-"Language: en_US\n"
+"PO-Revision-Date: 2018-09-18 18:30+0200\n"
+"Last-Translator: Széll András <szell.andris@gmail.com>\n"
+"Language-Team: Magyar <>\n"
+"Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:9
@@ -52,10 +52,8 @@ msgstr "(újonc szint, 23 pálya)"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:23
-#, fuzzy
-#| msgid "(Beginner)"
 msgid "Beginner"
-msgstr "(kezdő)"
+msgstr "kezdő"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:23
@@ -70,17 +68,13 @@ msgstr "Hős"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:24
-#, fuzzy
-#| msgid "(Normal)"
 msgid "Normal"
-msgstr "(közepes)"
+msgstr "átlagos"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:25
-#, fuzzy
-#| msgid "(Challenging)"
 msgid "Challenging"
-msgstr "(embert próbáló)"
+msgstr "kihívást jelentő"
 
 #. [campaign]: id=Heir_To_The_Throne
 #: data/campaigns/Heir_To_The_Throne/_main.cfg:25
@@ -375,10 +369,9 @@ msgid ""
 "us, and then you must make it to the sign post in the northwest. I will "
 "protect you!"
 msgstr ""
-"Észak felé indulunk. Talán elérjük Alduin szigetét. Ha odáig eljutunk,  "
+"Észak felé indulunk. Talán elérjük Alduin szigetét. Ha odáig eljutunk, "
 "biztonságban leszünk. Konrad, tündéket kell toboroznunk, hogy segítsenek, "
-"utána pedig el kell érned az útjelző táblát északnyugaton.\n"
-"Megvédelek!"
+"utána pedig el kell érned az útjelző táblát északnyugaton. Megvédelek!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/01_The_Elves_Besieged.cfg:294
@@ -673,16 +666,12 @@ msgstr "És ez a hajó elvisz minket Alduinra?"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/02_Blackwater_Port.cfg:194
-#, fuzzy
-#| msgid ""
-#| "Yes, we will sail to the Isle of Alduin, my home Konrad, and the home of "
-#| "many magi."
 msgid ""
 "Yes, we will sail to the Isle of Alduin, my home, Konrad, and the home of "
 "many magi."
 msgstr ""
-"Igen, Konrad, Alduin szigetére fogunk vitorlázni.  Az az otthonom, és sok "
-"más mágus otthona."
+"Igen, Konrad, Alduin szigetére fogunk vitorlázni. Az az otthonom, és sok más "
+"mágus otthona."
 
 #. [message]: speaker=Kaylan
 #: data/campaigns/Heir_To_The_Throne/scenarios/02_Blackwater_Port.cfg:198
@@ -717,8 +706,8 @@ msgstr ""
 "bevallanák. A lovasok is erősek, csak másképp. Ugyan nincs távolsági "
 "támadásuk, de ellenfelüket meg is rohamozhatják, és ekkor a normális sebzés "
 "kétszeresét okozzák, bár cserében ők maguk is a normális sebzés kétszeresét "
-"szenvedik el. Szintén igazságosak, azaz nappal jobban harcolnak, éjjel pedig "
-"rosszabbul. A lovasoknak nincs párjuk nyílt terepen, míg a tündék az "
+"szenvedik el. Emellett igazságosak, azaz nappal jobban harcolnak, éjjel "
+"pedig rosszabbul. A lovasoknak nincs párjuk nyílt terepen, míg a tündék az "
 "egyenetlen területeken tesznek jobb szolgálatot."
 
 #. [message]: speaker=Kaylan
@@ -868,7 +857,7 @@ msgid ""
 "the forces of the Dark Queen."
 msgstr ""
 "Jó utat, barátaim. Biztosíthatlak, sohasem adjuk meg magunkat a Sötét "
-"Királynő hadainak. "
+"Királynő hadainak."
 
 #. [message]: speaker=unit
 #: data/campaigns/Heir_To_The_Throne/scenarios/02_Blackwater_Port.cfg:557
@@ -984,11 +973,6 @@ msgstr ""
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/03_The_Isle_of_Alduin.cfg:258
 #: data/campaigns/Heir_To_The_Throne/scenarios/03_The_Isle_of_Alduin.cfg:348
-#, fuzzy
-#| msgid ""
-#| "Caution, young prince. It is very difficult to train inexperienced magi "
-#| "in combat. When they fight on the front lines of battle, you must protect "
-#| "magi with stronger units else the enemy will make short work of them."
 msgid ""
 "Caution, young prince. It is very difficult to train inexperienced magi in "
 "combat. When they fight on the front lines of battle, you must protect magi "
@@ -996,7 +980,7 @@ msgid ""
 msgstr ""
 "Óvatosan, ifjú herceg. Nehéz feladat a tapasztalatlan mágusokat éles harcban "
 "kiképezni. Ha az első vonalban harcolnak, védelmükre kell küldeni erősebb "
-"egységeket is, különben az ellenség könnyű szerrel végez velük."
+"egységeket is, különben az ellenség könnyűszerrel végez velük."
 
 #. [unit]: type=Arch Mage, id=Seimus
 #: data/campaigns/Heir_To_The_Throne/scenarios/03_The_Isle_of_Alduin.cfg:276
@@ -1064,7 +1048,7 @@ msgid ""
 "We must indeed go there. Let us therefore rest here a little, and then set "
 "sail for the Bay. Hopefully we will defeat her forces there!"
 msgstr ""
-"Vallóban oda kell mennünk. De egyelőre pihenjünk meg itt, mielőtt vitorlát "
+"Valóban oda kell mennünk. De egyelőre pihenjünk meg itt, mielőtt vitorlát "
 "bontunk, és elindulunk az öböl felé. Remélem, legyőzzük az ottani csapatait."
 
 #. [scenario]: id=04_The_Bay_of_Pearls
@@ -1381,16 +1365,12 @@ msgstr "Ó, nem! Mit tegyünk?"
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/04_The_Bay_of_Pearls.cfg:724
 #: data/campaigns/Heir_To_The_Throne/scenarios/04_The_Bay_of_Pearls.cfg:851
-#, fuzzy
-#| msgid ""
-#| "You must lead our men to the city, and help defend it. Or recapture it if "
-#| "it falls before you arrive."
 msgid ""
 "You must lead your men to the city. Help defend it, or recapture it if it "
 "falls before you arrive!"
 msgstr ""
-"Vezesd csapatainkat a városhoz, és segíts megvédeni – vagy ha addigra "
-"elesett, foglald vissza!"
+"Vezesd csapataidat a városhoz, és segíts megvédeni – vagy ha addigra elesik, "
+"foglald vissza!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/04_The_Bay_of_Pearls.cfg:729
@@ -1435,18 +1415,12 @@ msgstr "Nagyon jó. De hogyan jutok el odáig?"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/04_The_Bay_of_Pearls.cfg:766
-#, fuzzy
-#| msgid ""
-#| "It is north-west of here, a few leagues inland. There are two ways to go, "
-#| "by ship or on foot. Each has its own dangers. You must choose between "
-#| "them."
 msgid ""
 "There are two ways to go, by ship or on foot. Each has its own dangers. You "
 "must choose between them."
 msgstr ""
-"Innen északnyugatra fekszik, jó két tucat mérföldre. Két módon is "
-"odajuthatsz: hajóval vagy szárazföldön. Mindkét útvonalnak megvannak a maga "
-"veszélyei. Neked kell választanod!"
+"Két módon juthatsz oda: hajóval vagy szárazföldön. Mindkét útvonalnak "
+"megvannak a maga veszélyei. Neked kell választanod!"
 
 #. [option]
 #: data/campaigns/Heir_To_The_Throne/scenarios/04_The_Bay_of_Pearls.cfg:768
@@ -1501,19 +1475,14 @@ msgstr ""
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/04_The_Bay_of_Pearls.cfg:842
-#, fuzzy
-#| msgid ""
-#| "I bear ill tidings. Asheviere has laid siege to Elensefar, breaking the "
-#| "century-old treaty between Wesnoth and the Elense city-state. If the city "
-#| "falls, there is no telling how many other lands she may swallow up!"
 msgid ""
 "I bear ill tidings, Konrad. Asheviere has laid siege to Elensefar, breaking "
 "the century-old treaty between Wesnoth and the Elense city-state. If the "
 "city falls, there is no telling how many other lands she may swallow up!"
 msgstr ""
-"Rossz híreket hoztam: Asheviere ostrom alá vette Elensefar városát, felrúgva "
-"a százéves szerződést Wesnoth és a városállam között. Ha a város elesik, ki "
-"tudja, mekkora területet kebelez még be!"
+"Rossz híreket hoztam, Konrad: Asheviere ostrom alá vette Elensefar városát, "
+"felrúgva a százéves szerződést Wesnoth és a városállam között. Ha a város "
+"elesik, ki tudja, mekkora területet kebelez még be!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/04_The_Bay_of_Pearls.cfg:855
@@ -1761,8 +1730,8 @@ msgid ""
 "devastated the island into an ugly wasteland."
 msgstr ""
 "Eddig csak aggasztó híreket hallottuk erről a helyről, uram. Azt beszélik, "
-"hogy az élőholtak csapatai ellepték a szigetet, és az egészet sivár tarlóvá "
-"változtatták."
+"hogy az élőholtak csapatai ellepték a szigetet, és az egészet sivár "
+"pusztasággá változtatták."
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/05b_Isle_of_the_Damned.cfg:227
@@ -1912,11 +1881,6 @@ msgstr ""
 
 #. [message]: speaker=Moremirmu
 #: data/campaigns/Heir_To_The_Throne/scenarios/05b_Isle_of_the_Damned.cfg:553
-#, fuzzy
-#| msgid ""
-#| "Thank you for your assistance here brothers. I will stay to continue "
-#| "resisting the foul undead. May fate be with you in your noble quest, and "
-#| "may we meet again some day!"
 msgid ""
 "Thank you for your assistance here, brothers. I will stay to continue "
 "resisting the foul undead. May fate be with you in your noble quest, and may "
@@ -2004,7 +1968,7 @@ msgid ""
 "Here come the elves! Our newly forged alliance with the orcs will give us "
 "the power to crush them with ease!"
 msgstr ""
-"Itt jönnek a tündék! De újdonsült szövetségesünkkel, az orkokkal, immár "
+"Itt jönnek a tündék! De újdonsült szövetségeseinkkel, az orkokkal, immár "
 "könnyedén eltiporjuk őket!"
 
 #. [message]: speaker=Konrad
@@ -2179,10 +2143,8 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Heir_To_The_Throne/scenarios/06_The_Siege_of_Elensefar.cfg:474
-#, fuzzy
-#| msgid "You can now recruit magi!"
 msgid "You can now recruit Thieves!"
-msgstr "Most már mágusokat is toborozhatsz!"
+msgstr "Most már tolvajokat is toborozhatsz!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Heir_To_The_Throne/scenarios/06_The_Siege_of_Elensefar.cfg:494
@@ -2315,8 +2277,6 @@ msgstr ""
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/06_The_Siege_of_Elensefar.cfg:664
-#, fuzzy
-#| msgid "Oh, and you want me to get this scepter?"
 msgid "Oh, and you want me to get this Sceptre?"
 msgstr "Áh! Tehát azt akarod, hogy találjam meg ezt a jogart?"
 
@@ -2522,17 +2482,13 @@ msgstr "Wesnoth hercegnője"
 
 #. [objective]: condition=win
 #: data/campaigns/Heir_To_The_Throne/scenarios/08_The_Princess_of_Wesnoth.cfg:23
-#, fuzzy
-#| msgid "Force Li’sar’s surrender (reduce her hitpoints to 0 or lower)"
 msgid "(reduce her hitpoints to 0 or lower)"
-msgstr "Li’sart megadásra kényszeríted (életerőpontjait 0-ra csökkented)"
+msgstr "(életerőpontjait 0-ra csökkented)"
 
 #. [objective]: condition=win
 #: data/campaigns/Heir_To_The_Throne/scenarios/08_The_Princess_of_Wesnoth.cfg:23
-#, fuzzy
-#| msgid "Force Li’sar’s surrender (reduce her hitpoints to 0 or lower)"
 msgid "Force Li’sar’s surrender"
-msgstr "Li’sart megadásra kényszeríted (életerőpontjait 0-ra csökkented)"
+msgstr "Li’sart megadásra kényszeríted"
 
 #. [part]
 #: data/campaigns/Heir_To_The_Throne/scenarios/08_The_Princess_of_Wesnoth.cfg:50
@@ -2766,9 +2722,9 @@ msgid ""
 "blades... if that is possible for an undead minion."
 msgstr ""
 "Az embereim szenteltvízbe mártják a fegyvereinket, ha élőholtakkal "
-"harcolunk. Ez általában kitart a csata végéig, és a hordák megsemmisítő "
-"félelemben hőkölnek vissza a pengéinktől... ha egyáltalán képes félelmet "
-"érezni egy élőholt talpnyaló. "
+"harcolunk. Ez általában kitart a csata végéig, és a hordák halálra rémülten "
+"hőkölnek vissza a pengéinktől... ha egyáltalán képes halálra rémülni egy "
+"élőholt talpnyaló."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/09_The_Valley_of_Death.cfg:245
@@ -2778,7 +2734,7 @@ msgstr "Tartsunk ki, amíg csak lehet!"
 #. [message]: speaker=Moremirmu
 #: data/campaigns/Heir_To_The_Throne/scenarios/09_The_Valley_of_Death.cfg:299
 msgid "I have come once again to aid you, friends!"
-msgstr "Megint a segítségetekre leszek, barátaim."
+msgstr "Megint a segítségetekre leszek, barátaim!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/09_The_Valley_of_Death.cfg:303
@@ -2835,8 +2791,8 @@ msgstr ""
 "Örömömre szolgált, és egyben kötelességem is volt, uram! Megpihenve "
 "zarándokutunkon alkalmunk volt együtt vacsorázni a hercegnő pár testőrével, "
 "és megütötte a fülünket, hogy arról beszélnek, miféle csellel vezettek téged "
-"eme veszélyes vidékre. Nem is tehettünk volna másként, minthogy rögvest "
-"segítségedre siettünk!"
+"eme veszélyes vidékre. Nem is tehettünk volna másként, mint hogy rögvest "
+"segítségedre sietünk!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/09_The_Valley_of_Death.cfg:394
@@ -2923,10 +2879,8 @@ msgstr "A Griff-hegy"
 
 #. [objective]: condition=win
 #: data/campaigns/Heir_To_The_Throne/scenarios/10_Gryphon_Mountain.cfg:35
-#, fuzzy
-#| msgid "Defeat the mother gryphon and the enemy commander"
 msgid "Defeat the mother gryphon before the enemy does"
-msgstr "Legyőzöd az anyagriffet és az ellenséges vezért"
+msgstr "Legyőzöd az anyagriffet mielőtt az ellenfél tenné meg"
 
 #. [side]: type=General, id=Robryn
 #: data/campaigns/Heir_To_The_Throne/scenarios/10_Gryphon_Mountain.cfg:89
@@ -2940,10 +2894,8 @@ msgstr "Anyagriff"
 
 #. [side]: type=Gryphon, id=Mother Gryphon
 #: data/campaigns/Heir_To_The_Throne/scenarios/10_Gryphon_Mountain.cfg:111
-#, fuzzy
-#| msgid "Mother Gryphon"
 msgid "Gryphons"
-msgstr "Anyagriff"
+msgstr "Griffek"
 
 #. [event]
 #: data/campaigns/Heir_To_The_Throne/scenarios/10_Gryphon_Mountain.cfg:128
@@ -3255,7 +3207,7 @@ msgstr ""
 "Összegyűjtöttem a férfiakat, hogy megküzdjünk a trónbitorlóval és persze "
 "Asheviere-rel, mert az egész mögött ő állt. Összecsaptunk velük; nem itt, "
 "hanem még az úton Weldynből jövet, Tathnál. Túlerőben voltak, talán négyszer "
-"is annyian, mint mi. A csata hevében a fiú, az az ostoba, rám rontott, "
+"annyian is, mint mi. A csata hevében a fiú, az az ostoba, rám rontott, "
 "ádázul vagdalkozva maga körül. Nem volt más választásom, meg kellett ölnöm."
 
 #. [message]: speaker=Konrad
@@ -3306,7 +3258,7 @@ msgid ""
 "full of soldiers! We must cross here, and quickly!"
 msgstr ""
 "Gyorsan beáll a tél. Csak pár napunk maradt az átkelésre, a legközelebbi híd "
-"pedig messze feljebb van. Ha elérkezik a tél, és mi a déli oldalon rekedünk, "
+"pedig jóval feljebb van. Ha elérkezik a tél, és mi a déli oldalon rekedünk, "
 "az felér egy öngyilkossággal: Asheviere úgy pusztítana el minket, mint a "
 "patkányokat! Nézzétek, nyugaton van egy végvára, tele katonákkal! Itt kell "
 "átkelnünk, mégpedig gyorsan!"
@@ -3337,27 +3289,23 @@ msgstr "Már megint ez az átkozott nőszemély! Gyorsan, siessünk!"
 #. [message]: type=Royal Guard
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:326
 msgid "Stop! You shall not pass!"
-msgstr ""
+msgstr "Állj! Itt nem kelhettek át!"
 
 #. [message]
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:368
-#, fuzzy
-#| msgid ""
-#| "Stop! You shall not pass! Quick, reinforcements, protect the Princess!"
 msgid "Quick, reinforcements, protect the Princess!"
-msgstr "Állj! Itt nem jutsz át! Gyorsan, erősítést, védjétek a hercegnőt!"
+msgstr "Gyorsan, erősítést, védjétek a hercegnőt!"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:387
 msgid "Quick, reinforcements!"
-msgstr ""
+msgstr "Gyorsan, erősítést!"
 
 #. [message]
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:407
 #, fuzzy
-#| msgid "female^Battle Princess"
 msgid "Protect the Princess!"
-msgstr "Csatázó hercegnő"
+msgstr "Védjétek a hercegnőt!"
 
 #. [message]: speaker=Li'sar
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:428
@@ -3374,7 +3322,7 @@ msgstr "Tengeri kígyó"
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:442
 #: data/campaigns/Heir_To_The_Throne/scenarios/13_The_Dwarven_Doors.cfg:706
 msgid "Cuttle Fish"
-msgstr "Kalmárhal"
+msgstr "Tintahal"
 
 #. [message]: type=Water Serpent
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:462
@@ -3402,16 +3350,12 @@ msgstr "Biztonságban átértünk! Merre tovább?"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:490
-#, fuzzy
-#| msgid ""
-#| "If we are to have any hope of penetrating into Knalga, we must continue "
-#| "north to seek help from the Dwarves of the Heart Mountains in the north."
 msgid ""
 "If we are to have any hope of penetrating into Knalga, we must continue "
 "north to seek help from the Dwarves of the Heart Mountains."
 msgstr ""
 "Ha van bármi remény, hogy eljussunk Knalga földjére, akkor észak felé kell "
-"folytatnunk az utunkat, hogy segítséget kérhessünk a Szívhegység törpjeitől."
+"folytatnunk az utunkat, hogy segítséget kérhessünk a Szív-hegység törpjeitől."
 
 #. [message]: speaker=Li'sar
 #: data/campaigns/Heir_To_The_Throne/scenarios/11_The_Ford_of_Abez.cfg:501
@@ -3539,19 +3483,15 @@ msgstr ""
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/12_Northern_Winter.cfg:204
-#, fuzzy
-#| msgid "Then we shall wrest control of the land from them. To arms men!"
 msgid "Then we shall wrest control of the land from them. To arms!"
-msgstr "Akkor elragadjuk tőlük ezt a földet! Fegyverbe, katonák!"
+msgstr "Akkor elragadjuk tőlük ezt a földet! Fegyverbe!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/12_Northern_Winter.cfg:213
-#, fuzzy
-#| msgid ""
-#| "More snow is falling. We must finish this battle quickly. Onward men!"
 msgid "More snow is falling. We must finish this battle quickly. Onward, men!"
 msgstr ""
-"Egyre jobban esik a hó, gyorsan meg kell nyernünk ezt az ütközetet. Előre!"
+"Egyre jobban esik a hó, gyorsan meg kell nyernünk ezt az ütközetet. Előre, "
+"emberek!"
 
 #. [message]: speaker=Konrad
 #: data/campaigns/Heir_To_The_Throne/scenarios/12_Northern_Winter.cfg:337
