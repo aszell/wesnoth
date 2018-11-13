@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: hu-l_1.4_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-11-13 21:57+0100\n"
+"PO-Revision-Date: 2018-11-13 22:43+0100\n"
 "Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -684,19 +684,28 @@ msgstr "Reménykeltő stratégia"
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:18
+#, fuzzy
 msgid ""
 "Fearing that the Queen’s army would return in force in the wake of its "
 "fallen patrol, Baldras and his men fled Dallben. They tracked to Delwyn and "
 "sent ahead for the magistrate, Relana, to meet them in a secluded strath in "
 "the swamps."
 msgstr ""
+"Attól tartva, hogy a királynő hadserege egy nagyobb csapatot küld az elesett"
+" járőr után, "
+"Baldras és emberi elmenekültek Dallbenből. Delwynbe indultak, és előre"
+" üzentek a helyi vezetőnek, "
+"Relanának, hogy találkozzon velük egy elszigetelt mocsári völgyben."
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:22
+#, fuzzy
 msgid ""
 "As morning dawned over the day after next, they found Relana already waiting "
 "for them."
 msgstr ""
+"Ahogy felvirradt a következő utáni nap reggele, Relanát már rájuk várakozva"
+" találták."
 
 #. [side]: type=Highwayman_Peasant, id=Relana
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:49
