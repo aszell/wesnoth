@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-16 10:03+0300\n"
-"PO-Revision-Date: 2018-11-13 22:47+0100\n"
+"PO-Revision-Date: 2018-11-16 00:19+0100\n"
 "Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -3007,7 +3007,7 @@ msgstr "Fájl:"
 #. [label]
 #: data/gui/window/formula_debugger.cfg:36
 msgid "Formula debugger"
-msgstr "MI-minta hibajavító"
+msgstr "MI-minta hibakereső"
 
 #. [label]
 #: data/gui/window/formula_debugger.cfg:59
@@ -5199,7 +5199,7 @@ msgstr "Ellenség megtámadása"
 #. [label]
 #: data/gui/window/unit_create.cfg:47 src/hotkey/hotkey_command.cpp:115
 msgid "Create Unit (Debug!)"
-msgstr "Egység létrehozása (hibajavítás!)"
+msgstr "Egység létrehozása (hibakeresés!)"
 
 #. [toggle_button]: id=sort_0
 #: data/gui/window/unit_create.cfg:124
@@ -6833,11 +6833,11 @@ msgstr "Beszélés"
 
 #: src/hotkey/hotkey_command.cpp:116
 msgid "Change Side (Debug!)"
-msgstr "Oldal átállítása (hibajavítás!)"
+msgstr "Oldal átállítása (hibakeresés!)"
 
 #: src/hotkey/hotkey_command.cpp:117
 msgid "Kill Unit (Debug!)"
-msgstr "Egység megölése (hibajavítás!)"
+msgstr "Egység megölése (hibakeresés!)"
 
 #: src/hotkey/hotkey_command.cpp:119
 msgid "Scenario Objectives"
