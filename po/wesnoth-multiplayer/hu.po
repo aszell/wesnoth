@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: hu-multiplayer\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-16 07:03 UTC\n"
-"PO-Revision-Date: 2018-11-13 22:31+0100\n"
+"PO-Revision-Date: 2018-11-16 02:29+0100\n"
 "Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -145,8 +145,9 @@ msgstr "Összesen: <b>%d</b>"
 
 #. [lua]: f
 #: data/multiplayer/eras.lua:93
+#, fuzzy
 msgid "Sides %s and %d are tied."
-msgstr ""
+msgstr "A(z) %s. és %d. oldalak döntetlenre állnak."
 
 #. [lua]: f
 #: data/multiplayer/eras.lua:95
@@ -161,6 +162,7 @@ msgstr "Perzsekények"
 
 #. [multiplayer_side]: id=Drakes, type=random
 #: data/multiplayer/factions/drakes-aoh.cfg:14
+#, fuzzy
 #: data/multiplayer/factions/drakes-default.cfg:14
 msgid ""
 "The <bold>text='Drakes'</bold> are a faction of dragon-like "
@@ -171,6 +173,16 @@ msgid ""
 "mobility but low defense, leading to unusual tactics for a "
 "<ref>text='Default Era' dst='..era_era_default'</ref> faction."
 msgstr ""
+"A <bold>text='Perzsekények'</bold> szövetség a sárkányszerű "
+"<ref>text='perzsekényekből' dst='..race_drake'</ref> és <ref>text='gyík'"
+" dst='..race_lizard'</ref> "
+"szövetségeseikből áll. A perzsekények a sárkányok "
+"kisebb termetű leszármazottai. A gyíkok határozottan kisebbek mint a "
+"perzsekények és származásuk is eltérő. Együtt a Perzsekény szövetség "
+"mozgékony, de alacsony védekezéssel rendelkezik, amely "
+"egy <ref>text='Alapértelmezett korszak' dst='..era_era_default'</ref>beli"
+" szövetségnél "
+"szokatlan taktikákhoz vezet."
 
 #. [multiplayer_side]: id=Dunefolk, type=random
 #: data/multiplayer/factions/dunefolk-aoh.cfg:4
@@ -180,6 +192,7 @@ msgstr "Dűnenép"
 
 #. [multiplayer_side]: id=Dunefolk, type=random
 #: data/multiplayer/factions/dunefolk-aoh.cfg:14
+#, fuzzy
 #: data/multiplayer/factions/dunefolk-default.cfg:14
 msgid ""
 "The <bold>text='Dunefolk'</bold> are a faction of humans from the deserts "
@@ -190,6 +203,14 @@ msgid ""
 "of the Loyalist faction, they make up for this with high mobility — "
 "especially on hilly terrains."
 msgstr ""
+"A <bold>text='Dűnenép'</bold> a déli földek sivagatainak és dombságainak "
+"embereiből álló szövetség. A Dűnenép erőssége a terep sajátosságait"
+" kihasználó, "
+"összehangolt hajnali vagy alkonyati támadás. Soraikban találhatóak hűséges és "
+"ingadozó egységek, gyógyítók, nagy pontosságú közelharcosok, és félelmetes "
+"lovasíjászok. Ugyan a Dűnenép egységei többnyire drágábbak mint "
+"Hűséges szövetségéi, azonban ezért kárpótol nagy mozgékonyságuk — "
+"különösen a dombos terepeken."
 
 #. [multiplayer_side]: id=Knalgan Alliance, type=random
 #: data/multiplayer/factions/knalgans-aoh.cfg:4
@@ -199,6 +220,7 @@ msgstr "Knalgai szövetség"
 
 #. [multiplayer_side]: id=Knalgan Alliance, type=random
 #: data/multiplayer/factions/knalgans-aoh.cfg:13
+#, fuzzy
 #: data/multiplayer/factions/knalgans-default.cfg:13
 msgid ""
 "The <bold>text='Knalgan Alliance'</bold> is a faction of <ref>text='Dwarves' "
@@ -210,6 +232,16 @@ msgid ""
 "dwarves who are only good on certain terrain and humans who can cover ground "
 "that dwarves are not good at fighting in."
 msgstr ""
+"A <bold>text='Knalgai szövetség'</bold> <ref>text='törpök' "
+"dst='..race_dwarf'</ref>ből és törvényen kívüli <ref>text='ember' dst='.."
+"race_human'</ref> szövetségeseikből áll. A törpök egy ősi faj, akik a föld"
+" alatt élnek, "
+"harcosaik pedig alacsonyak de kemények. A törvényen kívüliek emberek, akiket "
+"nem fogad el saját fajuk társadalma, ám közös ellenségeik miatt a törpök"
+" szövetségeseivé váltak. "
+"Az ellenálló és jól védekező törpök csak bizonyos terepeken jók,"
+"ember szövetségeseik viszont fedezik azokat a területeket is, ahol a törpök"
+" nem harcolnak jól."
 
 #. [multiplayer_side]: id=Loyalists, type=random
 #: data/multiplayer/factions/loyalists-aoh.cfg:4
@@ -219,6 +251,7 @@ msgstr "Hűségesek"
 
 #. [multiplayer_side]: id=Loyalists, type=random
 #: data/multiplayer/factions/loyalists-aoh.cfg:14
+#, fuzzy
 #: data/multiplayer/factions/loyalists-default.cfg:14
 msgid ""
 "The <bold>text='Loyalists'</bold> are a faction of <ref>text='Humans' dst='.."
@@ -227,6 +260,11 @@ msgid ""
 "Loyalist faction is a very versatile melee-oriented faction with important "
 "ranged support from bowmen and mages."
 msgstr ""
+"A <bold>text='Hűségesek'</bold> egy <ref>text='emberek' dst='.."
+"race_human'</ref>ből álló szövetség, akik lojálisak Wesnoth trónjához. "
+"Az emberek egy sokoldalú faj, akik sok különböző területre specializálódnak. "
+"Hasonlóan, a Hűségesek egy sokoldalú, közelharc-központú szövetség, "
+"fontos távolsági támogatást adó mágusokkal és íjászokkal."
 
 #. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.png~BG()' align='middle'</img>
 #: data/multiplayer/factions/northerners-aoh.cfg:4
@@ -236,6 +274,7 @@ msgstr "Északiak"
 
 #. [multiplayer_side]: id=Northerners, type=random, description=<img>src='portraits/orcs/warlord.png~BG()' align='middle'</img>
 #: data/multiplayer/factions/northerners-aoh.cfg:16
+#, fuzzy
 #: data/multiplayer/factions/northerners-default.cfg:15
 msgid ""
 "The <bold>text='Northerners'</bold> are a faction of <ref>text='Orcs' dst='.."
@@ -247,6 +286,15 @@ msgid ""
 "Northerners play best by taking advantage of having many low-cost and high "
 "HP soldiers."
 msgstr ""
+"Az <bold>text='Északiak'</bold> egy <ref>text='orkok' dst='.."
+"race_orc'</ref>ból és szövetségeseikből álló szövetség, akik a Nagy Kontinens "
+"északi részén élnek — nevük is erre utal. Az Északiak szövetsége a harcos"
+" ork, a "
+"rabszolgasorba hajtott <ref>text='goblin' dst='..race_goblin'</ref>, az "
+"orkok által harcba csalt <ref>text='troll' dst='..race_troll'</ref> és a."
+"kígyószerű <ref>text='naga' dst='..race_naga'</ref> fajokból áll. "
+"Az Északiakat leginkább olcsó, sok életponttal rendelkező egységeiket "
+"kihasználva érdemes játszani."
 
 #. [multiplayer_side]: id=Rebels, type=random
 #: data/multiplayer/factions/rebels-aoh.cfg:4
@@ -256,6 +304,7 @@ msgstr "Lázadók"
 
 #. [multiplayer_side]: id=Rebels, type=random
 #: data/multiplayer/factions/rebels-aoh.cfg:14
+#, fuzzy
 #: data/multiplayer/factions/rebels-default.cfg:14
 msgid ""
 "The <bold>text='Rebels'</bold> are a faction of <ref>text='Elves' dst='.."
@@ -270,6 +319,18 @@ msgid ""
 "advantage of their high forest defense, mastery of ranged attacks, and the "
 "elves’ neutral alignment."
 msgstr ""
+"A <bold>text='Lázadók'</bold> egy <ref>text='tündékből' dst='.."
+"race_elf'</ref> és különféle erdőlakó szövetségeseikből álló szövetség. "
+"Az emberek által használt elnevezésük a Trónörökös idejéből származik, "
+"amikor ők robbantották ki a gonosz Asheviere királynő elleni lázadást. "
+"A tündék egy mágikus faj, akik mesterei az íjnak, és az embereknél sok évvel "
+"tovább élnek. Harmóniában a természettel, a tündék a"
+"<ref>text='ember' dst='..race_human'</ref> mágusokban, bizonyos <ref"
+">text='sellők' dst='..race_merman'</ref>ben, "
+"és a <ref>text='fapásztorok' dst='..race_wose'</ref>nak nevezett "
+"fa lényekben találtak szövetségesekre. A Lázadókat legérdemesebb "
+"a magas erdei védekezésüket, mesteri távolsági támadásaikat és "
+"semleges beállítottságukat kihasználva játszani."
 
 #. [multiplayer_side]: id=Undead, type=random
 #: data/multiplayer/factions/undead-aoh.cfg:4
@@ -279,6 +340,7 @@ msgstr "Élőholtak"
 
 #. [multiplayer_side]: id=Undead, type=random
 #: data/multiplayer/factions/undead-aoh.cfg:14
+#, fuzzy
 #: data/multiplayer/factions/undead-default.cfg:14
 msgid ""
 "The <bold>text='Undead'</bold> are a faction of <ref>text='undead' dst='.."
@@ -290,6 +352,15 @@ msgid ""
 "Undead are a very aggressive faction and the most powerful "
 "<ref>text='Default Era' dst='..era_era_default'</ref> faction at nighttime."
 msgstr ""
+"Az <bold>text='Élőholtak'</bold> egy <ref>text='élőholt' dst='.."
+"race_undead'</ref> lényekből és az általában őket kísérő, "
+"sötét mágiát gyakorló <ref>text='ember' dst='..race_human'</ref>ekből áll. "
+"Gyakran ezek az „árnyak tanítványai” a szövetség legtöbbet sebző egységei, "
+"de egy jelentős sebezhetőséggel — a tiltott, gonosz varázslat gyakorlása "
+"minden erejüket felemésztette és így egyáltalán nem rendelkeznek közelharci "
+"támadással. Az Élőholtak egy nagyon aggresszív szövetség, akik az"
+"<ref>text='Alapértelmezett korszak' dst='..era_era_default'</ref> szövetségei "
+"közül a legerősebbek éjszaka."
 
 #. [multiplayer]: id=multiplayer_Aethermaw
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:4
@@ -409,24 +480,35 @@ msgstr "Legyőzöd az (összes) ellenfél vezérét"
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:293
+#, fuzzy
 msgid ""
 "The Great Mage Sulla has transported your armies to this bizarre nexus, and "
 "demands that you amuse her by doing battle."
 msgstr ""
+"Sulla, a nagy mágusnő ezen bizarr síkra ragadta seregeidet, és követeli, hogy "
+"harccal szórakoztasd őt."
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:296
+#, fuzzy
 msgid ""
 "Units may not move into a hex with a rock cairn. They may, however, be "
 "recruited to, and move from, such hexes."
 msgstr ""
+"Az egységek nem léphetnek kőhalmot tartalmazó mezőkre. Ilyen mezőkre"
+" toborozni, "
+"és onnan ellépni azonban lehetséges."
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:299
+#, fuzzy
 msgid ""
 "Beginning on turn 4, the Great Mage Sulla will begin to unite the two halves "
 "of the battlefield. The process will be complete by the end of turn 6."
 msgstr ""
+"A 4. körtől kezdve Sulla, a nagy mágusnő elkezdi egyesíteni a csatatér két"
+" felét. "
+"A folyamat a 6. kör végén fejeződik be."
 
 #. [message]: speaker=narrator
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:312
@@ -1038,6 +1120,7 @@ msgstr "2j - Tisztító áradatok"
 
 #. [multiplayer]: id=multiplayer_Clearing_Gushes
 #: data/multiplayer/scenarios/2p_Clearing_Gushes.cfg:8
+#, fuzzy
 msgid ""
 "The banks of the Great River make for some of the most fertile land in all "
 "the known world. The spring and summer bring floods all along its length, "
@@ -1047,6 +1130,17 @@ msgid ""
 "rigorous discipline and organization of Wesnoth's armies are in no small "
 "part driven by a constant need to patrol and defend these prosperous lands."
 msgstr ""
+"A Nagy Folyó partjai az egész ismert világ legtermékenyebb földjei között"
+" vannak. "
+"A tavasz és nyár áradásokat hoz a folyó egész hossza mentén, a földet"
+" gazdaggá téve, "
+"és minden ősszel bő aratást adva. A Wesnothi Királyság gazdagságának és"
+" virágzásának motorjává "
+"tette ezt a földet — és ezzel együtt számtalan fosztogatás és támadás"
+" céljává. Wesnoth seregeinek "
+"szigorú fegyelme és szervezettsége nem kis részben ezen bővelkedő földek"
+" felügyelésének és védelmének "
+"szükségének köszönhető."
 
 #. [multiplayer]: id=multiplayer_Cynsaun_Battlefield
 #: data/multiplayer/scenarios/2p_Cynsaun_Battlefield.cfg:6
@@ -1236,8 +1330,11 @@ msgstr ""
 
 #. [slider]: id=enemey_gold_factor
 #: data/multiplayer/scenarios/2p_Dark_Forecast.cfg:253
+#, fuzzy
 msgid "Changes the gold worth of the enemy spawns by a certain percentage"
 msgstr ""
+"Egy bizonyos százalékkal megváltoztatja az ellenség belépési helyeinek"
+" aranyértékét"
 
 #. [lua]: final_spawn
 #: data/multiplayer/scenarios/2p_Dark_Forecast.lua:313
@@ -1366,6 +1463,7 @@ msgstr "2j - Pokolfészek"
 
 #. [multiplayer]: id=multiplayer_Hellhole
 #: data/multiplayer/scenarios/2p_Hellhole.cfg:8
+#, fuzzy
 msgid ""
 "Once, the town of Myrilel was a tranquil village at the easternmost reaches "
 "of humankind. This changed forever upon the rise of the lich warlord Mal-"
@@ -1375,6 +1473,16 @@ msgid ""
 "eternal scar on the land that to this day summons forth legions of wandering "
 "undead."
 msgstr ""
+"Egykor Myrilel egy békés falu volt az emberi civilizáció legkeletibb"
+" nyúlványai egyikén. "
+"Ez örökre megváltozott amikor Mal-Ravanal delevény hadvezér felemelkedésével, "
+"aki elmondhatatlan sötét varázslat kapuját szakította fel a falu"
+" központjában, "
+"hogy a halál seregeinek gyülekezési pontjaként szolgáljon. Mal-Ravanalt ugyan"
+" legyőzték, "
+"Myrilel azonban továbbra is egy kihalt rom, a kapu pedig egy örök heg a"
+" tájon, amely "
+"a mai napig kóborló élőholtak légióit idézi meg."
 
 #. [multiplayer]: id=multiplayer_Hornshark_Island
 #: data/multiplayer/scenarios/2p_Hornshark_Island.cfg:26
@@ -1512,6 +1620,7 @@ msgstr "2j - Romos átjáró"
 
 #. [multiplayer]: id=multiplayer_Ruined_Passage
 #: data/multiplayer/scenarios/2p_Ruined_Passage.cfg:8
+#, fuzzy
 msgid ""
 "The distant west has long been fabled as the homeland of all living things "
 "before it was ruined by a deluge of disasters. Legends tell of the ingenuity "
@@ -1522,6 +1631,16 @@ msgid ""
 "molten brimstone lies land kept pristine and untouched — yet mysteriously "
 "abandoned nonetheless."
 msgstr ""
+"A távoli nyugatot a szájhagyomány régóta minden élők őshazájaként tartotta"
+" számon, "
+"mielőtt katasztrófák áradata azt tönkretette. Legendák mesélnek az ősök"
+" leleményességéről "
+"amint végső óráikban tűz és hamu heves viharaival küzdöttek. Csak nemrég"
+" fedték fel titkos "
+"expedíciók ezen történetek igazságát — legmeglepőbben egy óriási, bűvös falak"
+" alkotta csatornát. "
+"Vulkáni szigetek és olvadt kénkő hatalmas tengerei közt egy ősi és érintetlen"
+" — ám mégis elhagyatott — föld terül el."
 
 #. [multiplayer]: id=multiplayer_Ruphus_Isle
 #: data/multiplayer/scenarios/2p_Ruphus_Isle.cfg:7
@@ -1531,10 +1650,13 @@ msgstr "2j - Rufusz-sziget"
 
 #. [multiplayer]: id=multiplayer_Ruphus_Isle
 #: data/multiplayer/scenarios/2p_Ruphus_Isle.cfg:8
+#, fuzzy
 msgid ""
 "Players must navigate the dispersive terrain of this small but "
 "topographically dense island."
 msgstr ""
+"A játékosoknak a szétszórt terepen kell tájékozódniuk ezen a kicsiny, de "
+"földrajzilag sűrű szigeten."
 
 #. [multiplayer]: id=multiplayer_Sablestone_Delta
 #: data/multiplayer/scenarios/2p_Sablestone_Delta.cfg:5
@@ -1573,8 +1695,9 @@ msgstr "Alakváltó"
 
 #. [unit]: type=Tentacle of the Deep
 #: data/multiplayer/scenarios/2p_Silverhead_Crossing.cfg:52
+#, fuzzy
 msgid "Nani the Shapeshifter"
-msgstr ""
+msgstr "Nani, az alakváltó"
 
 #. [effect]: type=arcane
 #: data/multiplayer/scenarios/2p_Silverhead_Crossing.cfg:82
@@ -1664,12 +1787,14 @@ msgstr "Ez Lo-bsangnak, Sulla szolgálójának kőből faragott képmása."
 
 #. [multiplayer]: id=multiplayer_Swamp_of_Dread
 #: data/multiplayer/scenarios/2p_Swamp_of_Dread.cfg:7
+#, fuzzy
 #| msgid "2p — Sablestone Delta"
 msgid "2p — Swamp of Dread"
-msgstr "2j - Holtláp"
+msgstr "2j - Rettenetes-mocsár"
 
 #. [multiplayer]: id=multiplayer_Swamp_of_Dread
 #: data/multiplayer/scenarios/2p_Swamp_of_Dread.cfg:8
+#, fuzzy
 msgid ""
 "North of the Great River lies the Swamp of Dread, a vast, inhospitable mire "
 "cursed by foul magic. There exist only a few routes that aren't nearly "
@@ -1682,6 +1807,21 @@ msgid ""
 "great strategic value means it is fiercely contested by all with military "
 "aims in the Great Continent's heart."
 msgstr ""
+"A Nagy Folyótól északra terül el a Rettenetes-mocsár, egy hatalmas,"
+" barátságtalan ingovány, "
+"amelyet gonosz varázslat átkoz. Néhány út kivételével a csapdába esés és"
+" halál garantált. "
+"Ennek ellenére ez a pár út nagy értékkel bír mint a déli síkságokat és a zord"
+" északot "
+"összekötő hidak, ahol bátor felfedezők kelnek át a veszedelmes lápokon, olyan"
+" helyeket "
+"keresve, ahol jövedelmező kereskedelmi állomásokat állíthatnak fel. Ezen utak"
+" közül a legnagyobb, "
+"Areth Átjárója a tündék és törpök közti első ősi háborúk óta jól ismert, és"
+" azóta vitatott is. "
+"A szegény föld és korlátozott erőforrások ellenére nagy stratégiai értéke"
+" miatt mindenki "
+"az átjáró uralmára tör akinek a Nagy Kontinens szívében hadi céljai vannak."
 
 #. [multiplayer]: id=multiplayer_The_Freelands
 #: data/multiplayer/scenarios/2p_The_Freelands.cfg:6
@@ -1713,6 +1853,7 @@ msgstr "2j - Pyrennis falai"
 
 #. [multiplayer]: id=multiplayer_The_Walls_of_Pyrennis
 #: data/multiplayer/scenarios/2p_The_Walls_of_Pyrennis.cfg:8
+#, fuzzy
 msgid ""
 "When the orcish hordes first began arriving in droves on the Great "
 "Continent, one intrepid ruler by the name of Iron-King Olgor set about first "
@@ -1725,6 +1866,21 @@ msgid ""
 "Pyrennis have proved astoundingly indestructible both to time and war — that "
 "is, what scattered segments of it were actually completed."
 msgstr ""
+"Amikor az ork hordák először kezdtek tömegesen a Nagy Kontinensre érkezni, "
+"egy elszánt uralkodó, akit Olgor a Vaskirály néven ismertek, először"
+" egyesítette "
+"a civakodó ork törzseket. A Kontinens egészét meg akarta hódítani az orkok"
+" számára, "
+"és a hatalmát megörökítő emlékműként elrendelte Pyrennis óriási erődjének"
+" építését. "
+"Azonban végül ez a fellegvár lett a végzete — vazallusai, az elrendeltetett"
+" hódítás "
+"beteljesítése nélkül nem voltak hajlandók befejezni az építkezést, Olgor"
+" ellen fordultak, "
+"megölték, s ezzel évszázadokra szétszórták az ork törzseket. Pyrennis falai "
+"— pontosabban az a néhány szakasz amelyek elkészültek — elképesztően"
+" ellenállónak bizonyultak, "
+"mind az idővel, mind a háborúkkal szemben."
 
 #. [multiplayer]: id=multiplayer_thousand_stings_garrison
 #: data/multiplayer/scenarios/2p_Thousand_Stings_Garrison.cfg:37
@@ -1819,6 +1975,7 @@ msgstr "2j - Kesorak sírhelye"
 
 #. [multiplayer]: id=multiplayer_Tombs_of_Kesorak
 #: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:8
+#, fuzzy
 msgid ""
 "Hundreds of years ago, the defeated Sorcerer Kesorak was entombed here, "
 "along with a number of his followers. An unholy chill now encircles the "
@@ -1826,13 +1983,25 @@ msgid ""
 "whispering amongst the withered trees of this barren landscape. Unconcerned "
 "by their gloomy surroundings, your leaders have chosen this place to clash."
 msgstr ""
+"Több száz évvel ezelőtt, a legyőzött sötét varázsló Kesorak és követőinek egy"
+" része "
+"ezen a helyen lett eltemetve. A sírhelyeket most egy gonosz, jeges fuvallat"
+" övezi, "
+"és sokan úgy hiszik, Kesorak hangja még ma is hallható, az kiszáradt fák közt"
+" suttogva ezen a kietlen tájon. "
+"Nem foglalkozva a borús környezettel, vezéreid ezt a helyet választották az"
+" összecsapás helyszínéül."
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:161
+#, fuzzy
 msgid ""
 "The map contains mausoleums and campfires that shift the time of the day by "
 "one step toward night and day, respectively."
 msgstr ""
+"A térkép mauzóleumokat és tábortüzeket tartalmaz, amik egy lépéssel eltolják"
+" a napszakot "
+"az éjszaka, illetve a nappal irányába."
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:164
@@ -1938,6 +2107,7 @@ msgstr "4p - Dicsőség Fürdője"
 
 #. [multiplayer]: id=multiplayer_Bath_of_Glory
 #: data/multiplayer/scenarios/4p_Bath_of_Glory.cfg:9
+#, fuzzy
 msgid ""
 "The distant, legendary city of Malisat is famed for many great works — among "
 "its most prized being the enormous complex known as the Bath of Glory. Made "
@@ -1948,6 +2118,18 @@ msgid ""
 "wealthy nobles can turn into veritable battlegrounds — but even this has "
 "become a form of entertainment woven into the allure of the Bath."
 msgstr ""
+"Malisat távoli, legendás városa számos nagy alkotásáról híres — "
+"amelyek közül az egyik legmegbecsültebb a Dicsőség Fürdőjeként ismert "
+"hatalmas épületegyüttes. Megfáradt, hazatérő katonák pihentető paradicsoma, "
+"a Fürdő egy lenyűgöző oázis, aminek helyén egykoron nem volt semmi, csak"
+" homok. "
+"Az idő teltével önálló várossá nőtte ki magát, ahol a művészetek és a zene"
+" virágzanak "
+"a fürdőiben összpontosuló vad kultúrában. A komplexum hatalmas mérete azzal"
+" jár, "
+"hogy a gazdag nemesek közti izzó ellentétek valódi csatákká alakulnak —"
+" azonban még "
+"ez is a szórakozás egy módjává vált, a Fürdő vonzerejének részeként."
 
 #. [multiplayer]: id=multiplayer_Blue_Water_Province
 #: data/multiplayer/scenarios/4p_Blue_Water_Province.cfg:5
@@ -2022,6 +2204,7 @@ msgstr "4j - Geotermikus"
 
 #. [multiplayer]: id=multiplayer_Geothermal
 #: data/multiplayer/scenarios/4p_Geothermal.cfg:9
+#, fuzzy
 msgid ""
 "The western reaches of the Heart Mountains make a land of striking contrasts "
 "— boiling volcanic cauldrons weaving deep blue rivers between stark, snowy "
@@ -2029,6 +2212,13 @@ msgid ""
 "perilous and unstable, is nonetheless rich thanks to numerous foundries "
 "using the heat of volcanoes and hot springs to fuel their forges."
 msgstr ""
+"A Szív-hegység nyugati nyúlványai szembeötlő ellentétek földjét alkotják "
+"— forrongó vulkáni katlanok szőnek mélykék folyókat havasan meredő hegyek"
+" közé, "
+"zöldellő mezők által övezve. Ez a föld, annak ellenére, hogy néha veszélyes"
+" és "
+"ingatag, mégis gazdag a számos öntőműhelynek köszönhetően, "
+"amelyek a tűzhányók és meleg források hőjével fűtik kohóikat."
 
 #. [multiplayer]: id=multiplayer_4p_Hamlets
 #: data/multiplayer/scenarios/4p_Hamlets.cfg:5
@@ -2443,10 +2633,12 @@ msgstr "Tündér"
 
 #. [message]: speaker=narrator
 #: data/multiplayer/scenarios/6p_Team_Survival.cfg:524
+#, fuzzy
 msgid ""
 "Congratulations for surviving the map that so many people claim is "
 "impossible!"
 msgstr ""
+"Gratulálok, túlélted a térképet, melyről oly sokan állítják, hogy lehetetlen!"
 
 #. [message]: speaker=narrator
 #: data/multiplayer/scenarios/6p_Team_Survival.cfg:538
