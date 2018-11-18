@@ -7,22 +7,21 @@
 # Farkas János <mail.janos.farkas@gmail.com>, 2014.
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2014.
 # Tamás Krutki <krtamas@0x64.org>, 2018.
+# Krutki Tamás <krtamas-wesnoth@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-07-29 13:47+0100\n"
-"Last-Translator: Tamás Krutki <krtamas@0x64.org>\n"
+"PO-Revision-Date: 2018-11-18 02:47+0100\n"
+"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  wesnoth-ai.cpp.pot (PACKAGE VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  wesnoth-ai.wml.pot (PACKAGE VERSION)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.2\n"
 
 #. [ai]: id=ai_default_rca
 #: data/ai/ais/ai_default_rca.cfg:9
@@ -136,12 +135,6 @@ msgstr "Túl sokan vannak a harchoz, túlságosan sokan. El kell menekülnünk!"
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:219
 #, fuzzy
-#| msgid ""
-#| "This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-#| "campaign \"Heir to the Throne\", just that the AI is playing Konrad's "
-#| "side here. The goal is to move Konrad to the signpost in the northwest, "
-#| "while keeping both Konrad and Delfador alive. The same AI as in scenario "
-#| "\"Protect Unit"
 msgid ""
 "This is a reenactment of scenario The Elves Besieged of the mainline "
 "campaign Heir to the Throne, just that the AI is playing Konrad's side here. "
@@ -157,7 +150,14 @@ msgstr ""
 "Ez az pálya a „Trónörökös” hadjárat „Tünde-föld ostroma” pályájának az "
 "újraírt verziója, csak most az MI Konrad oldalán áll. A pálya célja, hogy "
 "Konradot az északnyugati útjelző táblához vidd. Konradnak és Delfadornak "
-"életben kell maradnia. "
+"életben kell maradnia. Az MI ugyanaz, mint ami az Egység Védelme küldetésben "
+"is használva van.\n"
+"\n"
+"Megjegyzés: Az Egység Védelme MI egy Mikro-MI. Egy Mikro-MI könnyen "
+"hozzáadható és a küldetés szükségleteihez igazítható kizárólag WML és a "
+"[micro_ai] tag használatával. Nézd meg a <span color='#00A000'>Mikro-MI wiki "
+"oldalt</span> a https://wiki.wesnoth.org/Micro_AIs címen további "
+"információért."
 
 #. [event]
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:226
@@ -190,8 +190,9 @@ msgstr "Hercegem... tovább kell harcolnod! Neeeeee!"
 
 #. [message]: speaker=unit
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:280
+#, fuzzy
 msgid "It is over. I am doomed..."
-msgstr "Elvesztünk! Ez a végzetem!"
+msgstr "Elvesztünk! Ez a végzetem..."
 
 #. [message]: speaker=unit
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:294
@@ -379,8 +380,9 @@ msgstr "Küldetés vége"
 #: data/ai/micro_ais/scenarios/swarm.cfg:188
 #: data/ai/micro_ais/scenarios/wolves.cfg:104
 #: data/ai/micro_ais/scenarios/wolves.cfg:273
+#, fuzzy
 msgid "Well, that was that."
-msgstr ""
+msgstr "Nos, ez ennyi volt."
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/animals.cfg:346
@@ -439,16 +441,18 @@ msgstr ""
 
 #. [objectives]
 #: data/ai/micro_ais/scenarios/animals.cfg:402
+#, fuzzy
 msgid "Watch the animals do their things"
-msgstr ""
+msgstr "Nézd, ahogy az állatok teszik a dolgukat"
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/animals.cfg:404
 #: data/ai/micro_ais/scenarios/goto.cfg:431
 #: data/ai/micro_ais/scenarios/swarm.cfg:160
 #: data/ai/micro_ais/scenarios/wolves.cfg:244
+#, fuzzy
 msgid "Use right-click option"
-msgstr ""
+msgstr "Használj egy jobb-klikk opciót"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/animals.cfg:408
@@ -535,8 +539,9 @@ msgstr ""
 
 #. [objectives]
 #: data/ai/micro_ais/scenarios/bottleneck_defense.cfg:126
+#, fuzzy
 msgid "Take the pass"
-msgstr ""
+msgstr "Foglald el a hágót"
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/bottleneck_defense.cfg:128
@@ -556,9 +561,10 @@ msgstr "Egy ork marad csak"
 
 #. [message]: speaker=LuaAI
 #: data/ai/micro_ais/scenarios/bottleneck_defense.cfg:163
+#, fuzzy
 msgid ""
 "I may have fallen, but we will continue to defend the pass to the last man!"
-msgstr ""
+msgstr "Én ugyan elestem, de tovább védjük a hágót az utolsó emberig!"
 
 #. [event]
 #. [test]: id=dragon
@@ -574,13 +580,15 @@ msgstr "Rowck"
 
 #. [side]: type=Dread Bat, id=Dreadful Bat
 #: data/ai/micro_ais/scenarios/dragon.cfg:33
+#, fuzzy
 msgid "Dreadful Bat"
-msgstr ""
+msgstr "Félelmetes denevér"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/dragon.cfg:51
+#, fuzzy
 msgid "Rowck's Home"
-msgstr ""
+msgstr "Rowck otthona"
 
 #. [unit]: id=Rowck, type=Fire Dragon
 #: data/ai/micro_ais/scenarios/dragon.cfg:55
@@ -589,8 +597,9 @@ msgstr "Rowck"
 
 #. [message]: speaker=Dreadful Bat
 #: data/ai/micro_ais/scenarios/dragon.cfg:85
+#, fuzzy
 msgid "Be careful to stay out of the way of that dragon. He's a mean one."
-msgstr ""
+msgstr "Légy óvatos, és ne kerülj a sárkány útjába! Meglehetősen aljas."
 
 #. [message]: speaker=Rowck
 #: data/ai/micro_ais/scenarios/dragon.cfg:91
@@ -638,8 +647,9 @@ msgstr "Denevér vezér halála"
 
 #. [message]: speaker=Dreadful Bat
 #: data/ai/micro_ais/scenarios/dragon.cfg:149
+#, fuzzy
 msgid "I'm out of here."
-msgstr ""
+msgstr "Már itt sem vagyok."
 
 #. [test]: id=fast
 #: data/ai/micro_ais/scenarios/fast.cfg:5
@@ -662,8 +672,8 @@ msgstr ""
 #. [event]
 #. [test]: id=goto
 #: data/ai/micro_ais/scenarios/goto.cfg:5
-#, fuzzy
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:84
+#, fuzzy
 msgid "Goto"
 msgstr "Menj"
 
@@ -715,16 +725,18 @@ msgstr ""
 
 #. [set_menu_item]: id=m01_new_footpad
 #: data/ai/micro_ais/scenarios/goto.cfg:339
+#, fuzzy
 msgid "Place Side 1 Footpad"
-msgstr ""
+msgstr "1.oldali útonálló lerakása"
 
 #. [set_menu_item]: id=m02_kill_unit
 #. [set_menu_item]: id=m05_kill_unit
 #: data/ai/micro_ais/scenarios/goto.cfg:350
 #: data/ai/micro_ais/scenarios/swarm.cfg:117
 #: data/ai/micro_ais/scenarios/wolves.cfg:157
+#, fuzzy
 msgid "Kill Unit under Cursor"
-msgstr ""
+msgstr "A kurzor alatti egység megölése"
 
 #. [set_menu_item]: id=m03_null_control
 #: data/ai/micro_ais/scenarios/goto.cfg:363
@@ -735,12 +747,6 @@ msgstr "1. oldal emberi irányításának kikapcsolása"
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/goto.cfg:419
 #, fuzzy
-#| msgid ""
-#| "This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-#| "campaign \"Heir to the Throne\", just that the AI is playing Konrad's "
-#| "side here. The goal is to move Konrad to the signpost in the northwest, "
-#| "while keeping both Konrad and Delfador alive. The same AI as in scenario "
-#| "\"Protect Unit"
 msgid ""
 "This scenario demonstrates a variety of different uses of the Goto Micro AI. "
 "All AI sides are controlled by this MAI in one way or another (except for "
@@ -756,15 +762,25 @@ msgid ""
 "tag. Check out the <span color='#00A000'>Micro AI wiki page</span> at "
 "https://wiki.wesnoth.org/Micro_AIs for more information."
 msgstr ""
-"Ez az pálya a „Trónörökös” hadjárat „Tünde-föld ostroma” pályájának az "
-"újraírt verziója, csak most az MI Konrad oldalán áll. A pálya célja, hogy "
-"Konradot az északnyugati útjelző táblához vidd. Konradnak és Delfadornak "
-"életben kell maradnia. "
+"Ez a küldetés a Menj Oda Mikro-MI különböző használatait mutatja be. Minden "
+"MI oldalt ez a Mikro-MI irányít valamilyen módon (kivéve a gyíkokat, akiket "
+"a Leselkedő Mikro-MI irányít). A küldetés során üzenet fognak megjelenni, "
+"amelyek megmutatják mit csinálnak az egységek.\n"
+"\n"
+"A játékos az 1. oldalt irányítja. A jobb klikkre felugró menüben az 1. "
+"oldalhoz egységet hozzáadó és eltávolító opciók találhatók. Ez nagyrészt "
+"annak tesztelésére jó, hogy hogyan reagálnak a 3. oldal védelmezői.\n"
+"\n"
+"Megjegyzés: A Menj Oda MI egy Mikro-MI. Egy Mikro-MI könnyen hozzáadható és "
+"a küldetés szükségleteihez igazítható kizárólag WML és a [micro_ai] tag "
+"használatával. Nézd meg a <span color='#00A000'>Mikro-MI wiki oldalt</span> "
+"a https://wiki.wesnoth.org/Micro_AIs címen további információért."
 
 #. [objectives]
 #: data/ai/micro_ais/scenarios/goto.cfg:429
+#, fuzzy
 msgid "Watch the AI units do their things"
-msgstr ""
+msgstr "Nézd, ahogy az MI egységek teszik a dolgukat"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/goto.cfg:435
@@ -773,8 +789,9 @@ msgstr "Vaddan halála"
 
 #. [message]: speaker=messenger1
 #: data/ai/micro_ais/scenarios/goto.cfg:450
+#, fuzzy
 msgid "The bridge is out. What do we do now?"
-msgstr ""
+msgstr "A hídnak annyi. Most mit csinálunk?"
 
 #. [message]: speaker=messenger2
 #: data/ai/micro_ais/scenarios/goto.cfg:454
@@ -803,8 +820,9 @@ msgstr ""
 
 #. [message]: speaker=ghost1
 #: data/ai/micro_ais/scenarios/goto.cfg:484
+#, fuzzy
 msgid "Aaiiieeeeeee !!!"
-msgstr ""
+msgstr "Aaiiieeeeeee !!!"
 
 #. [message]: speaker=messenger2
 #: data/ai/micro_ais/scenarios/goto.cfg:488
@@ -931,20 +949,22 @@ msgstr ""
 
 #. [message]: type=Vampire Bat
 #: data/ai/micro_ais/scenarios/goto.cfg:735
+#, fuzzy
 msgid "We've all made it to the corners, let's get back together again."
-msgstr ""
+msgstr "Mindannyian elértük a sarkokat, induljunk vissza újra találkozni."
 
 #. [message]: type=Vampire Bat
 #: data/ai/micro_ais/scenarios/goto.cfg:776
 msgid "We're back together, let's head out to the corners again."
-msgstr ""
+msgstr "Ismét együtt vagyunk, induljunk el újra a sarkok felé."
 
 #. [event]
 #. [test]: id=guardians
 #: data/ai/micro_ais/scenarios/guardians.cfg:17
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:57
+#, fuzzy
 msgid "Guardians"
-msgstr ""
+msgstr "Védelmezők"
 
 #. [side]: id=Kraa, type=Gryphon
 #: data/ai/micro_ais/scenarios/guardians.cfg:31
@@ -956,47 +976,55 @@ msgstr "Kraa"
 #: data/ai/micro_ais/scenarios/guardians.cfg:37
 #: data/ai/micro_ais/scenarios/swarm.cfg:27
 msgid "Gryphons"
-msgstr ""
+msgstr "Griffmadarak"
 
 #. [side]: type=Orcish Leader, id=Another Bad Orc
 #: data/ai/micro_ais/scenarios/guardians.cfg:49
+#, fuzzy
 msgid "Another Bad Orc"
-msgstr ""
+msgstr "Még egy Gonosz Ork"
 
 #. [unit]: type=Dwarvish Guardsman, id=guardian1
 #: data/ai/micro_ais/scenarios/guardians.cfg:96
+#, fuzzy
 msgid "Guardian 1"
-msgstr ""
+msgstr "1. védelmező"
 
 #. [unit]: type=Dwarvish Guardsman, id=guardian2
 #: data/ai/micro_ais/scenarios/guardians.cfg:107
+#, fuzzy
 msgid "Guardian 2"
-msgstr ""
+msgstr "2. védelmező"
 
 #. [unit]: type=Giant Rat, id=coward1
 #: data/ai/micro_ais/scenarios/guardians.cfg:120
+#, fuzzy
 msgid "Coward 1"
-msgstr ""
+msgstr "1. gyáva"
 
 #. [unit]: type=Giant Rat, id=coward2
 #: data/ai/micro_ais/scenarios/guardians.cfg:144
+#, fuzzy
 msgid "Coward 2"
-msgstr ""
+msgstr "2. gyáva"
 
 #. [unit]: type=Giant Rat, id=coward3
 #: data/ai/micro_ais/scenarios/guardians.cfg:170
+#, fuzzy
 msgid "Coward 3"
-msgstr ""
+msgstr "3. gyáva"
 
 #. [unit]: type=Giant Rat, id=coward4
 #: data/ai/micro_ais/scenarios/guardians.cfg:197
+#, fuzzy
 msgid "Coward 4"
-msgstr ""
+msgstr "4. gyáva"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/guardians.cfg:219
+#, fuzzy
 msgid "Move gryphons here to see different coward reactions"
-msgstr ""
+msgstr "Mozgass ide griffeket, hogy lásd a gyávák különböző reakcióit"
 
 #. [unit]: type=Troll, id=return1
 #: data/ai/micro_ais/scenarios/guardians.cfg:228
@@ -1153,8 +1181,9 @@ msgstr ""
 #. [set_menu_item]: id=m05_coward
 #: data/ai/micro_ais/scenarios/guardians.cfg:523
 #: data/ai/micro_ais/scenarios/guardians.cfg:532
+#, fuzzy
 msgid "Coward"
-msgstr ""
+msgstr "Gyáva"
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/guardians.cfg:533
@@ -1179,8 +1208,9 @@ msgstr ""
 #. [set_menu_item]: id=m06_zone
 #: data/ai/micro_ais/scenarios/guardians.cfg:543
 #: data/ai/micro_ais/scenarios/guardians.cfg:552
+#, fuzzy
 msgid "Zone Guardian"
-msgstr ""
+msgstr "Zóna Védelmező"
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/guardians.cfg:553
@@ -1197,8 +1227,9 @@ msgstr ""
 
 #. [message]: speaker=Kraa
 #: data/ai/micro_ais/scenarios/guardians.cfg:568
+#, fuzzy
 msgid "Kraahhh!!!!"
-msgstr ""
+msgstr "Kraahhh!!!!"
 
 #. [message]: speaker=Kraa
 #: data/ai/micro_ais/scenarios/guardians.cfg:578
@@ -1246,9 +1277,11 @@ msgstr ""
 
 #. [message]: speaker=Kraa
 #: data/ai/micro_ais/scenarios/guardians.cfg:659
+#, fuzzy
 msgid ""
 "Gryphons of the High Plains, it is time to return to said plains. Follow me."
 msgstr ""
+"Magas Fennsíkok griffjei, ideje hogy visszatérjünk a fennsíkokra. Kövessetek."
 
 #. [test]: id=hang_out
 #: data/ai/micro_ais/scenarios/hang_out.cfg:5
@@ -1257,28 +1290,24 @@ msgstr ""
 
 #. [side]: id=Bad Outlaw, type=Outlaw
 #: data/ai/micro_ais/scenarios/hang_out.cfg:23
+#, fuzzy
 msgid "team_name^Bad Outlaw"
-msgstr ""
+msgstr "Gonosz Bandita"
 
 #. [side]: id=Good Bandit, type=Bandit
 #: data/ai/micro_ais/scenarios/hang_out.cfg:39
+#, fuzzy
 msgid "team_name^Good Bandit"
-msgstr ""
+msgstr "Jó Bandita"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/hang_out.cfg:61
+#, fuzzy
 msgid "Outlaw moves here"
-msgstr ""
+msgstr "Bandita ide lép"
 
 #. [message]: speaker=Good Bandit
 #: data/ai/micro_ais/scenarios/hang_out.cfg:120
-#, fuzzy
-#| msgid ""
-#| "This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-#| "campaign \"Heir to the Throne\", just that the AI is playing Konrad's "
-#| "side here. The goal is to move Konrad to the signpost in the northwest, "
-#| "while keeping both Konrad and Delfador alive. The same AI as in scenario "
-#| "\"Protect Unit"
 msgid ""
 "That outlaw over there is going to run for the keep in the southeast.  He's "
 "only going to recruit for three rounds before he'll start moving and he and "
@@ -1293,10 +1322,6 @@ msgid ""
 "the <span color='#00A000'>Micro AI wiki page</span> at https://wiki.wesnoth."
 "org/Micro_AIs for more information."
 msgstr ""
-"Ez az pálya a „Trónörökös” hadjárat „Tünde-föld ostroma” pályájának az "
-"újraírt verziója, csak most az MI Konrad oldalán áll. A pálya célja, hogy "
-"Konradot az északnyugati útjelző táblához vidd. Konradnak és Delfadornak "
-"életben kell maradnia. "
 
 #. [objectives]
 #: data/ai/micro_ais/scenarios/hang_out.cfg:127
@@ -1306,13 +1331,15 @@ msgstr ""
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/hang_out.cfg:129
+#, fuzzy
 msgid "Death of Bad Outlaw"
-msgstr ""
+msgstr "A Gonosz Bandita halála"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/hang_out.cfg:133
+#, fuzzy
 msgid "Death of Good Bandit"
-msgstr ""
+msgstr "A Jó Bandita halála"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/hang_out.cfg:137
@@ -1368,13 +1395,15 @@ msgstr ""
 
 #. [message]: speaker=$unit.id
 #: data/ai/micro_ais/scenarios/healer_support.cfg:100
+#, fuzzy
 msgid "Argh!  They got us..."
-msgstr ""
+msgstr "Ahh!  Elkaptak minket..."
 
 #. [test]: id=lurkers
 #: data/ai/micro_ais/scenarios/lurkers.cfg:184
+#, fuzzy
 msgid "Lurkers of the Swamp"
-msgstr ""
+msgstr "A Mocsár Leselkedői"
 
 #. [side]: id=Pekzs, type=Saurian Soothsayer
 #: data/ai/micro_ais/scenarios/lurkers.cfg:198
@@ -1388,53 +1417,63 @@ msgstr "Pekzs"
 
 #. [side]: type=Saurian Oracle
 #: data/ai/micro_ais/scenarios/lurkers.cfg:220
+#, fuzzy
 msgid "Micro AI Lurkers (saurians, stationary)"
-msgstr ""
+msgstr "Leselkedők Mikro-MI (gyíkok, mozdulatlanok)"
 
 #. [side]: type=Saurian Oracle
 #: data/ai/micro_ais/scenarios/lurkers.cfg:236
+#, fuzzy
 msgid "Micro AI Lurkers (saurians, wanderers)"
-msgstr ""
+msgstr "Leselkedők Mikro-MI (gyíkok, vándorlók)"
 
 #. [side]: type=Naga Warrior
 #: data/ai/micro_ais/scenarios/lurkers.cfg:252
+#, fuzzy
 msgid "Micro AI Lurkers (nagas)"
-msgstr ""
+msgstr "Leselkedők Mikro-MI (nagák)"
 
 #. [side]: type=Saurian Oracle
 #: data/ai/micro_ais/scenarios/lurkers.cfg:268
+#, fuzzy
 msgid "WML Lurkers (saurians)"
-msgstr ""
+msgstr "WML Leselkedők (gyíkok)"
 
 #. [side]: type=Saurian Oracle
 #: data/ai/micro_ais/scenarios/lurkers.cfg:284
+#, fuzzy
 msgid "Formula AI Lurkers (saurians)"
-msgstr ""
+msgstr "Formula MI Leselkedők (gyíkok)"
 
 #. [set_menu_item]: id=m01_menu_lurker2
 #: data/ai/micro_ais/scenarios/lurkers.cfg:387
+#, fuzzy
 msgid "Place a Side 2 lurker"
-msgstr ""
+msgstr "2. oldali leselkedő elhelyezése"
 
 #. [set_menu_item]: id=m01_menu_lurker3
 #: data/ai/micro_ais/scenarios/lurkers.cfg:399
+#, fuzzy
 msgid "Place a Side 3 lurker"
-msgstr ""
+msgstr "3. oldali leselkedő elhelyezése"
 
 #. [set_menu_item]: id=m01_menu_lurker4
 #: data/ai/micro_ais/scenarios/lurkers.cfg:411
+#, fuzzy
 msgid "Place a Side 4 lurker"
-msgstr ""
+msgstr "4. oldali leselkedő elhelyezése"
 
 #. [set_menu_item]: id=m01_menu_lurker5
 #: data/ai/micro_ais/scenarios/lurkers.cfg:423
+#, fuzzy
 msgid "Place a Side 5 lurker"
-msgstr ""
+msgstr "5. oldali leselkedő elhelyezése"
 
 #. [set_menu_item]: id=m01_menu_lurker6
 #: data/ai/micro_ais/scenarios/lurkers.cfg:435
+#, fuzzy
 msgid "Place a Side 6 lurker"
-msgstr ""
+msgstr "6. oldali leselkedő elhelyezése"
 
 #. [message]: speaker=Pekzs
 #: data/ai/micro_ais/scenarios/lurkers.cfg:452
@@ -1470,22 +1509,15 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/lurkers.cfg:474
-#, fuzzy
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:151
 #: data/ai/micro_ais/scenarios/patrols.cfg:238
 #: data/ai/micro_ais/scenarios/recruiting.cfg:100
+#, fuzzy
 msgid "Notes"
 msgstr "Megjegyzések"
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/lurkers.cfg:475
-#, fuzzy
-#| msgid ""
-#| "This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-#| "campaign \"Heir to the Throne\", just that the AI is playing Konrad's "
-#| "side here. The goal is to move Konrad to the signpost in the northwest, "
-#| "while keeping both Konrad and Delfador alive. The same AI as in scenario "
-#| "\"Protect Unit"
 msgid ""
 "You can use the right-click context menu to add additional lurkers.\n"
 "\n"
@@ -1497,10 +1529,6 @@ msgid ""
 "tag. Check out the <span color='#00A000'>Micro AI wiki page</span> at "
 "https://wiki.wesnoth.org/Micro_AIs for more information."
 msgstr ""
-"Ez az pálya a „Trónörökös” hadjárat „Tünde-föld ostroma” pályájának az "
-"újraírt verziója, csak most az MI Konrad oldalán áll. A pálya célja, hogy "
-"Konradot az északnyugati útjelző táblához vidd. Konradnak és Delfadornak "
-"életben kell maradnia. "
 
 #. [objectives]
 #: data/ai/micro_ais/scenarios/lurkers.cfg:485
@@ -1509,13 +1537,15 @@ msgstr ""
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/lurkers.cfg:487
+#, fuzzy
 msgid "Defeat all lurkers"
-msgstr ""
+msgstr "Győzd le az összes leselkedőt"
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/lurkers.cfg:491
+#, fuzzy
 msgid "Move Pekzs to the signpost"
-msgstr ""
+msgstr "Mozgasd Pekzst a jelzőtáblára"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/lurkers.cfg:495
@@ -1525,20 +1555,25 @@ msgstr "Pekzs halála"
 
 #. [note]
 #: data/ai/micro_ais/scenarios/lurkers.cfg:499
+#, fuzzy
 msgid "Right-click on unoccupied swamp hexes to add more lurkers"
-msgstr ""
+msgstr "Kattints jobb gombbal üres mocsár mezőkre, hogy leselkedőket adj hozzá"
 
 #. [message]: speaker=Pekzs
 #: data/ai/micro_ais/scenarios/lurkers.cfg:546
+#, fuzzy
 msgid ""
 "Zzanksss for helping me wizz zzossse lurkerss. Hope to sssee you again "
 "ssometime."
 msgstr ""
+"Ksssznöm, hogy ssegítttél azzokkkal a lesselkdőkkel. Rremélem, hogy még "
+"ttalálkzzunk valmikkkor."
 
 #. [test]: id=messenger_escort
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:5
+#, fuzzy
 msgid "Messenger Escort"
-msgstr ""
+msgstr "Hírnök Kísérő"
 
 #. [side]: id=Vanak, type=Orcish Ruler
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:18
@@ -1551,28 +1586,33 @@ msgstr "Vanak"
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:37
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:73
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:72
+#, fuzzy
 msgid "Messenger"
-msgstr ""
+msgstr "Hírnök"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:123
+#, fuzzy
 msgid "Messenger Waypoint 1"
-msgstr ""
+msgstr "1. hírnök útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:125
+#, fuzzy
 msgid "Messenger Waypoint 2"
-msgstr ""
+msgstr "2. hírnök útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:127
+#, fuzzy
 msgid "Messenger Waypoint 3"
-msgstr ""
+msgstr "3. hírnök útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:130
+#, fuzzy
 msgid "AI moves Messenger here"
-msgstr ""
+msgstr "Az MI ide mozgatja a Hírnököt"
 
 #. [message]: speaker=messenger
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:145
@@ -1583,13 +1623,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:152
-#, fuzzy
-#| msgid ""
-#| "This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-#| "campaign \"Heir to the Throne\", just that the AI is playing Konrad's "
-#| "side here. The goal is to move Konrad to the signpost in the northwest, "
-#| "while keeping both Konrad and Delfador alive. The same AI as in scenario "
-#| "\"Protect Unit"
 msgid ""
 "The Messenger Escort AI will try to move the dragoon messenger to the "
 "signpost in the north, while protecting him as well as possible with the "
@@ -1608,20 +1641,18 @@ msgid ""
 "tag. Check out the <span color='#00A000'>Micro AI wiki page</span> at "
 "https://wiki.wesnoth.org/Micro_AIs for more information."
 msgstr ""
-"Ez az pálya a „Trónörökös” hadjárat „Tünde-föld ostroma” pályájának az "
-"újraírt verziója, csak most az MI Konrad oldalán áll. A pálya célja, hogy "
-"Konradot az északnyugati útjelző táblához vidd. Konradnak és Delfadornak "
-"életben kell maradnia. "
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:165
+#, fuzzy
 msgid "Defeat the messenger"
-msgstr ""
+msgstr "Győzd le a hírnököt"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:169
+#, fuzzy
 msgid "Messenger gets to the signpost"
-msgstr ""
+msgstr "A Hírnök eléri a jelzőtáblát"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:173
@@ -1630,21 +1661,22 @@ msgstr "Vanak halála"
 
 #. [message]: speaker=messenger
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:189
+#, fuzzy
 msgid "I made it!  Now our people will be safe."
-msgstr ""
+msgstr "Elértem!  Most a népünk biztonságban lesz."
 
 #. [message]: speaker=messenger
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:204
 #, fuzzy
 msgid "Nooo!  All is lost. We will never stop the orcs now!"
 msgstr ""
-"Neee! Minden elveszett. Most már soha nem fogjuk megállítani az orkokat!"
+"Neee!  Minden elveszett. Most már soha nem fogjuk megállítani az orkokat!"
 
 #. [event]
 #. [test]: id=patrols
 #: data/ai/micro_ais/scenarios/patrols.cfg:5
-#, fuzzy
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:75
+#, fuzzy
 msgid "Patrols"
 msgstr "Járőrök"
 
@@ -1661,13 +1693,15 @@ msgstr "Banditák"
 
 #. [side]
 #: data/ai/micro_ais/scenarios/patrols.cfg:41
+#, fuzzy
 msgid "team_name^Konrad"
-msgstr ""
+msgstr "Konrad"
 
 #. [side]
 #: data/ai/micro_ais/scenarios/patrols.cfg:56
+#, fuzzy
 msgid "team_name^Urudin"
-msgstr ""
+msgstr "Urudin"
 
 #. [unit]: type=Orcish Slayer, id=Urudin
 #: data/ai/micro_ais/scenarios/patrols.cfg:114
@@ -1677,38 +1711,45 @@ msgstr "Urudin"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:188
+#, fuzzy
 msgid "Konrad Waypoint 1"
-msgstr ""
+msgstr "1. Kondrad útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:190
+#, fuzzy
 msgid "Konrad Waypoint 2"
-msgstr ""
+msgstr "2. Konrad útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:192
+#, fuzzy
 msgid "Konrad Final Waypoint"
-msgstr ""
+msgstr "Végső Konrad útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:195
+#, fuzzy
 msgid "Patrol Waypoint 1"
-msgstr ""
+msgstr "1. járőr útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:197
+#, fuzzy
 msgid "Patrol Waypoint 2"
-msgstr ""
+msgstr "2. járőr útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:199
+#, fuzzy
 msgid "Patrol Waypoint 3"
-msgstr ""
+msgstr "3. járőr útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:201
+#, fuzzy
 msgid "Patrol Waypoint 4"
-msgstr ""
+msgstr "4. járőr útpont"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/patrols.cfg:204
@@ -1806,7 +1847,7 @@ msgstr ""
 #: data/ai/micro_ais/scenarios/patrols.cfg:325
 #, fuzzy
 msgid "Let's go home, chaps."
-msgstr "Mennyünk haza, srácok."
+msgstr "Menjünk haza, srácok."
 
 #. [event]
 #. [test]: id=protect_unit
@@ -1847,8 +1888,9 @@ msgstr "Mozgasd ide Rossaubát"
 
 #. [message]: speaker=Koorzhar
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:129
+#, fuzzy
 msgid "There's that traitor wizard. Let's get him."
-msgstr ""
+msgstr "Ott az az áruló varázsló! Kapjuk el!"
 
 #. [message]: speaker=Langzhar
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:134
@@ -1859,16 +1901,21 @@ msgstr ""
 
 #. [message]: speaker=Rossauba
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:138
+#, fuzzy
 msgid "That's very kind of you, but ..."
-msgstr ""
+msgstr "Ez nagyon kedves tőled, de..."
 
 #. [message]: speaker=Langzhar
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:142
+#, fuzzy
 msgid ""
 "No buts!  You stay behind the lines and do not engage in battle unless there "
 "is no risk to your life, is that understood?  And get to that signpost in "
 "the northwest if it is safe."
 msgstr ""
+"Csak semmi de!  A vonalak mögött maradsz, és csak akkor bocsátkozol harcba, "
+"ha nem kerül veszélybe az életed, világos?  És érd el azt a jelzőtáblát "
+"északnyugaton ha biztonságos."
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:150
@@ -1913,8 +1960,8 @@ msgstr "Védd meg Rossaubát miközben az irányjelző táblához mozgatod"
 #. [objective]: condition=win
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:181
-#, fuzzy
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:201
+#, fuzzy
 msgid "Rossauba makes it to the signpost"
 msgstr "Rossauba eléri az irányjelző táblát"
 
@@ -1948,13 +1995,15 @@ msgstr "Koorzhar halála"
 
 #. [message]: speaker=Rossauba
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:230
+#, fuzzy
 msgid "I held out for as long as I could."
-msgstr ""
+msgstr "Kitartottam ameddig csak tudtam."
 
 #. [message]: speaker=Rossauba
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:248
+#, fuzzy
 msgid "I made it"
-msgstr ""
+msgstr "Megcsináltam!"
 
 #. [event]
 #. [test]: id=recruiting
@@ -1970,8 +2019,8 @@ msgid ""
 "This is a very simple scenario that can be used to test out different "
 "recruiting patterns."
 msgstr ""
-"Ez egy nagyon egyszerű küldetés, amely alkalmas különböző toborzási"
-" stratégiák tesztelésére."
+"Ez egy nagyon egyszerű küldetés, amely alkalmas különböző toborzási "
+"stratégiák tesztelésére."
 
 #. [message]: speaker=Langzhar
 #: data/ai/micro_ais/scenarios/recruiting.cfg:94
@@ -1984,12 +2033,6 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/recruiting.cfg:101
 #, fuzzy
-#| msgid ""
-#| "This is a reenactment of scenario \"The Elves Besieged\" of the mainline "
-#| "campaign \"Heir to the Throne\", just that the AI is playing Konrad's "
-#| "side here. The goal is to move Konrad to the signpost in the northwest, "
-#| "while keeping both Konrad and Delfador alive. The same AI as in scenario "
-#| "\"Protect Unit"
 msgid ""
 "If you have not changed anything in the scenario code, Side 1 uses the "
 "Random Recruitment Micro AI, with swordsmen and peasants having been given "
@@ -2005,37 +2048,51 @@ msgid ""
 "AI wiki page</span> at https://wiki.wesnoth.org/Micro_AIs for more "
 "information."
 msgstr ""
-"Ez az pálya a „Trónörökös” hadjárat „Tünde-föld ostroma” pályájának az "
-"újraírt verziója, csak most az MI Konrad oldalán áll. A pálya célja, hogy "
-"Konradot az északnyugati útjelző táblához vidd. Konradnak és Delfadornak "
-"életben kell maradnia. "
+"Ha nem változtattál meg semmit a küldetés kódjában, az 1. oldal a Véletlen "
+"Toborzás Mikro-MI-t használja, ahol a parasztok és kardforgatók nagyobb "
+"valószínűséget kaptak mint más egységek, a mágusok pedig közepes "
+"valószínűséget. Ez nem egy jó toborzási mintának lett szánva, egyszerűen "
+"arra szolgál, hogy megmutassa, hogyan kell az MI-t használni.\n"
+"\n"
+"A 2. oldal a Lerohanó Toborzás Mikro-MI-t használja (amely a Kísérleti MI-"
+"ben is használva van).\n"
+"\n"
+"Egy Mikro-MI könnyen hozzáadható és a küldetés szükségleteihez igazítható "
+"kizárólag WML és a [micro_ai] tag használatával. Nézd meg a <span "
+"color='#00A000'>Mikro-MI wiki oldalt</span> a https://wiki.wesnoth.org/"
+"Micro_AIs címen további információért."
 
 #. [test]: id=micro_ai_test
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:5
+#, fuzzy
 msgid "Micro AI Tests"
-msgstr ""
+msgstr "Mikro-MI tesztek"
 
 #. [side]: id=Grnk, type=Goblin Spearman
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:19
+#, fuzzy
 msgid "Grnk the Frail"
-msgstr ""
+msgstr "Grnk, az esendő"
 
 #. [side]: id=Grnk, type=Goblin Spearman
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:27
+#, fuzzy
 msgid "team_name^Grnk"
-msgstr ""
+msgstr "Grnk"
 
 #. [event]
 #. [test]: id=swarm
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:51
 #: data/ai/micro_ais/scenarios/swarm.cfg:5
+#, fuzzy
 msgid "Swarm"
-msgstr ""
+msgstr "Raj"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:60
+#, fuzzy
 msgid "Lurkers"
-msgstr ""
+msgstr "Leselkedők"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:66
@@ -2044,13 +2101,15 @@ msgstr ""
 
 #. [event]
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:69
+#, fuzzy
 msgid "Bottleneck"
-msgstr ""
+msgstr "Szűkület"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:81
+#, fuzzy
 msgid "Healers"
-msgstr ""
+msgstr "Gyógyítók"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:87
@@ -2061,13 +2120,15 @@ msgstr ""
 #. [test]: id=simple_attack
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:90
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:5
+#, fuzzy
 msgid "Simple Attack"
-msgstr ""
+msgstr "Egyszerű Támadás"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:93
+#, fuzzy
 msgid "Fast AI"
-msgstr ""
+msgstr "Gyors MI"
 
 #. [set_menu_item]: id=m01_menu_bottleneck_defense
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:100
@@ -2092,8 +2153,9 @@ msgstr ""
 #. [set_menu_item]: id=m02_swamp_lurkers
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:119
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:130
+#, fuzzy
 msgid "Swamp Lurker Micro AI demo"
-msgstr ""
+msgstr "Mocsári Leselkedő Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:131
@@ -2108,8 +2170,9 @@ msgstr ""
 #. [set_menu_item]: id=m03_guardians
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:138
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:149
+#, fuzzy
 msgid "Guardian Micro AI demo"
-msgstr ""
+msgstr "Védelmező Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:150
@@ -2123,8 +2186,9 @@ msgstr ""
 #. [set_menu_item]: id=m04_patrol
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:157
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:168
+#, fuzzy
 msgid "Patrol Micro AI demo"
-msgstr ""
+msgstr "Járőr Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:169
@@ -2135,8 +2199,9 @@ msgstr ""
 #. [set_menu_item]: id=m05_recruiting
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:176
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:187
+#, fuzzy
 msgid "Recruiting Tests Micro AI demo"
-msgstr ""
+msgstr "Toborzási tesztek Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:188
@@ -2145,8 +2210,8 @@ msgid ""
 "A simple scenario set up for the sole purpose of testing different "
 "recruiting patterns."
 msgstr ""
-"Egy egyszerű küldetés, amelynek egyetlen célja különböző toborzási stratégiák"
-" tesztelése."
+"Egy egyszerű küldetés, amelynek egyetlen célja különböző toborzási "
+"stratégiák tesztelése."
 
 #. [set_menu_item]: id=m06_protect
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:195
@@ -2172,8 +2237,9 @@ msgstr ""
 #. [set_menu_item]: id=m06a_protect
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:215
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:226
+#, fuzzy
 msgid "HttT: The Elves Besieged Micro AI demo"
-msgstr ""
+msgstr "Trónörökös: Tünde-föld ostroma Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:227
@@ -2187,8 +2253,9 @@ msgstr ""
 #. [set_menu_item]: id=m07_messenger
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:234
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:245
+#, fuzzy
 msgid "Messenger Escort Micro AI demo"
-msgstr ""
+msgstr "Hírnök Kísérő Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:246
@@ -2202,8 +2269,9 @@ msgstr ""
 #. [set_menu_item]: id=m08_animals
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:253
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:264
+#, fuzzy
 msgid "Animals Micro AI demo"
-msgstr ""
+msgstr "Állatok Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:265
@@ -2218,8 +2286,9 @@ msgstr ""
 #. [set_menu_item]: id=m09_wolves
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:272
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:283
+#, fuzzy
 msgid "Wolves Micro AI demo"
-msgstr ""
+msgstr "Farkasok Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:284
@@ -2232,8 +2301,9 @@ msgstr ""
 #. [set_menu_item]: id=m10_swarm
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:291
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:302
+#, fuzzy
 msgid "Swarm Micro AI demo"
-msgstr ""
+msgstr "Raj Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:303
@@ -2244,8 +2314,9 @@ msgstr ""
 #. [set_menu_item]: id=m11_dragon
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:310
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:321
+#, fuzzy
 msgid "Dragon Micro AI demo"
-msgstr ""
+msgstr "Sárkány Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:322
@@ -2276,8 +2347,9 @@ msgstr ""
 #. [set_menu_item]: id=m13_goto
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:348
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:359
+#, fuzzy
 msgid "Goto Micro AI demo"
-msgstr ""
+msgstr "Menj Oda Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:360
@@ -2312,8 +2384,9 @@ msgstr ""
 #. [set_menu_item]: id=m15_simple_attack
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:386
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:397
+#, fuzzy
 msgid "Simple Attack Micro AI demo"
-msgstr ""
+msgstr "Egyszerű Támadás Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:398
@@ -2327,8 +2400,9 @@ msgstr ""
 #. [set_menu_item]: id=m16_fast
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:405
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:416
+#, fuzzy
 msgid "Fast Micro AI demo"
-msgstr ""
+msgstr "Gyors Mikro-MI bemutató"
 
 #. [message]: speaker=Grnk
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:417
@@ -2348,13 +2422,17 @@ msgstr ""
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:437
+#, fuzzy
 msgid "Move Grnk to one of the signposts"
-msgstr ""
+msgstr "Mozgasd Grnkt az egyik irányjelző táblához"
 
 #. [note]
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:441
+#, fuzzy
 msgid "Right-click on a signpost to get information about the scenario"
 msgstr ""
+"Kattints jobb gombbal egy irányjelző táblára, hogy információt kapj a "
+"küldetésről"
 
 #. [side]: id=Grospur, type=General
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:18
@@ -2371,8 +2449,8 @@ msgstr "Uralt"
 #, fuzzy
 msgid "General Grospur, what do we do?  These undead will surely wipe us out."
 msgstr ""
-"Grospur tábornok úr, mit csináljunk? Ezek az élőholtak bizonyára eltörölnek"
-" minket a föld színéről."
+"Grospur tábornok úr, mit csináljunk?  Ezek az élőholtak bizonyára eltörölnek "
+"minket a föld színéről."
 
 #. [message]: speaker=Grospur
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:129
@@ -2391,8 +2469,9 @@ msgstr ""
 
 #. [objectives]
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:135
+#, fuzzy
 msgid "Watch the undead take care of business"
-msgstr ""
+msgstr "Nézd, ahogy az élőholtak megteszik amit meg kell"
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:137
@@ -2408,15 +2487,19 @@ msgstr "Grospur utolsó egysége is meghal"
 
 #. [note]
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:145
+#, fuzzy
 msgid "When your leader dies, side leadership passes on to another unit"
-msgstr ""
+msgstr "Amikor a vezéred meghal, egy másik egység lesz az új vezér"
 
 #. [message]: speaker=$second_unit.id
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:172
+#, fuzzy
 msgid ""
 "What the ... ?!?  They are not supposed to attack me. That just doesn't "
 "happen in Wesnoth!"
 msgstr ""
+"Hogy mi...?!?  Nem szabadna engem támadniuk! Ilyen egyszerűen nem történhet "
+"Wesnothban!"
 
 #. [message]: speaker=Uralt
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:176
@@ -2442,8 +2525,9 @@ msgstr ""
 
 #. [message]: speaker=Uralt
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:241
+#, fuzzy
 msgid "And that's how the undead AI executes total annihilation ..."
-msgstr ""
+msgstr "És így hajt végre az élőholt MI totális megsemmisítést..."
 
 #. [side]
 #: data/ai/micro_ais/scenarios/swarm.cfg:41
@@ -2453,13 +2537,15 @@ msgstr "Denevérek"
 
 #. [set_menu_item]: id=m02_new_gryphon
 #: data/ai/micro_ais/scenarios/swarm.cfg:95
+#, fuzzy
 msgid "Place Side 1 Gryphon"
-msgstr ""
+msgstr "1. oldali griff lerakása"
 
 #. [set_menu_item]: id=m03_new_bat
 #: data/ai/micro_ais/scenarios/swarm.cfg:106
+#, fuzzy
 msgid "Place Side 2 Bat"
-msgstr ""
+msgstr "2. oldali denevér lerakása"
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/swarm.cfg:144
@@ -2499,8 +2585,9 @@ msgstr "Győzd le az összes denevért"
 
 #. [objective]: condition=lose
 #: data/ai/micro_ais/scenarios/swarm.cfg:164
+#, fuzzy
 msgid "Death of all gryphons"
-msgstr ""
+msgstr "Az összes griff halála"
 
 #. [side]
 #: data/ai/micro_ais/scenarios/wolves.cfg:42
@@ -2512,22 +2599,25 @@ msgstr "Farkasok"
 #: data/ai/micro_ais/scenarios/wolves.cfg:56
 #, fuzzy
 msgid "More Wolves"
-msgstr "Mégtöbb farkas"
+msgstr "Még több farkas"
 
 #. [set_menu_item]: id=m02_new_peasant
 #: data/ai/micro_ais/scenarios/wolves.cfg:124
+#, fuzzy
 msgid "Place Side 1 Peasant"
-msgstr ""
+msgstr "1. oldali paraszt lerakása"
 
 #. [set_menu_item]: id=m03_new_wolf2
 #: data/ai/micro_ais/scenarios/wolves.cfg:135
+#, fuzzy
 msgid "Place Side 2 Wolf"
-msgstr ""
+msgstr "2. oldali farkas lerakása"
 
 #. [set_menu_item]: id=m04_new_wolf3
 #: data/ai/micro_ais/scenarios/wolves.cfg:146
+#, fuzzy
 msgid "Place Side 3 Wolf"
-msgstr ""
+msgstr "3. oldali farkas lerakása"
 
 #. [message]: speaker=narrator
 #: data/ai/micro_ais/scenarios/wolves.cfg:195
@@ -2582,8 +2672,9 @@ msgstr ""
 
 #. [objectives]
 #: data/ai/micro_ais/scenarios/wolves.cfg:238
+#, fuzzy
 msgid "Watch the wolves move around and fight each other"
-msgstr ""
+msgstr "Nézd, ahogy a farkasok ide-oda mozognak és egymással harcolnak"
 
 #. [objective]: condition=win
 #: data/ai/micro_ais/scenarios/wolves.cfg:240
@@ -2593,8 +2684,10 @@ msgstr "Nem maradtak farkasok az egyik oldalon"
 
 #. [message]: speaker=narrator
 #: data/ai/scenarios/ai_arena_small/0001-healing.cfg:17
+#, fuzzy
 msgid "This situation should test the ability of AI to heal efficiently..."
 msgstr ""
+"Ez a szituáció azt teszteli, hogy képes-e az MI hatékonyan gyógyítani..."
 
 #. [message]: speaker=narrator
 #: data/ai/scenarios/ai_arena_small/0002-poisoning.cfg:17
@@ -2626,8 +2719,9 @@ msgstr "Fegyver teszt alacsony életerejű célponttal"
 
 #. [message]: speaker=narrator
 #: data/ai/scenarios/ai_arena_small/0003-simple_combat.cfg:17
+#, fuzzy
 msgid "This situation should test the ability of AI to make an attack..."
-msgstr ""
+msgstr "Ez a szituáció az MI támadási képességét teszteli..."
 
 #. [message]: speaker=narrator
 #: data/ai/scenarios/ai_arena_small/0004-filtered_combat.cfg:17
@@ -2703,8 +2797,9 @@ msgstr "Dél"
 
 #. [message]: speaker=narrator
 #: data/ai/scenarios/scenario-AI_Arena_small.cfg:173
+#, fuzzy
 msgid "Which AI do you wish to use, O Mighty AI Developer?"
-msgstr ""
+msgstr "Melyik MI-t szeretnéd használni, ó nagy MI Fejlesztő?"
 
 #. [option]
 #: data/ai/scenarios/scenario-AI_Arena_small.cfg:175
