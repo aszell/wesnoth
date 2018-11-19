@@ -8,20 +8,21 @@
 # Gabor Udvari <gabor.udvari@gmail.com>, 2008.
 # Kádár-Németh Krisztián <krisztian.kad@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2014.
 # Farkas János <mail.janos.farkas@gmail.com>, 2014.
+# Krutki Tamás <krtamas-wesnoth@0x64.org>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-units_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2014-05-08 23:48+0200\n"
-"Last-Translator: Kádár-Németh Krisztián <krisztian.kad@gmail.com>\n"
-"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"PO-Revision-Date: 2018-11-20 00:43+0100\n"
+"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
+"Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 "X-Poedit-Bookmarks: 232,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #. [attack]: type=impact
@@ -595,7 +596,6 @@ msgstr "balta"
 #. [unit_type]: id=Dwarvish Masked Sentinel, race=dwarf
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Sentinel.cfg:18
 #: data/core/units/dwarves/Sentinel.cfg:19
-#, fuzzy
 #| msgid ""
 #| "Champions among their fellow troops, the dwarven sentinels form the "
 #| "bulwark of their battle lines. Leading a direct assault against a line "
@@ -796,7 +796,7 @@ msgstr "kosfejbuzogány"
 #. [attack]: type=impact
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Pathfinder.cfg:41
 msgid "bolas"
-msgstr ""
+msgstr "bola"
 
 #. [attack]: type=arcane
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Sun_Singer.cfg:36
@@ -1181,7 +1181,6 @@ msgstr "Perzsekény tűzmester"
 
 #. [unit_type]: id=Drake Flare, race=drake
 #: data/core/units/drakes/Flare.cfg:17
-#, fuzzy
 #| msgid ""
 #| "Respected for the heat of their flame and revered for their charisma, "
 #| "Flares aspire to become great leaders of their people, both in war and "
@@ -1383,11 +1382,10 @@ msgstr ""
 #. [unit_type]: id=Dune Apothecary, race=dunefolk
 #: data/core/units/dunefolk/Apothecary.cfg:4
 msgid "Dune Apothecary"
-msgstr ""
+msgstr "Dűnei medicinás"
 
 #. [unit_type]: id=Dune Apothecary, race=dunefolk
 #: data/core/units/dunefolk/Apothecary.cfg:22
-#, fuzzy
 #| msgid ""
 #| "Some men excel at medicine the way others do at strength of arms, and the "
 #| "Tabib are those whose knowledge is without peer outside of the Khalifate. "
@@ -1402,21 +1400,18 @@ msgid ""
 "travels, many are able to treat themselves."
 msgstr ""
 "Akadnak, akik olyannyira kitűnnek az orvostudományukkal, mint mások a karjuk "
-"irtózatos erejével; a tabibok tudásának nincs párja a Kalifátuson kívül. "
+"irtózatos erejével; a medicinások tudásának nincs párja a dűnenépen kívül. "
 "Gyógyszereik nemcsak a sebeket gyógyítják, de megszüntetik a fertőzést és a "
 "mérgezést is, sokszor a sérültek legnagyobb meglepetésére. Hosszú évek "
 "vándorlásai edzették meg őket, sokan közülük magukat is tudják gyógyítani."
 
 #. [unit_type]: id=Dune Blademaster, race=dunefolk
 #: data/core/units/dunefolk/Blademaster.cfg:4
-#, fuzzy
-#| msgid "Drake Blademaster"
 msgid "Dune Blademaster"
-msgstr "Perzsekény pengeforgató"
+msgstr "Dűnei pengeforgató"
 
 #. [unit_type]: id=Dune Blademaster, race=dunefolk
 #: data/core/units/dunefolk/Blademaster.cfg:20
-#, fuzzy
 #| msgid ""
 #| "Distinguished for their bravery and skill, Shuja are the leaders among "
 #| "the Khalif's ranks. Their exploits are well known among their cohorts, "
@@ -1430,17 +1425,15 @@ msgid ""
 "often found leading from the front, taking down their foes with sword and "
 "shield."
 msgstr ""
-"Kiváló bátorságuk és képességeik miatt a shuják a Kalifátus seregének "
+"Kiváló bátorságuk és képességeik miatt a pengeforgatók a dűnenép seregének "
 "vezetői. Hőstetteik jól ismertek csapataik előtt, és fűtik katonáikat, hogy "
 "az ügyükért harcoljanak. Ennek ellenére gyakran személyesen vezetik a "
 "támadást, az ellenséget kardjukkal és pajzsukkal a földre tiporva."
 
 #. [unit_type]: id=Dune Burner, race=dunefolk
 #: data/core/units/dunefolk/Burner.cfg:4
-#, fuzzy
-#| msgid "Drake Burner"
 msgid "Dune Burner"
-msgstr "Tűzokádó perzsekény"
+msgstr "Dűnei gyújtogató"
 
 #. [unit_type]: id=Dune Burner, race=dunefolk
 #: data/core/units/dunefolk/Burner.cfg:23
@@ -1468,11 +1461,10 @@ msgstr "tüzes nyíl"
 #. [unit_type]: id=Dune Cataphract, race=dunefolk
 #: data/core/units/dunefolk/Cataphract.cfg:4
 msgid "Dune Cataphract"
-msgstr ""
+msgstr "Dűnei katafrakt"
 
 #. [unit_type]: id=Dune Cataphract, race=dunefolk
 #: data/core/units/dunefolk/Cataphract.cfg:18
-#, fuzzy
 #| msgid ""
 #| "The Mufariq are eminent horsemen, amassing titles and accolades that are "
 #| "as distinguishing for them as the scrollwork on their armor. Having honed "
@@ -1488,7 +1480,7 @@ msgid ""
 "not deter these riders in the slightest, and the displaced air of a "
 "descending mace is the last sound they hear."
 msgstr ""
-"A mufariqok kitűnő lovasok, akik olyan címeket és elismeréseket halmoznak "
+"A katafraktok kitűnő lovasok, akik olyan címeket és elismeréseket halmoznak "
 "fel, amelyek ugyanúgy kitüntetik őket, mint a páncéljuk díszítése. Kopjás "
 "harci tudományukat hosszú évek csatáiban tökéletesítve megállíthatatlan "
 "elemi csapássá váltak. A menekülő ellenség hamar felismeri, hogy a dombok "
@@ -1522,14 +1514,11 @@ msgstr "csőr"
 
 #. [unit_type]: id=Dune Explorer, race=dunefolk
 #: data/core/units/dunefolk/Explorer.cfg:4
-#, fuzzy
-#| msgid "Dwarvish Explorer"
 msgid "Dune Explorer"
-msgstr "Törp felfedező"
+msgstr "Dűnei felfedező"
 
 #. [unit_type]: id=Dune Explorer, race=dunefolk
 #: data/core/units/dunefolk/Explorer.cfg:16
-#, fuzzy
 #| msgid ""
 #| "Muharib are often utilized as heavy scouts, no longer just probing the "
 #| "enemy but conducting raids on the supply lines or eliminating patrols. "
@@ -1543,7 +1532,7 @@ msgid ""
 "no issue pilfering these supplies, and so they tend to be more well-equipped "
 "than most."
 msgstr ""
-"A muharibokat gyakran csatázó felderítőként használják, akik már nemcsak "
+"A felfedezők gyakran csatázó felderítőként használják, akik már nemcsak "
 "próbálgatják az ellenfél erejét, hanem őrjáratokat iktatnak ki, vagy "
 "portyákat vezetnek az utánpótlási vonalak ellen. Gyakran hosszú időre vannak "
 "távol a fő seregtől, ám mivel nincsenek aggályaik a megszerzett zsákmány "
@@ -1557,7 +1546,7 @@ msgstr ""
 #: data/core/units/dunefolk/Swiftrider.cfg:30
 #: data/core/units/dunefolk/Windrider.cfg:31
 msgid "composite bow"
-msgstr "Reflexíj"
+msgstr "reflexíj"
 
 #. [unit_type]: id=Falcon, race=falcon
 #: data/core/units/dunefolk/Falcon.cfg:4
@@ -1566,7 +1555,6 @@ msgstr "Sólyom"
 
 #. [unit_type]: id=Falcon, race=falcon
 #: data/core/units/dunefolk/Falcon.cfg:17
-#, fuzzy
 #| msgid ""
 #| "Seen as status symbols of the nobles, falcons are precious possessions "
 #| "normally used for sport. The same techniques are employed to rend and "
@@ -1579,18 +1567,17 @@ msgid ""
 "land."
 msgstr ""
 "A nemesség státuszszimbólumaként a sólymokat általában drága sportokra "
-"használják. A képességeik akkor is jól jönnek, ha a Kalifátus ellenségeinek "
+"használják. A képességeik akkor is jól jönnek, ha az ellenségeik "
 "széthasítása, szétszaggatása a cél, vagy a vidéket kell villámgyorsan "
 "földeríteni. "
 
 #. [unit_type]: id=Dune Firetrooper, race=dunefolk
 #: data/core/units/dunefolk/Firetrooper.cfg:4
 msgid "Dune Firetrooper"
-msgstr ""
+msgstr "Dűnei hamvasztó"
 
 #. [unit_type]: id=Dune Firetrooper, race=dunefolk
 #: data/core/units/dunefolk/Firetrooper.cfg:24
-#, fuzzy
 #| msgid ""
 #| "Qatif-al-nar who have shut out the world for their experiments are given "
 #| "the honorific Tineen, as both a sign of respect and of fear. No longer "
@@ -1604,22 +1591,20 @@ msgid ""
 "their caged fire and likely to test their latest naphtha jar at the first "
 "opportunity."
 msgstr ""
-"Azok a qatif-al-narok, akik elzárkóztak a világtól a kísérleteik kedvéért, "
-"megkapják a megtisztelő tineen nevet, elismertségből és félelemből egyaránt. "
+"Azok a perzselők, akik elzárkóztak a világtól a kísérleteik kedvéért, "
+"megkapják a megtisztelő hamvasztó nevet, elismertségből és félelemből"
+" egyaránt. "
 "Többé nincsenek tekintettel az élet értékére, csupán a foglyul ejtett tüzük "
-"erejének rabjai, és valószínűleg az utolsó nafta üvegcséjüket is letesztelik "
+"erejének rabjai, és valószínűleg a legújabb nafta üvegcséjüket is letesztelik "
 "az első adódó alkalommal."
 
 #. [unit_type]: id=Dune Harrier, race=dunefolk
 #: data/core/units/dunefolk/Harrier.cfg:4
-#, fuzzy
-#| msgid "Drake Warrior"
 msgid "Dune Harrier"
-msgstr "Perzsekény harcos"
+msgstr "Dűnei kaszaboló"
 
 #. [unit_type]: id=Dune Harrier, race=dunefolk
 #: data/core/units/dunefolk/Harrier.cfg:20
-#, fuzzy
 #| msgid ""
 #| "Mighwar hold themselves to a higher standard than the ranks of the "
 #| "Monawish from which they ascended. Not content to merely draw the enemy "
@@ -1633,8 +1618,8 @@ msgid ""
 "dancing through the ranks of the enemy, swords ripping and tearing at those "
 "around them. "
 msgstr ""
-"A mighwarok magasabb követelményekhez tartják magukat, mint a monawishok, "
-"akik közül előléptek.Nem elégednek meg az ellenség kicsalogatásával, hanem "
+"A kaszabolók magasabb követelményekhez tartják magukat, mint a rajtaütők, "
+"akik közül előléptek. Nem elégednek meg az ellenség kicsalogatásával, hanem "
 "sebességüket olyan agresszivitással párosítják, amellyel keresztültáncolnak "
 "az ellenséges vonalakon. Ilyenkor a kardjukkal szétkaszabolják az ellent "
 "maguk körül."
@@ -1652,14 +1637,11 @@ msgstr "pallos"
 
 #. [unit_type]: id=Dune Herbalist, race=dunefolk
 #: data/core/units/dunefolk/Herbalist.cfg:4
-#, fuzzy
-#| msgid "Duelist"
 msgid "Dune Herbalist"
-msgstr "Párbajhős"
+msgstr "Dűnei gyógyfüves"
 
 #. [unit_type]: id=Dune Herbalist, race=dunefolk
 #: data/core/units/dunefolk/Herbalist.cfg:20
-#, fuzzy
 #| msgid ""
 #| "Hakim are learned individuals who have given up their urban life in order "
 #| "to assist the Khalifate armies in their travels. Their motivations are "
@@ -1677,10 +1659,12 @@ msgid ""
 "techniques and possess a potent clutch of medicines and herbs, which allows "
 "them to quickly heal even the most gravely wounded allies."
 msgstr ""
-"A hakimok olyan tanult polgárok, akik feladták városi életüket azért, hogy a "
-"Kalifátus seregét segítsék a küldetések során. E döntésüknek számos "
+"A gyógyfüvesek olyan tanult polgárok, akik feladták városi életüket azért,"
+" hogy a "
+"dűnenép seregét segítsék utazásaik során. E döntésüknek számos "
 "mozgatórugója van: néhányan a kalandot vagy a biztos megélhetést keresik, "
-"míg mások a hitüket szolgálják. Mindenesetre a hakimokat mindenki tiszteli. "
+"míg mások a hitüket szolgálják. Mindenesetre a gyógyfüveseket mindenki"
+" tiszteli. "
 "Képzett gyógyítók, akik egyaránt használják a fejlett orvosi módszereket, "
 "valamint az erős gyógyszereket és gyógyfüveket. Ez a tudás teszi lehetővé "
 "számukra a gyors gyógyítást még a legsúlyosabb sebesülések esetében is."
@@ -1688,11 +1672,10 @@ msgstr ""
 #. [unit_type]: id=Dune Marauder, race=dunefolk
 #: data/core/units/dunefolk/Marauder.cfg:4
 msgid "Dune Marauder"
-msgstr ""
+msgstr "Dűnei martalóc"
 
 #. [unit_type]: id=Dune Marauder, race=dunefolk
 #: data/core/units/dunefolk/Marauder.cfg:26
-#, fuzzy
 #| msgid ""
 #| "Those Qanas who prove to be particularly skilled are formed into units of "
 #| "Hadaf, which are often used to raid enemy depots and towns for supplies. "
@@ -1706,7 +1689,7 @@ msgid ""
 "a time, returning to camp only for supplies and to pass on news of their "
 "exploits."
 msgstr ""
-"Azokból a qanasokból képezik a hadafokat, akik kiváltképp rátermettek. "
+"Azokból a fosztogatókból képezik a martalócokat, akik kiváltképp rátermettek. "
 "Leginkább portyázni szoktak, fő feladatuk az ellenséges raktárak és városok "
 "kifosztása. Ez a nagyfokú önállóság gyakran azt jelenti, hogy e lovasok "
 "hetekre eltűnnek, és csak utánpótlásért, illetve a hírek továbbításáért "
@@ -1715,11 +1698,10 @@ msgstr ""
 #. [unit_type]: id=Dune Piercer, race=dunefolk
 #: data/core/units/dunefolk/Piercer.cfg:4
 msgid "Dune Piercer"
-msgstr ""
+msgstr "Dűnei nyársaló"
 
 #. [unit_type]: id=Dune Piercer, race=dunefolk
 #: data/core/units/dunefolk/Piercer.cfg:21
-#, fuzzy
 #| msgid ""
 #| "The Khaiyal understand the psychological impact of a charging horse, and "
 #| "reinforce this by cladding themselves in heavy armor. Majestic at rest, a "
@@ -1735,24 +1717,21 @@ msgid ""
 "Piercer ride into the resulting melee with their maces in hand, trusting "
 "their armor to keep them safe."
 msgstr ""
-"A khaiyalok megértették a vágtázó csatamén pszichológiai hatását, amelyet "
+"A nyársalók megértették a vágtázó csatamén pszichológiai hatását, amelyet "
 "nehéz páncélba öltözve erősítenek még tovább. Már nyugalomban is fenséges "
-"látványt nyújtanak, rohamozás közben pedig – kopjával a kézben – egy khaiyal "
+"látványt nyújtanak, rohamozás közben pedig – kopjával a kézben – egy nyársaló "
 "gyakran elég lendülettel rendelkezik a sorok áttöréséhez. Azon ritka "
 "alkalmakkor, mikor a roham megakad és ez a fenséges lovas nem gázolja le az "
-"ellenfelét, a khaiyalok a kialakuló kézitusában a buzogányukkal osztják az "
+"ellenfelét, a nyársalók a kialakuló kézitusában a buzogányukkal osztják az "
 "ütéseket, bízva abban, hogy a páncéljuk megvédi őket."
 
 #. [unit_type]: id=Dune Raider, race=dunefolk
 #: data/core/units/dunefolk/Raider.cfg:4
-#, fuzzy
-#| msgid "Direwolf Rider"
 msgid "Dune Raider"
-msgstr "Farkasszörny-lovas"
+msgstr "Dűnei fosztogató"
 
 #. [unit_type]: id=Dune Raider, race=dunefolk
 #: data/core/units/dunefolk/Raider.cfg:22
-#, fuzzy
 #| msgid ""
 #| "Those horsemen who are not skilled enough to join the ranks of the Faris "
 #| "or quick enough with a bow for the Saree are instead placed with the "
@@ -1768,23 +1747,23 @@ msgid ""
 "or bow as needed. Raiders are often used to draw enemies into a position "
 "where they will be surrounded and crushed by Sunderers."
 msgstr ""
-"Azon lovasokból lesznek a qanasok, akik nem elég ügyesek farisnak, vagy nem "
-"bánnak elég gyorsan az íjjal, hogy saree-vá válhassanak. Ennek ellenére "
-"qanasnak lenni közel sem a bukás jele: ők a muharibok lovas megfelelői, akik "
-"igény szerint a gyalogságot buzogánnyal vagy íjjal támogatják. A qanasokat "
+"Azon lovasokból lesznek a fosztogatók, akik nem elég ügyesek áttörőnek, vagy"
+" nem "
+"bánnak elég gyorsan az íjjal, hogy vágtázókká válhassanak. Ennek ellenére "
+"fosztogatónak lenni közel sem a bukás jele: ők a felfedezők lovas megfelelői,"
+" akik "
+"igény szerint a gyalogságot buzogánnyal vagy íjjal támogatják. A"
+" fosztogatókat "
 "gyakran használják megtévesztésre, hogy olyan helyre csalják az ellenséget, "
-"ahol bekerítik és szétzúzzák őket a farisok."
+"ahol bekerítik és szétzúzzák őket az áttörők."
 
 #. [unit_type]: id=Dune Ranger, race=dunefolk
 #: data/core/units/dunefolk/Ranger.cfg:4
-#, fuzzy
-#| msgid "Ranger"
 msgid "Dune Ranger"
-msgstr "Erdőkerülő"
+msgstr "Dűnei vadász"
 
 #. [unit_type]: id=Dune Ranger, race=dunefolk
 #: data/core/units/dunefolk/Ranger.cfg:17
-#, fuzzy
 #| msgid ""
 #| "Batal are the elite of the Muharib, engaging in constant hit and run "
 #| "attacks against an enemy army. Nimble as a goat and strong as a ram, they "
@@ -1800,23 +1779,20 @@ msgid ""
 "for taking on only the most daring missions, Rangers are often heroes to the "
 "common troopers, an image they do not try to dissuade."
 msgstr ""
-"A batalok a muharibok krémje, akik az ellenséggel folyamatosan üss-és-fuss "
+"A vadászok a felfedezők krémje, akik az ellenséggel folyamatosan üss-és-fuss "
 "taktikával harcolnak. Fürgék, mint a kecske, és erősek, mint a kos: "
 "egyszerre több módon szeretnek támadni: megfutamítják az ellenséget a "
 "nyilaikkal, aztán levágják őket a bárdjaikkal. Mivel előszeretettel "
-"vállalkoznak vakmerő küldetésekre, a batalok gyakran hősök a többi katona "
+"vállalkoznak vakmerő küldetésekre, a vadászok gyakran hősök a többi katona "
 "szemében, és e hírnevüket a világért sem tennék tönkre."
 
 #. [unit_type]: id=Dune Rider, race=dunefolk
 #: data/core/units/dunefolk/Rider.cfg:4
-#, fuzzy
-#| msgid "Direwolf Rider"
 msgid "Dune Rider"
-msgstr "Farkasszörny-lovas"
+msgstr "Dűnei lovas"
 
 #. [unit_type]: id=Dune Rider, race=dunefolk
 #: data/core/units/dunefolk/Rider.cfg:17
-#, fuzzy
 #| msgid ""
 #| "Rami are excellent horsemen, able to shoot from horseback better than "
 #| "most men can manage from foot. Disdaining the use of heavy armor, Rami "
@@ -1828,7 +1804,7 @@ msgid ""
 "their superior speed and agility to circle and harass their foes, whittling "
 "down their numbers with relentless arrows."
 msgstr ""
-"A ramik kitűnő lovasok, akik jobban lőnek lóhátról, mint a legtöbb ember "
+"Kitűnő lovasok, akik jobban lőnek lóhátról, mint a legtöbb ember "
 "gyalogosan. Megvetik a vérteket, inkább gyorsaságukat és ügyességüket "
 "használják ki a ellenfelek zaklatására és bekerítésére, akiket aztán "
 "könyörtelen nyilaikkal mészárolnak le."
@@ -1836,11 +1812,10 @@ msgstr ""
 #. [unit_type]: id=Dune Rover, race=dunefolk
 #: data/core/units/dunefolk/Rover.cfg:4
 msgid "Dune Rover"
-msgstr ""
+msgstr "Dűnei csatangoló"
 
 #. [unit_type]: id=Dune Rover, race=dunefolk
 #: data/core/units/dunefolk/Rover.cfg:16
-#, fuzzy
 #| msgid ""
 #| "Jundi in many ways represent the ideal Khalifate unit; flexible, mobile, "
 #| "equally effective in defense and offense as well as in ranged or close "
@@ -1856,7 +1831,7 @@ msgid ""
 "fight best at dawn or dusk, corresponding to the time when desert "
 "temperatures are the most reasonable."
 msgstr ""
-"A jundi több szempontból is az ideális kalifátusi egységet testesíti meg: "
+"A csatangoló több szempontból is az ideális dűnei egységet testesíti meg: "
 "rugalmas, mozgékony, egyaránt hatékony védekezéskor és támadáskor, "
 "kézitusában és távolsági harcban. Legkényelmesebben a számukra ismerős "
 "terepen mozognak, mint például a déli sivatagjaik és hegyeik. Ráadásul "
@@ -1866,11 +1841,10 @@ msgstr ""
 #. [unit_type]: id=Dune Scorcher, race=dunefolk
 #: data/core/units/dunefolk/Scorcher.cfg:4
 msgid "Dune Scorcher"
-msgstr ""
+msgstr "Dűnei perzselő"
 
 #. [unit_type]: id=Dune Scorcher, race=dunefolk
 #: data/core/units/dunefolk/Scorcher.cfg:23
-#, fuzzy
 #| msgid ""
 #| "Qatif-al-nar spend so much time experimenting with their weapons that "
 #| "they smell constantly of ash and flame. Regarded with wariness by their "
@@ -1883,22 +1857,19 @@ msgid ""
 "troops, Scorchers can be easily located in battle by the cleared charred "
 "area around them, a testament to the success of their experiments."
 msgstr ""
-"A qatif-al-nar katonák olyan sokat kísérleteznek a fegyvereikkel, hogy "
+"A perzselők olyan sokat kísérleteznek a fegyvereikkel, hogy "
 "állandóan hamutól és lángtól büdösek. Ezen tulajdonságuk miatt csapattársaik "
-"is elismerő óvatossággal tekintenek rájuk. A qatif-al-nar katonák könnyen "
+"is elismerő óvatossággal tekintenek rájuk. A perzselők könnyen "
 "megtalálhatók a csatamezőn az őket körülvevő elszenesedett üres terület "
 "közepén, ez pedig kísérleteik sikerének bizonyítéka."
 
 #. [unit_type]: id=Dune Skirmisher, race=dunefolk
 #: data/core/units/dunefolk/Skirmisher.cfg:4
-#, fuzzy
-#| msgid "Saurian Skirmisher"
 msgid "Dune Skirmisher"
-msgstr "Gyík menetelő"
+msgstr "Dűnei rajtaütő"
 
 #. [unit_type]: id=Dune Skirmisher, race=dunefolk
 #: data/core/units/dunefolk/Skirmisher.cfg:19
-#, fuzzy
 #| msgid ""
 #| "Those Jundi who are proficient at scouting are elevated into the ranks of "
 #| "the Monawish. Discarding their bow, the Monawish focus on developing "
@@ -1912,21 +1883,21 @@ msgid ""
 "used to harry the flanks of opposing forces, and it is said to be easier to "
 "catch the wind in your hand than to catch a Skirmisher."
 msgstr ""
-"Azok a jundik, akik elég gyakorlottak a felderítésben, a monawishok soraiba "
-"nyernek felvételt. A monawishok lemondanak az íjról, helyette a lábuk "
+"Azok a csatangolók, akik elég gyakorlottak a felderítésben, a rajtaütők"
+" soraiba "
+"nyernek felvételt. A rajtaütők lemondanak az íjról, helyette a lábuk "
 "gyorsaságára helyezik a hangsúlyt, ami lehetővé teszi számukra, hogy gyorsan "
 "csatába szálljanak vagy elinaljanak. Gyakran alkalmazzák őket a ellenfél "
 "szárnyainak zavarására, és azt mondják, könnyebb a szelet a kezeddel "
-"elkapni, mint egy monawisht megfogni."
+"elkapni, mint egy rajtaütőt megfogni."
 
 #. [unit_type]: id=Dune Soldier, race=dunefolk
 #: data/core/units/dunefolk/Soldier.cfg:4
 msgid "Dune Soldier"
-msgstr ""
+msgstr "Dűnei katona"
 
 #. [unit_type]: id=Dune Soldier, race=dunefolk
 #: data/core/units/dunefolk/Soldier.cfg:19
-#, fuzzy
 #| msgid ""
 #| "The Arif form the backbone of any Khalifate foot advance. Many come from "
 #| "noble or military families, and have spent most of their lives training "
@@ -1942,21 +1913,21 @@ msgid ""
 "troops to exploit. The sight of Soldiers on the march, shields high, has "
 "caused many a defender to worry about the strength of their walls."
 msgstr ""
-"Az arifok képezik a kalifátusi gyalogság gerincét. Sokan közülük nemes, vagy "
+"A dűnei katonák képezik a dűnei gyalogság gerincét. Sokan közülük nemes, vagy "
 "harcos családból származnak, és életük nagy részében a harcot gyakorolták. "
 "Különleges kardvívó képességük miatt gyakran küldik őket megerősített "
 "ellenséges állások ellen, hogy rést üssenek a sereg többi része számára. "
-"Menetelő, pajzsos arifok láttán már sok védő kezdett kételkedni a várfalak "
+"Menetelő, pajzsos dűnei katonák láttán már sok védő kezdett kételkedni a"
+" várfalak "
 "erejében."
 
 #. [unit_type]: id=Dune Spearguard, race=dunefolk
 #: data/core/units/dunefolk/Spearguard.cfg:4
 msgid "Dune Spearguard"
-msgstr ""
+msgstr "Dűnei lándzsaőr"
 
 #. [unit_type]: id=Dune Spearguard, race=dunefolk
 #: data/core/units/dunefolk/Spearguard.cfg:19
-#, fuzzy
 #| msgid ""
 #| "Although the Khalifate armies are known for their astonishing mobility "
 #| "and fierce attack, they can be able defenders. Mudafi excel at holding "
@@ -1970,22 +1941,20 @@ msgid ""
 "preferred strategy is to gradually wear down enemies, until they can be "
 "defeated in a vicious counter stroke."
 msgstr ""
-"Habár a Kalifátus seregei a megdöbbentő mozgékonyságukról és vad "
-"támadásaikról ismertek, ügyes védők is akadnak köztük. A mudafik az állásaik "
+"Habár a dűnenép seregei a megdöbbentő mozgékonyságukról és vad "
+"támadásaikról ismertek, ügyes védők is akadnak köztük. A lándzsaőrök az"
+" állásaik "
 "tartásában jeleskednek, ellenfelüket hosszú, borotvaéles lándzsáikkal "
 "tartják sakkban. Kedvelt stratégiájuk, hogy fokozatosan kimerítik az "
 "ellenfeleiket, amíg egyetlen ellencsapással nem győzedelmeskednek felettük."
 
 #. [unit_type]: id=Dune Spearmaster, race=dunefolk
 #: data/core/units/dunefolk/Spearmaster.cfg:4
-#, fuzzy
-#| msgid "Drake Blademaster"
 msgid "Dune Spearmaster"
-msgstr "Perzsekény pengeforgató"
+msgstr "Dűnei lándzsamester"
 
 #. [unit_type]: id=Dune Spearmaster, race=dunefolk
 #: data/core/units/dunefolk/Spearmaster.cfg:20
-#, fuzzy
 #| msgid ""
 #| "Spread across the Khalifate's lands are lonely towers and garrisons that "
 #| "provide shelter to caravans and locals from bandits and monsters. These "
@@ -2001,7 +1970,7 @@ msgid ""
 "they can be trusted to hold any position or line, long after lesser soldiers "
 "and men have fled in terror."
 msgstr ""
-"Körbetekintve a Kalifátus területén, a karavánok és a helyiek csak magányos "
+"Körbetekintve a dűnenép földjein, a karavánok és a helyiek csak magányos "
 "tornyokban és erődökben találnak menedéket a banditák és szörnyetegek elől. "
 "Ezeket az erődítményeket a katonák legeltökéltebbjei védik, akik gyakran "
 "küzdenek minimális eséllyel, csak hogy visszaszoríthassák a támadókat. "
@@ -2011,11 +1980,10 @@ msgstr ""
 #. [unit_type]: id=Dune Sunderer, race=dunefolk
 #: data/core/units/dunefolk/Sunderer.cfg:4
 msgid "Dune Sunderer"
-msgstr ""
+msgstr "Dűnei áttörő"
 
 #. [unit_type]: id=Dune Sunderer, race=dunefolk
 #: data/core/units/dunefolk/Sunderer.cfg:16
-#, fuzzy
 #| msgid ""
 #| "Those Khaiyal who distinguish themselves in battle are given the "
 #| "opportunity to prove themselves worthy of becoming a Faris. Those who "
@@ -2031,21 +1999,20 @@ msgid ""
 "horsemen, the Sunderers have long claimed they need only a single lance "
 "strike to kill a man."
 msgstr ""
-"Azon khaiyalok számára, akik kitűntek a csatában, megadatik a lehetőség, "
-"hogy bizonyíthassanak és faris-szá váljanak. Akik megfelelnek a próbán, azok "
+"Azon nyársalók számára, akik kitűntek a csatában, megadatik a lehetőség, "
+"hogy bizonyíthassanak és áttörővé váljanak. Akik megfelelnek a próbán, azok "
 "lovára hagyományos lóvértet adnak, hogy így különböztessék meg őket a "
-"kalifátusi lovasság többi részétől. A tökéletes lovasként számon tartott "
-"farisok régóta állítják, hogy számukra csak egyetlen kopjaszúrásra van "
+"dűnei lovasság többi részétől. A tökéletes lovasként számon tartott "
+"áttörők régóta állítják, hogy számukra csak egyetlen kopjaszúrásra van "
 "szükség egy ember ledöféséhez."
 
 #. [unit_type]: id=Dune Swiftrider, race=dunefolk
 #: data/core/units/dunefolk/Swiftrider.cfg:4
 msgid "Dune Swiftrider"
-msgstr ""
+msgstr "Dűnei vágtázó"
 
 #. [unit_type]: id=Dune Swiftrider, race=dunefolk
 #: data/core/units/dunefolk/Swiftrider.cfg:17
-#, fuzzy
 #| msgid ""
 #| "Rami who demonstrate exceptional skill with the bow are made into Saree, "
 #| "spending hours every day practicing and building a rapport with their "
@@ -2057,21 +2024,19 @@ msgid ""
 "their steed. This has made them the fastest riders in the Dunefolk armies, "
 "and a wise Warmaster uses this to their advantage."
 msgstr ""
-"Azon ramikat, akik különösen jól használják az íjukat, saree-vá képezik. "
+"Azon dűnei lovasokat, akik különösen jól használják az íjukat, vágtázókká"
+" képezik. "
 "Naponta több órán keresztül gyakorolnak, hogy minél jobban eggyé "
-"kovácsolódjanak harci ménükkel. Ők a Kalifátus seregének leggyorsabb "
-"lovasai, és egy bölcs khalid ki is használja ezt az előnyt."
+"kovácsolódjanak harci ménükkel. Ők a dűnenép seregének leggyorsabb "
+"lovasai, és egy bölcs harcmester ki is használja ezt az előnyt."
 
 #. [unit_type]: id=Dune Swordsman, race=dunefolk
 #: data/core/units/dunefolk/Swordsman.cfg:4
-#, fuzzy
-#| msgid "Swordsman"
 msgid "Dune Swordsman"
-msgstr "Kardforgató"
+msgstr "Dűnei szablyás"
 
 #. [unit_type]: id=Dune Swordsman, race=dunefolk
 #: data/core/units/dunefolk/Swordsman.cfg:19
-#, fuzzy
 #| msgid ""
 #| "Armed with their sword, shield and faith, Ghazi are warriors of some "
 #| "renown among the Khalifate armies. They have further refined their combat "
@@ -2085,22 +2050,19 @@ msgid ""
 "in number, their presence can be decisive in dislodging even the most "
 "hardened redoubt."
 msgstr ""
-"A karddal, pajzzsal és hittel felfegyverkezett ghazik hírneves harcosok a "
-"kalifátusi csapatok között. Tovább mélyítették a harcművészetüket, "
+"A karddal, pajzzsal és hittel felfegyverkezett szablyások hírneves harcosok a "
+"dűnei csapatok között. Tovább mélyítették a harcművészetüket, "
 "kiegészítve azt erős pajzsos ütéssel, mellyel fellökik gyanútlan "
 "ellenfeleiket. Bár kevesen vannak, jelenlétük döntő lehet a legkeményebb "
 "akadályok legyőzésében is."
 
 #. [unit_type]: id=Dune Warmaster, race=dunefolk
 #: data/core/units/dunefolk/Warmaster.cfg:4
-#, fuzzy
-#| msgid "Drake Blademaster"
 msgid "Dune Warmaster"
-msgstr "Perzsekény pengeforgató"
+msgstr "Dűnei harcmester"
 
 #. [unit_type]: id=Dune Warmaster, race=dunefolk
 #: data/core/units/dunefolk/Warmaster.cfg:26
-#, fuzzy
 #| msgid ""
 #| "Among every generation, a warrior elevates himself above his peers and "
 #| "foes; They seem to be able to alter the destiny of the world themselves. "
@@ -2117,24 +2079,24 @@ msgid ""
 msgstr ""
 "Minden korban akad egy harcos, aki toronymagasan kitűnik társai és "
 "ellenfelei közül: már-már úgy tűnik, hogy egymaga képes megváltoztatni a "
-"világ sorsát. A khalidok, akik nevüket a régiek egyik legendás vezetője után "
-"kapták, gyakran ismertek a kegyességükről és kiválóságukról. Utazásaik és "
-"megpróbáltatásaik meséit a tábortüzek mellett mesélik vég nélkül, "
+"világ sorsát. A harcmesterek gyakran ismertek erejükről és kiválóságukról. "
+"Utazásaik és megpróbáltatásaik történeteit a tábortüzek mellett mesélik vég"
+" nélkül, "
 "tiszteletteljesen szólva róluk, mint élő legendákról."
 
 #. [attack]: type=impact
 #: data/core/units/dunefolk/Warmaster.cfg:44
+#, fuzzy
 msgid "pommel strike"
-msgstr ""
+msgstr "markolattal ütés"
 
 #. [unit_type]: id=Dune Windrider, race=dunefolk
 #: data/core/units/dunefolk/Windrider.cfg:4
 msgid "Dune Windrider"
-msgstr ""
+msgstr "Dűnei széllovas"
 
 #. [unit_type]: id=Dune Windrider, race=dunefolk
 #: data/core/units/dunefolk/Windrider.cfg:18
-#, fuzzy
 #| msgid ""
 #| "The elite of the Saree are the Jawal, horse archers of such speed and "
 #| "dexterity that rumors are always spread that they have elven blood. "
@@ -2150,10 +2112,11 @@ msgid ""
 "with great speed through the lines of battle to rain arrows down upon the "
 "enemy."
 msgstr ""
-"A sareek legjobbjaiból lesznek a jawalok: lovasíjászok olyan gyorsasággal és "
+"A vágtázók legjobbjaiból lesznek a széllovasok: lovasíjászok olyan"
+" gyorsasággal és "
 "pontossággal, hogy állandó pletykák keringenek arról, hogy tünde vér folyik "
 "az ereikben. Ők persze csak bosszankodnak az efféle misztikus kitalációkon. "
-"A jawalok gyakran mutatják be rátermettségüket a harcok sűrűjében: "
+"A széllovasok gyakran mutatják be rátermettségüket a harcok sűrűjében: "
 "átszáguldanak az arcvonalakon, és onnan árasztják el az ellenséget "
 "nyilaikkal."
 
@@ -2628,7 +2591,6 @@ msgstr "Tünde mesterlövész"
 
 #. [unit_type]: id=Elvish Marksman, race=elf
 #: data/core/units/elves/Marksman.cfg:19
-#, fuzzy
 #| msgid ""
 #| "Elves are wonderously keen-sighted, a gift which contributes to their "
 #| "mastery of the bow. An elf practiced at archery can hit targets that a "
@@ -2643,13 +2605,13 @@ msgid ""
 "lack of practice with the sword."
 msgstr ""
 "A tündék különlegesen éles látása egy azon tulajdonságaik közül, amik "
-"hozzájárulnak az íjazás képességéhez. Egy íjászatban jártas tünde el tud "
-"találni olyan célpontokat is, amelyeket egy ember nem is látna. Erre még "
-"éjjel is képesek, és máris egy következő nyílvesszőt feszítenek a húrra "
-"szinte abban a pillanatban, ahogy az előzőt útjára engedték.\n"
-"\n"
-"Ennek az egyedülálló képességnek a fejlesztése áldozattal jár, mégpedig a "
-"kardforgatás gyakorlásának elhanyagolásával."
+"hozzájárulnak az íjászat mesteri szintű űzéséhez. "
+"Egy íjászatban jártas tünde el tud találni olyan célpontokat is, "
+"amelyeket egy ember nem is látna, "
+"és képes egy új nyílvesszőt feszíteni a húrra szinte abban a pillanatban, "
+"ahogy az előzőt útjára engedte. Ennek az egyedülálló képességnek a"
+" fejlesztése áldozattal jár, "
+"mégpedig a kardforgatás gyakorlásának elhanyagolásával."
 
 #. [attack]: type=pierce
 #: data/core/units/elves/Marksman.cfg:38
@@ -2698,7 +2660,6 @@ msgstr "Tünde kalandozó"
 
 #. [unit_type]: id=Elvish Outrider, race=elf
 #: data/core/units/elves/Outrider.cfg:20
-#, fuzzy
 #| msgid ""
 #| "Elvish Outriders are trained as the royal couriers of the elven kingdoms. "
 #| "Despite the peaceful nature of their people, their experience makes them "
@@ -2722,8 +2683,9 @@ msgid ""
 msgstr ""
 "A tünde kalandozókat a tünde birodalom hírvivőinek képezték ki. Népük "
 "békeszerető természete ellenére tapasztalatuk elég halálossá teszi őket a "
-"harcban. Egyetlen ember sem ért még közelükbe azon tudományuk terén, ahogy "
-"az íjukat használják lóháton – gyakorlatilag legtöbbjüknek ez még szilárd "
+"harcban. Csak a legelszántabbak szárnyalják túl őket azon tudományuk terén, "
+"ahogy az íjukat használják lóháton – gyakorlatilag legtöbbjüknek ez még"
+" szilárd "
 "talajon állva is nehezen menne.\n"
 "\n"
 "Ezeknek a katonáknak a sebessége lehetővé teszi a tündéknek, hogy hazai "
@@ -3219,7 +3181,6 @@ msgstr "Keresztes lovag"
 
 #. [unit_type]: id=Paladin, race=human
 #: data/core/units/humans/Horse_Paladin.cfg:20
-#, fuzzy
 #| msgid ""
 #| "Knights of the highest virtue, Paladins have sworn their strength not to "
 #| "king and crown, but to ideals themselves; of chivalry, and the "
@@ -3256,20 +3217,23 @@ msgid ""
 "unnatural things, and most have some skill at medicine and healing."
 msgstr ""
 "Az erkölcsileg legtisztább lovagok, a keresztes lovagok nem a királyra és a "
-"koronára tettek esküt, hanem a saját értékítéletükre; a lovagiasságra, és "
+"koronára tettek esküt, hanem magukra az eszmékre; a lovagiasságra, és "
 "minden jó védelmére. A világ minden seregében szolgálnak, de legfőképp a "
-"saját népükhöz hűségesek; titkos szerzetesi rend, ami áttöri a politikai és "
+"saját maguk által létrehozott csoportokhoz hűségesek; titkos szerzetesi"
+" rendek, amelyek áttörik a politikai és "
 "kulturális határokat. Az uralkodók néha óvatosak velük, mivel egy keresztes "
 "lovag hűsége csak annyira erős, mint a vezérének erkölcse. Ez vezette a "
-"sötét célúakat arra, hogy bemocskolja és elkergesse ezeket a csoportokat, "
-"vagy még ritkábban nagy tervű megtévesztéssel próbálja maradásra bírni e "
-"töretlen hűségű csapatokat.\n"
+"sötét célúakat arra, hogy megpróbálják bemocskolni és elkergetni ezeket a"
+" csoportokat, "
+"vagy még ritkábban nagy tervű megtévesztéssel próbálják maradásra bírni e "
+"rendíthetetlen hűségű csapatokat.\n"
 "\n"
 "A keresztes lovagok általában nem olyan félelmetesek, mint a nagy lovagok, "
 "akik a legtöbb sereg bajnokai, de vitathatatlanul elsőosztályú harcosok. "
 "Ráadásul a bölcsességük és alázatuk megajándékozza ezeket a harcos "
 "szerzeteseket néhány érdekes képességgel. A keresztes lovagok nagyon erősek, "
-"ha mágikus, vagy természetellenes lénnyel harcol, és a legtöbbjük ért a "
+"ha mágikus, vagy természetellenes lény ellen harcolnak, és a legtöbbjük ért"
+" valamennyire a "
 "gyógyításhoz."
 
 #. [unit_type]: id=Horseman, race=human
@@ -3737,7 +3701,6 @@ msgstr "Udvari testőr"
 
 #. [unit_type]: id=Royal Guard, race=human
 #: data/core/units/humans/Loyalist_Royal_Guard.cfg:18
-#, fuzzy
 #| msgid ""
 #| "Royal Guards are picked from the best swordsmen in Wesnoth. Serving under "
 #| "any of the higher nobility, they function as bodyguards, and partly as a "
@@ -3772,7 +3735,6 @@ msgstr "Őrmester"
 
 #. [unit_type]: id=Sergeant, race=human
 #: data/core/units/humans/Loyalist_Sergeant.cfg:18
-#, fuzzy
 #| msgid ""
 #| "The Sergeant is a low-ranking officer in the ranks of an army. Though "
 #| "academically trained, he will need some experience in the field before "
@@ -3784,9 +3746,13 @@ msgid ""
 "combat means they can more effectively rouse civilians and peasants in "
 "trying situations."
 msgstr ""
-"Az őrmester egy alacsony rangú tiszt a hadseregben. Habár akadémián képezték "
-"ki, szüksége lesz egy kevés tapasztalatra a harcmezőn, mielőtt vezetésének "
-"hangot adna, és elismernék."
+"Az őrmesterek alacsony rangú tisztek az emberek seregeiben. Habár akadémián"
+" képezték "
+"ki őket, szükségük lesz egy kevés tapasztalatra a harcmezőn mielőtt"
+" vezetésüknek "
+"hangot adnának, és elismerésre tennének szert. Ennek ellenére szorgalmasságuk "
+"és alapvető harci ismereteik segítségével hatékonyabban képesek "
+"felbuzdítani a civileket és parasztokat embert próbáló helyzetekben."
 
 #. [unit_type]: id=Shock Trooper, race=human
 #: data/core/units/humans/Loyalist_Shock_Trooper.cfg:4
@@ -4447,7 +4413,6 @@ msgstr "Paraszt"
 
 #. [unit_type]: id=Peasant, race=human
 #: data/core/units/humans/Peasant.cfg:18
-#, fuzzy
 #| msgid ""
 #| "Peasants are the backbone of the rural economy, and the soldiers of last "
 #| "resort. While not warlike by nature, they will stubbornly defend their "
@@ -4462,8 +4427,10 @@ msgid ""
 msgstr ""
 "A parasztok a vidéki gazdaság gerincét képezik, és a legvégső esetben "
 "harcosok is. Habár nem csatára termettek természetüknél fogva, makacsul "
-"védik otthonaikat. Ha parasztokat küldesz az ellenség ellen, biztosan "
-"kifogytál már az összes jó harcosból."
+"védik otthonaikat. A kiképzés és fegyelem hiánya alkalmatlanná teszi őket "
+"soraik tartására; mivel fegyvereikként csak a földműveléshez használt"
+" eszközeik "
+"szolgálnak, csupán a legelkeseredettebb helyzetekben lépnek a harcmezőre."
 
 #. [attack]: type=pierce
 #: data/core/units/humans/Peasant.cfg:23 data/core/units/humans/Peasant.cfg:32
@@ -4681,7 +4648,6 @@ msgstr "Sellő gúzsbakötő"
 
 #. [unit_type]: id=Merman Entangler, race=merman
 #: data/core/units/merfolk/Entangler.cfg:19
-#, fuzzy
 #| msgid ""
 #| "Merfolk tend to use a combination of both nets and clubs in fishing; nets "
 #| "to collect the fish, and clubs to finish the kill. Both of these tools "
@@ -4819,7 +4785,6 @@ msgstr "Sellő hálóhajító"
 
 #. [unit_type]: id=Merman Netcaster, race=merman
 #: data/core/units/merfolk/Netcaster.cfg:18
-#, fuzzy
 #| msgid ""
 #| "Fishing, as practiced by mermen, is largely a matter of chasing schools "
 #| "of fish into waiting nets, where oar-like clubs are used to dispatch the "
@@ -4866,7 +4831,6 @@ msgstr "Sellő papnő"
 
 #. [unit_type]: id=Mermaid Priestess, race=merman
 #: data/core/units/merfolk/Priestess.cfg:21
-#, fuzzy
 #| msgid ""
 #| "Among mermen, mysticism is generally left to the mermaids, who are more "
 #| "inclined to it. It is they who dedicate themselves to the ideal of "
@@ -4962,7 +4926,9 @@ msgid ""
 msgstr ""
 "A sellő tritonok a tengerek urai. Szigonyaik segítségével könnyen "
 "elpusztítanak minden ellenséget, aki elég bolond ahhoz, hogy az ő "
-"területükre merészkedjen."
+"területükre merészkedjen. Fegyverük beható ismerete nagy rugalmasságot "
+"tesz lehetővé annak használatában és a legrangosabbak fegyverei "
+"inkább hasonlítanak alabárdokra mint egyszerű lándzsákra."
 
 #. [unit_type]: id=Merman Warrior, race=merman
 #: data/core/units/merfolk/Warrior.cfg:4
@@ -5113,10 +5079,8 @@ msgstr "ollók"
 
 #. [unit_type]: id=Giant Scorpling, race=monster
 #: data/core/units/monsters/Giant_Scorpling.cfg:4
-#, fuzzy
-#| msgid "Giant Scorpion"
 msgid "Giant Scorpling"
-msgstr "Óriás skorpió"
+msgstr "Ifjonc óriás skorpió"
 
 #. [unit_type]: id=Giant Scorpling, race=monster
 #: data/core/units/monsters/Giant_Scorpling.cfg:18
@@ -5528,10 +5492,8 @@ msgstr ""
 
 #. [unit_type]: id=Orcish Nightblade, race=orc
 #: data/core/units/orcs/Nightblade.cfg:4
-#, fuzzy
-#| msgid "Orcish Leader"
 msgid "Orcish Nightblade"
-msgstr "Ork nemzetségfő"
+msgstr "Ork éjpengés"
 
 #. [unit_type]: id=Orcish Nightblade, race=orc
 #: data/core/units/orcs/Nightblade.cfg:27
@@ -5547,14 +5509,14 @@ msgstr ""
 #. [attack]: type=blade
 #: data/core/units/orcs/Nightblade.cfg:31
 #, fuzzy
-#| msgid "war blade"
 msgid "blade"
-msgstr "acélkarom"
+msgstr "penge"
 
 #. [attack]: type=impact
 #: data/core/units/orcs/Nightblade.cfg:40
+#, fuzzy
 msgid "kick"
-msgstr ""
+msgstr "rúgás"
 
 #. [unit_type]: id=Orcish Ruler, race=orc
 #: data/core/units/orcs/Ruler.cfg:4
@@ -6076,67 +6038,67 @@ msgstr ""
 #: data/core/units/undead/Corpse_Soulless.cfg:99
 #: data/core/units/undead/Corpse_Walking.cfg:98
 msgid "wc_variation^Drake"
-msgstr ""
+msgstr "Perzsekény"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:114
 #: data/core/units/undead/Corpse_Walking.cfg:113
 msgid "wc_variation^Dwarf"
-msgstr ""
+msgstr "Törp"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:126
 #: data/core/units/undead/Corpse_Walking.cfg:125
 msgid "wc_variation^Goblin"
-msgstr ""
+msgstr "Kobold"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:135
 #: data/core/units/undead/Corpse_Walking.cfg:150
 msgid "wc_variation^Mounted"
-msgstr ""
+msgstr "Lovas"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:145
 #: data/core/units/undead/Corpse_Walking.cfg:134
 msgid "wc_variation^Gryphon"
-msgstr ""
+msgstr "Griff"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:161
 #: data/core/units/undead/Corpse_Walking.cfg:160
 msgid "wc_variation^Saurian"
-msgstr ""
+msgstr "Gyík"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:170
 #: data/core/units/undead/Corpse_Walking.cfg:169
 msgid "wc_variation^Swimmer"
-msgstr ""
+msgstr "Úszó"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:187
 #: data/core/units/undead/Corpse_Walking.cfg:186
 msgid "wc_variation^Troll"
-msgstr ""
+msgstr "Troll"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:196
 #: data/core/units/undead/Corpse_Walking.cfg:195
 msgid "wc_variation^Wose"
-msgstr ""
+msgstr "Fapásztor"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:208
 #: data/core/units/undead/Corpse_Walking.cfg:207
 msgid "wc_variation^Wolf"
-msgstr ""
+msgstr "Farkas"
 
 #. [variation]
 #: data/core/units/undead/Corpse_Soulless.cfg:220
 #: data/core/units/undead/Corpse_Walking.cfg:219
 msgid "wc_variation^Bat"
-msgstr ""
+msgstr "Denevér"
 
 #. [unit_type]: id=Ancient Lich, race=undead
 #: data/core/units/undead/Necro_Ancient_Lich.cfg:24
@@ -6159,7 +6121,6 @@ msgstr "Árnyak tanítványa"
 
 #. [unit_type]: id=Dark Adept, race=human
 #: data/core/units/undead/Necro_Dark_Adept.cfg:22
-#, fuzzy
 #| msgid ""
 #| "To attract any practitioners, the lure of black magic must be a great "
 #| "prize indeed, for anyone caught practicing the art in the civilized world "
@@ -6285,7 +6246,6 @@ msgstr "Delevény"
 
 #. [unit_type]: id=Lich, race=undead
 #: data/core/units/undead/Necro_Lich.cfg:22
-#, fuzzy
 #| msgid ""
 #| "A lich is the physical embodiment of black magic’s first goal: the quest "
 #| "to achieve immortality. Though a great deal is sacrificed in the rebirth, "
@@ -6316,8 +6276,8 @@ msgstr ""
 "test elpusztul.\n"
 "\n"
 "Nem tudni, talán a holtidézők belső köre őrzi a titkot, hogy az életet a "
-"végtelenségig kiterjesztették-e, vagy csak egyszerűen meghosszabbították. De "
-"a tény, hogy ezt a kérdést egyáltalán fel lehet tenni a rendjük által elért "
+"végtelenségig kiterjesztették-e, vagy csak egyszerűen meghosszabbították. "
+"A tény, hogy ezt a kérdést egyáltalán fel lehet tenni a rendjük által elért "
 "cél nagyságát bizonyítja."
 
 #. [unit_type]: id=Necromancer, race=human
@@ -6656,7 +6616,6 @@ msgstr "Ősi fapásztor"
 
 #. [unit_type]: id=Ancient Wose, race=wose
 #: data/core/units/wose/Ancient.cfg:17
-#, fuzzy
 #| msgid ""
 #| "There is a curious story of a farmer who had a great oak in his lawn, a "
 #| "tree which had stood when his father first broke the soil on that land, "
@@ -6681,18 +6640,10 @@ msgstr ""
 "szántotta fel a földet, és ami alatt a család rengeteg emléket szerzett. "
 "Nagyon megrémisztette, amikor egy reggel mikor felébredt, már nem látta a "
 "fát, és minden, ami utána maradt, csak egy puszta folt volt, ahol addig "
-"állt. Az ilyen találkozásokból lehet következtetni arra, hogy léteznek "
-"nagyon idős fapásztorok.\n"
+"állt.\n"
 "\n"
-"Rémes és tiszteletre méltó, a legtöbb ősi fapásztor félelmetes méreteket ért "
-"el. Olyan lények ők, akikkel szinte csak a legendákban találkozhatunk, ahol "
-"úgy végeznek ellenfeleikkel, mint egy madártollal, vagy egy apró bogárral. "
-"Hatalmas, földöntúli erejüket hívják segítségül, s a legnagyobb sziklákat is "
-"porrá zúzzák. Ez a fa ereje, amely az évek folyamán csak növekszik és egy "
-"pillanatba sűrűsödhet össze a fapásztor kezében. A legendák beszélnek a "
-"fáradhatatlan gondoskodásról is, mellyel a világ erdeit felügyelik, "
-"gondozzák. Csak az erdő meggyalázásával lehet kivívni az egyébként szívélyes "
-"lények rettentő haragját."
+"Az ilyen találkozásokból lehet következtetni arra, hogy léteznek "
+"nagyon idős fapásztorok."
 
 #. [unit_type]: id=Elder Wose, race=wose
 #: data/core/units/wose/Elder.cfg:4
