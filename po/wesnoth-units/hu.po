@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: hu-units_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-11-20 00:43+0100\n"
+"PO-Revision-Date: 2018-11-20 21:09+0100\n"
 "Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -1437,12 +1437,18 @@ msgstr "Dűnei gyújtogató"
 
 #. [unit_type]: id=Dune Burner, race=dunefolk
 #: data/core/units/dunefolk/Burner.cfg:23
+#, fuzzy
 msgid ""
 "Utilizing various resources found in the Dunefolk domain, a highly flammable "
 "substance can be made. The Burners are those charged with making and "
 "carrying this dangerous mixture into battle. While the use of fire in "
 "warfare is not a novel concept, the effectiveness of their work is."
 msgstr ""
+"A dűnenép területein található különféle természeti kincsek felhasználásával"
+" egy erősen gyúlékony anyag készíthető. "
+"A dűnei gyújtogatók feladata ezt az anyagot előállítani és harcba vinni."
+" Ugyan a tűz használata a hadviselésben "
+"nem újdonság, de munkájuk hatékonysága az."
 
 #. [attack]: type=fire
 #: data/core/units/dunefolk/Burner.cfg:28
@@ -2301,12 +2307,19 @@ msgstr "Törp vértes"
 
 #. [unit_type]: id=Dwarvish Steelclad, race=dwarf
 #: data/core/units/dwarves/Steelclad.cfg:18
+#, fuzzy
 msgid ""
 "Outfitted in the strongest plate and mail of Knalgan forges, the Steelclads "
 "are the vanguard of dwarvish armies. They are renowned for their resilience "
 "in the heat of battle, and their mastery of both battleaxe and warhammer "
 "make them imposing foes indeed."
 msgstr ""
+"A knalgai kovácsműhelyek legerősebb vértjeivel és páncéljaival ellátva, "
+"a törp vértesek a törp seregek előörseit adják. Híresek a csata forgatagában"
+" való ellenállóságukról. "
+"Mind a csatabárdot, mind a harci kalapácsot behatóan ismerik, amely valóban"
+" tiszteletet parancsoló "
+"ellenfelekké teszi őket."
 
 #. [unit_type]: id=Dwarvish Thunderer, race=dwarf
 #: data/core/units/dwarves/Thunderer.cfg:4
@@ -3016,6 +3029,7 @@ msgstr "Kobold lándzsás"
 
 #. [unit_type]: id=Goblin Spearman, race=goblin
 #: data/core/units/goblins/Spearman.cfg:17
+#, fuzzy
 msgid ""
 "In any race, there are always those rare individuals who, by stroke of bad "
 "luck, are born much smaller and weaker than the rest of their kind. For "
@@ -3025,6 +3039,13 @@ msgid ""
 "fodder against an enemy of their larger siblings' choosing while equipped "
 "with only the crudest of spears."
 msgstr ""
+"Minden fajban vannak egyedek, akik a balszerencsének köszönhetően sokkal"
+" kisebbnek és gyengébbnek születnek társaiknál. "
+"Az orkoknál azonban ezek az esetek kivételesen gyakoriak, általában több is"
+" előfordul egy alomban. Ezeknek a koboldként ismert, "
+"beteges lényeknek az élete majdnem mindig rövid és erőszakos, leginkább csak"
+" töltelékként használva egy – nagyobb testvéreik által választott – "
+"ellenség ellen és csupán a legprimitívebb lándzsával felszerelve."
 
 #. [unit_type]: id=Wolf Rider, race=wolf
 #: data/core/units/goblins/Wolf_Rider.cfg:4
@@ -3432,6 +3453,7 @@ msgstr "Tábornok"
 
 #. [unit_type]: id=General, race=human
 #: data/core/units/humans/Loyalist_General.cfg:29
+#, fuzzy
 msgid ""
 "As the leaders of their armies, Generals are responsible for the protection "
 "of large or important areas in the kingdoms to which they have sworn fealty. "
@@ -3441,6 +3463,13 @@ msgid ""
 "in ornate plate armor and granted some of the finest weaponry that human "
 "craftsmen can offer."
 msgstr ""
+"Hadseregek vezetőiként a tábornokok nagy vagy fontos területeket védenek "
+"abban a királyságban amelyre hűséget esküdtek. A hadviselés művészetében "
+"szerzett tapasztalatukkal a tábornokok képesek még a legfrissebb sorkatonákat "
+"is úgy irányítani, hogy az alacsony esélyek ellenére is stratégiai fontosságú "
+"csapásokat mérjenek az ellenségre és győzedelmesen térjenek vissza. "
+"Díszes páncélzatban és az emberi kézművesek legkiválóbb fegyvereivel ellátva, "
+"a nemesség és a polgárok tiszteletét egyaránt kivívják."
 
 #. [unit_type]: id=Grand Marshal, race=human
 #: data/core/units/humans/Loyalist_Grand_Marshal.cfg:4
@@ -3578,6 +3607,7 @@ msgstr "Hadnagy"
 
 #. [unit_type]: id=Lieutenant, race=human
 #: data/core/units/humans/Loyalist_Lieutenant.cfg:18
+#, fuzzy
 msgid ""
 "Lieutenants are some of the more respected commanding officers among humans "
 "and are often seen leading smaller-scale incursions and managing the "
@@ -3586,6 +3616,14 @@ msgid ""
 "more than made up for by their superior knowledge and training in military "
 "strategy."
 msgstr ""
+"A hadnagyok az emberek tiszteltebb parancsnokai közé tartoznak és sokszor "
+"láthatóak kisebb méretű portyázó csapatok élén vagy a harcmezőn irányítva"
+" embereiket. "
+"Ugyan gyakorlottak mind karddal, mind számszeríjjal, de egyiknek sem a"
+" mesterei és általában "
+"kevésbé ellenállóbbak más fajok hadurainál, de ezt bőven ellensúlyozza"
+" tudásbeli fölényük és "
+"a harci stratégiában való jártasságuk."
 
 #. [unit_type]: id=Longbowman, race=human
 #: data/core/units/humans/Loyalist_Longbowman.cfg:4
@@ -3752,7 +3790,7 @@ msgstr ""
 " vezetésüknek "
 "hangot adnának, és elismerésre tennének szert. Ennek ellenére szorgalmasságuk "
 "és alapvető harci ismereteik segítségével hatékonyabban képesek "
-"felbuzdítani a civileket és parasztokat embert próbáló helyzetekben."
+"felbuzdítani a polgárokat és parasztokat embert próbáló helyzetekben."
 
 #. [unit_type]: id=Shock Trooper, race=human
 #: data/core/units/humans/Loyalist_Shock_Trooper.cfg:4
@@ -4444,6 +4482,7 @@ msgstr "Harcos nemes"
 
 #. [unit_type]: id=Royal Warrior, race=human
 #: data/core/units/humans/Royal_Warrior.cfg:24
+#, fuzzy
 msgid ""
 "The kings and princes of human nobility are still often trained rigorously "
 "in the combat arts, partly out of tradition from when their ancestors made "
@@ -4452,6 +4491,12 @@ msgid ""
 "of moving in heavy armor, and can maneuver across the battlefield much "
 "faster than their gilded plate would suggest."
 msgstr ""
+"Az emberek nemes királyai és hercegei manapság is gyakran szigorú "
+"kiképzést kapnak a harci művészetekből, részben hagyományból, amely "
+"háborúban meggazdagodott felmenőiktől származik. Olyan páncélban parádézva, "
+"amely még bizonyos törp kovácsok irigységét is kivívja, ezek a nemesek "
+"jól ismerek a nehéz páncélban mozgás művészetét és gyorsabban manővereznek "
+"a csatatéren mint aranyozott páncéllemezeikből gondolható lenne."
 
 #. [unit_type]: id=Woodsman, race=human
 #: data/core/units/humans/Woodsman.cfg:4
@@ -4691,6 +4736,7 @@ msgstr "Sellő verekedő"
 
 #. [unit_type]: id=Merman Fighter, race=merman
 #: data/core/units/merfolk/Fighter.cfg:17
+#, fuzzy
 msgid ""
 "Merfolk societies train their forces rigorously and carefully, and as a "
 "result the peace of their realm is kept by soldiers who are the undisputed "
@@ -4698,6 +4744,12 @@ msgid ""
 "iconic tridents make them mighty foes to try to combat in the seas, but they "
 "lose almost all their mobility if forced to fight on land."
 msgstr ""
+"A sellő társadalom harcosait szigorúan és odafigyeléssel képzi, melynek "
+"eredményeként államaik békéjét olyan katonák őrzik, akik a vízi harc "
+"megkérdőjelezhetetlen bajnokai. Ellenállóságuk és jártasságuk híres "
+"szigonyaik forgatásában erős ellenfelekké  teszi őket a vízben, "
+"de majdnem minden mozgékonyságukat elvesztik, ha arra kényszerülnek, hogy"
+" szárazföldön harcoljanak."
 
 #. [unit_type]: id=Merman Hoplite, race=merman
 #: data/core/units/merfolk/Hoplite.cfg:4
@@ -4937,12 +4989,18 @@ msgstr "Sellő harcos"
 
 #. [unit_type]: id=Merman Warrior, race=merman
 #: data/core/units/merfolk/Warrior.cfg:17
+#, fuzzy
 msgid ""
 "The Mermen Warriors form the core of the mermen armies. They wield their "
 "tridents with a skill and diligence impressive even compared to the soldiers "
 "of other races, but doubly so considering the difficulties of fighting "
 "underwater, as any who try to match them in their homes can attest."
 msgstr ""
+"A sellő harcosok adják a sellők seregeinek magját. Szigonyaikat "
+"olyan hozzáértéssel és alapossággal forgatják, amely még "
+"más fajok harcosaihoz képest is figyelemre méltó, főleg "
+"ha figyelembe vesszük a víz alatti harc nehézségeit, amiről "
+"bárki, aki otthonukban került összetűzésbe velük tanúságot tehet."
 
 #. [unit_type]: id=Cuttle Fish, race=monster
 #: data/core/units/monsters/Cuttle_Fish.cfg:4
@@ -5021,6 +5079,7 @@ msgstr "Óriás sártipró"
 
 #. [unit_type]: id=Giant Mudcrawler, race=monster
 #: data/core/units/monsters/Giant_Mudcrawler.cfg:18
+#, fuzzy
 msgid ""
 "More resilient than their smaller counterparts, these golems of mud are much "
 "more capable of putting up a fight with a proper soldier even with their "
@@ -5029,6 +5088,13 @@ msgid ""
 "also be seen roaming the wild from time to time, their earthy composition "
 "making them immune to wildlife that rely on poison to fight."
 msgstr ""
+"Ezek a sárgólemek ellenállóbbak kisebb társaiknál és még megmunkálatlan"
+" kezeikkel "
+"is képesek megküzdeni egy igazi katonával, ráadásul még mozgékonyak is. "
+"Erősebb varázslóktól származnak, akik hatékony eszközt keresnek "
+"polgárok és hadseregek zaklatására, de időről időre a vadonban kóborolva is"
+" láthatók, "
+"ahol földes összetételük immúnissá teszi őket a mérget használó vadállatokra."
 
 #. [attack]: type=impact
 #: data/core/units/monsters/Giant_Mudcrawler.cfg:40
@@ -5043,12 +5109,18 @@ msgstr "Óriás patkány"
 
 #. [unit_type]: id=Giant Rat, race=monster
 #: data/core/units/monsters/Giant_Rat.cfg:19
+#, fuzzy
 msgid ""
 "Much larger than the common rats which often inhabit major cities, these "
 "vermin can injure an unarmed civilian, and can prove frustratingly elusive "
 "on any footing. While notably aggressive at night, these creatures do not "
 "pose much of a threat to any serious fighter."
 msgstr ""
+"Ezek a kártevők jóval nagyobbak a nagyvárosokat lakó közönséges patkányoknál, "
+"képesek megsebesíteni egy fegyvertelen polgárt és bármilyen terepen"
+" bosszantóan "
+"megfoghatatlannak bizonyulhatnak. Ugyan nevezetesen agresszívek éjjel, de "
+"semmilyen komoly harcos számára nem jelentenek veszélyt."
 
 #. [unit_type]: id=Giant Scorpion, race=monster
 #: data/core/units/monsters/Giant_Scorpion.cfg:4
@@ -5084,6 +5156,7 @@ msgstr "Ifjonc óriás skorpió"
 
 #. [unit_type]: id=Giant Scorpling, race=monster
 #: data/core/units/monsters/Giant_Scorpling.cfg:18
+#, fuzzy
 msgid ""
 "One of the most potent known venoms is that of the monstrous scorpions of "
 "the frontier. Fetching a high price by assassins and apothecaries alike, "
@@ -5094,6 +5167,17 @@ msgid ""
 "a seemingly lone scorpion can lead to swarms of them crawling up from the "
 "ground — quickly turning the hunter into the hunted."
 msgstr ""
+"Az egyik legerősebb ismert méreg a határvidékek irtózatos skorpióitól"
+" származik. "
+"Mint hogy orgyilkosok és medicinások egyaránt jó árat adnak érte, ez a méreg "
+"sokszor gyors beviteli forrásnak tűnik, arra csábítva merész vadászokat, hogy "
+"a vadonban kíséreljék meg begyűjteni. Azonban ezek a skorpiók még ifjonc"
+" állapotban is "
+"képesek halálosat szúrni és gyorsabbak a legtöbb embernél. Tovább rontja a"
+" helyzetet, hogy "
+"van hogy igencsak nagy fészkekben élnek és egy magányos skorpió felbőszítése"
+" ahhoz vezethet, hogy "
+"egész rajnyi mászik elő a földből — a vadászt gyorsan prédává változtatva."
 
 #. [unit_type]: id=Giant Spider, race=monster
 #: data/core/units/monsters/Giant_Spider.cfg:4
@@ -5123,6 +5207,7 @@ msgstr "Sártipró"
 
 #. [unit_type]: id=Mudcrawler, race=monster
 #: data/core/units/monsters/Mudcrawler.cfg:20
+#, fuzzy
 msgid ""
 "Simple beings conjured up from soil and water, Mudcrawlers fend for "
 "themselves by spitting globs of mud with surprising force. Even though they "
@@ -5130,6 +5215,15 @@ msgid ""
 "along with their resistance to a common citizen’s improvised blunt weaponry, "
 "makes them the tool of choice for ambitious but inexperienced summoners."
 msgstr ""
+"A sártiprók egyszerű, földből és vízből varázslat segítségével életre hívott"
+" lények, "
+"akik védekezésül meglepő erővel sárgolyókat köpnek ellenségeikre. Ugyan"
+" lassúak, "
+"gyengék és tűzzel könnyen sebezhetőek, de létrehozásuk könnyű és gyors,"
+" továbbá "
+"jól ellenállnak az egyszerű polgárok által improvizált tompa fegyvereknek,"
+" ami "
+"tapasztalatlan de nagyravágyó varázslók közkedvelt eszközévé teszi őket."
 
 #. [unit_type]: id=Sea Serpent, race=monster
 #: data/core/units/monsters/Sea_Serpent.cfg:4
@@ -5138,6 +5232,7 @@ msgstr "Tengeri kígyó"
 
 #. [unit_type]: id=Sea Serpent, race=monster
 #: data/core/units/monsters/Sea_Serpent.cfg:22
+#, fuzzy
 msgid ""
 "Sea Serpents incite fear and awe in fishermen and sailors, figuring often in "
 "folklore as wrathful deities of the sea. Capable of destroying ships "
@@ -5147,6 +5242,14 @@ msgid ""
 "even to the elite merfolk warriors, and are the reason they seldom inhabit "
 "waters far from the shore."
 msgstr ""
+"A tengeri kígyók félelmet és ámulatot keltenek a halászokban és"
+" tengerészekben, "
+"sokszor a tenger haragos isteneiként jelenve meg a szájhagyományban. "
+"Látszólag kimeríthetetlen erejükkel könnyedén zúznak össze hajókat, "
+"ezek a rejtőzködő óriások pusztítóak és könyörtelenek mindenkivel aki "
+"harcba száll velük. Az általában mély tengerekben élő tengeri kígyók "
+"még az elit sellő harcosok szemében is félelmetesek, és ők az okai, hogy "
+"a sellők ritkán laknak a parttól távoli vizekben."
 
 #. [unit_type]: id=Skeletal Dragon, race=undead
 #: data/core/units/monsters/Skeletal_Dragon.cfg:4
@@ -5180,6 +5283,7 @@ msgstr "Mélybeli polipkar"
 
 #. [unit_type]: id=Tentacle of the Deep, race=monster
 #: data/core/units/monsters/Tentacle.cfg:26
+#, fuzzy
 msgid ""
 "These tendrils are the appendages of some greater monster that lurks below "
 "the waves. They are obviously incapable of venturing far from the water, and "
@@ -5188,6 +5292,15 @@ msgid ""
 "being caught and dragged underwater to face whatever beast the tentacles are "
 "attached to."
 msgstr ""
+"Ezek a csápok egy nagyobb, mélyben lappangó szörny végtagjai. Nyilvánvalóan"
+" nem tudnak "
+"a víztől távolabb merészkedni és önmagukban nem túl fenyegetőek annak"
+" ellenére, hogy "
+"képesek sebeiket gyorsan begyógyítani. Sokan azonban érthető módon kerülik"
+" őket, attól "
+"félve, hogy a csápok elkapják és a víz mélyére ragadják őket, ahol aztán "
+"szembesülnek a szörnnyel amelyhez a nyúlványok tartoznak, akármilyen legyen"
+" is az."
 
 #. [unit_type]: id=Water Serpent, race=monster
 #: data/core/units/monsters/Water_Serpent.cfg:5
@@ -5242,6 +5355,7 @@ msgstr "Jeti"
 
 #. [unit_type]: id=Yeti, race=monster
 #: data/core/units/monsters/Yeti.cfg:19
+#, fuzzy
 msgid ""
 "Little is known about Yetis, ape-like creatures said to live in remote and "
 "snow-covered mountains. Few profess to have seen one, and their existence is "
@@ -5250,6 +5364,17 @@ msgid ""
 "encounter with their bare fists. This is enough to keep even the doubtful "
 "from venturing too far onto the mountains they are said to inhabit."
 msgstr ""
+"Nem sokat tudunk a Yetikről, ezekről az emberszabású lényekről akikről úgy"
+" tartják, "
+"hogy a távoli, hóval borított hegyekben élnek. Kevesen vallják azt, hogy"
+" találkoztak eggyel, "
+"és sokan a létezésüket is kétségbe vonják. A legtöbb beszámoló azonban több"
+" ponton is megegyezik — "
+"ugyan lassúak és együgyűek de kivételesen ellenállóak, és képesek bárkit"
+" akivel találkoznak "
+"csupasz ökleikkel megölni. Ez elég ahhoz, hogy még a kétkedők se"
+" merészkedjenek túl "
+"mélyen azokba a hegyekbe, ahol ezek a lények állítólag élnek."
 
 #. [unit_type]: id=Naga Fighter, race=naga
 #: data/core/units/nagas/Fighter.cfg:4
@@ -5461,6 +5586,7 @@ msgstr "Ork közkatona"
 
 #. [unit_type]: id=Orcish Grunt, race=orc
 #: data/core/units/orcs/Grunt.cfg:17
+#, fuzzy
 msgid ""
 "Orcish Grunts are the mainstay of the orcish forces, made up of the biggest "
 "and strongest orcs the clan can muster, given the most basic of equipment "
@@ -5469,6 +5595,15 @@ msgid ""
 "falling. What makes an orcish horde most threatening, however, is the sheer "
 "numbers in which these fighters can be fielded."
 msgstr ""
+"Az ork közkatonák az ork erők fő támaszai. A klán legnagyobb és legerősebb"
+" tagjai közül kerülnek ki, "
+"akiket aztán ellátnak a legalapvetőbb felszereléssel és kivezérelnek a"
+" csatatérre. Még ezek az egyszerű "
+"sorozott katonák is veszélyesek lehetnek, hiszen egy nagyobb ork"
+" természetéből adódóan erős és sok "
+"sérülést képest túlélni mielőtt elesik. Az ork hordákat azonban az ilyen"
+" harcosok puszta száma teszi "
+"igazán fenyegetővé."
 
 #. [unit_type]: id=Orcish Leader, race=orc
 #: data/core/units/orcs/Leader.cfg:4
@@ -5497,6 +5632,7 @@ msgstr "Ork éjpengés"
 
 #. [unit_type]: id=Orcish Nightblade, race=orc
 #: data/core/units/orcs/Nightblade.cfg:27
+#, fuzzy
 msgid ""
 "A blade in the dark, dripping with poison — for many orcish warlords the "
 "last thing they see. Due to their high fees, orcish nightblades specialize "
@@ -5505,6 +5641,13 @@ msgid ""
 "long lost count of their victims, though that admittedly isn’t too hard for "
 "an orc with only ten fingers."
 msgstr ""
+"Egy méregtől csöpögő penge a sötétben — sok ork hadúr számára az utolsó dolog"
+" amit életükben látnak. "
+"Magas díjaik miatt az ork éjpengések „belső ellentétek megoldására”"
+" specializálódtak és ritkán láthatók a csatatéren. "
+"Ismétlés a tudás anyja, és ebben kevesen érhetnek fel hozzájuk: már régóta"
+" nem számolják áldozataikat, habár "
+"ez nem meglepő egy 10 ujjal rendelkező ork esetén."
 
 #. [attack]: type=blade
 #: data/core/units/orcs/Nightblade.cfg:31
@@ -5619,6 +5762,7 @@ msgstr "Ork hadúr"
 
 #. [unit_type]: id=Orcish Warlord, race=orc
 #: data/core/units/orcs/Warlord.cfg:18
+#, fuzzy
 msgid ""
 "In a race where might is the be-all end-all of supremacy and respect, the "
 "orcs who achieve victory time and time again become the rulers of much "
@@ -5631,6 +5775,21 @@ msgid ""
 "and leading charisma of some of the more cunning orcs, and so the hordes "
 "they lead often fall simply due to their inability to truly lead."
 msgstr ""
+"Egy olyan fajnál, ahol minden tisztelet és hatalom csupán az erőtől függ, "
+"azon orkok akik újra és újra győzedelmeskednek sokkal nagyobb ork törzsek"
+" vezéreivé válnak. "
+"Az ellenségeiktől zsákmányolt legdíszesebb páncélt viselve az ork hadurak a"
+" csaták "
+"igazi bajnokai, kiválóságuk a karddal felér az emberek és tündék magasztalt"
+" kardforgató "
+"tanainak legjobbjaival. Még az íjjal is gyakorlottak, amelyet az orkok ugyan"
+" általában a gyávák fegyverének tartanak, "
+"de ezt ellensúlyozza harcosaik tisztelete. Mindezek ellenére a hadurak nem"
+" rendelkeznek "
+"a stratégiai döntésekhez szükséges éleslátással és a ravaszabb orkokra"
+" jellemző karizmával, "
+"ami azt eredményezi, hogy az általuk vezetett seregek sokszor vezetési"
+" képességük hiánya miatt hullanak szét."
 
 #. [unit_type]: id=Orcish Warrior, race=orc
 #: data/core/units/orcs/Warrior.cfg:4
@@ -5639,6 +5798,7 @@ msgstr "Ork harcos"
 
 #. [unit_type]: id=Orcish Warrior, race=orc
 #: data/core/units/orcs/Warrior.cfg:17
+#, fuzzy
 msgid ""
 "Orcish Warriors are those orcs who have proved their strength on the "
 "battlefield, choosing to display their skill by fighting with a sword in "
@@ -5647,6 +5807,13 @@ msgid ""
 "Despite their position, they rarely possess the commanding skills held by "
 "the leaders of other armies."
 msgstr ""
+"Az ork harcosok azok az orkok, akik erejüket a csatatéren bizonyították, "
+"jártasságukat mindkét kezükben kardot tartva mutatva. Harcban való"
+" bátorságukkal "
+"kivívták a többi ork tiszteletét. Általában kisebb rablócsapatokat irányítva"
+" láthatók. "
+"Helyzetük ellenére ritkán rendelkeznek más hadseregek vezetőinek parancsnoki"
+" képességeivel."
 
 #. [unit_type]: id=Saurian Ambusher, race=lizard
 #: data/core/units/saurians/Ambusher.cfg:4
@@ -6102,6 +6269,7 @@ msgstr "Denevér"
 
 #. [unit_type]: id=Ancient Lich, race=undead
 #: data/core/units/undead/Necro_Ancient_Lich.cfg:24
+#, fuzzy
 msgid ""
 "A lich that accrues enough power over its newfound immortal lifespan becomes "
 "one who can stain souls with despair and sow ruin across the world. "
@@ -6113,6 +6281,18 @@ msgid ""
 "that the rise of an Ancient Lich has not led to the shadows ruling the world "
 "for the rest of time."
 msgstr ""
+"Egy delevény, aki elég erőt felhalmoz örökkévaló élete során képessé válik "
+"kétségbeeséssel bepiszkítani lelkeket és a pusztulás magjait vetni szerte a"
+" világban. "
+"Az ilyen rangú delevény – mindig feltámasztott harcosok és élőholt szörnyek"
+" közel határtalan hordájának parancsnokaként – "
+"a sötét varázslatokat oly behatóan ismeri, hogy az még az emberek és tündék"
+" legnagyobb mágusait is rettegéssel tölti el. "
+"Egy ilyen alak általában a történelem egy sötét és véres fejezetét jelöli, és"
+" ezekben a szükségidőkben csupán a legbátrabb "
+"hősök fáradhatatlan erőfeszítése akadályozza meg, hogy egy ősi delevény"
+" felemelkedésével a világot az árnyak uralják "
+"az idők végezetéig."
 
 #. [unit_type]: id=Dark Adept, race=human
 #: data/core/units/undead/Necro_Dark_Adept.cfg:4
