@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.2\n"
 
 #. [campaign]: id=Liberty
 #: data/campaigns/Liberty/_main.cfg:10 data/campaigns/Liberty/_main.cfg:11
@@ -684,28 +684,24 @@ msgstr "Reménykeltő stratégia"
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:18
-#, fuzzy
 msgid ""
 "Fearing that the Queen’s army would return in force in the wake of its "
 "fallen patrol, Baldras and his men fled Dallben. They tracked to Delwyn and "
 "sent ahead for the magistrate, Relana, to meet them in a secluded strath in "
 "the swamps."
 msgstr ""
-"Attól tartva, hogy a királynő hadserege egy nagyobb csapatot küld az elesett"
-" járőr után, "
-"Baldras és emberi elmenekültek Dallbenből. Delwynbe indultak, és előre"
-" üzentek a helyi vezetőnek, "
-"Relanának, hogy találkozzon velük egy elszigetelt mocsári völgyben."
+"Attól tartva, hogy a királynő hadserege egy nagyobb csapatot küld az elesett "
+"járőr után, Baldras és emberei elmenekültek Dallbenből. Delwynbe indultak, "
+"és előre üzentek a helyi vezetőnek, Relanának, hogy találkozzon velük egy "
+"elszigetelt mocsári völgyben."
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:22
-#, fuzzy
 msgid ""
 "As morning dawned over the day after next, they found Relana already waiting "
 "for them."
 msgstr ""
-"Ahogy felvirradt a következő utáni nap reggele, Relanát már rájuk várakozva"
-" találták."
+"Két nappal később pirkadatkor Relana már várt rájuk, mikor megérkeztek."
 
 #. [side]: type=Highwayman_Peasant, id=Relana
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:49
