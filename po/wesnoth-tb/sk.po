@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.2\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-06-16 14:23+0200\n"
+"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
+"PO-Revision-Date: 2019-01-23 23:10+0100\n"
 "Last-Translator: Stanislav Hoferek <shoferek@gmail.com>\n"
 "Language-Team: none\n"
 "Language: sk_SK\n"
@@ -26,7 +26,7 @@ msgstr "Podb"
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:18
 msgid "Beginner"
-msgstr "(Začiatočník)"
+msgstr "Začiatočník"
 
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:18
@@ -36,7 +36,7 @@ msgstr "Jazdec"
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:19
 msgid "Challenging"
-msgstr "(Pokročilý)"
+msgstr "Pokročilý"
 
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:19
@@ -58,7 +58,7 @@ msgstr ""
 
 #. [campaign]: id=Two_Brothers
 #: data/campaigns/Two_Brothers/_main.cfg:23
-msgid "(Novice level, 4 scenarios.)"
+msgid "(Rookie level, 4 scenarios.)"
 msgstr "(Začiatočnícka úroveň, 4 scény.)"
 
 #. [about]
@@ -208,10 +208,10 @@ msgstr ""
 msgid "Humans"
 msgstr "Ľudia"
 
-#. [side]: type=Dark Sorcerer, id=Rotharik
-#. [side]
 #. [side]: type=Orcish Warlord, id=Tairach
 #. [side]: type=Dark Sorcerer, id=Mordak
+#. [side]: type=Dark Sorcerer, id=Rotharik
+#. [side]
 #: data/campaigns/Two_Brothers/scenarios/01_Rooting_Out_a_Mage.cfg:114
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:81
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:131
@@ -1181,6 +1181,11 @@ msgid ""
 msgstr ""
 "To musí byť kľúč od cely, kde držia Bjarna! Vezmem si ten kľúč. Neviem sa "
 "dočkať, až uvidím svojho brata. Poďme, osloboďme ho."
+
+#. [message]: speaker=Arvith
+#: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:717
+msgid "It may be important, I best take it."
+msgstr ""
 
 #. [message]: speaker=unit
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:737

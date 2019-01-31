@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 08:37 UTC\n"
-"PO-Revision-Date: 2018-10-31 21:42+0800\n"
+"POT-Creation-Date: 2019-01-21 18:29 UTC\n"
+"PO-Revision-Date: 2018-12-02 02:42+0800\n"
 "Last-Translator: 楊綮銘 <steven2880@gmail.com>\n"
 "Language-Team: Wesnoth Traditional Chinese Team\n"
 "Language: zh_TW\n"
@@ -40,7 +40,9 @@ msgstr ""
 
 #. [campaign]: id=An_Orcish_Incursion
 #: data/campaigns/An_Orcish_Incursion/_main.cfg:20
-msgid "(Novice level, 7 scenarios.)"
+#, fuzzy
+#| msgid "(Novice level, 7 scenarios.)"
+msgid "(Rookie level, 7 scenarios.)"
 msgstr "（初學者等級，7個章節。）"
 
 #. [campaign]: id=An_Orcish_Incursion
@@ -171,11 +173,11 @@ msgstr "精靈"
 msgid "Lomarfel"
 msgstr "羅摩福"
 
-#. [side]: type=Orcish Warrior, id=Urugha
 #. [side]: type=Orcish Warlord, id=Krughnar
 #. [side]: type=Orcish Sovereign, id=Rualsha
 #. [side]: type=Orcish Slayer, id=Gharlsa
 #. [side]: type=Orcish Warlord, id=Gnargha
+#. [side]: type=Orcish Warrior, id=Urugha
 #: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:88
 #: data/campaigns/An_Orcish_Incursion/scenarios/02_Assassins.cfg:59
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:66
@@ -265,7 +267,7 @@ msgid "Yes, my lord!"
 msgstr "是的，閣下！"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:178
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:180
 msgid ""
 "Look at them. Big, slow, clumsy and hardly a bow in hand. Keep to the trees, "
 "use your arrows and the day will be ours."
@@ -274,12 +276,48 @@ msgstr ""
 "護，善用手中的弓與箭，勝利將會是屬於我們的。"
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:187
+#. the player hasn't recruited any Shamans. This message isn't shown if they have a Shaman, even if she has 0 xp.
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:213
+msgid ""
+"My lord, none of our healers have experience on the battlefield. It pleases "
+"me that they are safe, but if we should embark on a campaign then we will "
+"surely need them alongside us in the battles ahead."
+msgstr ""
+
+#. [message]: race=elf
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:214
+msgid ""
+"female^My lord, none of our healers have experience on the battlefield. It "
+"pleases me that they are safe, but if we should embark on a campaign then we "
+"will surely need them alongside us in the battles ahead."
+msgstr ""
+
+#. [message]: race=elf
+#. the player has recruited some Shamans but has lost all them (or managed to level a Sorceress)
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:228
+msgid ""
+"My lord, none of our surviving healers have experience on the battlefield. "
+"It pains me to suggest that we should risk another, but if we should embark "
+"on a campaign then we will surely need them alongside us in the battles "
+"ahead."
+msgstr ""
+
+#. [message]: race=elf
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:229
+msgid ""
+"female^My lord, none of our surviving healers have experience on the "
+"battlefield. It pains me to suggest that we should risk another, but if we "
+"should embark on a campaign then we will surely need them alongside us in "
+"the battles ahead."
+msgstr ""
+
+#. [message]: race=elf
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:244
 msgid "It’s hopeless; we’ve tried everything, and they’re still coming back."
 msgstr "完了，沒望了。我們用盡一切辦法他們還是一直推回來。"
 
 #. [message]: speaker=Urugha
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:192
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:249
 msgid ""
 "Forward, you worthless worms! Look at them, they’re tired and afraid! You "
 "killed their will to fight, now go and finish the job!"
@@ -288,7 +326,7 @@ msgstr ""
 "吧！把他們一網打盡！"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:197
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:254
 msgid ""
 "That cloud of dust on the horizon... flee! There’s more of the abominations "
 "heading this way! Fall back before we’re outnumbered and crushed."
@@ -297,7 +335,7 @@ msgstr ""
 "了！ 在我們以寡擊眾之前先撤退。"
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:203
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:260
 msgid ""
 "Lord Erlornas didn’t drive the orcs back, although he and his warriors tried "
 "their absolute best. When another war band arrived, elvish resistance "
@@ -307,7 +345,7 @@ msgstr ""
 "軍團的到來， 精靈的抵抗徹徹底底的被瓦解了。"
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:209
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:266
 msgid ""
 "Of the ensuing events little is known, since much was lost in the chaos and "
 "confusion, but one thing is painfully sure. Elves lost the campaign."
@@ -316,27 +354,27 @@ msgstr ""
 "確定的是精靈輸了這場戰役。"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:221
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:278
 msgid "Ugh..."
 msgstr "啊..."
 
 #. [message]: speaker=Urugha
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:226
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:283
 msgid "Finally! Got him!"
 msgstr "終於！抓住他！"
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:234
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:291
 msgid "Lord!"
 msgstr "閣下！"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:239
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:296
 msgid "Take... command... Drive them... away."
 msgstr "接下...指揮權... 擊退...他們."
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:245
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:302
 msgid ""
 "Lord Erlornas died the day he first fought the orcs and never saw the end of "
 "the war. Given its final outcome, this was perhaps for the best."
@@ -345,7 +383,7 @@ msgstr ""
 "束的那一天。 以最後的結果而論，這也許對他來說是最好的結局。"
 
 #. [message]: speaker=unit
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:257
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:314
 msgid ""
 "I’ve been bested, but the combat wasn’t fair... A thousand curses on you, "
 "withered coward! May you suffer... and when my master, Rualsha, finds you "
@@ -356,7 +394,7 @@ msgstr ""
 "告別這個世界的時刻！"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:269
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:326
 msgid ""
 "Rualsha? Hmm... What if... Assemble a war-party, we need to scout north!"
 msgstr "盧拉夏? 恩... 如此說來... 招集一個軍團，我們繼續向北方偵查！"
@@ -625,14 +663,14 @@ msgid ""
 "There was no hale orc in sight, nor did any of the wounded beg mercy. The "
 "elves took no prisoners."
 msgstr ""
-"遍體鱗傷的半獸人酋長終於身體不支的倒下了。 戰勝的精靈們環顧四周，發現身處於屍"
-"首遍野的戰地竟無一活口。 精靈們一個戰俘都沒有抓到。"
+"遍體鱗傷的半獸人酋長終於身體不支的倒下了。戰勝的精靈們環顧四周，發現身處於屍"
+"首遍野的戰地竟無一活口。精靈們一個戰俘都沒有抓到。"
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:239
 msgid ""
 "It’s done, lord. No-one escaped. No-one tried to escape. I’m... disturbed."
-msgstr "結束了，閣下。 半獸人們無人倖免。 對這個結果我感到...不安。 "
+msgstr "結束了，閣下。半獸人們無人倖免。對這個結果我感到...不安。 "
 
 #. [message]: speaker=Erlornas
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:244
@@ -695,7 +733,7 @@ msgstr "我們在搜索營地時發現了一些物資，但是不多。 該如�
 msgid ""
 "Save it for the march north. There is little to be found in this barren "
 "country."
-msgstr "留下來北征時候用。 這裡一片荒涼恐怕什麼都找不到。"
+msgstr "留下來北征時候用。這裡一片荒涼恐怕什麼都找不到。"
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:320

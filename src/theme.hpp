@@ -142,15 +142,6 @@ public:
 		color_t font_rgb_;
 	};
 
-	class countdown : public status_item
-	{
-	public:
-		explicit countdown(const config& cfg) : status_item(cfg)
-		{}
-
-		SDL_Rect& location(const SDL_Rect& screen) const override;
-	};
-
 	class panel : public object
 	{
 	public:
@@ -317,4 +308,6 @@ private:
 	object main_map_, mini_map_, unit_image_, palette_;
 
 	border_t border_;
+
+	SDL_Rect screen_dimensions_;
 };

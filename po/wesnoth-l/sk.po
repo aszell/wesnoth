@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 08:38 UTC\n"
-"PO-Revision-Date: 2018-06-16 13:42+0200\n"
+"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
+"PO-Revision-Date: 2019-01-23 23:48+0100\n"
 "Last-Translator: Stanislav Hoferek <shoferek@gmail.com>\n"
 "Language-Team: none <>\n"
 "Language: sk_SK\n"
@@ -62,13 +62,13 @@ msgstr ""
 "S narastajúcim tieňom občianskej vojny nad Wesnothom sa do do odboja proti "
 "tyranii kráľovnej Aševiery púšťa skupina húževnatých pohraničiarov. V ceste "
 "za vytúženou slobodou im však nebudú stáť len ostré čepele kráľovského "
-"vojska, ale aj temnejšie hrozby - Orkovia a Nemŕtvi.\n"
+"vojska, ale aj temnejšie hrozby — Orkovia a Nemŕtvi.\n"
 "\n"
 
 #. [campaign]: id=Liberty
 #: data/campaigns/Liberty/_main.cfg:28
-msgid "(Intermediate level, 8 scenarios.)"
-msgstr "(Stredná úroveň, 8 scén.)"
+msgid "(Novice level, 8 scenarios.)"
+msgstr "(Ľahká úroveň, 8 scén.)"
 
 #. [about]
 #: data/campaigns/Liberty/_main.cfg:31
@@ -183,11 +183,11 @@ msgstr "Goblini dorazia do Dallbenu"
 
 #. [objective]: condition=lose
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:115
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:74
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:75
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:138
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:99
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:118
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:144
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:154
 #: data/campaigns/Liberty/scenarios/07_The_Hunters.cfg:93
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:219
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:298
@@ -197,11 +197,11 @@ msgstr "Umrie Baldras"
 
 #. [objective]: condition=lose
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:119
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:78
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:79
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:142
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:103
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:122
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:148
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:158
 #: data/campaigns/Liberty/scenarios/07_The_Hunters.cfg:97
 msgid "Death of Harper"
 msgstr "Umrie Harper"
@@ -238,7 +238,7 @@ msgid ""
 "slake the thirst of our blades."
 msgstr ""
 "Už sa teším na vypálenie ľudských miest, ale pokiaľ nám naši veľký vodcovia "
-"neposkytnú dostatok jednotiek, musia nám stačiť títo dedinčania - nasýtia "
+"neposkytnú dostatok jednotiek, musia nám stačiť títo dedinčania — nasýtia "
 "našich vlkov a utíšia smäd našich čepelí."
 
 #. [message]: speaker=Fal Khag
@@ -328,7 +328,7 @@ msgid ""
 "Do it. Try to hold them back until us old-timers can get there and finish "
 "them off."
 msgstr ""
-"Učiňte tak. Snažte sa ich zdržať, kým sa ta dostaneme my - veteráni - a "
+"Učiňte tak. Snažte sa ich zdržať, kým sa ta dostaneme my — veteráni — a "
 "dorazíme ich."
 
 #. [message]: speaker=Baldras
@@ -432,7 +432,7 @@ msgstr "Gobliní jazdci sú na love. Nesmieme pustiť žiadneho z nich do dediny
 #. [message]: speaker=Wolmas
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:396
 msgid "Look! Goblin riders are on the hunt — and heading right for Dallben!"
-msgstr "Pozrite! Gobliní jazdci sú na love - a smerujú priamo do Dallbenu!"
+msgstr "Pozrite! Gobliní jazdci sú na love — a smerujú priamo do Dallbenu!"
 
 #. [message]: speaker=Remald
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:400
@@ -466,20 +466,20 @@ msgstr "Občianska neposlušnosť"
 #. [side]: type=General, id=Lord Maddock
 #. [side]: type=Rogue, id=Hans
 #. [side]: type=Highwayman, id=Baldras
-#. [side]: type=Bandit_Peasant, id=Baldras
-#. [side]
-#. [side]: type=Highwayman_Peasant, id=Relana
 #. [side]: type=Shadow Lord, id=Helicrom
+#. [side]
+#. [side]: type=Bandit_Peasant, id=Baldras
+#. [side]: type=Highwayman_Peasant, id=Relana
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:26
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:61
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:62
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:38
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:70
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:37
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:59
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:35
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:91
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:42
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:65
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:52
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:75
 #: data/campaigns/Liberty/scenarios/07_The_Hunters.cfg:43
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:49
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:169
@@ -497,9 +497,9 @@ msgstr "Tarwen"
 #. [side]
 #. [side]: type=Royal Guard, id=Archarel
 #. [side]: type=Iron Mauler, id=Linneus
-#. [side]: type=Cavalier, id=Tarwen
 #. [side]: type=General, id=Dommel
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:40
+#. [side]: type=Cavalier, id=Tarwen
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:41
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:80
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:48
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:64
@@ -510,22 +510,22 @@ msgid "Asheviere"
 msgstr "Aševiéra"
 
 #. [objective]: condition=win
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:70
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:71
 msgid "Kill the Wesnoth army captain, Tarwen"
 msgstr "Zabiješ Tarwena, kapitána armády Wesnothu"
 
 #. [message]: speaker=Harper
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:120
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:121
 msgid "Look, riders approach."
 msgstr "Hľaďte, približujú sa nejakí jazdci."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:124
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:125
 msgid "Stand fast, nephew."
 msgstr "Buď silný, synovče."
 
 #. [message]: speaker=Tarwen
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:137
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:138
 msgid ""
 "By order of the Queen, the magistrate of this town is ordered to travel with "
 "us to Elensefar for vetting."
@@ -534,18 +534,12 @@ msgstr ""
 "Elensefaru z dôvodu preverovania."
 
 #. [message]: speaker=Harper
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:141
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:142
 msgid "Garard is the King of Wesnoth. We are ruled by no queen."
 msgstr "Kráľom Wesnothu je Garad. Nám nevládne žiadna kráľovná."
 
 #. [message]: speaker=Tarwen
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:145
-#, fuzzy
-#| msgid ""
-#| "Insolent peasants, you will kneel before your betters! Asheviere is the "
-#| "queen of Wesnoth. The King fell three weeks ago at Abez. I shall not "
-#| "bandy words with you. Your magistrate will be coming with us, and we do "
-#| "not care if it is dead or alive."
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:146
 msgid ""
 "Insolent peasants, you will kneel before your betters! Asheviere is the "
 "Queen of Wesnoth. The King fell three weeks ago at Abez. I shall not bandy "
@@ -557,17 +551,17 @@ msgstr ""
 "Nebudem sa s vami hádať. Pôjdete s nami, živí alebo mŕtvi."
 
 #. [message]: speaker=Tarwen
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:179
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:180
 msgid "Guard the gate."
 msgstr "Strážte bránu."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:190
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:193
 msgid "Harper, get out of here. This is no battle for you."
 msgstr "Harper, uteč odtiaľto. Toto nie je boj pre teba."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:195
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:198
 msgid ""
 "I am the magistrate of Dallben, and it is <i>you</i> who will be leaving "
 "Dallben, be it dead or alive."
@@ -576,17 +570,17 @@ msgstr ""
 "mŕtvi."
 
 #. [message]: speaker=Tarwen
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:210
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:213
 msgid "Get back, you cur!"
 msgstr "Nedovoľuj si ty sedlák!"
 
 #. [message]: speaker=second_unit
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:224
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:227
 msgid "Get out of my village!"
 msgstr "Vypadni z mojej dediny!"
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:237
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:240
 msgid ""
 "Our lives were hard enough when we were beneath the attention of the Crown. "
 "But now I fear things will be worse."
@@ -595,12 +589,12 @@ msgstr ""
 "kráľovskom dvore. Teraz sa však veci ešte viac pritvrdia."
 
 #. [message]: speaker=Harper
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:242
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:245
 msgid "We must tell the people of Delwyn about this."
 msgstr "Musíme o tomto upovedomiť ľudí v Delwyne."
 
 #. [message]: role=Advisor
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:255
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:258
 msgid ""
 "That is true. We have always flown to their aid, and they to ours. This is "
 "something we should face together."
@@ -609,7 +603,7 @@ msgstr ""
 "čeliť spoločne."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:260
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:263
 msgid ""
 "Very well. We will go to Delwyn and share counsel with them. I never thought "
 "Wesnoth would fall into darkness. Now, not only do the orcs threaten our "
@@ -621,7 +615,7 @@ msgstr ""
 "nástupom kráľovnej na trón sa začínajú diať zlovestné veci."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:265
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:268
 msgid ""
 "Today we may no longer be citizens of Wesnoth. I wish it could be otherwise, "
 "but we are now outlaws."
@@ -630,17 +624,13 @@ msgstr ""
 "stojíme mimo zákon."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:337
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:340
 msgid ""
 "Oh, no! We have run out of time, they have arrived with reinforcements..."
 msgstr "Ach nie! Náš čas vypršal, ich posily dorazili..."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:350
-#, fuzzy
-#| msgid ""
-#| "They would be remembered only traitors rightly put down by the Queen’s "
-#| "lances. And in the dark years to come, woe betide any who questioned it."
+#: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:353
 msgid ""
 "They would be remembered only as traitors rightly put down by the Queen’s "
 "lances. And in the dark years to come, woe betide any who questioned it."
@@ -662,6 +652,10 @@ msgid ""
 "sent ahead for the magistrate, Relana, to meet them in a secluded strath in "
 "the swamps."
 msgstr ""
+"Baldras a jeho muži utiekli z Dallbenu, pretože sa obávali, že sa kráľovnina "
+"armáda vráti s posilami kvôli porazenej hliadke. Pochodovali do Delwynu a "
+"vopred poslali správu predstavenej, Relane, aby sa s nimi stretla v odľahlom "
+"údolí v bažinách."
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:22
@@ -669,6 +663,7 @@ msgid ""
 "As morning dawned over the day after next, they found Relana already waiting "
 "for them."
 msgstr ""
+"Keď sa rozvidnelo na nasledujúci deň, našli Relanu, ktorá ich už čakala."
 
 #. [side]: type=Highwayman_Peasant, id=Relana
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:49
@@ -680,16 +675,16 @@ msgstr "Relana"
 msgid "Urk Delek"
 msgstr "Urk Delek"
 
-#. [side]: type=Orcish Warrior, id=Urk Delek
-#. [side]: type=Saurian Oracle, id=Thhsthss
 #. [side]: type=Necromancer, id=Mal-Jarrof
 #. [side]: type=Necromancer, id=Mal-Jerod
 #. [side]: type=Lich, id=Sel-Mana
+#. [side]: type=Orcish Warrior, id=Urk Delek
+#. [side]: type=Saurian Oracle, id=Thhsthss
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:100
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:122
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:95
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:111
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:128
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:105
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:121
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:138
 msgid "Evil"
 msgstr "Zlo"
 
@@ -721,16 +716,12 @@ msgstr ""
 
 #. [message]: speaker=Relana
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:184
-#, fuzzy
-#| msgid ""
-#| "It has been a long time, old friend. Your news worries us. Yet, there is "
-#| "no problem we have not worked out here at our secret meeting place."
 msgid ""
 "It has been a long time, old friend. Your news worries us. Yet, there is no "
 "problem we have not worked out together."
 msgstr ""
-"Dávno sme sa nevideli, starý priateľu. Tvoje správy nás znepokojujú. Nie je "
-"však taký problém, ktorý by sme neboli vyriešili tu na našom tajnom mieste."
+"Dávno sme sa nevideli, starý priateľu. Tvoje správy nás znepokojujú. Nebol "
+"však taký problém, ktorý by sme neboli vyriešili."
 
 #. [message]: speaker=Baldras
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:188
@@ -739,7 +730,7 @@ msgid ""
 "leader was no man I had ever seen in Annuvin province before. Never has one "
 "been sent out here as a patrol captain who was so ruthless and cruel."
 msgstr ""
-"Nerozumieš. Zaútočili sme na vojenskú hliadku Wesnothu. A nielen to - ich "
+"Nerozumieš. Zaútočili sme na vojenskú hliadku Wesnothu. A nielen to — ich "
 "vodca bol muž, ktorého som nikdy predtým v našej provincii nevidel. Ešte "
 "nikdy sem neposlali takého bezohľadného a krutého kapitána."
 
@@ -802,10 +793,6 @@ msgstr ""
 
 #. [message]: speaker=Relana
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:220
-#, fuzzy
-#| msgid ""
-#| "I think they are, old friend. And that rank smell on the wind tells "
-#| "another tale; saurians approach. To arms!"
 msgid ""
 "I think they are, old friend. And that rank smell on the wind tells another "
 "tale: saurians approach. To arms!"
@@ -851,7 +838,7 @@ msgid ""
 "Can the darkest rumors be true, then? Does the Kingdom— Does Queen "
 "Asheviere... send orcs against her own people?"
 msgstr ""
-"Že by potom boli najtemnejšie chýry pravdivé? Posiela kráľovstvo—- kráľovná "
+"Že by potom boli najtemnejšie chýry pravdivé? Posiela kráľovstvo — kráľovná "
 "Aševiéra... orkov proti vlastnému ľudu?"
 
 #. [message]: speaker=Relana
@@ -1100,7 +1087,7 @@ msgstr ""
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:646
 msgid "I don’t understand. There are no other noble lords in this area."
 msgstr ""
-"Nerozumiem. V týchto končinách predsa okrem Vás predsa nie sú žiadni ďalší "
+"Nerozumiem. V týchto končinách predsa okrem Vás nie sú žiadni ďalší "
 "šľachtici."
 
 #. [message]: speaker=Lord Maddock
@@ -1138,7 +1125,7 @@ msgid ""
 "of death — would only grow greater with time."
 msgstr ""
 "Skutočne, Aševiérine armády sa zhromaždili a udreli ešte predtým, ako mohla "
-"byť rodiaca sa vzbura čo i len naplánovaná. Vzbúrenci u nej milosť nenašli - "
+"byť rodiaca sa vzbura čo i len naplánovaná. Vzbúrenci u nej milosť nenašli — "
 "a to bol len jeden z mnohých prípadov, kedy sa tak stalo."
 
 #. [scenario]: id=05_Hide_and_Seek
@@ -1249,7 +1236,7 @@ msgid ""
 "Looks like these guards hold stationary posts, so if we’re careful enough we "
 "should be able to slip our way around them unnoticed."
 msgstr ""
-"Zdá sa, že stráže držia svoje pozície - ak budeme dosť opatrný, možno sa nám "
+"Zdá sa, že stráže držia svoje pozície — ak budeme dosť opatrní, možno sa nám "
 "podarí nepozorovane pomedzi nich prekĺznuť."
 
 #. [message]: speaker=Baldras
@@ -1325,7 +1312,7 @@ msgstr "Tak nás veď."
 
 #. [message]: speaker=Baldras
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:628
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:423
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:433
 msgid ""
 "We have spent too much time here. Surely the Queen’s forces have returned to "
 "Dallben. Our mission is unfinished, but we must return to fight a suicide "
@@ -1341,38 +1328,38 @@ msgid "The Grey Woods"
 msgstr "Šedé lesy"
 
 #. [side]: type=Shadow Lord, id=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:50
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:60
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:146
 msgid "Helicrom"
 msgstr "Helicrom"
 
 #. [side]: type=Necromancer, id=Mal-Jarrof
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:86
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:96
 msgid "Mal-Jarrof"
 msgstr "Mal-Jarrof"
 
 #. [side]: type=Necromancer, id=Mal-Jerod
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:102
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:112
 msgid "Mal-Jerod"
 msgstr "Mal-Jerod"
 
 #. [side]: type=Lich, id=Sel-Mana
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:118
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:128
 msgid "Sel-Mana"
 msgstr "Sel-Mana"
 
 #. [objective]: condition=win
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:140
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:150
 msgid "Defeat the lich and its minions"
 msgstr "Porazíš kosteja a jeho prisluhovačov"
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:211
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:221
 msgid "The leader, I presume."
 msgstr "Predpokladám, že ty si vodca."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:215
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:225
 msgid ""
 "I am Helicrom, and you should not be so glib. I control dangerous men. My "
 "henchmen can slip unseen through any city, rob a man while he sleeps, or "
@@ -1385,12 +1372,12 @@ msgstr ""
 "zlata v našom úsilí."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:219
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:229
 msgid "Your pursuits?"
 msgstr "Vašom úsilí?"
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:223
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:233
 msgid ""
 "The former King’s magic ministry kept a tight control on the training and "
 "employment of mages in Wesnoth. Those of us who dared to... depart from the "
@@ -1404,14 +1391,14 @@ msgstr ""
 "praktizovanie tieňovej mágie. Naše utajenie a bezpečie nie je lacný špás."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:227
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:237
 msgid "I have heard of you. Necromancers. Barely-human scum, I say."
 msgstr ""
 "Počul som o takých, ako ste vy. Černokňažníci. \"Ľudská\" špina, povedal by "
 "som."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:231
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:241
 msgid ""
 "Wrong. Necromancers become slaves to their lich masters and eventually lose "
 "their humanity. We have proven that practicing the dark arts need not lead "
@@ -1426,12 +1413,12 @@ msgstr ""
 "pomedzí obidvoch ciest, a od každej si udržiavame rovnaký odstup."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:235
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:245
 msgid "I... see, I think. Why do you want to help us?"
 msgstr "Rozumiem... aspoň myslím. Prečo nám chcete pomôcť?"
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:239
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:249
 msgid ""
 "We don’t. You have sought us out. But, I do know of your situation and am "
 "willing to help. Any weakening of the Throne of Wesnoth, whether it be "
@@ -1442,25 +1429,19 @@ msgstr ""
 "ňom sedí kráľ alebo kráľovná, je totiž v náš prospech."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:243
-#, fuzzy
-#| msgid ""
-#| "Carcyn is always foggy as of late because these woods have recently "
-#| "become home to a lich and two of its underling necromancers. Our "
-#| "experiments may have actually aroused it from sleep... We’re not exactly "
-#| "sure."
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:253
 msgid ""
 "Carcyn is always foggy as of late because these woods have recently become "
 "home to a lich and two of its underling necromancers. Our experiments may "
 "have actually aroused it from sleep... We’re not sure."
 msgstr ""
 "Carcyn je v poslednom čase stále prikrytý hmlou. Je to tak odvtedy, čo sa "
-"tieto lesy stali domovom kosteja a jeho dvoch nohsledov - černokňažníkov. Je "
+"tieto lesy stali domovom kosteja a jeho dvoch nohsledov — černokňažníkov. Je "
 "možné, že sme ho prebudili zo spánku našimi experimentmi... Nie sme si tým "
-"celkom istý."
+"istí."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:247
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:257
 msgid ""
 "So now you need to defend your rear as well as your front... I see your "
 "predicament. My men will wipe this land clean if you can help us defend our "
@@ -1471,18 +1452,18 @@ msgstr ""
 "pomôžete nám s obranou našej domoviny."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:272
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:282
 msgid "Finally, that creature is dead, yet its foolish minions resist."
 msgstr ""
 "Táto príšera je konečne mŕtva, no jej zadubení prisluhovači stále odolávajú."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:279
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:289
 msgid "The lich is destroyed and its minions dead."
 msgstr "Kostej je zlikvidovaný a jeho prisluhovači mŕtvi."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:296
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:306
 msgid ""
 "The defeat of the evil lich infesting the Grey Woods was a bittersweet "
 "victory. With Helicrom dead, the guild of shadow magic was thrown into "
@@ -1492,7 +1473,7 @@ msgstr ""
 "smrť totiž vyvolala v spolku temných mágov veľký zmätok."
 
 #. [message]: speaker=narrator
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:301
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:311
 msgid ""
 "The remaining members were very grateful and offered Baldras a sizable sum "
 "of gold for his help. It was not the help he was hoping for, but he knew it "
@@ -1503,7 +1484,7 @@ msgstr ""
 "bude musieť v nastávajúcom boji stačiť."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:320
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:330
 msgid ""
 "With the undead driven out, we may live here in relative peace and pursue "
 "our studies. For this, Baldras, I am grateful."
@@ -1512,7 +1493,7 @@ msgstr ""
 "pokračovať v našich štúdiách. Som vám za to vďačný, Baldras."
 
 #. [message]: speaker=Baldras
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:324
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:334
 msgid ""
 "Studies? Peace? You mean to continue feeding on the lawful citizens of "
 "Wesnoth. There will be no peace for them."
@@ -1521,7 +1502,7 @@ msgstr ""
 "občanoch Wesnothu. Oni žiť v mieri rozhodne nebudú."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:328
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:338
 msgid ""
 "No one here is in a position to be dispensing moral judgments. Regardless, "
 "you have done great service to us today, and we owe you a debt. I will help "
@@ -1532,7 +1513,7 @@ msgstr ""
 "Pomôžeme vám, ako len budem môcť."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:332
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:342
 msgid ""
 "I was planning on giving you gold. Any good army is well financed, and with "
 "the lich gone we can now spare it."
@@ -1541,7 +1522,7 @@ msgstr ""
 "a teraz, keď je kostej preč, môžeme si to dovoliť."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:336
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:346
 msgid ""
 "But, I think it would help you more if I lent you some of my men to join you "
 "on your adventures. The Queen has been sending mages out here, and my men "
@@ -1552,7 +1533,7 @@ msgstr ""
 "dočkať odplaty."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:340
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:350
 msgid ""
 "On the other hand, if I keep the full force of my organization here, we "
 "might be able to regroup and join you on the battlefield when the time comes."
@@ -1561,22 +1542,22 @@ msgstr ""
 "schopní preskupiť sa a pridať sa k vám na bojovom poli, až nadíde čas."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:344
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:354
 msgid "I leave it to you to decide."
 msgstr "Rozhodnutie prenechávam Vám."
 
 #. [option]
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:346
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:356
 msgid "I will take the gold. How does 500 sound?"
 msgstr "Vezmem si zlato. Čo takto 500?"
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:350
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:360
 msgid "Agreed. Good luck and farewell to you, Master Baldras."
 msgstr "Súhlasím. Veľa šťastia a zbohom, majster Baldras."
 
 #. [option]
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:371
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:381
 msgid ""
 "Send your men with us. They will be valuable help as we prepare for the "
 "assault from the Wesnoth army garrison."
@@ -1585,19 +1566,19 @@ msgstr ""
 "napadnutie Wesnothskej armády."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:375
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:385
 msgid "Done. My finest mages and thieves are at your disposal. Use them well."
 msgstr ""
 "Vybavené. Máte k dispozícii mojich najlepších mágov a zlodejov. Nech sú vám "
 "na osoh."
 
 #. [option]
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:390
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:400
 msgid "I wish you to join us in battle against the Queen’s forces."
 msgstr "Želám si, aby ste sa k nám pridal v boji proti kráľovniným silám."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:394
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:404
 msgid ""
 "All right. I need time to clean up this forest and recall my men from the "
 "countryside. We will be ready to march in seven days. All now hinges on you! "
@@ -1608,7 +1589,7 @@ msgstr ""
 "všetko stojí len na vás! Tak zatiaľ..."
 
 #. [message]: speaker=Helicrom
-#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:444
+#: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:454
 msgid "My men... have failed to protect me! I perish..."
 msgstr "Moji muži... ma nedokázali ochrániť! To je môj koniec..."
 
@@ -1646,7 +1627,7 @@ msgid ""
 "help.\n"
 "<b>Note:</b> Baldras is now able to recruit Outlaws."
 msgstr ""
-"Vedomí si toho, že i oni tak budú považovaný za zločincov, neochotne "
+"Vedomý si toho, že i oni tak budú považovaní za zločincov, neochotne "
 "prijímal ich pomoc. \n"
 "<b>Poznámka:</b>Baldras odteraz môže verbovať Štvancov."
 
@@ -1718,7 +1699,7 @@ msgid ""
 "are a fortress. They used to protect this area from the enemies of Wesnoth; "
 "I never imagined they would house its enemies."
 msgstr ""
-"Opevnenie. Veže Halsteadu sú viac než len opevnenie, synovče - je to riadna "
+"Opevnenie. Veže Halsteadu sú viac než len opevnenie, synovče — je to riadna "
 "pevnosť. Slúžila na ochranu tejto oblasti pred nepriateľmi Wesnothu. Nikdy "
 "by mi nenapadlo, že práve nepriateľov Wesnothu z nej musíme vyhnať."
 
@@ -1778,7 +1759,7 @@ msgid ""
 msgstr ""
 "Už mi je jasné, kam smerujú všetky tie jednotky. Musíme zabrániť tomu, aby "
 "táto armáda posilnila posádku. Nemôžeme ich zničiť naraz, ale kúsok po "
-"kúsku. Ani na chvíľu ich nenecháme na pokoji - každý krok vpred si budú "
+"kúsku. Ani na chvíľu ich nenecháme na pokoji — každý krok vpred si budú "
 "musieť tvrdo vybojovať. A keď aj dorazia do Halseadu, musia byť na hranici "
 "síl či smrti."
 
@@ -1863,7 +1844,7 @@ msgstr ""
 "Sme v riadnej kaši. Nedá sa nič robiť, našim ďalším cieľom musí byť "
 "Halstead. Ak budeme čakať, stanú sa nezničiteľnými. Ale pokiaľ sa nám ho "
 "podarí vypáliť ešte predtým, naši ľudia budú mať šancu. Dnes si dobre "
-"oddýchnite - v zajtrajšej bitke sa totiž rozhodne o osude našich domovov, "
+"oddýchnite — v zajtrajšej bitke sa totiž rozhodne o osude našich domovov, "
 "rodín a slobody."
 
 #. [message]: speaker=Baldras
@@ -1908,7 +1889,7 @@ msgid ""
 "as well as in name."
 msgstr ""
 "Veľká armáda Wesnothu, ktorej velila Veľká rada arcimágov, prečistila zem od "
-"každej živej duše, ktorá sa nechcela podriadiť - či už to bola nejaká zver, "
+"každej živej duše, ktorá sa nechcela podriadiť — či už to bola nejaká zver, "
 "ork alebo elf. Mestský štát Elensefar bol oficiálne prehlásený za súčasť "
 "Wesnothu. Vtedy konečne vznikol Wesnoth v podobe, v akej ho poznáme dnes."
 
@@ -1922,7 +1903,7 @@ msgid ""
 msgstr ""
 "Pamätník tohoto víťazstva bol vystavaný v srdci divočiny. Pri príležitosti "
 "tradičného dvanásťročného rituálu ukázala Veľká rada arcimágov, čoho až je "
-"ľudská mágia schopná - nový pamätník vytvorili priamo na mieste, zo živej "
+"ľudská mágia schopná — nový pamätník vytvorili priamo na mieste, zo živej "
 "skaly pod nimi."
 
 #. [part]
@@ -1940,13 +1921,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:35
-#, fuzzy
-#| msgid ""
-#| "This sentinel of the western plains stood watch as Wesnoth prospered for "
-#| "many centuries under the protection it provided. No war has overcome it, "
-#| "and its walls have never been overrun. The blood of invaders stains its "
-#| "parapets and the bones of the defeated crumble at the base of Halstead’s "
-#| "frozen waves of stone."
 msgid ""
 "This sentinel of the western plains stood watch as Wesnoth prospered for "
 "many centuries under its protection. No war has overcome it, and its walls "
@@ -1955,7 +1929,7 @@ msgid ""
 "stone."
 msgstr ""
 "Tento obranca západných plání poskytoval Wesnothu ochranu, vďaka ktorej "
-"krajina dlhé stáročia prosperovala. Nikdy ho nepokorila žiadna vojna, a jeho "
+"krajina dlhé stáročia prosperovala. Nikdy ho nepokorila žiadna vojna a jeho "
 "múry neboli nikdy prelomené. Krv útočníkov pokrýva jeho hradby a kosti "
 "porazených sa rozpadajú pri základoch zamrznutých Halsteadských vĺn z kameňa."
 
@@ -2076,18 +2050,13 @@ msgstr "Ako vieš?"
 
 #. [message]: speaker=Baldras
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:402
-#, fuzzy
-#| msgid ""
-#| "When I was a boy, my father — your grandfather — brought your dad and me "
-#| "to live in Aldril after orcs massacred many in our village. We grew up "
-#| "around here, and we learned many things."
 msgid ""
 "When I was a boy, my father — your grandfather — brought your mother and me "
 "to live in Aldril after orcs massacred many in our village. We grew up "
 "around here, and we learned many things."
 msgstr ""
-"Keď som bol ešte chlapec, môj otec - tvoj starý otec - priviedol mňa a "
-"tvojho otca do mesta Aldril po tom, čo orkovia vyplienili našu dedinu. Tu "
+"Keď som bol ešte chlapec, môj otec — tvoj starý otec — priviedol mňa a "
+"tvojho otca do mesta Aldril po tom, čo orkovia zmasakrovali našu dedinu. Tu "
 "sme vyrástli a veľa sme sa pri tom naučili."
 
 #. [message]: speaker=Baldras
@@ -2207,7 +2176,7 @@ msgstr "Prerazili bránu pevnosti! Odrazte ich!"
 #. [message]: speaker=unit
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:629
 msgid "I’m inside the tower! I’m going down to the catacombs — cover me."
-msgstr "Som vo veži! Idem dolu do katakomb - kryte ma."
+msgstr "Som vo veži! Idem dolu do katakomb — kryte ma."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:639
@@ -2370,7 +2339,7 @@ msgstr ""
 #. [scenario]: id=09_Epilogue
 #: data/campaigns/Liberty/scenarios/09_Epilogue.cfg:4
 msgid "Liberty — Epilogue"
-msgstr "Sloboda - Epilóg"
+msgstr "Sloboda — Epilóg"
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/09_Epilogue.cfg:14
@@ -2394,12 +2363,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/09_Epilogue.cfg:20
-#, fuzzy
-#| msgid ""
-#| "The Elense riders routed the orcish army, small as it was, and sent them "
-#| "back across the Great River. They then scattered to the countryside and "
-#| "were not heard from again. Baldras thought this odd behavior when he "
-#| "heard about it."
 msgid ""
 "The Elense riders routed the orcish army, small as it was, and sent them "
 "back across the Great River. They then scattered to the countryside and were "
@@ -2421,8 +2384,8 @@ msgid ""
 msgstr ""
 "Hlavná časť Aševiérinej armády zatiaľ napredovala k vtedy už len troskám "
 "Halsteadu. Začali sa však diať čudné veci. Každú noc zmizlo bez stopy "
-"niekoľko mužov. Ďaľších našli rozsekaných na kusy. Počas pochodu nemali "
-"vojaci ani chvíľu pokoja - každú chvíľu sa niekto zrútil na zem, mŕtvy, "
+"niekoľko mužov. Ďalších našli rozsekaných na kusy. Počas pochodu nemali "
+"vojaci ani chvíľu pokoja — každú chvíľu sa niekto zrútil na zem, mŕtvy, "
 "zasiahnutý neviditeľným útočníkom. Radami vojska sa začali šíriť správy o "
 "prítomnosti nemŕtvych."
 
@@ -2541,14 +2504,6 @@ msgstr "Túlavý mág"
 
 #. [unit_type]: id=Rogue Mage, race=human
 #: data/campaigns/Liberty/units/Rogue_Mage.cfg:17
-#, fuzzy
-#| msgid ""
-#| "Some mages are thrown out of the mage’s guild for attempting to practice "
-#| "forbidden arts. Now completely outside the law, these rogue mages do "
-#| "whatever necessary to support their study of black magic. Although not as "
-#| "skilled as mages with more formal training, their magic can be quite "
-#| "lethal, while their banditry has resulted in moderate skill with the "
-#| "short sword."
 msgid ""
 "Some mages are thrown out of the mages’ guild for attempting to practice "
 "forbidden arts. Now completely outside the law, these rogue mages do "
@@ -2558,10 +2513,10 @@ msgid ""
 msgstr ""
 "Sú takí, ktorí sú vylúčení z uznávaného spoločenstva mágov kvôli pokusom o "
 "praktizovanie zakázanej časti mágie. Teraz, postavení úplne mimo zákon, sú "
-"títo lotri sú schopní čohokoľvek, čo im umožní hlbšie preniknúť do "
-"tajomstiev čiernej mágie. Aj keď nie sú tak zdatní ako mágovia, ktorí prešli "
-"bežným štúdiom, ich kúzla sú rozhodne smrtonosné, a ako banditi navyše dobre "
-"ovládajú aj boj s mečom."
+"títo lotri schopní čohokoľvek, čo im umožní hlbšie preniknúť do tajomstiev "
+"čiernej mágie. Aj keď nie sú tak zdatní ako mágovia, ktorí prešli bežným "
+"štúdiom, ich kúzla sú rozhodne smrtonosné, a ako banditi navyše dobre "
+"ovládajú aj boj s krátkym mečom."
 
 #. [attack]: type=cold
 #: data/campaigns/Liberty/units/Rogue_Mage.cfg:33

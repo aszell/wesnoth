@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 08:37 UTC\n"
-"PO-Revision-Date: 2018-04-18 01:12+0200\n"
+"POT-Creation-Date: 2019-01-21 18:29 UTC\n"
+"PO-Revision-Date: 2019-01-23 22:44+0100\n"
 "Last-Translator: Stanislav Hoferek <shoferek@gmail.com>\n"
 "Language-Team: none\n"
 "Language: sk\n"
@@ -36,8 +36,8 @@ msgstr ""
 
 #. [campaign]: id=An_Orcish_Incursion
 #: data/campaigns/An_Orcish_Incursion/_main.cfg:20
-msgid "(Novice level, 7 scenarios.)"
-msgstr "(Vhodné pre začiatočníkov, 7 máp)"
+msgid "(Rookie level, 7 scenarios.)"
+msgstr "(Vhodné pre začiatočníkov, 7 máp.)"
 
 #. [campaign]: id=An_Orcish_Incursion
 #: data/campaigns/An_Orcish_Incursion/_main.cfg:22
@@ -174,11 +174,11 @@ msgstr "Elfovia"
 msgid "Lomarfel"
 msgstr "Lomarfel"
 
-#. [side]: type=Orcish Warrior, id=Urugha
 #. [side]: type=Orcish Warlord, id=Krughnar
 #. [side]: type=Orcish Sovereign, id=Rualsha
 #. [side]: type=Orcish Slayer, id=Gharlsa
 #. [side]: type=Orcish Warlord, id=Gnargha
+#. [side]: type=Orcish Warrior, id=Urugha
 #: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:88
 #: data/campaigns/An_Orcish_Incursion/scenarios/02_Assassins.cfg:59
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:66
@@ -267,7 +267,7 @@ msgid "Yes, my lord!"
 msgstr "Áno, môj pane!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:178
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:180
 msgid ""
 "Look at them. Big, slow, clumsy and hardly a bow in hand. Keep to the trees, "
 "use your arrows and the day will be ours."
@@ -276,12 +276,60 @@ msgstr ""
 "šípy. Do lesov, pripravíme im bolestivé privítanie - a deň bude náš!"
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:187
+#. the player hasn't recruited any Shamans. This message isn't shown if they have a Shaman, even if she has 0 xp.
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:213
+msgid ""
+"My lord, none of our healers have experience on the battlefield. It pleases "
+"me that they are safe, but if we should embark on a campaign then we will "
+"surely need them alongside us in the battles ahead."
+msgstr ""
+"Môj pane, žiadny z našich liečiteľov nemá skúsenosti z boja. Teší ma, že sú "
+"v bezpečí, ale ak sa rozhodneme pre výpravu, určite ich budeme potrebovať "
+"mať po boku v budúcich bitkách."
+
+#. [message]: race=elf
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:214
+msgid ""
+"female^My lord, none of our healers have experience on the battlefield. It "
+"pleases me that they are safe, but if we should embark on a campaign then we "
+"will surely need them alongside us in the battles ahead."
+msgstr ""
+"Môj pane, žiadna z našich liečiteliek nemá skúsenosti z boja. Teší ma, že sú "
+"v bezpečí, ale ak sa rozhodneme pre výpravu, určite ich budeme potrebovať "
+"mať po boku v budúcich bitkách."
+
+#. [message]: race=elf
+#. the player has recruited some Shamans but has lost all them (or managed to level a Sorceress)
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:228
+msgid ""
+"My lord, none of our surviving healers have experience on the battlefield. "
+"It pains me to suggest that we should risk another, but if we should embark "
+"on a campaign then we will surely need them alongside us in the battles "
+"ahead."
+msgstr ""
+"Môj pane, žiadny z našich preživších liečiteľov nemá skúsenosti z boja. Bolí "
+"ma navrhnúť, že by sme mali ohroziť ďalšieho, ale ak sa rozhodneme pre "
+"výpravu, určite ich budeme potrebovať mať po boku v budúcich bitkách."
+
+#. [message]: race=elf
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:229
+msgid ""
+"female^My lord, none of our surviving healers have experience on the "
+"battlefield. It pains me to suggest that we should risk another, but if we "
+"should embark on a campaign then we will surely need them alongside us in "
+"the battles ahead."
+msgstr ""
+"Môj pane, žiadna z našich preživších liečiteliek nemá skúsenosti z boja. "
+"Bolí ma navrhnúť, že by sme mali ohroziť ďalšiu, ale ak sa rozhodneme pre "
+"výpravu, určite ich budeme potrebovať mať po boku v budúcich bitkách."
+
+#. [message]: race=elf
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:244
 msgid "It’s hopeless; we’ve tried everything, and they’re still coming back."
 msgstr "Je to beznádejné. Už sme skúsili všetko, no stále prichádzajú ďalší."
 
 #. [message]: speaker=Urugha
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:192
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:249
 msgid ""
 "Forward, you worthless worms! Look at them, they’re tired and afraid! You "
 "killed their will to fight, now go and finish the job!"
@@ -290,7 +338,7 @@ msgstr ""
 "od strachu! Už nám stačí len dosekať tie ich fajnové plášte!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:197
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:254
 msgid ""
 "That cloud of dust on the horizon... flee! There’s more of the abominations "
 "heading this way! Fall back before we’re outnumbered and crushed."
@@ -299,7 +347,7 @@ msgstr ""
 "rozdrviť na prach! Rýchlo, kým nás neprečíslia, či rovno neobkľúčia."
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:203
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:260
 msgid ""
 "Lord Erlornas didn’t drive the orcs back, although he and his warriors tried "
 "their absolute best. When another war band arrived, elvish resistance "
@@ -309,7 +357,7 @@ msgstr ""
 "o nemožné. Ďalšia vlna definitívne zlomila ich odpor."
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:209
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:266
 msgid ""
 "Of the ensuing events little is known, since much was lost in the chaos and "
 "confusion, but one thing is painfully sure. Elves lost the campaign."
@@ -317,27 +365,27 @@ msgstr ""
 "Po zložitých udalostiach je istá len jedna vec - ťaženie elfov zlyhalo."
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:221
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:278
 msgid "Ugh..."
 msgstr "Sakra..."
 
 #. [message]: speaker=Urugha
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:226
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:283
 msgid "Finally! Got him!"
 msgstr "Konečne! Máme ho!"
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:234
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:291
 msgid "Lord!"
 msgstr "Pane!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:239
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:296
 msgid "Take... command... Drive them... away."
 msgstr "Prevezmi... velenie... Vyžeň ich... odtiaľto."
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:245
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:302
 msgid ""
 "Lord Erlornas died the day he first fought the orcs and never saw the end of "
 "the war. Given its final outcome, this was perhaps for the best."
@@ -346,7 +394,7 @@ msgstr ""
 "však v najlepšom boji za záchranu svojho národa."
 
 #. [message]: speaker=unit
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:257
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:314
 msgid ""
 "I’ve been bested, but the combat wasn’t fair... A thousand curses on you, "
 "withered coward! May you suffer... and when my master, Rualsha, finds you "
@@ -357,7 +405,7 @@ msgstr ""
 "tejto zeme!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:269
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:326
 msgid ""
 "Rualsha? Hmm... What if... Assemble a war-party, we need to scout north!"
 msgstr ""
@@ -631,12 +679,6 @@ msgstr "(<i>Odkašľanie</i>) Počkám si... spolu s mŕtvymi..."
 
 #. [message]: speaker=narrator
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:222
-#, fuzzy
-#| msgid ""
-#| "The orcish chieftain finally fell, overcome by his wounds. The elves "
-#| "found themselves in a half-ruined camp littered with the bodies of both "
-#| "sides.There was no hale orc in sight, nor did any of the wounded beg "
-#| "mercy. The elves took no prisoners."
 msgid ""
 "The orcish chieftain finally fell, overcome by his wounds. The elves found "
 "themselves in a half-ruined camp littered with the bodies of both sides. "
@@ -684,15 +726,11 @@ msgstr ""
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:265
-#, fuzzy
-#| msgid ""
-#| "What about the loot lord? We found supplies worth over a hundred gold in "
-#| "the camp."
 msgid ""
 "What about the loot, lord? We found supplies worth over a hundred gold in "
 "the camp."
 msgstr ""
-"Čo urobíme s korisťou? Našli sme zásoby po celom tábore aj so stovkou "
+"Čo urobíme s korisťou pane? Našli sme zásoby po celom tábore aj so stovkou "
 "zlatých mincí."
 
 #. [message]: speaker=Erlornas
@@ -724,10 +762,8 @@ msgstr ""
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:320
-#, fuzzy
-#| msgid "We can’t carry on Lord, the men are too tired. We have to fall back."
 msgid "We can’t carry on, lord, the men are too tired. We have to fall back."
-msgstr "Nemôžeme pokračovať, muži sú unavení. Musíme sa stiahnuť."
+msgstr "Nemôžeme pokračovať pane, muži sú unavení. Musíme sa stiahnuť."
 
 #. [message]: speaker=Erlornas
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:325

@@ -19,9 +19,11 @@
 
 #include "display.hpp"
 #include "display_context.hpp"
+#include "font/text_formatting.hpp"
 #include "game_board.hpp"
 #include "lexical_cast.hpp"
 #include "log.hpp"
+#include "map/map.hpp"
 #include "resources.hpp"
 #include "team.hpp"
 #include "terrain/filter.hpp"
@@ -679,13 +681,14 @@ std::string attack_type::weapon_specials(bool only_active, bool is_backstab) con
 	std::string res;
 	for (const config::any_child &sp : specials_.all_children_range())
 	{
-		if ( only_active  &&  !special_active(sp.cfg, AFFECT_EITHER, is_backstab) )
-			continue;
+		const bool active = special_active(sp.cfg, AFFECT_EITHER, is_backstab);
 
 		const std::string& name = sp.cfg["name"].str();
 		if (!name.empty()) {
 			if (!res.empty()) res += ", ";
+			if (only_active && !active) res += font::span_color(font::inactive_details_color);
 			res += name;
+			if (only_active && !active) res += "</span>";
 		}
 	}
 
@@ -999,6 +1002,21 @@ bool attack_type::special_active(const config& special, AFFECTS whom,
 	// Make sure they're facing each other.
 	temporary_facing self_facing(self, self_loc_.get_relative_dir(other_loc_));
 	temporary_facing other_facing(other, other_loc_.get_relative_dir(self_loc_));
+
+	// Filter poison, plague, drain
+	if (special["id"] == "drains" && other && other->get_state("undrainable")) {
+		return false;
+	}
+	if (special["id"] == "plague" && other &&
+		(other->get_state("unplagueable") ||
+		 resources::gameboard->map().is_village(other_loc_))) {
+		return false;
+	}
+	if (special["id"] == "poison" && other &&
+		(other->get_state("unpoisonable") || other->get_state(unit::STATE_POISONED))) {
+		return false;
+	}
+
 
 	// Translate our context into terms of "attacker" and "defender".
 	unit_const_ptr & att = is_attacker_ ? self : other;
