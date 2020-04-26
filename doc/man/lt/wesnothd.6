@@ -33,9 +33,9 @@ wesnothd \- Mūšio dėl \fBVesnoto\fP daugelio žaidėjų žaidimo tinklo demon
 .
 .SH APRAŠYMAS
 .
-Manages Battle for Wesnoth multiplayer games. See
-https://www.wesnoth.org/wiki/ServerAdministration on what commands the
-server accepts via the wesnoth client (/query ...) or the fifo.
+Tvarko Mūšio dėl Vesnoto daugelio žaidėjų žaidimus. Žiūrėkite
+https://www.wesnoth.org/wiki/ServerAdministration kurias komandas priima
+serveris iš wesnoth kliento (/query ...) arba per fifo.
 .
 .SH PARAMETRAI
 .
@@ -213,7 +213,9 @@ pačius raktus kaip ir \fB[redirect]\fP.
 \fB[user_handler]\fP Configures the user handler. Available keys vary depending
 on which user handler is set with the \fBuser_handler\fP key. If no
 \fB[user_handler]\fP section is present in the configuration the server will
-run without any nick registration service.
+run without any nick registration service. All additional tables that are
+needed for the \fBforum_user_handler\fP to function can be found in
+table_definitions.sql in the Wesnoth source repository.
 .RS
 .TP 
 \fBdb_host\fP
@@ -235,19 +237,37 @@ forumas saugo savo naudotojų duomenis. Labiausiai tikėtina, kad tai bus
 <lentelės\-priešdėlis>_users (pavyzdžiui, phpbb3_users).
 .TP 
 \fBdb_extra_table\fP
-(skirtas user_handler=forum) Lentelės pavadinimas, kurioje wesnothd saugos
-savo duomenis apie naudotojus. Lentelę turėsite sukurti patys. Pavyzdžiui,
-šitaip: \fBCREATE TABLE <table\-name>(username VARCHAR(255) PRIMARY
-KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0, user_is_moderator
-TINYINT(4) NOT NULL DEFAULT 0);\fP
+(for user_handler=forum) The name of the table in which wesnothd will save
+its own data about users. You will have to create this table manually.
+.TP 
+\fBdb_game_info_table\fP
+(for user_handler=forum) The name of the table in which wesnothd will save
+its own data about games.
+.TP 
+\fBdb_game_player_info_table\fP
+(for user_handler=forum) The name of the table in which wesnothd will save
+its own data about the players in a game.
+.TP 
+\fBdb_game_modification_info_table\fP
+(for user_handler=forum) The name of the table in which wesnothd will save
+its own data about the modifications used in a game.
+.TP 
+\fBdb_user_group_table\fP
+(for user_handler=forum) The name of the table in which your phpbb forums
+saves its user group data. Most likely this will be
+<table\-prefix>_user_group (e.g. phpbb3_user_group).
+.TP 
+\fBmp_mod_group\fP
+(for user_handler=forum) The ID of the forum group to be considered as
+having moderation authority.
 .TP 
 \fBuser_expiration\fP
 (skirtas user_handler=sample) Laikas, per kurį pasensta naudotojo
 registracija (dienomis).
 .RE
 .P
-\fB[mail]\fP Configures an SMTP server through which the user handler can send
-mail. Currently only used by the sample user handler.
+\fB[mail]\fP Konfigūruoja SMTP serverį per kurį naudotojų tvarkyklė gali siųsti
+paštą. Šiuo metu naudoja tik pavyzdinė naudotojų tvarkyklė.
 .RS
 .TP 
 \fBserver\fP
@@ -278,7 +298,7 @@ Parašė David White <davidnwhite@verizon.net>.  Redagavo Nils Kneuper
 <thomas.baumhauer@gmail.com>.  Šį dokumentacijos puslapį iš pradžių
 parašė Cyril Bouthors <cyril@bouthors.org>.
 .br
-Visit the official homepage: https://www.wesnoth.org/
+Aplankykite oficialų puslapį: https://www.wesnoth.org/
 .
 .SH COPYRIGHT
 .

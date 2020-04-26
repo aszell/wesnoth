@@ -27,14 +27,6 @@ return {
         local LS = wesnoth.require "location_set"
         local M = wesnoth.map
 
-        local function print_time(...)
-            if turn_start_time then
-                AH.print_ts_delta(turn_start_time, ...)
-            else
-                AH.print_ts(...)
-            end
-        end
-
         local recruit_data = {}
 
         local no_village_cost = function(recruit_id)
@@ -439,7 +431,7 @@ return {
 
         function ai_cas:recruit_rushers_eval()
             local start_time, ca_name = wesnoth.get_time_stamp() / 1000., 'recruit_rushers'
-            if AH.print_eval() then print_time('     - Evaluating recruit_rushers CA:') end
+            if AH.print_eval() then AH.print_ts('     - Evaluating recruit_rushers CA:') end
 
             local score = do_recruit_eval(recruit_data)
             if score == 0 then
@@ -650,9 +642,9 @@ return {
 
             if AH.print_eval() then
                 if village[1] then
-                    print("Recruit at: " .. best_hex[1] .. "," .. best_hex[2] .. " -> " .. village[1] .. "," .. village[2])
+                    std_print("Recruit at: " .. best_hex[1] .. "," .. best_hex[2] .. " -> " .. village[1] .. "," .. village[2])
                 else
-                    print("Recruit at: " .. best_hex[1] .. "," .. best_hex[2])
+                    std_print("Recruit at: " .. best_hex[1] .. "," .. best_hex[2])
                 end
             end
             return best_hex, village
@@ -693,7 +685,6 @@ return {
             if recruit_data.castle.loose_gold_limit >= recruit_data.recruit.cheapest_unit_cost then
                 gold_limit = recruit_data.castle.loose_gold_limit
             end
-            --print (recruit_data.castle.loose_gold_limit .. " " .. recruit_data.recruit.cheapest_unit_cost .. " " .. gold_limit)
 
             local recruitable_units = {}
 
@@ -817,7 +808,7 @@ return {
                 local score = offense_score*offense_weight + defense_score*defense_weight + move_score*move_weight + bonus
 
                 if AH.print_eval() then
-                    print(recruit_id .. " score: " .. offense_score*offense_weight .. " + " .. defense_score*defense_weight .. " + " .. move_score*move_weight  .. " + " .. bonus  .. " = " .. score)
+                    std_print(recruit_id .. " score: " .. offense_score*offense_weight .. " + " .. defense_score*defense_weight .. " + " .. move_score*move_weight  .. " + " .. bonus  .. " = " .. score)
                 end
                 if score > best_score and wesnoth.unit_types[recruit_id].cost <= gold_limit then
                     best_score = score

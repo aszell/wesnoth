@@ -15,6 +15,7 @@
 #include "game_initialization/multiplayer.hpp"
 
 #include "addon/manager.hpp" // for installed_addons
+#include "build_info.hpp"
 #include "events.hpp"
 #include "formula/string_utils.hpp"
 #include "game_config_manager.hpp"
@@ -42,6 +43,8 @@
 #include "replay.hpp"
 
 #include "utils/functional.hpp"
+
+#include <fstream>
 
 static lg::log_domain log_mp("mp/main");
 #define DBG_MP LOG_STREAM(debug, log_mp)
@@ -156,6 +159,7 @@ std::pair<wesnothd_connection_ptr, config> open_connection(std::string host)
 			config cfg;
 			config res;
 			cfg["version"] = game_config::version;
+			cfg["client_source"] = game_config::dist_channel_id();
 			res.add_child("version", std::move(cfg));
 			sock->send_data(res);
 		}
@@ -306,6 +310,11 @@ std::pair<wesnothd_connection_ptr, config> open_connection(std::string host)
 				utils::string_map i18n_symbols;
 				i18n_symbols["nick"] = login;
 
+				const bool has_extra_data = error->has_child("data");
+				if(has_extra_data) {
+					i18n_symbols["duration"] = utils::format_timespan((*error).child("data")["duration"]);
+				}
+
 				if((*error)["error_code"] == MP_MUST_LOGIN) {
 					error_message = _("You must login first.");
 				} else if((*error)["error_code"] == MP_NAME_TAKEN_ERROR) {
@@ -323,11 +332,23 @@ std::pair<wesnothd_connection_ptr, config> open_connection(std::string host)
 					error_message = VGETTEXT("The nickname ‘$nick’ is not registered on this server.", i18n_symbols)
 							+ _(" This server disallows unregistered nicknames.");
 				} else if((*error)["error_code"] == MP_NAME_AUTH_BAN_USER_ERROR) {
-					error_message = VGETTEXT("The nickname ‘$nick’ is banned on this server’s forums.", i18n_symbols);
+					if(has_extra_data) {
+						error_message = VGETTEXT("The nickname ‘$nick’ is banned on this server’s forums for $duration|.", i18n_symbols);
+					} else {
+						error_message = VGETTEXT("The nickname ‘$nick’ is banned on this server’s forums.", i18n_symbols);
+					}
 				} else if((*error)["error_code"] == MP_NAME_AUTH_BAN_IP_ERROR) {
-					error_message = _("Your IP address is banned on this server’s forums.");
+					if(has_extra_data) {
+						error_message = VGETTEXT("Your IP address is banned on this server’s forums for $duration|.", i18n_symbols);
+					} else {
+						error_message = _("Your IP address is banned on this server’s forums.");
+					}
 				} else if((*error)["error_code"] == MP_NAME_AUTH_BAN_EMAIL_ERROR) {
-					error_message = VGETTEXT("The email address for the nickname ‘$nick’ is banned on this server’s forums.", i18n_symbols);
+					if(has_extra_data) {
+						error_message = VGETTEXT("The email address for the nickname ‘$nick’ is banned on this server’s forums for $duration|.", i18n_symbols);
+					} else {
+						error_message = VGETTEXT("The email address for the nickname ‘$nick’ is banned on this server’s forums.", i18n_symbols);
+					}
 				} else if((*error)["error_code"] == MP_PASSWORD_REQUEST) {
 					error_message = VGETTEXT("The nickname ‘$nick’ is registered on this server.", i18n_symbols);
 				} else if((*error)["error_code"] == MP_PASSWORD_REQUEST_FOR_LOGGED_IN_NAME) {

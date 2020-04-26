@@ -110,7 +110,6 @@ opts.AddVariables(
     ('ctool', 'Set c compiler command if not using standard compiler.'),
     ('cxxtool', 'Set c++ compiler command if not using standard compiler.'),
     EnumVariable('cxx_std', 'Target c++ std version', '11', ['11', '1y', '14']),
-    BoolVariable('openmp', 'Enable openmp use.', False),
     ('sanitize', 'Enable clang and GCC sanitizer functionality. A comma separated list of sanitize suboptions must be passed as value.', ''),
     BoolVariable("fast", "Make scons faster at cost of less precise dependency tracking.", False),
     BoolVariable("autorevision", 'Use autorevision tool to fetch current git revision that will be embedded in version string', True),
@@ -135,7 +134,11 @@ env = Environment(tools=["tar", "gettext_tool", "install", "python_devel", "scan
 if env["lockfile"]:
     print("Creating lockfile")
     lockfile = os.path.abspath("scons.lock")
-    open(lockfile, "wx").write(str(os.getpid()))
+    if sys.version_info.major >= 3:
+        create = "x"
+    else:
+        create = "wx"
+    open(lockfile, create).write(str(os.getpid()))
     import atexit
     atexit.register(os.remove, lockfile)
 
@@ -325,8 +328,8 @@ env.PrependENVPath('LD_LIBRARY_PATH', env["boostlibdir"])
 
 # Some tests require at least C++11
 if "gcc" in env["TOOLS"]:
-    env.AppendUnique(CCFLAGS = Split("-Wall -Wextra -Werror=non-virtual-dtor"))
-    env.AppendUnique(CXXFLAGS = "-std=c++" + env["cxx_std"])
+    env.AppendUnique(CCFLAGS = Split("-Wall -Wextra"))
+    env.AppendUnique(CXXFLAGS = Split("-Werror=non-virtual-dtor -std=c++" + env["cxx_std"]))
 
 if env["prereqs"]:
     conf = env.Configure(**configure_args)
@@ -391,7 +394,6 @@ if env["prereqs"]:
     have_client_prereqs = have_server_prereqs & have_sdl_other() & conf.CheckLib("vorbisfile") & conf.CheckOgg() & \
         conf.CheckPNG() & \
         conf.CheckJPG() & \
-        conf.CheckPKG("gobject-2.0") & \
         conf.CheckCairo(min_version = "1.10") & \
         conf.CheckPango("cairo", require_version = "1.22.0") & \
         conf.CheckPKG("fontconfig") & \
@@ -405,24 +407,24 @@ if env["prereqs"]:
             have_X = conf.CheckLib('X11')
 
         env["notifications"] = env["notifications"] and conf.CheckPKG("dbus-1")
-        if env["notifications"]:
-            client_env.Append(CPPDEFINES = ["HAVE_LIBDBUS"])
-
         client_env['fribidi'] = client_env['fribidi'] and (conf.CheckPKG('fribidi >= 0.10.9') or Warning("Can't find FriBiDi, disabling FriBiDi support."))
-        if client_env['fribidi']:
-            client_env.Append(CPPDEFINES = ["HAVE_FRIBIDI"])
-
         env["history"] = env["history"] and (conf.CheckLib("history") or Warning("Can't find GNU history, disabling history support."))
-        if env["history"]:
-            client_env.Append(CPPDEFINES = ["HAVE_HISTORY"])
+
+    client_env = conf.Finish()
+
+# We set those outside of Configure() section because SCons doesn't merge CPPPATH var properly in conf.Finish()
+    if env["notifications"]:
+        client_env.Append(CPPDEFINES = ["HAVE_LIBDBUS"])
+    if client_env['fribidi']:
+        client_env.Append(CPPDEFINES = ["HAVE_FRIBIDI"])
+    if env["history"]:
+        client_env.Append(CPPDEFINES = ["HAVE_HISTORY"])
 
     if env["forum_user_handler"]:
-        mysql_config = check_output(["mysql_config", "--libs", "--cflags"]).replace("\n", " ").replace("-DNDEBUG", "")
+        mysql_config = check_output(["mysql_config", "--libs", "--cflags"]).decode("utf-8").replace("\n", " ").replace("-DNDEBUG", "")
         mysql_flags = env.ParseFlags(mysql_config)
         env.Append(CPPDEFINES = ["HAVE_MYSQLPP"])
         env.MergeFlags(mysql_flags)
-
-    client_env = conf.Finish()
 
     test_env = client_env.Clone()
     conf = test_env.Configure(**configure_args)
@@ -468,15 +470,12 @@ for env in [test_env, client_env, env]:
 
     if "clang" in env["CXX"]:
 # Silence warnings about unused -I options and unknown warning switches.
-        env.AppendUnique(CCFLAGS = Split("-Qunused-arguments -Wno-unknown-warning-option -Wmismatched-tags -Wno-conditional-uninitialized"))
+        env.AppendUnique(CCFLAGS = Split("-Qunused-arguments -Wno-unknown-warning-option -Wmismatched-tags -Wno-conditional-uninitialized -Wno-unused-lambda-capture"))
 
         if env['pedantic']:
             env.AppendUnique(CXXFLAGS = Split("-Wdocumentation -Wno-documentation-deprecated-sync"))
 
     if "gcc" in env["TOOLS"]:
-        if env['openmp']:
-            env.AppendUnique(CXXFLAGS = ["-fopenmp"], LIBS = ["gomp"])
-
         env.AppendUnique(CCFLAGS = Split("-Wno-unused-local-typedefs -Wno-maybe-uninitialized"))
         env.AppendUnique(CXXFLAGS = Split("-Wold-style-cast"))
 
@@ -510,7 +509,7 @@ for env in [test_env, client_env, env]:
 
         if env['harden'] and env["PLATFORM"] != 'win32':
             env.AppendUnique(CCFLAGS = ["-fPIE"])
-            if not env["have_fortify"] and "-O0" not in env["opt"]:
+            if not env.get("have_fortify") and "-O0" not in env["opt"]:
                 env.AppendUnique(CPPDEFINES = ["_FORTIFY_SOURCE=2"])
             
             if env["PLATFORM"] == 'darwin':

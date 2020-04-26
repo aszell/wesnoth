@@ -203,6 +203,13 @@ void playsingle_controller::play_scenario_main_loop()
 			for(size_t i = 0; i < local_players.size(); ++i) {
 				local_players[i] = gamestate().board_.teams()[i].is_local();
 			}
+			if(ex.start_replay) {
+				// MP "Back to turn"
+				statistics::read_stats(*ex.stats_);
+			} else {
+				// SP replay
+				statistics::reset_current_scenario();
+			}
 			reset_gamestate(*ex.level, (*ex.level)["replay_pos"]);
 			for(size_t i = 0; i < local_players.size(); ++i) {
 				resources::gameboard->teams()[i].set_local(local_players[i]);
@@ -334,10 +341,13 @@ LEVEL_RESULT playsingle_controller::play_scenario(const config& level)
 		saved_game_.clear();
 		throw;
 	} catch(const wesnothd_error& e) {
-
 		scoped_savegame_snapshot snapshot(*this);
 		savegame::ingame_savegame save(saved_game_, preferences::save_compression_format());
-		save.save_game_interactive(_("A network disconnection has occurred, and the game cannot continue. Do you want to save the game?"), savegame::savegame::YES_NO);
+		if(e.message == "") {
+			save.save_game_interactive(_("A network disconnection has occurred, and the game cannot continue. Do you want to save the game?"), savegame::savegame::YES_NO);
+		} else {
+			save.save_game_interactive(_("This game has been ended.\nReason: ")+e.message+_("\nDo you want to save the game?"), savegame::savegame::YES_NO);
+		}
 		if(dynamic_cast<const ingame_wesnothd_error*>(&e)) {
 			return LEVEL_RESULT::QUIT;
 		} else {
@@ -667,7 +677,7 @@ void playsingle_controller::reset_replay()
 {
 	if(replay_controller_ && replay_controller_->allow_reset_replay()) {
 		replay_controller_->stop_replay();
-		throw reset_gamestate_exception(replay_controller_->get_reset_state(), false);
+		throw reset_gamestate_exception(replay_controller_->get_reset_state(), {}, false);
 	}
 	else {
 		ERR_NG << "received invalid reset replay\n";

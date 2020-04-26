@@ -42,14 +42,13 @@ private:
 	void handle_version(socket_ptr socket);
 	void read_version(socket_ptr socket, std::shared_ptr<simple_wml::document> doc);
 
-	void login(socket_ptr socket, std::string version);
-	void handle_login(socket_ptr socket, std::shared_ptr<simple_wml::document> doc, std::string version);
-	bool is_login_allowed(socket_ptr socket, const simple_wml::node* const login, const std::string& version);
-	bool authenticate(socket_ptr socket, const std::string& username, const std::string& password, const std::string& version, bool name_taken, bool& registered);
+	void login(socket_ptr socket, std::string version, std::string source);
+	void handle_login(socket_ptr socket, std::shared_ptr<simple_wml::document> doc, std::string version, std::string source);
+	bool is_login_allowed(socket_ptr socket, const simple_wml::node* const login, const std::string& version, const std::string& source);
+	bool authenticate(socket_ptr socket, const std::string& username, const std::string& password, const std::string& version, const std::string& source, bool name_taken, bool& registered);
 	void send_password_request(socket_ptr socket, const std::string& msg,
-		const std::string& user, const std::string& version, const char* error_code = "", bool force_confirmation = false);
+		const std::string& user, const std::string& version, const std::string& source, const char* error_code = "", bool force_confirmation = false);
 	bool accepting_connections() const { return !graceful_restart; }
-
 	void add_player(socket_ptr socket, const wesnothd::player&);
 	void read_from_player(socket_ptr socket);
 	void handle_read_from_player(socket_ptr socket, std::shared_ptr<simple_wml::document> doc);
@@ -124,6 +123,8 @@ private:
 	std::string input_path_;
 #endif
 
+	std::string uuid_;
+
 	const std::string config_file_;
 	config cfg_;
 
@@ -151,6 +152,7 @@ private:
 	bool save_replays_;
 	std::string replay_save_path_;
 	bool allow_remote_shutdown_;
+	std::set<std::string> client_sources_;
 	std::vector<std::string> tor_ip_list_;
 	int failed_login_limit_;
 	time_t failed_login_ban_;
@@ -180,7 +182,7 @@ private:
 	/** Process commands from admins and users. */
 	std::string process_command(std::string cmd, std::string issuer_name);
 
-	void delete_game(int);
+	void delete_game(int, const std::string& reason="");
 
 	void update_game_in_lobby(const wesnothd::game& g, const socket_ptr& exclude=socket_ptr());
 
@@ -222,6 +224,7 @@ private:
 	void motd_handler(const std::string &, const std::string &, std::string &, std::ostringstream *);
 	void searchlog_handler(const std::string &, const std::string &, std::string &, std::ostringstream *);
 	void dul_handler(const std::string &, const std::string &, std::string &, std::ostringstream *);
+	void stopgame(const std::string &, const std::string &, std::string &, std::ostringstream *);
 
 #ifndef _WIN32
 	void handle_sighup(const boost::system::error_code& error, int signal_number);

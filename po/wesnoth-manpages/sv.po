@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
-"POT-Creation-Date: 2019-01-21 21:30+0300\n"
+"POT-Creation-Date: 2019-09-16 11:33+0300\n"
 "PO-Revision-Date: 2007-12-12 00:03+0100\n"
 "Last-Translator: Stefan Bergström (tephlon) <stefan DOT bergstrom AT gmail "
 "DOT com>\n"
@@ -1227,15 +1227,20 @@ msgstr "B<--controller>I<nummer>B<=>I<värde>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:440
+#: doc/man/wesnoth.6:441
+#, fuzzy
+#| msgid ""
+#| "selects the controller for this side. Available values: B<human> and "
+#| "B<ai>."
 msgid ""
-"selects the controller for this side. Available values: B<human> and B<ai>."
+"selects the controller for this side. Available values: B<human>, B<ai> and "
+"B<null>."
 msgstr ""
 "väljer hur sidan skall kontrolleras. Möjliga värden är B<human> och B<ai>."
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:440
+#: doc/man/wesnoth.6:441
 #, fuzzy, no-wrap
 #| msgid "B<--era=>I<value>"
 msgid "B<--era>I<\\ value>"
@@ -1243,7 +1248,7 @@ msgstr "B<--era=>I<värde>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:447
+#: doc/man/wesnoth.6:448
 msgid ""
 "use this option to play in the selected era instead of the B<Default> era. "
 "The era is chosen by an id. Eras are described in the B<data/multiplayer/"
@@ -1255,14 +1260,14 @@ msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:447
+#: doc/man/wesnoth.6:448
 #, no-wrap
 msgid "B<--exit-at-end>"
 msgstr "B<--exit-at-end>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:451
+#: doc/man/wesnoth.6:452
 #, fuzzy
 #| msgid ""
 #| "exits once the scenario is over, without displaying victory/defeat dialog "
@@ -1278,39 +1283,39 @@ msgstr ""
 "för scriptade prestandatest."
 
 #. type: TP
-#: doc/man/wesnoth.6:451
+#: doc/man/wesnoth.6:452
 #, no-wrap
 msgid "B<--ignore-map-settings>"
 msgstr ""
 
 #. type: Plain text
-#: doc/man/wesnoth.6:454
+#: doc/man/wesnoth.6:455
 msgid "do not use map settings, use default values instead."
 msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:454
+#: doc/man/wesnoth.6:455
 #, fuzzy, no-wrap
 #| msgid "B<--era=>I<value>"
 msgid "B<--label>I<\\ label>"
 msgstr "B<--era=>I<värde>"
 
 #. type: Plain text
-#: doc/man/wesnoth.6:459
+#: doc/man/wesnoth.6:460
 msgid "sets the I<label> for AIs."
 msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:459
+#: doc/man/wesnoth.6:460
 #, fuzzy, no-wrap
 #| msgid "B<--era=>I<value>"
 msgid "B<--multiplayer-repeat>I<\\ value>"
 msgstr "B<--era=>I<värde>"
 
 #. type: Plain text
-#: doc/man/wesnoth.6:466
+#: doc/man/wesnoth.6:467
 msgid ""
 "repeats a multiplayer game I<value> times. Best to use with B<--nogui> for "
 "scriptable benchmarking."
@@ -1318,7 +1323,7 @@ msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:466
+#: doc/man/wesnoth.6:467
 #, fuzzy, no-wrap
 #| msgid "B<--parm>I<number>B<=>I<name>B<:>I<value>"
 msgid "B<--parm>I<\\ number>B<:>I<name>B<:>I<value>"
@@ -1326,7 +1331,7 @@ msgstr "B<--parm>I<nummer>B<=>I<namn>B<:>I<värde>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:475
+#: doc/man/wesnoth.6:476
 msgid ""
 "sets additional parameters for this side. This parameter depends on the "
 "options used with B<--controller> and B<--algorithm>.  It should only be "
@@ -1339,7 +1344,7 @@ msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:475
+#: doc/man/wesnoth.6:476
 #, fuzzy, no-wrap
 #| msgid "B<--scenario=>I<value>"
 msgid "B<--scenario>I<\\ value>"
@@ -1347,7 +1352,7 @@ msgstr "B<--scenario=>I<värde>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:479
+#: doc/man/wesnoth.6:480
 msgid ""
 "selects a multiplayer scenario by id. The default scenario id is "
 "B<multiplayer_The_Freelands>."
@@ -1357,7 +1362,7 @@ msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:479
+#: doc/man/wesnoth.6:480
 #, fuzzy, no-wrap
 #| msgid "B<--side>I<number>B<=>I<value>"
 msgid "B<--side>I<\\ number>B<:>I<value>"
@@ -1365,7 +1370,7 @@ msgstr "B<--side>I<nummer>B<=>I<värde>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:484
+#: doc/man/wesnoth.6:485
 msgid ""
 "selects a faction of the current era for this side. The faction is chosen by "
 "an id. Factions are described in the data/multiplayer.cfg file."
@@ -1375,7 +1380,7 @@ msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnoth.6:484
+#: doc/man/wesnoth.6:485
 #, fuzzy, no-wrap
 #| msgid "B<--turns=>I<value>"
 msgid "B<--turns>I<\\ value>"
@@ -1383,7 +1388,7 @@ msgstr "B<--turns=>I<värde>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:487
+#: doc/man/wesnoth.6:488
 #, fuzzy
 #| msgid ""
 #| "sets the number of turns for the chosen scenario. The default is B<50>."
@@ -1393,13 +1398,13 @@ msgid ""
 msgstr "anger antalet drag för det valda scenariot. Standardvärdet är B<50>."
 
 #. type: SH
-#: doc/man/wesnoth.6:488 doc/man/wesnothd.6:265
+#: doc/man/wesnoth.6:489 doc/man/wesnothd.6:279
 #, no-wrap
 msgid "EXIT STATUS"
 msgstr ""
 
 #. type: Plain text
-#: doc/man/wesnoth.6:493
+#: doc/man/wesnoth.6:494
 msgid ""
 "Normal exit status is 0.  An exit status of 1 indicates an (SDL, video, "
 "fonts, etc) initialization error. An exit status of 2 indicates an error "
@@ -1407,7 +1412,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: doc/man/wesnoth.6:505
+#: doc/man/wesnoth.6:506
 msgid ""
 "When running unit tests (withB<\\ -u>), the exit status is different. An "
 "exit status of 0 indicates that the test passed, and 1 indicates that the "
@@ -1420,20 +1425,20 @@ msgstr ""
 
 # type: SH
 #. type: SH
-#: doc/man/wesnoth.6:506 doc/man/wesnothd.6:269
+#: doc/man/wesnoth.6:507 doc/man/wesnothd.6:283
 #, no-wrap
 msgid "AUTHOR"
 msgstr "FÖRFATTARE"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:509
+#: doc/man/wesnoth.6:510
 msgid "Written by David White E<lt>davidnwhite@verizon.netE<gt>."
 msgstr "Skriven av David White E<lt>davidnwhite@verizon.netE<gt>."
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:511
+#: doc/man/wesnoth.6:512
 msgid ""
 "Edited by Nils Kneuper E<lt>crazy-ivanovic@gmx.netE<gt>, ott E<lt>ott@gaon."
 "netE<gt> and Soliton E<lt>soliton.de@gmail.comE<gt>."
@@ -1443,7 +1448,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:513
+#: doc/man/wesnoth.6:514
 msgid ""
 "This manual page was originally written by Cyril Bouthors "
 "E<lt>cyril@bouthors.orgE<gt>."
@@ -1453,7 +1458,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:515 doc/man/wesnothd.6:276
+#: doc/man/wesnoth.6:516 doc/man/wesnothd.6:290
 #, fuzzy
 #| msgid "Visit the official homepage: http://www.wesnoth.org/"
 msgid "Visit the official homepage: https://www.wesnoth.org/"
@@ -1461,14 +1466,14 @@ msgstr "Besök den officiella hemsidan: http://www.wesnoth.org/"
 
 # type: SH
 #. type: SH
-#: doc/man/wesnoth.6:516 doc/man/wesnothd.6:277
+#: doc/man/wesnoth.6:517 doc/man/wesnothd.6:291
 #, no-wrap
 msgid "COPYRIGHT"
 msgstr "COPYRIGHT"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:519 doc/man/wesnothd.6:280
+#: doc/man/wesnoth.6:520 doc/man/wesnothd.6:294
 #, fuzzy
 #| msgid ""
 #| "Copyright \\(co 2003-2009 David White E<lt>davidnwhite@verizon.netE<gt>"
@@ -1478,7 +1483,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnoth.6:522 doc/man/wesnothd.6:283
+#: doc/man/wesnoth.6:523 doc/man/wesnothd.6:297
 msgid ""
 "This is Free Software; this software is licensed under the GPL version 2, as "
 "published by the Free Software Foundation.  There is NO warranty; not even "
@@ -1490,7 +1495,7 @@ msgstr ""
 
 # type: SH
 #. type: SH
-#: doc/man/wesnoth.6:523 doc/man/wesnothd.6:284
+#: doc/man/wesnoth.6:524 doc/man/wesnothd.6:298
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "SE ÄVEN"
@@ -2138,14 +2143,15 @@ msgstr ""
 "vidarebefordra klientförfrågningar till den angiva servern. Accepterar samma "
 "parametrar som B<[redirect]>."
 
-# type: Plain text
 #. type: Plain text
 #: doc/man/wesnothd.6:221
 msgid ""
 "B<[user_handler]> Configures the user handler. Available keys vary depending "
 "on which user handler is set with the B<user_handler> key. If no "
 "B<[user_handler]> section is present in the configuration the server will "
-"run without any nick registration service."
+"run without any nick registration service. All additional tables that are "
+"needed for the forum_user_handler to function can be found in "
+"table_definitions.sql in the Wesnoth source repository."
 msgstr ""
 
 # type: TP
@@ -2225,27 +2231,89 @@ msgstr ""
 msgid "B<db_extra_table>"
 msgstr ""
 
-# type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:241
+#: doc/man/wesnothd.6:240
 msgid ""
 "(for user_handler=forum) The name of the table in which wesnothd will save "
-"its own data about users. You will have to create this table manually, e.g.: "
-"B<CREATE TABLE E<lt>table-nameE<gt>(username VARCHAR(255) PRIMARY KEY, "
-"user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4) "
-"NOT NULL DEFAULT 0);>"
+"its own data about users. You will have to create this table manually."
+msgstr ""
+
+#. type: TP
+#: doc/man/wesnothd.6:240
+#, no-wrap
+msgid "B<db_game_info_table>"
+msgstr ""
+
+#. type: Plain text
+#: doc/man/wesnothd.6:243
+msgid ""
+"(for user_handler=forum) The name of the table in which wesnothd will save "
+"its own data about games."
+msgstr ""
+
+#. type: TP
+#: doc/man/wesnothd.6:243
+#, no-wrap
+msgid "B<db_game_player_info_table>"
+msgstr ""
+
+#. type: Plain text
+#: doc/man/wesnothd.6:246
+msgid ""
+"(for user_handler=forum) The name of the table in which wesnothd will save "
+"its own data about the players in a game."
+msgstr ""
+
+#. type: TP
+#: doc/man/wesnothd.6:246
+#, no-wrap
+msgid "B<db_game_modification_info_table>"
+msgstr ""
+
+#. type: Plain text
+#: doc/man/wesnothd.6:249
+msgid ""
+"(for user_handler=forum) The name of the table in which wesnothd will save "
+"its own data about the modifications used in a game."
+msgstr ""
+
+#. type: TP
+#: doc/man/wesnothd.6:249
+#, no-wrap
+msgid "B<db_user_group_table>"
+msgstr ""
+
+#. type: Plain text
+#: doc/man/wesnothd.6:252
+msgid ""
+"(for user_handler=forum) The name of the table in which your phpbb forums "
+"saves its user group data. Most likely this will be E<lt>table-"
+"prefixE<gt>_user_group (e.g. phpbb3_user_group)."
+msgstr ""
+
+#. type: TP
+#: doc/man/wesnothd.6:252
+#, no-wrap
+msgid "B<mp_mod_group>"
+msgstr ""
+
+#. type: Plain text
+#: doc/man/wesnothd.6:255
+msgid ""
+"(for user_handler=forum) The ID of the forum group to be considered as "
+"having moderation authority."
 msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnothd.6:241
+#: doc/man/wesnothd.6:255
 #, no-wrap
 msgid "B<user_expiration>"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:244
+#: doc/man/wesnothd.6:258
 msgid ""
 "(for user_handler=sample) The time after which a registered nick expires (in "
 "days)."
@@ -2253,7 +2321,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:248
+#: doc/man/wesnothd.6:262
 msgid ""
 "B<[mail]> Configures an SMTP server through which the user handler can send "
 "mail. Currently only used by the sample user handler."
@@ -2261,71 +2329,71 @@ msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnothd.6:249
+#: doc/man/wesnothd.6:263
 #, fuzzy, no-wrap
 msgid "B<server>"
 msgstr "B<version>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:252
+#: doc/man/wesnothd.6:266
 msgid "The hostname of the mail server"
 msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnothd.6:252
+#: doc/man/wesnothd.6:266
 #, fuzzy, no-wrap
 msgid "B<username>"
 msgstr "B<--nocache>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:255
+#: doc/man/wesnothd.6:269
 msgid "The user name under which to log into the mail server."
 msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnothd.6:255
+#: doc/man/wesnothd.6:269
 #, fuzzy, no-wrap
 msgid "B<password>"
 msgstr "B<passwd>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:258
+#: doc/man/wesnothd.6:272
 msgid "This user's password."
 msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnothd.6:258
+#: doc/man/wesnothd.6:272
 #, no-wrap
 msgid "B<from_address>"
 msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:261
+#: doc/man/wesnothd.6:275
 msgid "The reply-to address of you mail."
 msgstr ""
 
 # type: TP
 #. type: TP
-#: doc/man/wesnothd.6:261
+#: doc/man/wesnothd.6:275
 #, fuzzy, no-wrap
 msgid "B<mail_port>"
 msgstr "B<port>"
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:264
+#: doc/man/wesnothd.6:278
 msgid "The port on which your mail server is running. Default is 25."
 msgstr ""
 
 #. type: Plain text
-#: doc/man/wesnothd.6:268
+#: doc/man/wesnothd.6:282
 msgid ""
 "Normal exit status is 0 when the server was properly shutdown. An exit "
 "status of 2 indicates an error with the command line options."
@@ -2333,7 +2401,7 @@ msgstr ""
 
 # type: Plain text
 #. type: Plain text
-#: doc/man/wesnothd.6:274
+#: doc/man/wesnothd.6:288
 #, fuzzy
 msgid ""
 "Written by David White E<lt>davidnwhite@verizon.netE<gt>.  Edited by Nils "
@@ -2349,7 +2417,7 @@ msgstr ""
 
 # type: TH
 #. type: Plain text
-#: doc/man/wesnothd.6:286
+#: doc/man/wesnothd.6:300
 #, fuzzy
 #| msgid "wesnoth"
 msgid "B<wesnoth>(6)"

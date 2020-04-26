@@ -148,6 +148,9 @@ game_stringfixes = {
 ("That is so very encouraging....","That is so very encouraging..."),
 # fix added in 1.14.4+dev
 ("can now aid those around her in the art of combat.", "can aid those around her in the art of combat."),
+# fixes added in 1.14.9+dev
+("This unit's grasp of melee tactics", "This unit’s grasp of melee tactics"),
+("mount Elnar", "Mount Elnar"),
 ),
 
 "wesnoth-low" : (
@@ -197,6 +200,8 @@ game_stringfixes = {
 "wesnoth-tsg": (
 # fixes added in 1.14.4+dev
 ("Bury me deeply my friends...", "Bury me deeply, my friends..."),
+# fix added in 1.14.9+dev
+("patrol the villages once again. ","patrol the villages once again."),
 ),
 
 "wesnoth-trow" : (
@@ -257,14 +262,17 @@ website_stringfixes = {
 # any time soon.
 
 # Source
-("wesnoth-1.14.4/wesnoth-1.14.4.tar.bz2", "wesnoth-1.14.5/wesnoth-1.14.5.tar.bz2"),
-("450.6", "450.8"),
+("wesnoth-1.14.9/wesnoth-1.14.9.tar.bz2", "wesnoth-1.14.11/wesnoth-1.14.11.tar.bz2"),
+("456.4", "458.9"),
 # Windows
-("wesnoth-1.14.4/wesnoth-1.14.4-win32.exe", "wesnoth-1.14.5/wesnoth-1.14.5-win32.exe"),
-("408.2", "408.4"),
+("wesnoth-1.14.9/wesnoth-1.14.9-win32.exe", "wesnoth-1.14.11/wesnoth-1.14.11-win32.exe"),
+("411.7", "414.0"),
 # macOS
-("wesnoth-1.14.4/Wesnoth_1.14.4.dmg", "wesnoth-1.14.5/Wesnoth_1.14.5.dmg"),
-("466.9", "472.7"),
+("wesnoth-1.14.9/Wesnoth_1.14.9.dmg", "wesnoth-1.14.11/Wesnoth_1.14.11.dmg"),
+("467.7", "468.0"),
+
+("&#169; 2003&#8211;2019", "&#169; 2003&#8211;2020"),
+("&#169; 2017&#8211;2019", "&#169; 2017&#8211;2020"),
 ),
 
 }

@@ -84,11 +84,12 @@ void send_to_players(simple_wml::document& data, const Container& players, socke
 }
 
 int game::id_num = 1;
+int game::db_id_num = 1;
 
 void game::missing_user(socket_ptr /*socket*/, const std::string& func) const
 {
 	WRN_GAME << func << "(): Could not find user (socket:\t<some C++ pointer>"
-			 << ") in player_info_ in game:\t\"" << name_ << "\" (" << id_ << ")\n";
+			 << ") in player_info_ in game:\t\"" << name_ << "\" (" << id_ << ", " << db_id_ << ")\n";
 }
 
 game::game(player_connections& player_connections,
@@ -98,6 +99,7 @@ game::game(player_connections& player_connections,
 		const std::string& replay_save_path)
 	: player_connections_(player_connections)
 	, id_(id_num++)
+	, db_id_(db_id_num++)
 	, name_(name)
 	, password_()
 	, owner_(host)
@@ -248,7 +250,7 @@ void game::perform_controller_tweaks()
 				msg << "Side " << side_index + 1
 					<< " had no controller during controller tweaks! The host was assigned control.";
 
-				LOG_GAME << msg.str() << " (game id: " << id_ << ")\n";
+				LOG_GAME << msg.str() << " (game id: " << id_ << ", " << db_id_ << ")\n";
 				send_and_record_server_message(msg.str());
 			}
 
@@ -279,7 +281,7 @@ void game::perform_controller_tweaks()
 			if(sides_[side_index] == 0) {
 				std::stringstream msg;
 				msg << "Side " << side_index + 1 << " had no controller AFTER controller tweaks! Ruh Roh!";
-				LOG_GAME << msg.str() << " (game id: " << id_ << ")\n";
+				LOG_GAME << msg.str() << " (game id: " << id_ << ", " << db_id_ << ")\n";
 			}
 		}
 	}
@@ -300,6 +302,8 @@ void game::start_game(const socket_ptr& starter)
 	DBG_GAME << debug_sides_info() << std::endl;
 	DBG_GAME << "****" << std::endl;
 
+	// If the game was already started we're actually advancing.
+	const bool advance = started_;
 	started_ = true;
 	// Prevent inserting empty keys when reading.
 	const simple_wml::node& multiplayer = get_multiplayer(level_.root());
@@ -307,11 +311,9 @@ void game::start_game(const socket_ptr& starter)
 	const bool save = multiplayer["savegame"].to_bool();
 	LOG_GAME
 		<< client_address(starter) << "\t" << player_connections_.find(starter)->name() << "\t"
-		<< "started" << (save ? " reloaded" : "") << " game:\t\"" << name_ << "\" (" << id_
-		// << ") with: " << list_users(players_, __func__) << ". Settings: map: " << s["id"]
-		<< ") with: " << list_users(players_, __func__)
+		<< (advance ? "advanced" : "started") << (save ? " reloaded" : "") << " game:\t\"" << name_ << "\" (" << id_
+		<< ", " << db_id_ << ") with: " << list_users(players_, __func__)
 		<< ". Settings: map: " << multiplayer["mp_scenario"]
-		// << "\tera: "       << (s.child("era") ? (*s.child("era"))["id"] : "")
 		<< "\tera: "       << multiplayer["mp_era"]
 		<< "\tXP: "        << multiplayer["experience_modifier"]
 		<< "\tGPV: "       << multiplayer["mp_village_gold"]
@@ -343,7 +345,7 @@ void game::start_game(const socket_ptr& starter)
 				    << " has no controller but should! The host needs to assign control for the game to proceed past "
 					   "that side's turn.";
 
-				LOG_GAME << msg.str() << " (game id: " << id_ << ")\n";
+				LOG_GAME << msg.str() << " (game id: " << id_ << ", " << db_id_ << ")\n";
 				send_and_record_server_message(msg.str());
 			}
 		}
@@ -586,7 +588,7 @@ void game::transfer_side_control(const socket_ptr& sock, const simple_wml::node&
 
 	if(newplayer == old_player) {
 		std::stringstream msg;
-		msg << "That's already " << newplayer_name << "'s side, silly.";
+		msg << "Side " << side_num << " is already controlled by " << newplayer_name << ".";
 		send_server_message(msg.str(), sock);
 		return;
 	}
@@ -770,7 +772,7 @@ void game::mute_observer(const simple_wml::node& mute, const socket_ptr& muter)
 	}
 
 	LOG_GAME << client_address(muter) << "\t" << game::username(muter) << " muted: " << username << " ("
-	         << client_address(user) << ")\tin game:\t\"" << name_ << "\" (" << id_ << ")\n";
+	         << client_address(user) << ")\tin game:\t\"" << name_ << "\" (" << id_ << ", " << db_id_ << ")\n";
 
 	muted_observers_.push_back(user);
 	send_and_record_server_message(username.to_string() + " has been muted.");
@@ -802,7 +804,7 @@ void game::unmute_observer(const simple_wml::node& unmute, const socket_ptr& unm
 	}
 
 	LOG_GAME << client_address(unmuter) << "\t" << game::username(unmuter) << " unmuted: " << username << " ("
-	         << client_address(user) << ")\tin game:\t\"" << name_ << "\" (" << id_ << ")\n";
+	         << client_address(user) << ")\tin game:\t\"" << name_ << "\" (" << id_ << ", " << db_id_ << ")\n";
 
 	muted_observers_.erase(std::remove(muted_observers_.begin(), muted_observers_.end(), user), muted_observers_.end());
 	send_and_record_server_message(username.to_string() + " has been unmuted.");
@@ -836,7 +838,7 @@ socket_ptr game::kick_member(const simple_wml::node& kick, const socket_ptr& kic
 	}
 
 	LOG_GAME << client_address(kicker) << "\t" << game::username(kicker) << "\tkicked: " << username << " ("
-	         << client_address(user) << ")\tfrom game:\t\"" << name_ << "\" (" << id_ << ")\n";
+	         << client_address(user) << ")\tfrom game:\t\"" << name_ << "\" (" << id_ << ", " << db_id_ << ")\n";
 
 	send_and_record_server_message(username.to_string() + " has been kicked.");
 
@@ -871,7 +873,7 @@ socket_ptr game::ban_user(const simple_wml::node& ban, const socket_ptr& banner)
 	}
 
 	LOG_GAME << client_address(banner) << "\t" << game::username(banner) << "\tbanned: " << username << " ("
-	         << client_address(user) << ")\tfrom game:\t\"" << name_ << "\" (" << id_ << ")\n";
+	         << client_address(user) << ")\tfrom game:\t\"" << name_ << "\" (" << id_ << ", " << db_id_ << ")\n";
 
 	bans_.push_back(client_address(user));
 	send_and_record_server_message(username.to_string() + " has been banned.");
@@ -910,7 +912,7 @@ void game::unban_user(const simple_wml::node& unban, const socket_ptr& unbanner)
 	LOG_GAME
 		<< client_address(unbanner) << "\t" << player_connections_.find(unbanner)->info().name()
 		<< "\tunbanned: " << username << " (" << client_address(user) << ")\tfrom game:\t\"" << name_ << "\" ("
-		<< id_ << ")\n";
+		<< id_ << ", " << db_id_ << ")\n";
 
 	bans_.erase(std::remove(bans_.begin(), bans_.end(), client_address(user)), bans_.end());
 	send_and_record_server_message(username.to_string() + " has been unbanned.");
@@ -1017,17 +1019,17 @@ bool game::process_turn(simple_wml::document& data, const socket_ptr& user)
 	const simple_wml::node::child_list& commands = turn->children("command");
 
 	for(simple_wml::node* command : commands) {
-		DBG_GAME << "game " << id_ << " received [" << (*command).first_child() << "] from player '" << username(user)
+		DBG_GAME << "game " << id_ << ", " << db_id_ << " received [" << (*command).first_child() << "] from player '" << username(user)
 				 << "'(" << user << ") during turn " << end_turn_ << "\n";
 		if(!is_legal_command(*command, user)) {
-			LOG_GAME << "ILLEGAL COMMAND in game: " << id_ << " (((" << simple_wml::node_to_string(*command)
+			LOG_GAME << "ILLEGAL COMMAND in game: " << id_ << ", " << db_id_ << " (((" << simple_wml::node_to_string(*command)
 					 << ")))\n";
 
 			std::stringstream msg;
 			msg << "Removing illegal command '" << (*command).first_child().to_string() << "' from: " << username(user)
 				<< ". Current player is: " << username(current_player()) << " (" << end_turn_ + 1 << "/" << nsides_
 				<< ").";
-			LOG_GAME << msg.str() << " (socket: " << current_player() << ") (game id: " << id_ << ")\n";
+			LOG_GAME << msg.str() << " (socket: " << current_player() << ") (game id: " << id_ << ", " << db_id_ << ")\n";
 			send_and_record_server_message(msg.str());
 
 			marked.push_back(index - marked.size());
@@ -1431,7 +1433,7 @@ bool game::add_player(const socket_ptr& player, bool observer)
 
 	LOG_GAME
 		<< client_address(player) << "\t" << player_connections_.find(user)->info().name() << "\tjoined game:\t\""
-		<< name_ << "\" (" << id_ << ")" << (observer ? " as an observer" : "") << ". (socket: " << player
+		<< name_ << "\" (" << id_ << ", " << db_id_ << ")" << (observer ? " as an observer" : "") << ". (socket: " << player
 		<< ")\n";
 
 	player_connections_.find(user)->info().mark_available(id_, name_);
@@ -1496,7 +1498,7 @@ bool game::remove_player(const socket_ptr& player, const bool disconnect, const 
 		<< client_address(user)
 		<< "\t" << player_connections_.find(user)->info().name()
 		<< ((game_ended && !(observer && destruct)) ? (started_ ? "\tended" : "\taborted") : "\thas left")
-		<< " game:\t\"" << name_ << "\" (" << id_ << ")"
+		<< " game:\t\"" << name_ << "\" (" << id_ << ", " << db_id_ << ")"
 		<< (game_ended && started_ && !(observer && destruct)
 			? " at turn: " + lexical_cast_default<std::string, size_t>(current_turn())
 				+ " with reason: '" + termination_reason() + "'"
@@ -1622,6 +1624,7 @@ void game::new_scenario(const socket_ptr& sender)
 			players_not_advanced_.insert(user_ptr);
 		}
 	}
+	started_ = false;
 }
 
 void game::load_next_scenario(const socket_ptr& user)
@@ -1829,6 +1832,16 @@ static bool is_invalid_filename_char(char c)
 	);
 }
 
+std::string game::get_replay_filename()
+{
+	std::stringstream name;
+	name << (*starting_pos(level_.root()))["name"] << " Turn " << current_turn() << " (" << db_id_ << ").bz2";
+	std::string filename(name.str());
+	std::replace(filename.begin(), filename.end(), ' ', '_');
+	filename.erase(std::remove_if(filename.begin(), filename.end(), is_invalid_filename_char), filename.end());
+	return filename;
+}
+
 void game::save_replay()
 {
 	if(!save_replays_ || !started_ || history_.empty()) {
@@ -1845,9 +1858,6 @@ void game::save_replay()
 	}
 
 	history_.clear();
-
-	std::stringstream name;
-	name << (*starting_pos(level_.root()))["name"] << " Turn " << current_turn();
 
 	std::stringstream replay_data;
 	try {
@@ -1871,16 +1881,10 @@ void game::save_replay()
 			<< (has_old_replay ? "" : "\t[command]\n\t\t[start]\n\t\t[/start]\n\t[/command]\n")
 			<< replay_commands << "[/replay]\n";
 
-		name << " (" << id_ << ").bz2";
-
 		std::string replay_data_str = replay_data.str();
 		simple_wml::document replay(replay_data_str.c_str(), simple_wml::INIT_STATIC);
 
-		std::string filename(name.str());
-
-		std::replace(filename.begin(), filename.end(), ' ', '_');
-		filename.erase(std::remove_if(filename.begin(), filename.end(), is_invalid_filename_char), filename.end());
-
+		std::string filename = get_replay_filename();
 		DBG_GAME << "saving replay: " << filename << std::endl;
 
 		filesystem::scoped_ostream os(filesystem::ostream_file(replay_save_path_ + filename));
@@ -1940,7 +1944,7 @@ const user_vector game::all_game_users() const
 std::string game::debug_player_info() const
 {
 	std::stringstream result;
-	result << "game id: " << id_ << "\n";
+	result << "game id: " << id_ << ", " << db_id_ << "\n";
 
 	//	result << "players_.size: " << players_.size() << "\n";
 	for(const socket_ptr& p : players_) {
@@ -1974,7 +1978,7 @@ std::string game::debug_player_info() const
 std::string game::debug_sides_info() const
 {
 	std::stringstream result;
-	result << "game id: " << id_ << "\n";
+	result << "game id: " << id_ << ", " << db_id_ << "\n";
 	const simple_wml::node::child_list& sides = get_sides_list();
 
 	result << "\t\t level, server\n";
@@ -2069,4 +2073,11 @@ const game::version_range& game::get_player_versions() const
 	assert(player_versions_);
 	return *player_versions_;
 }
+
+bool game::is_reload() const
+{
+	const simple_wml::node& multiplayer = get_multiplayer(level_.root());
+	return multiplayer.has_attr("savegame") && multiplayer["savegame"].to_bool();
+}
+
 } // namespace wesnothd

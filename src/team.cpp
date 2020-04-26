@@ -26,6 +26,7 @@
 #include "lexical_cast.hpp"
 #include "map/map.hpp"
 #include "play_controller.hpp"
+#include "playsingle_controller.hpp"
 #include "preferences/game.hpp"
 #include "resources.hpp"
 #include "serialization/string_utils.hpp"
@@ -592,6 +593,12 @@ void team::change_controller_by_wml(const std::string& new_controller_string)
 		set_local(choice["is_local"].to_bool());
 	}
 
+	if(playsingle_controller* pc =  dynamic_cast<playsingle_controller*>(resources::controller)) {
+		if(pc->current_side() == side() && new_controller != controller()) {
+			pc->set_player_type_changed();
+		}
+	}
+
 	change_controller(new_controller);
 }
 
@@ -986,7 +993,7 @@ std::string team::get_side_color_id_from_config(const config& cfg)
 
 std::string team::get_side_highlight_pango(int side)
 {
-	return get_side_color_range(side + 1).mid().to_hex_string();
+	return get_side_color_range(side).mid().to_hex_string();
 }
 
 void team::log_recruitable() const

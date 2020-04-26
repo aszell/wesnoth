@@ -16,6 +16,7 @@
 
 #include "widgets/textbox.hpp"
 
+#include "cursor.hpp"
 #include "desktop/clipboard.hpp"
 #include "font/sdl_ttf.hpp"
 #include "log.hpp"
@@ -48,6 +49,10 @@ textbox::textbox(CVideo &video, int width, const std::string& text, bool editabl
 
 textbox::~textbox()
 {
+	// Restore the cursor on destruction if we (probably) set it to IBEAM
+	if(cursor::get() == cursor::IBEAM) {
+		cursor::set(cursor::NORMAL);
+	}
 }
 
 void textbox::update_location(const SDL_Rect& rect)
@@ -60,7 +65,7 @@ void textbox::update_location(const SDL_Rect& rect)
 void textbox::set_inner_location(const SDL_Rect& rect)
 {
 	bg_register(rect);
-	if (text_image_.null()) return;
+	if (!text_image_) return;
 	text_pos_ = 0;
 	update_text_cache(false);
 }
@@ -99,7 +104,7 @@ void textbox::append_text(const std::string& text, bool auto_scroll, const color
 	const ucs4::string& wtext = unicode_cast<ucs4::string>(text);
 
 	surface new_text = add_text_line(wtext, color);
-	surface new_surface = create_compatible_surface(text_image_,std::max<size_t>(text_image_->w,new_text->w),text_image_->h+new_text->h);
+	surface new_surface(std::max<size_t>(text_image_->w,new_text->w),text_image_->h+new_text->h);
 
 	adjust_surface_alpha(new_text, SDL_ALPHA_TRANSPARENT);
 	adjust_surface_alpha(text_image_, SDL_ALPHA_TRANSPARENT);
@@ -115,7 +120,7 @@ void textbox::append_text(const std::string& text, bool auto_scroll, const color
 	};
 	SDL_SetSurfaceBlendMode(new_text, SDL_BLENDMODE_NONE);
 	sdl_blit(new_text,nullptr,new_surface,&target);
-	text_image_.assign(new_surface);
+	text_image_ = new_surface;
 
 	text_.insert(text_.end(), wtext.begin(), wtext.end());
 
@@ -371,7 +376,7 @@ void textbox::update_text_cache(bool changed, const color_t& color)
 		char_x_.clear();
 		char_y_.clear();
 
-		text_image_.assign(add_text_line(text_, color));
+		text_image_ = add_text_line(text_, color);
 	}
 
 	int cursor_x = char_x_[cursor_];
@@ -383,7 +388,7 @@ void textbox::update_text_cache(bool changed, const color_t& color)
 	}
 	cursor_pos_ = cursor_x - text_pos_;
 
-	if (!text_image_.null()) {
+	if (text_image_) {
 		set_full_size(text_image_->h);
 		set_shown_size(location().h);
 	}
@@ -652,9 +657,22 @@ void textbox::handle_event(const SDL_Event& event, bool was_forwarded)
 	}
 
 	const SDL_Rect& loc = inner_location();
+
+	const bool mouse_inside = sdl::point_in_rect(mousex, mousey, loc);
+
+	// Someone else may set the mouse cursor for us to something unusual (e.g.
+	// the WAIT cursor) so we ought to mess with that only if it's set to
+	// NORMAL or IBEAM.
+
+	if(mouse_inside && cursor::get() == cursor::NORMAL) {
+		cursor::set(cursor::IBEAM);
+	} else if(!mouse_inside && cursor::get() == cursor::IBEAM) {
+		cursor::set(cursor::NORMAL);
+	}
+
 	bool clicked_inside = !mouse_locked() && (event.type == SDL_MOUSEBUTTONDOWN
 					   && (mousebuttons & SDL_BUTTON(1))
-					   && sdl::point_in_rect(mousex, mousey, loc));
+					   && mouse_inside);
 	if(clicked_inside) {
 		set_focus(true);
 	}

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-21 18:29 UTC\n"
+"POT-Creation-Date: 2020-01-12 16:28 UTC\n"
 "PO-Revision-Date: 2018-09-12 16:20+1000\n"
 "Last-Translator: Wedge009 <wedge009@wedge009.net>\n"
 "Language-Team: English (British) <http://wiki.wesnoth.org/"
@@ -233,8 +233,8 @@ msgid ""
 "Great”</i> before your days are through. I give you the second syllable of "
 "power, the second part of your name: FA"
 msgstr ""
-"You will not be least among those champions. Nay; you will be called <i>“The "
-"Great”</i> before your days are through. I give you the second syllable of "
+"You will not be least among those champions. Nay; you will be called <i>‘The "
+"Great’</i> before your days are through. I give you the second syllable of "
 "power, the second part of your name: FA"
 
 #. [message]: speaker=Third Oracle
@@ -332,18 +332,18 @@ msgstr "This Valley Belongs to Me"
 msgid "Grogor-Tuk"
 msgstr "Grogor-Tuk"
 
-#. [side]: type=Goblin Pillager, id=Grogor-Tuk
 #. [side]: type=Orcish Warrior, id=Urthaka-Tan
-#. [side]: type=Orcish Slayer, id=Hagha-Tan
-#. [side]: type=Orcish Warlord, id=Tish Golub
 #. [side]: type=Orcish Warlord, id=Knafa-ord
 #. [side]: type=Orcish Warlord, id=Tan-drul
 #. [side]: type=Orcish Warlord, id=Krardul
+#. [side]: type=Orcish Warlord, id=Tish Golub
 #. [side]: type=Orcish Sovereign, id=Zorlan
 #. [side]: type=Orcish Warrior, id=T'bhan
 #. [side]: type=Orcish Warrior, id=Qgthun
 #. [side]: type=Great Troll, type=Troll Hero, id=Trgrau
 #. [side]
+#. [side]: type=Goblin Pillager, id=Grogor-Tuk
+#. [side]: type=Orcish Slayer, id=Hagha-Tan
 #. [side]: type=Orcish Warlord, id=Upgar
 #: data/campaigns/Delfadors_Memoirs/scenarios/02_This_Valley_Belongs_to_Me.cfg:49
 #: data/campaigns/Delfadors_Memoirs/scenarios/03_The_Road_to_Weldyn.cfg:44
@@ -431,7 +431,7 @@ msgid ""
 "their villages, and spare no-one!"
 msgstr ""
 "That’s where you are wrong, puny mage. War is coming, humans... War! Take "
-"their villages, and spare no one!"
+"their villages, and spare no-one!"
 
 #. [objective]: condition=win
 #: data/campaigns/Delfadors_Memoirs/scenarios/02_This_Valley_Belongs_to_Me.cfg:90
@@ -649,15 +649,15 @@ msgstr "Leollyn"
 msgid "Hagha-Tan"
 msgstr "Hagha-Tan"
 
-#. [side]: type=Arch Mage, id=Leollyn
 #. [side]
+#. [side]: type=King of Wesnoth, id=Garard II
+#. [side]: type=General, id=Rhuwin
+#. [side]: type=Arch Mage, id=Leollyn
+#. [modify_side]
+#. [side]: type=King of Wesnoth, id=Garard
 #. [side]: type=General, id=Eldred
 #. [side]: type=General, id=Lowel
-#. [side]: type=King of Wesnoth, id=Garard
-#. [modify_side]
-#. [side]: type=King of Wesnoth, id=Garard II
 #. [side]: type=Lieutenant, id=Niktor
-#. [side]: type=General, id=Rhuwin
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:101
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:23
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:34
@@ -1139,18 +1139,18 @@ msgstr ""
 msgid "Night in the Swamp"
 msgstr "Night in the Swamp"
 
-#. [side]
-#. [side]: type=Death Knight, id=Arakar
+#. [side]: type=Lich, id=Sagus
 #. [side]: type=Death Knight, id=Prepolur
 #. [side]: type=Necromancer, id=Unuvim-Malal
-#. [side]: type=Necromancer, id=Maldun
-#. [side]: type=Death Knight, id=Alderoth
+#. [side]
+#. [side]: type=Necromancer, id=Gruv-Malal
 #. [side]: type=Death Knight, id=Rudimil
 #. [side]: type=Necromancer, id=Roth-Malal
 #. [side]: type=Necromancer, id=Barth-Malal
+#. [side]: type=Death Knight, id=Arakar
+#. [side]: type=Necromancer, id=Maldun
+#. [side]: type=Death Knight, id=Alderoth
 #. [side]: type=Death Knight, id=Dirator
-#. [side]: type=Necromancer, id=Gruv-Malal
-#. [side]: type=Lich, id=Sagus
 #: data/campaigns/Delfadors_Memoirs/scenarios/07_Night_in_the_Swamp.cfg:47
 #: data/campaigns/Delfadors_Memoirs/scenarios/09_Houses_of_the_Undead.cfg:38
 #: data/campaigns/Delfadors_Memoirs/scenarios/10_The_Gate_Between_Worlds.cfg:34
@@ -1323,8 +1323,8 @@ msgid ""
 "This Ur-Thorodor should not speak of King Garard that way! <i>“Suffer our "
 "wrath”</i> indeed... I’ll show him wrath!"
 msgstr ""
-"This Ur-Thorodor should not speak of King Garard that way! <i>“Suffer our "
-"wrath”</i> indeed... I’ll show him wrath!"
+"This Ur-Thorodor should not speak of King Garard that way! <i>‘Suffer our "
+"wrath’</i> indeed... I’ll show him wrath!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Delfadors_Memoirs/scenarios/08_Ur_Thorodor.cfg:104
@@ -1647,8 +1647,8 @@ msgstr ""
 "difficult to attack, but there is a secret entrance in the valley beyond "
 "Sythan’s village."
 
-#. [scenario]: id=09_Houses_of_the_Dead
 #. [event]
+#. [scenario]: id=09_Houses_of_the_Dead
 #: data/campaigns/Delfadors_Memoirs/scenarios/09_Houses_of_the_Undead.cfg:318
 #: data/campaigns/Delfadors_Memoirs/scenarios/14_Shadows.cfg:193
 msgid "Nameless"
@@ -2066,9 +2066,9 @@ msgstr "Wasteland"
 msgid "Tish Golub"
 msgstr "Tish Golub"
 
-#. [side]: type=Elvish Druid
 #. [side]
 #. [side]: type=Elvish Captain, id=Clartakis
+#. [side]: type=Elvish Druid
 #: data/campaigns/Delfadors_Memoirs/scenarios/11_Wasteland.cfg:54
 #: data/campaigns/Delfadors_Memoirs/scenarios/13_The_Return_of_Trouble.cfg:40
 #: data/campaigns/Delfadors_Memoirs/scenarios/13_The_Return_of_Trouble.cfg:181
@@ -2564,7 +2564,7 @@ msgstr "Spare you from whom, soldier? What has happened here?"
 #. [message]: speaker=Theorin
 #: data/campaigns/Delfadors_Memoirs/scenarios/12_Terror_at_the_Ford_of_Parthyn.cfg:718
 msgid "They come at night... and leave no one alive..."
-msgstr "They come at night... and leave no one alive..."
+msgstr "They come at night... and leave no-one alive..."
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Delfadors_Memoirs/scenarios/12_Terror_at_the_Ford_of_Parthyn.cfg:722
@@ -2577,7 +2577,7 @@ msgid ""
 "I do not know. No one has seen their faces and lived. All I could hear is my "
 "comrades’ screams as they were being slaughtered."
 msgstr ""
-"I do not know. No one has seen their faces and lived. All I could hear is my "
+"I do not know. No-one has seen their faces and lived. All I could hear is my "
 "comrades’ screams as they were being slaughtered."
 
 #. [unit]: type=Heavy Infantryman, id=Donc
@@ -4027,7 +4027,7 @@ msgid ""
 "children to Knalga. They will be safe there among the rest of my kin. But "
 "can ye really close that thing?"
 msgstr ""
-"We ha’ seen those undead walking, aye, and fought them too. And no one will "
+"We ha’ seen those undead walking, aye, and fought them too. And no-one will "
 "ever say my kin ha’ been ungrateful for yer help. I will place my best "
 "warriors at yer service. Relgorn, my son, ye will lead the women and "
 "children to Knalga. They will be safe there among the rest of my kin. But "
@@ -4132,7 +4132,7 @@ msgstr ""
 #. [message]: speaker=Ulrek
 #: data/campaigns/Delfadors_Memoirs/scenarios/18_The_Portal_of_Doom.cfg:241
 msgid "Ye all heard! Naught will ever say dwarves ever feared anyone. Attack!"
-msgstr "Ye all heard! Naught will ever say dwarves ever feared anyone. Attack!"
+msgstr "Ye all heard! Nought will ever say dwarves ever feared anyone. Attack!"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Delfadors_Memoirs/scenarios/18_The_Portal_of_Doom.cfg:266
@@ -4764,8 +4764,8 @@ msgstr ""
 "Palace more swiftly than I came here, even if I have to kill three horses "
 "under me to do it."
 
-#. [modify_side]
 #. [side]
+#. [modify_side]
 #: data/campaigns/Delfadors_Memoirs/scenarios/20_Prince_of_Wesnoth.cfg:255
 #: data/campaigns/Delfadors_Memoirs/scenarios/21_Clash_at_the_Manor.cfg:52
 #: data/campaigns/Delfadors_Memoirs/scenarios/22_Face_of_the_Enemy.cfg:36
@@ -4871,7 +4871,7 @@ msgid ""
 "all costs and no one should be left alive."
 msgstr ""
 "I am grieved to have to resort to this. Yet the book must be recovered at "
-"all costs and no one should be left alive."
+"all costs and no-one should be left alive."
 
 #. [message]: id=Kalenz
 #: data/campaigns/Delfadors_Memoirs/scenarios/21_Clash_at_the_Manor.cfg:177

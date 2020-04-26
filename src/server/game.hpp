@@ -22,7 +22,7 @@
 #include "game_version.hpp"
 
 #include <boost/ptr_container/ptr_vector.hpp>
-#include <boost/optional.hpp> 
+#include <boost/optional.hpp>
 
 #include <map>
 #include <vector>
@@ -54,6 +54,16 @@ public:
 	int id() const
 	{
 		return id_;
+	}
+
+	int db_id() const
+	{
+		return db_id_;
+	}
+
+	void next_db_id()
+	{
+		db_id_ = db_id_num++;
 	}
 
 	const std::string& name() const
@@ -138,6 +148,8 @@ public:
 	{
 		current_turn_ = turn;
 	}
+
+	std::string get_replay_filename();
 
 	void mute_all_observers();
 
@@ -289,6 +301,11 @@ public:
 		return password_.empty() || passwd == password_;
 	}
 
+	bool has_password() const
+	{
+		return !password_.empty();
+	}
+
 	const std::string& termination_reason() const
 	{
 		static const std::string aborted = "aborted";
@@ -314,6 +331,8 @@ public:
 	 * Function which returns true iff 'player' controls any of the sides spcified in 'sides'.
 	 */
 	bool controls_side(const std::vector<int>& sides, const socket_ptr& player) const;
+
+	bool is_reload() const;
 
 private:
 	// forbidden operations
@@ -449,8 +468,15 @@ private:
 
 	player_connections& player_connections_;
 
+  // used for unique identification of game instances within wesnothd
 	static int id_num;
 	int id_;
+
+	// used for unique identification of games played in the database
+	// necessary since for MP campaigns multiple scenarios can be played within the same game instance
+	// and we need a unique ID per scenario played, not per game instance
+	static int db_id_num;
+	int db_id_;
 
 	/** The name of the game. */
 	std::string name_;
@@ -521,7 +547,7 @@ private:
 	randomness::mt_rng rng_;
 	int last_choice_request_id_;
 	mutable boost::optional<version_range> player_versions_;
-	
+
 };
 
 } // namespace wesnothd

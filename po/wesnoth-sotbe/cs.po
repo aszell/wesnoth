@@ -1,7 +1,7 @@
 # translation of wesnoth-sotbe.pot to Czech
 # Czech translations for Battle for Wesnoth package.
 # Český překlad hry Battle for Wesnoth (Bitva o Wesnoth).
-# Copyright (C) 2004 - 2018 Wesnoth development team
+# Copyright (C) 2004 - 2020 Wesnoth development team
 # This file is distributed under the same license as the Battle for Wesnoth package.
 #
 # Czech Wesnoth translation team <hrubymar10@gmail.com>,
@@ -14,27 +14,28 @@
 # Čestmír "CZestmyr" Houska <czestmyr@gmail.com>, 2008.
 # Anežka Bubeníčková <masozravapalma@gmail.cz>, 2011.
 # Honza <Honza-mistic@seznam.cz>, 2014.
-# Martin Hrubý <hrubymar10@gmail.com>, 2017 - 2018.
+# Martin Hrubý <hrubymar10@gmail.com>, 2017 - 2020.
+# Michal Žejdl <lachim@emer.cz>, 2019 - 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
-"PO-Revision-Date: 2018-04-05 17:32+0200\n"
-"Last-Translator: Martin Hrubý (hrubymar10) <hrubymar10@gmail.com>\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
+"PO-Revision-Date: 2020-01-15 19:22+0100\n"
+"Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
 "Language-Team: Český <hrubymar10@gmail.com>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #. [campaign]: id=Son_of_the_Black-Eye
 #: data/campaigns/Son_Of_The_Black_Eye/_main.cfg:9
 msgid "Son of the Black-Eye"
-msgstr "Syn Černého Oka"
+msgstr "Syn Černého oka"
 
 #. [campaign]: id=Son_of_the_Black-Eye
 #: data/campaigns/Son_Of_The_Black_Eye/_main.cfg:10
@@ -92,7 +93,7 @@ msgstr ""
 #. [campaign]: id=Son_of_the_Black-Eye
 #: data/campaigns/Son_Of_The_Black_Eye/_main.cfg:24
 msgid "(Expert level, 18 scenarios.)"
-msgstr "(Obtížnost: expert, 18 scénářů)"
+msgstr "(Úroveň expert, 18 scénářů.)"
 
 #. [about]
 #: data/campaigns/Son_Of_The_Black_Eye/_main.cfg:29
@@ -149,9 +150,9 @@ msgstr "Kapou'e zemře"
 
 #. [side]: id=Kapou'e, type=Orcish Leader
 #. [side]
+#. [side]: type=Orcish Slayer, id=Rugh
 #. [side]: id=Grüü, type=Great Troll
 #. [side]: type=Orcish Leader, id=Kapou'e
-#. [side]: type=Orcish Slayer, id=Rugh
 #. [side]: type=General, id=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:56
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:64
@@ -191,8 +192,8 @@ msgstr "Alber"
 #. [side]: type=General, id=Slowhand
 #. [side]
 #. [side]: type=General, id=Harman
-#. [side]: type=Lieutenant, id=Alber
 #. [side]: type=General, id=Lanbec'h
+#. [side]: type=Lieutenant, id=Alber
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:82
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:94
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:34
@@ -203,19 +204,13 @@ msgstr "Lidé"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:98
-#, fuzzy
-#| msgid ""
-#| "Rahul I, Lord Protector of the Northern Alliance, concluded peace with "
-#| "enemy orcs during the fourth year of his leadership. He ended a 15-year "
-#| "war with Black-Eye Karun, ruler of the enemy orcs. A peace treaty between "
-#| "the Alliance and the orcs settled their territorial disputes."
 msgid ""
 "Rahul I, Lord Protector of the Northern Alliance, concluded peace with enemy "
 "orcs during the fourteenth year of his leadership. He ended a 15-year war "
 "with Black-Eye Karun, ruler of the enemy orcs. A peace treaty between the "
 "Alliance and the orcs settled their territorial disputes."
 msgstr ""
-"Rahul I., vůdce Severní Aliance, uzavřel mír se skřety během čtvrtého roku "
+"Rahul I., vůdce Severní Aliance, uzavřel mír se skřety během čtrnáctého roku "
 "své vlády. Ukončil tak patnáct let trvající válku s Karunem Černým Okem, "
 "vládcem skřetů. Mírová dohoda mezi místními lidmi a skřety stanovila, která "
 "země náleží skřetům a která lidem."
@@ -441,10 +436,9 @@ msgid ""
 "they will help us. And what true orc has ever feared dwarvish dirt-grubbers? "
 "Move it! We leave within the hour. If you’re not ready by then, stay and die."
 msgstr ""
-"Nebuď takový zbabělec. Trollové byli v minulosti našimi spojenci — možná nám "
-"pomohou. A který skutečný skřet se kdy bál trpasličích požíračů hlíny? "
-"Dělej! Odcházíme za hodinu. Jestli do té doby nebudeš připraven, zůstaň a "
-"zemři."
+"Nebuď takový zbabělec. Trollové byli v minulosti našimi spojenci — možná nám "
+"pomohou. A který skutečný skřet se kdy bál trpasličích hlínohrabů? Dělej! "
+"Odcházíme za hodinu. Jestli do té doby nebudeš připraven, zůstaň a zemři."
 
 #. [option]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:268
@@ -472,36 +466,26 @@ msgstr "Poraz Lanbec'ha"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:31
-#, fuzzy
-#| msgid "Resist until your people are ready to go (Turn 12)"
 msgid "Resist until your people are ready to go (turn 12)"
 msgstr "Odolávej, dokud nebudou tví lidé připraveni odejít (12 kol)"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:34
-#, fuzzy
-#| msgid "Resist until your people are ready to go (Turn 13)"
 msgid "Resist until your people are ready to go (turn 13)"
 msgstr "Odolávej, dokud nebudou tví lidé připraveni odejít (13 kol)"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:37
-#, fuzzy
-#| msgid "Resist until your people are ready to go (Turn 14)"
 msgid "Resist until your people are ready to go (turn 14)"
 msgstr "Odolávej, dokud nebudou tví lidé připraveni odejít (14 kol)"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:45
-#, fuzzy
-#| msgid "Then move Kapou’e to the signpost in the Northeast"
 msgid "Then move Kapou’e to the signpost in the northeast"
 msgstr "Pak přesuň Kapou'eho k ukazateli na severovýchodě."
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:52
-#, fuzzy
-#| msgid "Move Kapou’e to the signpost in the Northeast"
 msgid "Move Kapou’e to the signpost in the northeast"
 msgstr "Přesuň Kapou'eho k ukazateli na severovýchodě."
 
@@ -667,7 +651,9 @@ msgid "Move Kapou’e to the end of the mountains"
 msgstr "Dostaň Kapou'eho ven z hor"
 
 #. [objectives]
+#. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:33
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:425
 msgid "Defeat the enemy leader"
 msgstr "Poraz nepřátelského velitele"
 
@@ -1024,12 +1010,12 @@ msgstr ""
 msgid "Etheliel"
 msgstr "Etheliel"
 
-#. [side]: type=Elvish Shyde, id=Lucile
-#. [side]: type=Elvish Captain, id=Raceme
 #. [side]: type=Elvish Marshal, id=Etheliel
 #. [side]: type=Elvish Marshal, id=Hida'tul
 #. [side]: type=Elvish Marshal, id=Ammon
 #. [side]: type=Elvish Marshal, id=Sammual
+#. [side]: type=Elvish Shyde, id=Lucile
+#. [side]: type=Elvish Captain, id=Raceme
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:68
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:100
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:115
@@ -1061,19 +1047,19 @@ msgstr "Sammual"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:186
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1149
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1147
 msgid "Pirk"
 msgstr "Pirk"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:188
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1150
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1148
 msgid "Gork"
 msgstr "Gork"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:190
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1151
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1149
 msgid "Vraurk"
 msgstr "Vraurk"
 
@@ -1747,18 +1733,18 @@ msgstr "Dostaň se do oázy na jihovýhodě"
 msgid "Ar-Dant"
 msgstr "Ar Dant"
 
-#. [side]: type=Elvish Champion, id=Thelarion
-#. [side]: type=Dwarvish Steelclad, id=Darstang
-#. [side]: type=General, id=Arthain
-#. [side]: type=Lieutenant, id=Hanak
-#. [side]: type=Bandit, id=Sagmar
 #. [side]: type=General, id=Telthys
+#. [side]: type=Elvish Champion, id=Thelarion
 #. [side]: type=General, id=Fredor
 #. [side]: type=General, id=Georan
-#. [side]: type=Grand Marshal, id=Earl Lanbec'h
-#. [side]: type=Assassin, type=Rogue, id=Ar-Dant
-#. [side]
+#. [side]: type=General, id=Arthain
+#. [side]: type=Lieutenant, id=Hanak
+#. [side]: type=Dwarvish Steelclad, id=Darstang
 #. [side]: type=General, id=Earl Lanbec'h
+#. [side]
+#. [side]: type=Bandit, id=Sagmar
+#. [side]: type=Assassin, type=Rogue, id=Ar-Dant
+#. [side]: type=Grand Marshal, id=Earl Lanbec'h
 #. [side]: type=Orcish Warlord, id=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:88
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:98
@@ -1989,11 +1975,6 @@ msgid ""
 "Yeah, I can see that. Well, I guess we have to clean these rabble out of "
 "here."
 msgstr "Ano, to vidím. Inu, hádám, že tu chátru musíme odsud vyklidit."
-
-#. [objective]: condition=win
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:425
-msgid "Defeat Ar-Dant"
-msgstr "Poraz Ar Danta"
 
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:455
@@ -2295,8 +2276,8 @@ msgstr "Odolej silám Šan Tauma po 20 tahů"
 msgid "Defeat Shan Taum"
 msgstr "Poraz Šan Tauma"
 
-#. [side]: type=Orcish Warlord, id=Shan Taum
 #. [unit]: type=Orcish Warlord, id=Shan Taum
+#. [side]: type=Orcish Warlord, id=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:60
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:143
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:126
@@ -2748,10 +2729,11 @@ msgid "It won’t be said that Elves were braver than us, everyone attack!"
 msgstr ""
 "Nikdo nebude moci říct, že jsou elfové statečnější než my, všichni do útoku!"
 
+#. [side]: type=General, id=Earl Lanbec'h
 #. [unit]: type=General, id=Earl Lanbec'h
 #. [side]: type=Grand Marshal, id=Earl Lanbec'h
-#. [side]: type=General, id=Earl Lanbec'h
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:658
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:688
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:143
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:88
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:82
@@ -2768,13 +2750,24 @@ msgstr "Na ně! Rozsekejte je všechny!"
 msgid "It is too late, we are defeated."
 msgstr "Příliš pozdě. Jsme poraženi."
 
+#. [message]: speaker=Earl Lanbec'h
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:698
+msgid ""
+"So, the elves and dwarves failed to take the fortress and the beasts were "
+"able to muster a defense. No matter. Once the vanguard of my army arrives, I "
+"will storm their pitiful fortress myself."
+msgstr ""
+"Takže elfové a trpaslíci nedokázali pevnost převzít a šelmy dokázaly obnovit "
+"obranu. Na tom ale nezáleží. Jakmile přijde předvoj mé armády, sám zaútočím "
+"na jejich žalostnou pevnost."
+
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:724
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:738
 msgid "The green earth will curse you for this..."
 msgstr "Zelená země vás za to prokleje..."
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:736
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:750
 msgid "Curse you, foul orc!"
 msgstr "Proklínám vás, bláhoví skřeti!"
 
@@ -2791,11 +2784,11 @@ msgstr "Ubraň Prestim po dobu čtyř dnů"
 #. [objective]: condition=lose
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:25
 msgid ""
-"Enemies control any villages on the north side of the river when turns run "
+"You don't control all villages on the north side of the river when turns run "
 "out"
 msgstr ""
-"Nepřátelé na konci všech kol ovládají jakoukoliv vesnici na severní straně "
-"řeky"
+"Nebudeš ovládat všechny vesnice na severní straně řeky, až vyprší daný počet "
+"kol"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:232
@@ -2880,50 +2873,50 @@ msgid "Great."
 msgstr "Vynikající."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:380
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:378
 msgid "Look, the humans are boarding a ship!"
 msgstr "Podívej, lidé se naloďují!"
 
 #. [message]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:901
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:899
 msgid "Charge!"
 msgstr "Útok!"
 
 #. [message]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:910
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:908
 msgid "Get them!"
 msgstr "Dostaňte je!"
 
 #. [unit]: type=Merman Warrior, id=Plouf
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1043
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1041
 msgid "Plouf"
 msgstr "Plouf"
 
 #. [message]: speaker=Plouf
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1054
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1052
 msgid "We arrive to honor our alliance, Earl Lanbec’h."
 msgstr ""
 "Hlásím, že jsme dorazili. Připraveni k boji za slávu naší aliance, Hrabě "
 "Lanbec'hu."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1059
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1057
 msgid "Curses! They have fish-men on their side."
 msgstr "Sakra! Mají na své straně vodní lid!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1142
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1140
 msgid ""
 "The Great Horde is almost here! Drive them out of our villages <b>now</b>!"
 msgstr "Velká horda je skoro tady! Vyžente je <b>hned</b> z našich vesnic!"
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1179
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1177
 msgid "Here we are!"
 msgstr "Jsme tu!"
 
 #. [message]: role=greathordewarlord1
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1184
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1182
 msgid ""
 "What’s this? This weakling has let humans enter Prestim? I will lead the "
 "horde and push them to the river!"
@@ -2932,7 +2925,7 @@ msgstr ""
 "vytlačím je k řece!"
 
 #. [message]: role=greathordewarlord2
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1190
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1188
 msgid ""
 "Bah! I’m the only one strong enough to drive out the humans! The Great Horde "
 "follows me!"
@@ -2941,7 +2934,7 @@ msgstr ""
 "následuje mě!"
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1196
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1194
 msgid ""
 "Look at that, the stupid orcs are starting to fight amongst themselves! "
 "Now’s our chance, everyone attack!"
@@ -2950,23 +2943,23 @@ msgstr ""
 "všichni do útoku!"
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1207
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1205
 msgid "Here we are! Hold on Prestim, we arrive to push them to the river!"
 msgstr "Tak jsme zde! Braňte Prestim! My je zatlačíme do řeky!"
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1212
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1210
 msgid "They are too numerous now, RETREAT!"
 msgstr "Je jich příliš mnoho! ÚSTUP!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1234
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1232
 msgid ""
 "The Great Horde at last! I was beginning to think they would never come."
 msgstr "Konečně je tu Velká horda! Už jsem se začínal bát, že nikdy nedorazí."
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1239
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1237
 msgid ""
 "Your defense of Prestim was heroic, facing such opposition surely undermined "
 "the morale of the humans. Now they are retreating to their fortresses and "
@@ -2977,7 +2970,7 @@ msgstr ""
 "nikdy neuvidíme."
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1244
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1242
 msgid ""
 "It is now time to show them who we are and to lead the Great Horde in "
 "pursuit. We will not rest until we destroy Earl Lanbec’h. Smite, stab, slay!"
@@ -3677,13 +3670,13 @@ msgstr "Přesuň Kapou'eho k ukazateli na jihozápadě."
 msgid "Braga"
 msgstr "Braga"
 
+#. [side]: type=Orcish Warlord, id=Orga
+#. [side]: type=Orcish Warrior, id=Knorgh
+#. [side]: type=Orcish Warrior, id=Nofhug
 #. [side]: type=Orcish Warlord, id=Braga
 #. [side]: type=Orcish Warlord, id=Meato
 #. [side]: type=Orcish Warlord, id=Ragvan
 #. [side]: type=Orcish Warlord, id=Kergai
-#. [side]: type=Orcish Warlord, id=Orga
-#. [side]: type=Orcish Warrior, id=Knorgh
-#. [side]: type=Orcish Warrior, id=Nofhug
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:94
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:114
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:134
@@ -3957,8 +3950,6 @@ msgstr "Dobré ráno, Šan Taume!"
 
 #. [message]: speaker=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:204
-#, fuzzy
-#| msgid "What... Kapou’e! What in the frozen northlands are you doing here?!"
 msgid "What... Kapou’e! What in the frozen Northlands are you doing here?!"
 msgstr "Co... Kapou'e! Co děláš v těchto zmrzlých severních zemích?"
 
@@ -4166,8 +4157,8 @@ msgstr "Přijeli jsme, můj pane."
 msgid "Ahhh, perfect, more reinforcements."
 msgstr "Ahhh, skvělé. Další posily."
 
-#. [unit]: type=General, id=Howgarth III
 #. [side]: type=General, id=Howgarth III
+#. [unit]: type=General, id=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:390
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:154
 msgid "Howgarth III"
@@ -4208,22 +4199,15 @@ msgstr ""
 
 #. [message]: speaker=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:459
-#, fuzzy
-#| msgid ""
-#| "The hell I don’t, Earl Lanbec’h, the Northern Alliance was witness to a "
-#| "treaty some twenty seven years ago between your people and the orcs, "
-#| "which both of you are no doubt violating. It is our duty as the "
-#| "orchestrator and witness of this treaty to see that it is honored."
 msgid ""
 "The hell I don’t, Earl Lanbec’h, the Northern Alliance was witness to a "
 "treaty some seventeen years ago between your people and the orcs, which both "
 "of you are no doubt violating. It is our duty as the orchestrator and "
 "witness of this treaty to see that it is honored."
 msgstr ""
-"Sakra mám! Hrabě Lanbec'hu, Severní Aliance byla před dvaceti sedmi lety "
-"svědkem dohody mezi vašimi lidmi a skřety, kterou oba bez pochybnosti "
-"porušujete. Jako organizátor a svědek té smlouvy mám povinnost poznat, kdy "
-"je to vážné."
+"Sakra mám! Hrabě Lanbec'hu, Severní Aliance byla před sedmnácti lety svědkem "
+"dohody mezi vašimi lidmi a skřety, kterou oba bez pochybnosti porušujete. "
+"Jako organizátor a svědek té smlouvy mám povinnost poznat, kdy je to vážné."
 
 #. [message]: speaker=Earl Lanbec'h
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:465
@@ -4263,16 +4247,11 @@ msgstr "O čem to mluvíš?"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:486
-#, fuzzy
-#| msgid ""
-#| "I am Kapou’e, son of the Black-Eye Karun. Twenty-seven years ago you "
-#| "people assassinated my father after inviting him to join the Northern "
-#| "Alliance."
 msgid ""
 "I am Kapou’e, son of the Black-Eye Karun. Seventeen years ago you people "
 "assassinated my father after inviting him to join the Northern Alliance."
 msgstr ""
-"Jsem Kapou'e, syn Karuna Černého Oka. Před dvaceti sedmi lety jste vy lidé "
+"Jsem Kapou'e, syn Karuna Černého Oka. Před sedmnácti lety jste vy lidé "
 "zabili mého otce poté, co jste ho pozvali, aby se přidal k Severní Alianci."
 
 #. [message]: speaker=Howgarth III
@@ -4752,6 +4731,9 @@ msgstr "Flar’Tar"
 #: data/campaigns/Son_Of_The_Black_Eye/utils/utils.cfg:104
 msgid "The Great Horde: upkeep cost of every unit decreased by one."
 msgstr "Velká Horda: žold za každou jednotku snížen o jeden zlatý."
+
+#~ msgid "Defeat Ar-Dant"
+#~ msgstr "Poraz Ar Danta"
 
 #~ msgid "Move Kapou’e to the end of the mountains or"
 #~ msgstr "Dostaň Kapou'eho ven z hor nebo"

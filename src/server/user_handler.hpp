@@ -18,6 +18,7 @@ class config;
 
 #include "exceptions.hpp"
 
+#include <ctime>
 #include <string>
 
 /**
@@ -108,12 +109,32 @@ class user_handler {
 		/** Mark this user as a moderator */
 		virtual void set_is_moderator(const std::string& name, const bool& is_moderator) =0;
 
+		/** Ban type values */
 		enum BAN_TYPE
 		{
-			BAN_NONE,
-			BAN_USER,
-			BAN_IP,
-			BAN_EMAIL,
+			BAN_NONE,		/**< Not a ban */
+			BAN_USER,		/**< User account/name ban */
+			BAN_IP,			/**< IP address ban */
+			BAN_EMAIL,		/**< Account email address ban */
+		};
+
+		/** Ban status description */
+		struct ban_info
+		{
+			BAN_TYPE type;			/**< Ban type */
+			std::time_t duration;	/**< Ban duration (0 if permanent) */
+
+			ban_info()
+				: type(BAN_NONE)
+				, duration(0)
+			{
+			}
+
+			ban_info(BAN_TYPE ptype, std::time_t pduration)
+				: type(ptype)
+				, duration(pduration)
+			{
+			}
 		};
 
 		/**
@@ -123,7 +144,7 @@ class user_handler {
 		 *       subclass. Regular IP ban checks are done by @a server_base
 		 *       instead.
 		 */
-		virtual BAN_TYPE user_is_banned(const std::string& name, const std::string& addr="") = 0;
+		virtual ban_info user_is_banned(const std::string& name, const std::string& addr="") = 0;
 
 		struct error : public game::error {
 			error(const std::string& message) : game::error(message) {}
@@ -149,6 +170,13 @@ class user_handler {
 		 * Let it return true if it does and false if it does not.
 		 */
 		virtual bool use_phpbb_encryption() const =0;
+
+		virtual std::string get_uuid() =0;
+		virtual void db_insert_game_info(const std::string& uuid, int game_id, const std::string& version, const std::string& name, const std::string& map_name, const std::string& era_name, int reload, int observers, int is_public, int has_password) =0;
+		virtual void db_update_game_end(const std::string& uuid, int game_id, const std::string& replay_location) =0;
+		virtual void db_insert_game_player_info(const std::string& uuid, int game_id, const std::string& username, int side_number, int is_host, const std::string& faction, const std::string& version, const std::string& source, const std::string& current_user) =0;
+		virtual void db_insert_modification_info(const std::string& uuid, int game_id, const std::string& modification_name) =0;
+		virtual void db_set_oos_flag(const std::string& uuid, int game_id) =0;
 
 	protected:
 

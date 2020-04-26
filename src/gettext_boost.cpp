@@ -492,7 +492,7 @@ int icompare(const std::string& s1, const std::string& s2)
 
 		if(!bad_cast_once) {
 			ERR_G << "locale set-up for icompare() is broken, falling back to std::string::compare()\n";
-			
+
 			try { //just to be safe.
 				ERR_G << get_manager().debug_description() << "\n";
 			} catch (const std::exception& e) {
@@ -517,7 +517,8 @@ std::string strftime(const std::string& format, const std::tm* time)
 	std::lock_guard<std::mutex> lock(get_mutex());
 	dummy.imbue(get_manager().get_locale());
 	// See utils/io.hpp for explanation of this check
-#if HAVE_PUT_TIME
+#if 0	// HAVE_PUT_TIME is 1 for nearly everything except GCC < 5 however put_time does not adjust for locale in Linux
+	// HAVE_PUT_TIME is still used by io.hpp so change the value here instead of in global.hpp
 	dummy << std::put_time(time, format.c_str());
 #else
 	dummy << bl::as::ftime(format) << mktime(const_cast<std::tm*>(time));

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 0.8.11+cvs\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-21 21:29+0300\n"
-"PO-Revision-Date: 2018-05-10 10:05+1000\n"
+"POT-Creation-Date: 2020-01-12 13:29-0300\n"
+"PO-Revision-Date: 2020-01-13 17:31+1100\n"
 "Last-Translator: Wedge009 <wedge009@wedge009.net>\n"
 "Language-Team: English (British) <http://wiki.wesnoth.org/"
 "EnglishGBTranslation>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #. [brush]: id=brush-1
 #: data/core/editor/brushes.cfg:6
@@ -145,28 +145,13 @@ msgstr "Summer"
 msgid "Winter"
 msgstr "Winter"
 
-#. [editor_times]: id=underground
-#: data/core/editor/time-of-day.cfg:40
-msgid "Underground"
-msgstr "Underground"
-
-#. [editor_times]: id=deep_underground
-#: data/core/editor/time-of-day.cfg:46
-msgid "Deep Underground"
-msgstr "Deep Underground"
-
-#. [editor_times]: id=indoors
-#: data/core/editor/time-of-day.cfg:52
-msgid "Indoors"
-msgstr "Indoors"
-
 #. [editor_times]: id=24
-#: data/core/editor/time-of-day.cfg:58
+#: data/core/editor/time-of-day.cfg:60
 msgid "24 Hour Schedule"
 msgstr "24-Hour Schedule"
 
 #. [editor_times]: id=after_the_fall
-#: data/core/editor/time-of-day.cfg:64
+#: data/core/editor/time-of-day.cfg:66
 msgid "After the Fall"
 msgstr "After the Fall"
 
@@ -250,27 +235,31 @@ msgstr "Playlist"
 msgid "Assign Time Schedule"
 msgstr "Assign Time Schedule"
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:62
+#: src/editor/action/mouse/mouse_action_unit.cpp:68
+msgid "(Unknown unit type: $type)"
+msgstr "(Unknown unit type: $type)"
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:72
 msgid "Identifier: "
 msgstr "Identifier: "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:63
+#: src/editor/action/mouse/mouse_action_unit.cpp:73
 msgid "Name: "
 msgstr "Name: "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:64
+#: src/editor/action/mouse/mouse_action_unit.cpp:74
 msgid "Type: "
 msgstr "Type: "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:65
+#: src/editor/action/mouse/mouse_action_unit.cpp:75
 msgid "Level: "
 msgstr "Level: "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:66
+#: src/editor/action/mouse/mouse_action_unit.cpp:76
 msgid "Cost: "
 msgstr "Cost: "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:67
+#: src/editor/action/mouse/mouse_action_unit.cpp:77
 msgid "Recruit: "
 msgstr "Recruit: "
 
@@ -500,11 +489,11 @@ msgstr "Invalid location id"
 msgid "Delete"
 msgstr "Delete"
 
-#: src/editor/palette/terrain_palettes.cpp:231
+#: src/editor/palette/terrain_palettes.cpp:230
 msgid "FG: "
 msgstr "FG: "
 
-#: src/editor/palette/terrain_palettes.cpp:232
+#: src/editor/palette/terrain_palettes.cpp:231
 msgid "BG: "
 msgstr "BG: "
 
@@ -527,6 +516,15 @@ msgstr "None"
 #: src/gui/dialogs/editor/set_starting_position.cpp:97
 msgid "Player $player_number"
 msgstr "Player $player_number"
+
+#~ msgid "Underground"
+#~ msgstr "Underground"
+
+#~ msgid "Deep Underground"
+#~ msgstr "Deep Underground"
+
+#~ msgid "Indoors"
+#~ msgstr "Indoors"
 
 #~ msgid "None"
 #~ msgstr "None"

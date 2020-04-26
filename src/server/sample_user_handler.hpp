@@ -19,8 +19,6 @@
 #include <map>
 #include <vector>
 
-#include <ctime>
-
 /**
  * An example of how to implement user_handler.
  * If you use this on anything real, you are insane.
@@ -43,7 +41,7 @@ class suh : public user_handler {
 		bool user_is_moderator(const std::string& name);
 		void set_is_moderator(const std::string& name, const bool& is_moderator);
 
-		BAN_TYPE user_is_banned(const std::string& name, const std::string&);
+		ban_info user_is_banned(const std::string& name, const std::string&);
 
 		std::string user_info(const std::string& name);
 
@@ -68,6 +66,13 @@ class suh : public user_handler {
 
 		std::string extract_salt(const std::string&) { return ""; }
 		bool use_phpbb_encryption() const { return false; }
+
+		std::string get_uuid();
+		void db_insert_game_info(const std::string& uuid, int game_id, const std::string& version, const std::string& name, const std::string& map_name, const std::string& era_name, int reload, int observers, int is_public, int has_password);
+		void db_update_game_end(const std::string& uuid, int game_id, const std::string& replay_location);
+		void db_insert_game_player_info(const std::string& uuid, int game_id, const std::string& username, int side_number, int is_host, const std::string& faction, const std::string& version, const std::string& source, const std::string& current_user);
+		void db_insert_modification_info(const std::string& uuid, int game_id, const std::string& modification_name);
+		void db_set_oos_flag(const std::string& uuid, int game_id);
 
 	private:
 		std::string get_mail(const std::string& user);

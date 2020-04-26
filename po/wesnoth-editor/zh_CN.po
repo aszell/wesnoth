@@ -1,5 +1,5 @@
 # The Battle for Wesnoth - Simplified Chinese Translations
-# Copyright (C) 2005-2018 Wesnoth development team
+# Copyright (C) 2005-2019 Wesnoth development team
 # This file is distributed under the same license as the Battle for Wesnoth package.
 # Huang Huan(unicon) <unicon221@gmail.com>, 2005.
 # sylecn <sylecn@yahoo.com.cn>, 2009.
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-21 21:29+0300\n"
-"PO-Revision-Date: 2018-05-16 22:22+0800\n"
+"POT-Creation-Date: 2020-01-12 13:29-0300\n"
+"PO-Revision-Date: 2019-09-23 22:34+0800\n"
 "Last-Translator: CloudiDust <cloudidust@gmail.com>\n"
 "Language-Team: Wesnoth Simplified Chinese Team\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. [brush]: id=brush-1
 #: data/core/editor/brushes.cfg:6
@@ -146,28 +146,13 @@ msgstr "夏季"
 msgid "Winter"
 msgstr "冬季"
 
-#. [editor_times]: id=underground
-#: data/core/editor/time-of-day.cfg:40
-msgid "Underground"
-msgstr "地下"
-
-#. [editor_times]: id=deep_underground
-#: data/core/editor/time-of-day.cfg:46
-msgid "Deep Underground"
-msgstr "地下深处"
-
-#. [editor_times]: id=indoors
-#: data/core/editor/time-of-day.cfg:52
-msgid "Indoors"
-msgstr "室内"
-
 #. [editor_times]: id=24
-#: data/core/editor/time-of-day.cfg:58
+#: data/core/editor/time-of-day.cfg:60
 msgid "24 Hour Schedule"
 msgstr "24小时日程表"
 
 #. [editor_times]: id=after_the_fall
-#: data/core/editor/time-of-day.cfg:64
+#: data/core/editor/time-of-day.cfg:66
 msgid "After the Fall"
 msgstr "崩坏之后"
 
@@ -251,27 +236,31 @@ msgstr "播放列表"
 msgid "Assign Time Schedule"
 msgstr "指定日程表"
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:62
+#: src/editor/action/mouse/mouse_action_unit.cpp:68
+msgid "(Unknown unit type: $type)"
+msgstr ""
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:72
 msgid "Identifier: "
 msgstr "标识符："
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:63
+#: src/editor/action/mouse/mouse_action_unit.cpp:73
 msgid "Name: "
 msgstr "名字："
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:64
+#: src/editor/action/mouse/mouse_action_unit.cpp:74
 msgid "Type: "
 msgstr "类型："
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:65
+#: src/editor/action/mouse/mouse_action_unit.cpp:75
 msgid "Level: "
 msgstr "等级："
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:66
+#: src/editor/action/mouse/mouse_action_unit.cpp:76
 msgid "Cost: "
 msgstr "花费："
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:67
+#: src/editor/action/mouse/mouse_action_unit.cpp:77
 msgid "Recruit: "
 msgstr "征募："
 
@@ -444,7 +433,7 @@ msgstr "空文件"
 msgid ""
 "The map file looks like a scenario, but the map_data value does not point to "
 "an existing file"
-msgstr "此地图文件看起来像是一个场景，但是map_data的值指向了一个不存在的文件"
+msgstr "此地图文件看起来像是一幕场景，但是map_data的值指向了一个不存在的文件"
 
 #: src/editor/map/map_context.cpp:604
 msgid "Could not save the scenario: $msg"
@@ -494,11 +483,11 @@ msgstr "无效的位置ID"
 msgid "Delete"
 msgstr "删除"
 
-#: src/editor/palette/terrain_palettes.cpp:231
+#: src/editor/palette/terrain_palettes.cpp:230
 msgid "FG: "
 msgstr "前景："
 
-#: src/editor/palette/terrain_palettes.cpp:232
+#: src/editor/palette/terrain_palettes.cpp:231
 msgid "BG: "
 msgstr "背景："
 
@@ -521,3 +510,12 @@ msgstr "无"
 #: src/gui/dialogs/editor/set_starting_position.cpp:97
 msgid "Player $player_number"
 msgstr "玩家$player_number"
+
+#~ msgid "Underground"
+#~ msgstr "地下"
+
+#~ msgid "Deep Underground"
+#~ msgstr "地下深处"
+
+#~ msgid "Indoors"
+#~ msgstr "室内"

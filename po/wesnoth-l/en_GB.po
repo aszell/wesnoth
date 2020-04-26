@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
-"PO-Revision-Date: 2019-01-23 18:13+1100\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
+"PO-Revision-Date: 2019-03-12 14:18+1100\n"
 "Last-Translator: Wedge009 <wedge009@wedge009.net>\n"
 "Language-Team: English (British) <http://wiki.wesnoth.org/"
 "EnglishGBTranslation>\n"
@@ -108,12 +108,12 @@ msgstr "Dallben"
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:22
 msgid ""
 "In the Era of Turmoil, during the reign of King Garard II, the border towns "
-"of Delwyn and Dallben in the province of Annuvin grew increasingly "
+"of Delwyn and Dallben in the Province of Annuvin grew increasingly "
 "dissatisfied with the King’s rule. Being preoccupied with the great wars, "
 "the King was unable to send adequate forces to protect the frontier."
 msgstr ""
 "In the Era of Turmoil, during the reign of King Garard II, the border towns "
-"of Delwyn and Dallben in the province of Annuvin grew increasingly "
+"of Delwyn and Dallben in the Province of Annuvin grew increasingly "
 "dissatisfied with the King’s rule. Being preoccupied with the great wars, "
 "the King was unable to send adequate forces to protect the frontier."
 
@@ -472,13 +472,13 @@ msgid "Civil Disobedience"
 msgstr "Civil Disobedience"
 
 #. [side]: type=Bandit, id=Baldras
-#. [side]: type=General, id=Lord Maddock
-#. [side]: type=Rogue, id=Hans
-#. [side]: type=Highwayman, id=Baldras
-#. [side]: type=Shadow Lord, id=Helicrom
-#. [side]
-#. [side]: type=Bandit_Peasant, id=Baldras
 #. [side]: type=Highwayman_Peasant, id=Relana
+#. [side]: type=General, id=Lord Maddock
+#. [side]: type=Highwayman, id=Baldras
+#. [side]: type=Bandit_Peasant, id=Baldras
+#. [side]
+#. [side]: type=Shadow Lord, id=Helicrom
+#. [side]: type=Rogue, id=Hans
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:26
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:62
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:38
@@ -502,12 +502,12 @@ msgid "Tarwen"
 msgstr "Tarwen"
 
 #. [side]: type=General, id=Kestrel
-#. [side]: type=Master Bowman, id=Quentin
-#. [side]
 #. [side]: type=Royal Guard, id=Archarel
 #. [side]: type=Iron Mauler, id=Linneus
-#. [side]: type=General, id=Dommel
 #. [side]: type=Cavalier, id=Tarwen
+#. [side]: type=Master Bowman, id=Quentin
+#. [side]
+#. [side]: type=General, id=Dommel
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:41
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:80
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:48
@@ -687,11 +687,11 @@ msgstr "Relana"
 msgid "Urk Delek"
 msgstr "Urk Delek"
 
+#. [side]: type=Orcish Warrior, id=Urk Delek
+#. [side]: type=Saurian Oracle, id=Thhsthss
 #. [side]: type=Necromancer, id=Mal-Jarrof
 #. [side]: type=Necromancer, id=Mal-Jerod
 #. [side]: type=Lich, id=Sel-Mana
-#. [side]: type=Orcish Warrior, id=Urk Delek
-#. [side]: type=Saurian Oracle, id=Thhsthss
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:100
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:122
 #: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:105
@@ -739,11 +739,11 @@ msgstr ""
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:188
 msgid ""
 "You do not understand. We attacked a Wesnoth army patrol. Not only that, the "
-"leader was no man I had ever seen in Annuvin province before. Never has one "
+"leader was no man I had ever seen in Annuvin Province before. Never has one "
 "been sent out here as a patrol captain who was so ruthless and cruel."
 msgstr ""
 "You do not understand. We attacked a Wesnoth army patrol. Not only that, the "
-"leader was no man I had ever seen in Annuvin province before. Never has one "
+"leader was no man I had ever seen in Annuvin Province before. Never has one "
 "been sent out here as a patrol captain who was so ruthless and cruel."
 
 #. [message]: speaker=Harper
@@ -991,11 +991,11 @@ msgstr ""
 #. [message]: speaker=Harper
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:207
 msgid ""
-"What can we do then? We have brought with us many from Annuvin province who "
+"What can we do then? We have brought with us many from Annuvin Province who "
 "are willing to fight, but our families are still at home. They will not last "
 "long if the Queen’s patrols return."
 msgstr ""
-"What can we do then? We have brought with us many from Annuvin province who "
+"What can we do then? We have brought with us many from Annuvin Province who "
 "are willing to fight, but our families are still at home. They will not last "
 "long if the Queen’s patrols return."
 
@@ -1516,7 +1516,7 @@ msgid ""
 "you have done great service to us today, and we owe you a debt. I will help "
 "you to the utmost of my ability."
 msgstr ""
-"No one here is in a position to be dispensing moral judgements. Regardless, "
+"No-one here is in a position to be dispensing moral judgements. Regardless, "
 "you have done great service to us today, and we owe you a debt. I will help "
 "you to the utmost of my ability."
 
@@ -1755,7 +1755,7 @@ msgid ""
 msgstr ""
 "I am afraid it is not. The Queen is sending a branch of her main field army "
 "directly from Weldyn. As soon as they arrive, they will burn every village "
-"to the ground. No one will live."
+"to the ground. No-one will live."
 
 #. [message]: speaker=Baldras
 #: data/campaigns/Liberty/scenarios/07_The_Hunters.cfg:189
@@ -1805,8 +1805,8 @@ msgid ""
 "the army of the usurper. Strike fast, strike silently... and leave no one "
 "alive."
 msgstr ""
-"When we are done, no one will fear the open roads and night sky more than "
-"the army of the usurper. Strike fast, strike silently... and leave no one "
+"When we are done, no-one will fear the open roads and night sky more than "
+"the army of the usurper. Strike fast, strike silently... and leave no-one "
 "alive."
 
 #. [message]: speaker=Linneus
@@ -2157,7 +2157,7 @@ msgid ""
 "anymore."
 msgstr ""
 "Baldras, Gwydion is Lord Maddock’s son. This battle isn’t just about Annuvin "
-"anymore."
+"any more."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:542
@@ -2224,18 +2224,18 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:741
 msgid "No one inside the fortress would make it out alive."
-msgstr "No one inside the fortress would make it out alive."
+msgstr "No-one inside the fortress would make it out alive."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:811
 msgid ""
 "After more than a week of fierce fighting, the main body of Asheviere’s host "
 "arrived from Weldyn. The battle was soon finished. Every last man from the "
-"province of Annuvin was executed."
+"Province of Annuvin was executed."
 msgstr ""
 "After more than a week of fierce fighting, the main body of Asheviere’s host "
 "arrived from Weldyn. The battle was soon finished. Every last man from the "
-"province of Annuvin was executed."
+"Province of Annuvin was executed."
 
 #. [message]: speaker=Baldras
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:841
@@ -2248,7 +2248,7 @@ msgid ""
 "No one was able to get to Baldras in time. He and many of his companions "
 "died that day beneath the stronghold of Halstead."
 msgstr ""
-"No one was able to get to Baldras in time. He and many of his companions "
+"No-one was able to get to Baldras in time. He and many of his companions "
 "died that day beneath the stronghold of Halstead."
 
 #. [message]: speaker=Baldras
@@ -2442,8 +2442,8 @@ msgid ""
 "... a grimy note nailed to a charred post that read, <i>“Baldras, You would "
 "have been proud. We gave ’em hell. But in the end, it wasn’t enough.”</i>"
 msgstr ""
-"... a grimy note nailed to a charred post that read, <i>“Baldras, You would "
-"have been proud. We gave ’em hell. But in the end, it wasn’t enough.”</i>"
+"... a grimy note nailed to a charred post that read, <i>‘Baldras, You would "
+"have been proud. We gave ’em hell. But in the end, it wasn’t enough.’</i>"
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/09_Epilogue.cfg:40
@@ -2451,8 +2451,8 @@ msgid ""
 "<i>“We fled like criminals in the night, but we made sure that no one would "
 "harass us anymore.”</i>"
 msgstr ""
-"<i>“We fled like criminals in the night, but we made sure that no one would "
-"harass us any more.”</i>"
+"<i>‘We fled like criminals in the night, but we made sure that no-one would "
+"harass us any more.’</i>"
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/09_Epilogue.cfg:44
@@ -2460,8 +2460,8 @@ msgid ""
 "<i>“If you wish to find us, head southwest. When you reach the land’s end, "
 "just keep going. See you in the Three Sisters, old friend. ― Relana”</i>"
 msgstr ""
-"<i>“If you wish to find us, head south-west. When you reach the land’s end, "
-"just keep going. See you in the Three Sisters, old friend. ― Relana”</i>"
+"<i>‘If you wish to find us, head south-west. When you reach the land’s end, "
+"just keep going. See you in the Three Sisters, old friend. ― Relana’</i>"
 
 #. [unit_type]: id=Bone Knight, race=undead
 #: data/campaigns/Liberty/units/Bone_Knight.cfg:5
@@ -2469,7 +2469,7 @@ msgid "Bone Knight"
 msgstr "Bone Knight"
 
 #. [unit_type]: id=Bone Knight, race=undead
-#: data/campaigns/Liberty/units/Bone_Knight.cfg:26
+#: data/campaigns/Liberty/units/Bone_Knight.cfg:27
 msgid ""
 "Once great warriors across the plains, these mounted riders atop their "
 "skeletal horses were raised from the ground by unholy magic to spread fear "
@@ -2480,7 +2480,7 @@ msgstr ""
 "and destruction."
 
 #. [attack]: type=impact
-#: data/campaigns/Liberty/units/Bone_Knight.cfg:41
+#: data/campaigns/Liberty/units/Bone_Knight.cfg:42
 msgid "trample"
 msgstr "trample"
 

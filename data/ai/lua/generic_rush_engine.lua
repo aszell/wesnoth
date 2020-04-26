@@ -40,7 +40,7 @@ return {
                 for i,u in ipairs(units) do total_hp = total_hp + u.hitpoints end
                 local leader = wesnoth.get_units { side = s.side, canrecruit = 'yes' }[1]
                 if leader then
-                    print('   Player ' .. s.side .. ' (' .. leader.type .. '): ' .. #units .. ' Units with total HP: ' .. total_hp)
+                    std_print('   Player ' .. s.side .. ' (' .. leader.type .. '): ' .. #units .. ' Units with total HP: ' .. total_hp)
                 end
             end
         end
@@ -217,7 +217,7 @@ return {
 
                 self.data.leader_target = next_hop
 
-                -- if we're on a keep, wait until there are no movable units on the castle before moving off
+                -- if we're on a keep, wait until there are no movable non-leader units on the castle before moving off
                 self.data.leader_score = 290000
                 if wesnoth.get_terrain_info(wesnoth.get_terrain(leader.x, leader.y)).keep then
                     local castle = wesnoth.get_locations {
@@ -230,11 +230,9 @@ return {
                     local should_wait = false
                     for i,loc in ipairs(castle) do
                         local unit = wesnoth.get_unit(loc[1], loc[2])
-                        if (not AH.is_visible_unit(wesnoth.current.side, unit)) then
-                            should_wait = false
-                            break
-                        elseif unit.moves > 0 then
+                        if unit and (unit.side == wesnoth.current.side) and (not unit.canrecruit) and (unit.moves > 0) then
                             should_wait = true
+                            break
                         end
                     end
                     if should_wait then
@@ -267,9 +265,7 @@ return {
             if AH.print_eval() then print_time('     - Evaluating grab_villages CA:') end
 
             -- Check if there are units with moves left
-            local units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',
-                formula = 'movement_left > 0'
-            }
+            local units = AH.get_units_with_moves({ side = wesnoth.current.side, canrecruit = 'no' }, true)
             if (not units[1]) then
                 if AH.print_eval() then AH.done_eval_messages(start_time, ca_name) end
                 return 0
@@ -283,13 +279,11 @@ return {
                 if AH.print_eval() then AH.done_eval_messages(start_time, ca_name) end
                 return 0
             end
-            --print('#units, #enemies', #units, #enemies)
 
             -- First check if attacks are possible for any unit
             local return_value = 200000
             -- If one with > 50% chance of kill is possible, set return_value to lower than combat CA
             local attacks = ai.get_attacks()
-            --print(#attacks)
             for i,a in ipairs(attacks) do
                 if (#a.movements == 1) and (a.chance_to_kill > 0.5) then
                     return_value = 90000
@@ -311,7 +305,6 @@ return {
 
                 -- If an enemy can get within one move of the village, we want to hold it
                 if enemy_attack_map:get(v[1], v[2]) then
-                        --print('  within enemy reach', v[1], v[2])
                         village_rating = village_rating + 100
                 end
 
@@ -345,7 +338,6 @@ return {
                             if (cost <= u.moves) then
                                 village_rating = village_rating - 1
                                 reachable = true
-                                --print('Can reach:', u.id, v[1], v[2], cost)
                                 local rating = 0
 
                                 -- Prefer strong units if enemies can reach the village, injured units otherwise
@@ -362,7 +354,6 @@ return {
                                 if (rating > best_unit_rating) then
                                     best_unit_rating, best_unit = rating, u
                                 end
-                                --print('  rating:', rating)
                             end
                         end
                     end
@@ -375,7 +366,6 @@ return {
                     max_rating, best_village, best_unit = rating, v, village_ratings[v][2]
                 end
             end
-            --print('max_rating', max_rating)
 
             if (max_rating > -9e99) then
                 self.data.unit, self.data.village = best_unit, best_village
@@ -418,59 +408,60 @@ return {
                 } },
                 canrecruit = 'no'
             }
-            --print('#poisoners', #poisoners)
             if (not poisoners[1]) then
                 if AH.print_eval() then AH.done_eval_messages(start_time, ca_name) end
                 return 0
             end
 
             local attacks = AH.get_attacks(poisoners)
-            --print('#attacks', #attacks)
             if (not attacks[1]) then
                 if AH.print_eval() then AH.done_eval_messages(start_time, ca_name) end
                 return 0
             end
 
+            local avoid_map = LS.of_pairs(ai.aspects.avoid)
+
             -- Go through all possible attacks with poisoners
             local max_rating, best_attack = -9e99, {}
             for i,a in ipairs(attacks) do
-                local attacker = wesnoth.get_unit(a.src.x, a.src.y)
-                local defender = wesnoth.get_unit(a.target.x, a.target.y)
+                if (not avoid_map:get(a.dst.x, a.dst.y)) then
+                    local attacker = wesnoth.get_unit(a.src.x, a.src.y)
+                    local defender = wesnoth.get_unit(a.target.x, a.target.y)
 
-                -- Don't try to poison a unit that cannot be poisoned
-                local cant_poison = defender.status.poisoned or defender.status.unpoisonable
+                    -- Don't try to poison a unit that cannot be poisoned
+                    local cant_poison = defender.status.poisoned or defender.status.unpoisonable
 
-                -- For now, we also simply don't poison units on villages (unless standard combat CA does it)
-                local on_village = wesnoth.get_terrain_info(wesnoth.get_terrain(defender.x, defender.y)).village
+                    -- For now, we also simply don't poison units on villages (unless standard combat CA does it)
+                    local on_village = wesnoth.get_terrain_info(wesnoth.get_terrain(defender.x, defender.y)).village
 
-                -- Also, poisoning units that would level up through the attack or could level on their turn as a result is very bad
-                local about_to_level = defender.max_experience - defender.experience <= (wesnoth.unit_types[attacker.type].level * 2)
+                    -- Also, poisoning units that would level up through the attack or could level on their turn as a result is very bad
+                    local about_to_level = defender.max_experience - defender.experience <= (wesnoth.unit_types[attacker.type].level * 2)
 
-                if (not cant_poison) and (not on_village) and (not about_to_level) then
-                    -- Strongest enemy gets poisoned first
-                    local rating = defender.hitpoints
+                    if (not cant_poison) and (not on_village) and (not about_to_level) then
+                        -- Strongest enemy gets poisoned first
+                        local rating = defender.hitpoints
 
-                    -- Always attack enemy leader, if possible
-                    if defender.canrecruit then rating = rating + 1000 end
+                        -- Always attack enemy leader, if possible
+                        if defender.canrecruit then rating = rating + 1000 end
 
-                    -- Enemies that can regenerate are not good targets
-                    if wesnoth.unit_ability(defender, 'regenerate') then rating = rating - 1000 end
+                        -- Enemies that can regenerate are not good targets
+                        if wesnoth.unit_ability(defender, 'regenerate') then rating = rating - 1000 end
 
-                    -- More priority to enemies on strong terrain
-                    local defender_defense = 100 - wesnoth.unit_defense(defender, wesnoth.get_terrain(defender.x, defender.y))
-                    rating = rating + defender_defense / 4.
+                        -- More priority to enemies on strong terrain
+                        local defender_defense = 100 - wesnoth.unit_defense(defender, wesnoth.get_terrain(defender.x, defender.y))
+                        rating = rating + defender_defense / 4.
 
-                    -- For the same attacker/defender pair, go to strongest terrain
-                    local attack_defense = 100 - wesnoth.unit_defense(attacker, wesnoth.get_terrain(a.dst.x, a.dst.y))
-                    rating = rating + attack_defense / 2.
-                    --print('rating', rating)
+                        -- For the same attacker/defender pair, go to strongest terrain
+                        local attack_defense = 100 - wesnoth.unit_defense(attacker, wesnoth.get_terrain(a.dst.x, a.dst.y))
+                        rating = rating + attack_defense / 2.
 
-                    -- And from village everything else being equal
-                    local is_village = wesnoth.get_terrain_info(wesnoth.get_terrain(a.dst.x, a.dst.y)).village
-                    if is_village then rating = rating + 0.5 end
+                        -- And from village everything else being equal
+                        local is_village = wesnoth.get_terrain_info(wesnoth.get_terrain(a.dst.x, a.dst.y)).village
+                        if is_village then rating = rating + 0.5 end
 
-                    if rating > max_rating then
-                        max_rating, best_attack = rating, a
+                        if rating > max_rating then
+                            max_rating, best_attack = rating, a
+                        end
                     end
                 end
             end
@@ -513,10 +504,7 @@ return {
         ------- Retreat CA --------------
 
         function generic_rush:retreat_injured_units_eval()
-            local units = wesnoth.get_units {
-                side = wesnoth.current.side,
-                formula = 'movement_left > 0'
-            }
+            local units = AH.get_units_with_moves({ side = wesnoth.current.side }, true)
             local unit, loc = R.retreat_injured_units(units)
             if unit then
                 self.data.retreat_unit = unit
@@ -539,67 +527,6 @@ return {
             AH.robust_move_and_attack(ai, self.data.retreat_unit, self.data.retreat_loc)
             self.data.retreat_unit = nil
             self.data.retreat_loc = nil
-        end
-
-        ------- Village Hunt CA --------------
-        -- Give extra priority to seeking villages if we have less than our share
-        -- our share is defined as being slightly more than the total/the number of sides
-
-        function generic_rush:village_hunt_eval()
-            local villages = wesnoth.get_villages()
-
-            if not villages[1] then
-                return 0
-            end
-
-            local my_villages = wesnoth.get_villages { owner_side = wesnoth.current.side }
-
-            if #my_villages > #villages / #wesnoth.sides then
-                return 0
-            end
-
-            local allied_villages = wesnoth.get_villages { {"filter_owner", { {"ally_of", { side = wesnoth.current.side }} }} }
-            if #allied_villages == #villages then
-                return 0
-            end
-
-            local units = wesnoth.get_units {
-                side = wesnoth.current.side,
-                canrecruit = false,
-                formula = 'movement_left > 0'
-            }
-
-            if not units[1] then
-                return 0
-            end
-
-            return 30000
-        end
-
-        function generic_rush:village_hunt_exec()
-            local unit = wesnoth.get_units({
-                side = wesnoth.current.side,
-                canrecruit = false,
-                formula = 'movement_left > 0'
-            })[1]
-
-            local villages = wesnoth.get_villages()
-            local target, best_cost = nil, AH.no_path
-            for i,v in ipairs(villages) do
-                if not wesnoth.match_location(v[1], v[2], { {"filter_owner", { {"ally_of", { side = wesnoth.current.side }} }} }) then
-                    local path, cost = wesnoth.find_path(unit, v[1], v[2], { ignore_units = true, max_cost = best_cost })
-                    if cost < best_cost then
-                        target = v
-                        best_cost = cost
-                    end
-                end
-            end
-
-            if target then
-                local x, y = wesnoth.find_vacant_tile(target[1], target[2], unit)
-                local dest = AH.next_hop(unit, x, y)
-                AH.checked_move(ai, unit, dest[1], dest[2])
-            end
         end
 
         return generic_rush

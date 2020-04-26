@@ -53,7 +53,7 @@ void statistics_dialog::pre_show(window& window)
 	// Set title
 	//
 	label& title = find_widget<label>(&window, "title", false);
-	title.set_label((formatter() << title.get_label() << " (" << current_team_.side_name() << ")").str());
+	title.set_label((formatter() << title.get_label() << (current_team_.side_name().empty() ? "" : " (" + current_team_.side_name() + ")")).str());
 
 	//
 	// Set up scenario menu
@@ -147,6 +147,9 @@ void statistics_dialog::add_damage_row(
 	str.str("");
 
 	if(show_this_turn) {
+		label& this_turn_header = find_widget<label>(&window, "damage_this_turn_header", false);
+		this_turn_header.set_label(_("This Turn"));
+
 		const long long turn_shifted = ((turn_expected * 20) + shift) / (2 * shift);
 		str << turn_damage << " / "
 			<< static_cast<double>(turn_shifted) * 0.1
@@ -156,6 +159,11 @@ void statistics_dialog::add_damage_row(
 
 		item["label"] = str.str();
 		data.emplace("damage_this_turn", item);
+	} else {
+		// TODO: Setting the label to "" causes "This Turn" not to be drawn when changing back to the current scenraio view, so set the label to " " (a single space) instead.
+		label& this_turn_header = find_widget<label>(&window, "damage_this_turn_header", false);
+		this_turn_header.set_label(" ");
+
 	}
 
 	damage_list.add_row(data);

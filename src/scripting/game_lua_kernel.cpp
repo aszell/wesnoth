@@ -122,7 +122,7 @@
 #include <utility>                      // for pair
 #include <algorithm>
 #include <vector>                       // for vector, etc
-#include <SDL_timer.h>                  // for SDL_GetTicks
+#include <SDL2/SDL_timer.h>                  // for SDL_GetTicks
 #include "lua/lauxlib.h"                // for luaL_checkinteger, etc
 #include "lua/lua.h"                    // for lua_setfield, etc
 
@@ -2036,7 +2036,7 @@ int game_lua_kernel::intf_print(lua_State *L) {
 	font::floating_label flabel(text);
 	flabel.set_font_size(size);
 	flabel.set_color(color);
-	flabel.set_position(rect.w/2,rect.h/2);
+	flabel.set_position(rect.x + rect.w/2, rect.y + rect.h/2);
 	flabel.set_lifetime(lifetime);
 	flabel.set_clip_rect(rect);
 

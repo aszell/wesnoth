@@ -1,13 +1,14 @@
 # Translators:
-# RatArmy <broadbarredfirefish@gmail.com>, 2018
-# tamanegi, 2018
+# RatArmy <broadbarredfirefish@gmail.com>, 2019
+# tamanegi, 2019
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: tamanegi, 2018\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
+"PO-Revision-Date: 2018-09-12 07:30+0000\n"
+"Last-Translator: tamanegi, 2019\n"
 "Language-Team: Japanese (https://www.transifex.com/wesnoth-jp/teams/60513/"
 "ja/)\n"
 "Language: ja\n"
@@ -70,10 +71,8 @@ msgstr ""
 
 #. [campaign]: id=Liberty
 #: data/campaigns/Liberty/_main.cfg:28
-#, fuzzy
-#| msgid "(Intermediate level, 8 scenarios.)"
 msgid "(Novice level, 8 scenarios.)"
-msgstr "（中級者レベル、8 シナリオ）"
+msgstr "（初級レベル、8 シナリオ）"
 
 #. [about]
 #: data/campaigns/Liberty/_main.cfg:31
@@ -109,7 +108,7 @@ msgstr "Dallben"
 #: data/campaigns/Liberty/scenarios/01_The_Raid.cfg:22
 msgid ""
 "In the Era of Turmoil, during the reign of King Garard II, the border towns "
-"of Delwyn and Dallben in the province of Annuvin grew increasingly "
+"of Delwyn and Dallben in the Province of Annuvin grew increasingly "
 "dissatisfied with the King’s rule. Being preoccupied with the great wars, "
 "the King was unable to send adequate forces to protect the frontier."
 msgstr ""
@@ -469,13 +468,13 @@ msgid "Civil Disobedience"
 msgstr "市民の反抗"
 
 #. [side]: type=Bandit, id=Baldras
-#. [side]: type=General, id=Lord Maddock
-#. [side]: type=Rogue, id=Hans
-#. [side]: type=Highwayman, id=Baldras
-#. [side]: type=Shadow Lord, id=Helicrom
-#. [side]
-#. [side]: type=Bandit_Peasant, id=Baldras
 #. [side]: type=Highwayman_Peasant, id=Relana
+#. [side]: type=General, id=Lord Maddock
+#. [side]: type=Highwayman, id=Baldras
+#. [side]: type=Bandit_Peasant, id=Baldras
+#. [side]
+#. [side]: type=Shadow Lord, id=Helicrom
+#. [side]: type=Rogue, id=Hans
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:26
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:62
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:38
@@ -499,12 +498,12 @@ msgid "Tarwen"
 msgstr "Tarwen"
 
 #. [side]: type=General, id=Kestrel
-#. [side]: type=Master Bowman, id=Quentin
-#. [side]
 #. [side]: type=Royal Guard, id=Archarel
 #. [side]: type=Iron Mauler, id=Linneus
-#. [side]: type=General, id=Dommel
 #. [side]: type=Cavalier, id=Tarwen
+#. [side]: type=Master Bowman, id=Quentin
+#. [side]
+#. [side]: type=General, id=Dommel
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:41
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:80
 #: data/campaigns/Liberty/scenarios/05_Hide_and_Seek.cfg:48
@@ -681,11 +680,11 @@ msgstr "Relana"
 msgid "Urk Delek"
 msgstr "Urk Delek"
 
+#. [side]: type=Orcish Warrior, id=Urk Delek
+#. [side]: type=Saurian Oracle, id=Thhsthss
 #. [side]: type=Necromancer, id=Mal-Jarrof
 #. [side]: type=Necromancer, id=Mal-Jerod
 #. [side]: type=Lich, id=Sel-Mana
-#. [side]: type=Orcish Warrior, id=Urk Delek
-#. [side]: type=Saurian Oracle, id=Thhsthss
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:100
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:122
 #: data/campaigns/Liberty/scenarios/06_The_Grey_Woods.cfg:105
@@ -733,7 +732,7 @@ msgstr ""
 #: data/campaigns/Liberty/scenarios/03_A_Strategy_Of_Hope.cfg:188
 msgid ""
 "You do not understand. We attacked a Wesnoth army patrol. Not only that, the "
-"leader was no man I had ever seen in Annuvin province before. Never has one "
+"leader was no man I had ever seen in Annuvin Province before. Never has one "
 "been sent out here as a patrol captain who was so ruthless and cruel."
 msgstr ""
 "そんな簡単な問題じゃないぞ。わしらは Wesnoth の巡視隊を攻撃したんだ。それだけ"
@@ -984,7 +983,7 @@ msgstr ""
 #. [message]: speaker=Harper
 #: data/campaigns/Liberty/scenarios/04_Unlawful_Orders.cfg:207
 msgid ""
-"What can we do then? We have brought with us many from Annuvin province who "
+"What can we do then? We have brought with us many from Annuvin Province who "
 "are willing to fight, but our families are still at home. They will not last "
 "long if the Queen’s patrols return."
 msgstr ""
@@ -2204,7 +2203,7 @@ msgstr "砦の中にいた者が生きて出られることはないでしょう
 msgid ""
 "After more than a week of fierce fighting, the main body of Asheviere’s host "
 "arrived from Weldyn. The battle was soon finished. Every last man from the "
-"province of Annuvin was executed."
+"Province of Annuvin was executed."
 msgstr ""
 "一週間以上もの猛烈な戦いの後、Asheviere 軍の本体が Weldyn から到着しました。"
 "戦闘はすぐに終結しました。Annuvin の人間は最後の一人までことごとく処刑されま"
@@ -2441,7 +2440,7 @@ msgid "Bone Knight"
 msgstr "ボーンナイト"
 
 #. [unit_type]: id=Bone Knight, race=undead
-#: data/campaigns/Liberty/units/Bone_Knight.cfg:26
+#: data/campaigns/Liberty/units/Bone_Knight.cfg:27
 msgid ""
 "Once great warriors across the plains, these mounted riders atop their "
 "skeletal horses were raised from the ground by unholy magic to spread fear "
@@ -2451,7 +2450,7 @@ msgstr ""
 "すため、不浄な魔法によって大地から蘇りました。"
 
 #. [attack]: type=impact
-#: data/campaigns/Liberty/units/Bone_Knight.cfg:41
+#: data/campaigns/Liberty/units/Bone_Knight.cfg:42
 msgid "trample"
 msgstr "踏みつけ"
 

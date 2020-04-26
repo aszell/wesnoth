@@ -125,7 +125,7 @@ function ai_helper.print_ts(...)
     local arg = { ... }
     arg[#arg+1] = string.format('[ t = %.3f ]', ts)
 
-    print(table.unpack(arg))
+    std_print(table.unpack(arg))
 
     return ts
 end
@@ -143,7 +143,7 @@ function ai_helper.print_ts_delta(start_time, ...)
     local arg = { ... }
     arg[#arg+1] = string.format('[ t = %.3f, dt = %.3f ]', ts, delta)
 
-    print(table.unpack(arg))
+    std_print(table.unpack(arg))
 
     return ts, delta
 end
@@ -899,14 +899,27 @@ function ai_helper.get_live_units(filter)
     return wesnoth.get_units { { "not", { status = "petrified" } }, { "and", filter } }
 end
 
-function ai_helper.get_units_with_moves(filter)
+function ai_helper.get_units_with_moves(filter, exclude_guardians)
+    -- Optional input: @exclude_guardians: set to 'true' to exclude units with ai_special=guardian
     -- Note: the order of the filters and the [and] tags are important for speed reasons
-    return wesnoth.get_units { { "and", { formula = "moves > 0" } }, { "and", filter } }
+    local exclude_status = 'petrified'
+    if exclude_guardians then
+        exclude_status = exclude_status .. ',guardian'
+    end
+    return wesnoth.get_units {
+        { "and", { formula = "moves > 0" } },
+        { "not", { status = exclude_status } },
+        { "and", filter }
+    }
 end
 
 function ai_helper.get_units_with_attacks(filter)
     -- Note: the order of the filters and the [and] tags are important for speed reasons
-    return wesnoth.get_units { { "and", { formula = "attacks_left > 0 and size(attacks) > 0" } }, { "and", filter } }
+    return wesnoth.get_units {
+        { "and", { formula = "attacks_left > 0 and size(attacks) > 0" } },
+        { "not", { status = "petrified" } },
+        { "and", filter }
+    }
 end
 
 function ai_helper.get_visible_units(viewing_side, filter)

@@ -167,7 +167,7 @@ static inline std::string get_mp_tooltip(int total_movement, std::function<int (
 		}
 	}
 
-	
+
 
 	for(const terrain_movement& tm: terrain_moves)
 	{
@@ -219,18 +219,31 @@ void unit_preview_pane::print_attack_details(T attacks, tree_view_node& parent_n
 	);
 
 	for(const auto& a : attacks) {
+		const std::string range_png = std::string("icons/profiles/") + a.range() + "_attack.png~SCALE_INTO_SHARP(16,16)";
+		const std::string type_png = std::string("icons/profiles/") + a.type() + ".png~SCALE_INTO_SHARP(16,16)";
+		const bool range_png_exists = ::image::locator(range_png).file_exists();
+		const bool type_png_exists = ::image::locator(type_png).file_exists();
 
-		auto& subsection = add_name_tree_node(
-			header_node,
-			"item",
-			(formatter() << font::span_color(font::unit_type_color) << a.damage() << font::weapon_numbers_sep << a.num_attacks() << " " << a.name() << "</span>").str()
+		const std::string label = (formatter()
+			 << font::span_color(font::unit_type_color)
+			 << a.damage() << font::weapon_numbers_sep << a.num_attacks()
+			 << " " << a.name() << "</span>").str();
+		auto& subsection = header_node.add_child(
+			"item_image",
+			{
+				{ "image_range", { { "label", range_png } } },
+				{ "image_type", { { "label", type_png } } },
+				{ "name", { { "label", label }, { "use_markup", "true" } } },
+			}
 		);
 
-		add_name_tree_node(
-			subsection,
-			"item",
-			(formatter() << font::span_color(font::weapon_details_color) << string_table["range_" + a.range()] << font::weapon_details_sep << string_table["type_" + a.type()] << "</span>").str()
-		);
+		if(!range_png_exists || !type_png_exists) {
+			add_name_tree_node(
+				subsection,
+				"item",
+				(formatter() << font::span_color(font::weapon_details_color) << string_table["range_" + a.range()] << font::weapon_details_sep << string_table["type_" + a.type()] << "</span>").str()
+			);
+		}
 
 		for(const auto& pair : a.special_tooltips()) {
 			add_name_tree_node(
@@ -246,7 +259,7 @@ void unit_preview_pane::print_attack_details(T attacks, tree_view_node& parent_n
 void unit_preview_pane::set_displayed_type(const unit_type& type)
 {
 	// Sets the current type id for the profile button callback to use
-	current_type_ = type.id();
+	current_type_ = type;
 
 	if(icon_type_) {
 		std::string mods;
@@ -388,7 +401,7 @@ void unit_preview_pane::set_displayed_type(const unit_type& type)
 void unit_preview_pane::set_displayed_unit(const unit& u)
 {
 	// Sets the current type id for the profile button callback to use
-	current_type_ = u.type_id();
+	current_type_ = u.type();
 
 	if(icon_type_) {
 		std::string mods = u.image_mods();
@@ -533,11 +546,8 @@ void unit_preview_pane::set_displayed_unit(const unit& u)
 
 void unit_preview_pane::profile_button_callback()
 {
-	if(get_window()) {
-		const unit_type* ut = unit_types.find(current_type_);
-		if(ut != nullptr) {
-			help::show_unit_description(*ut);
-		}
+	if(get_window() && current_type_) {
+		help::show_unit_description(*current_type_);
 	}
 }
 

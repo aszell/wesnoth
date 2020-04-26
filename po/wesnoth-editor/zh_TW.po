@@ -1,5 +1,5 @@
 # The Battle for Wesnoth - Traditional Chinese Translations
-# Copyright (C) 2005-2018 Wesnoth development team
+# Copyright (C) 2005-2019 Wesnoth development team
 # This file is distributed under the same license as the Battle for Wesnoth package.
 # 楊綮銘 <steven2880@gmail.com>, 2008.
 #
@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-21 21:29+0300\n"
-"PO-Revision-Date: 2018-07-31 00:11+0800\n"
+"POT-Creation-Date: 2020-01-12 13:29-0300\n"
+"PO-Revision-Date: 2020-02-10 01:06+0800\n"
 "Last-Translator: 楊綮銘 <steven2880@gmail.com>\n"
 "Language-Team: Wesnoth Traditional Chinese Team\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #. [brush]: id=brush-1
 #: data/core/editor/brushes.cfg:6
@@ -121,7 +121,7 @@ msgstr "特殊"
 #. Describes a scenario in the editor that has not set a time of day schedule
 #: data/core/editor/time-of-day.cfg:6
 msgid "time of day^None"
-msgstr ""
+msgstr "無"
 
 #. [editor_times]: id=test
 #: data/core/editor/time-of-day.cfg:11
@@ -143,28 +143,13 @@ msgstr "夏天"
 msgid "Winter"
 msgstr "冬天"
 
-#. [editor_times]: id=underground
-#: data/core/editor/time-of-day.cfg:40
-msgid "Underground"
-msgstr "地底"
-
-#. [editor_times]: id=deep_underground
-#: data/core/editor/time-of-day.cfg:46
-msgid "Deep Underground"
-msgstr "地底深處"
-
-#. [editor_times]: id=indoors
-#: data/core/editor/time-of-day.cfg:52
-msgid "Indoors"
-msgstr "室內"
-
 #. [editor_times]: id=24
-#: data/core/editor/time-of-day.cfg:58
+#: data/core/editor/time-of-day.cfg:60
 msgid "24 Hour Schedule"
 msgstr "24小時制時段"
 
 #. [editor_times]: id=after_the_fall
-#: data/core/editor/time-of-day.cfg:64
+#: data/core/editor/time-of-day.cfg:66
 msgid "After the Fall"
 msgstr "毀滅之後"
 
@@ -248,27 +233,31 @@ msgstr "播放列表"
 msgid "Assign Time Schedule"
 msgstr "指定時段"
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:62
+#: src/editor/action/mouse/mouse_action_unit.cpp:68
+msgid "(Unknown unit type: $type)"
+msgstr "(未知單位類型：$type)"
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:72
 msgid "Identifier: "
 msgstr "識別： "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:63
+#: src/editor/action/mouse/mouse_action_unit.cpp:73
 msgid "Name: "
 msgstr "名字： "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:64
+#: src/editor/action/mouse/mouse_action_unit.cpp:74
 msgid "Type: "
 msgstr "類型： "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:65
+#: src/editor/action/mouse/mouse_action_unit.cpp:75
 msgid "Level: "
 msgstr "等級： "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:66
+#: src/editor/action/mouse/mouse_action_unit.cpp:76
 msgid "Cost: "
 msgstr "費用： "
 
-#: src/editor/action/mouse/mouse_action_unit.cpp:67
+#: src/editor/action/mouse/mouse_action_unit.cpp:77
 msgid "Recruit: "
 msgstr "招募： "
 
@@ -417,7 +406,7 @@ msgid ""
 "Loaded referenced map file:\n"
 "$new"
 msgstr ""
-"已讀取地圖引用檔案:\n"
+"已讀取地圖引用檔案：\n"
 "$new"
 
 #: src/editor/map/editor_map.cpp:148
@@ -445,7 +434,7 @@ msgstr "這份地圖檔案像是一個章節，但是地圖資料連結一個不
 
 #: src/editor/map/map_context.cpp:604
 msgid "Could not save the scenario: $msg"
-msgstr "無法儲存章節： $msg"
+msgstr "無法儲存章節：$msg"
 
 #: src/editor/map/map_context.cpp:639
 msgid "Could not save into scenario"
@@ -453,7 +442,7 @@ msgstr "無法儲存地圖"
 
 #: src/editor/map/map_context.cpp:649
 msgid "Could not save the map: $msg"
-msgstr "無法儲存地圖： $msg"
+msgstr "無法儲存地圖：$msg"
 
 #: src/editor/palette/editor_palettes.cpp:51
 msgid "(Unknown Group)"
@@ -485,17 +474,17 @@ msgstr "錯誤"
 
 #: src/editor/palette/location_palette.cpp:273
 msgid "Invalid location id"
-msgstr ""
+msgstr "無效的位置 ID"
 
 #: src/editor/palette/location_palette.cpp:280
 msgid "Delete"
 msgstr "刪除"
 
-#: src/editor/palette/terrain_palettes.cpp:231
+#: src/editor/palette/terrain_palettes.cpp:230
 msgid "FG: "
 msgstr "前景地形： "
 
-#: src/editor/palette/terrain_palettes.cpp:232
+#: src/editor/palette/terrain_palettes.cpp:231
 msgid "BG: "
 msgstr "背景地形： "
 
@@ -518,6 +507,15 @@ msgstr "無"
 #: src/gui/dialogs/editor/set_starting_position.cpp:97
 msgid "Player $player_number"
 msgstr "玩家 $player_number"
+
+#~ msgid "Underground"
+#~ msgstr "地底"
+
+#~ msgid "Deep Underground"
+#~ msgstr "地底深處"
+
+#~ msgid "Indoors"
+#~ msgstr "室內"
 
 #~ msgid "None"
 #~ msgstr "無"

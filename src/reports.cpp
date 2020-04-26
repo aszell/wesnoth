@@ -230,8 +230,12 @@ static config unit_side(reports::context & rc, const unit* u)
 	std::stringstream text;
 	text << " " << u->side();
 
-	add_image(report, flag_icon + mods, u_team.side_name(), "");
-	add_text(report, text.str(), "", "");
+	std::ostringstream tooltip;
+	if (!u_team.side_name().empty()) {
+		tooltip << _("Side:") << " <b>" <<  u_team.side_name() << "</b>";
+	}
+	add_image(report, flag_icon + mods, tooltip.str(), "");
+	add_text(report, text.str(), tooltip.str(), "");
 	return report;
 }
 REPORT_GENERATOR(unit_side, rc)
@@ -397,16 +401,15 @@ REPORT_GENERATOR(selected_unit_alignment, rc)
 	return unit_alignment(rc, u, hex_to_show_alignment_at);
 }
 
-
-static config unit_abilities(const unit* u)
+static config unit_abilities(const unit* u, const map_location& loc)
 {
 	if (!u) return config();
 	config res;
 
 	boost::dynamic_bitset<> active;
-	const std::vector<std::tuple<std::string, t_string,t_string,t_string>> &abilities = u->ability_tooltips(&active);
-	const size_t abilities_size = abilities.size();
-	for ( size_t i = 0; i != abilities_size; ++i )
+	const std::vector<std::tuple<std::string, t_string,t_string,t_string>> &abilities = u->ability_tooltips(active, loc);
+	const std::size_t abilities_size = abilities.size();
+	for ( std::size_t i = 0; i != abilities_size; ++i )
 	{
 		// Aliases for readability:
 		const std::string& id        = std::get<0>(abilities[i]);
@@ -435,12 +438,20 @@ static config unit_abilities(const unit* u)
 REPORT_GENERATOR(unit_abilities, rc)
 {
 	const unit *u = get_visible_unit(rc);
-	return unit_abilities(u);
+	const map_location& mouseover_hex = rc.screen().mouseover_hex();
+
+	return unit_abilities(u, mouseover_hex);
 }
 REPORT_GENERATOR(selected_unit_abilities, rc)
 {
 	const unit *u = get_selected_unit(rc);
-	return unit_abilities(u);
+
+	const map_location& mouseover_hex = rc.screen().mouseover_hex();
+	const unit *visible_unit = get_visible_unit(rc);
+	if(visible_unit && u && visible_unit->id() != u->id() && mouseover_hex.valid())
+		return unit_abilities(u, mouseover_hex);
+	else
+		return unit_abilities(u, u->get_location());
 }
 
 
@@ -604,10 +615,17 @@ static config unit_vision(const unit* u)
 	if (!u) return config();
 
 	// TODO
-	std::ostringstream str;
+	std::ostringstream str, tooltip;
 	if (u->vision() != u->total_movement()) {
-		str << _("vision: ") << u->vision(); }
-	return text_report(str.str(), str.str());
+		str << _("vision:") << ' ' << u->vision();
+		tooltip << _("vision:") << ' ' << u->vision() << '\n';
+	}
+	if (u->jamming() != 0) {
+		if (static_cast<std::streamoff>(str.tellp()) == 0)
+			str << _("jamming:") << ' ' << u->jamming();
+		tooltip << _("jamming:") << ' ' << u->jamming() << '\n';
+	}
+	return text_report(str.str(), tooltip.str());
 }
 REPORT_GENERATOR(unit_vision, rc)
 {
@@ -648,7 +666,7 @@ static config unit_moves(reports::context & rc, const unit* u)
 
 	for (const terrain_movement& tm : terrain_moves) {
 		tooltip << tm.name << ": ";
-		
+
 		std::string color;
 		//movement  -  range: 1 .. 5, movetype::UNREACHABLE=impassable
 		const bool cannot_move = tm.moves > u->total_movement();
@@ -854,7 +872,7 @@ static int attack_info(reports::context & rc, const attack_type &at, config &res
 	}
 
 	{
-		auto ctx = at.specials_context_for_listing();
+		auto ctx = at.specials_context_for_listing(u.side() == rc.screen().playing_side());
 		boost::dynamic_bitset<> active;
 		const std::vector<std::pair<t_string, t_string>> &specials = at.special_tooltips(&active);
 		const size_t specials_size = specials.size();
@@ -888,7 +906,7 @@ static std::string format_prob(double prob)
 		return "0%";
 	}
 	std::ostringstream res;
-	res << std::setprecision(prob < 0.1 ? 2 : 3) << 100.0 * prob << "%";
+	res << std::setprecision(prob < 0.01 ? 1 : prob < 0.1 ? 2 : 3) << 100.0 * prob << "%";
 	return res.str();
 }
 
@@ -1123,6 +1141,7 @@ REPORT_GENERATOR(tod_stats, rc)
 	const map_location& tod_schedule_hex = display::get_singleton()->shrouded(hex) ? map_location::null_location() : hex;
 	const std::vector<time_of_day>& schedule = rc.tod().times(tod_schedule_hex);
 
+	tooltip << _("Time of day schedule:") << " \n";
 	int current = rc.tod().get_current_time(tod_schedule_hex);
 	int i = 0;
 	for (const time_of_day& tod : schedule) {
@@ -1149,12 +1168,13 @@ static config time_of_day_at(reports::context & rc, const map_location& mouseove
 	std::string chaotic_color("white");
 	std::string liminal_color("white");
 
+	// Use same red/green colouring scheme as time_of_day_bonus_colored() in help/help_impl.cpp for consistency
 	if (b != 0) {
 		lawful_color  = (b > 0) ? "green" : "red";
 		chaotic_color = (b < 0) ? "green" : "red";
 		liminal_color = "red";
 	}
-	tooltip << tod.name << '\n'
+	tooltip << _("Time of day:") << " <b>" << tod.name << "</b>\n"
 		<< _("Lawful units: ") << "<span foreground=\"" << lawful_color  << "\">"
 		<< utils::signed_percent(b)  << "</span>\n"
 		<< _("Neutral units: ") << utils::signed_percent(0)  << '\n'
@@ -1320,16 +1340,16 @@ REPORT_GENERATOR(upkeep, rc)
 	std::ostringstream str;
 	int viewing_side = rc.screen().viewing_side();
 	const team &viewing_team = rc.dc().get_team(viewing_side);
-	team_data td = rc.dc().calculate_team_data(viewing_team);
+	team_data td(rc.dc(), viewing_team);
 	str << td.expenses << " (" << td.upkeep << ")";
-	return gray_inactive(rc,str.str(), _("Upkeep") + "\n\n" + _("The expenses incurred at the end of every turn to maintain your army. The first number is the amount of gold that will be deducted. The second is the total cost of upkeep, including that covered by villages — in other words, the amount of gold that would be deducted if you lost all villages."));
+	return gray_inactive(rc,str.str(), _("Upkeep") + "\n\n" + _("The expenses incurred at the end of every turn to maintain your army. The first number is the amount of gold that will be deducted. It is equal to the number of unit levels not supported by villages. The second is the total cost of upkeep, including that covered by villages — in other words, the amount of gold that would be deducted if you lost all villages."));
 }
 
 REPORT_GENERATOR(expenses, rc)
 {
 	int viewing_side = rc.screen().viewing_side();
 	const team &viewing_team = rc.dc().get_team(viewing_side);
-	team_data td = rc.dc().calculate_team_data(viewing_team);
+	team_data td(rc.dc(), viewing_team);
 	return gray_inactive(rc,std::to_string(td.expenses));
 }
 
@@ -1338,7 +1358,7 @@ REPORT_GENERATOR(income, rc)
 	std::ostringstream str;
 	int viewing_side = rc.screen().viewing_side();
 	const team &viewing_team = rc.dc().get_team(viewing_side);
-	team_data td = rc.dc().calculate_team_data(viewing_team);
+	team_data td(rc.dc(), viewing_team);
 	char const *end = naps;
 	if (viewing_side != rc.screen().playing_side()) {
 		if (td.net_income < 0) {
@@ -1359,7 +1379,7 @@ REPORT_GENERATOR(income, rc)
 		end = "";
 	}
 	str << td.net_income << end;
-	return text_report(str.str(), _("Income") + "\n\n" + _("The amount of gold you gain each turn from your controlled villages, or the amount of gold you will lose each turn for unit upkeep."));
+	return text_report(str.str(), _("Net Income") + "\n\n" + _("The net amount of gold you gain or lose each turn, taking into account income from controlled villages and payment of upkeep."));
 }
 
 namespace {

@@ -159,10 +159,10 @@ void menu_handler::unit_list()
 
 void menu_handler::status_table()
 {
-	int selected_index;
+	int selected_side;
 
-	if(gui2::dialogs::game_stats::execute(board(), gui_->viewing_team(), selected_index)) {
-		gui_->scroll_to_leader(teams()[selected_index].side());
+	if(gui2::dialogs::game_stats::execute(board(), gui_->viewing_team(), selected_side)) {
+		gui_->scroll_to_leader(selected_side);
 	}
 }
 
@@ -254,7 +254,7 @@ bool menu_handler::has_friends() const
 
 void menu_handler::recruit(int side_num, const map_location& last_hex)
 {
-	std::vector<const unit_type*> sample_units;
+	std::map<const unit_type*, t_string> sample_units;
 
 	std::set<std::string> recruits = actions::get_recruits(side_num, last_hex);
 
@@ -265,7 +265,9 @@ void menu_handler::recruit(int side_num, const map_location& last_hex)
 			return;
 		}
 
-		sample_units.push_back(type);
+		map_location ignored;
+		map_location recruit_hex = last_hex;
+		sample_units[type] = (can_recruit(type->id(), side_num, recruit_hex, ignored));
 	}
 
 	if(sample_units.empty()) {
@@ -277,7 +279,12 @@ void menu_handler::recruit(int side_num, const map_location& last_hex)
 
 	if(dlg.show()) {
 		map_location recruit_hex = last_hex;
-		do_recruit(sample_units[dlg.get_selected_index()]->id(), side_num, recruit_hex);
+		const unit_type *type = dlg.get_selected_unit_type();
+		if (!type) {
+			gui2::show_transient_message("", _("No unit recruited."));
+			return;
+		}
+		do_recruit(type->id(), side_num, recruit_hex);
 	}
 }
 
@@ -290,68 +297,92 @@ void menu_handler::repeat_recruit(int side_num, const map_location& last_hex)
 	}
 }
 
-bool menu_handler::do_recruit(const std::string& name, int side_num, map_location& loc)
+// TODO: Return multiple strings here, in case more than one error applies? For
+// example, if you start AOI S5 with 0GP and recruit a Mage, two reasons apply,
+// leader not on keep (extrarecruit=Mage) and not enough gold.
+t_string menu_handler::can_recruit(const std::string& name, int side_num, map_location& loc, map_location& recruited_from)
 {
 	team& current_team = board().get_team(side_num);
 
-	// search for the unit to be recruited in recruits
-	if(!utils::contains(actions::get_recruits(side_num, loc), name)) {
-		return false;
+	const unit_type* u_type = unit_types.find(name);
+	if(u_type == nullptr) {
+		return _("Internal error. Please report this as a bug! Details:\n")
+			+ "menu_handler::can_recruit: u_type == nullptr for " + name;
 	}
 
-	const unit_type* u_type = unit_types.find(name);
-	assert(u_type);
+	// search for the unit to be recruited in recruits
+	if(!utils::contains(actions::get_recruits(side_num, loc), name)) {
+		return VGETTEXT("You cannot recruit a $unit_type_name at this time.",
+				utils::string_map { { "unit_type_name", u_type->type_name() }});
+	}
 
-	if(u_type->cost() > current_team.gold() - (pc_.get_whiteboard()
-			? pc_.get_whiteboard()->get_spent_gold_for(side_num)
-			: 0))
+	// TODO take a wb::future_map RAII as unit_recruit::pre_show does
+	int wb_gold = 0;
 	{
-		gui2::show_transient_message("", _("You do not have enough gold to recruit that unit"));
-		return false;
+		wb::future_map future;
+		wb_gold = (pc_.get_whiteboard() ? pc_.get_whiteboard()->get_spent_gold_for(side_num) : 0);
+	}
+	if(u_type->cost() > current_team.gold() - wb_gold)
+	{
+		if(wb_gold > 0)
+			// TRANSLATORS: "plan" refers to Planning Mode
+			return _("At this point in your plan, you will not have enough gold to recruit this unit.");
+		else
+			return _("You do not have enough gold to recruit this unit.");
 	}
 
 	current_team.last_recruit(name);
 	const events::command_disabler disable_commands;
 
-	map_location recruited_from = map_location::null_location();
-
-	std::string msg;
 	{
 		wb::future_map_if_active future; /* start planned unit map scope if in planning mode */
-		msg = actions::find_recruit_location(side_num, loc, recruited_from, name);
+		std::string msg = actions::find_recruit_location(side_num, loc, recruited_from, name);
+		if(!msg.empty()) {
+			return msg;
+		}
 	} // end planned unit map scope
 
-	if(!msg.empty()) {
-		gui2::show_transient_message("", msg);
-		return false;
-	}
+	return "";
+}
 
-	if(!pc_.get_whiteboard() || !pc_.get_whiteboard()->save_recruit(name, side_num, loc)) {
+bool menu_handler::do_recruit(const std::string& name, int side_num, map_location& loc)
+{
+	map_location recruited_from = map_location::null_location();
+	const std::string res = can_recruit(name, side_num, loc, recruited_from);
+	team& current_team = board().get_team(side_num);
+
+	if(res.empty() && (!pc_.get_whiteboard() || !pc_.get_whiteboard()->save_recruit(name, side_num, loc))) {
 		// MP_COUNTDOWN grant time bonus for recruiting
 		current_team.set_action_bonus_count(1 + current_team.action_bonus_count());
 
 		// Do the recruiting.
 
-		synced_context::run_and_throw("recruit", replay_helper::get_recruit(u_type->id(), loc, recruited_from));
+		synced_context::run_and_throw("recruit", replay_helper::get_recruit(name, loc, recruited_from));
 		return true;
+	} else if(res.empty()) {
+		return false;
+	} else {
+		gui2::show_transient_message("", res);
+		return false;
 	}
 
-	return false;
 }
 
 void menu_handler::recall(int side_num, const map_location& last_hex)
 {
 	if(pc_.get_disallow_recall()) {
-		gui2::show_transient_message("", _("You are separated from your soldiers and may not recall them"));
+		gui2::show_transient_message("", _("You are separated from your soldiers and may not recall them."));
 		return;
 	}
 
 	team& current_team = board().get_team(side_num);
 
 	std::vector<unit_const_ptr> recall_list_team;
+	bool empty;
 	{
 		wb::future_map future; // ensures recall list has planned recalls removed
 		recall_list_team = actions::get_recalls(side_num, last_hex);
+		empty = current_team.recall_list().empty();
 	}
 
 	DBG_WB << "menu_handler::recall: Contents of wb-modified recall list:\n";
@@ -359,13 +390,13 @@ void menu_handler::recall(int side_num, const map_location& last_hex)
 		DBG_WB << unit->name() << " [" << unit->id() << "]\n";
 	}
 
-	if(current_team.recall_list().empty()) {
+	if(empty) {
 		gui2::show_transient_message("",
-			_("There are no troops available to recall\n(You must have veteran survivors from a previous scenario)"));
+			_("There are no troops available to recall.\n(You must have veteran survivors from a previous scenario.)"));
 		return;
 	}
 	if(recall_list_team.empty()) {
-		gui2::show_transient_message("", _("You currently can't recall at the highlighted location"));
+		gui2::show_transient_message("", _("You currently can't recall at the highlighted location."));
 		return;
 	}
 
@@ -377,7 +408,7 @@ void menu_handler::recall(int side_num, const map_location& last_hex)
 
 	int res = dlg.get_selected_index();
 	if (res < 0) {
-		gui2::show_transient_message("", _("No unit recalled"));
+		gui2::show_transient_message("", _("No unit recalled."));
 		return;
 	}
 	int unit_cost = current_team.recall_cost();
@@ -394,8 +425,8 @@ void menu_handler::recall(int side_num, const map_location& last_hex)
 	if(current_team.gold() - wb_gold < unit_cost) {
 		utils::string_map i18n_symbols;
 		i18n_symbols["cost"] = std::to_string(unit_cost);
-		std::string msg = VNGETTEXT("You must have at least 1 gold piece to recall a unit",
-				"You must have at least $cost gold pieces to recall this unit", unit_cost, i18n_symbols);
+		std::string msg = VNGETTEXT("You must have at least 1 gold piece to recall a unit.",
+				"You must have at least $cost gold pieces to recall this unit.", unit_cost, i18n_symbols);
 		gui2::show_transient_message("", msg);
 		return;
 	}
@@ -434,6 +465,9 @@ void menu_handler::show_enemy_moves(bool ignore_units, int side_num)
 {
 	wb::future_map future; // use unit positions as if all planned actions were executed
 
+	mouse_handler& mh = pc_.get_mouse_handler_base();
+	const map_location& hex_under_mouse = mh.hovered_hex();
+
 	gui_->unhighlight_reach();
 
 	// Compute enemy movement positions
@@ -446,14 +480,15 @@ void menu_handler::show_enemy_moves(bool ignore_units, int side_num)
 			const pathfind::paths& path
 					= pathfind::paths(u, false, true, teams()[gui_->viewing_team()], 0, false, ignore_units);
 
-			gui_->highlight_another_reach(path);
+			gui_->highlight_another_reach(path, hex_under_mouse);
 		}
+
+		// Need to recompute ellipses for highlighted enemy units
+		gui_->invalidate(u.get_location());
 	}
 
 	// Find possible unit (no matter whether friend or foe) under the
 	// mouse cursor.
-	mouse_handler& mh = pc_.get_mouse_handler_base();
-	const map_location& hex_under_mouse = mh.hovered_hex();
 	const bool selected_hex_has_unit = mh.hex_hosts_unit(hex_under_mouse);
 
 	if(selected_hex_has_unit) {
@@ -622,8 +657,8 @@ void menu_handler::rename_unit()
 	}
 
 	std::string name = un->name();
-	const std::string title(N_("Rename Unit"));
-	const std::string label(N_("Name:"));
+	const std::string title(_("Rename Unit"));
+	const std::string label(_("Name:"));
 
 	if(gui2::dialogs::edit_text::execute(title, label, name)) {
 		resources::recorder->add_rename(name, un->get_location());
@@ -635,13 +670,14 @@ void menu_handler::rename_unit()
 unit_map::iterator menu_handler::current_unit()
 {
 	const mouse_handler& mousehandler = pc_.get_mouse_handler_base();
+	const bool see_all = gui_->show_everything() || (pc_.is_replay() && pc_.get_replay_controller()->see_all());
 
-	unit_map::iterator res = board().find_visible_unit(mousehandler.get_last_hex(), teams()[gui_->viewing_team()]);
+	unit_map::iterator res = board().find_visible_unit(mousehandler.get_last_hex(), teams()[gui_->viewing_team()], see_all);
 	if(res != units().end()) {
 		return res;
 	}
 
-	return board().find_visible_unit(mousehandler.get_selected_hex(), teams()[gui_->viewing_team()]);
+	return board().find_visible_unit(mousehandler.get_selected_hex(), teams()[gui_->viewing_team()], see_all);
 }
 
 // Helpers for create_unit()
@@ -784,7 +820,7 @@ void menu_handler::label_terrain(mouse_handler& mousehandler, bool team_only)
 		if(team_only) {
 			team_name = gui_->labels().team_name();
 		} else {
-			color = team::get_side_rgb(gui_->viewing_side());
+			color = team::get_side_color(gui_->viewing_side());
 		}
 		const terrain_label* res = gui_->labels().set_label(loc, label, gui_->viewing_team(), team_name, color);
 		if(res) {
@@ -951,7 +987,7 @@ void menu_handler::execute_gotos(mouse_handler& mousehandler, int side)
 void menu_handler::toggle_ellipses()
 {
 	preferences::set_ellipses(!preferences::ellipses());
-	gui_->invalidate_all();
+	gui_->invalidate_all(); // TODO can fewer tiles be invalidated?
 }
 
 void menu_handler::toggle_grid()
@@ -986,6 +1022,12 @@ void menu_handler::end_unit_turn(mouse_handler& mousehandler, int side_num)
 
 		if(un->user_end_turn()) {
 			mousehandler.cycle_units(false);
+		}
+
+		// If cycle_units hasn't found a new unit to cycle to then the original unit is still selected, but
+		// in a state where left-clicking on it does nothing. Make it respond to mouse clicks again.
+		if(un == units().find(mousehandler.get_selected_hex())) {
+			mousehandler.deselect_hex();
 		}
 	}
 }
@@ -1173,10 +1215,16 @@ protected:
 
 		register_command("refresh", &console_handler::do_refresh, _("Refresh gui."));
 		register_command("droid", &console_handler::do_droid, _("Switch a side to/from AI control."),
-				_("do not translate the on/off^[<side> [on/off]]"));
+				// TRANSLATORS: These are the arguments accepted by the "droid" command,
+				// which must be a side-number and then optionally one of "on", "off" or "full".
+				// As with the command's name, "on" and "off" are hardcoded, and shouldn't change in the translation.
+				_("[<side> [on/off]]\n“on” = enable control by the AI, “off” = side is controlled by the player"));
 		register_command("idle", &console_handler::do_idle, _("Switch a side to/from idle state."),
-				_("do not translate the on/off^[<side> [on/off]]"));
-		register_command("theme", &console_handler::do_theme);
+				// TRANSLATORS: These are the arguments accepted by the "idle" command,
+				// which must be a side-number and then optionally "on" or "off".
+				// As with the command's name, "on" and "off" are hardcoded, and shouldn't change in the translation.
+				_("command_idle^[<side> [on/off]]"));
+		register_command("theme", &console_handler::do_theme, _("Change the in-game theme."));
 		register_command("control", &console_handler::do_control,
 				_("Assign control of a side to a different player or observer."), _("<side> <nickname>"), "N");
 		register_command("controller", &console_handler::do_controller, _("Query the controller status of a side."),
@@ -1185,7 +1233,7 @@ protected:
 		register_command("foreground", &console_handler::do_foreground, _("Debug foreground terrain."), "", "D");
 		register_command(
 				"layers", &console_handler::do_layers, _("Debug layers from terrain under the mouse."), "", "D");
-		register_command("fps", &console_handler::do_fps, _("Show fps."));
+		register_command("fps", &console_handler::do_fps, _("Show fps (Frames Per Second)."));
 		register_command("benchmark", &console_handler::do_benchmark);
 		register_command("save", &console_handler::do_save, _("Save game."));
 		register_alias("save", "w");
@@ -1224,7 +1272,9 @@ protected:
 				"set_var", &console_handler::do_set_var, _("Set a scenario variable."), _("<var>=<value>"), "DS");
 		register_command("show_var", &console_handler::do_show_var, _("Show a scenario variable."), _("<var>"), "D");
 		register_command("unit", &console_handler::do_unit,
-				_("Modify a unit variable. (Only top level keys are supported.)"), "", "DS");
+				// TRANSLATORS: Do not translate the word "advances"; it is a hardcoded literal argument.
+				_("Modify a unit variable. (Only top level keys are supported, and advances=<number>.)"),
+				_("<var>=<value>"), "DS");
 
 		// register_command("buff", &console_handler::do_buff,
 		//    _("Add a trait to a unit."), "", "D");
@@ -1232,11 +1282,11 @@ protected:
 		//    _("Remove a trait from a unit. (Does not work yet.)"), "", "D");
 		register_command("discover", &console_handler::do_discover, _("Discover all units in help."), "");
 		register_command("undiscover", &console_handler::do_undiscover, _("'Undiscover' all units in help."), "");
-		register_command("create", &console_handler::do_create, _("Create a unit."), "", "DS");
+		register_command("create", &console_handler::do_create, _("Create a unit."), _("<unit type id>"), "DS");
 		register_command("fog", &console_handler::do_fog, _("Toggle fog for the current player."), "", "DS");
 		register_command("shroud", &console_handler::do_shroud, _("Toggle shroud for the current player."), "", "DS");
-		register_command("gold", &console_handler::do_gold, _("Give gold to the current player."), "", "DS");
-		register_command("throw", &console_handler::do_event, _("Fire a game event."), "", "DS");
+		register_command("gold", &console_handler::do_gold, _("Give gold to the current player."), _("<amount>"), "DS");
+		register_command("throw", &console_handler::do_event, _("Fire a game event."), _("<event name>"), "DS");
 		register_alias("throw", "fire");
 		register_command("show_coordinates", &console_handler::do_toggle_draw_coordinates,
 				_("Toggle overlaying of x,y coordinates on hexes."));

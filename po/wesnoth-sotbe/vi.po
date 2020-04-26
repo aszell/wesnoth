@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
 "PO-Revision-Date: 2014-06-05 20:47+0700\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese <kde-i18n-doc@kde.org>\n"
@@ -142,9 +142,9 @@ msgstr "Kapou’e chết"
 
 #. [side]: id=Kapou'e, type=Orcish Leader
 #. [side]
+#. [side]: type=Orcish Slayer, id=Rugh
 #. [side]: id=Grüü, type=Great Troll
 #. [side]: type=Orcish Leader, id=Kapou'e
-#. [side]: type=Orcish Slayer, id=Rugh
 #. [side]: type=General, id=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:56
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:64
@@ -184,8 +184,8 @@ msgstr "Alber"
 #. [side]: type=General, id=Slowhand
 #. [side]
 #. [side]: type=General, id=Harman
-#. [side]: type=Lieutenant, id=Alber
 #. [side]: type=General, id=Lanbec'h
+#. [side]: type=Lieutenant, id=Alber
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:82
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:94
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:34
@@ -684,7 +684,9 @@ msgid "Move Kapou’e to the end of the mountains"
 msgstr "Di chuyển Kapou’e đến cuối vùng núi"
 
 #. [objectives]
+#. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:33
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:425
 msgid "Defeat the enemy leader"
 msgstr "Đánh bại chỉ huy của kẻ thù"
 
@@ -1044,12 +1046,12 @@ msgstr ""
 msgid "Etheliel"
 msgstr "Etheliel"
 
-#. [side]: type=Elvish Shyde, id=Lucile
-#. [side]: type=Elvish Captain, id=Raceme
 #. [side]: type=Elvish Marshal, id=Etheliel
 #. [side]: type=Elvish Marshal, id=Hida'tul
 #. [side]: type=Elvish Marshal, id=Ammon
 #. [side]: type=Elvish Marshal, id=Sammual
+#. [side]: type=Elvish Shyde, id=Lucile
+#. [side]: type=Elvish Captain, id=Raceme
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:68
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:100
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:115
@@ -1081,19 +1083,19 @@ msgstr "Sammual"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:186
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1149
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1147
 msgid "Pirk"
 msgstr "Pirk"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:188
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1150
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1148
 msgid "Gork"
 msgstr "Gork"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:190
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1151
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1149
 msgid "Vraurk"
 msgstr "Vraurk"
 
@@ -1799,18 +1801,18 @@ msgstr "Đến được ốc đảo"
 msgid "Ar-Dant"
 msgstr "Ar-Dant"
 
-#. [side]: type=Elvish Champion, id=Thelarion
-#. [side]: type=Dwarvish Steelclad, id=Darstang
-#. [side]: type=General, id=Arthain
-#. [side]: type=Lieutenant, id=Hanak
-#. [side]: type=Bandit, id=Sagmar
 #. [side]: type=General, id=Telthys
+#. [side]: type=Elvish Champion, id=Thelarion
 #. [side]: type=General, id=Fredor
 #. [side]: type=General, id=Georan
-#. [side]: type=Grand Marshal, id=Earl Lanbec'h
-#. [side]: type=Assassin, type=Rogue, id=Ar-Dant
-#. [side]
+#. [side]: type=General, id=Arthain
+#. [side]: type=Lieutenant, id=Hanak
+#. [side]: type=Dwarvish Steelclad, id=Darstang
 #. [side]: type=General, id=Earl Lanbec'h
+#. [side]
+#. [side]: type=Bandit, id=Sagmar
+#. [side]: type=Assassin, type=Rogue, id=Ar-Dant
+#. [side]: type=Grand Marshal, id=Earl Lanbec'h
 #. [side]: type=Orcish Warlord, id=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:88
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:98
@@ -2052,11 +2054,6 @@ msgid ""
 msgstr ""
 "Đúng vậy, tôi có thể thấy điều đó. Hừm, tôi đoán chúng ta phải dọn sạch đám "
 "tiện dân này khỏi đây."
-
-#. [objective]: condition=win
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:425
-msgid "Defeat Ar-Dant"
-msgstr "Đánh bại Ar-Dant"
 
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:455
@@ -2369,8 +2366,8 @@ msgstr "Sống sót trước hành động đe dọa của Shan Taum trong 20 l�
 msgid "Defeat Shan Taum"
 msgstr "Đánh bại Shan Taum"
 
-#. [side]: type=Orcish Warlord, id=Shan Taum
 #. [unit]: type=Orcish Warlord, id=Shan Taum
+#. [side]: type=Orcish Warlord, id=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:60
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:143
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:126
@@ -2842,10 +2839,11 @@ msgid "It won’t be said that Elves were braver than us, everyone attack!"
 msgstr ""
 "Sẽ không ai nói rằng thần tiên dũng cảm hơn chúng ta, mọi người, tấn công!"
 
+#. [side]: type=General, id=Earl Lanbec'h
 #. [unit]: type=General, id=Earl Lanbec'h
 #. [side]: type=Grand Marshal, id=Earl Lanbec'h
-#. [side]: type=General, id=Earl Lanbec'h
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:658
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:688
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:143
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:88
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:82
@@ -2862,13 +2860,21 @@ msgstr "Thanh toán chúng! Giết chúng đến kẻ cuối cùng!"
 msgid "It is too late, we are defeated."
 msgstr "Quá muộn rồi, chúng ta đã bị đánh bại."
 
+#. [message]: speaker=Earl Lanbec'h
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:698
+msgid ""
+"So, the elves and dwarves failed to take the fortress and the beasts were "
+"able to muster a defense. No matter. Once the vanguard of my army arrives, I "
+"will storm their pitiful fortress myself."
+msgstr ""
+
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:724
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:738
 msgid "The green earth will curse you for this..."
 msgstr "Đất xanh sẽ nguyền rủa ngươi vì việc này..."
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:736
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:750
 msgid "Curse you, foul orc!"
 msgstr "Nguyền rủa ngươi, đồ người thú bẩn thỉu!"
 
@@ -2884,8 +2890,12 @@ msgstr "Bảo vệ thành công Prestim trong bốn ngày"
 
 #. [objective]: condition=lose
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:25
+#, fuzzy
+#| msgid ""
+#| "Enemies control any villages on the north side of the river when turns "
+#| "run out"
 msgid ""
-"Enemies control any villages on the north side of the river when turns run "
+"You don't control all villages on the north side of the river when turns run "
 "out"
 msgstr "Kẻ thù kiểm soát bất kỳ ngôi làng nào ở bờ sông phía bắc khi hết lượt"
 
@@ -2974,49 +2984,49 @@ msgid "Great."
 msgstr "Tuyệt."
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:380
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:378
 msgid "Look, the humans are boarding a ship!"
 msgstr "Nhìn kìa, bọn con người đang lên tàu!"
 
 #. [message]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:901
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:899
 msgid "Charge!"
 msgstr "Tấn công!"
 
 #. [message]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:910
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:908
 msgid "Get them!"
 msgstr "Thanh toán chúng!"
 
 #. [unit]: type=Merman Warrior, id=Plouf
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1043
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1041
 msgid "Plouf"
 msgstr "Plouf"
 
 #. [message]: speaker=Plouf
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1054
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1052
 msgid "We arrive to honor our alliance, Earl Lanbec’h."
 msgstr "Chúng tôi đến để giữ đúng thỏa thuận với liên minh, bá tước Lanbec’h."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1059
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1057
 msgid "Curses! They have fish-men on their side."
 msgstr "Đáng nguyền rủa thật! Chúng có người cá hỗ trợ."
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1142
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1140
 msgid ""
 "The Great Horde is almost here! Drive them out of our villages <b>now</b>!"
 msgstr ""
 "Đại Binh đoàn sắp đến rồi! Đuổi chúng khỏi làng của chúng ta <b>ngay</b>!"
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1179
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1177
 msgid "Here we are!"
 msgstr "Chúng tôi đã đến!"
 
 #. [message]: role=greathordewarlord1
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1184
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1182
 msgid ""
 "What’s this? This weakling has let humans enter Prestim? I will lead the "
 "horde and push them to the river!"
@@ -3025,7 +3035,7 @@ msgstr ""
 "đoàn và đẩy chúng xuống sông!"
 
 #. [message]: role=greathordewarlord2
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1190
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1188
 msgid ""
 "Bah! I’m the only one strong enough to drive out the humans! The Great Horde "
 "follows me!"
@@ -3034,7 +3044,7 @@ msgstr ""
 "theo ta!"
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1196
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1194
 msgid ""
 "Look at that, the stupid orcs are starting to fight amongst themselves! "
 "Now’s our chance, everyone attack!"
@@ -3043,25 +3053,25 @@ msgstr ""
 "đây rồi, mọi người, tấn công!"
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1207
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1205
 msgid "Here we are! Hold on Prestim, we arrive to push them to the river!"
 msgstr ""
 "Chúng tôi đã đến! Giữ vững Prestim, chúng tôi đến để đẩy chúng xuống sông!"
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1212
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1210
 msgid "They are too numerous now, RETREAT!"
 msgstr "Chúng quá đông, RÚT LUI!"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1234
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1232
 msgid ""
 "The Great Horde at last! I was beginning to think they would never come."
 msgstr ""
 "Cuối cùng Đại Binh đoàn cũng đến! Ta đã bắt đầu nghĩ họ sẽ chẳng bao giờ đến."
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1239
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1237
 msgid ""
 "Your defense of Prestim was heroic, facing such opposition surely undermined "
 "the morale of the humans. Now they are retreating to their fortresses and "
@@ -3072,7 +3082,7 @@ msgstr ""
 "lui về pháo đài và sẽ không dám mạo hiểm ra ngoài sớm đâu."
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1244
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1242
 msgid ""
 "It is now time to show them who we are and to lead the Great Horde in "
 "pursuit. We will not rest until we destroy Earl Lanbec’h. Smite, stab, slay!"
@@ -3789,13 +3799,13 @@ msgstr "Di chuyển Kapou’e đến biển chỉ đường phía tây nam"
 msgid "Braga"
 msgstr "Braga"
 
+#. [side]: type=Orcish Warlord, id=Orga
+#. [side]: type=Orcish Warrior, id=Knorgh
+#. [side]: type=Orcish Warrior, id=Nofhug
 #. [side]: type=Orcish Warlord, id=Braga
 #. [side]: type=Orcish Warlord, id=Meato
 #. [side]: type=Orcish Warlord, id=Ragvan
 #. [side]: type=Orcish Warlord, id=Kergai
-#. [side]: type=Orcish Warlord, id=Orga
-#. [side]: type=Orcish Warrior, id=Knorgh
-#. [side]: type=Orcish Warrior, id=Nofhug
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:94
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:114
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:134
@@ -4304,8 +4314,8 @@ msgstr "Chúng tôi đến rồi, thưa chủ tướng."
 msgid "Ahhh, perfect, more reinforcements."
 msgstr "À, thật hoàn hảo, lại thêm quân tiếp viện."
 
-#. [unit]: type=General, id=Howgarth III
 #. [side]: type=General, id=Howgarth III
+#. [unit]: type=General, id=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:390
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:154
 msgid "Howgarth III"
@@ -4908,6 +4918,9 @@ msgstr "Flar’Tar"
 #: data/campaigns/Son_Of_The_Black_Eye/utils/utils.cfg:104
 msgid "The Great Horde: upkeep cost of every unit decreased by one."
 msgstr "Đại Binh đoàn: chi phí bảo trì của mọi đơn vị giảm đi một."
+
+#~ msgid "Defeat Ar-Dant"
+#~ msgstr "Đánh bại Ar-Dant"
 
 #~ msgid "Move Kapou’e to the end of the mountains or"
 #~ msgstr "Di chuyển Kapou’e đến cuối vùng núi hoặc"

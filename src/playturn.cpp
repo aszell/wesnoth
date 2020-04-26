@@ -156,7 +156,8 @@ turn_info::PROCESS_DATA_RESULT turn_info::process_network_data(const config& cfg
 		game_display::get_singleton()->get_chat_manager().remove_observer(observer_quit["name"]);
 	}
 	else if (cfg.child("leave_game")) {
-		throw ingame_wesnothd_error("");
+		const bool has_reason = cfg.child("leave_game").has_attribute("reason");
+		throw leavegame_wesnothd_error(has_reason ? cfg.child("leave_game")["reason"].str() : "");
 	}
 	else if (const config &turn = cfg.child("turn"))
 	{
@@ -195,7 +196,7 @@ turn_info::PROCESS_DATA_RESULT turn_info::process_network_data(const config& cfg
 		auto disp_set_team = [](int side_index) {
 			const bool side_changed = static_cast<int>(display::get_singleton()->viewing_team()) != side_index;
 			display::get_singleton()->set_team(side_index);
-	
+
 			if(side_changed) {
 				display::get_singleton()->redraw_everything();
 				display::get_singleton()->recalculate_minimap();

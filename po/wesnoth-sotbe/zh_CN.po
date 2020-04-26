@@ -1,15 +1,15 @@
 # The Battle for Wesnoth - Simplified Chinese Translations
-# Copyright (C) 2005-2018 Wesnoth development team
+# Copyright (C) 2005-2019 Wesnoth development team
 # This file is distributed under the same license as the Battle for Wesnoth package.
 # IkathrioLionheart <axalaraflameheart@163.com>, 2012.
-# CloudiDust <cloudidust@gmail.com>, 2017.
-#
+# CloudiDust <cloudidust@gmail.com>, 2017, 2019.
+# termanary, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
-"PO-Revision-Date: 2018-07-08 21:23+0800\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
+"PO-Revision-Date: 2019-09-23 22:45+0800\n"
 "Last-Translator: CloudiDust <cloudidust@gmail.com>\n"
 "Language-Team: Wesnoth Simplified Chinese Team\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. [campaign]: id=Son_of_the_Black-Eye
 #: data/campaigns/Son_Of_The_Black_Eye/_main.cfg:9
@@ -136,9 +136,9 @@ msgstr "卡破尔死亡"
 
 #. [side]: id=Kapou'e, type=Orcish Leader
 #. [side]
+#. [side]: type=Orcish Slayer, id=Rugh
 #. [side]: id=Grüü, type=Great Troll
 #. [side]: type=Orcish Leader, id=Kapou'e
-#. [side]: type=Orcish Slayer, id=Rugh
 #. [side]: type=General, id=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:56
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:64
@@ -178,8 +178,8 @@ msgstr "阿尔伯"
 #. [side]: type=General, id=Slowhand
 #. [side]
 #. [side]: type=General, id=Harman
-#. [side]: type=Lieutenant, id=Alber
 #. [side]: type=General, id=Lanbec'h
+#. [side]: type=Lieutenant, id=Alber
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/01_End_of_Peace.cfg:82
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:94
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:34
@@ -430,36 +430,26 @@ msgstr "打败兰贝契伯爵"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:31
-#, fuzzy
-#| msgid "Resist until your people are ready to go (Turn 12)"
 msgid "Resist until your people are ready to go (turn 12)"
-msgstr "抵抗到你的人做好撤离准备"
+msgstr "坚持抵抗，直到你的人民做好出发准备（第12回合）"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:34
-#, fuzzy
-#| msgid "Resist until your people are ready to go (Turn 13)"
 msgid "Resist until your people are ready to go (turn 13)"
-msgstr "抵抗到你的人做好撤离准备"
+msgstr "坚持抵抗，直到你的人民做好出发准备（第13回合）"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:37
-#, fuzzy
-#| msgid "Resist until your people are ready to go (Turn 14)"
 msgid "Resist until your people are ready to go (turn 14)"
-msgstr "抵抗到你的人做好撤离准备"
+msgstr "坚持抵抗，直到你的人民做好出发准备（第14回合）"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:45
-#, fuzzy
-#| msgid "Then move Kapou’e to the signpost in the Northeast"
 msgid "Then move Kapou’e to the signpost in the northeast"
 msgstr "之后移动卡破尔至东北方路标处"
 
 #. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:52
-#, fuzzy
-#| msgid "Move Kapou’e to the signpost in the Northeast"
 msgid "Move Kapou’e to the signpost in the northeast"
 msgstr "移动卡破尔至东北方路标处"
 
@@ -543,8 +533,8 @@ msgid ""
 "Gór in the lands of the free tribes. We shall ask them for support. With "
 "their help, perhaps we can unite the orcish tribes and crush these humans."
 msgstr ""
-"我父亲经常提到评议会的萨满，他们住在灞拉·格，自由部落的土地上。我们应该求助元"
-"老会的支援。在他们的帮助下，或许我们能再次联合兽人部族来消灭这些人类。"
+"我父亲经常提到评议会的萨满，他们住在霸拉戈·高，自由部落的土地上。我们应该求助"
+"元老会的支援。在他们的帮助下，或许我们能再次联合兽人部族来消灭这些人类。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/02_The_Human_Army.cfg:208
@@ -608,7 +598,9 @@ msgid "Move Kapou’e to the end of the mountains"
 msgstr "移动卡破尔至山脉尽头"
 
 #. [objectives]
+#. [objective]: condition=win
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:33
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:425
 msgid "Defeat the enemy leader"
 msgstr "击败敌方首领"
 
@@ -836,7 +828,7 @@ msgid ""
 "take the army to Barag Gór. Catch up when you’re done."
 msgstr ""
 "早先警告过你们了，矮人。骑兵们，把他们抢个精光。谁不给钱就绑起来，搜刮完以后"
-"走人。让他们知道留活口算是我发慈悲了。我领队去灞拉·格，你们抢完以后跟上。"
+"走人。让他们知道留活口算是我发慈悲了。我领队去霸拉戈·高，你们抢完以后跟上。"
 
 #. [message]: role=doggie
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:391
@@ -851,7 +843,7 @@ msgid ""
 "Barag Gór in the distance."
 msgstr ""
 "成功了！我们通过了海格山区！看那些绿色的山岭！自由部落的已经离这儿不远了。我"
-"可以看见远处的灞拉·格的城墙。"
+"可以看见远处的霸拉戈·高的城墙。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/03_Toward_Mountains_of_Haag.cfg:436
@@ -930,19 +922,19 @@ msgstr "萨满祭司被杀"
 msgid ""
 "Except for the shamans, the Barag Gór defenders will not follow you into the "
 "next scenario"
-msgstr "除了萨满，其余灞拉·格的战士不会跟随你参与下一关卡"
+msgstr "除了萨满，其余霸拉戈·高的战士不会跟随你参与下一关卡"
 
 #. [side]: type=Elvish Marshal, id=Etheliel
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:65
 msgid "Etheliel"
 msgstr "伊希利尔"
 
-#. [side]: type=Elvish Shyde, id=Lucile
-#. [side]: type=Elvish Captain, id=Raceme
 #. [side]: type=Elvish Marshal, id=Etheliel
 #. [side]: type=Elvish Marshal, id=Hida'tul
 #. [side]: type=Elvish Marshal, id=Ammon
 #. [side]: type=Elvish Marshal, id=Sammual
+#. [side]: type=Elvish Shyde, id=Lucile
+#. [side]: type=Elvish Captain, id=Raceme
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:68
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:100
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:115
@@ -974,19 +966,19 @@ msgstr "撒马耳"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:186
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1149
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1147
 msgid "Pirk"
 msgstr "皮尔克"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:188
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1150
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1148
 msgid "Gork"
 msgstr "古尔克"
 
 #. [event]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:190
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1151
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1149
 msgid "Vraurk"
 msgstr "瓦鲁克"
 
@@ -995,7 +987,7 @@ msgstr "瓦鲁克"
 msgid ""
 "When the party finally reached Barag Gór, they were met with a most "
 "startling sight."
-msgstr "当军队终于抵达灞拉·格以后，他们看到了令人吃惊的一幕。"
+msgstr "当军队终于抵达霸拉戈·高以后，他们看到了令人吃惊的一幕。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:245
@@ -1004,8 +996,8 @@ msgid ""
 "always been jealous of our power, but what reason do they have to attack the "
 "city?"
 msgstr ""
-"活见鬼……！精灵正在围攻灞拉·格！虽然那些树上的软蛋一直嫉妒我们的力量，但他们为"
-"什么要来攻击我们呢？"
+"活见鬼……！精灵正在围攻霸拉戈·高！虽然那些树上的软蛋一直嫉妒我们的力量，但他们"
+"为什么要来攻击我们呢？"
 
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:251
@@ -1173,8 +1165,8 @@ msgid ""
 "Unfortunately, I was captured. But now I am free and the elves shall feel my "
 "wrath!"
 msgstr ""
-"灞拉·格长老会派我暗杀精灵首领。可是我人品太差，被抓个现行。现在我自由了，我要"
-"让精灵感受我的怒火！"
+"霸拉戈·高长老会派我暗杀精灵首领。可是我人品太差，被抓个现行。现在我自由了，我"
+"要让精灵感受我的怒火！"
 
 #. [message]: speaker=Pirk
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:506
@@ -1253,7 +1245,7 @@ msgstr "你是怎么被抓住的？"
 msgid ""
 "The Barag Gór council sent me to assassinate the elvish leaders. "
 "Unfortunately, I was captured."
-msgstr "灞拉·格长老会派我暗杀精灵首领。可惜我人品太负，被抓了个现行。"
+msgstr "霸拉戈·高长老会派我暗杀精灵首领。可惜我人品太差，被抓了个现行。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/04_The_Siege_of_Barag_Gor.cfg:602
@@ -1310,7 +1302,7 @@ msgid ""
 "escort the shamans to the Harbor of Tirigaz where the rest of the council "
 "was residing."
 msgstr ""
-"明显的，人类试图通过绑架和杀害萨满们阻止大部落集结，萨满要求卡破尔护送他们前"
+"很明显，人类试图通过绑架和杀害萨满们阻止大部落集结，萨满要求卡破尔护送他们前"
 "往其它长老会成员居住的提里嘎兹港。"
 
 #. [part]
@@ -1319,7 +1311,7 @@ msgid ""
 "Leaving most of his people at Barag Gór, Kapou’e, accompanied by the shamans "
 "and his warriors, set off to Tirigaz."
 msgstr ""
-"把大部分人留在了灞拉·格后，卡破尔和他的战士以及萨满们出发前往提里嘎兹。"
+"把大部分人留在了霸拉戈·高后，卡破尔和他的战士以及萨满们出发前往提里嘎兹。"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/05_To_the_Harbor_of_Tirigaz.cfg:186
@@ -1472,7 +1464,7 @@ msgid ""
 "protecting you."
 msgstr ""
 "听着，如果你们要去见其他评议会成员，我们一定要击退这次进攻。你们萨满藏在这森"
-"林里直到我们打败他们。如果我们在战斗中不分神保护你们，一切都会尽快结束。"
+"林里直到我们打败他们。如果我们在战斗中不用分神保护你们，一切都会尽快结束。"
 
 #. [message]: speaker=Gork
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/06_Black_Flag.cfg:186
@@ -1625,18 +1617,18 @@ msgstr "到达东南方的绿洲"
 msgid "Ar-Dant"
 msgstr "亚单"
 
-#. [side]: type=Elvish Champion, id=Thelarion
-#. [side]: type=Dwarvish Steelclad, id=Darstang
-#. [side]: type=General, id=Arthain
-#. [side]: type=Lieutenant, id=Hanak
-#. [side]: type=Bandit, id=Sagmar
 #. [side]: type=General, id=Telthys
+#. [side]: type=Elvish Champion, id=Thelarion
 #. [side]: type=General, id=Fredor
 #. [side]: type=General, id=Georan
-#. [side]: type=Grand Marshal, id=Earl Lanbec'h
-#. [side]: type=Assassin, type=Rogue, id=Ar-Dant
-#. [side]
+#. [side]: type=General, id=Arthain
+#. [side]: type=Lieutenant, id=Hanak
+#. [side]: type=Dwarvish Steelclad, id=Darstang
 #. [side]: type=General, id=Earl Lanbec'h
+#. [side]
+#. [side]: type=Bandit, id=Sagmar
+#. [side]: type=Assassin, type=Rogue, id=Ar-Dant
+#. [side]: type=Grand Marshal, id=Earl Lanbec'h
 #. [side]: type=Orcish Warlord, id=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:88
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:98
@@ -1802,7 +1794,7 @@ msgstr "我不知道你该不该吃那玩意儿，咕噜，但你看起来气色
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:331
 msgid "Ugh... I feel sick."
-msgstr "呃……我觉得我病了。"
+msgstr "呃……我觉得有点难受。"
 
 #. [message]: speaker=Gork
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:336
@@ -1857,11 +1849,6 @@ msgid ""
 "Yeah, I can see that. Well, I guess we have to clean these rabble out of "
 "here."
 msgstr "是啊，我都看着呢。那我们先把那帮的乌合之众清理掉吧。"
-
-#. [objective]: condition=win
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:425
-msgid "Defeat Ar-Dant"
-msgstr "打败亚单"
 
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:455
@@ -1962,7 +1949,7 @@ msgid ""
 "we meet any, we’ll cut them to pieces."
 msgstr ""
 "精灵跑到这么远的兽人领土里搞什么？不论如何，我们要休整一下。我们现在有足够的"
-"武装来对付这一小撮精灵偷猎者。如果我们遇到他们，把他们用砍成渣渣。"
+"武装来对付这一小撮精灵偷猎者。如果我们遇到他们，就把他们砍成渣渣。"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/08_Silent_Forest.cfg:200
@@ -2143,8 +2130,8 @@ msgstr "抵御闪·陶姆攻击20回合"
 msgid "Defeat Shan Taum"
 msgstr "打败闪·陶姆"
 
-#. [side]: type=Orcish Warlord, id=Shan Taum
 #. [unit]: type=Orcish Warlord, id=Shan Taum
+#. [side]: type=Orcish Warlord, id=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:60
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:143
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:126
@@ -2160,7 +2147,7 @@ msgid ""
 "Shan Taum the Smug."
 msgstr ""
 "清理了寂静森林的精灵后，卡破尔和队伍行将到达旅途的终点。几天后他们终于到达了"
-"哀悼山峦的都市拉姆瑞格，统治者正是自命不凡的闪·陶姆。"
+"哀悼山峦的都市玛里戈，统治者正是自命不凡的闪·陶姆。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:105
@@ -2186,7 +2173,7 @@ msgstr ""
 #. [message]: speaker=Pirk
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:120
 msgid "I doubt he would welcome the son of the Black-Eye."
-msgstr "我怀疑他是否欢迎黑眼之子。"
+msgstr "我不知道他是否欢迎黑眼之子。"
 
 #. [message]: speaker=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:124
@@ -2246,7 +2233,7 @@ msgid ""
 "What is this? Are you mad?! Humans are to besiege our fortress at Prestim "
 "and you are fighting each other?!"
 msgstr ""
-"怎么搞的？你们俩是傻×吗？！人类在围攻我们普莱斯庭的要塞，而你们却在自相残"
+"怎么搞的？你们俩是傻×吗？！人类在围攻我们普雷斯提姆的要塞，而你们却在自相残"
 "杀？！"
 
 #. [message]: speaker=Kapou'e
@@ -2300,7 +2287,7 @@ msgstr "谢谢。"
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:193
 msgid "Did you hear? There is a battle waiting for us at Prestim!"
-msgstr "你听说了吗？在普莱斯庭有一场战争在等着我们！"
+msgstr "你听说了吗？在普雷斯提姆有一场战争在等着我们！"
 
 #. [message]: speaker=Echarp
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:197
@@ -2309,8 +2296,8 @@ msgid ""
 "of the river and your people won’t be safe. You are the only one that can "
 "help us defend Prestim!"
 msgstr ""
-"卡破尔，如果普莱斯庭陷落了，人类就会在河这边建立一个强大的据点，你的人民就再"
-"也不会安全了。你是唯一能够帮助我们坚守普莱斯庭的人！"
+"卡破尔，如果普雷斯提姆陷落了，人类就会在河这边建立一个强大的据点，你的人民就"
+"再也不会安全了。你是唯一能够帮助我们坚守普雷斯提姆的人！"
 
 #. [message]: speaker=Pirk
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:201
@@ -2320,9 +2307,9 @@ msgid ""
 "will decide. We may have to form the Great Horde again, and give you the "
 "leadership of it."
 msgstr ""
-"把你的人民留在这吧，卡破尔——他们暂时是安全的——你要去保卫普莱斯庭。与此同时，"
-"既然评议会已经重聚，那我们会作出决定的。我们可能必须再次组成大部落，并授予你"
-"最高领导权。"
+"把你的人民留在这吧，卡破尔——他们暂时是安全的——你要去保卫普雷斯提姆。与此同"
+"时，既然评议会已经重聚，那我们会作出决定的。我们可能必须再次组成大部落，并授"
+"予你最高领导权。"
 
 #. [message]: speaker=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/09_Shan_Taum_the_Smug.cfg:246
@@ -2384,8 +2371,8 @@ msgid ""
 "fortified bridge over the River Bork was taken this morning by a small "
 "commando of elves, we have already tried to assault it twice without success."
 msgstr ""
-"援军！不管你是谁，欢迎来到普莱斯庭！伯克河上的桥垒在这个早上被一小队精灵突击"
-"队攻占了，我们已经两次试图发动夺还袭击，但都失败了。"
+"援军！不管你是谁，欢迎来到普雷斯提姆！伯克河上的桥垒在这个早上被一小队精灵突"
+"击队攻占了，我们已经两次试图发动夺还袭击，但都失败了。"
 
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:194
@@ -2440,6 +2427,8 @@ msgstr ""
 "当大队蜥蜴人过河后，我们就派一人炸掉南边的桥，遏制他们前进。所有困在桥上的或"
 "是在河的另一边的人都无法幸免！"
 
+# 飞地，大多数人不会知道这个概念？
+# 抑或错别字？基地？
 #. [message]: speaker=Thelarion
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:226
 msgid ""
@@ -2447,8 +2436,8 @@ msgid ""
 "have reinforced Prestim. It is time to avenge the death of our fallen kin my "
 "friends — get them!"
 msgstr ""
-"嘿弟兄们看呐，就是这个部落的兽人破坏了我在寂静森林的飞地，而且还来增援普莱斯"
-"庭了。现在是为了我们逝去的朋友们复仇的时刻了——冲啊！"
+"嘿弟兄们看呐，就是这个部落的兽人破坏了我在寂静森林的基地，而且还来增援普雷斯"
+"提姆了。现在是为了我们逝去的朋友们复仇的时刻了——冲啊！"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:230
@@ -2470,7 +2459,7 @@ msgid ""
 "Hurry-hurry, friends. Lanbec’h and his kind are right on our tails, we must "
 "reach Prestim quickly."
 msgstr ""
-"加油啊加油啊，朋友们。兰贝契快要逮住我们的大尾巴了，我们得赶紧去普莱斯庭。"
+"加油啊加油啊，朋友们。兰贝契快要逮住我们的大尾巴了，我们得赶紧去普雷斯提姆。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:339
@@ -2559,24 +2548,25 @@ msgstr "咻！"
 msgid ""
 "Blast it! The saurians have had too many casualties in order for them to be "
 "of any real help to us. We won’t be able to recruit them in the future."
-msgstr "可恶！蜥蜴人死伤太多，已经帮不了我们什么了。我们日后无法征招它们。"
+msgstr "可恶！蜥蜴人死伤太多，已经帮不了我们什么了。我们日后无法征募它们。"
 
 #. [message]: speaker=Thelarion
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:635
 msgid ""
 "This isn’t working. Mobilize all our troops and send these creatures back to "
 "hell."
-msgstr "花的时间太多了。所有的军队出击，送这些混蛋下地狱！"
+msgstr "这没有效果。所有部队出击，送这些混蛋回地狱去。"
 
 #. [message]: speaker=Darstang
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:639
 msgid "It won’t be said that Elves were braver than us, everyone attack!"
 msgstr "我们岂能不如精灵勇猛，全体出击！"
 
+#. [side]: type=General, id=Earl Lanbec'h
 #. [unit]: type=General, id=Earl Lanbec'h
 #. [side]: type=Grand Marshal, id=Earl Lanbec'h
-#. [side]: type=General, id=Earl Lanbec'h
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:658
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:688
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:143
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:88
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:82
@@ -2593,13 +2583,23 @@ msgstr "找到他们了！把它们统统砍成肉酱！"
 msgid "It is too late, we are defeated."
 msgstr "太迟了，我们被打败了。"
 
+#. [message]: speaker=Earl Lanbec'h
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:698
+msgid ""
+"So, the elves and dwarves failed to take the fortress and the beasts were "
+"able to muster a defense. No matter. Once the vanguard of my army arrives, I "
+"will storm their pitiful fortress myself."
+msgstr ""
+"这么说，精灵和矮人没能攻下要塞，而野兽们成功进行了防御。没关系。一旦我军的先"
+"锋到达，我将亲自攻克他们可怜的堡垒。"
+
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:724
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:738
 msgid "The green earth will curse you for this..."
 msgstr "大地母亲诅咒你们……"
 
 #. [message]: speaker=unit
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:736
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/10_Saving_Inarix.cfg:750
 msgid "Curse you, foul orc!"
 msgstr "可恶，混蛋兽人！"
 
@@ -2615,8 +2615,12 @@ msgstr "成功防守普莱斯亭四天"
 
 #. [objective]: condition=lose
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:25
+#, fuzzy
+#| msgid ""
+#| "Enemies control any villages on the north side of the river when turns "
+#| "run out"
 msgid ""
-"Enemies control any villages on the north side of the river when turns run "
+"You don't control all villages on the north side of the river when turns run "
 "out"
 msgstr "在回合结束前，敌人控制了任何河北面的村庄"
 
@@ -2638,7 +2642,7 @@ msgstr "所以我们现在在这头，而他们在准备攻城。"
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:259
 msgid "Prestim’s walls are rock-hard, they’ll waste themselves on them."
-msgstr "普莱斯庭的城墙像坚不可摧，他们只会在这上面浪费生命。"
+msgstr "普雷斯提姆的城墙像坚不可摧，他们只会在这上面浪费生命。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:264
@@ -2649,9 +2653,9 @@ msgid ""
 "the river where the bridge previously stood so he must have a better plan "
 "than that."
 msgstr ""
-"我不确定。任何堡垒都自有它的弱点。普莱斯庭的城墙虽然坚实，但同时也又长又难于"
-"防御多方向的进攻。兰贝契伯爵也应当知道，他们不可能仅靠强渡原先桥梁伫立的浅滩"
-"攻破这座城，所以他肯定还有什么更好的计划。"
+"我不确定。任何堡垒都自有它的弱点。普雷斯提姆的城墙虽然坚实，但同时也又长又难"
+"于防御多方向的进攻。兰贝契伯爵也应当知道，他们不可能仅靠强渡原先桥梁伫立的浅"
+"滩攻破这座城，所以他肯定还有什么更好的计划。"
 
 #. [message]: role=cannonfodder
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:269
@@ -2677,8 +2681,8 @@ msgid ""
 "when the shamans arrive with the Great Horde. We can’t let the humans "
 "establish a foothold on this side of the river."
 msgstr ""
-"傻×！我们当然可以坚守四天。但是我们必须在萨满和大部落到来前牢牢控制住普莱斯"
-"庭。我们绝不能让人类在河这边建立一个落脚处。"
+"傻×！我们当然可以坚守四天。但是我们必须在萨满和大部落到来前牢牢控制住普雷斯提"
+"姆。我们绝不能让人类在河这边建立一个落脚处。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:294
@@ -2697,96 +2701,97 @@ msgid "Great."
 msgstr "好。"
 
 #. [message]: speaker=Grüü
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:380
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:378
 msgid "Look, the humans are boarding a ship!"
 msgstr "看，人类正在登船！"
 
 #. [message]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:901
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:899
 msgid "Charge!"
 msgstr "冲啊！"
 
 #. [message]
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:910
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:908
 msgid "Get them!"
 msgstr "杀了他们！"
 
 #. [unit]: type=Merman Warrior, id=Plouf
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1043
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1041
 msgid "Plouf"
 msgstr "普劳夫"
 
 #. [message]: speaker=Plouf
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1054
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1052
 msgid "We arrive to honor our alliance, Earl Lanbec’h."
 msgstr "我们来兑现我们的盟约了，兰贝契伯爵。"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1059
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1057
 msgid "Curses! They have fish-men on their side."
 msgstr "见鬼！他们那边有鱼尾巴人。"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1142
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1140
 msgid ""
 "The Great Horde is almost here! Drive them out of our villages <b>now</b>!"
 msgstr "大部落就要到达了！把他们从我们的村子里轰出去！快！！"
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1179
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1177
 msgid "Here we are!"
 msgstr "我们来了！"
 
 #. [message]: role=greathordewarlord1
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1184
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1182
 msgid ""
 "What’s this? This weakling has let humans enter Prestim? I will lead the "
 "horde and push them to the river!"
 msgstr ""
-"什么？这个废柴居然使得人类攻入普莱斯庭了？让我来领导大部落，把人类搡下水吧！"
+"什么？这个废柴居然使得人类攻入普雷斯提姆了？让我来领导大部落，把人类搡下水"
+"吧！"
 
 #. [message]: role=greathordewarlord2
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1190
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1188
 msgid ""
 "Bah! I’m the only one strong enough to drive out the humans! The Great Horde "
 "follows me!"
 msgstr "呸！只有我才够资格领导大部落打败人类！大部落，跟随我走向胜利吧！"
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1196
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1194
 msgid ""
 "Look at that, the stupid orcs are starting to fight amongst themselves! "
 "Now’s our chance, everyone attack!"
 msgstr "看啊，那帮傻×兽人开始起内讧了！现在我们的机会来了，全体出动！"
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1207
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1205
 msgid "Here we are! Hold on Prestim, we arrive to push them to the river!"
-msgstr "我们来了！守住普莱斯庭，我们来把他们推到河里去！"
+msgstr "我们来了！守住普雷斯提姆，我们来把他们推到河里去！"
 
 #. [message]: speaker=Earl Lanbec'h
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1212
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1210
 msgid "They are too numerous now, RETREAT!"
 msgstr "他们太多了。撤退！！"
 
 #. [message]: speaker=Kapou'e
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1234
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1232
 msgid ""
 "The Great Horde at last! I was beginning to think they would never come."
 msgstr "大部落终于来了！我还以为他们永远不会来呢。"
 
 #. [message]: speaker=Gork
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1239
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1237
 msgid ""
 "Your defense of Prestim was heroic, facing such opposition surely undermined "
 "the morale of the humans. Now they are retreating to their fortresses and "
 "will not venture out again anytime soon."
 msgstr ""
-"你们保卫普莱斯庭的战斗如同史诗，面对如此强大的抵抗显然使人类士气大降。现在他"
-"们撤回了自己的要塞，短期内应该不会冒险出来了。"
+"你们保卫普雷斯提姆的战斗如同史诗，面对如此强大的抵抗显然使人类士气大降。现在"
+"他们撤回了自己的要塞，短期内应该不会冒险出来了。"
 
 #. [message]: speaker=Pirk
-#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1244
+#: data/campaigns/Son_Of_The_Black_Eye/scenarios/11_Clash_of_Armies.cfg:1242
 msgid ""
 "It is now time to show them who we are and to lead the Great Horde in "
 "pursuit. We will not rest until we destroy Earl Lanbec’h. Smite, stab, slay!"
@@ -2861,7 +2866,7 @@ msgid ""
 "orcish territory."
 msgstr ""
 "大部落军队分兵两路。在萨满的建议下，卡破尔把一部分领导权交给自以为是的闪·陶姆"
-"——虽然其人有点可恶——但闪·陶姆确实是凶悍而称职的首领。他被派往比脱克——兽人西南"
+"——虽然其人有点可恶——但闪·陶姆确实是凶悍而称职的首领。他被派往毕脱克——兽人西南"
 "边陲边的城市，以切断已经从提里嘎兹登陆的人类，阻止人类继续侵略兽人领地。"
 
 #. [part]
@@ -2871,8 +2876,8 @@ msgid ""
 "north of the Mourned Hills — to organize any remaining orcish forces as well "
 "as create an arms and supply depot."
 msgstr ""
-"他派出萨满皮尔克，古尔克和瓦鲁克返回哀悼山峦北部的城市博斯坦普，组织所有残余"
-"的兽人军队，同时建立军备补给点。"
+"他派出萨满皮尔克，古尔克和瓦鲁克返回哀悼山峦北部的城市博步，组织所有残余的兽"
+"人军队，同时建立军备补给点。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/12_Giving_Some_Back.cfg:153
@@ -2881,8 +2886,8 @@ msgid ""
 "his remaining forces to Dorest, the human city due southeast of Prestim, to "
 "which Earl Lanbec’h had retreated."
 msgstr ""
-"卡破尔渴望着把这件破事一了百了，就带领着剩余的部队直奔普莱斯庭东南方的人类城"
-"市德赛，也是兰贝契伯爵撤退的地方。"
+"卡破尔渴望着把这件破事一了百了，就带领着剩余的部队直奔普雷斯提姆东南方的人类"
+"城市多雷斯特，也是兰贝契伯爵撤退的地方。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/12_Giving_Some_Back.cfg:228
@@ -2895,7 +2900,7 @@ msgstr "兰贝契，你这烂泥巴懦夫，有种的就出来跟我对♂肛！
 msgid ""
 "Sorry there, old chap. You’re deemed too insignificant for the likes of the "
 "Earl to deal with. He’s left that pleasure to me instead."
-msgstr "抱歉，老小伙子。你还不够格让伯爵亲自处理。他把这乐趣留给我了。"
+msgstr "抱歉，老小伙子。你还不够格让伯爵亲自处理。他把这美差留给我了。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/12_Giving_Some_Back.cfg:239
@@ -2932,7 +2937,7 @@ msgstr "萨格玛"
 msgid ""
 "After conquering and occupying Dorest, Kapou’e and his men set themselves to "
 "stabilizing the area and bringing it firmly under the iron-hard orcish rule."
-msgstr "攻占了德赛城后，卡破尔和部下们用兽人铁一般的纪律巩固了这块领土。"
+msgstr "攻占了多雷斯特后，卡破尔和部下们用兽人铁一般的纪律巩固了这块领土。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/13_The_Dwarvish_Stand.cfg:109
@@ -2945,7 +2950,7 @@ msgid ""
 msgstr ""
 "花了几周时间扑灭了人类的小规模叛乱，又清除人类最后的要塞后，昭示着远北之地漫"
 "漫寒冬的第一片雪花落下了。又过了几天，在第一场雪之后，一个累得半死不活的狼骑"
-"兵冲入了德赛城，带来了博斯坦普被大批矮人、歹徒和精灵包围的消息。"
+"兵冲入了多雷斯特，带来了博步被大批矮人、歹徒和精灵包围的消息。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/13_The_Dwarvish_Stand.cfg:115
@@ -2957,7 +2962,7 @@ msgid ""
 "supply depot?"
 msgstr ""
 "兽人指挥官们震惊了。如此庞大的军队怎么会如此深入兽人领地，而且全无消息？他们"
-"的首领又怎么知道要进攻兽人的集结点和军备贮存地博斯坦普？"
+"的首领又怎么知道要进攻兽人的集结点和军备贮存地博步？"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/13_The_Dwarvish_Stand.cfg:121
@@ -2967,8 +2972,8 @@ msgid ""
 "force to defend Dorest while he and the main horde of orcs sped to the aid "
 "of Borstep."
 msgstr ""
-"卡破尔嗅到了背叛的气味儿。虑及在这样的天气下人类的攻击会极大的受挫，他只留下"
-"了小部分军队防御德赛城，而他和大部落主力去支援博斯坦普。"
+"卡破尔嗅到了背叛的气息儿。虑及在这样的天气下人类的攻击会极大的受挫，他只留下"
+"了小部分军队防御多雷斯特，而他和大部落主力去支援博步。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/13_The_Dwarvish_Stand.cfg:127
@@ -2979,9 +2984,9 @@ msgid ""
 "crafts, they marched the last leg of their journey through the deepening "
 "snow of the Mourned Hills."
 msgstr ""
-"为了赶在寒冬冻结河面之前到达博斯坦普，兽人们匆匆乘船抢渡伯克河。没日没夜的航"
-"行，大部落差点没能在河面冻实前穿越寂静森林。登陆之后，他们向旅途的目的地大步"
-"进军，穿越哀悼山峦的重重积雪。"
+"为了赶在寒冬冻结河面之前到达博步，兽人们匆匆乘船抢渡伯克河。没日没夜的航行，"
+"大部落差点没能在河面冻实前穿越寂静森林。登陆之后，他们向旅途的目的地大步进"
+"军，穿越哀悼山峦的重重积雪。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/13_The_Dwarvish_Stand.cfg:133
@@ -2991,8 +2996,8 @@ msgid ""
 "smashed, houses burnt and its inhabitants driven out or slaughtered. Of the "
 "orcish shamans there was no sign."
 msgstr ""
-"他们到达城市外最近的山顶，看到了悲惨的一幕：博斯坦普一无所剩，墙毁房塌，人民"
-"奔逃，惨遭屠戮。找不到任何萨满的痕迹。"
+"他们到达城市外最近的山顶，看到了悲惨的一幕：博步一无所剩，墙毁房塌，人民奔"
+"逃，惨遭屠戮。找不到任何萨满的痕迹。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/13_The_Dwarvish_Stand.cfg:139
@@ -3044,8 +3049,8 @@ msgid ""
 "than your kind can. Take the orcish prisoners and hurry to Melmog. The "
 "dwarves shall stop this orcish menace!"
 msgstr ""
-"精灵，在这种状况下我们远比你们行军更快，战力更强。赶紧带着兽人俘虏去米尔默"
-"格。矮人们定可阻挡兽人的侵袭！"
+"精灵，在这种状况下我们远比你们行军更快，战力更强。赶紧带着兽人俘虏去梅莫戈。"
+"矮人们定可阻挡兽人的侵袭！"
 
 #. [message]: speaker=Thelarion
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/13_The_Dwarvish_Stand.cfg:260
@@ -3199,7 +3204,7 @@ msgstr ""
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:332
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:703
 msgid "Yes, Chief."
-msgstr "是，首领！"
+msgstr "是，酋长。"
 
 #. [message]: speaker=Al'Brock
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:338
@@ -3216,10 +3221,11 @@ msgstr "呃，头儿……"
 msgid "... Yes, Grüü?"
 msgstr "……啥事儿，咕噜？"
 
+# 下句带走了100金币
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:372
 msgid "Can I get some gold with me?"
-msgstr "俺能带点金子吗？"
+msgstr "俺能带点金币吗？"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:378
@@ -3273,7 +3279,7 @@ msgstr "呃对不起……那里有人类挡路，俺们扁了他们一顿，没
 msgid ""
 "Better late than never. Now it’s time to kill! Let nobody escape and "
 "everyone keep an eye out for the shamans."
-msgstr "迟到总比来不了好。现在该开杀了！一个也不许放跑，留意萨满！"
+msgstr "迟到总比来不了好。现在该开杀了！一个也不许放跑，留意萨满。"
 
 #. [message]: speaker=Flar'Tar
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:591
@@ -3303,7 +3309,7 @@ msgstr "……额，你们想知道什么？"
 #. [message]: speaker=second_unit
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:634
 msgid "You can start by telling us who told you to strike at Borstep."
-msgstr "你可以先说说是谁让你袭击博斯坦的。"
+msgstr "你可以先说说是谁让你袭击博步的。"
 
 #. [message]: speaker=Thelarion
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:639
@@ -3313,7 +3319,7 @@ msgstr "呃……我们自己谋划的。"
 #. [message]: speaker=second_unit
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:644
 msgid "Don’t make me hurt you more."
-msgstr "死到临头还嘴硬！"
+msgstr "别逼我继续打你。"
 
 #. [message]: speaker=Thelarion
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/14_Back_Home.cfg:649
@@ -3440,13 +3446,13 @@ msgstr "移动卡破尔至西南方路标处"
 msgid "Braga"
 msgstr "布拉戛"
 
+#. [side]: type=Orcish Warlord, id=Orga
+#. [side]: type=Orcish Warrior, id=Knorgh
+#. [side]: type=Orcish Warrior, id=Nofhug
 #. [side]: type=Orcish Warlord, id=Braga
 #. [side]: type=Orcish Warlord, id=Meato
 #. [side]: type=Orcish Warlord, id=Ragvan
 #. [side]: type=Orcish Warlord, id=Kergai
-#. [side]: type=Orcish Warlord, id=Orga
-#. [side]: type=Orcish Warrior, id=Knorgh
-#. [side]: type=Orcish Warrior, id=Nofhug
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:94
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:114
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:134
@@ -3508,8 +3514,8 @@ msgid ""
 msgstr ""
 "卡破尔发誓绝不会让兽族分崩离析。近来的事件让他嗅到了破坏兽人团结的变节与险"
 "谋。此外，要是那树皮虱的话可信，那么就是自命不凡的闪·陶姆主使了一切。卡破尔不"
-"知道一个兽人妄图杀戮自己的同胞是为了取得什么，但他决定向比脱克进军，亲自料理"
-"变节者。比脱克在兽人领土的边缘地带，这也是重新团结兽人的好机会——也是一直以来"
+"知道一个兽人妄图杀戮自己的同胞是为了取得什么，但他决定向毕脱克进军，亲自料理"
+"变节者。毕脱克在兽人领土的边缘地带，这也是重新团结兽人的好机会——也是一直以来"
 "的俗例。"
 
 #. [part]
@@ -3527,16 +3533,16 @@ msgid ""
 msgstr ""
 "另外，卡破尔的军队尊敬他们这位英明称职的领袖，他们向他示忠。由衷高兴的卡破尔"
 "派出分遣队到各个方向联合其它部落，必须时容许动用武力。奥伯克派往西方，沿着卡"
-"破尔将近一年前逃避人类军队走过的路。弗拉塔被派往正南，沿着海格山脉和东部的哀"
-"悼山峦，集结各个部落。卡破尔自己带兵直指西南方的比脱克。他们准备在春天到来时"
-"到德赛城会师，一同击退必定要卷土重来的人类。"
+"破尔将近一年前逃避人类军队走过的路。弗拉塔被派往正南，沿着哈戈山脉和东部的哀"
+"悼山峦，集结各个部落。卡破尔自己带兵直指西南方的毕脱克。他们准备在春天到来时"
+"到多雷斯特会师，一同击退必定要卷土重来的人类。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:190
 msgid ""
 "Having thus made his plans, Kapou’e set out for Bitok to get to the root of "
 "this treachery."
-msgstr "这样定了计划，卡破尔出发前往比脱克，寻找这叛乱的根源。"
+msgstr "这样定了计划，卡破尔出发前往毕脱克，寻找这叛乱的根源。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:215
@@ -3546,8 +3552,8 @@ msgid ""
 "opposition in your path, I want this area to be firmly under my control by "
 "the time we are through here."
 msgstr ""
-"假如我们要去比脱克，然后在春天前赶回德赛，那么一定要快了。立即撤除营地。杀光"
-"一切挡路的敌人，我要在我们通过比脱克时，那块区域完全受到我的控制。"
+"假如我们要去毕脱克，然后在春天前赶回多雷斯特，那么一定要快了。立即撤除营地。"
+"杀光一切挡路的敌人，我要在我们通过毕脱克时，那块区域完全受到我的控制。"
 
 #. [message]: speaker=Braga
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:221
@@ -3585,12 +3591,13 @@ msgstr "耶！"
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:327
 msgid "Little orcs fun to squash too! Chief doesn’t let me too often."
-msgstr "扁小兽人也好玩！头儿不常让我干这事儿。"
+msgstr "扁小兽人也好玩！头儿老是不让我干这事儿。"
 
+# 更贴切
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:332
 msgid "You can have as many as you want now, Grüü."
-msgstr "现在你想砸什么都行，咕噜。"
+msgstr "现在你想砸多少都行，咕噜。"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/15_Civil_War.cfg:352
@@ -3691,21 +3698,19 @@ msgid ""
 "Finally, after over three months, Kapou’e and his exhausted but hardened "
 "army arrived at Bitok, just before the spring thaw."
 msgstr ""
-"终于，过了三个多月，卡破尔和他精疲力竭然而深受战斗洗礼的军队到达了比脱克，恰"
+"终于，过了三个多月，卡破尔和他精疲力竭然而深受战斗洗礼的军队到达了毕脱克，恰"
 "好在融雪之前。"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:197
 msgid "Good morning, Shan Taum!"
-msgstr "早，闪·陶姆！"
+msgstr "早啊，闪·陶姆！"
 
 # What in the frozen northlands
 #. [message]: speaker=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:204
-#, fuzzy
-#| msgid "What... Kapou’e! What in the frozen northlands are you doing here?!"
 msgid "What... Kapou’e! What in the frozen Northlands are you doing here?!"
-msgstr "什么鬼……卡破尔！你没事跑大老远来这冰封的远北做什么？！"
+msgstr "什么鬼……卡破尔！冰封的北陆啊！你在这儿做啥？！"
 
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:209
@@ -3733,8 +3738,9 @@ msgid ""
 "when his people are on the edge of total extermination!"
 msgstr ""
 "来，我们看看。首先，他背叛了自己誓言效忠的君主，成为了俯首帖耳给人类舔鞋的间"
-"谍。然后策划杀害评议会大半的成员，使他直接为我们数百兽人同胞的性命负责。最棒"
-"的一条是，恰在这整个民族生死存亡的时刻，他对自己的同胞发动血腥的内战！"
+"谍。然后策划杀害评议会大半的成员，使他直接成为让成百上千兽人同胞死去的罪魁祸"
+"首。最棒的一条是，恰在这整个民族生死存亡的时刻，他对自己的同胞发动血腥的内"
+"战！"
 
 #. [message]: speaker=Shan Taum
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/16_The_Coward.cfg:226
@@ -3826,8 +3832,9 @@ msgid ""
 "Dorest."
 msgstr ""
 "如卡破尔预想的，闪·陶姆的军队一被打败，他就逃走不见了。卡破尔咬牙切齿，发誓要"
-"用这叛徒的头颅做酒杯，于是带兵向德赛城进发。"
+"用这叛徒的头颅做酒杯，于是带兵向多雷斯特进发。"
 
+# 这应该是真实的意思，之前的翻译与下文不符。
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:137
 msgid ""
@@ -3837,8 +3844,9 @@ msgid ""
 "remaining shamans of the Great Council were also present to help in whatever "
 "way they could to preserve the unity of the Horde."
 msgstr ""
-"在那里他会师了已经提前到达了的将军奥伯克和弗拉塔，分别带着数百嗜血的兽人。受"
-"卡破尔压迫的各部落武士们也陆续赶来了。剩余的萨满也来维护大部落的团结。"
+"在那里他会师了已经提前到达了的将军奥伯克和弗拉塔，分别带着数百嗜血的兽人。之"
+"前背叛了卡破尔后被教训了一顿后听话了的各部落武士们也陆续赶来了。剩余的萨满也"
+"来维护大部落的团结。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:143
@@ -3851,8 +3859,8 @@ msgid ""
 "almost frightening."
 msgstr ""
 "他们的出现可以说是多此一举。仅仅几日后卡破尔就惊讶的发现，他的人民对他怀有极"
-"大的尊敬。卡破尔的功绩广传四方──在灞拉·格援救萨满，在北方的暴雪中强行军。年轻"
-"的大兵们尤为热切的崇拜他，接近于敬畏。"
+"大的尊敬。卡破尔的功绩广传四方──在霸拉戈·高援救萨满，在北方的暴雪中强行军。年"
+"轻的大兵们尤为热切的崇拜他，接近于敬畏。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:149
@@ -3899,8 +3907,8 @@ msgstr "我们到了，伯爵阁下。"
 msgid "Ahhh, perfect, more reinforcements."
 msgstr "啊，好得很嘛，更多援军。"
 
-#. [unit]: type=General, id=Howgarth III
 #. [side]: type=General, id=Howgarth III
+#. [unit]: type=General, id=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:390
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:154
 msgid "Howgarth III"
@@ -4003,7 +4011,7 @@ msgstr ""
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:497
 msgid "Messenger, what messenger?"
-msgstr "使者？什么使者。"
+msgstr "使者？什么使者？"
 
 #. [message]: speaker=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/17_The_Human_Attack.cfg:503
@@ -4038,7 +4046,7 @@ msgid ""
 "Lanbec’h flatly refused to attend the parley."
 msgstr ""
 "卡破尔同意会见豪伽施三世。因为仍然不信任人类，他带上了咕噜以及一个最信任的士"
-"兵。兰贝契伯爵断然拒绝参加和判。"
+"兵。兰贝契伯爵断然拒绝参加和谈。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:188
@@ -4052,8 +4060,8 @@ msgid ""
 "Horde."
 msgstr ""
 "人类进攻暂时停止，双方在战场中央会面。豪伽施三世要求卡破尔按照协议归还德赛城"
-"和其它人类领地。卡破尔拒绝在人类大举进攻兽族领地时归还德赛城，除非人类解散军"
-"队，归还从兽人那里掠得的领土。只有这样，他才会归还德赛并解散大部落。"
+"和其它人类领地。卡破尔拒绝在人类大举进攻兽族领地时归还多雷斯特，除非人类解散"
+"军队，归还从兽人那里掠得的领土。只有这样，他才会归还德赛并解散大部落。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:194
@@ -4119,7 +4127,7 @@ msgid ""
 "Dorest recaptured by sunset."
 msgstr ""
 "哈哈！干得不错，闪·陶姆。这会好好给他们上一课的。进攻，士兵们！我要在日落前夺"
-"回德赛城。"
+"回多雷斯特。"
 
 #. [message]: speaker=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:509
@@ -4132,9 +4140,9 @@ msgid ""
 "enough, then we are here to protect you in case he violates the pact."
 msgstr ""
 "等一下，兰贝契伯爵。我已经和兽人达成协议了。你和你的军队是入侵者，你必须立即"
-"解散你的军队离开兽人领土。这些结束后，卡破尔就会归还德赛城并解散大部落。我曾"
-"经也和他父亲卡伦谈判过，我相信他的一腔热血是值得信赖的。假如这还不够，我们会"
-"留在这里保护你，防止他违约。"
+"解散你的军队离开兽人领土。这些结束后，卡破尔就会归还多雷斯特并解散大部落。我"
+"曾经也和他父亲卡伦谈判过，我相信他的一腔热血是值得信赖的。假如这还不够，我们"
+"会留在这里保护你，防止他违约。"
 
 #. [message]: speaker=Earl Lanbec'h
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:515
@@ -4192,7 +4200,7 @@ msgstr "可恶！那个人类逃跑了。兽人们，把卡破尔的头提给我
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:697
 msgid "Shan Taum big coward. Never want to fight."
-msgstr "闪·陶姆这炸妈小废物。永远都不战斗。"
+msgstr "闪·陶姆这炸妈小废物。永远都不参战。"
 
 #. [message]: speaker=second_unit
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:752
@@ -4208,7 +4216,7 @@ msgstr "耶！俺们终于逮住这厮啦。老大，怎么处理他？"
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:767
 msgid "Blood and steel! The traitor was mine!"
-msgstr "铁和血！这叛徒是我的！"
+msgstr "让他死！这叛徒是我的！"
 
 #. [message]: speaker=Howgarth III
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:773
@@ -4230,7 +4238,7 @@ msgstr "用长矛刺穿他的脑袋，喂给秃鹫吃干净。拿他的头颅做
 #. [message]: speaker=Kapou'e
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:799
 msgid "No! Without him the Northern Alliance will continue to fall apart."
-msgstr "不！失去了他，北方联盟将走向崩塌！"
+msgstr "不！失去了他，北方联盟将走向崩塌。"
 
 #. [message]: speaker=Grüü
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/18_Northern_Alliance.cfg:812
@@ -4251,9 +4259,9 @@ msgid ""
 "horde was dispersed he appointed three more shamans — with the consent of "
 "all — to make the Great Council complete again."
 msgstr ""
-"伯爵被杀后，豪伽施信守承诺，解散了伯爵的军队并撤出兽人领土。卡破尔也从德赛城"
-"撤并，解散了大部落。但是解散军队前他接见了另外三个萨满──也是所有幸存的萨满——"
-"来重建评议会。"
+"伯爵被杀后，豪伽施信守承诺，解散了伯爵的军队并撤出兽人领土。卡破尔也从多雷斯"
+"特撤回，解散了大部落。但是解散军队前他接见了另外三个萨满──也是所有幸存的萨满"
+"——来重建评议会。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/19_Epilogue.cfg:32
@@ -4264,7 +4272,7 @@ msgid ""
 "sovereign over all the northern tribes."
 msgstr ""
 "正如他们曾经邀请他父亲那样，豪伽施三世邀请卡破尔加入北方联盟。卡破尔拒绝了。"
-"他回到灞拉·格，在这里定都，加冕自己为北方所有部落的王。"
+"他回到霸拉戈·高，在这里定都，加冕自己为北方所有部落的王。"
 
 #. [part]
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/19_Epilogue.cfg:38
@@ -4420,7 +4428,7 @@ msgstr "弗拉塔"
 #. [note]
 #: data/campaigns/Son_Of_The_Black_Eye/utils/utils.cfg:104
 msgid "The Great Horde: upkeep cost of every unit decreased by one."
-msgstr "大部落：每个单位的维护费用减一"
+msgstr "大部落：每个单位的维护费用均减一。"
 
-#~ msgid "Move Kapou’e to the end of the mountains or"
-#~ msgstr "移动卡破尔至山脉尽头或"
+#~ msgid "Defeat Ar-Dant"
+#~ msgstr "打败亚单"

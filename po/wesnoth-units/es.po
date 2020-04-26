@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
-"PO-Revision-Date: 2018-09-17 11:34+0200\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
+"PO-Revision-Date: 2020-01-16 08:37+0100\n"
 "Last-Translator: Pepe <donpepe1963@gmail.com>\n"
 "Language-Team: wesnoth-es-trad-1_14@googlegroups.com\n"
 "Language: es\n"
@@ -54,14 +54,14 @@ msgstr "coletazo"
 
 #. [attack]: type=impact
 #: data/campaigns/Dead_Water/units/Kraken.cfg:31
-#: data/core/units/monsters/Cuttle_Fish.cfg:28
+#: data/core/units/monsters/Cuttle_Fish.cfg:29
 #: data/core/units/monsters/Tentacle.cfg:33
 msgid "tentacle"
 msgstr "tentáculo"
 
 #. [attack]: type=pierce
 #: data/campaigns/Dead_Water/units/Kraken.cfg:42
-#: data/core/units/monsters/Cuttle_Fish.cfg:39
+#: data/core/units/monsters/Cuttle_Fish.cfg:40
 msgid "ink"
 msgstr "tinta"
 
@@ -102,15 +102,15 @@ msgstr "maza"
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Druid.cfg:27
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Mystic.cfg:27
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shaman.cfg:27
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:28
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:30
 #: data/core/units/elves/Druid.cfg:28 data/core/units/elves/Enchantress.cfg:26
-#: data/core/units/elves/Shaman.cfg:28 data/core/units/elves/Sorceress.cfg:28
-#: data/core/units/humans/Mage.cfg:28 data/core/units/humans/Mage_Arch.cfg:35
+#: data/core/units/elves/Shaman.cfg:35 data/core/units/elves/Sorceress.cfg:28
+#: data/core/units/humans/Mage.cfg:28 data/core/units/humans/Mage_Arch.cfg:36
 #: data/core/units/humans/Mage_Elder.cfg:26
-#: data/core/units/humans/Mage_Great.cfg:29
-#: data/core/units/humans/Mage_Red.cfg:28
+#: data/core/units/humans/Mage_Great.cfg:30
+#: data/core/units/humans/Mage_Red.cfg:29
 #: data/core/units/humans/Mage_Silver.cfg:35
-#: data/core/units/humans/Mage_White.cfg:44
+#: data/core/units/humans/Mage_White.cfg:45
 #: data/core/units/merfolk/Diviner.cfg:45
 #: data/core/units/merfolk/Enchantress.cfg:23
 #: data/core/units/merfolk/Initiate.cfg:25
@@ -123,14 +123,14 @@ msgstr "bastón"
 
 #. [attack]: type=impact
 #: data/campaigns/Delfadors_Memoirs/units/Wose_Shaman.cfg:34
-#: data/core/units/wose/Ancient.cfg:34 data/core/units/wose/Elder.cfg:34
+#: data/core/units/wose/Ancient.cfg:34 data/core/units/wose/Elder.cfg:49
 #: data/core/units/wose/Wose.cfg:29
 msgid "crush"
 msgstr "aplastar"
 
 #. [attack]: type=impact
 #: data/campaigns/Delfadors_Memoirs/units/Wose_Shaman.cfg:43
-#: data/core/units/elves/Enchantress.cfg:36 data/core/units/elves/Shaman.cfg:37
+#: data/core/units/elves/Enchantress.cfg:36 data/core/units/elves/Shaman.cfg:44
 #: data/core/units/elves/Sorceress.cfg:38
 msgid "entangle"
 msgstr "enredar"
@@ -185,9 +185,9 @@ msgid "sling"
 msgstr "honda"
 
 #. [attack]: type=blade
-#: data/campaigns/Eastern_Invasion/units/Bone_Knight.cfg:31
+#: data/campaigns/Eastern_Invasion/units/Bone_Knight.cfg:32
 #: data/campaigns/Eastern_Invasion/units/Skeleton_Rider.cfg:41
-#: data/campaigns/Liberty/units/Bone_Knight.cfg:31
+#: data/campaigns/Liberty/units/Bone_Knight.cfg:32
 #: data/campaigns/Liberty/units/Skeleton_Rider.cfg:41
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Fighter.cfg:32
 #: data/campaigns/Under_the_Burning_Suns/units/undead/Undead_Horseman.cfg:39
@@ -197,7 +197,7 @@ msgstr "honda"
 #: data/core/units/dwarves/Fighter.cfg:41
 #: data/core/units/dwarves/Pathfinder.cfg:36
 #: data/core/units/dwarves/Pathfinder.cfg:44
-#: data/core/units/dwarves/Scout.cfg:28 data/core/units/dwarves/Scout.cfg:36
+#: data/core/units/dwarves/Scout.cfg:35 data/core/units/dwarves/Scout.cfg:43
 #: data/core/units/undead/Skele_Deathblade.cfg:53
 #: data/core/units/undead/Skele_Draug.cfg:30
 #: data/core/units/undead/Skele_Revenant.cfg:31
@@ -223,7 +223,7 @@ msgstr "espadón"
 #: data/campaigns/tutorial/units/Quintain.cfg:25
 #: data/core/units/humans/Loyalist_Iron_Mauler.cfg:26
 #: data/core/units/humans/Loyalist_Shock_Trooper.cfg:23
-#: data/core/units/humans/Mage_of_Light.cfg:47
+#: data/core/units/humans/Mage_of_Light.cfg:48
 msgid "flail"
 msgstr "mangual"
 
@@ -240,33 +240,35 @@ msgstr "mangual"
 #: data/campaigns/Heir_To_The_Throne/units/Sea_Orc.cfg:36
 #: data/campaigns/Liberty/units/Death_Squire.cfg:32
 #: data/campaigns/Sceptre_of_Fire/units/Haldric_II.cfg:26
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:27
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:34
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Fighter.cfg:23
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:28
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:35
 #: data/campaigns/Under_the_Burning_Suns/units/humans/Human_Commander.cfg:35
 #: data/campaigns/Under_the_Burning_Suns/units/nagas/Naga_Hunter.cfg:25
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Archer.cfg:29
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Flanker.cfg:31
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:30
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:32
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Outrider.cfg:30
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Pathfinder.cfg:29
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Ranger.cfg:32
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Scout.cfg:26
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:457
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:510
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:563
-#: data/campaigns/tutorial/units/Fighter.cfg:25
-#: data/campaigns/tutorial/units/Fighteress.cfg:26
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:514
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:571
+#: data/campaigns/tutorial/units/Fighter.cfg:24
+#: data/campaigns/tutorial/units/Fighteress.cfg:25
+#: data/campaigns/tutorial/units/Warrior.cfg:25
+#: data/campaigns/tutorial/units/Warrioress.cfg:26
 #: data/core/units/dunefolk/Blademaster.cfg:26
 #: data/core/units/dunefolk/Soldier.cfg:25
 #: data/core/units/dunefolk/Swordsman.cfg:25
 #: data/core/units/dunefolk/Warmaster.cfg:32
-#: data/core/units/elves/Archer.cfg:23 data/core/units/elves/Avenger.cfg:38
+#: data/core/units/elves/Archer.cfg:23 data/core/units/elves/Avenger.cfg:39
 #: data/core/units/elves/Captain.cfg:34 data/core/units/elves/Champion.cfg:23
 #: data/core/units/elves/Fighter.cfg:22 data/core/units/elves/Hero.cfg:22
 #: data/core/units/elves/High_Lord.cfg:46 data/core/units/elves/Lord.cfg:26
-#: data/core/units/elves/Marksman.cfg:29 data/core/units/elves/Marshal.cfg:33
-#: data/core/units/elves/Outrider.cfg:32 data/core/units/elves/Ranger.cfg:35
+#: data/core/units/elves/Marksman.cfg:29 data/core/units/elves/Marshal.cfg:39
+#: data/core/units/elves/Outrider.cfg:32 data/core/units/elves/Ranger.cfg:36
 #: data/core/units/elves/Rider.cfg:32 data/core/units/elves/Scout.cfg:32
 #: data/core/units/elves/Sharpshooter.cfg:24
 #: data/core/units/humans/Horse_Knight.cfg:23
@@ -277,10 +279,10 @@ msgstr "mangual"
 #: data/core/units/humans/Loyalist_Longbowman.cfg:25
 #: data/core/units/humans/Loyalist_Master_Bowman.cfg:25
 #: data/core/units/humans/Loyalist_Sergeant.cfg:27
-#: data/core/units/humans/Loyalist_Swordsman.cfg:26
+#: data/core/units/humans/Loyalist_Swordsman.cfg:27
 #: data/core/units/humans/Woodsman_Ranger.cfg:44
 #: data/core/units/nagas/Fighter.cfg:30 data/core/units/nagas/Myrmidon.cfg:29
-#: data/core/units/nagas/Warrior.cfg:27 data/core/units/orcs/Grunt.cfg:28
+#: data/core/units/nagas/Warrior.cfg:27 data/core/units/orcs/Grunt.cfg:43
 #: data/core/units/orcs/Leader.cfg:27
 msgid "sword"
 msgstr "espada"
@@ -289,21 +291,21 @@ msgstr "espada"
 #. [attack]: type=fire
 #: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:33
 #: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:34
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:36
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:37
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:43
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:44
 #: data/campaigns/Under_the_Burning_Suns/units/humans/Human_Commander.cfg:44
 #: data/campaigns/Under_the_Burning_Suns/units/nagas/Naga_Hunter.cfg:34
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Archer.cfg:39
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:40
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:42
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:466
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:519
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:572
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:523
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:580
 #: data/core/units/dunefolk/Marauder.cfg:39
 #: data/core/units/dunefolk/Raider.cfg:35 data/core/units/elves/Archer.cfg:32
-#: data/core/units/elves/Avenger.cfg:47 data/core/units/elves/Captain.cfg:43
+#: data/core/units/elves/Avenger.cfg:48 data/core/units/elves/Captain.cfg:43
 #: data/core/units/elves/Champion.cfg:32 data/core/units/elves/Fighter.cfg:31
-#: data/core/units/elves/Hero.cfg:31 data/core/units/elves/Marshal.cfg:42
-#: data/core/units/elves/Outrider.cfg:41 data/core/units/elves/Ranger.cfg:44
+#: data/core/units/elves/Hero.cfg:31 data/core/units/elves/Marshal.cfg:48
+#: data/core/units/elves/Outrider.cfg:41 data/core/units/elves/Ranger.cfg:45
 #: data/core/units/elves/Rider.cfg:41 data/core/units/elves/Scout.cfg:41
 #: data/core/units/humans/Loyalist_Bowman.cfg:31
 #: data/core/units/humans/Woodsman.cfg:37
@@ -330,7 +332,7 @@ msgstr "arco"
 #: data/core/units/gryphons/Gryphon_Master.cfg:28
 #: data/core/units/gryphons/Gryphon_Rider.cfg:27
 #: data/core/units/monsters/Skeletal_Dragon.cfg:42
-#: data/core/units/undead/Corpse_Ghoul.cfg:25
+#: data/core/units/undead/Corpse_Ghoul.cfg:32
 #: data/core/units/undead/Corpse_Necrophage.cfg:26
 #: data/core/units/undead/Spirit_Nightgaunt.cfg:33
 #: data/core/units/undead/Spirit_Shadow.cfg:62
@@ -375,8 +377,8 @@ msgstr ""
 "Aunque no son especialmente peligrosos para un soldado entrenado, ver "
 "antiguos camaradas entre sus filas es espantoso, cuanto menos."
 
-#. [attack]: type=arcane
 #. [attack]: type=impact
+#. [attack]: type=arcane
 #. [attack]: type=fire
 #. [attack]: type=cold
 #: data/campaigns/Secrets_of_the_Ancients/units/Corpse_Shynal.cfg:35
@@ -395,7 +397,7 @@ msgstr "toque"
 #. [attack]: type=impact
 #: data/campaigns/Secrets_of_the_Ancients/units/Delinquent.cfg:27
 #: data/core/units/humans/Outlaw_Footpad.cfg:24
-#: data/core/units/humans/Outlaw_Ruffian.cfg:22
+#: data/core/units/humans/Outlaw_Ruffian.cfg:29
 #: data/core/units/humans/Outlaw_Thug.cfg:23
 #: data/core/units/merfolk/Entangler.cfg:26
 #: data/core/units/merfolk/Netcaster.cfg:25 data/core/units/trolls/Troll.cfg:24
@@ -573,7 +575,7 @@ msgstr "lanza"
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Sentinel.cfg:46
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Stalwart.cfg:41
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Flagbearer.cfg:52
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Protector.cfg:56
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Protector.cfg:60
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Rider.cfg:41
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Stalwart.cfg:53
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Vanguard.cfg:51
@@ -762,17 +764,17 @@ msgstr "golpe de escudo"
 #: data/core/units/goblins/Wolf_Rider.cfg:46
 #: data/core/units/monsters/Giant_Spider.cfg:27
 #: data/core/units/monsters/Sea_Serpent.cfg:27
-#: data/core/units/monsters/Water_Serpent.cfg:41
-#: data/core/units/monsters/Wolf.cfg:47
-#: data/core/units/monsters/Wolf_Dire.cfg:38
-#: data/core/units/monsters/Wolf_Great.cfg:38
+#: data/core/units/monsters/Water_Serpent.cfg:42
+#: data/core/units/monsters/Wolf.cfg:48
+#: data/core/units/monsters/Wolf_Dire.cfg:39
+#: data/core/units/monsters/Wolf_Great.cfg:39
 msgid "fangs"
 msgstr "colmillos"
 
 #. [attack]: type=arcane
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Divine_Avatar.cfg:36
-#: data/core/units/humans/Mage_White.cfg:53
-#: data/core/units/humans/Mage_of_Light.cfg:56
+#: data/core/units/humans/Mage_White.cfg:54
+#: data/core/units/humans/Mage_of_Light.cfg:57
 #: data/core/units/merfolk/Diviner.cfg:54
 #: data/core/units/merfolk/Priestess.cfg:51
 msgid "lightbeam"
@@ -781,7 +783,7 @@ msgstr "rayo de luz"
 #. [attack]: type=pierce
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Druid.cfg:51
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shaman.cfg:51
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:52
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:54
 #: data/core/units/elves/Druid.cfg:49 data/core/units/elves/Shyde.cfg:54
 msgid "thorns"
 msgstr "espinas"
@@ -946,12 +948,21 @@ msgstr ""
 "que llevan estos dracos les protege bien de las armas que pudieran "
 "escurrirse entre sus escamas."
 
-#. [attack]: type=blade
+#. [unit_type]: id=Drake Arbiter, race=drake
+#: data/core/units/drakes/Arbiter.cfg:18
+msgid ""
+"Compared to other drakes, Drake Arbiters have a higher resistance to "
+"‘pierce’ attacks."
+msgstr ""
+"En comparación con otros dracos, los árbitros draco tienen una resistencia "
+"más alta al daño de penetración."
+
 #. [attack]: type=pierce
-#: data/core/units/drakes/Arbiter.cfg:27 data/core/units/drakes/Arbiter.cfg:36
-#: data/core/units/drakes/Warden.cfg:28 data/core/units/drakes/Warden.cfg:37
-#: data/core/units/humans/Loyalist_Halberdier.cfg:28
-#: data/core/units/humans/Loyalist_Halberdier.cfg:40
+#. [attack]: type=blade
+#: data/core/units/drakes/Arbiter.cfg:28 data/core/units/drakes/Arbiter.cfg:37
+#: data/core/units/drakes/Warden.cfg:29 data/core/units/drakes/Warden.cfg:38
+#: data/core/units/humans/Loyalist_Halberdier.cfg:29
+#: data/core/units/humans/Loyalist_Halberdier.cfg:41
 msgid "halberd"
 msgstr "alabarda"
 
@@ -1294,15 +1305,13 @@ msgid ""
 "rank, glazed silver to honor their connection to the air. As leaders of the "
 "hunt, they are often away from their homes for long periods of time. Each "
 "tries to bring as much game home as possible, competing to gain the respect "
-"of their tribe and, just possibly, time with one of the closely-guarded "
-"drake females."
+"of their tribe."
 msgstr ""
 "La ligera armadura cerámica que portan los dracos celestes es un símbolo de "
 "su rango, satinada en plata en honor a su conexión con el aire. Como líderes "
 "de la caza, suelen estar largos periodos de tiempo lejos de su hogar. Cada "
 "uno intenta llevar a casa toda la caza posible, compitiendo por ganarse el "
-"respeto de su tribu y, de ser posible, algún tiempo con una de las tan "
-"vigiladas hembras draco."
+"respeto de su tribu."
 
 #. [unit_type]: id=Drake Thrasher, race=drake
 #: data/core/units/drakes/Thrasher.cfg:4
@@ -1349,6 +1358,15 @@ msgstr ""
 "contra del orgullo que sienten por su rol en su sociedad, dista mucho de ser "
 "ceremonial. Su incómoda armadura de bronce es el trabajo más fuerte de las "
 "forjas draconianas, y sus alabardas pueden partir a un humano por la mitad."
+
+#. [unit_type]: id=Drake Warden, race=drake
+#: data/core/units/drakes/Warden.cfg:19
+msgid ""
+"Compared to other drakes, Drake Wardens have a higher resistance to ‘pierce’ "
+"attacks."
+msgstr ""
+"En comparación con otros dracos, los guardianes dracos tienen una "
+"resistencia mayor a los ataques de penetración."
 
 #. [unit_type]: id=Drake Warrior, race=drake
 #: data/core/units/drakes/Warrior.cfg:4
@@ -1594,7 +1612,7 @@ msgstr ""
 #: data/core/units/humans/Loyalist_Cavalier.cfg:37
 #: data/core/units/humans/Loyalist_General.cfg:43
 #: data/core/units/humans/Loyalist_Grand_Marshal.cfg:38
-#: data/core/units/humans/Loyalist_Royal_Guard.cfg:27
+#: data/core/units/humans/Loyalist_Royal_Guard.cfg:29
 msgid "longsword"
 msgstr "espada larga"
 
@@ -2208,6 +2226,15 @@ msgid ""
 "Elvish archers are still effective combatants, especially when fighting from "
 "the safety of their forests."
 msgstr ""
+"Como cazadores recolectores, la mayoría de los elfos aprenden a ser arqueros "
+"eficaces desde una edad temprana. Además de ser una habilidad útil, el tiro "
+"con arco también es una afición común y se celebran muchas competiciones "
+"como deporte para entretener tanto a los espectadores como a los "
+"participantes. Esta habilidad es fácilmente utilizable en tiempos de guerra, "
+"cuando muchos de los elfos elegirán los arcos como armas. Aunque no tan "
+"robustos como sus homólogos orcos o humanos, los arqueros elfos aún resultan "
+"combatientes eficaces, especialmente cuando luchan desde la seguridad de sus "
+"bosques."
 
 #. [female]
 #: data/core/units/elves/Archer.cfg:80
@@ -2243,9 +2270,40 @@ msgid ""
 "very little room for counterattack and customarily results in crushing "
 "defeat."
 msgstr ""
+"El peculiar nombre de «Vengadores» elfos proviene de una táctica empleada a "
+"menudo por estos expertos exploradores. Se permite al enemigo atravesar una "
+"simulada línea defensiva y, cuando la vanguardia es seguida por tropas más "
+"vulnerables, estos arqueros rompen su ocultación para pasar al ataque, "
+"cortando las líneas de suministros y rodeando al enemigo en un contragolpe. "
+"Esto a veces ha sido interpretado como una forma de venganza por los "
+"camaradas caídos previamente en la batalla. Aunque no con exactitud, esa "
+"viene a ser la intención.\n"
+"\n"
+"Incluso más que los otros elfos, los vengadores forman parte del reino de "
+"los bosques, pasando la mayor parte de su tiempo entre las criaturas "
+"arbóreas aprendiendo los secretos ocultos de la espesura. Como guardianes de "
+"la naturaleza, estos elfos sienten afinidad por explorar la naturaleza "
+"incluso más allá de los límites del bosque y son aficionados a transitar por "
+"terrenos agrestes como las montañas o los desiertos. Incluso en territorios "
+"tan ajenos, los vengadores aún son combatientes poderosos; en su hogar entre "
+"los árboles son casi invencibles, capaces de matar enemigos desde las "
+"sombras con pocas posibilidades de ser contraatacados. Esta habilidad es la "
+"que incita más temor entre cualquier ejército invasor, puesto que combatir "
+"unas tropas que son difíciles de rastrear o de ver entre los bosques deja "
+"pocas posibilidades para el contraataque y lo normal es terminar sufriendo "
+"una derrota aplastante."
+
+#. [unit_type]: id=Elvish Avenger, race=elf
+#: data/core/units/elves/Avenger.cfg:23
+msgid ""
+"Compared to other elves, Elvish Avengers have superior movement and defense "
+"on sand, shallow water, and mountains."
+msgstr ""
+"Comparados con otros elfos, los vengadores elfos tienen un superior "
+"movimiento y defensa sobre la arena, las aguas superficiales y las montañas."
 
 #. [female]
-#: data/core/units/elves/Avenger.cfg:95
+#: data/core/units/elves/Avenger.cfg:96
 msgid "female^Elvish Avenger"
 msgstr "Vengadora elfa"
 
@@ -2266,6 +2324,15 @@ msgid ""
 "often observed to lead through camaraderie and amicability, but still "
 "command great respect from their kin."
 msgstr ""
+"Los capitanes elfos normalmente lideran patrullas y dirigen guarniciones que "
+"montan guardia a largo y ancho de amplios bosques del territorio élfico. A "
+"diferencia de los líderes de las otras razas, se especializan más en dirigir "
+"pequeñas incursiones en vez de batallas a gran escala, y son especialmente "
+"habilidosos en las maniobras defensivas. Los capitanes lideran típicamente "
+"grupos pequeños que permanecen juntos durante largos periodos de tiempo, "
+"pudiendo tanto adiestrar como trabar amistad con sus tropas. Se les ve "
+"liderar haciendo uso de la camaradería y de la amistad, aunque siguen "
+"inspirando un gran respeto entre los suyos."
 
 #. [unit_type]: id=Elvish Champion, race=elf
 #: data/core/units/elves/Champion.cfg:4
@@ -2285,6 +2352,17 @@ msgid ""
 "their whole lives refining their prowess with the blade, these elves are "
 "exceptionally dangerous and should never be underestimated."
 msgstr ""
+"Los elfos son normalmente de naturaleza pacífica y la mayoría solo atacaría "
+"en represalia por alguna ofensa cometida en su contra. No obstante, hay "
+"algunos elfos que disfrutan de la gloria de la batalla y que buscan el "
+"combate de forma deliberada—con o sin ningún propósito—para su propio "
+"disfrute. Naturalmente, la mayoría de estos guerreros viven cortas vidas "
+"dedicadas a perfeccionar su manejo de la espada en un esfuerzo por "
+"conquistar los campos de batalla: solo los más habilidosos de entre ellos "
+"son capaces de sobrevivir a los combates continuados y de ganar el título de "
+"«Campeón». Habiendo pasado toda su vida refinando su destreza con la espada, "
+"estos elfos son excepcionalmente peligrosos y nunca deberían ser "
+"subestimados."
 
 #. [unit_type]: id=Elvish Druid, race=elf
 #: data/core/units/elves/Druid.cfg:4
@@ -2351,6 +2429,15 @@ msgid ""
 "react and counter. Most elves can learn the basics of swordplay relatively "
 "quickly and will readily pick up the blade when confronted with battle."
 msgstr ""
+"Entre los elfos, la esgrima se practica normalmente por los exploradores y "
+"miembros de las patrullas fronterizas, los cuales sirven principalmente como "
+"guardianes de los bosques y ocasionalmente forman pelotones que se infiltran "
+"en otros territorios. La esgrima élfica se reconoce por el énfasis que pone "
+"en los golpes rápidos y ágiles, aplicando menos fuerza que los guerreros "
+"orcos o humanos, aunque dando menos tiempo para reaccionar y contraatacar. "
+"La mayoría de los elfos son capaces de aprender los principios básicos de la "
+"esgrima con relativa rapidez y empuñarán la espada sin reparos al "
+"enfrentarse a la batalla."
 
 #. [unit_type]: id=Elvish Hero, race=elf
 #: data/core/units/elves/Hero.cfg:4
@@ -2376,6 +2463,22 @@ msgid ""
 "service, such a status is not one often sought after by the majority of "
 "Elvenkind."
 msgstr ""
+"A los guerreros elfos consumados se les llama a veces «Sárcan», que viene a "
+"querer decir de forma aproximada «el que se sacrifica por la defensa» o «el "
+"que se ha transfigurado por la experiencia». A menudo traducido a la lengua "
+"humana como «Héroe elfo», este nombre indica cierto grado de consideración y "
+"prestigio, pero no se usa para glorificar el puesto que estos elfos "
+"ostentan. Los héroes elfos son aquellos que han sobrevivido a numerosas "
+"guerras y que han vivido más que muchos de sus amigos que cayeron en "
+"batallas previas. Han visto todo tipo de atrocidades cometidas por todas las "
+"razas, ya sean orcos o humanos arrasando la belleza natural de los bosques, "
+"o incluso a su propia gente, otros elfos que no dudan en asesinar a gente "
+"inocente por soberbia o venganza. Muchos años de lucha hacen que estos "
+"espadachines sean habitualmente muy habilidosos, pero las penalidades y la "
+"destrucción ocasionadas por la guerra le pasan factura a sus mentes y "
+"cuerpos. Aunque los elfos comprenden la necesidad de la fuerza militar y "
+"honran a los «Sárcanet» por sus servicios como a héroes, semejante estatus "
+"no es algo deseado por la mayoría de ellos."
 
 #. [unit_type]: id=Elvish High Lord, race=elf
 #: data/core/units/elves/High_Lord.cfg:4
@@ -2447,6 +2550,31 @@ msgid ""
 "restraint is difficult for most, but those who can do so are granted the "
 "title of Lord and become the next generation of Elvish leadership."
 msgstr ""
+"La sucesión entre la nobleza élfica es un proceso muy estricto que está "
+"determinado por un número de rigurosos controles. Los futuros líderes de los "
+"elfos tienen la difícil tarea de gobernar las tres facetas de la sociedad "
+"élfica: guerreros y exploradores que defienden el bosque, pacíficos civiles "
+"que evitan a toda costa combatir, y el colectivo de sanadores y místicos que "
+"estudian el arte de la magia arcana. Para ser capaz de reconciliar las "
+"diferencias entre estas facciones y liderar con eficacia a sus gentes se "
+"requieren grandes méritos personales y un conocimiento profundo de todos los "
+"elfos, ya sean guerreros, místicos o pacifistas.\n"
+"\n"
+"Muchos elfos comienzan a entrenar en tiro con arco y esgrima desde una edad "
+"temprana, y los chicos adolescentes especialmente prometedores del linaje "
+"apropiado son seleccionados para estudiar bajo la tutela de hechiceras que "
+"han dominado las artes arcanas. Puesto que la naturaleza de la magia arcana "
+"hace que se manifieste más entre las féminas que entre los varones , solo "
+"los más dotados aprenden a dominar las inestables formas de la magia y "
+"conectan con el mundo de lo arcano. Aquellos que prueban su temple con la "
+"espada y con la hechicería pueden entonces aprender a aplicar sus recién "
+"adquiridos poderes con sabiduría, puesto que los enfrentamientos violentos "
+"son algo que no ha de tomarse nunca a la ligera, y solo por el hecho de que "
+"una batalla pueda ganarse no quiere decir que esta tenga por que ser ni tan "
+"siquiera comenzada. Conciliar una gran destreza en la batalla con la "
+"contención diplomática es difícil para la mayoría, pero aquellos que pueden "
+"hacerlo tienen garantizado el título de Señor y forman la siguiente "
+"generación de los líderes élficos."
 
 #. [unit_type]: id=Elvish Marksman, race=elf
 #: data/core/units/elves/Marksman.cfg:4
@@ -2466,6 +2594,17 @@ msgid ""
 "keep up with the eyes is no easy feat, and realizing this prodigious skill "
 "does come with the cost of weakness in close quarters."
 msgstr ""
+"Los elfos tienen una íntima conexión con el mundo de lo arcano, lo cual les "
+"impregna de forma innata con una pequeña cantidad de magia que les garantiza "
+"unos sentidos muy agudos. Esto, combinado con años de caza en lo más "
+"profundo del bosque, hace que los elfos sean muy perspicaces, un don que "
+"contribuye en gran medida a su maestría con el arco.  Un elfo practicante "
+"del tiro con arco es capaz de acertar a un objetivo del tamaño de un "
+"diminuto agujero desde una distancia de cientos de pasos y puede disparar "
+"con rapidez y precisión suficientes como para partir en dos una rama que "
+"estuviera cayendo. Por supuesto, entrenar el cuerpo para seguirle el ritmo a "
+"la vista no es tarea fácil, y adquirir esta habilidad prodigiosa supone una "
+"debilidad a distancias cortas."
 
 #. [attack]: type=pierce
 #: data/core/units/elves/Marksman.cfg:38
@@ -2500,6 +2639,19 @@ msgid ""
 "invasion force, and it is precisely because of the skillful maneuvering of "
 "the marshals that manage the protection of their people."
 msgstr ""
+"Los elfos pocas veces declaran una guerra abierta, pero no se hacen a un "
+"lado cuando llega el momento de combatir. Por supuesto, lanzarse ciegamente "
+"al combate sin ningún tipo de estrategia ni táctica es de tontos, y es por "
+"eso que los elfos disponen de un pequeño número de comandantes con "
+"conocimientos estratégicos en todo momento. Seleccionados de entre los "
+"capitanes más talentosos, los mariscales se someten a un entrenamiento "
+"intensivo en varios estilos militares, incluidos los de orcos y humanos. Son "
+"estrategas brillantes y heterodoxos que destacan rompiendo amplios frentes "
+"de batalla en escaramuzas más pequeñas, transformando una campaña normal en "
+"diferentes guerras de guerrillas. Enfrentarse a los elfos en su propio hogar "
+"es siempre una tarea desalentadora para cualquier fuerza invasora, y esto es "
+"debido precisamente a la forma tan habilidosa en la que los mariscales "
+"maniobran para dirigir la protección de su gente."
 
 #. [unit_type]: id=Elvish Outrider, race=elf
 #: data/core/units/elves/Outrider.cfg:4
@@ -2548,9 +2700,29 @@ msgid ""
 "choose to withdraw rather than risk a game of guerrilla warfare with rangers "
 "in the forests."
 msgstr ""
+"Los silenciosos vigilantes de los bosques, montaraces que son maestros del "
+"camuflaje y del reconocimiento. Muchos son exploradores solitarios, que "
+"prefieren viajar sin compañía por los senderos entre los imponentes árboles "
+"y la impoluta belleza natural de su hogar, que protegen fieramente. Aunque "
+"tienen gran habilidad tanto con la espada como con el arco, los montaraces "
+"son poco dados a enfrentarse a otros guerreros en términos de igualdad, "
+"prefiriendo sin embargo emboscar a sus enemigos desde las sombras de los "
+"árboles. Un ataque por sorpresa de un montaraz puede inutilizar incluso a "
+"una fuerza de varias veces su tamaño, y los ejércitos atacantes a menudo "
+"prefieren retirarse antes que arriesgarse a una guerra de guerrillas con "
+"montaraces en los bosques."
+
+#. [unit_type]: id=Elvish Ranger, race=elf
+#: data/core/units/elves/Ranger.cfg:20
+msgid ""
+"Compared to other elves, Elvish Rangers have superior movement and defense "
+"on sand, shallow water, and mountains."
+msgstr ""
+"Comparados con otros elfos, los montaraces elfos tienen un superior "
+"movimiento y defensa sobre la arena, las aguas superficiales y las montañas."
 
 #. [female]
-#: data/core/units/elves/Ranger.cfg:92
+#: data/core/units/elves/Ranger.cfg:93
 msgid "female^Elvish Ranger"
 msgstr "Montaraz elfa"
 
@@ -2576,6 +2748,22 @@ msgid ""
 "engagement means that Elvish riders are the oft unsung heroes of war, left "
 "supporting their brethren from the back lines."
 msgstr ""
+"La preferencia por tácticas de guerra de guerrillas en la estrategia de los "
+"elfos enfatiza en gran medida el mantenimiento de unidades con una gran "
+"movilidad capaces de luchar en un frente de batalla cambiante. Este estilo "
+"de guerra requiere comunicaciones rápidas entre pequeños grupos de "
+"escaramuza y la habilidad de transferir tropas con rapidez entre zonas de "
+"combate. Los jinetes elfos experimentados saben esto muy bien y por lo tanto "
+"dedican la mayor parte de su tiempo a mejorar su dominio de la equitación "
+"más que sus habilidades individuales para la lucha. La velocidad a la que se "
+"desplazan a través de los bosques sería suicida para cualquier otra unidad "
+"de caballería, y son lo bastante tenaces como para cabalgar durante dos o "
+"tres días seguidos sin descansar. Mientras que la inteligencia y "
+"comunicaciones que estos jinetes aportan es inestimable para las tácticas de "
+"los elfos, la falta de pericia para el combate y para el enfrentamiento en "
+"el frente de batalla significa que los jinetes elfos son a menudo héroes de "
+"guerra no valorados, mientras apoyan a sus camaradas desde posiciones "
+"secundarias."
 
 #. [unit_type]: id=Elvish Scout, race=elf
 #: data/core/units/elves/Scout.cfg:4
@@ -2597,11 +2785,24 @@ msgid ""
 "units and are adept at quickly transferring information between patrols and "
 "skirmish groups, whom they also reinforce when necessary."
 msgstr ""
+"Aunque los equinos criados por los elfos del bosque son mucho más rápidos y "
+"mucho más ágiles que los caballos normales, tienden a ser más volubles y "
+"difíciles de dominar. Se tarda muchos años en entrenar a un poni elfo, pero "
+"una vez adiestrado, están entre las monturas más leales y devotas. Estos "
+"caballos singulares permiten a los jinetes elfos montar a velocidades "
+"extremas a través de tupidos bosques sin sufrir ni un rasguño y superar a la "
+"mayoría de las otras monturas en terreno abierto. Aunque estos jinetes "
+"poseen alguna habilidad manejando espadas y arcos, su mayor efectividad "
+"viene de su habilidad para explorar y para superar en movilidad a las "
+"fuerzas enemigas más que de enfrentarse en combate directo. Los exploradores "
+"elfos se usan mayormente como mensajeros y unidades de apoyo y se "
+"especializan en transferir información con rapidez entre patrullas y grupos "
+"de escaramuza, a los que pueden reforzar en caso de necesidad."
 
 #. [unit_type]: id=Elvish Shaman, race=elf
 #: data/core/units/elves/Shaman.cfg:4
 msgid "female^Elvish Shaman"
-msgstr "Chamán elfa"
+msgstr "Chamana elfa"
 
 #. [unit_type]: id=Elvish Shaman, race=elf
 #: data/core/units/elves/Shaman.cfg:19
@@ -2642,6 +2843,17 @@ msgid ""
 "elves have honed their art to its highest form and are the undisputed "
 "masters of archery."
 msgstr ""
+"Más que un título formal, «saetero» es el calificativo dado a los tiradores "
+"elfos más dotados. Estos arqueros expertos son capaces de hazañas que, "
+"incluso para los estándares élficos, rozan lo milagroso: tienen tanta "
+"precisión como para partir en dos en mitad del aire una flecha en camino y "
+"pueden lanzar una segunda flecha antes de que la primera golpee, a la vez "
+"que generan la potencia suficiente como para dañar una armadura de acero. "
+"Una sola descarga de sus flechas es suficiente como para derribar a un "
+"caballero de su caballo e incluso una unidad de infantería pesada "
+"fuertemente acorazada no podrá sobrevivir a algunos disparos adicionales. "
+"Los saeteros de los elfos han perfeccionado su arte a su forma más alta y "
+"son los maestros indiscutibles del tiro con arco."
 
 #. [female]
 #: data/core/units/elves/Sharpshooter.cfg:81
@@ -2773,27 +2985,32 @@ msgstr ""
 msgid "Goblin Knight"
 msgstr "Lobero goblin"
 
-# Aunque caballero es un nombre a modo de burla, lobero es más corto y manejable
 #. [unit_type]: id=Goblin Knight, race=wolf
 #: data/core/units/goblins/Knight.cfg:18
 msgid ""
-"The Goblin ‘Knights’ have little in common with the men who share that "
-"title, and the title is bestowed in mockery by their enemies. The similarity "
-"is simply that they are the elite of the wolf riders, likely promoted to "
-"their position by their success in some audacious raid.\n"
+"Battle experience strengthens not only the combat prowess of both mount and "
+"rider, but also heartens the bond between them. While a human knight may "
+"ride different steeds into battle, a ‘goblin knight’ refers to goblin and "
+"wolf together as a single unit, fiercely loyal to one another almost to a "
+"fault.\n"
 "\n"
-"The wolves they are given are bred for speed and strength, making them quite "
-"dangerous in combat."
+"Among orcs, the riders are treated as a class above goblins, even when "
+"separated from their mount. Orcish grunts, while feeling themselves superior "
+"to goblins, recognize that picking a fight with the rider is also picking a "
+"fight with jaws that strike faster than a sword, and almost as hard."
 msgstr ""
-"Los «Loberos» goblin tienen poco en común con los caballeros humanos, así "
-"que son llamados loberos por sus enemigos a modo de burla. La única "
-"similitud es que son la élite de los jinetes de lobos, que probablemente han "
-"logrado ascender a esta posición gracias éxito en alguna de sus audaces "
-"incursiones.\n"
+"La experiencia en la batalla no solo fortalece la destreza en el combate "
+"tanto por parte de las monturas como de los jinetes, sino que estrecha el "
+"vínculo entre ambos. Mientras que un jinete humano puede cabalgar en "
+"diferentes monturas durante la batalla, un «lobero goblin» incluye tanto al "
+"goblin como al lobo como una sola unidad, ferozmente leales el uno con el "
+"otro hasta la muerte.\n"
 "\n"
-"Los lobos sobre los que montan han sido entrenados especialmente para "
-"aumentar su fuerza y velocidad, por lo que son enemigos bastante temibles en "
-"combate."
+"Entre los orcos, los jinetes son tratados como una clase aparte de goblins, "
+"incluso cuando están separados de sus monturas. Los soldados rasos orcos, "
+"aunque se sienten superiores a los goblins, reconocen que buscar una pelea "
+"con un lobero implica también luchar contra unas fauces que golpean más "
+"rápido que una espada, y casi con la misma fuerza."
 
 #. [unit_type]: id=Goblin Pillager, race=wolf
 #: data/core/units/goblins/Pillager.cfg:4
@@ -2879,29 +3096,28 @@ msgstr "Jinete de lobo"
 #: data/core/units/goblins/Wolf_Rider.cfg:30
 msgid ""
 "No one is quite sure how the practice of taming and riding wolves came into "
-"being, but the advantages of it for a goblin are obvious. Goblins are "
-"smaller and much weaker than their orcish kin, and are often tasked to the "
-"most dangerous and unwanted parts of a fight. Any who can manage to win "
-"themselves a mount have a much safer, and daresay, more amusing role in "
-"combat.\n"
+"being, but the advantages of it for a goblin are obvious. Goblins are much "
+"smaller and weaker than their orcish kin and are often sent to the most "
+"dangerous and unwanted parts of a fight. Any who manage to tame a mount have "
+"a much safer role in combat.\n"
 "\n"
-"Wolves, likely, could never support the weight of a man in plate, but a "
-"goblin in leather armor is a simple load to bear. Quite unlike horses, these "
-"mounts have a rather easy time traversing the mountains, though water and "
-"woods will still slow them down."
+"Though few wolves could even stand with the weight of a true orc on their "
+"back, a goblin is quite within many wolves’ ability to carry swiftly. Unlike "
+"horses, these mounts have a rather easy time traversing the mountains, "
+"though water and woods will still slow them down."
 msgstr ""
 "Nadie está seguro de cómo apareció la práctica de entrenamiento y montura de "
 "lobos, pero sus ventajas para un goblin son evidentes. Los goblins son más "
 "pequeños y mucho más débiles que sus semejantes orcos, y a menudo se les "
 "encargan las tareas más peligrosas e indeseables del combate. Cualquiera que "
-"pueda hacerse con una montura tiene asegurado un papel más seguro y, todo "
-"hay que decirlo, más divertido en el combate.\n"
+"pueda hacerse con una montura tiene asegurado un papel más seguro en "
+"combate.\n"
 "\n"
-"Los lobos, probablemente, no podrían aguantar el peso de un hombre con "
-"armadura, pero un goblin con armadura de cuero es una carga fácil de llevar. "
-"Al contrario que los caballos, estas monturas no tienen dificultades para "
-"atravesar las montañas, aunque el agua y los bosques sí consiguen "
-"ralentizarlas."
+"Aunque pocos lobos podrían mantener el peso de un auténtico orco en su lomo, "
+"un goblin encaja dentro de lo que muchos lobos pueden transportar "
+"rápidamente. Al contrario que los caballos, estas monturas no tienen "
+"dificultades para atravesar las montañas, aunque el agua y los bosques sí "
+"consiguen ralentizarlas."
 
 #. [unit_type]: id=Gryphon, race=gryphon
 #: data/core/units/gryphons/Gryphon.cfg:4
@@ -3121,14 +3337,14 @@ msgstr "Coracero"
 #: data/core/units/humans/Loyalist_Cavalier.cfg:21
 msgid ""
 "Cavaliers are masters at the use of both sword and crossbow from horseback. "
-"Their combination of striking power and mobility is fearsome; and they have "
+"Their combination of striking power and mobility is fearsome, and they have "
 "a reputation for dash and aggressiveness to match it. The daring deeds of "
 "Cavaliers are the subject of many a tale and song."
 msgstr ""
 "Los coraceros son maestros del uso de la espada y la ballesta desde la grupa "
-"de un caballo. Su combinación de fuerza de choque y movilidad es "
-"terrorífica; les precede su reputación por su ímpetu y agresividad. Las "
-"osadas hazañas de los coraceros son tema de más de una canción o cuento."
+"de un caballo. Su combinación de fuerza de choque y movilidad es terrorífica "
+"y les precede su reputación por su ímpetu y agresividad. Las osadas hazañas "
+"de los coraceros son tema de más de una canción o cuento."
 
 #. [attack]: type=pierce
 #. [attack]: type=fire
@@ -3342,6 +3558,15 @@ msgstr ""
 "de Wesnoth, sólo los piqueros veteranos que han probado con creces sus "
 "habilidades en el campo de batalla pueden disponer de una alabarda."
 
+#. [unit_type]: id=Halberdier, race=human
+#: data/core/units/humans/Loyalist_Halberdier.cfg:21
+msgid ""
+"Compared to other loyalists, Halberdiers have a higher resistance to "
+"‘pierce’ attacks."
+msgstr ""
+"Comparados con otros leales, los alabarderos tienen una resistencia mayor a "
+"los ataques de penetración."
+
 #. [unit_type]: id=Heavy Infantryman, race=human
 #: data/core/units/humans/Loyalist_Heavy_Infantryman.cfg:4
 msgid "Heavy Infantryman"
@@ -3549,8 +3774,17 @@ msgstr ""
 "los piqueros pueden además mantener alejada a gran parte de la restante "
 "infantería."
 
+#. [unit_type]: id=Pikeman, race=human
+#: data/core/units/humans/Loyalist_Pikeman.cfg:18
+msgid ""
+"Compared to other loyalists, Pikemen have a higher resistance to ‘pierce’ "
+"attacks."
+msgstr ""
+"Comparados con otros leales, los piqueros tienen una resistencia mayor a los "
+"ataques de penetración."
+
 #. [attack]: type=pierce
-#: data/core/units/humans/Loyalist_Pikeman.cfg:31
+#: data/core/units/humans/Loyalist_Pikeman.cfg:32
 msgid "pike"
 msgstr "pica"
 
@@ -3580,6 +3814,22 @@ msgstr ""
 "crucial importancia en vez de usar mercenarios. Su fiabilidad y la maestría "
 "que tienen en el combate cuerpo a cuerpo son sus mejores bazas, por las que "
 "alcanzan gran reconocimiento."
+
+#. [unit_type]: id=Royal Guard, race=human
+#: data/core/units/humans/Loyalist_Royal_Guard.cfg:19
+msgid ""
+"Compared to other loyalists, Royal Guards have a higher resistance to "
+"‘blade’ and ‘impact’ attacks."
+msgstr ""
+"Comparados con otros leales, los guardias reales tienen una resistencia "
+"mayor a los ataques de corte y de impacto."
+
+#. [unit_type]: id=Royal Guard, race=human
+#: data/core/units/humans/Loyalist_Royal_Guard.cfg:20
+msgid "Compared to other loyalists, Royal Guards have more movepoints."
+msgstr ""
+"Comparados con otros leales, los guardias reales tienen más puntos de "
+"movimiento."
 
 #. [unit_type]: id=Sergeant, race=human
 #: data/core/units/humans/Loyalist_Sergeant.cfg:4
@@ -3672,6 +3922,15 @@ msgstr ""
 "desventajas, es mucho más versátil que una lanza, y mucho más útil en las "
 "distancias cortas."
 
+#. [unit_type]: id=Swordsman, race=human
+#: data/core/units/humans/Loyalist_Swordsman.cfg:18
+msgid ""
+"Compared to other loyalists, Swordsmen have a higher resistance to ‘blade’ "
+"and ‘impact’ attacks."
+msgstr ""
+"Comparados con otros leales, los espadachines tienen una resistencia mayor a "
+"los ataques de corte y de impacto."
+
 #. [unit_type]: id=Mage, race=human
 #: data/core/units/humans/Mage.cfg:4
 msgid "Mage"
@@ -3725,7 +3984,7 @@ msgid "missile"
 msgstr "proyectil"
 
 #. [female]
-#: data/core/units/humans/Mage.cfg:85
+#: data/core/units/humans/Mage.cfg:159
 msgid "female^Mage"
 msgstr "Maga"
 
@@ -3764,15 +4023,24 @@ msgstr ""
 "archimago puede desatar todo el poder de su artes mágicas, lo que no es algo "
 "para tomarse a la ligera."
 
+#. [unit_type]: id=Arch Mage, race=human
+#: data/core/units/humans/Mage_Arch.cfg:21
+msgid ""
+"Compared to other mages, Arch Mages have a higher resistance to ‘fire’ "
+"attacks."
+msgstr ""
+"Comparados con otros magos, los archimagos tienen una resistencia mayor a "
+"los ataques de fuego."
+
 #. [attack]: type=fire
-#: data/core/units/humans/Mage_Arch.cfg:44
-#: data/core/units/humans/Mage_Great.cfg:38
-#: data/core/units/humans/Mage_Red.cfg:37
+#: data/core/units/humans/Mage_Arch.cfg:45
+#: data/core/units/humans/Mage_Great.cfg:39
+#: data/core/units/humans/Mage_Red.cfg:38
 msgid "fireball"
 msgstr "bola de fuego"
 
 #. [female]
-#: data/core/units/humans/Mage_Arch.cfg:99
+#: data/core/units/humans/Mage_Arch.cfg:100
 msgid "female^Arch Mage"
 msgstr "Archimaga"
 
@@ -3829,8 +4097,17 @@ msgstr ""
 "Aunque no son guerreros, la aplicación de su magia en combate es algo que a "
 "menudo hace que los soldados se mantengan alejados, intimidados."
 
+#. [unit_type]: id=Great Mage, race=human
+#: data/core/units/humans/Mage_Great.cfg:22
+msgid ""
+"Compared to other mages, Great Mages have a higher resistance to ‘fire’ "
+"attacks."
+msgstr ""
+"Comparados con otros magos, los grandes magos tienen una resistencia mayor a "
+"los ataques de fuego."
+
 #. [female]
-#: data/core/units/humans/Mage_Great.cfg:87
+#: data/core/units/humans/Mage_Great.cfg:88
 msgid "female^Great Mage"
 msgstr "Gran maga"
 
@@ -3868,8 +4145,17 @@ msgstr ""
 "guerreros, los «magos rojos» guardan ases bajo la manga, incluyendo las "
 "bolas de fuego que han contribuido a establecer su sobrenombre."
 
+#. [unit_type]: id=Red Mage, race=human
+#: data/core/units/humans/Mage_Red.cfg:21
+msgid ""
+"Compared to other mages, Red Mages have a higher resistance to ‘fire’ "
+"attacks."
+msgstr ""
+"Comparados con otros magos, los magos rojos tienen una resistencia mayor a "
+"los ataques de fuego."
+
 #. [female]
-#: data/core/units/humans/Mage_Red.cfg:88
+#: data/core/units/humans/Mage_Red.cfg:96
 msgid "female^Red Mage"
 msgstr "Maga roja"
 
@@ -3961,8 +4247,17 @@ msgstr ""
 "Aunque no están entrenados para el combate, son un poderoso aliado contra lo "
 "mágico o antinatural."
 
+#. [unit_type]: id=White Mage, race=human
+#: data/core/units/humans/Mage_White.cfg:21
+msgid ""
+"Compared to other mages, White Mages have a higher resistance to ‘arcane’ "
+"attacks."
+msgstr ""
+"Comparados con otros magos, los magos blancos tienen una resistencia mayor a "
+"los ataques arcanos."
+
 #. [female]
-#: data/core/units/humans/Mage_White.cfg:95
+#: data/core/units/humans/Mage_White.cfg:103
 msgid "female^White Mage"
 msgstr "Maga blanca"
 
@@ -3989,8 +4284,17 @@ msgstr ""
 "trabajan incansablemente para traer vida y orden al caótico mundo en el que "
 "viven."
 
+#. [unit_type]: id=Mage of Light, race=human
+#: data/core/units/humans/Mage_of_Light.cfg:23
+msgid ""
+"Compared to other mages, Mages of Light have a higher resistance to ‘arcane’ "
+"attacks."
+msgstr ""
+"Comparados con otros magos, los magos de la luz tienen una resistencia mayor "
+"a los ataques arcanos."
+
 #. [female]
-#: data/core/units/humans/Mage_of_Light.cfg:99
+#: data/core/units/humans/Mage_of_Light.cfg:100
 msgid "female^Mage of Light"
 msgstr "Maga de la luz"
 
@@ -4020,7 +4324,7 @@ msgstr ""
 
 #. [attack]: type=impact
 #: data/core/units/humans/Outlaw.cfg:23
-#: data/core/units/humans/Outlaw_Bandit.cfg:22
+#: data/core/units/humans/Outlaw_Bandit.cfg:29
 #: data/core/units/humans/Outlaw_Fugitive.cfg:28
 #: data/core/units/humans/Outlaw_Highwayman.cfg:24
 #: data/core/units/humans/Royal_Warrior.cfg:28
@@ -4047,12 +4351,11 @@ msgid ""
 "back. Deadly at night, assassins are less able fighting under the sun."
 msgstr ""
 "Los más grandes ladrones reciben ocasionalmente el encargo de llevarse mucho "
-"más que las pertenencias de sus víctimas. Maestros de la lucha con cuchillos "
-"y increíblemente ligeros a pie, estas amenazadores personajes emplearán "
-"cualquier medio para despachar silenciosamente a sus víctimas, ya sea con "
-"cuchillos envenenados lanzados a distancia, o con una daga clavada en la "
-"espalda. Mortales durante la noche, los asesinos son menos capaces luchando "
-"a la luz del sol."
+"más que las pertenencias de sus víctimas. Maestros de la lucha a cuchillo y "
+"de pies ligeros, estos peligrosos personajes emplearán cualquier medio para "
+"despachar silenciosamente a sus víctimas, ya sea con cuchillos envenenados "
+"lanzados a distancia, o con una daga clavada en la espalda. Mortales por la "
+"noche, los asesinos son menos capaces luchando a la luz del día."
 
 #. [attack]: type=blade
 #: data/core/units/humans/Outlaw_Assassin.cfg:39
@@ -4172,12 +4475,13 @@ msgid ""
 "reliable accuracy, and their long hours of prowling around at night leave "
 "them more comfortable fighting in the dark."
 msgstr ""
-"Los cabecillas de cualquier banda de ladrones se ganan el puesto habilidad "
-"mediante. Estos granujas han pasado por malos momentos, desapareciendo entre "
-"muchedumbres y huyendo de aquellos que les querían mal, un conjunto de "
-"habilidades de gran valía en el combate. Maestros en el uso de los cuchillos "
-"y pueden llegar a lanzarlos con una gran precisión. Las largas horas "
-"merodeando de noche hacen que se sientan cómodos luchando en la oscuridad."
+"Los cabecillas de cualquier banda de ladrones alcanzan su posición debido a "
+"sus habilidades. Estos granujas han sufrido situaciones comprometidas "
+"teniendo que escabullirse entre la muchedumbre para huir de aquellos que les "
+"querían mal, una habilidad muy útil en el campo de batalla. Maestros en el "
+"uso de cuchillos, son capaces de lanzarlos con gran precisión. Las muchas "
+"horas merodeando por las noches hacen que se sientan cómodos luchando en la "
+"oscuridad."
 
 #. [female]
 #: data/core/units/humans/Outlaw_Rogue.cfg:78
@@ -4512,9 +4816,9 @@ msgid ""
 "seen adaptation for warfare, and are valuable enough that auxiliaries who "
 "specialize in using them are deliberately brought to battle.\n"
 "\n"
-"Mermen often find themselves in a standoff with land-based enemies; the "
+"Merfolk often find themselves in a standoff with land-based enemies; the "
 "merfolk are too strong in the water, and are too weak to make any offense on "
-"land. Nets are a key bit of leverage; without nets, mermen can’t give any "
+"land. Nets are a key bit of leverage; without nets, merfolk cannot give any "
 "effective chase over land, and are at a great disadvantage in hand-to-hand "
 "combat."
 msgstr ""
@@ -4577,10 +4881,10 @@ msgstr "Cazador sirénido"
 #. [unit_type]: id=Merman Hunter, race=merman
 #: data/core/units/merfolk/Hunter.cfg:18
 msgid ""
-"The skills employed by mermen in spear-fishing are easily translated into "
+"The skills employed by merfolk in spear-fishing are easily translated into "
 "warfare, especially against those who are not at home in the water. In times "
-"of need, many mermen of that occupation will volunteer to swell the ranks of "
-"their military."
+"of need, many merfolk of that occupation will volunteer to swell the ranks "
+"of their military."
 msgstr ""
 "Las técnicas de los sirénidos para pescar con lanza pueden usarse fácilmente "
 "en batalla, especialmente contra aquellos que no se sienten cómodos dentro "
@@ -4617,10 +4921,10 @@ msgstr "Lanzador de jabalinas sirénido"
 #. [unit_type]: id=Merman Javelineer, race=merman
 #: data/core/units/merfolk/Javelineer.cfg:18
 msgid ""
-"Those mermen who master the art of the javelin can become nearly as "
+"Those merfolk who master the art of the javelin can become nearly as "
 "effective as an archer — though the heft of their weapons impedes their "
 "range, the impact of one is considerably greater. In the water, the mobility "
-"of the mermen more than makes up for this when facing foes who cannot swim."
+"of the merfolk more than makes up for this when facing foes who cannot swim."
 msgstr ""
 "Los sirénidos que dominan el arte del lanzamiento de jabalinas pueden llegar "
 "a ser casi tan efectivos como un arquero. Aunque el peso de sus armas limita "
@@ -4636,7 +4940,7 @@ msgstr "Lanzador de redes sirénido"
 #. [unit_type]: id=Merman Netcaster, race=merman
 #: data/core/units/merfolk/Netcaster.cfg:18
 msgid ""
-"Fishing, as practiced by mermen, is largely a matter of chasing schools of "
+"Fishing, as practiced by merfolk, is largely a matter of chasing schools of "
 "fish into waiting nets, where oar-like clubs are used to dispatch the prey. "
 "The improvisation of using these against soldiers proved very effective; "
 "most land-native creatures are already quite awkward when waist-deep in "
@@ -4724,20 +5028,20 @@ msgstr "Lancero sirénido"
 #. [unit_type]: id=Merman Spearman, race=merman
 #: data/core/units/merfolk/Spearman.cfg:17
 msgid ""
-"Archery is little favored by the mermen, for whom use of javelins serves a "
+"Archery is little favored by the merfolk, for whom use of javelins serves a "
 "similar function. Though thrown javelins are of little use under the water, "
 "they are extremely effective at the surface, where their weight allows them "
 "to plunge several feet below the water while retaining enough momentum to "
 "wreak damage. They are also useful in melee, even deep under the surface, "
 "which is something that certainly cannot be said of arrows."
 msgstr ""
-"El uso del arco es poco favorecido por los sirénidos, para quienes la "
+"El uso del arco no es muy popular entre los sirénidos, para quienes la "
 "jabalina desempeña una función similar. Aunque el lanzamiento de jabalinas "
 "es de poca utilidad bajo el agua, esta arma es extremadamente efectiva en la "
-"superficie, donde su peso les permite zambullirse varios pies bajo el agua y "
+"superficie, donde su peso les permite sumergirse varios pies bajo el agua y "
 "mantener suficiente energía como para hacer daño. También resultan útiles en "
-"la lucha cuerpo a cuerpo, incluso en las profundidades, algo que no puede "
-"decirse de las flechas, ciertamente."
+"la lucha cuerpo a cuerpo, incluso en las profundidades, algo que por cierto "
+"no puede decirse de las flechas."
 
 #. [unit_type]: id=Merman Triton, race=merman
 #: data/core/units/merfolk/Triton.cfg:4
@@ -4767,10 +5071,10 @@ msgstr "Guerrero sirénido"
 #. [unit_type]: id=Merman Warrior, race=merman
 #: data/core/units/merfolk/Warrior.cfg:17
 msgid ""
-"The Mermen Warriors form the core of the mermen armies. They wield their "
-"tridents with a skill and diligence impressive even compared to the soldiers "
-"of other races, but doubly so considering the difficulties of fighting "
-"underwater, as any who try to match them in their homes can attest."
+"Mermen Warriors form the core of merfolk armies. They wield their tridents "
+"with a skill and diligence impressive even compared to the soldiers of other "
+"races, but doubly so considering the difficulties of fighting underwater, as "
+"any who try to match them in their homes can attest."
 msgstr ""
 "Los guerreros sirénidos forman el núcleo de los ejércitos sirénidos. Blanden "
 "sus tridentes con una habilidad y diligencia impresionantes incluso al "
@@ -4784,7 +5088,7 @@ msgid "Cuttle Fish"
 msgstr "Sepia gigante"
 
 #. [unit_type]: id=Cuttle Fish, race=monster
-#: data/core/units/monsters/Cuttle_Fish.cfg:18
+#: data/core/units/monsters/Cuttle_Fish.cfg:19
 msgid ""
 "Cuttle Fish are gigantic creatures of the seas. They can grab their "
 "opponents with strong tentacles, or spit a poisonous black ink from a "
@@ -5075,7 +5379,7 @@ msgstr "Serpiente acuática"
 
 # Poco literal, pero bueno...
 #. [unit_type]: id=Water Serpent, race=monster
-#: data/core/units/monsters/Water_Serpent.cfg:36
+#: data/core/units/monsters/Water_Serpent.cfg:37
 msgid ""
 "Scholars differ as to the ancestry of the Water Serpent. Some hold that they "
 "are the immature young, or mature cousins, of Sea Serpents. Others hold them "
@@ -5093,12 +5397,12 @@ msgstr ""
 msgid "Wolf"
 msgstr "Lobo"
 
-#. [unit_type]: id=Wolf, race=wolf
 #. [unit_type]: id=Direwolf, race=wolf
+#. [unit_type]: id=Wolf, race=wolf
 #. [unit_type]: id=Great Wolf, race=wolf
-#: data/core/units/monsters/Wolf.cfg:33
-#: data/core/units/monsters/Wolf_Dire.cfg:24
-#: data/core/units/monsters/Wolf_Great.cfg:24
+#: data/core/units/monsters/Wolf.cfg:34
+#: data/core/units/monsters/Wolf_Dire.cfg:25
+#: data/core/units/monsters/Wolf_Great.cfg:25
 msgid ""
 "Wolves are aggressive animals that hunt in packs. Although weak "
 "individually, a wolf pack can kill even the strongest man in minutes."
@@ -6065,7 +6369,7 @@ msgstr ""
 "a aprender."
 
 #. [female]
-#: data/core/units/undead/Necro_Dark_Adept.cfg:146
+#: data/core/units/undead/Necro_Dark_Adept.cfg:160
 msgid "female^Dark Adept"
 msgstr "Adepta oscura"
 
@@ -6256,7 +6560,7 @@ msgstr ""
 #. [unit_type]: id=Chocobone, race=undead
 #: data/core/units/undead/Skele_Chocobone.cfg:4
 msgid "Chocobone"
-msgstr "Chocobo esquelético"
+msgstr "Esqueleto chocobo"
 
 #. [unit_type]: id=Chocobone, race=undead
 #: data/core/units/undead/Skele_Chocobone.cfg:31
@@ -6265,9 +6569,10 @@ msgid ""
 "civilization, the skeletal Chocobones can move faster than most cavalry "
 "units."
 msgstr ""
-"Los esqueléticos chocobos, a la grupa de los esqueletos de unas grandes aves "
-"usadas una vez por una antigua y olvidada civilización, se pueden mover más "
-"rápido que muchas otras unidades de caballería."
+"Montando a los huesos de los esqueletos de unas grandes aves similares a "
+"avestruces usadas una vez como monturas por una civilización perdida, los "
+"esqueletos chocobos se pueden mover más rápido que la mayoría de las "
+"unidades de caballería."
 
 #. [unit_type]: id=Death Knight, race=undead
 #: data/core/units/undead/Skele_Death_Knight.cfg:4
@@ -6587,6 +6892,26 @@ msgstr ""
 "\n"
 "Los woses son absolutamente pacíficos, pero poseen una gran fuerza. Sin "
 "embargo, no están acostumbrados a moverse, ni lo hacen rápido."
+
+# Aunque caballero es un nombre a modo de burla, lobero es más corto y manejable
+#~ msgid ""
+#~ "The Goblin ‘Knights’ have little in common with the men who share that "
+#~ "title, and the title is bestowed in mockery by their enemies. The "
+#~ "similarity is simply that they are the elite of the wolf riders, likely "
+#~ "promoted to their position by their success in some audacious raid.\n"
+#~ "\n"
+#~ "The wolves they are given are bred for speed and strength, making them "
+#~ "quite dangerous in combat."
+#~ msgstr ""
+#~ "Los «Loberos» goblin tienen poco en común con los caballeros humanos, así "
+#~ "que son llamados loberos por sus enemigos a modo de burla. La única "
+#~ "similitud es que son la élite de los jinetes de lobos, que probablemente "
+#~ "han logrado ascender a esta posición gracias éxito en alguna de sus "
+#~ "audaces incursiones.\n"
+#~ "\n"
+#~ "Los lobos sobre los que montan han sido entrenados especialmente para "
+#~ "aumentar su fuerza y velocidad, por lo que son enemigos bastante temibles "
+#~ "en combate."
 
 #~ msgid ""
 #~ "Elves have always had a reputation for archery, a skill that, for many "

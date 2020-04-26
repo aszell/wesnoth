@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-units\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
 "PO-Revision-Date: 2011-11-30 16:11+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian\n"
@@ -46,14 +46,14 @@ msgstr "rep"
 
 #. [attack]: type=impact
 #: data/campaigns/Dead_Water/units/Kraken.cfg:31
-#: data/core/units/monsters/Cuttle_Fish.cfg:28
+#: data/core/units/monsters/Cuttle_Fish.cfg:29
 #: data/core/units/monsters/Tentacle.cfg:33
 msgid "tentacle"
 msgstr "pipak"
 
 #. [attack]: type=pierce
 #: data/campaigns/Dead_Water/units/Kraken.cfg:42
-#: data/core/units/monsters/Cuttle_Fish.cfg:39
+#: data/core/units/monsters/Cuttle_Fish.cfg:40
 msgid "ink"
 msgstr "tinta"
 
@@ -94,15 +94,15 @@ msgstr "topuz"
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Druid.cfg:27
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Mystic.cfg:27
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shaman.cfg:27
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:28
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:30
 #: data/core/units/elves/Druid.cfg:28 data/core/units/elves/Enchantress.cfg:26
-#: data/core/units/elves/Shaman.cfg:28 data/core/units/elves/Sorceress.cfg:28
-#: data/core/units/humans/Mage.cfg:28 data/core/units/humans/Mage_Arch.cfg:35
+#: data/core/units/elves/Shaman.cfg:35 data/core/units/elves/Sorceress.cfg:28
+#: data/core/units/humans/Mage.cfg:28 data/core/units/humans/Mage_Arch.cfg:36
 #: data/core/units/humans/Mage_Elder.cfg:26
-#: data/core/units/humans/Mage_Great.cfg:29
-#: data/core/units/humans/Mage_Red.cfg:28
+#: data/core/units/humans/Mage_Great.cfg:30
+#: data/core/units/humans/Mage_Red.cfg:29
 #: data/core/units/humans/Mage_Silver.cfg:35
-#: data/core/units/humans/Mage_White.cfg:44
+#: data/core/units/humans/Mage_White.cfg:45
 #: data/core/units/merfolk/Diviner.cfg:45
 #: data/core/units/merfolk/Enchantress.cfg:23
 #: data/core/units/merfolk/Initiate.cfg:25
@@ -115,14 +115,14 @@ msgstr "štap"
 
 #. [attack]: type=impact
 #: data/campaigns/Delfadors_Memoirs/units/Wose_Shaman.cfg:34
-#: data/core/units/wose/Ancient.cfg:34 data/core/units/wose/Elder.cfg:34
+#: data/core/units/wose/Ancient.cfg:34 data/core/units/wose/Elder.cfg:49
 #: data/core/units/wose/Wose.cfg:29
 msgid "crush"
 msgstr "gaženje"
 
 #. [attack]: type=impact
 #: data/campaigns/Delfadors_Memoirs/units/Wose_Shaman.cfg:43
-#: data/core/units/elves/Enchantress.cfg:36 data/core/units/elves/Shaman.cfg:37
+#: data/core/units/elves/Enchantress.cfg:36 data/core/units/elves/Shaman.cfg:44
 #: data/core/units/elves/Sorceress.cfg:38
 msgid "entangle"
 msgstr "uplitanje"
@@ -177,9 +177,9 @@ msgid "sling"
 msgstr "praćka"
 
 #. [attack]: type=blade
-#: data/campaigns/Eastern_Invasion/units/Bone_Knight.cfg:31
+#: data/campaigns/Eastern_Invasion/units/Bone_Knight.cfg:32
 #: data/campaigns/Eastern_Invasion/units/Skeleton_Rider.cfg:41
-#: data/campaigns/Liberty/units/Bone_Knight.cfg:31
+#: data/campaigns/Liberty/units/Bone_Knight.cfg:32
 #: data/campaigns/Liberty/units/Skeleton_Rider.cfg:41
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Fighter.cfg:32
 #: data/campaigns/Under_the_Burning_Suns/units/undead/Undead_Horseman.cfg:39
@@ -189,7 +189,7 @@ msgstr "praćka"
 #: data/core/units/dwarves/Fighter.cfg:41
 #: data/core/units/dwarves/Pathfinder.cfg:36
 #: data/core/units/dwarves/Pathfinder.cfg:44
-#: data/core/units/dwarves/Scout.cfg:28 data/core/units/dwarves/Scout.cfg:36
+#: data/core/units/dwarves/Scout.cfg:35 data/core/units/dwarves/Scout.cfg:43
 #: data/core/units/undead/Skele_Deathblade.cfg:53
 #: data/core/units/undead/Skele_Draug.cfg:30
 #: data/core/units/undead/Skele_Revenant.cfg:31
@@ -215,7 +215,7 @@ msgstr "veliki mač"
 #: data/campaigns/tutorial/units/Quintain.cfg:25
 #: data/core/units/humans/Loyalist_Iron_Mauler.cfg:26
 #: data/core/units/humans/Loyalist_Shock_Trooper.cfg:23
-#: data/core/units/humans/Mage_of_Light.cfg:47
+#: data/core/units/humans/Mage_of_Light.cfg:48
 msgid "flail"
 msgstr "mlatilo"
 
@@ -232,33 +232,35 @@ msgstr "mlatilo"
 #: data/campaigns/Heir_To_The_Throne/units/Sea_Orc.cfg:36
 #: data/campaigns/Liberty/units/Death_Squire.cfg:32
 #: data/campaigns/Sceptre_of_Fire/units/Haldric_II.cfg:26
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:27
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:34
 #: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Fighter.cfg:23
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:28
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:35
 #: data/campaigns/Under_the_Burning_Suns/units/humans/Human_Commander.cfg:35
 #: data/campaigns/Under_the_Burning_Suns/units/nagas/Naga_Hunter.cfg:25
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Archer.cfg:29
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Flanker.cfg:31
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:30
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:32
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Outrider.cfg:30
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Pathfinder.cfg:29
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Ranger.cfg:32
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Scout.cfg:26
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:457
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:510
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:563
-#: data/campaigns/tutorial/units/Fighter.cfg:25
-#: data/campaigns/tutorial/units/Fighteress.cfg:26
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:514
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:571
+#: data/campaigns/tutorial/units/Fighter.cfg:24
+#: data/campaigns/tutorial/units/Fighteress.cfg:25
+#: data/campaigns/tutorial/units/Warrior.cfg:25
+#: data/campaigns/tutorial/units/Warrioress.cfg:26
 #: data/core/units/dunefolk/Blademaster.cfg:26
 #: data/core/units/dunefolk/Soldier.cfg:25
 #: data/core/units/dunefolk/Swordsman.cfg:25
 #: data/core/units/dunefolk/Warmaster.cfg:32
-#: data/core/units/elves/Archer.cfg:23 data/core/units/elves/Avenger.cfg:38
+#: data/core/units/elves/Archer.cfg:23 data/core/units/elves/Avenger.cfg:39
 #: data/core/units/elves/Captain.cfg:34 data/core/units/elves/Champion.cfg:23
 #: data/core/units/elves/Fighter.cfg:22 data/core/units/elves/Hero.cfg:22
 #: data/core/units/elves/High_Lord.cfg:46 data/core/units/elves/Lord.cfg:26
-#: data/core/units/elves/Marksman.cfg:29 data/core/units/elves/Marshal.cfg:33
-#: data/core/units/elves/Outrider.cfg:32 data/core/units/elves/Ranger.cfg:35
+#: data/core/units/elves/Marksman.cfg:29 data/core/units/elves/Marshal.cfg:39
+#: data/core/units/elves/Outrider.cfg:32 data/core/units/elves/Ranger.cfg:36
 #: data/core/units/elves/Rider.cfg:32 data/core/units/elves/Scout.cfg:32
 #: data/core/units/elves/Sharpshooter.cfg:24
 #: data/core/units/humans/Horse_Knight.cfg:23
@@ -269,10 +271,10 @@ msgstr "mlatilo"
 #: data/core/units/humans/Loyalist_Longbowman.cfg:25
 #: data/core/units/humans/Loyalist_Master_Bowman.cfg:25
 #: data/core/units/humans/Loyalist_Sergeant.cfg:27
-#: data/core/units/humans/Loyalist_Swordsman.cfg:26
+#: data/core/units/humans/Loyalist_Swordsman.cfg:27
 #: data/core/units/humans/Woodsman_Ranger.cfg:44
 #: data/core/units/nagas/Fighter.cfg:30 data/core/units/nagas/Myrmidon.cfg:29
-#: data/core/units/nagas/Warrior.cfg:27 data/core/units/orcs/Grunt.cfg:28
+#: data/core/units/nagas/Warrior.cfg:27 data/core/units/orcs/Grunt.cfg:43
 #: data/core/units/orcs/Leader.cfg:27
 msgid "sword"
 msgstr "mač"
@@ -281,21 +283,21 @@ msgstr "mač"
 #. [attack]: type=fire
 #: data/campaigns/Heir_To_The_Throne/units/Commander.cfg:33
 #: data/campaigns/Heir_To_The_Throne/units/Lord.cfg:34
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:36
-#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:37
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Commander.cfg:43
+#: data/campaigns/The_Rise_Of_Wesnoth/units/Noble_Lord.cfg:44
 #: data/campaigns/Under_the_Burning_Suns/units/humans/Human_Commander.cfg:44
 #: data/campaigns/Under_the_Burning_Suns/units/nagas/Naga_Hunter.cfg:34
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Archer.cfg:39
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:40
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Marksman.cfg:42
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:466
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:519
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:572
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:523
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Youth.cfg:580
 #: data/core/units/dunefolk/Marauder.cfg:39
 #: data/core/units/dunefolk/Raider.cfg:35 data/core/units/elves/Archer.cfg:32
-#: data/core/units/elves/Avenger.cfg:47 data/core/units/elves/Captain.cfg:43
+#: data/core/units/elves/Avenger.cfg:48 data/core/units/elves/Captain.cfg:43
 #: data/core/units/elves/Champion.cfg:32 data/core/units/elves/Fighter.cfg:31
-#: data/core/units/elves/Hero.cfg:31 data/core/units/elves/Marshal.cfg:42
-#: data/core/units/elves/Outrider.cfg:41 data/core/units/elves/Ranger.cfg:44
+#: data/core/units/elves/Hero.cfg:31 data/core/units/elves/Marshal.cfg:48
+#: data/core/units/elves/Outrider.cfg:41 data/core/units/elves/Ranger.cfg:45
 #: data/core/units/elves/Rider.cfg:41 data/core/units/elves/Scout.cfg:41
 #: data/core/units/humans/Loyalist_Bowman.cfg:31
 #: data/core/units/humans/Woodsman.cfg:37
@@ -322,7 +324,7 @@ msgstr "luk"
 #: data/core/units/gryphons/Gryphon_Master.cfg:28
 #: data/core/units/gryphons/Gryphon_Rider.cfg:27
 #: data/core/units/monsters/Skeletal_Dragon.cfg:42
-#: data/core/units/undead/Corpse_Ghoul.cfg:25
+#: data/core/units/undead/Corpse_Ghoul.cfg:32
 #: data/core/units/undead/Corpse_Necrophage.cfg:26
 #: data/core/units/undead/Spirit_Nightgaunt.cfg:33
 #: data/core/units/undead/Spirit_Shadow.cfg:62
@@ -367,8 +369,8 @@ msgstr ""
 "posebno opasni pred uvježbanim vojnikom, ugledati svoje bivše saborce u "
 "poderanim redovima bauljaša veliki je udarac za samopouzdanje."
 
-#. [attack]: type=arcane
 #. [attack]: type=impact
+#. [attack]: type=arcane
 #. [attack]: type=fire
 #. [attack]: type=cold
 #: data/campaigns/Secrets_of_the_Ancients/units/Corpse_Shynal.cfg:35
@@ -387,7 +389,7 @@ msgstr "dodir"
 #. [attack]: type=impact
 #: data/campaigns/Secrets_of_the_Ancients/units/Delinquent.cfg:27
 #: data/core/units/humans/Outlaw_Footpad.cfg:24
-#: data/core/units/humans/Outlaw_Ruffian.cfg:22
+#: data/core/units/humans/Outlaw_Ruffian.cfg:29
 #: data/core/units/humans/Outlaw_Thug.cfg:23
 #: data/core/units/merfolk/Entangler.cfg:26
 #: data/core/units/merfolk/Netcaster.cfg:25 data/core/units/trolls/Troll.cfg:24
@@ -564,7 +566,7 @@ msgstr "koplje"
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Sentinel.cfg:46
 #: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Stalwart.cfg:41
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Flagbearer.cfg:52
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Protector.cfg:56
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Protector.cfg:60
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Rider.cfg:41
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Stalwart.cfg:53
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Vanguard.cfg:51
@@ -757,17 +759,17 @@ msgstr ""
 #: data/core/units/goblins/Wolf_Rider.cfg:46
 #: data/core/units/monsters/Giant_Spider.cfg:27
 #: data/core/units/monsters/Sea_Serpent.cfg:27
-#: data/core/units/monsters/Water_Serpent.cfg:41
-#: data/core/units/monsters/Wolf.cfg:47
-#: data/core/units/monsters/Wolf_Dire.cfg:38
-#: data/core/units/monsters/Wolf_Great.cfg:38
+#: data/core/units/monsters/Water_Serpent.cfg:42
+#: data/core/units/monsters/Wolf.cfg:48
+#: data/core/units/monsters/Wolf_Dire.cfg:39
+#: data/core/units/monsters/Wolf_Great.cfg:39
 msgid "fangs"
 msgstr "očnjaci"
 
 #. [attack]: type=arcane
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Divine_Avatar.cfg:36
-#: data/core/units/humans/Mage_White.cfg:53
-#: data/core/units/humans/Mage_of_Light.cfg:56
+#: data/core/units/humans/Mage_White.cfg:54
+#: data/core/units/humans/Mage_of_Light.cfg:57
 #: data/core/units/merfolk/Diviner.cfg:54
 #: data/core/units/merfolk/Priestess.cfg:51
 msgid "lightbeam"
@@ -776,7 +778,7 @@ msgstr "svjetlosni snop"
 #. [attack]: type=pierce
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Druid.cfg:51
 #: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shaman.cfg:51
-#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:52
+#: data/campaigns/Under_the_Burning_Suns/units/quenoth/Shyde.cfg:54
 #: data/core/units/elves/Druid.cfg:49 data/core/units/elves/Shyde.cfg:54
 msgid "thorns"
 msgstr "trnje"
@@ -935,12 +937,19 @@ msgstr ""
 "masivna metalna kaciga. Debeo oklop koji nose štiti ih dobro od oružja koja "
 "bi im inače mogla skliznuti između krljušti."
 
-#. [attack]: type=blade
+#. [unit_type]: id=Drake Arbiter, race=drake
+#: data/core/units/drakes/Arbiter.cfg:18
+msgid ""
+"Compared to other drakes, Drake Arbiters have a higher resistance to "
+"‘pierce’ attacks."
+msgstr ""
+
 #. [attack]: type=pierce
-#: data/core/units/drakes/Arbiter.cfg:27 data/core/units/drakes/Arbiter.cfg:36
-#: data/core/units/drakes/Warden.cfg:28 data/core/units/drakes/Warden.cfg:37
-#: data/core/units/humans/Loyalist_Halberdier.cfg:28
-#: data/core/units/humans/Loyalist_Halberdier.cfg:40
+#. [attack]: type=blade
+#: data/core/units/drakes/Arbiter.cfg:28 data/core/units/drakes/Arbiter.cfg:37
+#: data/core/units/drakes/Warden.cfg:29 data/core/units/drakes/Warden.cfg:38
+#: data/core/units/humans/Loyalist_Halberdier.cfg:29
+#: data/core/units/humans/Loyalist_Halberdier.cfg:41
 msgid "halberd"
 msgstr "helebarda"
 
@@ -1276,13 +1285,20 @@ msgstr "zmago-nebohvat"
 
 #. [unit_type]: id=Sky Drake, race=drake
 #: data/core/units/drakes/Sky.cfg:17
+#, fuzzy
+#| msgid ""
+#| "The lightweight ceramic armor that the Sky Drakes wear is a symbol of "
+#| "their rank, glazed silver to honor their connection to the air. As "
+#| "leaders of the hunt, they are often away from their homes for long "
+#| "periods of time. Each tries to bring as much game home as possible, "
+#| "competing to gain the respect of their tribe and, just possibly, time "
+#| "with one of the closely-guarded drake females."
 msgid ""
 "The lightweight ceramic armor that the Sky Drakes wear is a symbol of their "
 "rank, glazed silver to honor their connection to the air. As leaders of the "
 "hunt, they are often away from their homes for long periods of time. Each "
 "tries to bring as much game home as possible, competing to gain the respect "
-"of their tribe and, just possibly, time with one of the closely-guarded "
-"drake females."
+"of their tribe."
 msgstr ""
 "Laki keramički oklop koji nose nebohvati simbol je njihovog čina, optočen "
 "srebrom u čast njihove povezanosti s vazduhom. Kao lovački vođi, često "
@@ -1335,6 +1351,13 @@ msgstr ""
 "svoje uloge u zmaškom društvu, daleko je od paradnog. Njihov kabasti "
 "bronzani oklop najčvršća su izrađevina zmaških kovnica, a svojim helebardama "
 "mogu rascijepiti čovjeka nadvoje."
+
+#. [unit_type]: id=Drake Warden, race=drake
+#: data/core/units/drakes/Warden.cfg:19
+msgid ""
+"Compared to other drakes, Drake Wardens have a higher resistance to ‘pierce’ "
+"attacks."
+msgstr ""
 
 #. [unit_type]: id=Drake Warrior, race=drake
 #: data/core/units/drakes/Warrior.cfg:4
@@ -1538,7 +1561,7 @@ msgstr ""
 #: data/core/units/humans/Loyalist_Cavalier.cfg:37
 #: data/core/units/humans/Loyalist_General.cfg:43
 #: data/core/units/humans/Loyalist_Grand_Marshal.cfg:38
-#: data/core/units/humans/Loyalist_Royal_Guard.cfg:27
+#: data/core/units/humans/Loyalist_Royal_Guard.cfg:29
 msgid "longsword"
 msgstr "dugi mač"
 
@@ -2089,8 +2112,15 @@ msgid ""
 "defeat."
 msgstr ""
 
+#. [unit_type]: id=Elvish Avenger, race=elf
+#: data/core/units/elves/Avenger.cfg:23
+msgid ""
+"Compared to other elves, Elvish Avengers have superior movement and defense "
+"on sand, shallow water, and mountains."
+msgstr ""
+
 #. [female]
-#: data/core/units/elves/Avenger.cfg:95
+#: data/core/units/elves/Avenger.cfg:96
 msgid "female^Elvish Avenger"
 msgstr "vilin-osvetnica"
 
@@ -2400,8 +2430,15 @@ msgid ""
 "in the forests."
 msgstr ""
 
+#. [unit_type]: id=Elvish Ranger, race=elf
+#: data/core/units/elves/Ranger.cfg:20
+msgid ""
+"Compared to other elves, Elvish Rangers have superior movement and defense "
+"on sand, shallow water, and mountains."
+msgstr ""
+
 #. [female]
-#: data/core/units/elves/Ranger.cfg:92
+#: data/core/units/elves/Ranger.cfg:93
 msgid "female^Elvish Ranger"
 msgstr "vilin-šumočuvarka"
 
@@ -2623,21 +2660,17 @@ msgstr "gobli-vitez"
 #. [unit_type]: id=Goblin Knight, race=wolf
 #: data/core/units/goblins/Knight.cfg:18
 msgid ""
-"The Goblin ‘Knights’ have little in common with the men who share that "
-"title, and the title is bestowed in mockery by their enemies. The similarity "
-"is simply that they are the elite of the wolf riders, likely promoted to "
-"their position by their success in some audacious raid.\n"
+"Battle experience strengthens not only the combat prowess of both mount and "
+"rider, but also heartens the bond between them. While a human knight may "
+"ride different steeds into battle, a ‘goblin knight’ refers to goblin and "
+"wolf together as a single unit, fiercely loyal to one another almost to a "
+"fault.\n"
 "\n"
-"The wolves they are given are bred for speed and strength, making them quite "
-"dangerous in combat."
+"Among orcs, the riders are treated as a class above goblins, even when "
+"separated from their mount. Orcish grunts, while feeling themselves superior "
+"to goblins, recognize that picking a fight with the rider is also picking a "
+"fight with jaws that strike faster than a sword, and almost as hard."
 msgstr ""
-"Goblinski „vitezovi“ imaju malo zajedničkog sa ljudima koji dijele isto "
-"zvanje, već se ono najprije koristi u žargonu njihovih neprijatelja. "
-"Sličnost dolazi jedino otuda što čine elitu vukosedlaša, najvjerovatnije "
-"unaprijeđeni na taj položaj povodom uspjeha u kakvom smjelom pohodu.\n"
-"\n"
-"Vuci koji im se daju odgajaju se za brzinu i snagu, čineći ih vrlo opasnim u "
-"borbi."
 
 #. [unit_type]: id=Goblin Pillager, race=wolf
 #: data/core/units/goblins/Pillager.cfg:4
@@ -2713,18 +2746,30 @@ msgstr "vukosedlaš"
 
 #. [unit_type]: id=Wolf Rider, race=wolf
 #: data/core/units/goblins/Wolf_Rider.cfg:30
+#, fuzzy
+#| msgid ""
+#| "No one is quite sure how the practice of taming and riding wolves came "
+#| "into being, but the advantages of it for a goblin are obvious. Goblins "
+#| "are smaller and much weaker than their orcish kin, and are often tasked "
+#| "to the most dangerous and unwanted parts of a fight. Any who can manage "
+#| "to win themselves a mount have a much safer, and daresay, more amusing "
+#| "role in combat.\n"
+#| "\n"
+#| "Wolves, likely, could never support the weight of a man in plate, but a "
+#| "goblin in leather armor is a simple load to bear. Quite unlike horses, "
+#| "these mounts have a rather easy time traversing the mountains, though "
+#| "water and woods will still slow them down."
 msgid ""
 "No one is quite sure how the practice of taming and riding wolves came into "
-"being, but the advantages of it for a goblin are obvious. Goblins are "
-"smaller and much weaker than their orcish kin, and are often tasked to the "
-"most dangerous and unwanted parts of a fight. Any who can manage to win "
-"themselves a mount have a much safer, and daresay, more amusing role in "
-"combat.\n"
+"being, but the advantages of it for a goblin are obvious. Goblins are much "
+"smaller and weaker than their orcish kin and are often sent to the most "
+"dangerous and unwanted parts of a fight. Any who manage to tame a mount have "
+"a much safer role in combat.\n"
 "\n"
-"Wolves, likely, could never support the weight of a man in plate, but a "
-"goblin in leather armor is a simple load to bear. Quite unlike horses, these "
-"mounts have a rather easy time traversing the mountains, though water and "
-"woods will still slow them down."
+"Though few wolves could even stand with the weight of a true orc on their "
+"back, a goblin is quite within many wolves’ ability to carry swiftly. Unlike "
+"horses, these mounts have a rather easy time traversing the mountains, "
+"though water and woods will still slow them down."
 msgstr ""
 "Niko nije sasvim siguran kako je postao običaj kroćenja i jahanja vukova, "
 "ali je prednost toga za jednog goblina očita. Goblinima, budući manjim i "
@@ -2961,9 +3006,15 @@ msgstr "kirasir"
 
 #. [unit_type]: id=Cavalier, race=human
 #: data/core/units/humans/Loyalist_Cavalier.cfg:21
+#, fuzzy
+#| msgid ""
+#| "Cavaliers are masters at the use of both sword and crossbow from "
+#| "horseback. Their combination of striking power and mobility is fearsome; "
+#| "and they have a reputation for dash and aggressiveness to match it. The "
+#| "daring deeds of Cavaliers are the subject of many a tale and song."
 msgid ""
 "Cavaliers are masters at the use of both sword and crossbow from horseback. "
-"Their combination of striking power and mobility is fearsome; and they have "
+"Their combination of striking power and mobility is fearsome, and they have "
 "a reputation for dash and aggressiveness to match it. The daring deeds of "
 "Cavaliers are the subject of many a tale and song."
 msgstr ""
@@ -3167,6 +3218,13 @@ msgstr ""
 "ovo oružje izdaje samo veteranima pikenirima, koji su dokazali da posjeduju "
 "vještinu neophodnu da je pravilno upotrebe na ratištu."
 
+#. [unit_type]: id=Halberdier, race=human
+#: data/core/units/humans/Loyalist_Halberdier.cfg:21
+msgid ""
+"Compared to other loyalists, Halberdiers have a higher resistance to "
+"‘pierce’ attacks."
+msgstr ""
+
 #. [unit_type]: id=Heavy Infantryman, race=human
 #: data/core/units/humans/Loyalist_Heavy_Infantryman.cfg:4
 msgid "Heavy Infantryman"
@@ -3355,8 +3413,15 @@ msgstr ""
 "konjičkom jurišu, a uz odgovarajuću disciplinu i taktiku, mogu i većinu "
 "pješadije držati na odstojanju."
 
+#. [unit_type]: id=Pikeman, race=human
+#: data/core/units/humans/Loyalist_Pikeman.cfg:18
+msgid ""
+"Compared to other loyalists, Pikemen have a higher resistance to ‘pierce’ "
+"attacks."
+msgstr ""
+
 #. [attack]: type=pierce
-#: data/core/units/humans/Loyalist_Pikeman.cfg:31
+#: data/core/units/humans/Loyalist_Pikeman.cfg:32
 msgid "pike"
 msgstr "dugo koplje"
 
@@ -3395,6 +3460,18 @@ msgstr ""
 "ih,  prije nego plaćenike, odašilju na zadatke od ključne važnosti. Njihova "
 "pouzdanost i vladanje bliskom borbom, po kojima su nadaleko čuveni, najveći "
 "su im imetak."
+
+#. [unit_type]: id=Royal Guard, race=human
+#: data/core/units/humans/Loyalist_Royal_Guard.cfg:19
+msgid ""
+"Compared to other loyalists, Royal Guards have a higher resistance to "
+"‘blade’ and ‘impact’ attacks."
+msgstr ""
+
+#. [unit_type]: id=Royal Guard, race=human
+#: data/core/units/humans/Loyalist_Royal_Guard.cfg:20
+msgid "Compared to other loyalists, Royal Guards have more movepoints."
+msgstr ""
 
 #. [unit_type]: id=Sergeant, race=human
 #: data/core/units/humans/Loyalist_Sergeant.cfg:4
@@ -3487,6 +3564,13 @@ msgstr ""
 "bez nedostataka, ali je mnogo pokretljiviji od koplja, i stoga mnogo bolji "
 "za blisku borbu."
 
+#. [unit_type]: id=Swordsman, race=human
+#: data/core/units/humans/Loyalist_Swordsman.cfg:18
+msgid ""
+"Compared to other loyalists, Swordsmen have a higher resistance to ‘blade’ "
+"and ‘impact’ attacks."
+msgstr ""
+
 #. [unit_type]: id=Mage, race=human
 #: data/core/units/humans/Mage.cfg:4
 msgid "Mage"
@@ -3538,7 +3622,7 @@ msgid "missile"
 msgstr "projektil"
 
 #. [female]
-#: data/core/units/humans/Mage.cfg:85
+#: data/core/units/humans/Mage.cfg:159
 msgid "female^Mage"
 msgstr "maga"
 
@@ -3574,15 +3658,22 @@ msgstr ""
 "Iako nisu obučavani za bilo kakav vid borbe, kada se ukaže potreba arhimag "
 "može da oslobodi svu moć svog znanja i umijeća, što ne treba uzimati olako."
 
+#. [unit_type]: id=Arch Mage, race=human
+#: data/core/units/humans/Mage_Arch.cfg:21
+msgid ""
+"Compared to other mages, Arch Mages have a higher resistance to ‘fire’ "
+"attacks."
+msgstr ""
+
 #. [attack]: type=fire
-#: data/core/units/humans/Mage_Arch.cfg:44
-#: data/core/units/humans/Mage_Great.cfg:38
-#: data/core/units/humans/Mage_Red.cfg:37
+#: data/core/units/humans/Mage_Arch.cfg:45
+#: data/core/units/humans/Mage_Great.cfg:39
+#: data/core/units/humans/Mage_Red.cfg:38
 msgid "fireball"
 msgstr "vatrenica"
 
 #. [female]
-#: data/core/units/humans/Mage_Arch.cfg:99
+#: data/core/units/humans/Mage_Arch.cfg:100
 msgid "female^Arch Mage"
 msgstr "arhimaga"
 
@@ -3638,8 +3729,15 @@ msgstr ""
 "Iako ni na koji način nisu ratnici, primjena njihovih vještina u borbi često "
 "dovodi do toga da drugi vojnici zastaju zapanjeni."
 
+#. [unit_type]: id=Great Mage, race=human
+#: data/core/units/humans/Mage_Great.cfg:22
+msgid ""
+"Compared to other mages, Great Mages have a higher resistance to ‘fire’ "
+"attacks."
+msgstr ""
+
 #. [female]
-#: data/core/units/humans/Mage_Great.cfg:87
+#: data/core/units/humans/Mage_Great.cfg:88
 msgid "female^Great Mage"
 msgstr "velika maga"
 
@@ -3676,8 +3774,15 @@ msgstr ""
 "trikove iz rukava, uključujući i klobuke vatre koji su ustanovili njihovo "
 "kolokvijalno oslovljavanje."
 
+#. [unit_type]: id=Red Mage, race=human
+#: data/core/units/humans/Mage_Red.cfg:21
+msgid ""
+"Compared to other mages, Red Mages have a higher resistance to ‘fire’ "
+"attacks."
+msgstr ""
+
 #. [female]
-#: data/core/units/humans/Mage_Red.cfg:88
+#: data/core/units/humans/Mage_Red.cfg:96
 msgid "female^Red Mage"
 msgstr "crvena maga"
 
@@ -3767,8 +3872,15 @@ msgstr ""
 "Iako nisu uvježbani za borbu, moćni su saveznici protiv svih magičnih i "
 "neprirodnih bića."
 
+#. [unit_type]: id=White Mage, race=human
+#: data/core/units/humans/Mage_White.cfg:21
+msgid ""
+"Compared to other mages, White Mages have a higher resistance to ‘arcane’ "
+"attacks."
+msgstr ""
+
 #. [female]
-#: data/core/units/humans/Mage_White.cfg:95
+#: data/core/units/humans/Mage_White.cfg:103
 msgid "female^White Mage"
 msgstr "bijela maga"
 
@@ -3794,8 +3906,15 @@ msgstr ""
 "Prateći strogi kodeks štovanja i časti, ovi muškarci i žene neumorno rade na "
 "uspostavljanju života i reda u svijetu punom nevolja u kome žive."
 
+#. [unit_type]: id=Mage of Light, race=human
+#: data/core/units/humans/Mage_of_Light.cfg:23
+msgid ""
+"Compared to other mages, Mages of Light have a higher resistance to ‘arcane’ "
+"attacks."
+msgstr ""
+
 #. [female]
-#: data/core/units/humans/Mage_of_Light.cfg:99
+#: data/core/units/humans/Mage_of_Light.cfg:100
 msgid "female^Mage of Light"
 msgstr "Maga svjetlosti"
 
@@ -3824,7 +3943,7 @@ msgstr ""
 
 #. [attack]: type=impact
 #: data/core/units/humans/Outlaw.cfg:23
-#: data/core/units/humans/Outlaw_Bandit.cfg:22
+#: data/core/units/humans/Outlaw_Bandit.cfg:29
 #: data/core/units/humans/Outlaw_Fugitive.cfg:28
 #: data/core/units/humans/Outlaw_Highwayman.cfg:24
 #: data/core/units/humans/Royal_Warrior.cfg:28
@@ -4309,9 +4428,9 @@ msgid ""
 "seen adaptation for warfare, and are valuable enough that auxiliaries who "
 "specialize in using them are deliberately brought to battle.\n"
 "\n"
-"Mermen often find themselves in a standoff with land-based enemies; the "
+"Merfolk often find themselves in a standoff with land-based enemies; the "
 "merfolk are too strong in the water, and are too weak to make any offense on "
-"land. Nets are a key bit of leverage; without nets, mermen can’t give any "
+"land. Nets are a key bit of leverage; without nets, merfolk cannot give any "
 "effective chase over land, and are at a great disadvantage in hand-to-hand "
 "combat."
 msgstr ""
@@ -4366,11 +4485,17 @@ msgstr "moren-lovac"
 
 #. [unit_type]: id=Merman Hunter, race=merman
 #: data/core/units/merfolk/Hunter.cfg:18
+#, fuzzy
+#| msgid ""
+#| "The skills employed by mermen in spear-fishing are easily translated into "
+#| "warfare, especially against those who are not at home in the water. In "
+#| "times of need, many mermen of that occupation will volunteer to swell the "
+#| "ranks of their military."
 msgid ""
-"The skills employed by mermen in spear-fishing are easily translated into "
+"The skills employed by merfolk in spear-fishing are easily translated into "
 "warfare, especially against those who are not at home in the water. In times "
-"of need, many mermen of that occupation will volunteer to swell the ranks of "
-"their military."
+"of need, many merfolk of that occupation will volunteer to swell the ranks "
+"of their military."
 msgstr ""
 "Vještine koje morejci koriste u lovačkom kopljarenju daju se lako prenijeti "
 "u boj, posebno protiv onih koji se u vodi ne osjećaju kao kod kuće. U "
@@ -4406,11 +4531,18 @@ msgstr "moren-džiliter"
 
 #. [unit_type]: id=Merman Javelineer, race=merman
 #: data/core/units/merfolk/Javelineer.cfg:18
+#, fuzzy
+#| msgid ""
+#| "Those mermen who master the art of the javelin can become nearly as "
+#| "effective as an archer — though the heft of their weapons impedes their "
+#| "range, the impact of one is considerably greater. In the water, the "
+#| "mobility of the mermen more than makes up for this when facing foes who "
+#| "cannot swim."
 msgid ""
-"Those mermen who master the art of the javelin can become nearly as "
+"Those merfolk who master the art of the javelin can become nearly as "
 "effective as an archer — though the heft of their weapons impedes their "
 "range, the impact of one is considerably greater. In the water, the mobility "
-"of the mermen more than makes up for this when facing foes who cannot swim."
+"of the merfolk more than makes up for this when facing foes who cannot swim."
 msgstr ""
 "Oni morejci koji zagospodare vještinom džiliterstva, mogu biti djelotvorni "
 "skoro koliko i strijelac — iako težina njihovom oružju skraćuje dobačaj, "
@@ -4440,7 +4572,7 @@ msgstr "moren-mrežar"
 #| "came too close to shore. Clubs were used in combat with little or no "
 #| "adaptation from fishing, since they were already quite deadly."
 msgid ""
-"Fishing, as practiced by mermen, is largely a matter of chasing schools of "
+"Fishing, as practiced by merfolk, is largely a matter of chasing schools of "
 "fish into waiting nets, where oar-like clubs are used to dispatch the prey. "
 "The improvisation of using these against soldiers proved very effective; "
 "most land-native creatures are already quite awkward when waist-deep in "
@@ -4531,8 +4663,16 @@ msgstr "moren-kopljanik"
 
 #. [unit_type]: id=Merman Spearman, race=merman
 #: data/core/units/merfolk/Spearman.cfg:17
+#, fuzzy
+#| msgid ""
+#| "Archery is little favored by the mermen, for whom use of javelins serves "
+#| "a similar function. Though thrown javelins are of little use under the "
+#| "water, they are extremely effective at the surface, where their weight "
+#| "allows them to plunge several feet below the water while retaining enough "
+#| "momentum to wreak damage. They are also useful in melee, even deep under "
+#| "the surface, which is something that certainly cannot be said of arrows."
 msgid ""
-"Archery is little favored by the mermen, for whom use of javelins serves a "
+"Archery is little favored by the merfolk, for whom use of javelins serves a "
 "similar function. Though thrown javelins are of little use under the water, "
 "they are extremely effective at the surface, where their weight allows them "
 "to plunge several feet below the water while retaining enough momentum to "
@@ -4577,10 +4717,10 @@ msgstr "moren-ratnik"
 #. [unit_type]: id=Merman Warrior, race=merman
 #: data/core/units/merfolk/Warrior.cfg:17
 msgid ""
-"The Mermen Warriors form the core of the mermen armies. They wield their "
-"tridents with a skill and diligence impressive even compared to the soldiers "
-"of other races, but doubly so considering the difficulties of fighting "
-"underwater, as any who try to match them in their homes can attest."
+"Mermen Warriors form the core of merfolk armies. They wield their tridents "
+"with a skill and diligence impressive even compared to the soldiers of other "
+"races, but doubly so considering the difficulties of fighting underwater, as "
+"any who try to match them in their homes can attest."
 msgstr ""
 
 #. [unit_type]: id=Cuttle Fish, race=monster
@@ -4589,7 +4729,7 @@ msgid "Cuttle Fish"
 msgstr "sipa"
 
 #. [unit_type]: id=Cuttle Fish, race=monster
-#: data/core/units/monsters/Cuttle_Fish.cfg:18
+#: data/core/units/monsters/Cuttle_Fish.cfg:19
 msgid ""
 "Cuttle Fish are gigantic creatures of the seas. They can grab their "
 "opponents with strong tentacles, or spit a poisonous black ink from a "
@@ -4833,7 +4973,7 @@ msgid "Water Serpent"
 msgstr "vodeni zmijar"
 
 #. [unit_type]: id=Water Serpent, race=monster
-#: data/core/units/monsters/Water_Serpent.cfg:36
+#: data/core/units/monsters/Water_Serpent.cfg:37
 msgid ""
 "Scholars differ as to the ancestry of the Water Serpent. Some hold that they "
 "are the immature young, or mature cousins, of Sea Serpents. Others hold them "
@@ -4850,12 +4990,12 @@ msgstr ""
 msgid "Wolf"
 msgstr "vuk"
 
-#. [unit_type]: id=Wolf, race=wolf
 #. [unit_type]: id=Direwolf, race=wolf
+#. [unit_type]: id=Wolf, race=wolf
 #. [unit_type]: id=Great Wolf, race=wolf
-#: data/core/units/monsters/Wolf.cfg:33
-#: data/core/units/monsters/Wolf_Dire.cfg:24
-#: data/core/units/monsters/Wolf_Great.cfg:24
+#: data/core/units/monsters/Wolf.cfg:34
+#: data/core/units/monsters/Wolf_Dire.cfg:25
+#: data/core/units/monsters/Wolf_Great.cfg:25
 msgid ""
 "Wolves are aggressive animals that hunt in packs. Although weak "
 "individually, a wolf pack can kill even the strongest man in minutes."
@@ -5765,7 +5905,7 @@ msgstr ""
 "posvetili."
 
 #. [female]
-#: data/core/units/undead/Necro_Dark_Adept.cfg:146
+#: data/core/units/undead/Necro_Dark_Adept.cfg:160
 msgid "female^Dark Adept"
 msgstr "mračna upućenica"
 
@@ -6292,6 +6432,23 @@ msgstr ""
 "\n"
 "Iveri su sasvim neratoborni, ali posjeduju veliku snagu. Međutim, niti "
 "običavaju, niti mogu da se brzo kreću naokolo."
+
+#~ msgid ""
+#~ "The Goblin ‘Knights’ have little in common with the men who share that "
+#~ "title, and the title is bestowed in mockery by their enemies. The "
+#~ "similarity is simply that they are the elite of the wolf riders, likely "
+#~ "promoted to their position by their success in some audacious raid.\n"
+#~ "\n"
+#~ "The wolves they are given are bred for speed and strength, making them "
+#~ "quite dangerous in combat."
+#~ msgstr ""
+#~ "Goblinski „vitezovi“ imaju malo zajedničkog sa ljudima koji dijele isto "
+#~ "zvanje, već se ono najprije koristi u žargonu njihovih neprijatelja. "
+#~ "Sličnost dolazi jedino otuda što čine elitu vukosedlaša, najvjerovatnije "
+#~ "unaprijeđeni na taj položaj povodom uspjeha u kakvom smjelom pohodu.\n"
+#~ "\n"
+#~ "Vuci koji im se daju odgajaju se za brzinu i snagu, čineći ih vrlo "
+#~ "opasnim u borbi."
 
 #~ msgid ""
 #~ "Elves have always had a reputation for archery, a skill that, for many "

@@ -51,6 +51,7 @@ projectfiles/**/*objs*
 # Visual Studio
 projectfiles/VC*
 !projectfiles/VC12
+!projectfiles/VC16
 projectfiles/VC*/.vs/
 projectfiles/VC*/*.vc.*db
 projectfiles/VC*/*.sdf
@@ -211,3 +212,4 @@ config.h
 6not
 .kdev*
 callgrind.out.*
+data/dist

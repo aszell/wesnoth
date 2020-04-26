@@ -2,76 +2,80 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-27 09:23 UTC\n"
-"PO-Revision-Date: 2010-11-09 20:45+0100\n"
-"Last-Translator: l <l@l.nl>\n"
+"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
+"PO-Revision-Date: 2019-06-27 17:04+0200\n"
+"Last-Translator: Merijn de Vet <merijndevet@hotmail.com>\n"
 "Language-Team: none\n"
-"Language: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:13
+#, fuzzy
 msgid "Dead Water"
 msgstr "Dood Water"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:14
+#, fuzzy
 msgid "DW"
 msgstr "DW"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:18
 #, fuzzy
-#| msgid "(Beginner)"
 msgid "Beginner"
 msgstr "(Beginner)"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:18
+#, fuzzy
 msgid "Citizen"
 msgstr "Burger"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:19
+#, fuzzy
 msgid "Fighter"
 msgstr "Strijder"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:19
 #, fuzzy
-#| msgid "(Normal)"
 msgid "Normal"
 msgstr "(Normaal)"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:20
 #, fuzzy
-#| msgid "(Challenging)"
 msgid "Challenging"
 msgstr "(Uitdagend)"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:20
+#, fuzzy
 msgid "Warrior"
 msgstr "Krijger"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:21
 #, fuzzy
-#| msgid "(Difficult)"
 msgid "Difficult"
 msgstr "(Moeilijk)"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:21
+#, fuzzy
 msgid "Triton"
 msgstr "Triton"
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:23
+#, fuzzy
 msgid ""
 "You are Kai Krellis, son and heir of the last merman king but only a child. "
 "A necromancer is turning your subjects into undead slaves! Lead your people "
@@ -92,23 +96,27 @@ msgstr ""
 
 #. [campaign]: id=Dead_Water
 #: data/campaigns/Dead_Water/_main.cfg:25
+#, fuzzy
 msgid "(Intermediate level, 10 scenarios.)"
 msgstr "(Gemiddeld niveau, 10 scenarios.)"
 
 #. [about]
 #: data/campaigns/Dead_Water/_main.cfg:31
+#, fuzzy
 msgid "Campaign design and programming"
 msgstr "Ontwerp en programmering"
 
 # Niet helemaal accuraat, maar...
 #. [about]
 #: data/campaigns/Dead_Water/_main.cfg:37
+#, fuzzy
 msgid "Script-doctoring and cleanup for mainline"
 msgstr "Scripthulp en aanpassing voor mainline"
 
 # Hoe moet ik dit vertalen???
 #. [about]
 #: data/campaigns/Dead_Water/_main.cfg:43
+#, fuzzy
 msgid "Artwork"
 msgstr "Illustraties"
 
@@ -119,6 +127,7 @@ msgstr ""
 
 #. [scenario]: id=01_Invasion
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:36
+#, fuzzy
 msgid "Invasion!"
 msgstr "Invasie!"
 
@@ -152,7 +161,7 @@ msgstr ""
 #. [part]
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:55
 msgid ""
-"Under the cover of darkness, the mermen slid into the bay, intending to "
+"Under the cover of darkness, the merfolk slid into the bay, intending to "
 "launch a surprise attack at dawn. But the orcs were prepared for this, and "
 "had hastily devised a surprise of their own. Ships at the mouth of the bay "
 "that had seemed but derelict hulks disgorged hordes of orcs. More of them "
@@ -165,7 +174,7 @@ msgstr ""
 msgid ""
 "Kai Laudiss’s army fought fiercely, slaying five orcs for every warrior they "
 "lost. The kai himself fought with reckless abandon; foes fell with each "
-"swing of his great mace. The orcs discovered that trapped mermen were "
+"swing of his great mace. The orcs discovered that trapped merfolk were "
 "tougher than they had imagined, and found themselves fleeing into the forest "
 "to escape their vengeful spears. As the kai had intended, it was a defeat "
 "the orcs would not soon forget; but the cost was heavy. Kai Laudiss was "
@@ -187,14 +196,16 @@ msgstr ""
 
 #. [side]: type=Dark Sorcerer, id=Mal-Kevek
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:83
+#, fuzzy
 msgid "Undead Forces"
 msgstr "Ondode Legermacht"
 
-#. [side]: type=Dark Sorcerer, id=Mal-Kevek
 #. [side]: type=Lich, id=Mal-Kevek
+#. [side]: type=Dark Sorcerer, id=Mal-Kevek
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:89
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:126
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:39
+#, fuzzy
 msgid "Mal-Kevek"
 msgstr "Mal-Kevek"
 
@@ -203,31 +214,37 @@ msgstr "Mal-Kevek"
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:65
 #: data/campaigns/Dead_Water/scenarios/06_Uncharted_Islands.cfg:115
 #: data/campaigns/Dead_Water/scenarios/07_Bilheld.cfg:107
+#, fuzzy
 msgid "Defeat enemy leader"
 msgstr "Versla de vijandige leider"
 
 #. [unit]: type=Mermaid Priestess, id=Cylanna
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:228
+#, fuzzy
 msgid "Cylanna"
 msgstr "Cylanna"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:266
+#, fuzzy
 msgid "Is something wrong, priestess?"
 msgstr "Is er iets aan de hand, priesteres?"
 
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:271
+#, fuzzy
 msgid "Maybe. I smell death and decay."
 msgstr "Misschien. Ik ruik dood en verderf."
 
 #. [unit]: type=Merman Netcaster, id=Gwabbo
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:303
+#, fuzzy
 msgid "Gwabbo"
 msgstr "Gwabbo"
 
 #. [message]: speaker=Gwabbo
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:321
+#, fuzzy
 msgid "Back, you fiend! You have not won...I will return to finish this."
 msgstr ""
 "Weg, jij gedrocht! Jij hebt niet gewonnen... Ik zal terugkeren om dit af te "
@@ -235,6 +252,7 @@ msgstr ""
 
 #. [message]: speaker=Gwabbo
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:332
+#, fuzzy
 msgid ""
 "Kai! We are under attack! Fell creatures invaded our village and slew "
 "without mercy. I managed to fight my way clear, and have come to seek your "
@@ -246,6 +264,7 @@ msgstr ""
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:337
+#, fuzzy
 msgid "What manner of creatures were they?"
 msgstr "Wat voor een wezens waren het?"
 
@@ -323,16 +342,19 @@ msgstr ""
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:622
+#, fuzzy
 msgid "Hey, I did it!"
 msgstr "Het is me gelukt!"
 
 #. [message]: speaker=Gwabbo
 #: data/campaigns/Dead_Water/scenarios/01_Invasion.cfg:626
-msgid "Good work Kai, if I may say so."
+#, fuzzy
+msgid "Good work, Kai, if I may say so."
 msgstr "Goed gedaan Kai, als ik dat mag zeggen."
 
 #. [scenario]: id=02_Flight
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:27
+#, fuzzy
 msgid "Flight"
 msgstr "Vlucht"
 
@@ -381,6 +403,7 @@ msgstr ""
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:85
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:70
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:273
+#, fuzzy
 msgid "Defeat all enemy leaders"
 msgstr "Versla alle vijandige leiders"
 
@@ -400,12 +423,14 @@ msgstr ""
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:50
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:90
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:105
+#, fuzzy
 msgid "Mal-Ravanal’s Forces"
 msgstr "Mal-Ravanal's Strijdmacht"
 
 #. [side]: type=Necromancer, id=Mel Daveth
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:150
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:55
+#, fuzzy
 msgid "Mel Daveth"
 msgstr "Mel Daveth"
 
@@ -418,22 +443,26 @@ msgstr ""
 
 #. [message]: speaker=Mel Daveth
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:286
+#, fuzzy
 msgid "Leave some of them for me."
 msgstr "Laat wat over voor mij."
 
 #. [message]: speaker=Dead Knight
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:292
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:517
+#, fuzzy
 msgid "Uhhh."
 msgstr "Uhhh."
 
 #. [message]: speaker=Mel Daveth
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:297
+#, fuzzy
 msgid "And him."
 msgstr "En voor hem."
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:302
+#, fuzzy
 msgid ""
 "We are surrounded. Look how many there are! How can we defeat them this time?"
 msgstr ""
@@ -441,6 +470,7 @@ msgstr ""
 
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:307
+#, fuzzy
 msgid ""
 "I am afraid we cannot. We need help. My old instructor, Tyegëa, teaches on "
 "an island to the north. She and her priestesses are powerful. With their "
@@ -454,11 +484,13 @@ msgstr ""
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:312
+#, fuzzy
 msgid "You can do that, right?"
 msgstr "Jij kunt dat wel, toch?"
 
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:317
+#, fuzzy
 msgid "I am not sure that I can. However, you could."
 msgstr "Ik weet niet zeker of ik dat kan. Maar, jij wel."
 
@@ -537,6 +569,7 @@ msgstr ""
 #. [message]: speaker=Mal-Kevek
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:418
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:756
+#, fuzzy
 msgid "This is impossible!"
 msgstr "Dit is onmogelijk!"
 
@@ -574,8 +607,8 @@ msgstr ""
 msgid "If it does not attack, do not kill it. Let us see if it follows us."
 msgstr ""
 
-#. [message]: speaker=unit
 #. [message]: speaker=second_unit
+#. [message]: speaker=unit
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:508
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:635
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:748
@@ -583,6 +616,7 @@ msgstr ""
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:248
 #: data/campaigns/Dead_Water/scenarios/05_Tirigaz.cfg:726
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:867
+#, fuzzy
 msgid "Neep, neep!"
 msgstr "Neep, neep!"
 
@@ -642,6 +676,7 @@ msgstr ""
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:651
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:675
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:705
+#, fuzzy
 msgid "Neep?"
 msgstr "Neep?"
 
@@ -691,7 +726,6 @@ msgstr ""
 #. [unit]: type=Walking Corpse, id=Undead Bat
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:732
 #, fuzzy
-#| msgid "Undead Forces"
 msgid "Undead Bat"
 msgstr "Ondode Legermacht"
 
@@ -739,7 +773,6 @@ msgstr ""
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/02_Flight.cfg:830
 #, fuzzy
-#| msgid "You receive 55 gold."
 msgid "You receive 120 gold."
 msgstr "Je ontvangt 55 goud."
 
@@ -787,41 +820,47 @@ msgstr ""
 
 #. [side]: id=Gashnok, type=Goblin Knight, type=Goblin Knight, type=Direwolf Rider, type=Direwolf Rider
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:81
+#, fuzzy
 msgid "Wolf Riders"
 msgstr "Wolfruiters"
 
 #. [side]: id=Gashnok, type=Goblin Knight, type=Goblin Knight, type=Direwolf Rider, type=Direwolf Rider
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:85
+#, fuzzy
 msgid "Gashnok"
 msgstr "Gashnok"
 
 #. [side]
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:143
+#, fuzzy
 msgid "Wild Wolves"
 msgstr "Wilde Wolven"
 
 #. [unit]: type=Goblin Knight, id=Vrunt
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:200
+#, fuzzy
 msgid "Vrunt"
 msgstr "Vrunt"
 
 #. [message]: speaker=Gashnok
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:210
 msgid ""
-"Smells like lots of death in the south. There must be a good feast near that "
-"merman town."
+"Smells like lots of death in the south near that merman town. Hey, Vrunt, "
+"you think the wolves like eatin’ merfish?"
 msgstr ""
 
 #. [message]: speaker=Vrunt
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:215
-msgid "Let’s hope those wild wolves over there don’t get to it before we do."
+msgid ""
+"Talking or not, fish are fish. Wolves’ll probably love them. Besides, look "
+"there! Some fresh ones are coming our way!"
 msgstr ""
 
 #. [message]: speaker=Gashnok
 #: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:220
 msgid ""
-"Hold on...It looks like a better feast is coming our way! Fresh fish, boys! "
-"Go get it."
+"They look mighty good to me. Might even have a taste later, myself. Let’s "
+"get ’em, boys!"
 msgstr ""
 
 #. [message]: speaker=Kai Krellis
@@ -834,41 +873,48 @@ msgstr ""
 msgid "Someone go find out what is exciting the bat."
 msgstr ""
 
+#. [message]: speaker=Kai Krellis
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:277
+msgid ""
+"I wonder why such a strangely colored wolf emerged from the forest over "
+"there."
+msgstr ""
+
 #. [message]: speaker=unit
-#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:287
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:306
 msgid "There is something sticking out of the mud here. Ah! I got it."
 msgstr ""
 
 #. [message]: speaker=Cylanna
-#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:294
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:313
 msgid ""
 "I know what that is. It’s a storm trident. It is supposed to let you control "
 "the lightning."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:299
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:318
 msgid "The trident is 14×2, magical, ranged, with <i>fire</i> damage."
 msgstr ""
 
 #. [option]
-#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:306
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:325
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:927
 msgid "That sounds great! I’ll take it."
 msgstr ""
 
 #. [option]
-#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:315
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:334
 msgid "That sounds frightening. Let someone else have it."
 msgstr ""
 
 #. [option]
-#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:353
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:372
 msgid "Let me have that trident. I want to control lightning!"
 msgstr ""
 
 #. [option]
-#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:362
+#: data/campaigns/Dead_Water/scenarios/03_Wolf_Coast.cfg:381
 msgid "I’ll just leave that trident where it is."
 msgstr ""
 
@@ -898,36 +944,43 @@ msgstr ""
 
 #. [side]: id=Gilak, type=Saurian Ambusher, type=Saurian Ambusher, type=Saurian Flanker, type=Saurian Flanker
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:114
+#, fuzzy
 msgid "Gilak"
 msgstr "Gilak"
 
 #. [side]: id=Raxisz, type=Saurian Ambusher, type=Saurian Ambusher, type=Saurian Flanker, type=Saurian Flanker
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:170
+#, fuzzy
 msgid "Raxisz"
 msgstr "Raxisz"
 
 #. [side]: id=Aglizix, type=Saurian Ambusher, type=Saurian Flanker, type=Saurian Flanker, type=Saurian Flanker
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:214
+#, fuzzy
 msgid "Saurians"
 msgstr " Saurianen"
 
 #. [side]: id=Aglizix, type=Saurian Ambusher, type=Saurian Flanker, type=Saurian Flanker, type=Saurian Flanker
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:219
+#, fuzzy
 msgid "Aglizix"
 msgstr "Aglizix"
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:316
+#, fuzzy
 msgid "There are cages on the shore. I wonder why."
 msgstr "Er staan kooien op de kust. Ik vraag me af waarom."
 
 #. [unit]: type=Merman Brawler, id=Teeloa
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:329
+#, fuzzy
 msgid "Teelöa"
 msgstr "Teelöa"
 
 #. [message]: speaker=Teeloa
 #: data/campaigns/Dead_Water/scenarios/04_Slavers.cfg:343
+#, fuzzy
 msgid "Help! Save me!"
 msgstr "Help! Red me!"
 
@@ -1906,8 +1959,8 @@ msgid ""
 "This is a good place for a large colony, so I imagine we will see more soon."
 msgstr ""
 
-#. [unit]: type=Silver Mage, id=Caladon
 #. [side]
+#. [unit]: type=Silver Mage, id=Caladon
 #: data/campaigns/Dead_Water/scenarios/09_The_Mage.cfg:383
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:95
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:97
@@ -2117,9 +2170,9 @@ msgstr ""
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:308
 msgid ""
 "What I remember, you old fool, is you leaving behind the smoldering bodies "
-"of the orcs you had hired to steal my sword. Now, you bring mermen. When "
-"they lay expiring like gasping fish on the shore, will you not flee again? "
-"Do not speak to <i>me</i> of fear."
+"of the orcs you had hired to steal my sword. Now, you bring mer to do your "
+"dirty work. When they lay expiring like gasping fish on the shore, will you "
+"not flee again? Do not speak to <i>me</i> of fear."
 msgstr ""
 
 #. [message]: speaker=Kai Krellis
@@ -2325,7 +2378,7 @@ msgstr ""
 
 #. [message]: speaker=Caladon
 #: data/campaigns/Dead_Water/scenarios/10_The_Flaming_Sword.cfg:1149
-msgid "CURSE you mermen!"
+msgid "CURSE you merfolk!"
 msgstr ""
 
 #. [message]: speaker=Caladon
@@ -2388,11 +2441,13 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/Dead_Water/scenarios/11_Getting_Help.cfg:188
+#, fuzzy
 msgid "You receive 55 gold."
 msgstr "Je ontvangt 55 goud."
 
 #. [scenario]: id=12_Revenge
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:4
+#, fuzzy
 msgid "Revenge"
 msgstr "Wraak"
 
@@ -2473,7 +2528,7 @@ msgstr ""
 #. [message]: speaker=Mel Daveth
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:507
 msgid ""
-"The mermen...they came back! Bring back the search parties! Call back the "
+"The merfolk...they came back! Bring back the search parties! Call back the "
 "hordes!"
 msgstr ""
 
@@ -2512,11 +2567,13 @@ msgstr ""
 
 #. [message]: speaker=Dead Knight
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:768
+#, fuzzy
 msgid "Gruh!"
 msgstr "Gruh!"
 
 #. [message]: speaker=Mel Daveth
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:780
+#, fuzzy
 msgid "Save me Lord Rava...uhh!"
 msgstr "Red mij, Heer Rava...argh!"
 
@@ -2527,11 +2584,13 @@ msgstr ""
 
 #. [message]: speaker=Kai Krellis
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:808
+#, fuzzy
 msgid "Cylanna! I will miss you."
 msgstr "Cylanna! Ik zal je missen"
 
 #. [message]: speaker=Cylanna
 #: data/campaigns/Dead_Water/scenarios/12_Revenge.cfg:819
+#, fuzzy
 msgid "Tyegëa! No!"
 msgstr "Tyegëa! Nee!"
 
@@ -2581,6 +2640,7 @@ msgstr ""
 
 #. [scenario]: id=13_Epilogue
 #: data/campaigns/Dead_Water/scenarios/13_Epilogue.cfg:4
+#, fuzzy
 msgid "Epilogue"
 msgstr "Epiloog"
 
@@ -2678,6 +2738,7 @@ msgstr ""
 
 #. [unit_type]: id=Merman Brawler, race=merman
 #: data/campaigns/Dead_Water/units/Brawler.cfg:4
+#, fuzzy
 msgid "Merman Brawler"
 msgstr "Meerman Ruziezoeker"
 
@@ -2691,6 +2752,7 @@ msgstr ""
 #. [unstore_unit]
 #: data/campaigns/Dead_Water/units/Brawler.cfg:95
 #: data/campaigns/Dead_Water/units/Brawler.cfg:142
+#, fuzzy
 msgid "stunned"
 msgstr "Verlamd"
 
@@ -2698,31 +2760,33 @@ msgstr "Verlamd"
 #: data/campaigns/Dead_Water/units/Brawler.cfg:96
 #: data/campaigns/Dead_Water/units/Brawler.cfg:143
 #, fuzzy
-#| msgid "stunned"
 msgid "female^stunned"
 msgstr "Verlamd"
 
 # ??
 #. [unit_type]: id=Merman Child King, race=merman
 #: data/campaigns/Dead_Water/units/Child_King.cfg:4
+#, fuzzy
 msgid "Child King"
 msgstr "Koningskind"
 
 #. [unit_type]: id=Merman Child King, race=merman
 #: data/campaigns/Dead_Water/units/Child_King.cfg:17
 msgid ""
-"When a merman king dies, the next in line becomes king however young he is. "
-"It is his job to lead his troops in combat if necessary. Good soldiers will "
-"do as they are told, but a very young king will get little real respect."
+"When a mer king dies, the next in line becomes king however young he is. It "
+"is his job to lead his troops in combat if necessary. Good soldiers will do "
+"as they are told, but a very young king will get little real respect."
 msgstr ""
 
 #. [attack]: type=impact
 #: data/campaigns/Dead_Water/units/Child_King.cfg:23
+#, fuzzy
 msgid "scepter"
 msgstr "scepter"
 
 #. [unit_type]: id=Merman Citizen, race=merman
 #: data/campaigns/Dead_Water/units/Citizen.cfg:4
+#, fuzzy
 msgid "Merman Citizen"
 msgstr "Meermanburger"
 
@@ -2735,6 +2799,7 @@ msgstr ""
 
 #. [unit_type]: id=Kraken, race=monster
 #: data/campaigns/Dead_Water/units/Kraken.cfg:5
+#, fuzzy
 msgid "Kraken"
 msgstr "Kraken"
 
@@ -2748,6 +2813,7 @@ msgstr ""
 
 #. [unit_type]: id=Merman Soldier King, race=merman
 #: data/campaigns/Dead_Water/units/Soldier_King.cfg:4
+#, fuzzy
 msgid "Soldier King"
 msgstr "Soldatenkoning"
 
@@ -2761,6 +2827,7 @@ msgstr ""
 
 #. [unit_type]: id=Merman Warrior King, race=merman
 #: data/campaigns/Dead_Water/units/Warrior_King.cfg:4
+#, fuzzy
 msgid "Warrior King"
 msgstr "Oorlogskoning"
 
@@ -2774,6 +2841,7 @@ msgstr ""
 
 #. [unit_type]: id=Merman Young King, race=merman
 #: data/campaigns/Dead_Water/units/Young_King.cfg:4
+#, fuzzy
 msgid "Young King"
 msgstr "Jonge Koning"
 
@@ -2791,11 +2859,13 @@ msgid "user_team_name^Merfolk"
 msgstr ""
 
 #: data/campaigns/Dead_Water/utils/dw-utils.cfg:77
+#, fuzzy
 msgid "Kai Krellis"
 msgstr "Kai Krellis"
 
 #. [object]: id={ID}
 #: data/campaigns/Dead_Water/utils/items.cfg:8
+#, fuzzy
 msgid "Storm Trident"
 msgstr "Stormdrietand"
 
@@ -2812,21 +2882,25 @@ msgstr ""
 
 #. [effect]: type=fire
 #: data/campaigns/Dead_Water/utils/items.cfg:33
+#, fuzzy
 msgid "storm trident"
 msgstr "stormdrietand"
 
 #. [object]: id={ID}
 #: data/campaigns/Dead_Water/utils/items.cfg:54
+#, fuzzy
 msgid "Flaming Sword"
 msgstr "Vuurzwaard"
 
 #. [effect]: type=fire
 #: data/campaigns/Dead_Water/utils/items.cfg:76
+#, fuzzy
 msgid "flaming sword"
 msgstr "vuurzwaard"
 
 #. [object]: id={ID}
 #: data/campaigns/Dead_Water/utils/items.cfg:92
+#, fuzzy
 msgid "Ankh Necklace"
 msgstr "Ankh Ketting"
 
@@ -2882,6 +2956,7 @@ msgstr ""
 
 #. [object]: id=power_ring2
 #: data/campaigns/Dead_Water/utils/items.cfg:307
+#, fuzzy
 msgid "Ring of Power"
 msgstr "Ring der Kracht"
 
@@ -2913,6 +2988,7 @@ msgstr ""
 
 #. [damage]: id=tail_stun
 #: data/campaigns/Dead_Water/utils/specials.cfg:9
+#, fuzzy
 msgid "stun"
 msgstr "verlamming"
 

@@ -1,5 +1,5 @@
 # The Battle for Wesnoth - Traditional Chinese Translations
-# Copyright (C) 2005-2018 Wesnoth development team
+# Copyright (C) 2005-2019 Wesnoth development team
 # This file is distributed under the same license as the Battle for Wesnoth package.
 # Ximing Hou <u4786176@anu.edu.au>, 2011.
 # 曾筠鈞 <yunchuntseng@gmail.com>, 2018.
@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-1.14\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-21 18:29 UTC\n"
-"PO-Revision-Date: 2018-08-26 18:58+0800\n"
-"Last-Translator: 曾筠鈞 Grace <yunchuntseng@gmail.com>\n"
+"POT-Creation-Date: 2020-01-12 16:28 UTC\n"
+"PO-Revision-Date: 2019-03-28 16:13+0800\n"
+"Last-Translator: 楊綮銘 <steven2880@gmail.com>\n"
 "Language-Team: Wesnoth Traditional Chinese Team\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. [campaign]: id=Delfadors_Memoirs
 #: data/campaigns/Delfadors_Memoirs/_main.cfg:22
@@ -75,7 +75,7 @@ msgstr ""
 #. [campaign]: id=Delfadors_Memoirs
 #: data/campaigns/Delfadors_Memoirs/_main.cfg:37
 msgid "(Intermediate level, 19 scenarios.)"
-msgstr "（中等等級，19個章節）"
+msgstr "（中等等級，19個章節。）"
 
 #. [about]
 #: data/campaigns/Delfadors_Memoirs/_main.cfg:40
@@ -321,18 +321,18 @@ msgstr "這個山谷屬於我"
 msgid "Grogor-Tuk"
 msgstr "格羅格圖克"
 
-#. [side]: type=Goblin Pillager, id=Grogor-Tuk
 #. [side]: type=Orcish Warrior, id=Urthaka-Tan
-#. [side]: type=Orcish Slayer, id=Hagha-Tan
-#. [side]: type=Orcish Warlord, id=Tish Golub
 #. [side]: type=Orcish Warlord, id=Knafa-ord
 #. [side]: type=Orcish Warlord, id=Tan-drul
 #. [side]: type=Orcish Warlord, id=Krardul
+#. [side]: type=Orcish Warlord, id=Tish Golub
 #. [side]: type=Orcish Sovereign, id=Zorlan
 #. [side]: type=Orcish Warrior, id=T'bhan
 #. [side]: type=Orcish Warrior, id=Qgthun
 #. [side]: type=Great Troll, type=Troll Hero, id=Trgrau
 #. [side]
+#. [side]: type=Goblin Pillager, id=Grogor-Tuk
+#. [side]: type=Orcish Slayer, id=Hagha-Tan
 #. [side]: type=Orcish Warlord, id=Upgar
 #: data/campaigns/Delfadors_Memoirs/scenarios/02_This_Valley_Belongs_to_Me.cfg:49
 #: data/campaigns/Delfadors_Memoirs/scenarios/03_The_Road_to_Weldyn.cfg:44
@@ -385,7 +385,7 @@ msgid ""
 "I have many contacts at the court and..."
 msgstr ""
 "迪法多，你作為我的學徒的日子即將結束。你現在是一個訓練有素的法師，你可以選擇"
-"自己的人生道路。我希望，無論如何，你能夠接受我的建議，為加拉德國王效勞。我在"
+"自己的人生道路。我希望，無論如何，你能夠接受我的建議，為嘉拉德國王效勞。我在"
 "王宮裡有很多熟人，而且……"
 
 #. [message]: speaker=Grogor-Tuk
@@ -620,15 +620,15 @@ msgstr "利奧林"
 msgid "Hagha-Tan"
 msgstr "哈格坦"
 
-#. [side]: type=Arch Mage, id=Leollyn
 #. [side]
+#. [side]: type=King of Wesnoth, id=Garard II
+#. [side]: type=General, id=Rhuwin
+#. [side]: type=Arch Mage, id=Leollyn
+#. [modify_side]
+#. [side]: type=King of Wesnoth, id=Garard
 #. [side]: type=General, id=Eldred
 #. [side]: type=General, id=Lowel
-#. [side]: type=King of Wesnoth, id=Garard
-#. [modify_side]
-#. [side]: type=King of Wesnoth, id=Garard II
 #. [side]: type=Lieutenant, id=Niktor
-#. [side]: type=General, id=Rhuwin
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:101
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:23
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:34
@@ -761,7 +761,7 @@ msgstr ""
 msgid ""
 "Ah, one of Methor’s, eh? Good, good... Well, young Garard certainly needs "
 "all the hands he can muster right now. Especially those who know their magic!"
-msgstr "哦，梅瑟的學生？年輕的加拉德現在正在召集延攬人才，尤其是懂得魔法的人！"
+msgstr "哦，梅瑟的學生？年輕的嘉拉德現在正在召集延攬人才，尤其是懂得魔法的人！"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:268
@@ -774,13 +774,13 @@ msgid ""
 "That is ill news indeed... these are dark times. I think you had best return "
 "with me to Weldyn. Garard too, must hear your news."
 msgstr ""
-"這無疑是個壞消息...真是個黑暗時期，我想你最好跟我一起回到維丁，加拉德也需要知"
+"這無疑是個壞消息...真是個黑暗時期，我想你最好跟我一起回到維丁，嘉拉德也需要知"
 "道這件事。"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:279
 msgid "Is that Garard, King of Wesnoth, you refer to?!"
-msgstr "這是不是您提到的那個，韋諾的國王 — 加拉德?!"
+msgstr "這是不是您提到的那個，韋諾的國王，嘉拉德？！"
 
 #. [message]: speaker=Leollyn
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:283
@@ -802,7 +802,7 @@ msgstr "維丁議會"
 #. [side]: type=King of Wesnoth, id=Garard
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:29
 msgid "Garard"
-msgstr "加拉德"
+msgstr "嘉拉德"
 
 #. [unit]: type=Cavalryman, id=Gurcyn
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:65
@@ -935,9 +935,9 @@ msgid ""
 "powerful mages. Allow only your mind to enter the land of the dead — should "
 "your body follow, there is no return! Do you still wish to go?"
 msgstr ""
-"嗯⋯加拉德國王讓你聽從我的命令，如果你願意，我將命令你前往北方，他不會干涉與戰"
-"爭有關的魔法任務的。但是你必須確定你已經為如此艱難的任務做好準備。與冥界打交"
-"道，甚至對於最厲害的法師來說都有困難。只允許你的意識進入冥界…但如果身體也進"
+"嗯...嘉拉德國王讓你聽從我的命令，如果你願意，我將命令你前往北方，他不會干涉與"
+"戰爭有關的魔法任務的。但是你必須確定你已經為如此艱難的任務做好準備。與冥界打"
+"交道，甚至對於最厲害的法師來說都有困難。只允許你的意識進入冥界…但如果身體也進"
 "去，就回不來了！你還想去嗎？"
 
 #. [message]: speaker=Delfador
@@ -1077,18 +1077,18 @@ msgstr "這箱子裡裝著惡棍從粗心的路人手上搶來的錢！"
 msgid "Night in the Swamp"
 msgstr "沼澤之夜"
 
-#. [side]
-#. [side]: type=Death Knight, id=Arakar
+#. [side]: type=Lich, id=Sagus
 #. [side]: type=Death Knight, id=Prepolur
 #. [side]: type=Necromancer, id=Unuvim-Malal
-#. [side]: type=Necromancer, id=Maldun
-#. [side]: type=Death Knight, id=Alderoth
+#. [side]
+#. [side]: type=Necromancer, id=Gruv-Malal
 #. [side]: type=Death Knight, id=Rudimil
 #. [side]: type=Necromancer, id=Roth-Malal
 #. [side]: type=Necromancer, id=Barth-Malal
+#. [side]: type=Death Knight, id=Arakar
+#. [side]: type=Necromancer, id=Maldun
+#. [side]: type=Death Knight, id=Alderoth
 #. [side]: type=Death Knight, id=Dirator
-#. [side]: type=Necromancer, id=Gruv-Malal
-#. [side]: type=Lich, id=Sagus
 #: data/campaigns/Delfadors_Memoirs/scenarios/07_Night_in_the_Swamp.cfg:47
 #: data/campaigns/Delfadors_Memoirs/scenarios/09_Houses_of_the_Undead.cfg:38
 #: data/campaigns/Delfadors_Memoirs/scenarios/10_The_Gate_Between_Worlds.cfg:34
@@ -1229,7 +1229,7 @@ msgid ""
 "Ur-Thorodor, please let us pass! We are on a vital mission for King Garard, "
 "in the interests of all living things in Wesnoth."
 msgstr ""
-"烏索爾多，請讓我們過去吧！爲了韋諾的眾生，我們正在執行加拉德國王的重要任務。"
+"烏索爾多，請讓我們過去吧！爲了韋諾的眾生，我們正在執行嘉拉德國王的重要任務。"
 
 #. [message]: speaker=Ur-Thorodor
 #: data/campaigns/Delfadors_Memoirs/scenarios/08_Ur_Thorodor.cfg:96
@@ -1248,7 +1248,7 @@ msgid ""
 "This Ur-Thorodor should not speak of King Garard that way! <i>“Suffer our "
 "wrath”</i> indeed... I’ll show him wrath!"
 msgstr ""
-"這個烏索爾多不應該這樣說加拉德國王！<i>“接受我們的憤怒”</i>，讓我來告訴他何謂"
+"這個烏索爾多不應該這樣說嘉拉德國王！<i>“接受我們的憤怒”</i>，讓我來告訴他何謂"
 "憤怒！"
 
 #. [message]: speaker=Delfador
@@ -1314,7 +1314,7 @@ msgid ""
 "no Wesnothian will set foot on your island without your permission again. As "
 "a token of good faith, I command my army to return to the mainland."
 msgstr ""
-"烏索爾多，聽我的！我們不會占領你們的小島。如果你可以讓我們留在這，我能以加拉"
+"烏索爾多，聽我的！我們不會占領你們的小島。如果你可以讓我們留在這，我能以嘉拉"
 "德國王之名保證，再也不會有韋諾人不經你允許登上這島。作為保證，我命令軍隊返回"
 "陸地。"
 
@@ -1548,8 +1548,8 @@ msgstr ""
 "你遇見了那些骷髏戰士嗎？他們在城堡的北邊，雖然很難打過去，但是可以從西森的村"
 "莊旁山穀裡的密道過去。"
 
-#. [scenario]: id=09_Houses_of_the_Dead
 #. [event]
+#. [scenario]: id=09_Houses_of_the_Dead
 #: data/campaigns/Delfadors_Memoirs/scenarios/09_Houses_of_the_Undead.cfg:318
 #: data/campaigns/Delfadors_Memoirs/scenarios/14_Shadows.cfg:193
 msgid "Nameless"
@@ -1943,9 +1943,9 @@ msgstr "不毛之地"
 msgid "Tish Golub"
 msgstr "提斯哥盧布"
 
-#. [side]: type=Elvish Druid
 #. [side]
 #. [side]: type=Elvish Captain, id=Clartakis
+#. [side]: type=Elvish Druid
 #: data/campaigns/Delfadors_Memoirs/scenarios/11_Wasteland.cfg:54
 #: data/campaigns/Delfadors_Memoirs/scenarios/13_The_Return_of_Trouble.cfg:40
 #: data/campaigns/Delfadors_Memoirs/scenarios/13_The_Return_of_Trouble.cfg:181
@@ -2075,7 +2075,7 @@ msgstr "對，我說的就是他。"
 msgid ""
 "If I might ask, where am I? And what of Lionel, and King Garard? What has "
 "befallen them?"
-msgstr "冒昧地問一下，我在那裡？萊昂涅，吉拉德國王呢？他們發生什麽事情了？"
+msgstr "冒昧地問一下，我在那裡？萊昂涅，嘉拉德國王呢？他們發生什麽事情了？"
 
 #. [message]: speaker=Chantal
 #: data/campaigns/Delfadors_Memoirs/scenarios/11_Wasteland.cfg:250
@@ -3140,7 +3140,7 @@ msgstr "但國王的處境依舊不妙..."
 #. [side]: type=King of Wesnoth, id=Garard II
 #: data/campaigns/Delfadors_Memoirs/scenarios/15_Save_the_King.cfg:47
 msgid "Garard II"
-msgstr "加拉德二世"
+msgstr "嘉拉德二世"
 
 #. [side]: type=Orcish Sovereign, id=Zorlan
 #: data/campaigns/Delfadors_Memoirs/scenarios/15_Save_the_King.cfg:81
@@ -3165,7 +3165,7 @@ msgstr "特格羅"
 #. [objective]: condition=lose
 #: data/campaigns/Delfadors_Memoirs/scenarios/15_Save_the_King.cfg:209
 msgid "Death of Garard II"
-msgstr "加拉德二世被擊敗"
+msgstr "嘉拉德二世陣亡"
 
 #. [message]: id=Delfador
 #: data/campaigns/Delfadors_Memoirs/scenarios/15_Save_the_King.cfg:252
@@ -3355,7 +3355,7 @@ msgstr "為國王而戰！"
 #. [message]: speaker=Zorlan
 #: data/campaigns/Delfadors_Memoirs/scenarios/15_Save_the_King.cfg:457
 msgid "Argh! It can't be, beaten by these swine!"
-msgstr ""
+msgstr "哎呀！不能被這些豬頭給打敗！"
 
 #. [scenario]: id=16_Dark_Sky_Over_Weldyn
 #: data/campaigns/Delfadors_Memoirs/scenarios/16_Dark_Sky_Over_Weldyn.cfg:3
@@ -3388,7 +3388,7 @@ msgstr ""
 #: data/campaigns/Delfadors_Memoirs/scenarios/16_Dark_Sky_Over_Weldyn.cfg:128
 #: data/campaigns/Delfadors_Memoirs/scenarios/16_Dark_Sky_Over_Weldyn.cfg:140
 msgid "King Garard"
-msgstr "國王加拉德"
+msgstr "嘉拉德國王"
 
 #. [part]
 #: data/campaigns/Delfadors_Memoirs/scenarios/16_Dark_Sky_Over_Weldyn.cfg:35
@@ -4292,7 +4292,7 @@ msgid ""
 "most valued advisor."
 msgstr ""
 "聯盟的勝利及和平的條款為一個世代的人帶來一段和平的時期。新的國王從雅碧關之役"
-"就開始信任迪法多，也難怪迪法多現在成為加拉德二世最有價值的鑒臣。"
+"就開始信任迪法多，也難怪迪法多現在成為嘉拉德二世最有價值的鑒臣。"
 
 #. [part]
 #: data/campaigns/Delfadors_Memoirs/scenarios/20_Prince_of_Wesnoth.cfg:26
@@ -4414,7 +4414,7 @@ msgid ""
 "ceased all such talk when I did not respond, and I thought it merely the "
 "momentary whim of a proud and willful woman."
 msgstr ""
-"我想應該沒有。但...艾絲維爾，加拉德的王后，艾瑟德的母親，在好幾個月前就在暗示"
+"我想應該沒有。但...艾絲維爾，嘉拉德的王后，艾瑟德的母親，在好幾個月前就在暗示"
 "我要教她魔法。在我沒有回應後，她也沒有繼續這話題。我以為這只是一個驕傲和任性"
 "女人的突發奇想。"
 
@@ -4433,8 +4433,8 @@ msgstr ""
 "也許吧，想在想一想，我應該要用比我來這時更快的速度回到皇宮，即使這趟路程會累"
 "死三匹馬。"
 
-#. [modify_side]
 #. [side]
+#. [modify_side]
 #: data/campaigns/Delfadors_Memoirs/scenarios/20_Prince_of_Wesnoth.cfg:255
 #: data/campaigns/Delfadors_Memoirs/scenarios/21_Clash_at_the_Manor.cfg:52
 #: data/campaigns/Delfadors_Memoirs/scenarios/22_Face_of_the_Enemy.cfg:36
@@ -4853,7 +4853,7 @@ msgstr "伊利恩-馬拉爾"
 #. [message]: speaker=Delfador
 #: data/campaigns/Delfadors_Memoirs/utils/deaths.cfg:13
 msgid "No! There is still more that I must do!"
-msgstr ""
+msgstr "不！這裡還有很多我該完成的事！"
 
 #. [message]: speaker=Delfador
 #: data/campaigns/Delfadors_Memoirs/utils/deaths.cfg:27
@@ -4954,11 +4954,11 @@ msgstr "德羅尼"
 msgid "Artor"
 msgstr "亞特"
 
-#~ msgid "No! So young..."
-#~ msgstr "不！如此的年輕..."
-
 #~ msgid "Tan-Garthak"
 #~ msgstr "坦加坦克"
+
+#~ msgid "No! So young..."
+#~ msgstr "不！如此的年輕..."
 
 #~ msgid "Player"
 #~ msgstr "玩家"

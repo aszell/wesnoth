@@ -53,7 +53,7 @@ function battle_calcs.unit_attack_info(unit, cache)
                 else
                     -- magical, marksman
                     if (sp[1] == 'chance_to_hit') then
-                        a[sp[2].id] = true
+                        a[sp[2].id or 'no_id'] = true
                     else
                         a[sp[1]] = true
                     end
@@ -532,10 +532,10 @@ function battle_calcs.print_coefficients()
                 dummy, coeffs = battle_calcs.battle_outcome_coefficients(cfg)
             end
 
-            print()
-            print('Attacker: ' .. cfg.att.strikes .. ' strikes, can survive ' .. cfg.att.max_hits .. ' hits')
-            print('Defender: ' .. cfg.def.strikes .. ' strikes, can survive ' .. cfg.def.max_hits .. ' hits')
-            print('Chance of hits on defender: ')
+            std_print()
+            std_print('Attacker: ' .. cfg.att.strikes .. ' strikes, can survive ' .. cfg.att.max_hits .. ' hits')
+            std_print('Defender: ' .. cfg.def.strikes .. ' strikes, can survive ' .. cfg.def.max_hits .. ' hits')
+            std_print('Chance of hits on defender: ')
 
             -- The first indices of coeffs are the possible number of hits the attacker can land on the defender
             for hits = 0,#coeffs do
@@ -570,8 +570,8 @@ function battle_calcs.print_coefficients()
                 local skip_str = ''
                 if combs.skip then skip_str = ' (skip)' end
 
-                print(hits .. skip_str .. ':  ' .. str)
-                print('      = ' .. hit_prob)
+                std_print(hits .. skip_str .. ':  ' .. str)
+                std_print('      = ' .. hit_prob)
             end
         end
     end
@@ -1013,13 +1013,11 @@ function battle_calcs.attack_combo_stats(tmp_attackers, tmp_dsts, defender, cach
             --    if (p > 0) then
             --        local dhp_norm = (hp - av) / defender.max_hitpoints * wesnoth.unit_types[defender.type].cost
             --        local dvar = p * dhp_norm^2
-                    --print(hp,p,av, dvar)
             --        outcome_variance = outcome_variance + dvar
             --        n_outcomes = n_outcomes + 1
             --    end
             --end
             --outcome_variance = outcome_variance / n_outcomes
-            --print('outcome_variance', outcome_variance)
 
             -- Note that this is a variance, not a standard deviations (as in, it's squared),
             -- so it does not matter much for low-variance attacks, but takes on large values for
@@ -1261,7 +1259,7 @@ function battle_calcs.relative_damage_map(units, enemies, cache)
                 best_enemy = enemy
             end
         end
-        unit_ratings[i] = { rating = max_rating, unit_id = u.id, enemy_id = best_enemy.id }
+        unit_ratings[i] = { rating = max_rating, unit_id = unit.id, enemy_id = best_enemy.id }
     end
 
     -- Then we want the same thing for all of the enemy units (for the counter attack on enemy turn)

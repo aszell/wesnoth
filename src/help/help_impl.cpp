@@ -15,6 +15,7 @@
 #include "help/help_impl.hpp"
 
 #include "about.hpp"                    // for get_text
+#include "actions/attack.hpp"           // for time_of_day bonus
 #include "display.hpp"                  // for display
 #include "display_context.hpp"          // for display_context
 #include "game_config.hpp"              // for debug, menu_contract, etc
@@ -51,7 +52,7 @@
 #include <iterator>                     // for back_insert_iterator, etc
 #include <map>                          // for map, etc
 #include <set>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 static lg::log_domain log_display("display");
 #define WRN_DP LOG_STREAM(warn, log_display)
@@ -325,22 +326,8 @@ std::string generate_topic_text(const std::string &generator, const config *help
 	return empty_string;
 }
 
-topic_text::~topic_text()
+topic_text& topic_text::operator=(std::shared_ptr<topic_generator> g)
 {
-	if (generator_ && --generator_->count == 0)
-		delete generator_;
-}
-
-topic_text::topic_text(const topic_text& t): parsed_text_(t.parsed_text_), generator_(t.generator_)
-{
-	if (generator_)
-		++generator_->count;
-}
-
-topic_text &topic_text::operator=(topic_generator *g)
-{
-	if (generator_ && --generator_->count == 0)
-		delete generator_;
 	generator_ = g;
 	return *this;
 }
@@ -349,11 +336,16 @@ const std::vector<std::string>& topic_text::parsed_text() const
 {
 	if (generator_) {
 		parsed_text_ = parse_text((*generator_)());
-		if (--generator_->count == 0)
-			delete generator_;
-		generator_ = nullptr;
+		// This caches the result, so doesn't need the generator any more
+		generator_.reset();
 	}
 	return parsed_text_;
+}
+
+std::string time_of_day_bonus_colored(const int time_of_day_bonus)
+{
+	// Use same red/green colouring scheme as time_of_day_at() in reports.cpp for consistency
+	return std::string("<format>color='") + (time_of_day_bonus > 0 ? "green" : (time_of_day_bonus < 0 ? "red" : "white")) + "' text='" + std::to_string(time_of_day_bonus) + "'</format>";
 }
 
 std::vector<topic> generate_time_of_day_topics(const bool /*sort_generated*/)
@@ -361,47 +353,45 @@ std::vector<topic> generate_time_of_day_topics(const bool /*sort_generated*/)
 	std::vector<topic> topics;
 	std::stringstream toplevel;
 
-	// HACK: Wesnoth 1.14 only, to avoid breaking a string freeze in the middle
-	//       of the RC phase. The string already exists in the wesnoth-help
-	//       (WML) textdomain and it's used for the help sections tree on the
-	//       left. It was supposed to be used here as well but someone forgot
-	//       to mark the string translatable. Future versions will just use the
-	//       regular textdomain for this file.
-	const std::string& tod_schedule_heading =
-			translation::dsgettext("wesnoth-help", "Time of Day Schedule");
-
 	if (! resources::tod_manager) {
 		toplevel << _("Only available during a scenario.");
-		topics.emplace_back(tod_schedule_heading, "..schedule", toplevel.str());
+		topics.emplace_back(_("Time of Day Schedule"), "..schedule", toplevel.str());
 		return topics;
 	}
-
-	// HACK: Wesnoth 1.14 only, to avoid breaking a string freeze in the middle
-	//       of the RC phase. The string already exists in the wesnoth-lib
-	//       textdomain and it's used for a similar purpose in the Editor UI.
-	//       Future versions will just use the regular textdomain for this file.
-	const std::string& lawful_bonus_label =
-			translation::dsgettext("wesnoth-lib", "Lawful Bonus:");
 
 	const std::vector<time_of_day>& times = resources::tod_manager->times();
 	for (const time_of_day& time : times)
 	{
 		const std::string id = "time_of_day_" + time.id;
 		const std::string image = "<img>src='" + time.image + "'</img>";
+		const std::string image_lawful = "<img>src='icons/alignments/alignment_lawful_30.png'</img>";
+		const std::string image_neutral = "<img>src='icons/alignments/alignment_neutral_30.png'</img>";
+		const std::string image_chaotic = "<img>src='icons/alignments/alignment_chaotic_30.png'</img>";
+		const std::string image_liminal = "<img>src='icons/alignments/alignment_liminal_30.png'</img>";
 		std::stringstream text;
 
-		toplevel << make_link(time.name.str(), id) << jump_to(160) <<
-				image << jump(30) << time.lawful_bonus << '\n';
+		const int lawful_bonus = generic_combat_modifier(time.lawful_bonus, unit_type::ALIGNMENT::LAWFUL, false);
+		const int neutral_bonus = generic_combat_modifier(time.lawful_bonus, unit_type::ALIGNMENT::NEUTRAL, false);
+		const int chaotic_bonus = generic_combat_modifier(time.lawful_bonus, unit_type::ALIGNMENT::CHAOTIC, false);
+		const int liminal_bonus = generic_combat_modifier(time.lawful_bonus, unit_type::ALIGNMENT::LIMINAL, false);
 
-		text << image << '\n' <<
-				time.description.str() << '\n' <<
-				lawful_bonus_label << ' ' << time.lawful_bonus << '\n' <<
-				'\n' << make_link(_("Schedule"), "..schedule");
+		toplevel << make_link(time.name.str(), id) << jump_to(160) << image << jump(30) <<
+			image_lawful << time_of_day_bonus_colored(lawful_bonus) << jump_to(390) <<
+			image_neutral << time_of_day_bonus_colored(neutral_bonus) << jump_to(450) <<
+			image_chaotic << time_of_day_bonus_colored(chaotic_bonus) << jump_to(520) <<
+			image_liminal << time_of_day_bonus_colored(liminal_bonus) << '\n';
+
+		text << image << '\n' << time.description.str() << '\n' <<
+			image_lawful << _("Lawful Bonus:") << ' ' << time_of_day_bonus_colored(lawful_bonus) << '\n' <<
+			image_neutral << _("Neutral Bonus:") << ' ' << time_of_day_bonus_colored(neutral_bonus) << '\n' <<
+			image_chaotic << _("Chaotic Bonus:") << ' ' << time_of_day_bonus_colored(chaotic_bonus) << '\n' <<
+			image_liminal << _("Liminal Bonus:") << ' ' << time_of_day_bonus_colored(liminal_bonus) << '\n' <<
+			'\n' << make_link(_("Schedule"), "..schedule");
 
 		topics.emplace_back(time.name.str(), id, text.str());
 	}
 
-	topics.emplace_back(tod_schedule_heading, "..schedule", toplevel.str());
+	topics.emplace_back(_("Time of Day Schedule"), "..schedule", toplevel.str());
 	return topics;
 }
 
@@ -872,7 +862,7 @@ void generate_terrain_sections(const config* /*help_cfg*/, section& sec, int /*l
 		topic terrain_topic;
 		terrain_topic.title = info.editor_name();
 		terrain_topic.id    = hidden_symbol(hidden) + terrain_prefix + info.id();
-		terrain_topic.text  = new terrain_topic_generator(info);
+		terrain_topic.text  = std::make_shared<terrain_topic_generator>(info);
 
 		t_translation::ter_list base_terrains = tdata->underlying_union_terrain(t);
 		for (const t_translation::terrain_code& base : base_terrains) {
@@ -917,7 +907,7 @@ void generate_unit_sections(const config* /*help_cfg*/, section& sec, int level,
 			const std::string var_ref = hidden_symbol(var_type.hide_help()) + variation_prefix + var_type.id() + "_" + variation_id;
 
 			topic var_topic(topic_name, var_ref, "");
-			var_topic.text = new unit_topic_generator(var_type, variation_id);
+			var_topic.text = std::make_shared<unit_topic_generator>(var_type, variation_id);
 			base_unit.topics.push_back(var_topic);
 		}
 
@@ -950,11 +940,12 @@ std::vector<topic> generate_unit_topics(const bool sort_generated, const std::st
 		if (desc_type != FULL_DESCRIPTION)
 			continue;
 
-		const std::string type_name = type.type_name();
+		const std::string debug_suffix = (game_config::debug ? " (" + type.id() + ")" : "");
+		const std::string type_name = type.type_name() + (type.id() == type.type_name().str() ? "" : debug_suffix);
 		const std::string real_prefix = type.show_variations_in_help() ? ".." : "";
 		const std::string ref_id = hidden_symbol(type.hide_help()) + real_prefix + unit_prefix +  type.id();
 		topic unit_topic(type_name, ref_id, "");
-		unit_topic.text = new unit_topic_generator(type);
+		unit_topic.text = std::make_shared<unit_topic_generator>(type);
 		topics.push_back(unit_topic);
 
 		if (!type.hide_help()) {

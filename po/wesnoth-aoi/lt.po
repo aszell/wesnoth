@@ -1,12 +1,12 @@
-# Copyright (C) Wesnoth development team, 2007-2011.
+# Copyright (C) Wesnoth development team, 2007-2019.
 # Translators:
-#  Andrius Štikonas <andrius@stikonas.eu>, 2007-2011.
+#  Andrius Štikonas <andrius@stikonas.eu>, 2007-2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth 1.11\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-21 18:29 UTC\n"
-"PO-Revision-Date: 2017-03-28 22:46+0200\n"
+"POT-Creation-Date: 2020-02-02 01:39 UTC\n"
+"PO-Revision-Date: 2019-03-11 19:39+0000\n"
 "Last-Translator: Andrius Štikonas <andrius@stikonas.eu>\n"
 "Language-Team: Lithuanian <wesnoth-lt@googlegroups.com>\n"
 "Language: lt\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. [campaign]: id=An_Orcish_Incursion
 #: data/campaigns/An_Orcish_Incursion/_main.cfg:11
@@ -40,10 +40,8 @@ msgstr ""
 
 #. [campaign]: id=An_Orcish_Incursion
 #: data/campaigns/An_Orcish_Incursion/_main.cfg:20
-#, fuzzy
-#| msgid "(Novice level, 7 scenarios.)"
 msgid "(Rookie level, 7 scenarios.)"
-msgstr "(Pradedantysis lygis, 7 scenarijai.)"
+msgstr "(Pradedančiojo lygis, 7 scenarijai.)"
 
 #. [campaign]: id=An_Orcish_Incursion
 #: data/campaigns/An_Orcish_Incursion/_main.cfg:22
@@ -181,11 +179,11 @@ msgstr "Elfai"
 msgid "Lomarfel"
 msgstr "Lomarfelis"
 
-#. [side]: type=Orcish Warlord, id=Krughnar
 #. [side]: type=Orcish Sovereign, id=Rualsha
-#. [side]: type=Orcish Slayer, id=Gharlsa
 #. [side]: type=Orcish Warlord, id=Gnargha
+#. [side]: type=Orcish Warlord, id=Krughnar
 #. [side]: type=Orcish Warrior, id=Urugha
+#. [side]: type=Orcish Slayer, id=Gharlsa
 #: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:88
 #: data/campaigns/An_Orcish_Incursion/scenarios/02_Assassins.cfg:59
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:66
@@ -262,12 +260,12 @@ msgid ""
 "So the grim tales of them prove true. They must not be allowed to continue; "
 "we must banish this blight from our forests. I shall marshal the wardens and "
 "drive them off. And the Council needs to hear of this; take the message and "
-"return with reinforcements, there might be more of them."
+"return with reinforcements, for there might be more of them."
 msgstr ""
 "Tad niūrūs gandai apie juos, pasirodo, besą tiesa. Negalime leisti jiems "
 "tęsti; turim išvalyti mūsų miškus nuo šito puvėko. Aš vedu sargybinius ir "
 "mes jų atsikratysim. Apie tai turi sužinoti Taryba. Nešk jiems žinią ir "
-"grįžk su pastiprinimu, jų gali būti ir daugiau."
+"grįžk su pastiprinimu, nes jų gali būti ir daugiau."
 
 #. [message]: speaker=Lomarfel
 #: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:159
@@ -275,7 +273,7 @@ msgid "Yes, my lord!"
 msgstr "Taip, mano valdove!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:180
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:188
 msgid ""
 "Look at them. Big, slow, clumsy and hardly a bow in hand. Keep to the trees, "
 "use your arrows and the day will be ours."
@@ -286,47 +284,59 @@ msgstr ""
 
 #. [message]: race=elf
 #. the player hasn't recruited any Shamans. This message isn't shown if they have a Shaman, even if she has 0 xp.
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:213
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:221
 msgid ""
 "My lord, none of our healers have experience on the battlefield. It pleases "
 "me that they are safe, but if we should embark on a campaign then we will "
 "surely need them alongside us in the battles ahead."
 msgstr ""
+"Valdove, mūsų gydytojai neturi mūšio patirties. Malonu, kad jie saugūs, bet "
+"jei pradėsime kampaniją, tai ateities mūšiuose mums tikrai reikės jų šalia "
+"mūsų."
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:214
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:222
 msgid ""
 "female^My lord, none of our healers have experience on the battlefield. It "
 "pleases me that they are safe, but if we should embark on a campaign then we "
 "will surely need them alongside us in the battles ahead."
 msgstr ""
+"Valdove, mūsų gydytojai neturi mūšio patirties. Malonu, kad jie saugūs, bet "
+"jei pradėsime kampaniją, tai ateities mūšiuose mums tikrai reikės jų šalia "
+"mūsų."
 
 #. [message]: race=elf
 #. the player has recruited some Shamans but has lost all them (or managed to level a Sorceress)
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:228
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:236
 msgid ""
 "My lord, none of our surviving healers have experience on the battlefield. "
 "It pains me to suggest that we should risk another, but if we should embark "
 "on a campaign then we will surely need them alongside us in the battles "
 "ahead."
 msgstr ""
+"Valdove, mūsų išgyvenę gydytojai neturi mūšio patirties. Skaudu rizikuoti "
+"dar vienu, bet jei pradėsime kampaniją, tai ateities mūšiuose mums tikrai "
+"reikės jų šalia mūsų."
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:229
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:237
 msgid ""
 "female^My lord, none of our surviving healers have experience on the "
 "battlefield. It pains me to suggest that we should risk another, but if we "
 "should embark on a campaign then we will surely need them alongside us in "
 "the battles ahead."
 msgstr ""
+"Valdove, mūsų išgyvenę gydytojai neturi mūšio patirties. Skaudu rizikuoti "
+"dar vienu, bet jei pradėsime kampaniją, tai ateities mūšiuose mums tikrai "
+"reikės jų šalia mūsų."
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:244
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:252
 msgid "It’s hopeless; we’ve tried everything, and they’re still coming back."
 msgstr "Beviltiška. Jau viską išbandėm, o jie vis grįžta."
 
 #. [message]: speaker=Urugha
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:249
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:257
 msgid ""
 "Forward, you worthless worms! Look at them, they’re tired and afraid! You "
 "killed their will to fight, now go and finish the job!"
@@ -335,16 +345,16 @@ msgstr ""
 "Atmušėt jiems norą kautis, dabar eikit ir pribaikit juos!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:254
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:262
 msgid ""
 "That cloud of dust on the horizon... flee! There’s more of the abominations "
 "heading this way! Fall back before we’re outnumbered and crushed."
 msgstr ""
 "Dulkių debesis horizonte... Traukiamės! Tų prakeiktųjų atvyksta dar daugiau! "
-"Atsitraukiam, kol jų ne per daug ir mūsų nesutriuškino!"
+"Atsitraukiam, kol jų ne per daug ir mūsų nesutriuškino."
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:260
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:268
 msgid ""
 "Lord Erlornas didn’t drive the orcs back, although he and his warriors tried "
 "their absolute best. When another war band arrived, elvish resistance "
@@ -355,7 +365,7 @@ msgstr ""
 "subyrėjo."
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:266
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:274
 msgid ""
 "Of the ensuing events little is known, since much was lost in the chaos and "
 "confusion, but one thing is painfully sure. Elves lost the campaign."
@@ -364,27 +374,27 @@ msgstr ""
 "vienas dalykas išliko aiškus iki skausmo: elfai pralaimėjo mūšį."
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:278
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:286
 msgid "Ugh..."
 msgstr "Oi..."
 
 #. [message]: speaker=Urugha
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:283
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:291
 msgid "Finally! Got him!"
 msgstr "Pagaliau! Pričiupau!"
 
 #. [message]: race=elf
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:291
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:299
 msgid "Lord!"
 msgstr "Valdove!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:296
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:304
 msgid "Take... command... Drive them... away."
 msgstr "Perimk... Vadovavimą... Atremk... Juos."
 
 #. [message]: speaker=narrator
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:302
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:310
 msgid ""
 "Lord Erlornas died the day he first fought the orcs and never saw the end of "
 "the war. Given its final outcome, this was perhaps for the best."
@@ -394,7 +404,7 @@ msgstr ""
 "geriau."
 
 #. [message]: speaker=unit
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:314
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:322
 msgid ""
 "I’ve been bested, but the combat wasn’t fair... A thousand curses on you, "
 "withered coward! May you suffer... and when my master, Rualsha, finds you "
@@ -405,7 +415,7 @@ msgstr ""
 "žemės paviršiaus visą tavo tautą!"
 
 #. [message]: speaker=Erlornas
-#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:326
+#: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:334
 msgid ""
 "Rualsha? Hmm... What if... Assemble a war-party, we need to scout north!"
 msgstr "Rualša? Hmm, o kas jei... Formuokit būrį, reikia išžvalgyti šiaurę!"
@@ -673,12 +683,6 @@ msgstr "(<i>Kosėja</i>) Aš lauksiu... Tarp mirusiųjų..."
 
 #. [message]: speaker=narrator
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:222
-#, fuzzy
-#| msgid ""
-#| "The orcish chieftain finally fell, overcome by his wounds. The elves "
-#| "found themselves in a half-ruined camp littered with the bodies of both "
-#| "sides.There was no hale orc in sight, nor did any of the wounded beg "
-#| "mercy. The elves took no prisoners."
 msgid ""
 "The orcish chieftain finally fell, overcome by his wounds. The elves found "
 "themselves in a half-ruined camp littered with the bodies of both sides. "
@@ -728,10 +732,6 @@ msgstr ""
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:265
-#, fuzzy
-#| msgid ""
-#| "What about the loot lord? We found supplies worth over a hundred gold in "
-#| "the camp."
 msgid ""
 "What about the loot, lord? We found supplies worth over a hundred gold in "
 "the camp."
@@ -764,8 +764,6 @@ msgstr "Palaikykite žygiui į šiaurę. Šioje nusiaubtoje žemėje mažai ką 
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:320
-#, fuzzy
-#| msgid "We can’t carry on Lord, the men are too tired. We have to fall back."
 msgid "We can’t carry on, lord, the men are too tired. We have to fall back."
 msgstr ""
 "Negalime toliau laikytis, pone, vyrai per daug pavargę. Turime atsitraukti."
@@ -1114,7 +1112,7 @@ msgstr "Linaeros mirtis"
 #: data/campaigns/An_Orcish_Incursion/scenarios/05_Linaera_the_Quick.cfg:121
 #: data/campaigns/An_Orcish_Incursion/scenarios/06_A_Detour_through_the_Swamp.cfg:89
 msgid "Linaera is a leader and can recruit mages when standing on a keep."
-msgstr ""
+msgstr "Linaera yra vadė ir gali samdyti magus, kai stovi bokšte."
 
 #. [objectives]
 #: data/campaigns/An_Orcish_Incursion/scenarios/05_Linaera_the_Quick.cfg:129
@@ -1149,7 +1147,7 @@ msgid ""
 "from its kind? Hmmm..."
 msgstr ""
 "Pagal mūsų sutartį, taip ir yra. Bet ši šalis mums per šalta ir per dyka. "
-"Įdomu, kas per žmogus galėjo pasirinkti gyventi čia, toli nuo savųjų? Hmm... "
+"Įdomu, kas per žmogus galėjo pasirinkti gyventi čia, toli nuo savųjų? Hmm..."
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/05_Linaera_the_Quick.cfg:158

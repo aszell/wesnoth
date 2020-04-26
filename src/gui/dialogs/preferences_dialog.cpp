@@ -813,7 +813,10 @@ listbox& preferences_dialog::setup_hotkey_list(window& window)
 	hotkey_list.clear();
 	visible_hotkeys_.clear();
 
-	std::string text_feature_on =  "<span color='#0f0'>" + _("&#9679;") + "</span>";
+	// These translated initials should match those used in data/gui/window/preferences/02_hotkeys.cfg
+	std::string text_game_feature_on = "<span color='#0f0'>" + _("game_hotkeys^G") + "</span>";
+	std::string text_editor_feature_on = "<span color='#0f0'>" + _("editor_hotkeys^E") + "</span>";
+	std::string text_title_feature_on = "<span color='#0f0'>" + _("titlescreen_hotkeys^T") + "</span>";
 
 	for(const auto& hotkey_item : hotkey::get_hotkey_commands()) {
 		if(hotkey_item.hidden) {
@@ -830,11 +833,11 @@ listbox& preferences_dialog::setup_hotkey_list(window& window)
 		row_action = hotkey_item.description;
 		row_hotkey = hotkey::get_names(hotkey_item.command);
 
-		row_is_g = hotkey_item.scope[hotkey::SCOPE_GAME]      ? text_feature_on : "";
+		row_is_g = hotkey_item.scope[hotkey::SCOPE_GAME]      ? text_game_feature_on : "";
 		row_is_g_markup = "true";
-		row_is_e = hotkey_item.scope[hotkey::SCOPE_EDITOR]    ? text_feature_on : "";
+		row_is_e = hotkey_item.scope[hotkey::SCOPE_EDITOR]    ? text_editor_feature_on : "";
 		row_is_e_markup = "true";
-		row_is_t = hotkey_item.scope[hotkey::SCOPE_MAIN_MENU] ? text_feature_on : "";
+		row_is_t = hotkey_item.scope[hotkey::SCOPE_MAIN_MENU] ? text_title_feature_on : "";
 		row_is_t_markup = "true";
 
 		hotkey_list.add_row(row_data);
@@ -846,6 +849,11 @@ listbox& preferences_dialog::setup_hotkey_list(window& window)
 void preferences_dialog::add_hotkey_callback(listbox& hotkeys)
 {
 	int row_number = hotkeys.get_selected_row();
+	if(row_number < 0) {
+		gui2::show_transient_message("", _("No hotkey selected"));
+		return;
+	}
+
 	const hotkey::hotkey_command& hotkey_item = *visible_hotkeys_[row_number];
 
 	gui2::dialogs::hotkey_bind bind_dlg(hotkey_item.command);
@@ -911,6 +919,11 @@ void preferences_dialog::default_hotkey_callback(window& window)
 void preferences_dialog::remove_hotkey_callback(listbox& hotkeys)
 {
 	int row_number = hotkeys.get_selected_row();
+	if(row_number < 0) {
+		gui2::show_transient_message("", _("No hotkey selected"));
+		return;
+	}
+
 	const hotkey::hotkey_command& hotkey_item = *visible_hotkeys_[row_number];
 	hotkey::clear_hotkeys(hotkey_item.command);
 	find_widget<label>(hotkeys.get_row_grid(row_number), "lbl_hotkey", false).set_label(hotkey::get_names(hotkey_item.command));

@@ -34,7 +34,7 @@
 #include <iostream>                     // for operator<<, basic_ostream, etc
 #include <map>                          // for map, etc
 #include <set>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 static lg::log_domain log_help("help");
 #define WRN_HP LOG_STREAM(warn, log_help)
@@ -694,7 +694,7 @@ std::string unit_topic_generator::operator()() const {
 			}
 
 			if (info.union_type().size() == 1 && info.union_type()[0] == info.number() && info.is_nonnull()) {
-				terrain_movement_info movement_info = 
+				terrain_movement_info movement_info =
 				{
 					info.name(),
 					info.id(),
@@ -724,19 +724,11 @@ std::string unit_topic_generator::operator()() const {
 				font::line_width(m.name, normal_font_size) + (high_res ? 32 : 16) );
 
 			//defense  -  range: +10 % .. +70 %
-			std::string color;
-			if (m.defense <= 10) {
-				color = "red";
-			} else if (m.defense <= 30) {
-				color = "yellow";
-			} else if (m.defense <= 50) {
-				color = "white";
-			} else {
-				color = "green";
-			}
+			// passing false to select the more saturated red-to-green scale
+			std::string color = game_config::red_to_green(m.defense, false).to_hex_string();
 
 			std::stringstream str;
-			str << "<format>color=" << color << " text='"<< m.defense << "%'</format>";
+			str << "<format>color='" << color << "' text='"<< m.defense << "%'</format>";
 			std::string markup = str.str();
 			str.str(clear_stringstream);
 			str << m.defense << "%";
@@ -840,7 +832,7 @@ std::string unit_topic_generator::operator()() const {
 
 			table.push_back(row);
 		}
-		
+
 		ss << generate_table(table);
 	} else {
 		WRN_HP << "When building unit help topics, the display object was null and we couldn't get the terrain info we need.\n";

@@ -344,7 +344,7 @@ void help_text_area::add_text_item(const std::string& text, const std::string& r
 		}
 		else {
 			surface surf(font::get_rendered_text(first_part, scaled_font_size, color, state));
-			if (!surf.null())
+			if (surf)
 				add_item(item(surf, curr_loc_.first, curr_loc_.second, first_part, ref_dst));
 		}
 		if (parts.size() > 1) {
@@ -376,7 +376,7 @@ void help_text_area::add_img_item(const std::string& path, const std::string& al
 								  const bool floating, const bool box)
 {
 	surface surf(image::get_image(path));
-	if (surf.null())
+	if (!surf)
 		return;
 	ALIGNMENT align = str_to_align(alignment);
 	if (align == HERE && floating) {
@@ -546,7 +546,11 @@ void help_text_area::draw_contents()
 						it->rect.h - i * 2
 					};
 
-					sdl::draw_rectangle(draw_rect, {0, 0, 0, 0});
+					// SDL 2.0.10's render batching changes result in the
+					// surface's clipping rectangle being overridden even if
+					// no render clipping rectangle set operaton was queued,
+					// so let's not use the render API to draw the rectangle.
+					SDL_FillRect(screen, &draw_rect, 0);
 					++dst.x;
 					++dst.y;
 				}

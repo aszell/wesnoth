@@ -95,9 +95,9 @@ void suh::set_is_moderator(const std::string& name, const bool& is_moderator) {
 	users_[name].is_moderator = is_moderator;
 }
 
-suh::BAN_TYPE suh::user_is_banned(const std::string&, const std::string&) {
+suh::ban_info suh::user_is_banned(const std::string&, const std::string&) {
 	// FIXME: stub
-	return BAN_NONE;
+	return {};
 }
 
 void suh::set_mail(const std::string& user, const std::string& mail) {
@@ -232,4 +232,24 @@ std::string suh::user_info(const std::string& name) {
 		info << "This account is currently inactive.\n";
 	}
 	return info.str();
+}
+
+std::string suh::get_uuid(){
+	return "";
+}
+
+void suh::db_insert_game_info(const std::string& uuid, int game_id, const std::string& version, const std::string& name, const std::string& map_name, const std::string& era_name, int reload, int observers, int is_public, int has_password){
+	std::cout << uuid << " - " << game_id << " - " << version << " - " << name << " - " << map_name << " - " << era_name << " - " << reload << " - " << observers << " - " << is_public << " - " << has_password << std::endl;
+}
+void suh::db_update_game_end(const std::string& uuid, int game_id, const std::string& replay_location){
+	std::cout << uuid << " - " << game_id << " - " << replay_location << std::endl;
+}
+void suh::db_insert_game_player_info(const std::string& uuid, int game_id, const std::string& username, int side_number, int is_host, const std::string& faction, const std::string& version, const std::string& source, const std::string& current_user){
+	std::cout << uuid << " - " << game_id << " - " << username << " - " << side_number << " - " << is_host << " - " << faction << " - " << version << " - " << source << " - " << current_user << std::endl;
+}
+void suh::db_insert_modification_info(const std::string& uuid, int game_id, const std::string& modification_name){
+	std::cout << uuid << " - " << game_id << " - " << modification_name << std::endl;
+}
+void suh::db_set_oos_flag(const std::string& uuid, int game_id){
+	std::cout << uuid << " - " << game_id << " - " << "OOS occurred!" << std::endl;
 }

@@ -66,7 +66,7 @@
 #include <fenv.h>
 #endif // _MSC_VER
 
-#include <SDL.h> // for SDL_Init, SDL_INIT_TIMER
+#include <SDL2/SDL.h> // for SDL_Init, SDL_INIT_TIMER
 
 #include <boost/iostreams/categories.hpp>   // for input, output
 #include <boost/iostreams/copy.hpp>         // for copy
@@ -115,10 +115,6 @@
 #endif
 
 #include <windows.h>
-
-#if defined(_OPENMP) && _MSC_VER >= 1600
-#include <process.h>
-#endif
 
 #endif // _WIN32
 
@@ -342,6 +338,17 @@ static int process_command_args(const commandline_options& cmdline_opts)
 {
 	// Options that don't change behavior based on any others should be checked alphabetically below.
 
+	if(cmdline_opts.log) {
+		for(const auto& log_pair : cmdline_opts.log.get()) {
+			const std::string log_domain = log_pair.second;
+			const int severity = log_pair.first;
+			if(!lg::set_log_domain_severity(log_domain, severity)) {
+				std::cerr << "unknown log domain: " << log_domain << '\n';
+				return 2;
+			}
+		}
+	}
+
 	if(cmdline_opts.userconfig_dir) {
 		filesystem::set_user_config_dir(*cmdline_opts.userconfig_dir);
 	}
@@ -431,17 +438,6 @@ static int process_command_args(const commandline_options& cmdline_opts)
 	if(cmdline_opts.help) {
 		std::cout << cmdline_opts;
 		return 0;
-	}
-
-	if(cmdline_opts.log) {
-		for(const auto& log_pair : cmdline_opts.log.get()) {
-			const std::string log_domain = log_pair.second;
-			const int severity = log_pair.first;
-			if(!lg::set_log_domain_severity(log_domain, severity)) {
-				std::cerr << "unknown log domain: " << log_domain << '\n';
-				return 2;
-			}
-		}
 	}
 
 	if(cmdline_opts.logdomains) {
@@ -575,6 +571,7 @@ static void check_fpu()
 			}
 		}
 
+#ifndef _M_AMD64
 		if(precision_mode != _PC_53) {
 			std::cerr << "Floating point precision mode is currently '"
 				<< ((precision_mode == _PC_53)
@@ -588,6 +585,8 @@ static void check_fpu()
 				std::cerr << "failed to set floating point precision type to 'double'\n";
 			}
 		}
+#endif
+
 	} else {
 		std::cerr << "_controlfp_s failed.\n";
 	}
@@ -769,24 +768,8 @@ static int do_gameloop(const std::vector<std::string>& args)
 		plugins.play_slice();
 		plugins.play_slice();
 
-		if(cmdline_opts.unit_test) {
-			if(cmdline_opts.timeout) {
-				std::cerr << "The wesnoth built-in timeout feature has been removed.\n" << std::endl;
-				std::cerr << "Please use a platform-specific script which will kill the overtime process instead.\n"
-						  << std::endl;
-				std::cerr << "For examples in bash, or in windows cmd, see the forums, or the wesnoth repository."
-						  << std::endl;
-				std::cerr
-						<< "The bash script is called `run_wml_tests`, the windows script is part of the VC project.\n"
-						<< std::endl;
-			}
-
-			int worker_result = game->unit_test();
-			std::cerr << ((worker_result == 0) ? "PASS TEST " : "FAIL TEST ")
-					  << ((worker_result == 3) ? "(INVALID REPLAY)" : "")
-					  << ((worker_result == 4) ? "(ERRORED REPLAY)" : "") << ": " << *cmdline_opts.unit_test
-					  << std::endl;
-			return worker_result;
+		if(!cmdline_opts.unit_test.empty()) {
+			return static_cast<int>(game->unit_test());
 		}
 
 		if(game->play_test() == false) {
@@ -958,42 +941,6 @@ static void wesnoth_terminate_handler(int)
 }
 #endif
 
-#if defined(_OPENMP) && _MSC_VER >= 1600
-static void restart_process()
-{
-	wchar_t process_path[MAX_PATH];
-	SetLastError(ERROR_SUCCESS);
-	GetModuleFileNameW(nullptr, process_path, MAX_PATH);
-
-	if(GetLastError() != ERROR_SUCCESS) {
-		throw std::runtime_error("Failed to retrieve the process path");
-	}
-
-	std::wstring commandline_str(GetCommandLineW());
-
-	// CreateProcessW is allowed to modify the passed command line.
-	// Therefore we need to copy it.
-	wchar_t* commandline_c_str = new wchar_t[commandline_str.length() + 1];
-	commandline_str.copy(commandline_c_str, commandline_str.length());
-	commandline_c_str[commandline_str.length()] = L'\0';
-
-	STARTUPINFOW startup_info;
-	ZeroMemory(&startup_info, sizeof(startup_info));
-	startup_info.cb = sizeof(startup_info);
-
-	PROCESS_INFORMATION process_info;
-	ZeroMemory(&process_info, sizeof(process_info));
-
-	CreateProcessW(
-		process_path, commandline_c_str, nullptr, nullptr, false, 0u, nullptr, nullptr, &startup_info, &process_info);
-
-	CloseHandle(process_info.hProcess);
-	CloseHandle(process_info.hThread);
-
-	std::exit(EXIT_SUCCESS);
-}
-#endif
-
 #ifdef _WIN32
 #define error_exit(res)                                                                                                \
 	do {                                                                                                               \
@@ -1054,32 +1001,6 @@ int main(int argc, char** argv)
 
 	assert(!args.empty());
 
-#ifdef _OPENMP
-	// Wesnoth is a special case for OMP
-	// OMP wait strategy is to have threads busy-loop for 100ms
-	// if there is nothing to do, they then go to sleep.
-	// this avoids the scheduler putting the thread to sleep when work
-	// is about to be available
-	//
-	// However Wesnoth has a lot of very small jobs that need to be done
-	// at each redraw => 50fps every 2ms.
-	// All the threads are thus busy-waiting all the time, hogging the CPU
-	// To avoid that problem, we need to set the OMP_WAIT_POLICY env var
-	// but that var is read by OMP at library loading time (before main)
-	// thus the relaunching of ourselves after setting the variable.
-#if !defined(_WIN32) && !defined(__APPLE__)
-	if(!getenv("OMP_WAIT_POLICY")) {
-		setenv("OMP_WAIT_POLICY", "PASSIVE", 1);
-		execv(argv[0], argv);
-	}
-#elif _MSC_VER >= 1600
-	if(!getenv("OMP_WAIT_POLICY")) {
-		_putenv_s("OMP_WAIT_POLICY", "PASSIVE");
-		restart_process();
-	}
-#endif
-#endif //_OPENMP
-
 	filesystem::init();
 
 	if(SDL_Init(SDL_INIT_TIMER) < 0) {
@@ -1099,11 +1020,11 @@ int main(int argc, char** argv)
 
 	// Mac's touchpad generates touch events too.
 	// Ignore them until Macs have a touchscreen: https://forums.libsdl.org/viewtopic.php?p=45758
-#if defined(__APPLE__) && !defined(__IPHONEOS__) 
+#if defined(__APPLE__) && !defined(__IPHONEOS__)
 	SDL_EventState(SDL_FINGERMOTION, SDL_DISABLE);
 	SDL_EventState(SDL_FINGERDOWN, SDL_DISABLE);
 	SDL_EventState(SDL_FINGERUP, SDL_DISABLE);
-#endif	
+#endif
 
 	// declare this here so that it will always be at the front of the event queue.
 	events::event_context global_context;

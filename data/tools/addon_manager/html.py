@@ -109,8 +109,8 @@ WESMERE_FOOTER = '''\
 
 <div id="footer"><div id="footer-content"><div>
 	<a href="https://wiki.wesnoth.org/StartingPoints">Site Map</a> &#8226; <a href="https://status.wesnoth.org/">Site Status</a><br />
-	Copyright &copy; 2003&ndash;2018 by <a rel="author" href="https://wiki.wesnoth.org/Project">The Battle for Wesnoth Project</a>.<br />
-	Site design Copyright &copy; 2017&ndash;2018 by Iris Morelle.
+	Copyright &copy; 2003&ndash;2020 by <a rel="author" href="https://wiki.wesnoth.org/Project">The Battle for Wesnoth Project</a>.<br />
+	Site design Copyright &copy; 2017&ndash;2020 by Iris Morelle.
 </div></div></div>
 </body>
 </html>
@@ -166,6 +166,21 @@ ADDON_TYPES_INFO = {
         "short": "Resources",
         "long": "Miscellaneous content/media",
         "help": "Unit packs, terrain packs, music packs, etc. Usually a (perhaps optional) dependency of another add-on.",
+    },
+    "core": {
+        "short": "Core",
+        "long": "Core/Total Conversion",
+        "help": "Cores enable total conversion of The Battle for Wesnoth. A core can replace all the content in Wesnoth: when a different core is loaded, the regular units, terrains and the like do not exist. This can be used to provide a completely different game experience.",
+    },
+    "other": {
+        "short": "Other",
+        "long": "Other",
+        "help": "Add-ons which do not fit any other category.",
+    },
+    "unknown": {
+        "short": "Unknown",
+        "long": "Unknown Add-on Type",
+        "help": "Add-ons with an invalid add-on type field.",
     },
 }
 

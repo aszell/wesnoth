@@ -21,8 +21,8 @@
 #include "serialization/string_utils.hpp"
 #include "sound_music_track.hpp"
 
-#include <SDL.h> // Travis doesn't like this, although it works on my machine -> '#include <SDL_sound.h>
-#include <SDL_mixer.h>
+#include <SDL2/SDL.h> // Travis doesn't like this, although it works on my machine -> '#include <SDL2/SDL_sound.h>
+#include <SDL2/SDL_mixer.h>
 
 #include <list>
 #include <sstream>
@@ -585,7 +585,7 @@ void play_music()
 	music_start_time = 1; // immediate (same as effect as SDL_GetTicks())
 	want_new_music = true;
 	no_fading = false;
-	fadingout_time = current_track->ms_after();
+	fadingout_time = previous_track != nullptr ? previous_track->ms_after() : 0;
 }
 
 void play_track(unsigned int i)

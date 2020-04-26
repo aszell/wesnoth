@@ -151,8 +151,8 @@ commandline_options::commandline_options (const std::vector<std::string>& args) 
 		("bunzip2", po::value<std::string>(), "decompresses a file (<arg>.bz2) in bzip2 format and stores it without the .bz2 suffix. <arg>.bz2 will be removed.")
 		("bzip2", po::value<std::string>(), "compresses a file (<arg>) in bzip2 format, stores it as <arg>.bz2 and removes <arg>.")
 		("clock", "Adds the option to show a clock for testing the drawing timer.")
-		("config-dir", po::value<std::string>(), "sets the path of the userdata directory to $HOME/<arg> or My Documents\\My Games\\<arg> for Windows. You can specify also an absolute path outside the $HOME or My Documents\\My Games directory. DEPRECATED: use userdata-path and userconfig-path instead.")
-		("config-path", "prints the path of the userdata directory and exits. DEPRECATED: use userdata-path and userconfig-path instead.")
+		("config-dir", po::value<std::string>(), "sets the path of the userdata directory to $HOME/<arg> or My Documents\\My Games\\<arg> for Windows. You can specify also an absolute path outside the $HOME or My Documents\\My Games directory. DEPRECATED: use userdata-dir instead.")
+		("config-path", "prints the path of the userdata directory and exits. DEPRECATED: use userdata-path instead.")
 		("core", po::value<std::string>(), "overrides the loaded core with the one whose id is specified.")
 		("data-dir", po::value<std::string>(), "overrides the data directory with the one specified.")
 		("data-path", "prints the path of the data directory and exits.")
@@ -259,9 +259,8 @@ commandline_options::commandline_options (const std::vector<std::string>& args) 
 	po::options_description testing_opts("Testing options");
 	testing_opts.add_options()
 		("test,t", po::value<std::string>()->implicit_value(std::string()), "runs the game in a small test scenario. If specified, scenario <arg> will be used instead.")
-		("unit,u", po::value<std::string>()->implicit_value(std::string()), "runs a unit test scenario. Works like test, except that the exit code of the program reflects the victory / defeat conditions of the scenario.\n\t0 - PASS\n\t1 - FAIL\n\t2 - FAIL (TIMEOUT)\n\t3 - FAIL (INVALID REPLAY)\n\t4 - FAIL (ERRORED REPLAY)")
+		("unit,u", po::value<std::vector<std::string>>(), "runs a unit test scenario. The GUI is not shown and the exit code of the program reflects the victory / defeat conditions of the scenario.\n\t0 - PASS\n\t1 - FAIL\n\t3 - FAIL (INVALID REPLAY)\n\t4 - FAIL (ERRORED REPLAY)\n\t5 - FAIL (BROKE STRICT)\n\t6 - FAIL (WML EXCEPTION)\n\tMultiple tests can be run by giving this option multiple times, in this case the test run will stop immediately after any test which doesn't PASS and the return code will be the status of the test that caused the stop.")
 		("showgui", "don't run headlessly (for debugging a failing test)")
-		("timeout", po::value<unsigned int>(), "sets a timeout (milliseconds) for the unit test. (DEPRECATED)")
 		("log-strict", po::value<std::string>(), "sets the strict level of the logger. any messages sent to log domains of this level or more severe will cause the unit test to fail regardless of the victory result.")
 		("noreplaycheck", "don't try to validate replay of unit test.")
 		("mp-test", "load the test mp scenarios.")
@@ -455,13 +454,11 @@ commandline_options::commandline_options (const std::vector<std::string>& args) 
 		test = vm["test"].as<std::string>();
 	if (vm.count("unit"))
 	{
-		unit_test = vm["unit"].as<std::string>();
+		unit_test = vm["unit"].as<std::vector<std::string>>();
 		headless_unit_test = true;
 	}
 	if (vm.count("showgui"))
 		headless_unit_test = false;
-	if (vm.count("timeout"))
-		timeout = vm["timeout"].as<unsigned int>();
 	if (vm.count("noreplaycheck"))
 		noreplaycheck = true;
 	if (vm.count("turns"))

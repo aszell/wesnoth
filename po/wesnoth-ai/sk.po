@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2018-09-09 08:38 UTC\n"
+"POT-Creation-Date: 2020-01-12 16:28 UTC\n"
 "PO-Revision-Date: 2019-01-23 22:32+0100\n"
 "Last-Translator: Svistwarrior273 <romanbeno273@gmail.com>\n"
 "Language-Team: \n"
@@ -58,8 +58,8 @@ msgstr "Použitie Hliadkovú UI namiesto patrol.lua."
 msgid "The Elves Besieged"
 msgstr "Elfovia v obkľúčení"
 
-#. [side]: type=Spearman, id=Konrad
 #. [unit]: type=Spearman, id=Konrad
+#. [side]: type=Spearman, id=Konrad
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:34
 #: data/ai/micro_ais/scenarios/patrols.cfg:92
 msgid "Konrad"
@@ -84,10 +84,10 @@ msgstr "Delfador"
 msgid "Urug-Telfar"
 msgstr "Urug-Telfar"
 
+#. [side]: id=Vanak, type=Orcish Ruler
 #. [side]: type=Orcish Warlord, id=Urug-Telfar
 #. [side]: type=Orcish Warlord, id=Knafa-Tan
 #. [side]: type=Orcish Warlord, id=Maga-Knafa
-#. [side]: id=Vanak, type=Orcish Ruler
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:98
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:112
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:130
@@ -336,10 +336,10 @@ msgstr "Zvieratá"
 msgid "Rutburt"
 msgstr "Rutburt"
 
-#. [side]: id=Rutburt, type=Outlaw
 #. [side]: type=General, id=leader2
 #. [side]: type=Lieutenant, id=leader5
 #. [side]: type=Lieutenant, id=leader6
+#. [side]: id=Rutburt, type=Outlaw
 #: data/ai/micro_ais/scenarios/animals.cfg:48
 #: data/ai/micro_ais/scenarios/goto.cfg:43
 #: data/ai/micro_ais/scenarios/goto.cfg:93
@@ -382,10 +382,10 @@ msgstr "Vlci"
 msgid "Whelps"
 msgstr "Mláďatá"
 
-#. [set_menu_item]: id=m01_end_animals
 #. [event]
 #. [set_menu_item]: id=m04_end_animals
 #. [set_menu_item]: id=m01_end_swarm
+#. [set_menu_item]: id=m01_end_animals
 #. [set_menu_item]: id=m01_end_wolves
 #: data/ai/micro_ais/scenarios/animals.cfg:209
 #: data/ai/micro_ais/scenarios/dragon.cfg:48
@@ -540,9 +540,9 @@ msgstr "Veľký Zlý Ork"
 msgid "All right, chaps. Those orcs need to be stopped."
 msgstr "OK, chlapi. Týchto orkov musíme zastaviť."
 
-#. [message]: speaker=Big Bad Orc
 #. [message]: speaker=Another Bad Orc
 #. [message]: speaker=Vanak
+#. [message]: speaker=Big Bad Orc
 #: data/ai/micro_ais/scenarios/bottleneck_defense.cfg:93
 #: data/ai/micro_ais/scenarios/guardians.cfg:572
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:140
@@ -632,7 +632,7 @@ msgstr "Drak"
 #. [side]
 #: data/ai/micro_ais/scenarios/dragon.cfg:21
 msgid "team_name^Rowck"
-msgstr "team_name^Rowck"
+msgstr "Rowck"
 
 #. [side]: type=Dread Bat, id=Dreadful Bat
 #: data/ai/micro_ais/scenarios/dragon.cfg:33
@@ -748,8 +748,8 @@ msgstr ""
 "V scéne netreba nič robiť, len sledujte alebo použite túto scénu ako šablónu "
 "alebo pre vlastné testy."
 
-#. [event]
 #. [test]: id=goto
+#. [event]
 #: data/ai/micro_ais/scenarios/goto.cfg:5
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:84
 msgid "Goto"
@@ -773,12 +773,12 @@ msgstr "Saurovia"
 #. [side]
 #: data/ai/micro_ais/scenarios/goto.cfg:125
 msgid "team_name^Animals"
-msgstr "team_name^Zvieratá"
+msgstr "Zvieratá"
 
 #. [side]
 #: data/ai/micro_ais/scenarios/goto.cfg:138
 msgid "team_name^Ghosts"
-msgstr "team_name^Duchovia"
+msgstr "Duchovia"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/goto.cfg:185
@@ -1064,8 +1064,8 @@ msgstr "Všetci sme sa dostali do rohov, poďme sa teraz spoločne vrátiť."
 msgid "We're back together, let's head out to the corners again."
 msgstr "Spoločne sme sa vrátili, tak zase každý smerujme naspäť do rohov."
 
-#. [event]
 #. [test]: id=guardians
+#. [event]
 #: data/ai/micro_ais/scenarios/guardians.cfg:17
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:57
 msgid "Guardians"
@@ -1459,12 +1459,12 @@ msgstr "Zdržiavanie"
 #. [side]: id=Bad Outlaw, type=Outlaw
 #: data/ai/micro_ais/scenarios/hang_out.cfg:23
 msgid "team_name^Bad Outlaw"
-msgstr "team_name^Zlý Štvanec"
+msgstr "Zlý Štvanec"
 
 #. [side]: id=Good Bandit, type=Bandit
 #: data/ai/micro_ais/scenarios/hang_out.cfg:39
 msgid "team_name^Good Bandit"
-msgstr "team_name^Dobrý Bandita"
+msgstr "Dobrý Bandita"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/hang_out.cfg:61
@@ -1601,7 +1601,7 @@ msgstr "Pekzs"
 #. [side]: id=Pekzs, type=Saurian Soothsayer
 #: data/ai/micro_ais/scenarios/lurkers.cfg:204
 msgid "team_name^Pekzs"
-msgstr "team_name^Pekzs"
+msgstr "Pekzs"
 
 #. [side]: type=Saurian Oracle
 #: data/ai/micro_ais/scenarios/lurkers.cfg:220
@@ -1788,9 +1788,9 @@ msgstr "Eskorta Posla"
 msgid "Vanak"
 msgstr "Vanak"
 
-#. [event]
 #. [side]
 #. [unit]: type=Dragoon, id=messenger
+#. [event]
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:37
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:73
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:72
@@ -1908,12 +1908,12 @@ msgstr "Banditi"
 #. [side]
 #: data/ai/micro_ais/scenarios/patrols.cfg:41
 msgid "team_name^Konrad"
-msgstr "team_name^Konrád"
+msgstr "Konrád"
 
 #. [side]
 #: data/ai/micro_ais/scenarios/patrols.cfg:56
 msgid "team_name^Urudin"
-msgstr "team_name^Urudín"
+msgstr "Urudín"
 
 #. [unit]: type=Orcish Slayer, id=Urudin
 #: data/ai/micro_ais/scenarios/patrols.cfg:114
@@ -2113,7 +2113,7 @@ msgstr "Langzar"
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:24
 #: data/ai/micro_ais/scenarios/recruiting.cfg:23
 msgid "team_name^Langzhar"
-msgstr "team_name^Langhar"
+msgstr "Langhar"
 
 #. [side]: id=Koorzhar, type=Lieutenant
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:34
@@ -2125,7 +2125,7 @@ msgstr "Korzár"
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:41
 #: data/ai/micro_ais/scenarios/recruiting.cfg:38
 msgid "team_name^Koorzhar"
-msgstr "team_name^Korzár"
+msgstr "Korzár"
 
 #. [event]
 #: data/ai/micro_ais/scenarios/protect_unit.cfg:119
@@ -2259,8 +2259,8 @@ msgstr "Držal som sa tak dlho, ako to len šlo."
 msgid "I made it"
 msgstr "Dokázal som to"
 
-#. [event]
 #. [test]: id=recruiting
+#. [event]
 #: data/ai/micro_ais/scenarios/recruiting.cfg:5
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:78
 msgid "Recruiting"
@@ -2329,7 +2329,7 @@ msgstr "Krehký Grnk"
 #. [side]: id=Grnk, type=Goblin Spearman
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:27
 msgid "team_name^Grnk"
-msgstr "team_name^Grnk"
+msgstr "Grnk"
 
 #. [event]
 #. [test]: id=swarm
@@ -2786,12 +2786,27 @@ msgstr ""
 
 #. [message]: speaker=Uralt
 #: data/ai/micro_ais/scenarios/simple_attack.cfg:176
+#, fuzzy
+#| msgid ""
+#| "Hahahahaha !! I have given special instruction to my Soulless to attack "
+#| "all you almost-advanced units first. Also watch how those same Soulless "
+#| "will throw themselves mercilessly at your pitiful soldiers after that, "
+#| "saving my more valuable skeleton minions for later.  I have taken the "
+#| "term 'disposable units' to a whole new level. Watch in awe !!\n"
+#| "\n"
+#| "<i>Translation: The undead side includes two instances of the Simple "
+#| "Attack Micro AI.  The first makes the Soulless attack all units 1 XP from "
+#| "leveling up, such that they can be eliminated afterward.  The second "
+#| "executes all remaining attacks possible by Soulless (and Walking "
+#| "Corpses), without regard for their own safety.  Only after that does the "
+#| "default Wesnoth attack mechanism kick in to attack with the remaining "
+#| "units (skeletons).</i>"
 msgid ""
-"Hahahahaha !! I have given special instruction to my Soulless to attack all "
-"you almost-advanced units first. Also watch how those same Soulless will "
+"Hahahahaha!! I have given special instruction to my Soulless to attack all "
+"your almost-advanced units first. Also watch how those same Soulless will "
 "throw themselves mercilessly at your pitiful soldiers after that, saving my "
-"more valuable skeleton minions for later.  I have taken the term 'disposable "
-"units' to a whole new level. Watch in awe !!\n"
+"more valuable skeleton minions for later. I have taken the term 'disposable "
+"units' to a whole new level. Watch in awe!!\n"
 "\n"
 "<i>Translation: The undead side includes two instances of the Simple Attack "
 "Micro AI.  The first makes the Soulless attack all units 1 XP from leveling "
@@ -2900,7 +2915,7 @@ msgstr "Smrť všetkých gryfov"
 #. [side]
 #: data/ai/micro_ais/scenarios/wolves.cfg:42
 msgid "team_name^Wolves"
-msgstr "team_name^Vlci"
+msgstr "Vlci"
 
 #. [side]
 #: data/ai/micro_ais/scenarios/wolves.cfg:56

@@ -36,6 +36,7 @@
 #include "gui/widgets/toggle_panel.hpp"
 #include "gui/widgets/tree_view_node.hpp"
 
+#include "addon/client.hpp"
 #include "addon/manager_ui.hpp"
 #include "chat_log.hpp"
 #include "font/text_formatting.hpp"
@@ -242,7 +243,11 @@ bool handle_addon_requirements_gui(const std::vector<mp::game_info::required_add
 
 		if(gui2::show_message(e_title, err_msg, message::yes_no_buttons, true) == gui2::retval::OK) {
 			// Begin download session
-			return ad_hoc_addon_fetch_session(needs_download);
+			try {
+				return ad_hoc_addon_fetch_session(needs_download);
+			} catch (const addons_client::user_exit&) {
+			} catch (const addons_client::user_disconnect&) {
+			}
 		}
 	}
 
@@ -299,6 +304,10 @@ void mp_lobby::update_gamelist_diff()
 		const mp::game_info& game = *lobby_info_.games()[i];
 
 		if(game.display_status == mp::game_info::NEW) {
+			// call void do_notify(notify_mode mode, const std::string& sender, const std::string& message)
+			// sender will be the game_info.scenario (std::string) and message will be game_info.name (std::string)
+			do_notify(mp::NOTIFY_GAME_CREATED, game.scenario, game.name);
+
 			LOG_LB << "Adding game to listbox " << game.id << "\n";
 
 			if(list_i != gamelistbox_->get_item_count()) {
@@ -466,7 +475,7 @@ void mp_lobby::adjust_game_row_contents(const mp::game_info& game, grid* grid, b
 		}
 	}
 
-	// TODO: move to some general are of the code.
+	// TODO: move to some general area of the code.
 	const auto yes_or_no = [](bool val) { return val ? _("yes") : _("no"); };
 
 	ss << "\n<big>" << colorize(_("Settings"), font::TITLE_COLOR) << "</big>\n";

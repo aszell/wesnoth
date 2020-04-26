@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2019-01-21 18:29 UTC\n"
-"PO-Revision-Date: 2005-05-03 22:14+0200\n"
-"Last-Translator: Automatically generated\n"
+"POT-Creation-Date: 2020-01-12 16:28 UTC\n"
+"PO-Revision-Date: 2019-06-27 17:03+0200\n"
+"Last-Translator: Merijn de Vet <merijndevet@hotmail.com>\n"
 "Language-Team: none\n"
-"Language: \n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. [campaign]: id=Delfadors_Memoirs
 #: data/campaigns/Delfadors_Memoirs/_main.cfg:22
@@ -39,6 +40,7 @@ msgstr ""
 
 #. [campaign]: id=Delfadors_Memoirs
 #: data/campaigns/Delfadors_Memoirs/_main.cfg:32
+#, fuzzy
 msgid "Mage"
 msgstr "Magiër"
 
@@ -112,7 +114,6 @@ msgstr ""
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:24
 #: data/campaigns/Delfadors_Memoirs/scenarios/12_Terror_at_the_Ford_of_Parthyn.cfg:208
 #, fuzzy
-#| msgid "Mage"
 msgid "Mages"
 msgstr "Magiër"
 
@@ -303,18 +304,18 @@ msgstr ""
 msgid "Grogor-Tuk"
 msgstr ""
 
-#. [side]: type=Goblin Pillager, id=Grogor-Tuk
 #. [side]: type=Orcish Warrior, id=Urthaka-Tan
-#. [side]: type=Orcish Slayer, id=Hagha-Tan
-#. [side]: type=Orcish Warlord, id=Tish Golub
 #. [side]: type=Orcish Warlord, id=Knafa-ord
 #. [side]: type=Orcish Warlord, id=Tan-drul
 #. [side]: type=Orcish Warlord, id=Krardul
+#. [side]: type=Orcish Warlord, id=Tish Golub
 #. [side]: type=Orcish Sovereign, id=Zorlan
 #. [side]: type=Orcish Warrior, id=T'bhan
 #. [side]: type=Orcish Warrior, id=Qgthun
 #. [side]: type=Great Troll, type=Troll Hero, id=Trgrau
 #. [side]
+#. [side]: type=Goblin Pillager, id=Grogor-Tuk
+#. [side]: type=Orcish Slayer, id=Hagha-Tan
 #. [side]: type=Orcish Warlord, id=Upgar
 #: data/campaigns/Delfadors_Memoirs/scenarios/02_This_Valley_Belongs_to_Me.cfg:49
 #: data/campaigns/Delfadors_Memoirs/scenarios/03_The_Road_to_Weldyn.cfg:44
@@ -410,6 +411,7 @@ msgstr ""
 #: data/campaigns/Delfadors_Memoirs/scenarios/21_Clash_at_the_Manor.cfg:126
 #: data/campaigns/Delfadors_Memoirs/scenarios/22_Face_of_the_Enemy.cfg:93
 #: data/campaigns/Delfadors_Memoirs/scenarios/22_Face_of_the_Enemy.cfg:189
+#, fuzzy
 msgid "Death of Delfador"
 msgstr "Dood van Delfador"
 
@@ -573,15 +575,15 @@ msgstr ""
 msgid "Hagha-Tan"
 msgstr ""
 
-#. [side]: type=Arch Mage, id=Leollyn
 #. [side]
+#. [side]: type=King of Wesnoth, id=Garard II
+#. [side]: type=General, id=Rhuwin
+#. [side]: type=Arch Mage, id=Leollyn
+#. [modify_side]
+#. [side]: type=King of Wesnoth, id=Garard
 #. [side]: type=General, id=Eldred
 #. [side]: type=General, id=Lowel
-#. [side]: type=King of Wesnoth, id=Garard
-#. [modify_side]
-#. [side]: type=King of Wesnoth, id=Garard II
 #. [side]: type=Lieutenant, id=Niktor
-#. [side]: type=General, id=Rhuwin
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:101
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:23
 #: data/campaigns/Delfadors_Memoirs/scenarios/05_Council_in_Weldyn.cfg:34
@@ -660,6 +662,7 @@ msgstr ""
 
 #. [message]: speaker=Hagha-Tan
 #: data/campaigns/Delfadors_Memoirs/scenarios/04_Leollyn.cfg:194
+#, fuzzy
 msgid "Yes... yes... slay them, my assassins!"
 msgstr "Ja.... ja... slacht ze af, mijn sluipmoordenaars!"
 
@@ -979,18 +982,18 @@ msgstr ""
 msgid "Night in the Swamp"
 msgstr ""
 
-#. [side]
-#. [side]: type=Death Knight, id=Arakar
+#. [side]: type=Lich, id=Sagus
 #. [side]: type=Death Knight, id=Prepolur
 #. [side]: type=Necromancer, id=Unuvim-Malal
-#. [side]: type=Necromancer, id=Maldun
-#. [side]: type=Death Knight, id=Alderoth
+#. [side]
+#. [side]: type=Necromancer, id=Gruv-Malal
 #. [side]: type=Death Knight, id=Rudimil
 #. [side]: type=Necromancer, id=Roth-Malal
 #. [side]: type=Necromancer, id=Barth-Malal
+#. [side]: type=Death Knight, id=Arakar
+#. [side]: type=Necromancer, id=Maldun
+#. [side]: type=Death Knight, id=Alderoth
 #. [side]: type=Death Knight, id=Dirator
-#. [side]: type=Necromancer, id=Gruv-Malal
-#. [side]: type=Lich, id=Sagus
 #: data/campaigns/Delfadors_Memoirs/scenarios/07_Night_in_the_Swamp.cfg:47
 #: data/campaigns/Delfadors_Memoirs/scenarios/09_Houses_of_the_Undead.cfg:38
 #: data/campaigns/Delfadors_Memoirs/scenarios/10_The_Gate_Between_Worlds.cfg:34
@@ -1408,8 +1411,8 @@ msgid ""
 "Sythan’s village."
 msgstr ""
 
-#. [scenario]: id=09_Houses_of_the_Dead
 #. [event]
+#. [scenario]: id=09_Houses_of_the_Dead
 #: data/campaigns/Delfadors_Memoirs/scenarios/09_Houses_of_the_Undead.cfg:318
 #: data/campaigns/Delfadors_Memoirs/scenarios/14_Shadows.cfg:193
 msgid "Nameless"
@@ -1766,6 +1769,7 @@ msgstr ""
 
 #. [scenario]: id=11_Wasteland
 #: data/campaigns/Delfadors_Memoirs/scenarios/11_Wasteland.cfg:3
+#, fuzzy
 msgid "Wasteland"
 msgstr "Woesternij"
 
@@ -1774,9 +1778,9 @@ msgstr "Woesternij"
 msgid "Tish Golub"
 msgstr ""
 
-#. [side]: type=Elvish Druid
 #. [side]
 #. [side]: type=Elvish Captain, id=Clartakis
+#. [side]: type=Elvish Druid
 #: data/campaigns/Delfadors_Memoirs/scenarios/11_Wasteland.cfg:54
 #: data/campaigns/Delfadors_Memoirs/scenarios/13_The_Return_of_Trouble.cfg:40
 #: data/campaigns/Delfadors_Memoirs/scenarios/13_The_Return_of_Trouble.cfg:181
@@ -1928,7 +1932,6 @@ msgstr ""
 #. [objective]: condition=win
 #: data/campaigns/Delfadors_Memoirs/scenarios/11_Wasteland.cfg:280
 #, fuzzy
-#| msgid "Defeat enemy leader"
 msgid "Defeat the enemy leader"
 msgstr "Versla de vijandige leider"
 
@@ -3133,6 +3136,7 @@ msgstr ""
 #: data/campaigns/Delfadors_Memoirs/scenarios/16_Dark_Sky_Over_Weldyn.cfg:132
 #: data/campaigns/Delfadors_Memoirs/utils/characters.cfg:30
 #: data/campaigns/Delfadors_Memoirs/utils/characters.cfg:53
+#, fuzzy
 msgid "Delfador"
 msgstr "Delfador"
 
@@ -4057,8 +4061,8 @@ msgid ""
 "under me to do it."
 msgstr ""
 
-#. [modify_side]
 #. [side]
+#. [modify_side]
 #: data/campaigns/Delfadors_Memoirs/scenarios/20_Prince_of_Wesnoth.cfg:255
 #: data/campaigns/Delfadors_Memoirs/scenarios/21_Clash_at_the_Manor.cfg:52
 #: data/campaigns/Delfadors_Memoirs/scenarios/22_Face_of_the_Enemy.cfg:36

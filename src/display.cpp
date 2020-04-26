@@ -51,7 +51,7 @@
 #include "show_dialog.hpp"
 #include "gui/dialogs/loading_screen.hpp"
 
-#include <SDL_image.h>
+#include <SDL2/SDL_image.h>
 
 #include <array>
 #include <cmath>
@@ -777,8 +777,7 @@ map_location display::minimap_location_on(int x, int y)
 surface display::screenshot(bool map_screenshot)
 {
 	if (!map_screenshot) {
-		// Use make_neutral_surface() to copy surface content
-		return make_neutral_surface(screen_.getSurface());
+		return screen_.getSurface().clone();
 	} else {
 		if (get_map().empty()) {
 			ERR_DP << "No map loaded, cannot create a map screenshot.\n";
@@ -786,7 +785,7 @@ surface display::screenshot(bool map_screenshot)
 		}
 
 		SDL_Rect area = max_map_area();
-		map_screenshot_surf_ = create_compatible_surface(screen_.getSurface(), area.w, area.h);
+		map_screenshot_surf_ = surface(area.w, area.h);
 
 		if (map_screenshot_surf_ == nullptr) {
 			// Memory problem ?
@@ -1184,7 +1183,7 @@ void display::get_terrain_images(const map_location &loc,
 				surf = image::get_lighted_image(image, lt, image::SCALED_TO_HEX);
 			}
 
-			if (!surf.null()) {
+			if (surf) {
 				terrain_image_vector_.push_back(std::move(surf));
 			}
 		}
@@ -1410,9 +1409,9 @@ static void draw_panel(CVideo &video, const theme::panel& panel, std::vector<std
 	DBG_DP << "panel location: x=" << loc.x << ", y=" << loc.y
 			<< ", w=" << loc.w << ", h=" << loc.h << "\n";
 
-	if(!surf.null()) {
+	if(surf) {
 		if(surf->w != loc.w || surf->h != loc.h) {
-			surf.assign(tile_surface(surf,loc.w,loc.h));
+			surf = tile_surface(surf,loc.w,loc.h);
 		}
 		video.blit_surface(loc.x, loc.y, surf);
 	}
@@ -1440,9 +1439,9 @@ static void draw_label(CVideo& video, surface target, const theme::label& label)
 
 	if(icon.empty() == false) {
 		surface surf(image::get_image(icon));
-		if(!surf.null()) {
+		if(surf) {
 			if(surf->w > loc.w || surf->h > loc.h) {
-				surf.assign(scale_surface(surf,loc.w,loc.h));
+				surf = scale_surface(surf,loc.w,loc.h);
 			}
 
 			sdl_blit(surf,nullptr,target,&loc);
@@ -1487,7 +1486,7 @@ static void draw_background(surface screen, const SDL_Rect& area, const std::str
 	}
 
 	const surface background(image::get_image(image));
-	if(background.null()) {
+	if(!background) {
 		return;
 	}
 
@@ -1564,9 +1563,8 @@ void display::render_image(int x, int y, const display::drawing_layer drawing_la
 	//} else if(alpha != 1.0 && blendto != 0) {
 	//	surf.assign(blend_surface(surf,1.0-alpha,blendto));
 	} else if(alpha != ftofxp(1.0)) {
-		surface temp = make_neutral_surface(surf);
-		adjust_surface_alpha(temp, alpha);
-		surf = temp;
+		surf = surf.clone();
+		adjust_surface_alpha(surf, alpha);
 	}
 
 	if(surf == nullptr) {
@@ -1832,7 +1830,25 @@ void display::draw_minimap()
 		view_h + 2
 	};
 
-	sdl::draw_rectangle(outline_rect, {255, 255, 255, 255});
+	// SDL 2.0.10's render batching changes result in the
+	// surface's clipping rectangle being overridden even if
+	// no render clipping rectangle set operaton was queued,
+	// so let's not use the render API to draw the rectangle.
+
+	const SDL_Rect outline_parts[] = {
+		// top
+		{ outline_rect.x,                      outline_rect.y,                  outline_rect.w, 1              },
+		// bottom
+		{ outline_rect.x,                      outline_rect.y + outline_rect.h, outline_rect.w, 1              },
+		// left
+		{ outline_rect.x,                      outline_rect.y,                  1,              outline_rect.h },
+		// right
+		{ outline_rect.x + outline_rect.w - 1, outline_rect.y,                  1,              outline_rect.h },
+	};
+
+	for(const auto& r : outline_parts) {
+		SDL_FillRect(screen_.getSurface(), &r, 0x00FFFFFF);
+	}
 }
 
 void display::draw_minimap_units()
@@ -1886,7 +1902,12 @@ void display::draw_minimap_units()
 				, round_double(u_h)
 		};
 
-		sdl::fill_rectangle(r, col);
+		// SDL 2.0.10's render batching changes result in the
+		// surface's clipping rectangle being overridden even if
+		// no render clipping rectangle set operaton was queued,
+		// so let's not use the render API to draw the rectangle.
+
+		SDL_FillRect(screen_.getSurface(), &r, col.to_argb_bytes());
 	}
 }
 
@@ -1949,7 +1970,7 @@ bool display::scroll(int xmove, int ymove, bool force)
 
 		// This is a workaround for a SDL2 bug when blitting on overlapping surfaces. The bug
 		// only strikes during scrolling, but will then duplicate textures across the entire map.
-		surface screen_copy = make_neutral_surface(screen);
+		surface screen_copy = screen.clone();
 
 		SDL_SetSurfaceBlendMode(screen_copy, SDL_BLENDMODE_NONE);
 		SDL_BlitSurface(screen_copy, &srcrect, screen, &dstrect);
@@ -2035,13 +2056,28 @@ bool display::set_zoom(unsigned int amount, const bool validate_value_and_set_in
 		zoom_index_ = std::distance(zoom_levels.begin(), iter);
 	}
 
+	const SDL_Rect& outside_area = map_outside_area();
 	const SDL_Rect& area = map_area();
 
 	//Turn the zoom factor to a double in order to avoid rounding errors.
 	double zoom_factor = static_cast<double>(new_zoom) / static_cast<double>(zoom_);
 
+	// INVARIANT: xpos_ + area.w == xend where xend is as in bounds_check_position()
+	//
+	// xpos_: Position of the leftmost visible map pixel of the viewport, in pixels.
+	// Affected by the current zoom: this->zoom_ pixels to the hex.
+	//
+	// xpos_ + area.w/2: Position of the center of the viewport, in pixels.
+	//
+	// (xpos_ + area.w/2) * new_zoom/zoom_: Position of the center of the
+	// viewport, as it would be under new_zoom.
+	//
+	// (xpos_ + area.w/2) * new_zoom/zoom_ - area.w/2: Position of the
+	// leftmost visible map pixel, as it would be under new_zoom.
 	xpos_ = round_double(((xpos_ + area.w / 2) * zoom_factor) - (area.w / 2));
 	ypos_ = round_double(((ypos_ + area.h / 2) * zoom_factor) - (area.h / 2));
+	xpos_ -= (outside_area.w - area.w) / 2;
+	ypos_ -= (outside_area.h - area.h) / 2;
 
 	zoom_ = new_zoom;
 	bounds_check_position(xpos_, ypos_);
@@ -2665,7 +2701,7 @@ void display::draw_hex(const map_location& loc) {
 			int off_x = xpos + hex_size()/2;
 			int off_y = ypos + hex_size()/2;
 			surface text = font::get_rendered_text(lexical_cast<std::string>(loc), font::SIZE_SMALL, font::NORMAL_COLOR);
-			surface bg = create_neutral_surface(text->w, text->h);
+			surface bg(text->w, text->h);
 			SDL_Rect bg_rect {0, 0, text->w, text->h};
 			sdl::fill_surface_rect(bg, &bg_rect, 0xaa000000);
 			off_x -= text->w / 2;
@@ -2683,7 +2719,7 @@ void display::draw_hex(const map_location& loc) {
 			int off_x = xpos + hex_size()/2;
 			int off_y = ypos + hex_size()/2;
 			surface text = font::get_rendered_text(lexical_cast<std::string>(get_map().get_terrain(loc)), font::SIZE_SMALL, font::NORMAL_COLOR);
-			surface bg = create_neutral_surface(text->w, text->h);
+			surface bg(text->w, text->h);
 			SDL_Rect bg_rect {0, 0, text->w, text->h};
 			sdl::fill_surface_rect(bg, &bg_rect, 0xaa000000);
 			off_x -= text->w / 2;
@@ -2700,7 +2736,7 @@ void display::draw_hex(const map_location& loc) {
 			int off_x = xpos + hex_size()/2;
 			int off_y = ypos + hex_size()/2;
 			surface text = font::get_rendered_text(lexical_cast<std::string>(num_images_bg + num_images_fg), font::SIZE_SMALL, font::NORMAL_COLOR);
-			surface bg = create_neutral_surface(text->w, text->h);
+			surface bg(text->w, text->h);
 			SDL_Rect bg_rect {0, 0, text->w, text->h};
 			sdl::fill_surface_rect(bg, &bg_rect, 0xaa000000);
 			off_x -= text->w / 2;
@@ -2741,8 +2777,8 @@ void display::draw_image_for_report(surface& img, SDL_Rect& rect)
 		}
 
 		if(visible_area.w > rect.w || visible_area.h > rect.h) {
-			img.assign(get_surface_portion(img,visible_area));
-			img.assign(scale_surface(img,rect.w,rect.h));
+			img = get_surface_portion(img,visible_area);
+			img = scale_surface(img,rect.w,rect.h);
 			visible_area.x = 0;
 			visible_area.y = 0;
 			visible_area.w = img->w;
@@ -2757,7 +2793,7 @@ void display::draw_image_for_report(surface& img, SDL_Rect& rect)
 		sdl_blit(img,&visible_area,screen_.getSurface(),&target);
 	} else {
 		if(img->w != rect.w || img->h != rect.h) {
-			img.assign(scale_surface(img,rect.w,rect.h));
+			img = scale_surface(img,rect.w,rect.h);
 		}
 
 		sdl_blit(img,nullptr,screen_.getSurface(),&target);
@@ -2773,7 +2809,7 @@ void display::refresh_report(const std::string& report_name, const config * new_
 {
 	const theme::status_item *item = theme_.get_status_item(report_name);
 	if (!item) {
-		reportSurfaces_[report_name].assign(nullptr);
+		reportSurfaces_[report_name] = nullptr;
 		return;
 	}
 
@@ -2811,7 +2847,7 @@ void display::refresh_report(const std::string& report_name, const config * new_
 	// If the rectangle has just changed, assign the surface to it
 	if (!surf || new_rect != rect)
 	{
-		surf.assign(nullptr);
+		surf = nullptr;
 		rect = new_rect;
 
 		// If the rectangle is present, and we are blitting text,
@@ -2819,7 +2855,7 @@ void display::refresh_report(const std::string& report_name, const config * new_
 		// (Images generally won't need backing up,
 		// unless they are transparent, but that is done later).
 		if (rect.w > 0 && rect.h > 0) {
-			surf.assign(get_surface_portion(screen_.getSurface(), rect));
+			surf = get_surface_portion(screen_.getSurface(), rect);
 			if (reportSurfaces_[report_name] == nullptr) {
 				ERR_DP << "Could not backup background for report!" << std::endl;
 			}
@@ -2956,10 +2992,10 @@ void display::refresh_report(const std::string& report_name, const config * new_
 		}
 
 		skip_element:
-		t = elements.front()["tooltip"].t_str().base_str();
+		t = elements.front()["tooltip"].t_str().c_str();
 		if (!t.empty()) {
 			if (!used_ellipsis) {
-				tooltips::add_tooltip(area, t, elements.front()["help"].t_str().base_str());
+				tooltips::add_tooltip(area, t, elements.front()["help"].t_str().c_str());
 			} else {
 				// Collect all tooltips for the ellipsis.
 				// TODO: need a better separator
@@ -2981,9 +3017,6 @@ void display::invalidate_all()
 {
 	DBG_DP << "invalidate_all()\n";
 	invalidateAll_ = true;
-#ifdef _OPENMP
-#pragma omp critical(invalidated_)
-#endif //_OPENMP
 	invalidated_.clear();
 }
 
@@ -2993,9 +3026,6 @@ bool display::invalidate(const map_location& loc)
 		return false;
 
 	bool tmp;
-#ifdef _OPENMP
-#pragma omp critical(invalidated_)
-#endif //_OPENMP
 	tmp = invalidated_.insert(loc).second;
 	return tmp;
 }
@@ -3006,9 +3036,6 @@ bool display::invalidate(const std::set<map_location>& locs)
 		return false;
 	bool ret = false;
 	for (const map_location& loc : locs) {
-#ifdef _OPENMP
-#pragma omp critical(invalidated_)
-#endif //_OPENMP
 		ret = invalidated_.insert(loc).second || ret;
 	}
 	return ret;
@@ -3023,9 +3050,6 @@ bool display::propagate_invalidation(const std::set<map_location>& locs)
 		return false; // propagation never needed
 
 	bool result = false;
-#ifdef _OPENMP
-#pragma omp critical(invalidated_)
-#endif //_OPENMP
 	{
 		// search the first hex invalidated (if any)
 		std::set<map_location>::const_iterator i = locs.begin();
@@ -3087,56 +3111,22 @@ void display::invalidate_animations()
 		}
 	}
 
-#ifndef _OPENMP
 	for (const unit & u : dc_->units()) {
 		u.anim_comp().refresh();
 	}
 	for (const unit* u : *fake_unit_man_) {
 		u->anim_comp().refresh();
 	}
-#else
-	std::vector<const unit *> open_mp_list;
-	for (const unit & u : dc_->units()) {
-		open_mp_list.push_back(&u);
-	}
-	// Note that it is an important assumption of the
-	// system that the fake units are added to the list
-	// after the real units, so that e.g. whiteboard
-	// planned moves are drawn over the real units.
-	for (const unit* u : *fake_unit_man_) {
-		open_mp_list.push_back(u);
-	}
-
-	// openMP can't iterate over size_t
-	const int omp_iterations = open_mp_list.size();
-	//#pragma omp parallel for shared(open_mp_list)
-	//this loop must not be parallelized. refresh is not thread-safe,
-	//for one, unit filters are not thread safe. this is because,
-	//adding new "scoped" wml variables is not thread safe. lua itself
-	//is not thread safe. when this loop was parallelized, assertion
-	//failures were reported in windows openmp builds.
-	for (int i = 0; i < omp_iterations; i++) {
-		open_mp_list[i]->anim_comp().refresh();
-	}
-#endif
-
 
 	bool new_inval;
 	do {
 		new_inval = false;
-#ifndef _OPENMP
 		for (const unit & u : dc_->units()) {
 			new_inval |=  u.anim_comp().invalidate(*this);
 		}
 		for (const unit* u : *fake_unit_man_) {
 			new_inval |=  u->anim_comp().invalidate(*this);
 		}
-#else
-	#pragma omp parallel for reduction(|:new_inval) shared(open_mp_list)
-		for (int i = 0; i < omp_iterations; i++) {
-				new_inval |= open_mp_list[i]->anim_comp().invalidate(*this);
-		}
-#endif
 	} while (new_inval);
 }
 

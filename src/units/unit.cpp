@@ -959,7 +959,7 @@ void unit::advance_to(const unit_type& u_type, bool use_traits)
 	max_attacks_ = new_type.max_attacks();
 
 	flag_rgb_ = new_type.flag_rgb();
-	
+
 	upkeep_ = upkeep_full();
 	parse_upkeep(new_type.get_cfg()["upkeep"]);
 
@@ -1514,7 +1514,7 @@ void unit::write(config& cfg) const
 
 void unit::set_facing(map_location::DIRECTION dir) const
 {
-	if(dir != map_location::NDIRECTIONS) {
+	if(dir != map_location::NDIRECTIONS && dir != facing_) {
 		appearance_changed_ = true;
 		facing_ = dir;
 	}
@@ -1979,27 +1979,10 @@ void unit::apply_builtin_effect(std::string apply_to, const config& effect)
 		{
 			set_state(to_remove, false);
 		}
-	// Note: It would not be hard to define a new "applies_to=" that
-	//       combines the next five options (the movetype effects).
-	} else if(apply_to == "movement_costs") {
-		if(const config& ap = effect.child("movement_costs")) {
-			movement_type_.get_movement().merge(ap, effect["replace"].to_bool());
-		}
-	} else if(apply_to == "vision_costs") {
-		if(const config& ap = effect.child("vision_costs")) {
-			movement_type_.get_vision().merge(ap, effect["replace"].to_bool());
-		}
-	} else if(apply_to == "jamming_costs") {
-		if(const config& ap = effect.child("jamming_costs")) {
-			movement_type_.get_jamming().merge(ap, effect["replace"].to_bool());
-		}
-	} else if(apply_to == "defense") {
-		if(const config& ap = effect.child("defense")) {
-			movement_type_.get_defense().merge(ap, effect["replace"].to_bool());
-		}
-	} else if(apply_to == "resistance") {
-		if(const config& ap = effect.child("resistance")) {
-			movement_type_.get_resistances().merge(ap, effect["replace"].to_bool());
+	} else if(std::find(movetype::effects.cbegin(), movetype::effects.cend(), apply_to) != movetype::effects.cend()) {
+		// "movement_costs", "vision_costs", "jamming_costs", "defense", "resistance"
+		if(const config& ap = effect.child(apply_to)) {
+			movement_type_.merge(ap, apply_to, effect["replace"].to_bool());
 		}
 	} else if(apply_to == "zoc") {
 		if(const config::attribute_value* v = effect.get("value")) {
@@ -2161,7 +2144,7 @@ void unit::add_modification(const std::string& mod_type, const config& mod, bool
 	}
 
 	bool set_poisoned = false; // Tracks if the poisoned state was set after the type or variation was changed.
-	config last_effect;
+	config type_effect, variation_effect;
 	std::vector<t_string> effects_description;
 	for(const config& effect : mod.child_range("effect")) {
 		// Apply SUF.
@@ -2184,10 +2167,15 @@ void unit::add_modification(const std::string& mod_type, const config& mod, bool
 				times --;
 
 				bool was_poisoned = get_state(STATE_POISONED);
-				if(apply_to == "variation" || apply_to == "type") {
-					// Apply unit type/variation changes last to avoid double applying effects on advance.
+				// Apply unit type/variation changes last to avoid double applying effects on advance.
+				if(apply_to == "type") {
 					set_poisoned = false;
-					last_effect = effect;
+					type_effect = effect;
+					continue;
+				}
+				if(apply_to == "variation") {
+					set_poisoned = false;
+					variation_effect = effect;
 					continue;
 				}
 
@@ -2227,15 +2215,27 @@ void unit::add_modification(const std::string& mod_type, const config& mod, bool
 		}
 	}
 	// Apply variations -- only apply if we are adding this for the first time.
-	if(!last_effect.empty() && no_add == false) {
-		std::string description;
-		if(resources::lua_kernel) {
-			description = resources::lua_kernel->apply_effect(last_effect["apply_to"], *this, last_effect, true);
-		} else if(builtin_effects.count(last_effect["apply_to"])) {
-			apply_builtin_effect(last_effect["apply_to"], last_effect);
-			description = describe_builtin_effect(last_effect["apply_to"], last_effect);
+	if((!type_effect.empty() || !variation_effect.empty()) && no_add == false) {
+		if(!type_effect.empty()) {
+			std::string description;
+			if(resources::lua_kernel) {
+				description = resources::lua_kernel->apply_effect(type_effect["apply_to"], *this, type_effect, true);
+			} else if(builtin_effects.count(type_effect["apply_to"])) {
+				apply_builtin_effect(type_effect["apply_to"], type_effect);
+				description = describe_builtin_effect(type_effect["apply_to"], type_effect);
+			}
+			effects_description.push_back(description);
 		}
-		effects_description.push_back(description);
+		if(!variation_effect.empty()) {
+			std::string description;
+			if(resources::lua_kernel) {
+				description = resources::lua_kernel->apply_effect(variation_effect["apply_to"], *this, variation_effect, true);
+			} else if(builtin_effects.count(variation_effect["apply_to"])) {
+				apply_builtin_effect(variation_effect["apply_to"], variation_effect);
+				description = describe_builtin_effect(variation_effect["apply_to"], variation_effect);
+			}
+			effects_description.push_back(description);
+		}
 		if(set_poisoned)
 			// An effect explicitly set the poisoned state, and this
 			// should override the unit being immune to poison.
@@ -2542,7 +2542,7 @@ void unit::parse_upkeep(const config::attribute_value& upkeep)
 	} else if(upkeep == upkeep_full::type()) {
 		upkeep_ = upkeep_full();
 	} else {
-		WRN_UT << "Fund invalid upkeep=\"" << upkeep <<  "\" in a unit" << std::endl;
+		WRN_UT << "Found invalid upkeep=\"" << upkeep <<  "\" in a unit" << std::endl;
 		upkeep_ = upkeep_full();
 	}
 }
