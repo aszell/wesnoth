@@ -1151,7 +1151,6 @@ msgid "Linaera is a leader and can recruit mages when standing on a keep."
 msgstr ""
 "Linaera egy vezér, aki képes mágusokat toborozni, mikor vártoronyban áll."
 
-# Használd a tünde felderítőket(,) és Linaera teleportációs képességét az üss és fuss támadások végrehajtásához.
 #. [objectives]
 #: data/campaigns/An_Orcish_Incursion/scenarios/05_Linaera_the_Quick.cfg:129
 msgid ""

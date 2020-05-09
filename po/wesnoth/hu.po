@@ -339,6 +339,7 @@ msgstr "Joystick: a tolótengely azonosítója"
 msgid "Joystick: deadzone of the thruster"
 msgstr "Joystick: a tolótengelyt mozgató eszköz holtjátéka"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [unstore_unit]
 #. [lua]: set_status
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:360
@@ -3356,6 +3357,7 @@ msgstr "Barlang"
 msgid "Fungus"
 msgstr "Gombamező"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=village
 #: data/core/team-colors.cfg:188 src/terrain/terrain.cpp:176
 msgid "Village"
@@ -3386,11 +3388,13 @@ msgstr "Járhatatlan"
 msgid "Impassable"
 msgstr "Áthatolhatatlan"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=fog
 #: data/core/team-colors.cfg:224 src/game_initialization/lobby_data.cpp:468
 msgid "Fog"
 msgstr "Köd"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=shroud
 #: data/core/team-colors.cfg:230 src/game_initialization/lobby_data.cpp:471
 #: src/game_initialization/lobby_data.cpp:474
@@ -3745,6 +3749,7 @@ msgstr "Igen"
 msgid "No"
 msgstr "Nem"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #: data/gui/window/screenshot_notification.cfg:95
 #: src/hotkey/command_executor.cpp:627
@@ -3783,6 +3788,7 @@ msgstr ""
 msgid "(Note: You should use $replacement instead in new code)"
 msgstr ""
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: wesnoth.deprecate_api
 #: data/lua/core.lua:194 src/deprecation.cpp:69
 msgid "Invalid deprecation level $level (should be 1-4)"
@@ -3793,26 +3799,31 @@ msgstr ""
 msgid "Invalid deprecation level (should be 1-4)"
 msgstr ""
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:1061
 msgid "female^poisoned"
 msgstr "megmérgezve"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:128 src/actions/attack.cpp:1068
 msgid "female^slowed"
 msgstr "lelassítva"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:128 src/actions/attack.cpp:1068
 msgid "slowed"
 msgstr "lelassítva"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:129 src/actions/attack.cpp:1074
 msgid "female^petrified"
 msgstr "kővé vált"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:129 src/actions/attack.cpp:1074
 msgid "petrified"
@@ -3828,6 +3839,7 @@ msgstr "gyógyíthatatlan"
 msgid "unhealable"
 msgstr "gyógyíthatatlan"
 
+#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: wesnoth.wml_actions.message
 #: data/lua/wml/message.lua:395 src/scripting/game_lua_kernel.cpp:2787
 #: src/scripting/game_lua_kernel.cpp:2822
@@ -3856,12 +3868,6 @@ msgstr[1] "(%d kör van hátra)"
 #: data/lua/wml/objectives.lua:119
 msgid "%d%% of gold carried over to the next scenario."
 msgstr "%d%% aranyat viszel át a következő pályára."
-
-#. [objective]: condition=win
-#: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:156
-#: src/game_initialization/mp_game_utils.cpp:76
-msgid "Defeat enemy leader(s)"
-msgstr "Legyőzöd az (összes) ellenfél vezérét"
 
 #: data/scenario-test.cfg:1023 src/game_initialization/depcheck.cpp:491
 msgid "OK"

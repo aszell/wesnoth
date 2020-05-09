@@ -667,9 +667,6 @@ msgstr "Ó, jaj! Kifutottunk az időből, az ellenség erősítést hozott..."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Liberty/scenarios/02_Civil_Disobedience.cfg:353
-#| msgid ""
-#| "They would be remembered only traitors rightly put down by the Queen’s "
-#| "lances. And in the dark years to come, woe betide any who questioned it."
 msgid ""
 "They would be remembered only as traitors rightly put down by the Queen’s "
 "lances. And in the dark years to come, woe betide any who questioned it."
@@ -1989,12 +1986,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Liberty/scenarios/08_Glory.cfg:35
-#| msgid ""
-#| "This sentinel of the western plains stood watch as Wesnoth prospered for "
-#| "many centuries under the protection it provided. No war has overcome it, "
-#| "and its walls have never been overrun. The blood of invaders stains its "
-#| "parapets and the bones of the defeated crumble at the base of Halstead’s "
-#| "frozen waves of stone."
 msgid ""
 "This sentinel of the western plains stood watch as Wesnoth prospered for "
 "many centuries under its protection. No war has overcome it, and its walls "
@@ -2450,11 +2441,6 @@ msgstr ""
 # Hát, mivel nemrég még sizeable orcish army volt, nem vagyok hajlandó lefordítani, hogy small as it was.
 #. [part]
 #: data/campaigns/Liberty/scenarios/09_Epilogue.cfg:20
-#| msgid ""
-#| "The Elense riders routed the orcish army, small as it was, and sent them "
-#| "back across the Great River. They then scattered to the countryside and "
-#| "were not heard from again. Baldras thought this odd behavior when he "
-#| "heard about it."
 msgid ""
 "The Elense riders routed the orcish army, small as it was, and sent them "
 "back across the Great River. They then scattered to the countryside and were "
@@ -2599,13 +2585,6 @@ msgstr "Csavargó mágus"
 
 #. [unit_type]: id=Rogue Mage, race=human
 #: data/campaigns/Liberty/units/Rogue_Mage.cfg:17
-#| msgid ""
-#| "Some mages are thrown out of the mage’s guild for attempting to practice "
-#| "forbidden arts. Now completely outside the law, these rogue mages do "
-#| "whatever necessary to support their study of black magic. Although not as "
-#| "skilled as mages with more formal training, their magic can be quite "
-#| "lethal, while their banditry has resulted in moderate skill with the "
-#| "short sword."
 msgid ""
 "Some mages are thrown out of the mages’ guild for attempting to practice "
 "forbidden arts. Now completely outside the law, these rogue mages do "

@@ -14,15 +14,15 @@ msgstr ""
 "Project-Id-Version: hu-lib_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2020-02-01 22:39-0300\n"
-"PO-Revision-Date: 2018-11-16 00:19+0100\n"
-"Last-Translator: Krutki Tamás <krtamas-wesnoth@0x64.org>\n"
+"PO-Revision-Date: 2020-05-09 23:50+0200\n"
+"Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.3\n"
 
 #. [terrain_type]: id=farmer-fence  # AI-animal-proof fences from first scenario
 #. [terrain_type]: id=fence
@@ -3267,7 +3267,6 @@ msgstr "Csapat"
 msgid "Gold"
 msgstr "Arany"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_3
 #: data/gui/window/game_stats.cfg:76
 #: src/generators/default_map_generator.cpp:197
@@ -4597,7 +4596,6 @@ msgstr "Cselekvés"
 msgid "Hotkey"
 msgstr "Gyorsbill."
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_2
 #. Translate G as the initial letter for Game
 #: data/gui/window/preferences/02_hotkeys.cfg:135
@@ -4610,7 +4608,6 @@ msgstr "J"
 msgid "Available in game"
 msgstr "Elérhető a játékban"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_3
 #. Translate E as the initial letter for Editor
 #: data/gui/window/preferences/02_hotkeys.cfg:148
@@ -4623,7 +4620,6 @@ msgstr "Sz"
 msgid "Available in editor"
 msgstr "Elérhető a szerkesztőben"
 
-#. #-#-#-#-#  wesnoth-lib.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [toggle_button]: id=sort_4
 #. Translate T as the initial letter for Title Screen
 #: data/gui/window/preferences/02_hotkeys.cfg:161
@@ -5344,7 +5340,6 @@ msgstr ""
 
 #. [button]: id=rename
 #: data/gui/window/unit_recall.cfg:393
-#, fuzzy
 msgid "Rename"
 msgstr "Átnevezés"
 
@@ -5768,7 +5763,7 @@ msgstr "Ismeretlen"
 
 #: src/gui/dialogs/addon/manager.cpp:359
 msgid "ascending"
-msgstr "növekvő sorrendben"
+msgstr "növekvő sorrend"
 
 #. TRANSLATORS: Sorting order of dates, oldest first
 #: src/gui/dialogs/addon/manager.cpp:361
@@ -5777,7 +5772,7 @@ msgstr "növekvő"
 
 #: src/gui/dialogs/addon/manager.cpp:364
 msgid "descending"
-msgstr "csökkenő sorrendben"
+msgstr "csökkenő sorrend"
 
 #. TRANSLATORS: Sorting order of dates, newest first
 #: src/gui/dialogs/addon/manager.cpp:366
@@ -6211,8 +6206,8 @@ msgstr "Játékcsarnok adatainak letöltése"
 #: src/gui/dialogs/lua_interpreter.cpp:690
 msgid "The lua console can only be used in debug mode! (Run ':debug' first)"
 msgstr ""
-"A lua konzol csak hibakereső üzemmódban használható! (Add ki a ':debug'"
-" parancsot először)"
+"A lua konzol csak hibakereső üzemmódban használható! (Add ki a ':debug' "
+"parancsot először)"
 
 #: src/gui/dialogs/lua_interpreter.cpp:691
 msgid "lua console"
