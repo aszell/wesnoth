@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu-manual_1.5\n"
 "POT-Creation-Date: 2018-03-27 04:20+0300\n"
-"PO-Revision-Date: 2020-05-10 11:59+0200\n"
+"PO-Revision-Date: 2020-05-10 16:08+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -201,7 +201,7 @@ msgstr ""
 #. type: Content of: <book><chapter><section><section><title>
 #: doc/manual/manual.en.xml:64
 msgid "The Creatures"
-msgstr "A teremtmények "
+msgstr "A teremtmények"
 
 # type: Content of: <book><chapter><section><section><simpara>
 #. type: Content of: <book><chapter><section><section><simpara>
@@ -505,7 +505,7 @@ msgstr "Kilépés"
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><listitem><simpara>
 #: doc/manual/manual.en.xml:227
 msgid "Click this button to close Wesnoth."
-msgstr "Kattints erre a gombra, ha ki szeretnél lépni a Wesnothból"
+msgstr "Kattints erre a gombra, ha ki szeretnél lépni a Wesnothból."
 
 # type: Content of: <book><chapter><section><variablelist><varlistentry><term>
 #. type: Content of: <book><chapter><section><variablelist><varlistentry><term>
@@ -1038,7 +1038,7 @@ msgid ""
 "the currently selected unit on the marked hex"
 msgstr ""
 "Az aktuális mező pozíció (x-koordináta, y-koordináta), az éppen kijelölt "
-"egység adott mezőre vonatkozó védekezése és lépéspontköltsége."
+"egység adott mezőre vonatkozó védekezése és lépéspontköltsége"
 
 # type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><orderedlist><listitem><simpara>
@@ -3721,7 +3721,7 @@ msgstr "Zöld gömböcske"
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #: doc/manual/manual.en.xml:2304
 msgid "If you control the unit and it hasn&#8217;t moved this turn"
-msgstr "Az egység még nem lépett az adott körben."
+msgstr "Az egységed még nem lépett az adott körben"
 
 # type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -3750,7 +3750,7 @@ msgid ""
 "If you control the unit and it has moved this turn, but could still move "
 "further or attack"
 msgstr ""
-"Az egység már lépett, de még tehet további lépéseket, illetve támadhat."
+"Az egységed már lépett, de még tehet további lépéseket, illetve támadhat."
 
 # type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -3778,7 +3778,7 @@ msgstr "Piros gömböcske"
 msgid ""
 "If you control the unit, but it can no longer move or attack, or the user "
 "ended the unit&#8217;s turn"
-msgstr "Az egység már nem léphet és nem támadhat, vagy befejezted a körét."
+msgstr "Az egységed már nem léphet és nem támadhat, vagy befejezted a körét."
 
 # type: Content of: <book><chapter><section><section><variablelist><varlistentry><term>
 #. type: Content of: <book><chapter><section><section><table><tgroup><tbody><row><entry>
@@ -4960,13 +4960,13 @@ msgstr "A napszak igazán számít, mert:"
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #: doc/manual/manual.en.xml:2851
 msgid "lawful units do more damage at day and less damage at night"
-msgstr "az igazságos egységek többet sebeznek nappal és kevesebbet éjjel."
+msgstr "az igazságos egységek többet sebeznek nappal és kevesebbet éjjel"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #: doc/manual/manual.en.xml:2856
 msgid "chaotic units do more damage at night and less damage at day"
-msgstr "a törvénytelen egységek többet sebeznek éjjel és kevesebbet nappal."
+msgstr "a törvénytelen egységek többet sebeznek éjjel és kevesebbet nappal"
 
 # type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
 #. type: Content of: <book><chapter><section><section><itemizedlist><listitem><itemizedlist><listitem><simpara>
