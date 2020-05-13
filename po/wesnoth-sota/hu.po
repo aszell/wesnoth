@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: secrets_of_the_ancients\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2020-01-12 16:28 UTC\n"
-"PO-Revision-Date: 2020-05-12 20:25+0200\n"
+"PO-Revision-Date: 2020-05-13 23:16+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -312,7 +312,7 @@ msgid ""
 msgstr ""
 "Jó lenne még több denevér. Volt egy kolónia abban a kastélyromban, ahol a "
 "tűzvarázslatot gyakoroltuk. Megpróbálom ott, bár hatalmas patkányok is "
-"nyüzsögtek bent, ha jól emlékszem, de biztos vagyok benne, hogy el tudom "
+"nyüzsögtek bent ha jól emlékszem, de biztos vagyok benne, hogy el tudom "
 "pusztítani őket. Habár jégvarázslatot kell használnom, mivel a tüzet sosem "
 "sajátítottam el."
 
@@ -837,7 +837,7 @@ msgstr ""
 "hogy a teremtmény erősebb legyen. Elsőre minden egyes idegen izom ellenséges "
 "reakciót váltott ki a testből, de végül ezek alábbhagytak, és a test beállt "
 "az új állapotába. Torz és felismerhetetlen volt. Az elme benne kicsavarodott "
-"magából amint felismerte, mivé vált, de mivel a bandita nekem a halálnál is "
+"magából amint felismerte mivé vált, de mivel a bandita nekem a halálnál is "
 "rosszabb sort kívánt, nem tűnt tisztességtelennek."
 
 #. [part]
@@ -1477,7 +1477,6 @@ msgstr ""
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/07_Meeting_of_the_Minds.cfg:194
-#, fuzzy
 msgid ""
 "Ah... yes, I suppose not. Let me teach you some of what I know today, and "
 "see if that informs your opinion. However, the question of trust is not the "
@@ -1488,7 +1487,7 @@ msgid ""
 "relentlessly. However, if we combine our research, we have a chance of "
 "finishing before it is too late for us."
 msgstr ""
-"Ó... igen, azt hiszem, nem. Hadd tanítsak ma meg neked néhányat abból, amit "
+"Ó... igen, azt hiszem, nem. Hadd tanítsak ma meg neked valamit abból, amit "
 "tudok, és meglátjuk miként változik meg a véleményed. Ámbár a bizalom "
 "kérdése nem a legfontosabb. A kérdés az, hogy képesek vagyunk-e "
 "együttműködni. Figyelj! Az ősi Wesfolkok nemzedékeken át csiszolták "
@@ -1505,19 +1504,11 @@ msgid ""
 "work together for now."
 msgstr ""
 "Úgy érted, hogy Neked. Csak tizenkilenc éves vagyok. Te aztán jól elő tudod "
-"adni magad. Rendben, akkor dolgozzunk együtt."
+"adni magad. Rendben, egyelőre dolgozzunk együtt."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/07_Meeting_of_the_Minds.cfg:202
 #, fuzzy
-#| msgid ""
-#| "I believe I know how to get the information we seek, so we are going to "
-#| "go on a mission, you and I. First, we need a larger army. I am weary of "
-#| "waiting for students to come to me, so I am going to try to train some "
-#| "local peasants in the arts myself. Meanwhile, you are going to practice "
-#| "raising ghosts. We will split up, and when we meet again, you will show "
-#| "me how to make one of those shambling ghouls. I am in no hurry, as they "
-#| "have a terrible odor."
 msgid ""
 "Splendid. Here is what I propose. First, we part ways for a time, and you "
 "raise a force of ghosts following my instructions. Meanwhile, I am going to "
@@ -1527,13 +1518,12 @@ msgid ""
 "of those shambling ghouls. I am actually in no hurry, as they have a "
 "terrible odor."
 msgstr ""
-"Úgy gondolom tudom hol rejtőzik az információ amit keresünk, úgyhogy "
-"küldetésre indulunk. Te, és én. Először is szükség lesz egy nagyobb "
-"hadseregre. Belefáradtam, hogy arra várjak, hogy a tanulók jöjjenek, úgyhogy "
-"megpróbálok néhány helyi parasztot megtanítani én magam. Ezalatt, te menj és "
-"gyakorold a szellemidézést. Kettéválunk most, és amikor újra találkozunk, "
-"megmutatod a hullafalók készítését. Nem kell elkapkodni, ezeknek valami "
-"iszonyú szaguk van..."
+"Kitűnő! Íme a javaslatom. Először is, átmenetileg különválunk, és te az "
+"útmutatásom alapján megidézel egy szellemsereget. Eközben én megpróbálok "
+"néhány helyi parasztot a mágia tudományába beavatni. Nem várok sokat attól a "
+"tanulatlan bagázstól, de remélhetőleg lesz köztük pár annyira intelligens, "
+"hogy növeljék a tűzerőnket. Amikor újra találkozunk, megmutatod a hullafalók "
+"készítését. Nem kell elkapkodni, ezeknek valami iszonyú szaguk van..."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/07_Meeting_of_the_Minds.cfg:206
@@ -2213,26 +2203,15 @@ msgid ""
 "first, I would do well to stay alert."
 msgstr ""
 "A kérdés továbbra is az, hogy vajon bölcs dolog-e megbízni benne. Mint "
-"mondta, ezúttal nincs erre szükség, de ha együtt utazunk, akkor bizony lesz. "
-"A szellemek révén valami csodálatosba avatott be, ami mellette szól. Ezt "
-"figyelembe véve úgy döntöttem, hogy megbízom benne. De csak ideiglenesen. "
-"Egyelőre mindketten sebezhetőek vagyunk és tisztában kell lennie vele, hogy "
-"engem megtámadnia ostobaság volna. Ha azonban ő válna előbb "
-"elpusztíthatatlanná, akkor nem ártana résen lennem."
+"mondta, ez pillanatnyilag szükségtelen, de ha együtt utazunk, majd fontos "
+"lesz. Amit a szellemekkel kapcsolatban mutatott, az valami csoda, és ez "
+"erősen mellette szól. Ezt figyelembe véve úgy döntöttem, hogy megbízom "
+"benne. De csak ideiglenesen. Egyelőre mindketten sebezhetőek vagyunk és "
+"tisztában kell lennie vele, hogy engem megtámadnia ostobaság volna. Ha "
+"azonban ő válna előbb elpusztíthatatlanná, akkor nem ártana résen lennem."
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:38
-#, fuzzy
-#| msgid ""
-#| "11 IV, 23 YW\n"
-#| "\n"
-#| "The site of the battle was immediately obvious when I came upon it. Two "
-#| "fortresses stared at each other across a basin that was now mostly "
-#| "flooded. Sluggish water pooled near the road, and the slime of decay was "
-#| "on every surface. Weapons and armor and less-easily identifiable bits of "
-#| "metal rose from the swamp. I could easily imagine great siege engines "
-#| "heaving stones at walls that were now crumbled ruins, and the clash of "
-#| "combatants who were now bleached white bones jutting from the wreckage."
 msgid ""
 "The site of the battle was immediately obvious when I came upon it. Multiple "
 "fortresses stared at each other across a basin that was now mostly flooded. "
@@ -2242,13 +2221,11 @@ msgid ""
 "walls that were now crumbled ruins, and the clash of combatants who were now "
 "bleached white bones jutting from the wreckage."
 msgstr ""
-"Wesnoth 23. évében, április 11.\n"
-"\n"
-"A csatatér eltéveszthetetlen volt. Két erőd nézett farkasszemet egymással "
-"egy medence két szélén ami most el volt árasztva. Sáros víz folyt az út "
-"mellett, és a pusztulás szagát hozta a felszínre. Fegyverek, páncélok, és "
-"kevésbé felismerhető fémdarabok lebegtek a mocsárban. Könnyen elképzeltem "
-"ahogy a hatalmas ostromgépek köveket lendítettek ezekre a falakra amik már "
+"A csatatér eltéveszthetetlen volt. Több erőd nézett farkasszemet egymással "
+"egy medence két szélén, ami most jobbára el volt árasztva. Sáros víz folyt "
+"az út mellett, és a pusztulás szagát hozta a felszínre. Fegyverek, páncélok, "
+"és kevésbé felismerhető törmelék lebegtek a mocsárban. Könnyen elképzeltem "
+"ahogy a hatalmas ostromgépek köveket lendítettek ezekre a falakra, amik már "
 "csak romok, és a két harcoló fél katonáit, akik most már csak fehér csontok."
 
 #. [part]
@@ -2313,16 +2290,12 @@ msgstr "Álj, ki jön ott?"
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:139
-#, fuzzy
-#| msgid ""
-#| "I am a mage and not a threat to you gentle...reptiles. I wish only to "
-#| "animate some spirits, so I won’t disturb your salvage operation."
 msgid ""
 "I am a mage and not a threat to you gentle... reptiles. I wish only to "
 "animate some spirits, so I won’t disturb your salvage operation."
 msgstr ""
-"Csak egy mágus vagyok, nem fenyegetlek titeket, kedves....hüllők. Csak "
-"néhány lelket akarok megidézni, nem fogok zavarni."
+"Csak egy mágus vagyok, nem fenyegetlek titeket, kedves... hüllők. Csak "
+"néhány lelket akarok megidézni, nem fogom zavarni a gyűjtögetéseteket."
 
 #. [message]: speaker=Krissaz
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:143
@@ -2351,15 +2324,12 @@ msgstr ""
 
 #. [message]: speaker=Krissaz
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:155
-#, fuzzy
-#| msgid ""
-#| "When the mage isss dead and her sssouls put to ressst, we agree. We will "
-#| "have been compensssated adequately."
 msgid ""
 "When the mage isss dead and her dead horde put to ressst, we agree. We will "
 "have been compensssated adequately."
 msgstr ""
-"Ha a mágusssz ész a lelkei meghaltak, megegyezzztünk. Elégtétel lesssz."
+"Ha a mágusssz ész halott hordája elpusssztult, megegyezzztünk. Elégtétel "
+"lesssz."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:159
@@ -2383,10 +2353,8 @@ msgstr "Vendraxis"
 
 #. [message]: speaker=Vendraxis
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:218
-#, fuzzy
-#| msgid "Female, take me with you!"
 msgid "Human, take me with you!"
-msgstr "Mágus, vigyél magaddal!"
+msgstr "Ember, vigyél magaddal!"
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:222
@@ -2396,18 +2364,15 @@ msgstr "Miért tennék ilyet? Hisz megtámadtatok!"
 #. [message]: speaker=Vendraxis
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:226
 #, fuzzy
-#| msgid ""
-#| "For myself, I wissshed not to attack. I wissshed to learn. My race "
-#| "livesss but a short time compared to yoursss. I would learn to exssstend "
-#| "my ssspan, and the planetsss told me you know this sssecret."
 msgid ""
 "I tried to ssstop them! For myself, I wissshed not to attack. I wissshed to "
 "learn. My race livesss but a short time compared to yoursss. I would learn "
 "to exssstend my ssspan, and the planetsss told me you know this sssecret."
 msgstr ""
-"Én...én nem akartam. Én tanulni akarok. A fajom élettartama nagyon rövid a "
-"tiedhez képest. Meg akarom hossssszabbítani az életemet, és a bolygók azt "
-"mondják, te tudod a titkot..."
+"Én próbáltam megakasssztani őket! Én... én nem akartam támadni. Én tanulni "
+"ssszeretnék. A fajom nagyon rövid éltű a tiedhez képesszt. Meg akarom "
+"hossssszabbítani az életemet, és a bolygók assszt mondják, te tudod a "
+"titkot..."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:230
@@ -2420,20 +2385,16 @@ msgstr ""
 #. [message]: speaker=Vendraxis
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:234
 #, fuzzy
-#| msgid ""
-#| "I have ssstared into the darknesss between the starsss and not been "
-#| "intimidated by the void, but your mind holdsss a darknesss of another "
-#| "kind, frightening and forbidden by my clan. I sssubmit to your power. In "
-#| "truth, that isss the way of my race."
 msgid ""
 "I have ssstared into the darknesss between the starsss and not been "
 "intimidated by the void, but your mind holds a darknesss of another kind, "
 "frightening and forbidden by my clan. I sssubmit to your power. Now that I "
 "know you are female, I will find it easier as it isss the way of my kind."
 msgstr ""
-"Néztem már sötétségbe csillagok mellett, amiket elnyelt a fény, de a te "
-"elméd egy másszmilyen fajta sötétséget hordoz, ilyesztő, és tiltott a "
-"klánomnak. Követni foglak. Ez a fajom módszere."
+"Néssztem már a csillagok közötti szötétbe, és nem sszavart az üressszég, de "
+"a te elméd egy másszmilyen fajta szötétszéget hordoz, ijessztő, és tiltott a "
+"klánomnak. Alávetem magam hatalmadnak. Mosszt, hogy tudom, nőssztény vagy, "
+"könnyebben fog menni, hisz ez a fajom szokásza."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:238
@@ -2465,16 +2426,6 @@ msgstr "Mozgó Fák"
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:21
 #, fuzzy
-#| msgid ""
-#| "17 IV, 23 YW\n"
-#| "\n"
-#| "My primary objective was met, and I had a retinue of ghosts. Also, a new "
-#| "companion who had a talent for healing. I doubted that Ras-Tabahn was "
-#| "already waiting at the appointed place, but I still wanted to hurry, so "
-#| "we followed the elf road north as quickly as we could. Fortunately, it "
-#| "was not in bad repair, though in many places it was overgrown, leaving "
-#| "only a few smooth cobbles to mark the way. The second day, we were still "
-#| "deep in the woods when we encountered an elf sorceress."
 msgid ""
 "17 IV, 23 YW\n"
 "\n"
@@ -2488,13 +2439,13 @@ msgid ""
 msgstr ""
 "Wesnoth 23. évében, április 17.\n"
 "\n"
-"Az elsődleges célomat elértem, és volt egy adag szellemem. Továbbá új "
-"útitársam tehetséges gyógyítónak bizonyult. Mindazonáltal kételkedtem benne, "
-"hogy Ras-Tabahn már várakozott volna, de mégis sietni akartam, így a tünde "
-"utat követtük északra olyan sebesen ahogy csak tudtuk. Szerencsére nem volt "
-"nagyon rossz állapotban, bár több helyen benőtte a gaz, és csak néhány kő "
-"mutatta az utat. A második nap még mindig mélyen az erdőben jártunk, amikor "
-"egy tünde varázslónőbe ütköztünk."
+"Az elsődleges célomat elértem, és jókora adag szellemet sikerült "
+"szolgálatomba állítanom. Továbbá új útitársam tehetséges gyógyítónak "
+"bizonyult. Noha kételkedtem benne, hogy Ras-Tabahn már várakozott volna, "
+"mégis sietni akartam, így a tünde utat követtük északra olyan sebesen, ahogy "
+"csak tudtuk. Szerencsére nem volt nagyon rossz állapotban, bár több helyen "
+"benőtte a gaz, és csak néhány kő mutatta az utat. A második nap még mindig "
+"mélyen az erdőben jártunk, amikor egy tünde varázslónőbe ütköztünk."
 
 #. [side]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:42
@@ -2509,13 +2460,12 @@ msgstr "Isthiniel"
 
 #. [objective]: condition=win
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:101
-#, fuzzy
-#| msgid "Move Ardonna to the north-east corner of the map."
 msgid "Move Ardonna to the northeast corner of the map"
 msgstr "Juttasd Ardonnát a térkép északkeleti sarkába"
 
 #. [message]: speaker=Isthiniel
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:315
+#, fuzzy
 msgid ""
 "I felt our dead stirring and corruption descending on the forest. When I "
 "left to investigate, I expected to find grim, veiled forces at work. Instead "
@@ -2523,10 +2473,11 @@ msgid ""
 "continue to molest our peace, and you must release the dead you have "
 "enslaved."
 msgstr ""
-"Halotti mozgást és szentségtörést éreztem ahogy leszálltam az erdőre. Amikor "
-"elindultam kivizsgálni, gonosz, sötét erőket vártam. Ehelyett egy ember "
-"mágust találok, aki emelt fővel masírozik az utunkon. Nem engedem, hogy "
-"tovább molesztáld itt a békét, és engedd el a halottaidat!"
+"Éreztem, hogy halottjaink nyughatatlanok, és romlás száll le az erdőre. "
+"Amikor elindultam kivizsgálni, gonosz, sötét erőket vártam. Ehelyett egy "
+"ember mágust találok, aki emelt fővel masírozik az utunkon. Nem hagyom, hogy "
+"tovább zavard itt a békét, követelem, engedd halott szolgáid végső "
+"nyugalmukra!"
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:319
@@ -2545,8 +2496,8 @@ msgid ""
 "cast you out on their own. I can feel them awaken."
 msgstr ""
 "Támadni? Nem, nem fogok. Az én népem nem jön be ide, engem csak a "
-"kötelességtudat vezérel. Az erdő is zavarog, és ő maga fog eltávolítani. "
-"Érzem, ahogy ébredezik."
+"kötelességtudat vezérel. Hanem az erdő maga zavarog, és el fog téged űzni. "
+"Érzem, ahogy ébredeznek."
 
 #. [unit]: type=Ancient Wose, id=Dolmathengalin
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:340
@@ -2565,16 +2516,12 @@ msgstr "Egy beszélő fa!"
 
 #. [message]: speaker=Isthiniel
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:355
-#, fuzzy
-#| msgid ""
-#| "That dark mage has woken our dead and stifles the air with her very "
-#| "presence. Please wake your people elder, and destroy her."
 msgid ""
 "That dark mage has woken our dead and stifles the air with her very "
 "presence. Please wake your people, Elder, and destroy her."
 msgstr ""
 "Egy sötét mágus feltámasztotta a holtakat, és beszennyezi a levegőt a "
-"jelenlétével. Ébreszd fel az öregeidet, és pusztítsák el!"
+"jelenlétével. Ébreszd fel az öregeidet, és pusztítsák el őt!"
 
 #. [message]: speaker=Dolmathengalin
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:359
@@ -2594,11 +2541,6 @@ msgstr "Újra együtt"
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:17
 #, fuzzy
-#| msgid ""
-#| "21 IV, 23 YW\n"
-#| "\n"
-#| "After we escaped the trees, we met no more resistance on the road, and "
-#| "soon arrived at the meeting place where Ras-Tabahn was waiting."
 msgid ""
 "21 IV, 23 YW\n"
 "\n"
@@ -2609,15 +2551,17 @@ msgid ""
 msgstr ""
 "Wesnoth 23. évében, április 21.\n"
 "\n"
-"Miután elkerültük a fákat, nem volt több akadály az úton, így hamar "
-"megérkeztünk a megbeszélt helyre, ahol Ras-Tabahn már várt."
+"A szellemek nélkül esélyem sem lett volna a megmenekülni a fáktól. "
+"Bizonyították hasznosságukat és megmentették az életem, így Ras-Tabahn is "
+"nagyot nőtt a szememben. Miután elkerültük a fákat, nem volt több akadály az "
+"úton, így hamar megérkeztünk a megbeszélt helyre, ahol Ras-Tabahn már várt."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:113
 msgid ""
 "Greetings Ardonna! (<i>Cough</i>) I was successful, and I see that you were "
 "as well."
-msgstr "Üdv, Ardonna! (<i>Köhöv</i>) Sikerrel jártam, és látom te is."
+msgstr "Üdv, Ardonna! (<i>Köhög</i>) Sikerrel jártam, és látom, te is."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:117
@@ -2639,7 +2583,7 @@ msgstr ""
 "Örömmel. Gondolom tanultatok a nagy mágusról, Crelanuról történelem órán. "
 "Első Haldric király oldalán harcolt, és szembeszállt a Zöld Sziget "
 "halhatatlan uraival. Biztosra vehető, hogy többet tud mint mi a "
-"módszereikről. Nemrég megtudtam hol tudjuk őt megtalálni."
+"módszereikről. Nemrég megtudtam, hol tudjuk őt megtalálni."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:125
@@ -2699,13 +2643,6 @@ msgstr ""
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:158
-#, fuzzy
-#| msgid ""
-#| "Possibly. When an academy mage completes his studies, he is granted "
-#| "syllables of power, which become his new name. You are well beyond that "
-#| "point, but you are with the free magi now, so choose your own name. I was "
-#| "originally Rassin Tabin, but that is fairly ordinary, and no longer "
-#| "suited."
 msgid ""
 "Possibly. When an academy mage completes his studies, he is granted "
 "syllables of power, which become his new name. You are well beyond that "
@@ -2714,23 +2651,19 @@ msgid ""
 "no longer suited."
 msgstr ""
 "Talán. Amikor az akadémia egy mágusa befejezi tanulmányait, a hatalom "
-"betűihez engedik hozzá, ami az új neve lesz. Bőven emögött a pont mögött "
-"jársz, és szabad mágus vagy, úgyhogy válassz magadnak nevet saját tetszésed "
+"betűihez engedik hozzá, ami az új neve lesz. Bőven túl vagy ezen a szinten, "
+"és szabad mágus vagy, úgyhogy válassz magadnak nevet saját tetszésed "
 "szerint. Én eredetileg Rassin Tabin voltam, de az olyan közönséges, már nem "
 "használom."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:162
-#, fuzzy
-#| msgid ""
-#| "I suppose you are right. I am no longer the ordinary girl Ardonna, and "
-#| "Vendraxis was correct. From now I shall be...Ardryn-Na."
 msgid ""
 "I suppose you are right. I am no longer the ordinary girl Ardonna, and "
 "Vendraxis was correct. From now I shall be... Ardryn-Na."
 msgstr ""
 "Igazad lehet. Már nem vagyok az a hétköznapi lány, Ardonna, és Vendraxisnak "
-"igaza volt. Mostantól....Ardryn-Na vagyok."
+"igaza volt. Mostantól... Ardryn-Na vagyok."
 
 #. [modify_unit]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:169
@@ -3106,7 +3039,7 @@ msgid ""
 "Moving any unit onto a bottle of holy water will remove the bottle. An "
 "undead unit will be destroyed."
 msgstr ""
-"Ha rálépsz a szenteltvizes mezőre, eltűnik a palack. Egy élőhalott egység "
+"Ha rálépsz egy szenteltvizet tartalmazó mezőre, eltűnik a palack. Egy élőhalott egység "
 "megsemmisül tőle."
 
 #. [unit]: type=White Mage, id=Ginmera
@@ -3197,18 +3130,12 @@ msgstr "Majd meglátjuk."
 
 #. [message]: speaker=narrator
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:363
-#, fuzzy
-#| msgid ""
-#| "Ras-Tabahn is sick. He is slowed, and will lose four hitpoints every "
-#| "turn. He will die if he reaches zero. Villages will heal him four points, "
-#| "and he will lose only two if he is resting."
 msgid ""
 "Ras-Tabahn is sick. He is slowed, and will lose four hitpoints every turn. "
 "He will die if he reaches zero."
 msgstr ""
 "Ras-Tabahn beteg. Le van lassulva, és minden körben négy életerőpontot "
-"veszít. Meghal, ha eléri a nullát. A falvak és gyógyítók négy életerő pontot "
-"gyógyítanak rajta, és csak kettőt veszít amikor pihen."
+"veszít. Meghal, ha eléri a nullát."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:391
@@ -3226,16 +3153,17 @@ msgstr ""
 "<i>Nincs</i> titok, ti bolondok! A mágia nem állítja meg az öregedést! Nem "
 "élhettek örökké. Ez a természet rendje, és a legnagyszerűbb dolog ami "
 "mindegyikünkben közös a teremtéssel. Meg <i>kell</i> halnotok, és a lelketek "
-"elhagyja e világot. Én nem mocskolnám be ezt a rendet semmilyen okkal."
+"elhagyja e világot. Én nem mocskolnám be ezt a rendet semmilyen okból."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:399
+#, fuzzy
 msgid ""
 "You are the fool, for you have, indeed, told us all we required. For that, I "
 "will spare you to live a few more lonely years with your cowardice."
 msgstr ""
-"Te vagy a bolond, vénember, hisz épp most mondtad el amire szükségünk volt. "
-"Ezért meghagyom az életed arra a pár évre amire még futja."
+"Te vagy a bolond, vénember, hisz épp most mondtad el, amire szükségünk volt. "
+"Ezért meghagyom gyáva életed arra a pár magányos évre, ami még hátra van."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:412
