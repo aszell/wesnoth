@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: secrets_of_the_ancients\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2020-01-12 16:28 UTC\n"
-"PO-Revision-Date: 2020-05-13 23:16+0200\n"
+"PO-Revision-Date: 2020-05-14 21:09+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <>\n"
 "Language: hu\n"
@@ -43,7 +43,7 @@ msgstr "közepes"
 #. [campaign]: id=Secrets of the Ancients
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:17
 msgid "Unpleasant"
-msgstr "kellemetlen"
+msgstr "Kellemetlen"
 
 #. [campaign]: id=Secrets of the Ancients
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:18
@@ -53,12 +53,12 @@ msgstr "kihívást jelentő"
 #. [campaign]: id=Secrets of the Ancients
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:18
 msgid "Corrupt"
-msgstr "korrupt"
+msgstr "Korrupt"
 
 #. [campaign]: id=Secrets of the Ancients
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:19
 msgid "Diabolic"
-msgstr "ördögi"
+msgstr "Ördögi"
 
 #. [campaign]: id=Secrets of the Ancients
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:19
@@ -74,10 +74,10 @@ msgid ""
 "\n"
 "(Hard level, 18 scenarios.)\n"
 msgstr ""
-"Fedezd fel újra a Zöld Sziget delevény urainak titkait. Ők tudták hogyan "
+"Fedezd fel újra a Zöld Sziget delevény urainak titkait. Ők tudták, hogyan "
 "kell örökké élni - neked miért ne sikerülne?\n"
 "\t\n"
-"(Középhaladó szint, 21 pálya.)\n"
+"(Nehéz szint, 18 pálya.)\n"
 
 #. [about]
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:28
@@ -86,9 +86,8 @@ msgstr "Hadjárattervezés, programozás, és artwork"
 
 #. [about]
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:34
-#, fuzzy
 msgid "Campaign Maintenance"
-msgstr "Hadjáratkezelés"
+msgstr "Hadjárat karbantartása"
 
 #. [about]
 #: data/campaigns/Secrets_of_the_Ancients/_main.cfg:41
@@ -186,7 +185,7 @@ msgstr ""
 "iránti érdeklődés azonnali kiutasítást eredményez. Az óra alatt gondolkodtam "
 "éppen ezen, amikoris észrevettem, hogy Aimucasur szúrós tekintete mered rám. "
 "A jövőben sokkal körültekintőbbnek kell lennem azzal kapcsolatban, hogy "
-"milyen gondolatokat engedek megjelenni az arcomon."
+"milyen gondolatokat engedek kiülni az arcomra."
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/01_Slipping_Away.cfg:72
@@ -1508,7 +1507,6 @@ msgstr ""
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/07_Meeting_of_the_Minds.cfg:202
-#, fuzzy
 msgid ""
 "Splendid. Here is what I propose. First, we part ways for a time, and you "
 "raise a force of ghosts following my instructions. Meanwhile, I am going to "
@@ -1522,8 +1520,9 @@ msgstr ""
 "útmutatásom alapján megidézel egy szellemsereget. Eközben én megpróbálok "
 "néhány helyi parasztot a mágia tudományába beavatni. Nem várok sokat attól a "
 "tanulatlan bagázstól, de remélhetőleg lesz köztük pár annyira intelligens, "
-"hogy növeljék a tűzerőnket. Amikor újra találkozunk, megmutatod a hullafalók "
-"készítését. Nem kell elkapkodni, ezeknek valami iszonyú szaguk van..."
+"hogy növeljék a tűzerőnket. Amikor újra találkozunk, megmutatod, hogyan "
+"hozhatok létre hullafalókat. Nem kell elkapkodni, ezeknek valami iszonyú "
+"szaguk van..."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/07_Meeting_of_the_Minds.cfg:206
@@ -1703,13 +1702,12 @@ msgstr "Maradj ki ebből, fiú!"
 # put you in your place - ráncba szed, helyretesz? - de itt nem nagyon találom, hogy lenne jó
 #. [message]: speaker=Carcyn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/08_Carcyn.cfg:310
-#, fuzzy
 msgid ""
 "Not a chance! I’ve waited all my life to see someone put you in your place. "
 "Here is someone you can’t push around!"
 msgstr ""
-"Na persze! Egész életemben arra vártam, hogy lássam ahogy valaki átveszi a "
-"helyedet. Itt van valaki, aki nem hagyja, hogy szórakozz vele!"
+"Na persze! Egész életemben arra vártam, hogy végre lássam, ahogy valaki "
+"helyretesz téged! Itt van valaki, aki nem hagyja, hogy szórakozz vele!"
 
 #. [message]: speaker=Shynal
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/08_Carcyn.cfg:314
@@ -1851,7 +1849,6 @@ msgstr ""
 # "Három hullám lesz" - félreérthető ebben a szövegkörnyezetben :)
 #. [objective]: condition=win
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/09_Training_Session.cfg:137
-#, fuzzy
 msgid "(there will be three waves)"
 msgstr "(három hullámban érkeznek)"
 
@@ -1902,7 +1899,6 @@ msgstr ""
 # Esetleg "Te csak figyelj?"
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/09_Training_Session.cfg:362
-#, fuzzy
 msgid "plural^You may watch."
 msgstr "Te figyelhetsz."
 
@@ -2067,12 +2063,12 @@ msgstr ""
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/10_Merfolk_Revenge.cfg:480
-#, fuzzy
-#| msgid "Actually, I expect you will follow them into the ground."
 msgid ""
 "Actually, I expect you will follow them into the ground if you try to harm "
 "us."
-msgstr "Legalább követitek őket a földbe."
+msgstr ""
+"Valójában arra számítok, hogy követed őket a föld alá, ha ártani próbálsz "
+"nekünk."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/10_Merfolk_Revenge.cfg:488
@@ -2082,7 +2078,7 @@ msgid ""
 "some. (<i>Cough, cough</i>)"
 msgstr ""
 "Ez költséges lesz, de muszáj megtartanom valamennyi aranyat végszükség "
-"esetére - 50 elég lesz. Segítsetek összegyűjteni! (<i>köhög,köhög,köhög</i>)"
+"esetére - 50 elég lesz. Segítsetek összegyűjteni! (<i>Köhög, köhög.</i>)"
 
 #. [message]: speaker=Carcyn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/10_Merfolk_Revenge.cfg:492
@@ -2192,7 +2188,6 @@ msgstr ""
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:31
-#, fuzzy
 msgid ""
 "The question remains whether or not it is wise to trust him. As he said, I "
 "don't need to at this time, but if we are to travel together it will become "
@@ -2204,11 +2199,11 @@ msgid ""
 msgstr ""
 "A kérdés továbbra is az, hogy vajon bölcs dolog-e megbízni benne. Mint "
 "mondta, ez pillanatnyilag szükségtelen, de ha együtt utazunk, majd fontos "
-"lesz. Amit a szellemekkel kapcsolatban mutatott, az valami csoda, és ez "
+"lesz. Amit a szellemekkel kapcsolatban mutatott, az valami elképesztő, és ez "
 "erősen mellette szól. Ezt figyelembe véve úgy döntöttem, hogy megbízom "
 "benne. De csak ideiglenesen. Egyelőre mindketten sebezhetőek vagyunk és "
-"tisztában kell lennie vele, hogy engem megtámadnia ostobaság volna. Ha "
-"azonban ő válna előbb elpusztíthatatlanná, akkor nem ártana résen lennem."
+"tisztában kell lennie vele, hogy engem megtámadni ostobaság volna. Ha "
+"azonban ő válna előbb elpusztíthatatlanná, akkor nem árt résen lennem."
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:38
@@ -2363,7 +2358,6 @@ msgstr "Miért tennék ilyet? Hisz megtámadtatok!"
 
 #. [message]: speaker=Vendraxis
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:226
-#, fuzzy
 msgid ""
 "I tried to ssstop them! For myself, I wissshed not to attack. I wissshed to "
 "learn. My race livesss but a short time compared to yoursss. I would learn "
@@ -2384,7 +2378,6 @@ msgstr ""
 
 #. [message]: speaker=Vendraxis
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/11_Battleground.cfg:234
-#, fuzzy
 msgid ""
 "I have ssstared into the darknesss between the starsss and not been "
 "intimidated by the void, but your mind holds a darknesss of another kind, "
@@ -2425,7 +2418,6 @@ msgstr "Mozgó Fák"
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:21
-#, fuzzy
 msgid ""
 "17 IV, 23 YW\n"
 "\n"
@@ -2439,13 +2431,13 @@ msgid ""
 msgstr ""
 "Wesnoth 23. évében, április 17.\n"
 "\n"
-"Az elsődleges célomat elértem, és jókora adag szellemet sikerült "
-"szolgálatomba állítanom. Továbbá új útitársam tehetséges gyógyítónak "
-"bizonyult. Noha kételkedtem benne, hogy Ras-Tabahn már várakozott volna, "
-"mégis sietni akartam, így a tünde utat követtük északra olyan sebesen, ahogy "
-"csak tudtuk. Szerencsére nem volt nagyon rossz állapotban, bár több helyen "
-"benőtte a gaz, és csak néhány kő mutatta az utat. A második nap még mindig "
-"mélyen az erdőben jártunk, amikor egy tünde varázslónőbe ütköztünk."
+"Az elsődleges célomat elértem, és jónéhány szellemet sikerült szolgálatomba "
+"állítanom. Továbbá új útitársam tehetséges gyógyítónak bizonyult. Noha "
+"kételkedtem benne, hogy Ras-Tabahn már várakozott volna, mégis sietni "
+"akartam, így a tünde utat követtük északra olyan sebesen, ahogy csak tudtuk. "
+"Szerencsére nem volt nagyon rossz állapotban, bár több helyen benőtte a gaz, "
+"és csak néhány kő mutatta az utat. A második nap még mindig mélyen az "
+"erdőben jártunk, amikor egy tünde varázslónőbe ütköztünk."
 
 #. [side]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:42
@@ -2465,7 +2457,6 @@ msgstr "Juttasd Ardonnát a térkép északkeleti sarkába"
 
 #. [message]: speaker=Isthiniel
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/12_Walking_Trees.cfg:315
-#, fuzzy
 msgid ""
 "I felt our dead stirring and corruption descending on the forest. When I "
 "left to investigate, I expected to find grim, veiled forces at work. Instead "
@@ -2540,7 +2531,6 @@ msgstr "Újra együtt"
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/13_Together_Again.cfg:17
-#, fuzzy
 msgid ""
 "21 IV, 23 YW\n"
 "\n"
@@ -2785,10 +2775,6 @@ msgstr "Hát igen, hát igen."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/14_Entering_the_Northlands.cfg:206
-#, fuzzy
-#| msgid ""
-#| "We have crossed into the north. The Dwarven kingdom of Knalga lies "
-#| "straight ahead."
 msgid ""
 "We have crossed into the north. The dwarven kingdom of Knalga lies straight "
 "ahead."
@@ -2826,16 +2812,12 @@ msgstr "Ebből még baj lehet."
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/14_Entering_the_Northlands.cfg:226
-#, fuzzy
-#| msgid ""
-#| "Many orcs are decent sorts (<i>cough, cough</i>). I worked with Krag-Ubor "
-#| "once, who the farther orc just mentioned."
 msgid ""
 "Many orcs are decent sorts (<i>cough, cough</i>). I fought alongside Krag-"
 "Ubor once, who the farther orc just mentioned."
 msgstr ""
-"A legtöbb ork rendes fajzat. (<i>köhög</i>) Dolgoztam már Krag-Uborral "
-"régebben, akit a távolabbi említett."
+"A legtöbb ork rendes fajzat. (<i>köhög, köhög</i>) Harcoltam már Krag-Ubor "
+"oldalán ezelőtt, akit a távolabbi említett."
 
 #. [message]: speaker=Vok-Hroog
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/14_Entering_the_Northlands.cfg:230
@@ -2860,12 +2842,11 @@ msgstr "Hűha. Legyen. Jó sportnak hangzik."
 
 #. [message]: speaker=Krongk
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/14_Entering_the_Northlands.cfg:242
-#, fuzzy
-#| msgid ""
-#| "This competition is official. I will support the claim of the winner."
 msgid ""
 "I declare this competition official. I will support the claim of the winner."
-msgstr "A küzdelem hivatalos lesz. Én támogatom a győztes indítványát."
+msgstr ""
+"Ezt a versenyt hivatalosnak nyilvánítom és kiállok a győztes követelése "
+"mellett."
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/14_Entering_the_Northlands.cfg:250
@@ -2884,18 +2865,6 @@ msgstr "Hegyi Hágó"
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/15_Mountain_Pass.cfg:22
-#, fuzzy
-#| msgid ""
-#| "6 V, 23 YW\n"
-#| "\n"
-#| "We have reached a pass through the mountains that Ras-Tabahn knew of. The "
-#| "air is cool in these upper reaches. Mist rises from the snow in the "
-#| "afternoon, and the icicles drip the purest water from rock overhangs. I "
-#| "find it all refreshing, but Ras-Tabahn’s coughing fits are frequent. "
-#| "Sometimes he is reduced to speaking in short phrases due to lack of "
-#| "breath. Of course he is quite old — 50 at least — but I am also certain "
-#| "that he is ill. His thinness leads me to believe it is consumption, but "
-#| "he refuses to discuss it."
 msgid ""
 "6 V, 23 YW\n"
 "\n"
@@ -2914,8 +2883,9 @@ msgstr ""
 "magasan. Köd emelkedett a hóból délután, és a jégcsapok hosszúra nőttek a "
 "benyúló sziklákról. Én üdítőnek találtam, de Ras-Tabahn köhögése "
 "rosszabbodik. Gyakran csak tőmondatokban beszél a léghiánya miatt. Bizonyára "
-"nagyon öreg - legalább ötven - de biztos vagyok benne, hogy beteg. Alig "
-"eszik és nagyon vékony, de továbbra se akar beszélni róla."
+"nagyon öreg - legalább ötven - de biztos vagyok benne, hogy beteg is. "
+"Vékonysága arra enged következtetni, hogy ez tüdővész, de továbbra sem "
+"hajlandó beszélni róla, inkább tagadja a probléma súlyosságát."
 
 #. [side]: type=Gryphon
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/15_Mountain_Pass.cfg:44
@@ -3039,8 +3009,8 @@ msgid ""
 "Moving any unit onto a bottle of holy water will remove the bottle. An "
 "undead unit will be destroyed."
 msgstr ""
-"Ha rálépsz egy szenteltvizet tartalmazó mezőre, eltűnik a palack. Egy élőhalott egység "
-"megsemmisül tőle."
+"Ha rálépsz egy szenteltvizet tartalmazó mezőre, eltűnik a palack. Egy "
+"élőhalott egység megsemmisül tőle."
 
 #. [unit]: type=White Mage, id=Ginmera
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:222
@@ -3157,7 +3127,6 @@ msgstr ""
 
 #. [message]: speaker=Ardonna
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/16_The_Mage.cfg:399
-#, fuzzy
 msgid ""
 "You are the fool, for you have, indeed, told us all we required. For that, I "
 "will spare you to live a few more lonely years with your cowardice."
@@ -3303,18 +3272,6 @@ msgstr "Elhagyatott őrhely"
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/18_Abandoned_Outpost.cfg:31
-#, fuzzy
-#| msgid ""
-#| "9 VI, 23 YW\n"
-#| "\n"
-#| "To become a lich, one must first die. The spells of necromancy bind the "
-#| "spirit, but only once it has been unbound from the body. To become a "
-#| "lich, the mage must make the necessary incantations with his dying "
-#| "breaths. He thus binds his own spirit in much the same way he binds the "
-#| "spirits of others....An altar serves to hold his soul in the physical "
-#| "plane long enough to make the transition, and a suitable object must be "
-#| "found to hold the consciousness for one crucial moment when the body "
-#| "expires."
 msgid ""
 "9 VI, 23 YW\n"
 "\n"
@@ -3331,10 +3288,11 @@ msgstr ""
 "Hogy az ember Delevénnyé váljon, meg kell halnia. A nekromancia átkai "
 "megkötik a lelket, de csak miután az már elhagyta a testet. Hogy Delevénnyé "
 "váljon, a mágusnak el kell végeznie a szükséges átkokat az utolsó "
-"lehelletével. Ezzel megköti a lelkét, úgy ahogy azt másokkal is teszi....Egy "
-"áldozati oltár fizikai síkon tartja a lelket az átadás idejére, és egy "
-"megfelelő tárgyra van szükség, ami a kritikus pillanatig a tudatot "
-"megtartja, amikor a test ideje e földön lejár."
+"lehelletével. Ezzel megköti a lelkét, úgy ahogy azt másokkal is teszi... Egy "
+"oltár szolgál arra, hogy a lelkét kellően hosszú ideig a fizikai síkon "
+"tartsa az átmenet végrehajtásához. Szükség lesz egy megfelelő tárgyra is, "
+"amely megtartja a tudatot a kritikus pillanatban, amikor is a test ideje e "
+"földön lejár."
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/18_Abandoned_Outpost.cfg:40
@@ -3361,16 +3319,6 @@ msgstr ""
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/18_Abandoned_Outpost.cfg:49
 #, fuzzy
-#| msgid ""
-#| "17 VI, 23 YW\n"
-#| "\n"
-#| "Now the process is complete for both of us. I don’t feel much different, "
-#| "but I suppose I look a fright. Ah well, it can’t be helped. But my "
-#| "primary goal is achieved! I cannot die! I suppose I could be broken apart "
-#| "like a skeleton or maybe burned, but I do not have to fear these unlikely "
-#| "events: I have the awesome powers of the spirit realm flowing through me, "
-#| "and can protect myself quite adequately! My next goal is to share my "
-#| "knowledge with the world so that <i>no one</i> need die."
 msgid ""
 "17 VI, 23 YW\n"
 "\n"
@@ -3386,8 +3334,8 @@ msgstr ""
 "Wesnoth 23. évében, június 17.\n"
 "\n"
 "A folyamat lezajlott mindkettőnk részéről. Nem érzem magam másnak, de "
-"gondolom ilyesztő lehetek. Áh, mindegy is. Az elsődleges célomat elértem! "
-"Nem halhatok meg! Persze gondolom szanaszét törhetik a csontjaimat mint egy "
+"gondolom ijesztő lehetek. Áh, mindegy is. Az elsődleges célomat elértem! Nem "
+"halhatok meg! Persze gondolom szanaszét törhetik a csontjaimat mint egy "
 "csontváznak, esetleg megégethetnek, de nem félek ezektől a valószínűtlen "
 "eshetőségektől: olyan hatalmam van a szellemvilág által, hogy bármikor "
 "megvédhetem magam! A következő célom ezt a tudást megosztani a világgal, "
@@ -3400,9 +3348,6 @@ msgstr "Pókok"
 
 #. [objective]: condition=win
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/18_Abandoned_Outpost.cfg:82
-#, fuzzy
-#| msgid ""
-#| "Move Ardryn-Na and Ras-Tabahn to level ground in the North-East corner."
 msgid "Move Ardryn-Na and Ras-Tabahn to the west end of the cave"
 msgstr "Vidd Ardryn-Nát és Ras Tabanh-t a barlang nyugati végébe"
 
@@ -3498,7 +3443,6 @@ msgstr "Láva és Kő"
 
 #. [part]
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/19_Lava_and_Stone.cfg:16
-#, fuzzy
 msgid ""
 "21 VI, 23 YW\n"
 "\n"
@@ -3518,7 +3462,7 @@ msgstr ""
 "hol vannak. Ras-Tabahnnal beszélgettem. Elensefarba tervez menni. Úgy hiszi "
 "átveheti a város irányítását és az élőhalott birodalom uralkodójává "
 "koronázza magát. A lakosság csatlakozni fog hozzá élőhalottként, akár "
-"önszántából, akár nem, de bizton mondom, csatlakozni fog. Amennyiben nem "
+"önszántából, akár másképp, de biztonsan csatlakozni fog. Amennyiben nem "
 "önszántukból csatlakoznak, vagy képtelenek mentálisan ellenállni a "
 "delevénynek, akkor természetesen agyatlan szolgákká válnak."
 
@@ -3689,7 +3633,6 @@ msgstr "Nos, hol is vagyunk?"
 
 #. [message]: speaker=Ras-Tabahn
 #: data/campaigns/Secrets_of_the_Ancients/scenarios/20_North_Knalga.cfg:674
-#, fuzzy
 msgid ""
 "We are in a Dwarvish burial chamber it seems. That is good. We could always "
 "use some more soldiers."
@@ -4150,8 +4093,6 @@ msgstr ""
 #. [unit_type]: id=Noble, race=human
 #: data/campaigns/Secrets_of_the_Ancients/units/Dunefolk.cfg:5
 #: data/campaigns/Secrets_of_the_Ancients/units/Noble.cfg:5
-#, fuzzy
-#| msgid "Passageway"
 msgid "Passenger"
 msgstr "Utas"
 
@@ -4364,7 +4305,6 @@ msgstr "Köszönöm!"
 # Nem áll össze a szöveg számomra. Talán ha látnám milyen szövegkörnyezetben van, az segítene.
 #. [message]: speaker=$unit.id
 #: data/campaigns/Secrets_of_the_Ancients/utils/sota-utils.cfg:508
-#, fuzzy
 msgid ""
 "Hey, I wanted to be a wizard like you and live forever when you figure it "
 "out! I know I could be super-powerful in the end."
