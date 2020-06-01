@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-aoi\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2020-02-02 01:39 UTC\n"
+"POT-Creation-Date: 2020-05-01 22:56 UTC\n"
 "PO-Revision-Date: 2018-11-16 18:55+0100\n"
 "Last-Translator: Krutki Tamás <krtamas@0x64.org>\n"
 "Language-Team: Hungarian <>\n"
@@ -184,11 +184,11 @@ msgstr "Tündék"
 msgid "Lomarfel"
 msgstr "Lomarfel"
 
-#. [side]: type=Orcish Sovereign, id=Rualsha
-#. [side]: type=Orcish Warlord, id=Gnargha
 #. [side]: type=Orcish Warlord, id=Krughnar
-#. [side]: type=Orcish Warrior, id=Urugha
+#. [side]: type=Orcish Sovereign, id=Rualsha
 #. [side]: type=Orcish Slayer, id=Gharlsa
+#. [side]: type=Orcish Warlord, id=Gnargha
+#. [side]: type=Orcish Warrior, id=Urugha
 #: data/campaigns/An_Orcish_Incursion/scenarios/01_Defend_the_Forest.cfg:88
 #: data/campaigns/An_Orcish_Incursion/scenarios/02_Assassins.cfg:59
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:66
@@ -469,8 +469,8 @@ msgid ""
 "from the river."
 msgstr ""
 "Az orgyilkosokat nehéz eltalálni, ráadásul orvul megmérgezik áldozatukat. "
-"Maradj közel a falvakhoz, ahol meggyógyíthatod a megmérgezett "
-"egységeidet, és kényszerítsd rá az ellenfeleid, hogy a folyóból támadjanak."
+"Maradj közel a falvakhoz, ahol meggyógyíthatod a megmérgezett egységeidet, "
+"és kényszerítsd rá az ellenfeleid, hogy a folyóból támadjanak."
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/02_Assassins.cfg:128
@@ -706,10 +706,10 @@ msgid ""
 "There was no hale orc in sight, nor did any of the wounded beg mercy. The "
 "elves took no prisoners."
 msgstr ""
-"Az ork törzsfőnök végül belehalt sérüléseibe. A tündék egy félig "
-"romba dőlt táborban találták magukat, ork és tünde holttestek hevertek"
-"szerteszét. Egy ork sem maradt sértetlenül, a sebesültek pedig nem "
-"könyörögtek kegyelemért. A tündék nem ejtettek foglyokat."
+"Az ork törzsfőnök végül belehalt sérüléseibe. A tündék egy félig romba dőlt "
+"táborban találták magukat, ork és tünde holttestek hevertek szerteszét. Egy "
+"ork sem maradt sértetlenül, a sebesültek pedig nem könyörögtek kegyelemért. "
+"A tündék nem ejtettek foglyokat."
 
 #. [message]: role=advisor
 #: data/campaigns/An_Orcish_Incursion/scenarios/03_Wasteland.cfg:239
@@ -1157,8 +1157,8 @@ msgid ""
 "Use Elven Scouts and Linaera’s power of teleportation to mount hit-and-run "
 "attacks."
 msgstr ""
-"Használd a tünde felderítőket és Linaera teleportációs képességét az "
-"„üss és fuss” támadások végrehajtásához."
+"Használd a tünde felderítőket és Linaera teleportációs képességét az „üss és "
+"fuss” támadások végrehajtásához."
 
 #. [message]: id=Erlornas
 #: data/campaigns/An_Orcish_Incursion/scenarios/05_Linaera_the_Quick.cfg:143

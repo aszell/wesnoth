@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2020-01-12 16:28 UTC\n"
+"POT-Creation-Date: 2020-05-17 09:36 UTC\n"
 "PO-Revision-Date: 2014-06-24 22:26+0700\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese <kde-i18n-doc@kde.org>\n"
@@ -74,8 +74,8 @@ msgstr "Konrad"
 #. [side]: type=Elvish Champion, id=Galdrad
 #. [side]: type=Elvish Shyde, id=Chantal
 #: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:46
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:152
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:172
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:156
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:177
 msgid "Rebels"
 msgstr "Kẻ nổi loạn"
 
@@ -93,35 +93,35 @@ msgstr "Urug-Telfar"
 #. [side]: type=Orcish Warlord, id=Urug-Telfar
 #. [side]: type=Orcish Warlord, id=Knafa-Tan
 #. [side]: type=Orcish Warlord, id=Maga-Knafa
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:98
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:112
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:130
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:99
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:114
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:133
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:24
 msgid "Orcs"
 msgstr "Người thú"
 
 #. [side]: type=Orcish Warlord, id=Knafa-Tan
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:105
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:106
 msgid "Knafa-Tan"
 msgstr "Knafa-Tan"
 
 #. [side]: type=Orcish Warlord, id=Maga-Knafa
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:123
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:125
 msgid "Maga-Knafa"
 msgstr "Maga-Knafa"
 
 #. [side]: type=Elvish Champion, id=Galdrad
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:142
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:145
 msgid "Galdrad"
 msgstr "Galdrad"
 
 #. [side]: type=Elvish Shyde, id=Chantal
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:159
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:163
 msgid "Chantal"
 msgstr "Chantal"
 
 #. [message]: speaker=Konrad
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:209
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:214
 msgid ""
 "Master Delfador! Look, there are orcs coming from all directions! What shall "
 "we do?"
@@ -130,12 +130,12 @@ msgstr ""
 "làm gì bây giờ?"
 
 #. [message]: speaker=Delfador
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:213
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:218
 msgid "There are too many to fight, far too many. We must escape!"
 msgstr "Có quá đông, bọn chúng quá đông. Chúng ta phải chạy trốn!"
 
 #. [message]: speaker=narrator
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:219
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:224
 #, fuzzy
 #| msgid ""
 #| "In this scenario, the AI playing the humans in the east (Langzhar) is "
@@ -174,18 +174,18 @@ msgstr ""
 "wesnoth.org/Micro_AIs để biết thêm thông tin."
 
 #. [event]
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:226
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:231
 msgid "Move Konrad here"
 msgstr "Di chuyển Konrad đến đây"
 
 #. [message]: speaker=unit
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:242
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:247
 msgid "Very well, we have made it this far! But where do we go next?"
 msgstr ""
 "May quá, chúng ta đã thoát được rồi! Nhưng tiếp theo chúng ta sẽ đi đâu?"
 
 #. [message]: speaker=Delfador
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:247
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:252
 msgid ""
 "In HttT, we would travel north now, and try to make it to the Isle of "
 "Alduin. But for this demo campaign, we'll call it good here."
@@ -194,38 +194,38 @@ msgstr ""
 "Nhưng trong màn chơi minh họa này, chúng ta đến được đây là tốt rồi."
 
 #. [message]: speaker=unit
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:272
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:277
 msgid "I... I don’t think I can make it anymore."
 msgstr "Tôi... tôi nghĩ mình không thể chạy trốn được nữa."
 
 #. [message]: speaker=Delfador
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:276
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:281
 msgid "Prince... you must keep fighting! Nooooooo!"
 msgstr "Hoàng tử... cậu phải tiếp tục chiến đấu! Khôôôôôôông!"
 
 #. [message]: speaker=unit
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:280
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:285
 msgid "It is over. I am doomed..."
 msgstr "Thế là hết. Mình tận số rồi..."
 
 #. [message]: speaker=unit
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:294
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:299
 msgid "I have... have failed in my duty to protect the prince! I am defeated."
 msgstr ""
 "Tôi đã... đã thất bại, không thể bảo vệ được hoàng tử! Tôi đã bị đánh bại."
 
 #. [message]: speaker=Konrad
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:298
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:303
 msgid "Don’t die, Delfador! Please, you have to stay alive!"
 msgstr "Đừng chết, Delfador! Đừng mà, ngài phải sống!"
 
 #. [message]: speaker=unit
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:302
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:307
 msgid "Ugh!"
 msgstr "Á!"
 
 #. [message]: speaker=Delfador
-#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:313
+#: data/ai/micro_ais/scenarios/The_Elves_Besieged.cfg:318
 msgid ""
 "Oh, no! We have run out of time, they have arrived with reinforcements..."
 msgstr ""
@@ -358,10 +358,10 @@ msgstr "Động vật"
 msgid "Rutburt"
 msgstr "Rutburt"
 
+#. [side]: id=Rutburt, type=Outlaw
 #. [side]: type=General, id=leader2
 #. [side]: type=Lieutenant, id=leader5
 #. [side]: type=Lieutenant, id=leader6
-#. [side]: id=Rutburt, type=Outlaw
 #: data/ai/micro_ais/scenarios/animals.cfg:48
 #: data/ai/micro_ais/scenarios/goto.cfg:43
 #: data/ai/micro_ais/scenarios/goto.cfg:93
@@ -404,15 +404,15 @@ msgstr "Chó sói"
 msgid "Whelps"
 msgstr "Bé con"
 
+#. [set_menu_item]: id=m01_end_animals
 #. [event]
 #. [set_menu_item]: id=m04_end_animals
 #. [set_menu_item]: id=m01_end_swarm
-#. [set_menu_item]: id=m01_end_animals
 #. [set_menu_item]: id=m01_end_wolves
 #: data/ai/micro_ais/scenarios/animals.cfg:209
 #: data/ai/micro_ais/scenarios/dragon.cfg:48
 #: data/ai/micro_ais/scenarios/goto.cfg:382
-#: data/ai/micro_ais/scenarios/guardians.cfg:85
+#: data/ai/micro_ais/scenarios/guardians.cfg:86
 #: data/ai/micro_ais/scenarios/lurkers.cfg:382
 #: data/ai/micro_ais/scenarios/patrols.cfg:185
 #: data/ai/micro_ais/scenarios/swarm.cfg:66
@@ -564,11 +564,11 @@ msgstr "Đại ca người thú"
 msgid "All right, chaps. Those orcs need to be stopped."
 msgstr "Được rồi, bọn bay. Lũ người thú đó phải bị ngăn chặn."
 
-#. [message]: speaker=Another Bad Orc
-#. [message]: speaker=Vanak
 #. [message]: speaker=Big Bad Orc
+#. [message]: speaker=Vanak
+#. [message]: speaker=Another Bad Orc
 #: data/ai/micro_ais/scenarios/bottleneck_defense.cfg:93
-#: data/ai/micro_ais/scenarios/guardians.cfg:572
+#: data/ai/micro_ais/scenarios/guardians.cfg:573
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:140
 msgid "They there!  We them get!"
 msgstr "Chúng kìa! Thanh toán chúng!"
@@ -790,8 +790,8 @@ msgid ""
 "or for your own tests."
 msgstr ""
 
-#. [test]: id=goto
 #. [event]
+#. [test]: id=goto
 #: data/ai/micro_ais/scenarios/goto.cfg:5
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:84
 msgid "Goto"
@@ -1121,8 +1121,8 @@ msgstr "Tất cả chúng tôi đã đến các góc, hãy tập hợp trở l�
 msgid "We're back together, let's head out to the corners again."
 msgstr "Chúng ta đã tập hợp trở lại, hãy tiến ra các góc một lần nữa."
 
-#. [test]: id=guardians
 #. [event]
+#. [test]: id=guardians
 #: data/ai/micro_ais/scenarios/guardians.cfg:17
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:57
 msgid "Guardians"
@@ -1141,115 +1141,115 @@ msgid "Gryphons"
 msgstr "Sư tử đầu chim"
 
 #. [side]: type=Orcish Leader, id=Another Bad Orc
-#: data/ai/micro_ais/scenarios/guardians.cfg:49
+#: data/ai/micro_ais/scenarios/guardians.cfg:50
 msgid "Another Bad Orc"
 msgstr "Nhị ca người thú"
 
 #. [unit]: type=Dwarvish Guardsman, id=guardian1
-#: data/ai/micro_ais/scenarios/guardians.cfg:96
+#: data/ai/micro_ais/scenarios/guardians.cfg:97
 msgid "Guardian 1"
 msgstr "Hộ vệ 1"
 
 #. [unit]: type=Dwarvish Guardsman, id=guardian2
-#: data/ai/micro_ais/scenarios/guardians.cfg:107
+#: data/ai/micro_ais/scenarios/guardians.cfg:108
 msgid "Guardian 2"
 msgstr "Hộ vệ 2"
 
 #. [unit]: type=Giant Rat, id=coward1
-#: data/ai/micro_ais/scenarios/guardians.cfg:120
+#: data/ai/micro_ais/scenarios/guardians.cfg:121
 msgid "Coward 1"
 msgstr "Kẻ hèn nhát 1"
 
 #. [unit]: type=Giant Rat, id=coward2
-#: data/ai/micro_ais/scenarios/guardians.cfg:144
+#: data/ai/micro_ais/scenarios/guardians.cfg:145
 msgid "Coward 2"
 msgstr "Kẻ hèn nhát 2"
 
 #. [unit]: type=Giant Rat, id=coward3
-#: data/ai/micro_ais/scenarios/guardians.cfg:170
+#: data/ai/micro_ais/scenarios/guardians.cfg:171
 msgid "Coward 3"
 msgstr "Kẻ hèn nhát 3"
 
 #. [unit]: type=Giant Rat, id=coward4
-#: data/ai/micro_ais/scenarios/guardians.cfg:197
+#: data/ai/micro_ais/scenarios/guardians.cfg:198
 msgid "Coward 4"
 msgstr "Kẻ hèn nhát 4"
 
 #. [event]
-#: data/ai/micro_ais/scenarios/guardians.cfg:219
+#: data/ai/micro_ais/scenarios/guardians.cfg:220
 msgid "Move gryphons here to see different coward reactions"
 msgstr ""
 "Di chuyển sư tử đầu chim đến đây để xem các phản ứng hèn nhát khác nhau"
 
 #. [unit]: type=Troll, id=return1
-#: data/ai/micro_ais/scenarios/guardians.cfg:228
+#: data/ai/micro_ais/scenarios/guardians.cfg:229
 msgid "Return Guardian 1"
 msgstr "Hộ vệ trở về 1"
 
 #. [unit]: type=Troll Whelp, id=return2
-#: data/ai/micro_ais/scenarios/guardians.cfg:249
+#: data/ai/micro_ais/scenarios/guardians.cfg:250
 msgid "Return Guardian 2"
 msgstr "Hộ vệ trở về 2"
 
 #. [unit]: type=Troll Whelp, id=home1
-#: data/ai/micro_ais/scenarios/guardians.cfg:271
+#: data/ai/micro_ais/scenarios/guardians.cfg:272
 msgid "Home Guard 1"
 msgstr "Hộ vệ nhà 1"
 
 #. [unit]: type=Troll, id=home 2
-#: data/ai/micro_ais/scenarios/guardians.cfg:283
+#: data/ai/micro_ais/scenarios/guardians.cfg:284
 msgid "Home Guard 2"
 msgstr "Hộ vệ nhà 2"
 
 #. [unit]: type=Skeleton Archer, id=stationed1
-#: data/ai/micro_ais/scenarios/guardians.cfg:296
+#: data/ai/micro_ais/scenarios/guardians.cfg:297
 msgid "Stationed Guardian 1"
 msgstr "Hộ vệ trạm 1"
 
 #. [unit]: type=Skeleton, id=stationed2
-#: data/ai/micro_ais/scenarios/guardians.cfg:320
+#: data/ai/micro_ais/scenarios/guardians.cfg:321
 msgid "Stationed Guardian 2"
 msgstr "Hộ vệ trạm 2"
 
 #. [unit]: type=Troll, id=zone1
-#: data/ai/micro_ais/scenarios/guardians.cfg:345
+#: data/ai/micro_ais/scenarios/guardians.cfg:346
 msgid "Gate Keeper"
 msgstr "Người giữ cổng"
 
 #. [unit]: type=Dwarvish Guardsman, id=zone2
-#: data/ai/micro_ais/scenarios/guardians.cfg:372
+#: data/ai/micro_ais/scenarios/guardians.cfg:373
 msgid "Home Keeper"
 msgstr "Người giữ nhà"
 
 #. [unit]: type=Naga Fighter, id=zone3
-#: data/ai/micro_ais/scenarios/guardians.cfg:403
+#: data/ai/micro_ais/scenarios/guardians.cfg:404
 msgid "Water Guardian"
 msgstr "Hộ vệ nước"
 
 #. [event]
-#: data/ai/micro_ais/scenarios/guardians.cfg:424
+#: data/ai/micro_ais/scenarios/guardians.cfg:425
 msgid "Guarded Location"
 msgstr "Vị trí được bảo vệ"
 
 #. [event]
-#: data/ai/micro_ais/scenarios/guardians.cfg:425
+#: data/ai/micro_ais/scenarios/guardians.cfg:426
 msgid "Station 1"
 msgstr "Trạm 1"
 
 #. [event]
-#: data/ai/micro_ais/scenarios/guardians.cfg:426
+#: data/ai/micro_ais/scenarios/guardians.cfg:427
 msgid "Station 2"
 msgstr "Trạm 2"
 
 #. [message]: speaker=narrator
 #. [set_menu_item]: id=m01_guardian
-#: data/ai/micro_ais/scenarios/guardians.cfg:447
-#: data/ai/micro_ais/scenarios/guardians.cfg:456
+#: data/ai/micro_ais/scenarios/guardians.cfg:448
+#: data/ai/micro_ais/scenarios/guardians.cfg:457
 msgid "Standard WML Guardian"
 msgstr "Hộ vệ WML chuẩn"
 
 #. [message]: speaker=narrator
-#: data/ai/micro_ais/scenarios/guardians.cfg:457
+#: data/ai/micro_ais/scenarios/guardians.cfg:458
 msgid ""
 "This is the built-in WML guardian coded using 'ai_special=guardian'. These "
 "guardians attack if there is an enemy within their movement range, otherwise "
@@ -1262,13 +1262,13 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #. [set_menu_item]: id=m02_return
-#: data/ai/micro_ais/scenarios/guardians.cfg:463
-#: data/ai/micro_ais/scenarios/guardians.cfg:472
+#: data/ai/micro_ais/scenarios/guardians.cfg:464
+#: data/ai/micro_ais/scenarios/guardians.cfg:473
 msgid "Return Guardian"
 msgstr "Hộ vệ trở về"
 
 #. [message]: speaker=narrator
-#: data/ai/micro_ais/scenarios/guardians.cfg:473
+#: data/ai/micro_ais/scenarios/guardians.cfg:474
 msgid ""
 "A 'return guardian' is a variation of the standard Wesnoth guardian. It has "
 "an assigned guard position (GP) to which it returns after attacks on "
@@ -1295,13 +1295,13 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #. [set_menu_item]: id=m03_home
-#: data/ai/micro_ais/scenarios/guardians.cfg:484
-#: data/ai/micro_ais/scenarios/guardians.cfg:493
+#: data/ai/micro_ais/scenarios/guardians.cfg:485
+#: data/ai/micro_ais/scenarios/guardians.cfg:494
 msgid "Home Guard"
 msgstr "Hộ vệ nhà"
 
 #. [message]: speaker=narrator
-#: data/ai/micro_ais/scenarios/guardians.cfg:494
+#: data/ai/micro_ais/scenarios/guardians.cfg:495
 msgid ""
 "A 'home guard' is a variant on the 'guardian' AI special. With this variant, "
 "the unit has an assigned 'home' location, and will return there if not "
@@ -1334,13 +1334,13 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #. [set_menu_item]: id=m04_stationed
-#: data/ai/micro_ais/scenarios/guardians.cfg:501
-#: data/ai/micro_ais/scenarios/guardians.cfg:510
+#: data/ai/micro_ais/scenarios/guardians.cfg:502
+#: data/ai/micro_ais/scenarios/guardians.cfg:511
 msgid "Stationed Guardian"
 msgstr "Hộ vệ trạm"
 
 #. [message]: speaker=narrator
-#: data/ai/micro_ais/scenarios/guardians.cfg:511
+#: data/ai/micro_ais/scenarios/guardians.cfg:512
 msgid ""
 "A 'stationed guardian' is another variation of the standard Wesnoth guardian "
 "with a somewhat more complex behavior than that of the 'return guardian'. "
@@ -1374,13 +1374,13 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #. [set_menu_item]: id=m05_coward
-#: data/ai/micro_ais/scenarios/guardians.cfg:523
-#: data/ai/micro_ais/scenarios/guardians.cfg:532
+#: data/ai/micro_ais/scenarios/guardians.cfg:524
+#: data/ai/micro_ais/scenarios/guardians.cfg:533
 msgid "Coward"
 msgstr "Kẻ hèn nhát"
 
 #. [message]: speaker=narrator
-#: data/ai/micro_ais/scenarios/guardians.cfg:533
+#: data/ai/micro_ais/scenarios/guardians.cfg:534
 msgid ""
 "Cowards are units that, like guardians, sit around doing nothing until an "
 "enemy comes into range. Unlike guardians, however, they run away once "
@@ -1414,13 +1414,13 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #. [set_menu_item]: id=m06_zone
-#: data/ai/micro_ais/scenarios/guardians.cfg:543
-#: data/ai/micro_ais/scenarios/guardians.cfg:552
+#: data/ai/micro_ais/scenarios/guardians.cfg:544
+#: data/ai/micro_ais/scenarios/guardians.cfg:553
 msgid "Zone Guardian"
 msgstr "Hộ vệ vùng"
 
 #. [message]: speaker=narrator
-#: data/ai/micro_ais/scenarios/guardians.cfg:553
+#: data/ai/micro_ais/scenarios/guardians.cfg:554
 msgid ""
 "A zone guardian is a unit that, as the name says, guards a zone. It moves "
 "randomly inside this zone until an enemy enters it (or a separately defined "
@@ -1442,12 +1442,12 @@ msgstr ""
 "kẻ thù nữa, nó trở về tuần tra trong vùng cơ bản của nó."
 
 #. [message]: speaker=Kraa
-#: data/ai/micro_ais/scenarios/guardians.cfg:568
+#: data/ai/micro_ais/scenarios/guardians.cfg:569
 msgid "Kraahhh!!!!"
 msgstr "Kraahhh!!!!"
 
 #. [message]: speaker=Kraa
-#: data/ai/micro_ais/scenarios/guardians.cfg:578
+#: data/ai/micro_ais/scenarios/guardians.cfg:579
 msgid ""
 "Gryphons of the High Plains, look at all these enemies. They don't behave "
 "normally. Most of them don't move at all unless we get close. Let's check "
@@ -1475,29 +1475,29 @@ msgstr ""
 "wiki.wesnoth.org/Micro_AIs để biết thêm thông tin."
 
 #. [objectives]
-#: data/ai/micro_ais/scenarios/guardians.cfg:588
+#: data/ai/micro_ais/scenarios/guardians.cfg:589
 msgid "Move the Gryphons around to explore how the guardians react"
 msgstr ""
 "Di chuyển bầy sư tử đầu chim xung quanh để thăm dò cách các hộ vệ phản ứng"
 
 #. [objective]: condition=win
-#: data/ai/micro_ais/scenarios/guardians.cfg:590
+#: data/ai/micro_ais/scenarios/guardians.cfg:591
 #: data/ai/micro_ais/scenarios/patrols.cfg:256
 msgid "Defeat all enemy units"
 msgstr "Đánh bại tất cả các đơn vị kẻ thù"
 
 #. [objective]: condition=win
-#: data/ai/micro_ais/scenarios/guardians.cfg:594
+#: data/ai/micro_ais/scenarios/guardians.cfg:595
 msgid "Move Kraa to the signpost"
 msgstr "Di chuyển Kraa đến biển chỉ đường"
 
 #. [objective]: condition=lose
-#: data/ai/micro_ais/scenarios/guardians.cfg:598
+#: data/ai/micro_ais/scenarios/guardians.cfg:599
 msgid "Death of Kraa"
 msgstr "Kraa chết"
 
 #. [note]
-#: data/ai/micro_ais/scenarios/guardians.cfg:602
+#: data/ai/micro_ais/scenarios/guardians.cfg:603
 msgid ""
 "Check out the right-click menu options for information on each guardian type"
 msgstr ""
@@ -1505,7 +1505,7 @@ msgstr ""
 "kiểu hộ vệ"
 
 #. [message]: speaker=Kraa
-#: data/ai/micro_ais/scenarios/guardians.cfg:659
+#: data/ai/micro_ais/scenarios/guardians.cfg:660
 msgid ""
 "Gryphons of the High Plains, it is time to return to said plains. Follow me."
 msgstr "Sư tử đầu chim vùng núi cao, đã đến lúc trở về. Theo tôi."
@@ -1877,9 +1877,9 @@ msgstr "Hộ tống sứ giả"
 msgid "Vanak"
 msgstr "Vanak"
 
+#. [event]
 #. [side]
 #. [unit]: type=Dragoon, id=messenger
-#. [event]
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:37
 #: data/ai/micro_ais/scenarios/messenger_escort.cfg:73
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:72
@@ -2369,8 +2369,8 @@ msgstr "Tôi đã cầm cự lâu hết mức có thể."
 msgid "I made it"
 msgstr "Tôi đã làm được"
 
-#. [test]: id=recruiting
 #. [event]
+#. [test]: id=recruiting
 #: data/ai/micro_ais/scenarios/recruiting.cfg:5
 #: data/ai/micro_ais/scenarios/scenario_micro_ai.cfg:78
 msgid "Recruiting"

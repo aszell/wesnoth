@@ -18,16 +18,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Battle for Wesnoth\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2020-02-01 22:39-0300\n"
-"PO-Revision-Date: 2020-02-12 23:00+0100\n"
-"Last-Translator: Michal Žejdl <lachim@emer.cz>\n"
+"POT-Creation-Date: 2020-05-17 12:36+0300\n"
+"PO-Revision-Date: 2020-05-15 20:20+0200\n"
+"Last-Translator: Martin Hrubý (hrubymar10) <hrubymar10@gmail.com>\n"
 "Language-Team: Český <hrubymar10@gmail.com>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #. [multiplayer_side]: id=Custom
 #: data/_main.cfg:22
@@ -488,208 +488,208 @@ msgid "Dutch Translation"
 msgstr "Holandský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:396
+#: data/core/about_i18n.cfg:399
 msgid "English (GB) Translation"
 msgstr "Anglický překlad (VB)"
 
 # dlouhé!
 #. [about]
-#: data/core/about_i18n.cfg:421
+#: data/core/about_i18n.cfg:424
 msgid "English (Shaw) Translation"
 msgstr "Anglický překlad (Shawovský fonetický přepis)"
 
 #. [about]
-#: data/core/about_i18n.cfg:439
+#: data/core/about_i18n.cfg:442
 msgid "Esperanto Translation"
 msgstr "Překlad do Esperanta"
 
 #. [about]
-#: data/core/about_i18n.cfg:458
+#: data/core/about_i18n.cfg:461
 msgid "Estonian Translation"
 msgstr "Estonský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:468
+#: data/core/about_i18n.cfg:471
 msgid "Filipino Translation"
 msgstr "Filipínský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:478
+#: data/core/about_i18n.cfg:481
 msgid "Finnish Translation"
 msgstr "Finský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:527
+#: data/core/about_i18n.cfg:530
 msgid "French Translation"
 msgstr "Francouzský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:689
+#: data/core/about_i18n.cfg:692
 msgid "Friulian Translation"
 msgstr "Překlad do Furlanštiny"
 
 #. [about]
-#: data/core/about_i18n.cfg:696
+#: data/core/about_i18n.cfg:699
 msgid "Galician Translation"
 msgstr "Galicijský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:732
+#: data/core/about_i18n.cfg:735
 msgid "German Translation"
 msgstr "Německý překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:837
+#: data/core/about_i18n.cfg:840
 msgid "Greek Translation"
 msgstr "Řecký překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:880
+#: data/core/about_i18n.cfg:883
 msgid "Hebrew Translation"
 msgstr "Hebrejský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:893
+#: data/core/about_i18n.cfg:896
 msgid "Hungarian Translation"
 msgstr "Maďarský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:954
+#: data/core/about_i18n.cfg:957
 msgid "Icelandic Translation"
 msgstr "Islandský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:964
+#: data/core/about_i18n.cfg:967
 msgid "Indonesian Translation"
 msgstr "Estonský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:987
+#: data/core/about_i18n.cfg:990
 msgid "Irish Translation"
 msgstr "Irský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:994
+#: data/core/about_i18n.cfg:997
 msgid "Italian Translation"
 msgstr "Italský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1041
+#: data/core/about_i18n.cfg:1044
 msgid "Japanese Translation"
 msgstr "Japonský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1134
+#: data/core/about_i18n.cfg:1137
 msgid "Korean Translation"
 msgstr "Korejský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1142
+#: data/core/about_i18n.cfg:1145
 msgid "Latin Translation"
 msgstr "Latinský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1168
+#: data/core/about_i18n.cfg:1171
 msgid "Latvian Translation"
 msgstr "Litevský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1183
+#: data/core/about_i18n.cfg:1186
 msgid "Lithuanian Translation"
 msgstr "Litevský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1208
+#: data/core/about_i18n.cfg:1211
 msgid "Macedonian Translation"
 msgstr "Makedonský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1215
+#: data/core/about_i18n.cfg:1218
 msgid "Marathi Translation"
 msgstr "Překlad do Maráthštiny"
 
 #. [about]
-#: data/core/about_i18n.cfg:1224
+#: data/core/about_i18n.cfg:1227
 msgid "Norwegian Translation"
 msgstr "Norský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1249
+#: data/core/about_i18n.cfg:1252
 msgid "Old English Translation"
 msgstr "Překlad do staré angličtiny"
 
 #. [about]
-#: data/core/about_i18n.cfg:1267
+#: data/core/about_i18n.cfg:1270
 msgid "Polish Translation"
 msgstr "Polský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1315
+#: data/core/about_i18n.cfg:1321
 msgid "Portuguese Translation"
 msgstr "Portugalský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1329
+#: data/core/about_i18n.cfg:1335
 msgid "Portuguese (Brazil) Translation"
 msgstr "Portugalský (brazilský) překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1387
+#: data/core/about_i18n.cfg:1393
 msgid "Romanian Translation"
 msgstr "Rumunský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1395
+#: data/core/about_i18n.cfg:1401
 msgid "Russian Translation"
 msgstr "Ruský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1487
+#: data/core/about_i18n.cfg:1493
 msgid "Scottish Gaelic Translation"
 msgstr "Skotský Galicijský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1496
+#: data/core/about_i18n.cfg:1502
 msgid "Serbian Translation"
 msgstr "Srbský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1515
+#: data/core/about_i18n.cfg:1521
 msgid "Slovak Translation"
 msgstr "Slovenský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1544
+#: data/core/about_i18n.cfg:1550
 msgid "Slovenian Translation"
 msgstr "Slovinský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1560
+#: data/core/about_i18n.cfg:1566
 msgid "Spanish Translation"
 msgstr "Španělský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1642
+#: data/core/about_i18n.cfg:1648
 msgid "Swedish Translation"
 msgstr "Švédský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1683
+#: data/core/about_i18n.cfg:1693
 msgid "Turkish Translation"
 msgstr "Turecký překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1708
+#: data/core/about_i18n.cfg:1718
 msgid "Ukrainian Translation"
 msgstr "Ukrajinský překlad"
 
 #. [about]
-#: data/core/about_i18n.cfg:1724
+#: data/core/about_i18n.cfg:1734
 msgid "Valencian (southern Catalan) Translation"
 msgstr "Valencijský překlad (jižní Katalánie)"
 
 #. [about]
-#: data/core/about_i18n.cfg:1737
+#: data/core/about_i18n.cfg:1747
 msgid "Vietnamese Translation"
 msgstr "Vietnamský překlad"
 
@@ -697,7 +697,7 @@ msgstr "Vietnamský překlad"
 # Každopádně RACV představuje zkratku instituce, proto tato forma.
 #. [about]
 #. Real Acadèmia de Cultura Valenciana
-#: data/core/about_i18n.cfg:1757
+#: data/core/about_i18n.cfg:1767
 msgid "RACV’s Translation"
 msgstr "Překlad RACV"
 
@@ -1733,7 +1733,7 @@ msgstr ""
 msgid ""
 "This trident gives merfolk the power to throw lightning at their enemies."
 msgstr ""
-"Tento trojzubec umožňuje mořských lidech svádět blesky na jejich nepřátele."
+"Tento trojzubec umožňuje mořským lidem vrhat blesky na jejich nepřátele."
 
 #. [effect]: type=fire
 #: data/core/macros/items.cfg:525
@@ -3430,7 +3430,7 @@ msgstr "Weight of Revenge"
 #. [message]: speaker=narrator
 #: data/core/macros/utils.cfg:719
 msgid "You retrieve $amount_gold pieces of gold."
-msgstr "Získáváš $amount_gold zlata."
+msgstr "Získáváš $amount_gold zlatých."
 
 #. [color_range]: id=red
 #. [color_range]: id=1
@@ -7880,8 +7880,7 @@ msgstr "Zlatých"
 msgid ""
 "The amount of gold currently available to recruit and maintain your army."
 msgstr ""
-"Množství zlata, které je aktuálně dostupné k verbování a udržování tvé "
-"armády."
+"Množství zlata, které je nyní dostupné k verbování a udržování tvé armády."
 
 #: src/reports.cpp:1330
 msgid "The fraction of known villages that your side has captured."

@@ -1,3 +1,4 @@
+#
 # Translators:
 # RatArmy <broadbarredfirefish@gmail.com>, 2018
 # 家庭的の人 <kateitekino_hito@yahoo.co.jp>, 2018
@@ -7,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2020-01-12 16:29 UTC\n"
+"POT-Creation-Date: 2020-05-01 22:57 UTC\n"
 "PO-Revision-Date: 2018-07-11 10:25+0000\n"
 "Last-Translator: tamanegi, 2019\n"
 "Language-Team: Japanese (https://www.transifex.com/wesnoth-jp/teams/60513/"
@@ -416,10 +417,8 @@ msgstr "南軍"
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:288
 #: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:155
-#, fuzzy
-#| msgid "Defeat enemy leader(s)"
 msgid "Defeat the enemy leader"
-msgstr "全ての敵のリーダーを倒す"
+msgstr ""
 
 #. [note]
 #: data/multiplayer/scenarios/2p_Aethermaw.cfg:292
@@ -1841,19 +1840,19 @@ msgstr ""
 msgid "3p — Alirok Marsh"
 msgstr "3p — Alirok の沼地"
 
+#. [multiplayer]: id=multiplayer_Alirok_Marsh
+#. [multiplayer]: id=multiplayer_Island_of_the_Horatii
+#. [multiplayer]: id=multiplayer_3p_Morituri
+#. [multiplayer]: id=multiplayer_Blue_Water_Province
+#. [multiplayer]: id=multiplayer_Castle_Hopping_Isle
+#. [multiplayer]: id=multiplayer_Clash
+#. [multiplayer]: id=multiplayer_4p_Hamlets
+#. [multiplayer]: id=multiplayer_4p_Morituri
+#. [multiplayer]: id=multiplayer_Ruins_of_Terra-Dwelve
+#. [multiplayer]: id=multiplayer_4p_Underworld
 #. [multiplayer]: id=multiplayer_8p_Mokena_Prairie
 #. [multiplayer]: id=multiplayer_8p_Morituri
-#. [multiplayer]: id=multiplayer_Blue_Water_Province
-#. [multiplayer]: id=multiplayer_3p_Morituri
-#. [multiplayer]: id=multiplayer_Clash
-#. [multiplayer]: id=multiplayer_Castle_Hopping_Isle
-#. [multiplayer]: id=multiplayer_Island_of_the_Horatii
-#. [multiplayer]: id=multiplayer_Ruins_of_Terra-Dwelve
-#. [multiplayer]: id=multiplayer_4p_Morituri
 #. [multiplayer]: id=multiplayer_Loris_River
-#. [multiplayer]: id=multiplayer_Alirok_Marsh
-#. [multiplayer]: id=multiplayer_4p_Hamlets
-#. [multiplayer]: id=multiplayer_4p_Underworld
 #: data/multiplayer/scenarios/3p_Alirok_Marsh.cfg:6
 #: data/multiplayer/scenarios/3p_Island_of_the_Horatii.cfg:6
 #: data/multiplayer/scenarios/3p_Morituri.cfg:6
@@ -2078,8 +2077,8 @@ msgstr "北東軍"
 msgid "4p — King of the Hill"
 msgstr "4p — 丘の王"
 
-#. [multiplayer]: id=multiplayer_Siege_Castles
 #. [multiplayer]: id=multiplayer_King_of_the_Hill
+#. [multiplayer]: id=multiplayer_Siege_Castles
 #: data/multiplayer/scenarios/4p_King_of_the_Hill.cfg:9
 #: data/multiplayer/scenarios/4p_Siege_Castles.cfg:9
 msgid " Recommended setting of 2 gold per village and 150 starting gold."
@@ -2254,8 +2253,8 @@ msgstr "この混じりあった地形の中、5 つの軍隊が覇権を巡っ�
 msgid "5p — The Wilderlands"
 msgstr "5p — ワイルダーランド"
 
-#. [multiplayer]: id=multiplayer_The_Wilderlands
 #. [multiplayer]: id=multiplayer_Crusaders_Field
+#. [multiplayer]: id=multiplayer_The_Wilderlands
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:50
 #: data/multiplayer/scenarios/6p_Crusaders_Field.cfg:7
 msgid " Recommended setting of 1 gold per village."
@@ -2272,31 +2271,23 @@ msgstr ""
 
 #. [side]
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:87
-#, fuzzy
-#| msgid "teamname^Team 1"
 msgid "teamname^Team 3"
-msgstr "チーム 1"
+msgstr ""
 
 #. [side]
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:98
-#, fuzzy
-#| msgid "teamname^Team 1"
 msgid "teamname^Team 4"
-msgstr "チーム 1"
+msgstr ""
 
 #. [side]
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:119
-#, fuzzy
-#| msgid "teamname^Center"
 msgid "teamname^Monsters"
-msgstr "中央軍"
+msgstr ""
 
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:229
-#, fuzzy
-#| msgid "Defeat enemy leader(s)"
 msgid "Defeat all enemy leaders"
-msgstr "全ての敵のリーダーを倒す"
+msgstr ""
 
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:246
@@ -2305,17 +2296,13 @@ msgstr ""
 
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:264
-#, fuzzy
-#| msgid "Defeat enemy leader(s)"
 msgid "Defeat the enemy leaders"
-msgstr "全ての敵のリーダーを倒す"
+msgstr ""
 
 #. [objective]: condition=lose
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:269
-#, fuzzy
-#| msgid "Death of your team leaders"
 msgid "Death of all your units"
-msgstr "チームリーダーの死。"
+msgstr ""
 
 #. [note]
 #: data/multiplayer/scenarios/5p_The_Wilderlands.cfg:274
