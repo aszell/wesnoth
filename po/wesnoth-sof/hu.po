@@ -82,7 +82,9 @@ msgstr ""
 
 #. [campaign]: id=Sceptre_of_Fire
 #: data/campaigns/Sceptre_of_Fire/_main.cfg:34
-msgid "(Expert level, 9 scenarios.)"
+#, fuzzy
+#| msgid "(Expert level, 9 scenarios.)"
+msgid "(Hard level, 9 scenarios.)"
 msgstr "(Gyakorlott szint, 9 pálya)"
 
 #. [about]
