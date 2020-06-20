@@ -22,6 +22,8 @@
 #include "formatter.hpp"
 #include "gettext.hpp"
 #include "serialization/unicode.hpp"
+#include "video.hpp"
+#include "addon/manager.hpp"
 
 #include <algorithm>
 #include <fstream>
@@ -481,8 +483,27 @@ std::string full_build_report()
 	  << '\n'
 	  << report_heading("Features")
 	  << '\n'
-	  << game_config::optional_features_report();
-
+	  << game_config::optional_features_report()
+	  << '\n'
+	  << report_heading("Current video settings")
+	  << '\n'
+	  << CVideo::video_settings_report()
+	  << '\n'
+	  << report_heading("Installed add-ons")
+	  << '\n';
+	const auto installed_addons = installed_addons_and_versions();
+	if(installed_addons.size() == 0)
+	{
+		o << "No add-ons installed.\n";
+	}
+	else
+	{
+		for(const auto& addon_info : installed_addons)
+		{
+			o << addon_info.first << " : " << addon_info.second << '\n';
+		}
+	}
+	o << '\n';
 	return o.str();
 }
 

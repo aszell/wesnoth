@@ -31,6 +31,7 @@
 #include "game_version.hpp"
 #include "serialization/string_utils.hpp"
 #include "addon/client.hpp"
+#include "game_config_manager.hpp"
 
 #include <boost/algorithm/string.hpp>
 
@@ -158,6 +159,28 @@ std::vector<std::string> installed_addons()
 	}
 
 	return res;
+}
+
+std::map<std::string, std::string> installed_addons_and_versions()
+{
+	std::map<std::string, std::string> addons;
+
+	for(const std::string& addon_id : installed_addons()) {
+		if(have_addon_pbl_info(addon_id)) {
+			try {
+				addons[addon_id] = get_addon_pbl_info(addon_id)["version"].str();
+			} catch(const invalid_pbl_exception& e) {
+				addons[addon_id] = "Invalid pbl file, version unknown";
+			}
+		} else if(filesystem::file_exists(get_info_file_path(addon_id))) {
+			config temp;
+			get_addon_install_info(addon_id, temp);
+			addons[addon_id] = !temp.empty() ? temp.child("info")["version"].str() : "Unknown";
+		} else {
+			addons[addon_id] = "Unknown";
+		}
+	}
+	return addons;
 }
 
 bool is_addon_installed(const std::string& addon_name)
