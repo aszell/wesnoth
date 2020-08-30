@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: hu-tb\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2020-06-13 01:49 UTC\n"
-"PO-Revision-Date: 2020-08-23 20:53+0200\n"
+"PO-Revision-Date: 2020-08-30 14:25+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -991,14 +991,12 @@ msgstr "Várvédő"
 #. [time]: id=indoors_dark_castle
 #. similar string in the wesnoth-help textdomain
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:236
-#, fuzzy
 msgid "Indoors (dark castle)"
 msgstr "Beltér (sötét kastély)"
 
 #. [time]: id=indoors_dark_castle_lit
 #. similar string in th4e wesnoth-help textdomain
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:252
-#, fuzzy
 msgid "Indoors (lit)"
 msgstr "Beltér (megvilágított)"
 
@@ -1117,19 +1115,14 @@ msgid ""
 msgstr ""
 "Haha! Mi rég nem gyilkolt. Fegyver vért akar. Most ölni fogunk embereket!"
 
-# Nagyon furán hangzik, jobb ötlet?
 #. [message]: speaker=Arvith
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:499
-#, fuzzy
-#| msgid ""
-#| "My sword-arm has a say in who will do the dying. Come on, men, let’s kill "
-#| "some orcs."
 msgid ""
 "My sword-arm shall have a say in who will do the dying. Come on, men, let’s "
 "kill some orcs."
 msgstr ""
-"A fegyverforgató karomnak is lesz még szava abban, hogy ki hal meg ma. "
-"Gyerünk, emberek, vágjunk le pár orkot!"
+"Fegyveremnek is lesz még beleszólása abba, hogy ki hal meg ma! Gyerünk "
+"emberek, vágjunk le pár orkot!"
 
 #. [message]: speaker=Arvith
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:511
@@ -1231,19 +1224,16 @@ msgstr ""
 
 #. [message]: speaker=Arvith
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:748
-#, fuzzy
 msgid "It may be important, I best take it."
-msgstr "Fontosnak tűnik, legjobb, ha elteszem."
+msgstr "Fontos lehet, jobb ha elrakom."
 
 #. [message]: speaker=unit
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:766
-#, fuzzy
 msgid "This castle seems as dark as a cave!"
 msgstr "Ez a kastély olyan sötétnek tűnik, mint egy barlang!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:772
-#, fuzzy
 msgid ""
 "This castle is under a constant, <i>chaotic</i> time of day (equivalent to "
 "permanent night), except for illuminated hexes adjacent to lit stone walls "
@@ -1252,8 +1242,8 @@ msgid ""
 msgstr ""
 "Ez a kastély állandó <i>törvénytelen</i> napszakban van (ami végtelen "
 "éjszakának felel meg), kivéve a megvilágított falak melletti mezőket "
-"(semleges napszak). Egységeid figyelmesen helyezd el, mert gyengébbek "
-"lesznek, míg az ellenséges egységek erősebbek."
+"(semleges napszak). Körültekintően járj el egységeid elhelyezésekor, mert "
+"gyengébbek lesznek, míg az ellenséges egységek erősebbek."
 
 #. [message]: speaker=unit
 #: data/campaigns/Two_Brothers/scenarios/03_Guarded_Castle.cfg:792
@@ -1590,19 +1580,17 @@ msgstr ""
 
 #. [message]: speaker=Tairach
 #: data/campaigns/Two_Brothers/scenarios/04_Return_to_the_Village.cfg:341
-#, fuzzy
 msgid "Today, you shall pay for disfiguring my face, mage!"
-msgstr "Ma megfizetsz azért, amit az arcommal tettél, mágus!"
+msgstr "Ma megfizetsz azért, hogy elcsúfítottad az arcom, mágus!"
 
 #. [message]: speaker=Baran
 #: data/campaigns/Two_Brothers/scenarios/04_Return_to_the_Village.cfg:346
-#, fuzzy
 msgid ""
 "I have already paid with the lives of my men at Toen Caric. It is time I "
 "righted that mistake and finished this once and for all."
 msgstr ""
-"Már megfizettem embereim életével Toen Caricnál. Itt az idő, hogy "
-"helyretegyem azt a hibát és véget vessek ennek egyszer s mindenkorra."
+"Már megfizettem embereim életével Toen Caricnál. Itt az idő, hogy jóvátegyem "
+"azt a hibát és véget vessek ennek egyszer s mindenkorra."
 
 #. [message]: speaker=Arvith
 #: data/campaigns/Two_Brothers/scenarios/04_Return_to_the_Village.cfg:355
