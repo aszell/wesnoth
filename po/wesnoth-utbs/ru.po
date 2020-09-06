@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2020-06-13 01:49 UTC\n"
+"POT-Creation-Date: 2020-08-08 09:20 UTC\n"
 "PO-Revision-Date: 2019-01-27 03:10+0400\n"
 "Last-Translator: Fedor Khod'kov <fkhodkov@gmail.com>\n"
 "Language-Team: \n"
@@ -2290,8 +2290,9 @@ msgstr ""
 #. [berserk]: id=berserk
 #: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg:688
 msgid ""
-"Whether used offensively or defensively, this attack presses the engagement "
-"until one of the champions is slain, or 30 rounds of attacks have occurred."
+"If used offensively or defensively against champions Grak or Zur, this "
+"attack presses the engagement until one of the combatants is slain, or 30 "
+"rounds of attacks have occurred."
 msgstr ""
 
 #. [chance_to_hit]: id=magical
@@ -15825,8 +15826,12 @@ msgstr ""
 "способность к самозащите до конца хода."
 
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:161
+#, fuzzy
+#| msgid ""
+#| "This unit is capable of distracting opponents, allowing allied units to "
+#| "trespass their Zones of Control and move unhindered around them."
 msgid ""
-"This unit is capable of distracting opponents, allowing allied units to "
+" This unit is capable of distracting opponents, allowing allied units to "
 "trespass their Zones of Control and move unhindered around them."
 msgstr ""
 "Этот боец способен отвлекать противников, позволяя союзным бойцам вторгаться "
