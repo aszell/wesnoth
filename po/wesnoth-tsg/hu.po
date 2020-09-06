@@ -6,12 +6,13 @@
 # Széll András <szell.andris@gmail.com>, 2018.
 # Krutki Tamás <krtamas@0x64.org>, 2018.
 # Pazurik L. Ádám <pazurik.laszlo.adam@gmail.com>, 2018.
+# Bódi Árpád <bodiarpi@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu-tsg_1.5\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2020-06-13 01:49 UTC\n"
-"PO-Revision-Date: 2020-09-03 15:53+0100\n"
+"PO-Revision-Date: 2020-09-06 09:52+0200\n"
 "Last-Translator: Széll András <szell.andris@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -43,8 +44,9 @@ msgstr ""
 "Egy fiatal lovagot, Deorant küldik el Kerlathba, Dél-Wesnoth tartományába, "
 "hogy kivizsgálja a feldúlt határmenti városokat. Viharos gyorsasággal "
 "keveredik bele egy drámai konfliktusba a fosztogató banditákkal. Deorannak "
-"össze kell toboroznia az elhagyott déli gárda megmaradt embereit, hogy "
+"össze kell toboroznia az elhagyott Déli Őrhely megmaradt embereit, hogy "
 "megvédje országát.\n"
+"\n"
 
 #. [campaign]: id=The_South_Guard
 #: data/campaigns/The_South_Guard/_main.cfg:21
@@ -224,8 +226,9 @@ msgid ""
 "ransack our homes and kill the townsfolk! I’ll defend them to the death if I "
 "must!"
 msgstr ""
-"Soha nem foglalod el ezt a falut! Láttam ám már sokszor ahogy a fajtád "
-"megölte a helybelieket, és én megvédem akár az életem árán is!"
+"Soha nem foglalod el ezt a falut! Túl sokat láttam már a fajtádból feldúlni "
+"az otthonainkat és megölni a helyieket, és megvédem őket akár az életem árán "
+"is!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:206
@@ -233,9 +236,9 @@ msgid ""
 "My kind? I am a knight of Wesnoth and a messenger appointed by the King "
 "himself! What do you mean, <i>“my kind”</i>? And where is the South Guard?"
 msgstr ""
-"Az én fajtám? Én egy wesnothi katona vagyok, Haldric király küldönce és a "
-"Déli Őrhely új parancsnoka! Mit értesz az alatt, hogy <i>„az én fajtám”</i>? "
-"És merre van a Déli Őrhely?"
+"Az én fajtám? Én wesnothi lovag vagyok, akit személyesen Haldric király "
+"nevezett ki küldöncnek! Mit értesz az alatt, hogy <i>„az én fajtám”</i>? És "
+"merre van a Déli Őrhely?"
 
 #. [message]: speaker=Moreth
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:211
@@ -247,7 +250,7 @@ msgid ""
 msgstr ""
 "Bocsánatodért esedezem uram! A banditák kifosztották a falvakat és megölték "
 "a parasztokat. Mindent megtettünk amit csak tudtunk, hogy ellenálljunk és "
-"visszaverjük őket, de tengernyien voltak. Ó jajj, fájdalom, de mindössze Sir "
+"visszaverjük őket, de tengernyien voltak. Ó jaj, fájdalom, de mindössze Sir "
 "Gerrick és jómagam maradtunk. A Déli Őrhely nincs többé."
 
 #. [message]: speaker=Deoran
@@ -257,8 +260,8 @@ msgid ""
 "circumstances here are more dire than I had thought. We must arm the "
 "villagers and drive off the bandits before they can do any more harm!"
 msgstr ""
-"Micsoda? Engem csupán azért küldtek, hogy kikérdezzem Sir Loris-t, de úgy "
-"néz ki, hogy a körülmények sokkalta irtózatosabbak annál, mint ahogy azt "
+"Micsoda? Engem csupán azért küldtek, hogy kikérdezzem Sir Lorist, de úgy néz "
+"ki, hogy a körülmények sokkalta irtózatosabbak annál, mint ahogy azt "
 "eredetileg gondoltam. Fel kell fegyvereznünk a falusiakat és el kell űznünk "
 "a banditákat, mielőtt még több kárt okozhatnának!"
 
@@ -268,7 +271,7 @@ msgid ""
 "Then we must head to the river fort! Sir Gerrick is guarding the armory "
 "there!"
 msgstr ""
-"Valaki gyorsan menjen a folyóparti erődhöz! Sir Gerrick ott védi a "
+"Akkor a folyóparti erődhöz kell mennünk! Sir Gerrick ott védi a "
 "fegyverraktárt!"
 
 #. [message]: speaker=narrator
@@ -304,24 +307,22 @@ msgid ""
 "were slain. I have barely managed to defend this fort, but the South Guard "
 "has fallen and I do not know how much longer I can hold..."
 msgstr ""
-"Végre itt az erősítés! Sir Knight, a banditák az egész vidéket "
-"elárasztották. Válogatás nélkül gyilkolnak és fosztogatnak. Az embereim és "
-"én megpróbáltuk visszaverni őket, de sajnos megfutamítottak minket és "
-"csapatom nagy részét lemészárolták. Épphogy csak sikerült megtartanom ezt az "
-"erődöt, de a Déli Gárda elbukott és nem tudom meddig vagyok képes még "
-"tartani..."
+"Végre itt az erősítés! Lovag Úr, a banditák az egész vidéket elárasztották. "
+"Válogatás nélkül gyilkolnak és fosztogatnak. Az embereim és én megpróbáltuk "
+"visszaverni őket, de sajnos megfutamítottak minket és csapatom nagy részét "
+"lemészárolták. Épphogy csak sikerült megtartanom ezt az erődöt, de a Déli "
+"Gárda elbukott és nem tudom, meddig vagyok képes még tartani..."
 
 # Az utolsó mondat szinte alliteráció XD
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:276
-#, fuzzy
 msgid ""
 "Do not despair! I am sure we can drive off these brigands if we rally the "
 "villagers and re-man the posts. Are there any weapons left in the citadel’s "
 "armory?"
 msgstr ""
 "Ne ess kétségbe! Biztos vagyok benne, hogy el tudjuk űzni ezeket a "
-"banditákat ha összegyűjtjük a falusiakat és az erődökbe vezényeljük őket. "
+"banditákat, ha összegyűjtjük a falusiakat és az erődökbe vezényeljük őket. "
 "Maradt fegyver a fellegvár fegyvertárában?"
 
 #. [message]: speaker=Sir Gerrick
@@ -330,7 +331,7 @@ msgid ""
 "A small supply of spears and bows still remains. I will distribute them to "
 "the peasants if that is your wish, commander."
 msgstr ""
-"Van még néhány lándzsa és íj. Kiosztom a parasztoknak, ha ez a kívánsága a "
+"Van még néhány lándzsa és íj. Kiosztom a parasztoknak, ha ez a kívánsága, "
 "parancsnok."
 
 #. [message]: speaker=Deoran
@@ -342,8 +343,8 @@ msgid ""
 "raise the white and red banners and lead us against them. The South Guard "
 "fights again!"
 msgstr ""
-"Szóval úgy döntött, hogy én veszem át a parancsnokságot? Ám legyen. Sosem "
-"hátráltam meg a kihívások elől. Igen, össze kell állítanunk valamilyen "
+"<i>Szóval úgy döntött, hogy én veszem át a parancsnokságot? Ám legyen. Sosem "
+"hátráltam meg a kihívások elől.</i> Igen, össze kell állítanunk valamilyen "
 "csapatot a táboromban és harcvonalat kell szerveznünk a banditák ellen. A "
 "fehér és piros zászlókat magasba emelve fogom vezetni hadunkat ellenük! A "
 "Déli Gárda újra harcol!"
@@ -377,16 +378,12 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:382
-#, fuzzy
-#| msgid ""
-#| "While you’re in your camp, you can recruit more troops. Build up a small "
-#| "force to use against the bandits that Urza Mathin recruits."
 msgid ""
 "While you are in your camp, you can recruit more units. Build an army to use "
 "against the bandits that Urza Mathin recruits."
 msgstr ""
-"Amíg a táborhelyen vagy, csapatokat toborozhatsz. Alakíts ki egy kisebb "
-"hadsereget az Urza Mathin által útnak indított banditák ellen."
+"Amíg a táborhelyen vagy, csapatokat toborozhatsz. Alakíts ki egy hadsereget "
+"az Urza Mathin által útnak indított banditák ellen."
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:388
@@ -419,7 +416,7 @@ msgid ""
 "experienced Bowmen."
 msgstr ""
 "A legjobb hadsereg különböző egységek keveréke, így bármilyen ellenséggel is "
-"találkozol, a vele leginkább bíró katonát küldheted ellene. Mostantól arra "
+"találkozol, a vele leginkább bíró katonát küldheted ellene. Most arra "
 "törekedj, hogy tapasztalt íjászok egy kicsiny csoportját hozd létre!"
 
 #. [unit]: type=Merman Warrior, type=Merman Warrior, type=Merman Fighter, id=Myssh
@@ -443,17 +440,16 @@ msgid ""
 "living here in peace."
 msgstr ""
 "Népeddel Typhon király uralkodása óta szövetségben álltunk. Segítünk elűzni "
-"a banditákat, ha cserébe hagytok minket itt élni békében."
+"a banditákat, ha cserébe továbbra is hagytok minket itt élni békében."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:459
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:548
-#, fuzzy
 msgid ""
 "We welcome your aid! The rivers of this land will remain yours when we are "
 "victorious."
 msgstr ""
-"Nagyon örülünk a segítségeteknek! E föld folyói a tieitek maradnak amikor "
+"Nagyon örülünk a segítségeteknek! E föld folyói a tieitek maradnak, amikor "
 "győzedelmeskedünk."
 
 #. [message]: speaker=narrator
@@ -473,8 +469,8 @@ msgid ""
 "Bandits are most dangerous at night, Sir Deoran. Let us hold the north bank "
 "of the river until dawn and press our attack in the morning!"
 msgstr ""
-"Uram, a banditák az éj leple alatt sokkal veszélyesebbek. Maradjunk a folyó "
-"északi partján, míg nem pirkad, és majd reggel rohanjuk le őket!"
+"A banditák az éj leple alatt sokkal veszélyesebbek, Sir Deoran. Maradjunk a "
+"folyó északi partján, míg nem pirkad, és majd reggel rohanjuk le őket!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:496
@@ -509,7 +505,6 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:528
-#, fuzzy
 msgid ""
 "During the day, your units will deal more damage and the bandits will deal "
 "less. The more of Urza Mathin’s troops you can defeat during the day, the "
@@ -578,15 +573,16 @@ msgid ""
 "We fight under the banner of the South Guard <i>against</i> the bandits! "
 "Join us if you wish to drive these brigands from your land!"
 msgstr ""
-"A Déli Őrhely zászlaja alatt harcolunk a banditák ellen! Csatlakozzatok "
-"hozzánk, ha el akarjátok űzni ezeket a bűnözőket a földetekről!"
+"A Déli Őrhely zászlaja alatt harcolunk a banditák <i>ellen</i>! "
+"Csatlakozzatok hozzánk, ha el akarjátok űzni ezeket a bűnözőket a "
+"földjeitekről!"
 
 #. [message]: speaker=Aleron
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:603
 msgid ""
 "The South Guard has risen again? I would be proud to fight alongside you!"
 msgstr ""
-"Hát újra van Déli Őrség? Nagy büszkeséggel töltene el, ha az oldaladon "
+"Hát újra van Déli Őrhely? Nagy büszkeséggel töltene el, ha az oldaladon "
 "harcolhatnék!"
 
 #. [unit]: type=Footpad, id=Glasar
@@ -601,13 +597,12 @@ msgstr "Ez a falu a mienk, hogy kiraboljuk! Eredj, vagy pusztulsz!"
 
 #. [message]: speaker=unit
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:623
-#, fuzzy
 msgid ""
 "Do you not see the banners we bear? The South Guard has risen again! Flee "
 "while you can, or you will meet a swift death at our hand!"
 msgstr ""
-"Nem látod a zászlókat, amelyekkel a szél játszik? A Déli Őrhely újra "
-"feltámadt! Menekülj, amíg tudsz, vagy gyors pusztulást hoz rád karunk!"
+"Nem látod a lobogóinkat? A Déli Őrhely újra feltámadt! Menekülj, amíg tudsz, "
+"vagy gyors pusztulást hoz rád karunk!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:646
@@ -682,10 +677,9 @@ msgid ""
 "predicament. I do wish that the King had sent more reinforcements, though "
 "you seem to be quite a capable commander despite your age."
 msgstr ""
-"Úgy van. Nem szereztél volna róla tudomást, hacsak Sir Loris nem jelent "
-"kellemetlen helyzetünkről. Remélem, hogy a király további erősítést küld, "
-"habár úgy tűnik, te magad elég alkalmas vagy parancsnoknak zsenge korod "
-"ellenére."
+"Értem, nem szerezhettél róla tudomást, ha Sir Loris nem jelentett szorult "
+"helyzetünkről. Remélem, hogy a király további erősítést küld, habár úgy "
+"tűnik, te magad elég alkalmas vagy parancsnoknak zsenge korod ellenére."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:763
@@ -695,10 +689,10 @@ msgid ""
 "to remedy these harrowing circumstances. How long have you been fighting "
 "against these bandits anyway?"
 msgstr ""
-"A legjobb képzett ki engem és talán ez kiküszöböli a tapasztalatlanságomból "
+"A legjobb képzést kaptam, és talán ez kiküszöböli a tapasztalatlanságomból "
 "adódó hátrányaimat. Imádkozzunk azért, hogy legalább a jelenlétem elég "
-"legyen a fájdalmas körülmények enyhítésére. Egyébként mióta tart ádáz "
-"küzdelmed a banditákkal szemben?"
+"legyen a nehéz körülmények enyhítésére. Egyébként mióta tart ádáz küzdelmed "
+"a banditákkal szemben?"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/01_Born_to_the_Banner.cfg:768
@@ -709,8 +703,8 @@ msgid ""
 "and held out, hoping for reinforcements, but they never came. Something must "
 "have happened in Westin, else Sir Loris would have relieved us by now."
 msgstr ""
-"Majdnem két hónapja. Nem tudom miért, de Sir Loris járőrt küldött a Westinbe "
-"vezető útra, és az soha nem tért vissza; majd a rákövetkező éjszaka a "
+"Majdnem két hónapja! Nem tudom miért, de Sir Loris számos járőrrel elindult "
+"a Westinbe vezető úton, és soha nem tért vissza. A rákövetkező éjszaka a "
 "banditák nyolc emberemet megölték. A fellegvárat tartottuk, remélve, hogy "
 "erősítés érkezik, de ez sosem történt meg. Valami történhetett Westinben, "
 "máskülönben Sir Loris már megsegített volna minket."
@@ -723,7 +717,7 @@ msgid ""
 "Come, men, let us ride to the city!"
 msgstr ""
 "Történeted valóban felettébb különös, de azzal, hogy maradunk, nem érünk el "
-"semmit. Fel kel kutatnunk Sir Loris-t Westinben, hogy válaszokat kaphassunk. "
+"semmit. Fel kel kutatnunk Sir Lorist Westinben, hogy válaszokat kaphassunk. "
 "Hajrá emberek! Utazzunk hát a városba!"
 
 #. [scenario]: id=02_Proven_by_the_Sword
@@ -771,19 +765,18 @@ msgid ""
 "Then we must make haste before they leave the city in ruins and slaughter "
 "all who live therein."
 msgstr ""
-"Akkor sietnünk kell, mielőtt még elhagyhatnák a várost és mindenkit "
-"lemészárolnának aki ott él!"
+"Akkor sietnünk kell, mielőtt romokba döntik a várost és mindenkit "
+"lemészárolnak, aki ott él!"
 
 #. [message]: speaker=Urza Nalmath
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:213
-#, fuzzy
 msgid ""
 "What?! Those soldiers come from the northern forts... this can only mean my "
 "brother Mathin is dead. Those fiends! They will pay for his death!"
 msgstr ""
 "Micsoda!? Ha wesnothi katonák jönnek az északi erődből, akkor az csakis azt "
-"jelentheti, hogy Mathin testvérem biztosan halott... Meg fognak fizetni a "
-"haláláért, ahogy Sir Loris is a kevélységéért!"
+"jelentheti, hogy Mathin testvérem halott. Az átkozottak! Meg fognak fizetni "
+"a haláláért!"
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:225
@@ -793,7 +786,7 @@ msgstr "Juttasd el Deorant Westin fellegvárába"
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:234
 msgid "Defeat Urza Nalmath, the bandit leader"
-msgstr "Öld meg Urza Nalmathot, a banditák vezérét"
+msgstr "Győzd le Urza Nalmathot, a banditák vezérét"
 
 #. [objective]: condition=lose
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:251
@@ -811,13 +804,12 @@ msgstr "Elértem a fellegvárat!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:288
-#, fuzzy
 msgid ""
 "Excellent, but the battle is not won yet, and there is still no sign of Sir "
 "Loris. Sir Deoran, you should secure the keep."
 msgstr ""
-"Kiváló! De a csata végkimenetele még nem eldöntött és Sir Loris-nak se híre, "
-"se hamva. Védd a tornyot Sir Deoran!"
+"Kiváló! De a csata végkimenetele még nem eldöntött és Sir Lorisnak se híre, "
+"se hamva. Védd a tornyot, Sir Deoran!"
 
 #. [unit]: type=White Mage, id=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:318
@@ -862,20 +854,19 @@ msgstr ""
 "figyelmeztettük a banditák új képességére. Soha nem vezette volna embereit "
 "ellenük ha túl erősek lettek volna számunkra. Helyzetünkről hírnökkel "
 "jelentettem a királynak, de minden bizonnyal valami balszerencse "
-"történhetett vele, mert ti vagytok az első erősítés ami megérkezett ide. "
-"Bárcsak Sir Loris hamarabb küldte volna a lovasfutárt. Talán megérhette "
-"volna azt, hogy most itt álljon közöttünk."
+"történhetett vele, mert ti vagytok az első erősítés, ami ideért. Bárcsak "
+"hamarabb küldött volna lovasfutárt Sir Loris, akkor talán megérhette volna "
+"azt, hogy most itt álljon közöttünk."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:350
-#, fuzzy
 msgid ""
 "Indeed. Foolish though he may have been, it still grieves me to learn of his "
 "death. With him gone, it seems that I must lead the townsfolk against the "
 "bandits and drive them from our city."
 msgstr ""
 "Valóban. Bár lehet, hogy bolond volt, még mindig nagyon elszomorít halálának "
-"híre. Hogy Ő már nincs, úgy tűnik, hogy nekem kell vezetnem a városiakat a "
+"híre. Most, hogy ő már nincs, úgy tűnik, nekem kell vezetnem a városiakat a "
 "banditák ellen és kiűzni őket a városból."
 
 #. [event]
@@ -944,8 +935,8 @@ msgid ""
 "Alas, Westin has fallen! There is nothing else I can do here — I can only "
 "return to the King and report our loss here..."
 msgstr ""
-"Fájdalom! Westin elesett! Már nem tehetek itt semmi egyebet — csak az van "
-"hátra, hogy visszamenjek a királyhoz beszámolni a kudarcunkról..."
+"Fájdalom! Westin elesett! Már nem tehetek itt semmi egyebet — nincs más "
+"hátra, vissza kell térnem a királyhoz beszámolni a kudarcunkról..."
 
 #. [unit]: type=Merman Fighter, id=Absu
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:477
@@ -958,8 +949,8 @@ msgid ""
 "The red and white banners of the South Guard! This is a welcome change from "
 "the bandits who have been trying to ransack my home."
 msgstr ""
-"A Déli Őrhely fehér és piros zászlói! Ez egy igazán remek dolog a "
-"banditáktól azok után, hogy megpróbálták kifosztani az otthonom."
+"A Déli Őrhely fehér és piros zászlói! Ez igazán remek változás az otthonomat "
+"kifosztani igyekvő banditák után."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:492
@@ -974,7 +965,7 @@ msgstr ""
 #. [message]: speaker=Absu
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:496
 msgid "It would be an honor to fight alongside you, Sir Knight."
-msgstr "Megtiszteltetés lenne veled együtt harcolni, Sir Knight!"
+msgstr "Megtiszteltetés lenne veled együtt harcolni, Lovag Úr!"
 
 #. [message]: speaker=Urza Nalmath
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:580
@@ -982,7 +973,7 @@ msgid ""
 "Now, the South Guard will feel the wrath of my new allies! Rise again, my "
 "undead warriors!"
 msgstr ""
-"Az Őrhely most majd megérzi újdonsült szövetségeseim dühét! Előre ismét "
+"Az Őrhely most majd megérzi újdonsült szövetségeseim dühét! Előre ismét, "
 "élőhalott harcosaim!"
 
 #. [message]: speaker=Sir Gerrick
@@ -1017,12 +1008,12 @@ msgid ""
 "deals bonus damage to undead foes."
 msgstr ""
 "Hylas atya képes meggyógyítani a közelében lévő szövetséges egységeket és "
-"különleges támadásai extra sebzést okoznak az élőhalottaknak."
+"különleges támadásai nagyobb sebzést okoznak az élőhalottaknak."
 
 #. [message]: speaker=Urza Nalmath
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:631
 msgid "Leave nothing standing! Raze their villages and kill them all!"
-msgstr "Ne kímélj senkit! Égesd fel a falvaikat és öld meg őket!"
+msgstr "Ne kíméljetek senkit! Romboljátok le a falvaikat és öljétek meg őket!"
 
 #. [message]: speaker=unit
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:635
@@ -1066,11 +1057,10 @@ msgstr "A mester üdvözletét küldi. A parancs: földig rombolni a várost."
 #. [message]: speaker=Urza Nalmath
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:723
 msgid "I am trying, but their resistance is strong..."
-msgstr "Próbálom, de az ellenállásuk erős..."
+msgstr "Próbálom, de túl erősek..."
 
 #. [message]: speaker=Ixlathal
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:727
-#, fuzzy
 msgid ""
 "Then step aside, living one. I will make use of the fresh corpses from this "
 "battle."
@@ -1084,21 +1074,19 @@ msgid ""
 "abandon Westin and let them sack the city..."
 msgstr ""
 "Még több élőhalott! Sajnos nem tudunk ekkora erővel szemben ellenállni. "
-"Hátat kell fordítanunk Westinnek és hagynunk kell őket kifosztani a "
-"váarost..."
+"Hátat kell fordítanunk Westinnek és hagynunk kell őket kifosztani a várost..."
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:827
-#, fuzzy
 msgid ""
 "I do not know, but just before the bandit raids began, an ambassador came to "
 "Sir Loris from the elves of the Aethenwood. He asked that a knight be sent "
 "to discuss a new threat to Wesnoth."
 msgstr ""
 "Nem tudom, csak azt, hogy éppen még mielőtt a banditák fosztogatásai "
-"megkezdődtek volna, egy követ érkezett Sir Lorishoz az aethenwoodi elfektől. "
-"Azt kérte, küldjön egy lovagot, hogy tanácskozzanak egy Wesnoth ellen "
-"készülő új fenyegetéssel kapcsolatban."
+"megkezdődtek volna, egy követ érkezett Sir Lorishoz az aethenwoodi "
+"tündéktől. Azt kérték, küldjön egy lovagot egy Wesnoth ellen készülő új "
+"fenyegetésről tanácskozni."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:832
@@ -1107,7 +1095,6 @@ msgstr "És elment Sir Loris a tündékhez?"
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:837
-#, fuzzy
 msgid ""
 "No. He suspected the elves of some trickery and made no reply to them. I "
 "believe that they may know the origin of these dead warriors we now face."
@@ -1133,28 +1120,25 @@ msgstr ""
 # Szakrális művészeteket tanultam? :D
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:847
-#, fuzzy
 msgid ""
 "I will accompany you, Sir Deoran. I have studied sacred arts and my skills "
 "may be of some use against the dark ones."
 msgstr ""
-"Veled tartok, uram. Szent varázslatokat tanulmányoztam, tudásom hasznodra "
-"válhat a sötét oldal ellen."
+"Veled tartok, Sir Deoran. Szent varázslatokat tanulmányoztam, tudásom "
+"hasznodra válhat a sötét oldal ellen."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/02_Proven_by_the_Sword.cfg:852
-#, fuzzy
 msgid ""
 "Very well. Although it will probably take too long to send word to the King "
 "for reinforcements, I remember there being a small outpost within a couple "
 "days’ ride of here. I will send a message to them asking for a few riders, "
 "then we should make haste toward the Aethenwood to find the elves."
 msgstr ""
-"Rendben van, habár valószínűleg túl sokáig fog tartani míg eljut a "
-"Királyhoz, hogy erősítésre van szükség. Emlékszem, hogy volt errefelé egy "
-"kis előőrs pár napnyi lovaglásra innen. Üzenetet küldök nekik, hogy "
-"lovasokat kérek, aztán meggyorsíthatjuk lépéseinket az Aethenwood felé, hogy "
-"elfekre leljünk."
+"Rendben van. Habár valószínűleg túl sokáig fog tartani, míg eljut a "
+"Királyhoz, hogy erősítésre van szükség, emlékszem errefelé egy kis előőrsre "
+"pár napnyi lovaglásra innen. Üzenetet küldök nekik, hogy lovasokat kérek, "
+"aztán meggyorsíthatjuk utunkat az Aethenwood felé, hogy a tündékre leljünk."
 
 #. [scenario]: id=03_A_Desperate_Errand
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:5
@@ -1179,46 +1163,37 @@ msgstr "Ethiliel"
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:205
-#, fuzzy
-#| msgid "Deoran and his men came to the eastern border of the Aethenwood..."
 msgid ""
 "Deoran and his men came to the eastern border of the Aethenwood, where the "
 "towering trees of the elven forest loomed close overhead."
-msgstr "Deoran és emberei Aethenwood keleti határához érkeztek..."
+msgstr ""
+"Deoran és emberei Aethenwood keleti határához érkeztek, ahol a tünde erdő "
+"toronymagas fái fejük fölé magasodtak..."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:211
-#, fuzzy
-#| msgid ""
-#| "Look, men! There is the forest of the Elves to the northwest. Let us "
-#| "hasten across the river and the hills."
 msgid ""
 "Look to the west! There lies the forest of the elves. Let us hasten across "
 "the river and the hills."
 msgstr ""
-"Figyeljetek, emberek! A Tündék erdeje északnyugatra van. Siessünk keresztül "
-"a folyón és a dombokon!"
+"Nyugat felé nézzetek! Arra van a tündék erdeje. Siessünk keresztül a folyón "
+"és a dombokon!"
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:216
-#, fuzzy
-#| msgid ""
-#| "Be careful, Deoran. No man has set foot in the elvish woods for many a "
-#| "year. We do not know how they will receive us. Sir Loris thought that it "
-#| "was some trick of theirs trying to bring him into the woods..."
 msgid ""
 "I must advise caution, Sir Deoran. No man has set foot in the elvish woods "
 "for many a year. They have never been friendly toward humankind, and we do "
 "not know how they will receive us now, especially after Sir Loris spurned "
 "them."
 msgstr ""
-"Légy óvatos, Deoran! Sok-sok éve nem tette be ember a lábát a tünde erdőkbe! "
-"Nem tudhatjuk, hogy fogadnak majd. Sir Loris azt hitte, hogy tőrbe akarják "
-"csalni az erdőben..."
+"Óvatosságra intelek, Sir Deoran! Sok-sok éve nem tette be ember a lábát a "
+"tünde erdőkbe! Soha nem voltak barátságosak az emberekkel szemben, és nem "
+"tudhatjuk, hogy fogadnak majd, különösen miután Sir Loris visszautasította "
+"őket."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:221
-#, fuzzy
 msgid ""
 "We cannot fear and shun everything we do not understand! Sir Loris may have "
 "distrusted the elves, but he is gone now, and I daresay as a result of his "
@@ -1226,11 +1201,11 @@ msgid ""
 "means to discover their source; we can only look to these elves for help, "
 "wary of men though they may be."
 msgstr ""
-"Nem félhetünk és kerülhetünk el mindent amit nem értünk meg! Sir Loris talán "
-"nem bízott meg az elfekben, de ő már nincs és merem állítani, hogy a saját "
-"bolondságából eredően! Nincs meg hozzá az erőnk, hogy felvegyük ezekkel az "
-"élőhalottakkal a harcot, sem hogy feltárjuk forrásukat. Csupán segítségként "
-"tekinthetünk ezekre az elfekre, habár meglehetősen bizalmatlan lények ők."
+"Nem félhetünk és kerülhetünk el mindent, amit nem értünk meg! Sir Loris "
+"talán nem bízott meg tündékben, de ő már nincs és merem állítani, hogy a "
+"saját bolondságából eredően! Nincs meg hozzá az erőnk, hogy felvegyük "
+"ezekkel az élőholtakkal a harcot, sem hogy feltárjuk forrásukat. Csupán a "
+"tündékhez fordulhatunk segítségért, ha mégoly bizalmatlan lények is ők."
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:226
@@ -1238,14 +1213,14 @@ msgid ""
 "Nevertheless, we musn’t charge in blindly. Even if the elves are unlikely to "
 "attack us, we do not know what else lies in these forests."
 msgstr ""
-"Mindazonáltal nem támadhatunk csak úgy vaktában. Még ha az elfek nem is "
-"valószínű, hogy megtámadnak minket, nem tudhatjuk mi mást rejtenek ezek az "
+"Mindazonáltal nem ronthatunk be csak úgy vaktában. Még ha valószínűtlen is, "
+"hogy a tündék megtámadnak minket, nem tudhatjuk, mi mást rejtenek ezek az "
 "erdők."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:231
 msgid "Very well. We will proceed in formation, then."
-msgstr "Rendben. Akkor formációban haladunk tovább."
+msgstr "Rendben. Akkor alakzatban haladunk tovább."
 
 #. [message]: speaker=Urza Fastik
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:236
@@ -1254,8 +1229,8 @@ msgid ""
 "seems, may be more capable than I had thought. No matter. I will use my new "
 "powers against him and then surely he will fall!"
 msgstr ""
-"Két fívéremet is elvesztettem emiatt az átkozott fiú miatt! Ez a Deoran, "
-"akármilyen fiatalnak is tűnik, lehet, hogy sokkal ügyesebb, mint amilyennek "
+"Két fivéremet is elvesztettem emiatt az átkozott fiú miatt! Ez a Deoran, "
+"akármilyen fiatalnak is, lehet, hogy sokkal ügyesebb, mint amilyennek "
 "gondoltam. Nem számít! Újdönsült erőimet fogom ellene fordítani és akkor "
 "majd biztosan elesik!"
 
@@ -1271,7 +1246,6 @@ msgstr ""
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:256
-#, fuzzy
 msgid "Move Deoran to the Elvish city in the western woods"
 msgstr "Eljuttatod Deorant a nyugati erdőkben levő tünde városba"
 
@@ -1312,48 +1286,40 @@ msgstr "Most már huszárokat is toborozhatsz."
 
 #. [message]: speaker=unit
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:335
-#, fuzzy
-#| msgid ""
-#| "What have we done?! Even our undead allies cannot stand against this "
-#| "commander!"
 msgid ""
 "Even our undead allies cannot stand against this commander! The dark one "
 "lied to us!"
 msgstr ""
-"Még élőhalott szövetségeseink sem állhatják ezt a parancsnokot! A sötét "
+"Még élőhalott szövetségeseink sem bírnak ezzel a parancsnokkal! A sötét úr "
 "hazudott nekünk!"
 
 #. [message]: role=second
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:351
-#, fuzzy
 msgid "Ha! Take that, you criminal scum!"
 msgstr "Na! Ezt neked, te aljas söpredék!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:356
-#, fuzzy
 msgid ""
 "Their leader is defeated! I hope that’s the last bandit we ever have to "
 "fight."
 msgstr ""
-"A vezetőjük vereséget szenvedett! Remélem ez az utolsó bandita, akivel "
-"valaha is meg kell küzdenünk!"
+"Legyőztük a vezérüket! Remélem ez az utolsó bandita, akivel valaha is meg "
+"kellett küzdenünk!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:361
-#, fuzzy
 msgid ""
 "Even if the bandits are beaten, there is still the matter of the undead."
 msgstr "Ha a banditák el is esnek, még mindig ott vannak az élőhalottak."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:366
-#, fuzzy
 msgid ""
 "Indeed, we should press on toward the elves and see if they know anything "
 "about these dark foes."
 msgstr ""
-"Csakugyan. Tovább kell nyomulnunk az elfek irányába és kideríteni, hogy "
+"Csakugyan. Tovább kell nyomulnunk a tündék irányába és kideríteni, hogy "
 "vajon tudnak-e bármit is ezekről a sötét ellenfelekről."
 
 #. [event]
@@ -1396,46 +1362,40 @@ msgstr "Talchar"
 
 #. [message]: speaker=Linderion
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:406
-#, fuzzy
 msgid "Halt! Who enters our sacred grove without leave?"
-msgstr "Állj! Ki lépett be szent ligetünkbe engedély nélkül?"
+msgstr "Állj! Ki lép be szent ligetünkbe engedély nélkül?"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:411
 msgid "De—"
-msgstr ""
+msgstr "De—"
 
 #. [message]: speaker=Linderion
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:416
-#, fuzzy
 msgid ""
 "Choose your words wisely, human. Know that the penalty for trespassing on "
 "our lands is death. What is your name?"
 msgstr ""
-"Bölcsen válogasd meg szavaidat emberfajzat! A hozzánk betolakodókra "
+"Bölcsen válogasd meg szavaidat, emberfajzat! A hozzánk betolakodókra "
 "halálbüntetés vár! Mi a neved?"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:421
-#, fuzzy
-#| msgid "Deoran"
 msgid "Deora—"
-msgstr "Deoran"
+msgstr "Deora—"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:427
-#, fuzzy
 msgid ""
 "Stay your hand, Linderion. This man bears the banner of Wesnoth and appears "
 "to come to us in peace. What brings you to the hallowed grove of Elrath?"
 msgstr ""
 "Türtőztesd magad, Linderion. Ez az ember Wesnoth színeit viseli és úgy "
 "tűnik, hogy békés szándékkal jött közénk. Mondd csak, mi hozott téged Elrath "
-"szent fellegvárába?"
+"szent ligetébe?"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:432
-#, fuzzy
 msgid ""
 "My lady, we have come to the elves to seek guidance. Bandits and criminals "
 "have summoned the dead to help them plunder our farms and villages. They "
@@ -1447,9 +1407,9 @@ msgstr ""
 "Hölgyem, tanácsért jöttünk a tündékhez. A banditák és bűnözők a földünkön "
 "megidézték a holtakat, hogy segítsék a farmjainkat és a falvainkat "
 "fosztogatni. A déli végekbe a folyón keresztül jönnek, a nagy erdőből, ahol "
-"ember még nem járt. Sok banditák leöltünk már, de attól tartok, hogy nem "
-"folytathatjuk már sokáig harcunkat ellenük, úgy hogy az élőhalottak az "
-"írányításuk alatt állnak."
+"ember még nem járt. Sok banditát leöltünk már, de attól tartok, hogy nem "
+"sokáig tudunk harcolni ellenük, ha az élőhalottak az irányításuk alatt "
+"állnak."
 
 #. [message]: speaker=Ithelden
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:437
@@ -1464,7 +1424,6 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:442
-#, fuzzy
 msgid ""
 "I do not aim to make excuses, but I have been here for scarcely a week! I do "
 "not know why the previous commander did not act on your advice, but I assure "
@@ -1476,27 +1435,21 @@ msgstr ""
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:447
-#, fuzzy
-#| msgid ""
-#| "The elves know of the great southern forest, and have walked its paths "
-#| "many times. What would you do, Deoran?"
 msgid ""
 "For your own sake, I hope that you do not. As for the matter at hand, the "
 "elves know of the great southern forest, and have walked its paths many "
 "times."
 msgstr ""
-"A tündék ismerik a nagy déli erdőt, és ösvényein sokat jártak. Mit "
-"szándékozol tenni, Deoran?"
+"Saját érdekedben remélem, valóban nem. Kérdésedre visszatérve, a tündék "
+"ismerik a nagy déli erdőt, és ösvényein sokat jártak."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:452
-#, fuzzy
 msgid "And what do you know of the undead?"
 msgstr "És mit tudsz az élőhalottakról?"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:457
-#, fuzzy
 msgid ""
 "My answer will depend on your motives, human. What would you do, knowing the "
 "secrets of the unholy ones?"
@@ -1506,22 +1459,15 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:462
-#, fuzzy
-#| msgid ""
-#| "I would lead my men south of the river to find the source of these beings "
-#| "of darkness that we might destroy it. For surely, ere that be done, we "
-#| "cannot stand against them for long."
 msgid ""
 "I would lead my men south of the river to find and destroy the source of "
 "these beings of darkness."
 msgstr ""
 "Az embereimet a folyótól délre vezetném, hogy megtaláljuk és elpusztítsuk a "
-"sötétség eme teremtményeinek forrását. Fontos ezt minél hamarabb megtennünk, "
-"mert nem bírunk sokáig ellenállni."
+"sötétség eme teremtményeinek forrását."
 
 #. [message]: speaker=Vardanos
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:467
-#, fuzzy
 msgid ""
 "A fanciful delusion! A human untrained in the mystic arts stands no chance "
 "against the undead!"
@@ -1531,7 +1477,6 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:472
-#, fuzzy
 msgid ""
 "I have proven myself capable of defending my land and leading my men to "
 "victory—"
@@ -1541,37 +1486,33 @@ msgstr ""
 
 #. [message]: speaker=Eltenmir
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:477
-#, fuzzy
 msgid ""
 "Only in battles against <i>other humans!</i> To fight such a fell evil is "
 "another matter altogether."
 msgstr ""
-"Csak a <i> más emberek </i> elleni csatákban! Az ilyen kegyetlen gonoszság "
+"Csak a <i>más emberek</i> elleni csatákban! Az ilyen kegyetlen gonoszság "
 "elleni küzdelem teljesen más kérdés."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:482
-#, fuzzy
 msgid "But surely I cannot do nothing either!"
 msgstr "De a semmittevést mégsem választhatom!"
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:487
-#, fuzzy
 msgid "<i>I warned him that the elves would not easily agree to help us.</i>"
 msgstr ""
-"<i> Figyelmeztettem, hogy az elfek nem fognak könnyen beleegyezni abba, hogy "
-"segítsenek nekünk. </i>"
+"<i>Figyelmeztettem, hogy a tündék nem fognak könnyen beleegyezni abba, hogy "
+"segítsenek nekünk.</i>"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:492
-#, fuzzy
 msgid ""
 "<i>Indeed, but he is right as well. We must do something, or our people will "
 "surely be slaughtered.</i>"
 msgstr ""
-"<i> Valóban, de neki is igaza van. Tennünk kell valamit, különben az "
-"embereinket biztosan lemészárolják. </i>"
+"<i>Valóban, de neki is igaza van. Tennünk kell valamit, különben az "
+"embereinket biztosan lemészárolják.</i>"
 
 #. [message]: speaker=Ithelden
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:497
@@ -1580,29 +1521,27 @@ msgid ""
 "undead — she will be the best judge of what aid we would grant the humans "
 "against these abominations."
 msgstr ""
+"Na most már aztán elég legyen ám! Ethiliel az egyetlen közülünk, aki valaha "
+"is megütközött az élőholtakkal — ő lesz a legalkalmasabb arra, hogy "
+"megítélje, miféle segítséget nyújtsunk az emberi lényeknek ezekkel a "
+"förmedvényekkel szemben."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:502
-#, fuzzy
-#| msgid ""
-#| "Indeed you are brave to face such foes. But I fear that alone you will "
-#| "fail and fall. One elf now lives who remembers the secrets of the undead "
-#| "that we learned when Haldric I came to our land. His name is Mebrin, and "
-#| "he lives, secluded in the hills, near here. I will take you to him."
 msgid ""
 "These men are indeed brave to face such foes, but I fear that they will fall "
 "to the darkness if they fight it alone. There is one elf who still remembers "
 "the secrets of the undead that we learned when Haldric I came to our land. "
 "His name is Mebrin, and he lives secluded in the hills south of here."
 msgstr ""
-"Valóban elég bátor vagy, hogy szembeszállsz velük. De félek, hogy egyedül "
-"bukásra vagy ítélve. Még él egy tünde, aki emlékszik az élőholtak titkára, "
-"amit akkor tanultunk meg, amikor I. Haldric a földünkre jött. A neve Mebrin, "
-"és a közeli, félreeső dombok közt él. Elviszlek hozzá."
+"Ezek az emberek valóban bátrak, hogy szembeszállnak ilyen ellenféllel, de "
+"félek, hogy egyedül bukásra vannak ítélve a sötétség ellen. Még él egy "
+"tünde, aki emlékszik az élőholtak titkára, amit akkor tanultunk meg, amikor "
+"I. Haldric a földünkre jött. A neve Mebrin, és a közeli, félreeső dombok "
+"közt él. Elviszlek hozzá."
 
 #. [message]: speaker=Ithelden
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:507
-#, fuzzy
 msgid ""
 "Are you sure about this? The road south is no longer as safe as it once was, "
 "and Mebrin is not as powerful as he once was. You would not presume to put "
@@ -1614,7 +1553,6 @@ msgstr ""
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:512
-#, fuzzy
 msgid ""
 "<i>I</i> will accompany the human and his men to Mebrin, and he can decide "
 "whether or not he wants to help us. I will not ask you to place yourselves "
@@ -1628,27 +1566,24 @@ msgstr ""
 
 #. [message]: speaker=Ithelden
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:517
-#, fuzzy
 msgid "Yes, very well."
 msgstr "Igen, nagyon is."
 
 # kicsit dominás a megszólítás, de remélem megfelel
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:523
-#, fuzzy
 msgid "I welcome your aid, my lady."
 msgstr "Szívesen veszem támogatását, úrnőm."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/03_A_Desparate_Errand.cfg:584
-#, fuzzy
 msgid ""
 "Skeletons approach from the east! This can only mean that they have begun to "
 "attack Kerlath. We will have to return and fight them without the aid of the "
 "elves..."
 msgstr ""
 "Csontvázak kelet felől! Ez csak azt jelentheti, hogy megkezdték a Kerlath "
-"elleni támadást! Vissza kell mennünk és az elfek támogatása nélkül harcolni "
+"elleni támadást! Vissza kell mennünk és a tündék támogatása nélkül harcolni "
 "ellenünk..."
 
 #. [scenario]: id=04_Vale_of_Tears
@@ -1689,87 +1624,61 @@ msgstr "Jera Ilras"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:219
-#, fuzzy
-#| msgid ""
-#| "This is the Vale of Blossoming Trees. Our great sages come here to live "
-#| "when they feel that it is time for them to allow others to lead our "
-#| "people. The sage you speak of lives in a secluded village between the two "
-#| "lakes."
 msgid ""
 "This is the Vale of Blossoming Trees. Our great sages come here to find "
 "peace and enlightenment. Some other elves also live nearby — mostly artisans "
 "inspired by the tranquility of this valley."
 msgstr ""
-"Ez a Virágzó Fák Völgye. A nagy bölcseink mind ide jönnek, amikor már érzik, "
-"hogy ideje átadni a hatalmat másoknak. Az a bölcs, akiről beszélsz, egy "
-"félreeső faluban él a két tó között."
+"Ez a Virágzó Fák Völgye. A nagy bölcseink mind ide jönnek békét és "
+"megvilágosodást keresni. Más tündék is élnek a közelben - többnyire "
+"művészek, akiket megihletett a völgy nyugalma."
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:226
-#, fuzzy
-#| msgid ""
-#| "Why, my lady, are there humans camped to the south of us? Are they "
-#| "friends of the elves? I had thought that no humans had set foot in this "
-#| "valley."
 msgid ""
 "It does seem peaceful, but why are there humans camped to the south of us? "
 "Are they friends of the elves?"
 msgstr ""
-"Miért táboroztak le azok az emberek tőlünk délre? Ők a tündék barátai? Azt "
-"hittem, hogy még ember nem tette a lábát ebbe a völgybe."
+"Békésnek tűnik, de miért táboroztak le azok az emberek tőlünk délre? Ők a "
+"tündék barátai?"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:232
-#, fuzzy
-#| msgid ""
-#| "What?! Those are no friends of the elves! They are brigands, and they "
-#| "must be destroyed!"
 msgid ""
 "What?! Those marauders are no friends of ours! We must destroy them at once!"
 msgstr ""
-"Micsoda?! Ők nem barátai a tündéknek! Egyszerű útonállók és pusztulniuk kell!"
+"Micsoda?! Azok a martalócok nem a barátaink! Azonnal el kell pusztítanunk "
+"őket!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:237
-#, fuzzy
-#| msgid ""
-#| "Perhaps they are allied with the bandits who have been sacking our towns! "
-#| "They have grown bold to attack the elves!"
 msgid ""
 "Perhaps they are allied with the bandits who have been sacking Westin. They "
 "have grown quite bold if they are attacking the elves!"
 msgstr ""
-"Talán ők is a banditák szövetségesei, akik kifosztották a városainkat! Elég "
-"erősnek érzik magukat, hogy megtámadják a tündéket!"
+"Talán ők is a Westint fosztogató banditák szövetségesei! Elég erősnek "
+"érezhetik magukat, ha megtámadják a tündéket!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:242
-#, fuzzy
-#| msgid ""
-#| "Destroy these intruders, and I will ask him to help you. He is ancient, "
-#| "and he remembers well Haldric’s betrayal of the elves, so if a human sets "
-#| "foot in his village first, he almost certainly will have nothing to do "
-#| "with us!"
 msgid ""
 "They would not dare without the aid of the dark ones, but we will vanquish "
 "them all nonetheless. Now, listen well to me, humans. The Great Sage Mebrin "
 "is ancient and remembers well Haldric’s betrayal of the elves. Should one of "
 "you set foot in his village first, he will certainly drive us away!"
 msgstr ""
-"Öld meg a betolakodókat és megkérem a bölcset, hogy segítsen neked. Ő már "
-"öreg, és jól emlékszik Haldric árulására, így ha egy ember teszi elsőként "
-"lábát a faluba, majdnem biztos, hogy nem tesz meg nekünk semmit sem!"
+"A sötét segítség nélkül nem merészelnék, de legyőzzük őket így is. Most "
+"figyelmezzetek, emberek. Mebrin, a nagy bölcs vénségére is jól emlékszik, "
+"hogyan árulta el Haldric a tündéket. Így ha egy ember teszi elsőként lábát a "
+"faluba, biztosan elzavar bennünket!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:247
-#, fuzzy
-#| msgid "Sounds like a charming fellow..."
 msgid "Sounds like a charming fellow."
 msgstr "Kedves fickónak tűnik..."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:252
-#, fuzzy
 msgid ""
 "Mebrin can be... difficult, yes. However, should we cleanse the valley and "
 "restore peace to his home, I am sure he will accept your request for his "
@@ -1781,34 +1690,30 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:257
-#, fuzzy
 msgid ""
 "Very well, we will put our trust in you, Ethiliel. But first, we have a "
 "battle to attend to."
 msgstr ""
-"Rendben, megbízunk benned Ethiliel. De előbb még egy csatában kell részt "
+"Rendben, megbízunk benned, Ethiliel. De előbb még egy csatában kell részt "
 "vennünk."
 
 #. [message]: speaker=Jera Ilras
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:262
-#, fuzzy
-#| msgid "Ha! You’re too late. We’ve taken what we want from this valley."
 msgid ""
 "Ha, you blabbering buffoons! Even should you defeat us here, it does not "
 "matter! We’ve already taken what we wanted from this valley."
-msgstr "Ha! Elkéstél. Már elvettük a völgyből, amit akartunk."
+msgstr ""
+"Haha, fecsegő pojácák! Az se számít, ha legyőztök! Már elvittük a völgyből, "
+"amit akartunk."
 
-# hatalmunkat élteti
-# hatalmunkat táplálja
 #. [message]: speaker=Mal A'kai
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:267
-#, fuzzy
 msgid ""
 "Weep, filthy flesh bags, weep and know that your tears will become the blood "
 "that stains the trees and feeds our powers!"
 msgstr ""
 "Ríjjatok, rohadék hús-zsákok! Ríjjatok és tudjátok, hogy könnyeitek vérré "
-"válnak, ami átfesti a fákat és hatalmunkat élteti!"
+"válnak, ami átfesti a fákat és hatalmunkat táplálja!"
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:285
@@ -1840,52 +1745,38 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:373
-#, fuzzy
-#| msgid ""
-#| "We must clear out these undead if you are to reach Mebrin’s village! What "
-#| "should we do?"
 msgid ""
 "We must clear out these undead if you are to reach Mebrin’s village, but our "
 "weapons are ineffective against them! What should we do?"
 msgstr ""
 "Meg kell semmisítenünk ezeket az élőhalottakat, ha el akarjuk érni Mebrin "
-"faluját! Mit tegyünk?"
+"faluját, de fegyvereink hatástalanok ellenük! Mit tegyünk?"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:378
-#, fuzzy
-#| msgid ""
-#| "For now, I can slow them down. Where are the elves who used to live in "
-#| "this valley? They should come to our aid!"
 msgid ""
 "For now, I can slow them down. But where are the elves who used to live in "
 "this valley? They should have come to our aid by now."
 msgstr ""
-"Ez alkalommal le tudom lassítani őket. Hol vannak azok a tündék, akik a "
-"völgyben éltek? Segíthetnének..."
+"Ez alkalommal le tudom lassítani őket. De hol vannak azok a tündék, akik a "
+"völgyben éltek? Már a segítségünkre kellett volna sietniük."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:383
-#, fuzzy
 msgid "I do hope that nothing terrible has happened to them..."
 msgstr "Nagyon remélem, hogy nem történt velük semmi szörnyűség..."
 
 #. [message]: speaker=unit
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:399
-#, fuzzy
-#| msgid ""
-#| "I shall not join these accursed undead! Bury me deeply, my friends..."
 msgid ""
 "My friends, do not let me join these accursed undead! Please, bury me "
 "deeply..."
 msgstr ""
-"Nem fogok ezekhez az átkozott élőhalottakhoz csatlakozni! Mélyre temessetek "
-"el, barátaim..."
+"Barátaim, ne engedjétek, hogy ezekhez az átkozott élőhalottakhoz "
+"csatlakozzam! Mélyre temessetek el..."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:409
-#, fuzzy
-#| msgid "You shall not die in vain! My bodyguard will avenge you!"
 msgid "You shall not die in vain! My bodyguards will avenge you!"
 msgstr "A halálod nem hiábavaló! A testőrségem bosszút áll majd érted!"
 
@@ -1893,10 +1784,8 @@ msgstr "A halálod nem hiábavaló! A testőrségem bosszút áll majd érted!"
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:430
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:435
-#, fuzzy
-#| msgid "You have a bodyguard?!"
 msgid "You have bodyguards?!"
-msgstr "Van testőröd?!"
+msgstr "Vannak testőreid?!"
 
 #. [unit]: role=Elvish Bodyguard, type=Elvish Ranger
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:488
@@ -1910,10 +1799,6 @@ msgstr "Tünde testőrnő"
 
 #. [message]: role=Elvish Bodyguard
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:519
-#, fuzzy
-#| msgid ""
-#| "We stand ready, my lady, to protect you! We shall lead these men of "
-#| "Wesnoth into the fray!"
 msgid ""
 "We stand ready to protect you, my lady! We shall lead these men of Wesnoth "
 "into the fray!"
@@ -1928,13 +1813,11 @@ msgstr "Elestem az úrnőmért..."
 
 #. [message]: speaker=Mal A'kai
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:543
-#, fuzzy
 msgid "The darkness beckons..."
 msgstr "Hívogat a sötétség..."
 
 #. [message]: speaker=Jera Ilras
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:584
-#, fuzzy
 msgid ""
 "Fools, my death here means nothing! Even if you could find our stronghold, "
 "you will never defeat our master!"
@@ -1944,10 +1827,8 @@ msgstr ""
 
 #. [message]: speaker=second_unit
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:589
-#, fuzzy
-#| msgid "You, at least, will trouble us no more!"
 msgid "Perhaps, but you, at least, will trouble us no more!"
-msgstr "Legalább te nem okozol több bajt nekünk!"
+msgstr "Lehet, de legalább te nem okozol több bajt nekünk!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:637
@@ -1972,101 +1853,81 @@ msgstr "Mebrin! Merre vagy?!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:659
-#, fuzzy
-#| msgid ""
-#| "His home is empty... There are footprints leading away to the south... "
-#| "What can have happened here?"
 msgid ""
 "His home is empty... There are several sets of footprints leading away to "
 "the south..."
-msgstr ""
-"Az otthona üres... Délre tartó lábnyomokat látok... Mi történhetett itt?"
+msgstr "Az otthona üres... Sok délre tartó lábnyomot látok..."
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:664
-#, fuzzy
 msgid "Perhaps he was taken by the undead?"
 msgstr "Tán az élőholtak ragadták el?"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:669
-#, fuzzy
-#| msgid ""
-#| "There is no blood here, yet no Mebrin. Someone must have kidnapped him. "
-#| "But the undead would have slain him and made him one of them. Who then "
-#| "can have taken him?"
 msgid ""
 "I am not sure. There is no blood here and very little sign of struggle. If "
 "it had been the undead, I suspect they would have slain him and made him one "
 "of them."
 msgstr ""
-"Itt nincs vér, de Mebrin se. Valaki elrabolta. De az élőhalottak "
-"elpusztították volna, és ő is élőhalottá vált volna. Akkor ki vihette el?"
+"Bizonytalan vagyok. Itt nincs vér és küzdelemnek sincs sok nyoma. Ha az "
+"élőhalottak rabolták volna el, szerintem elpusztították volna, és ő is "
+"élőhalottá vált volna."
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:674
-#, fuzzy
-#| msgid "Maybe the bandits who have been summoning the undead took him?"
 msgid "Then maybe the bandits who have been summoning the undead took him?"
-msgstr "Talán a banditák, akik megidézték az élőholtakat?"
+msgstr "Akkor talán a banditák, akik megidézték az élőholtakat?"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:679
-#, fuzzy
 msgid ""
 "We cannot be sure. I should think that he would have put up a fight, but if "
 "he were ambushed or taken by surprise, he may not have had the chance. "
 "Ethiliel, what do you think?"
 msgstr ""
-"Nem lehetünk benne biztosak. Arra kéne gyanakodnom, hogy harcolni akart, de "
-"ha csapdába csalták volna, vagy meglepik, akkor esélye sem lett volna. Mit "
-"gondolsz te erről Ethiliel?"
+"Nem lehetünk benne biztosak. Arra kéne gyanakodnom, hogy harcolt volna, "
+"hacsak nem csapdába csalták vagy meglepték, mert akkor talán nem volt rá "
+"lehetősége. Mit gondolsz te erről, Ethiliel?"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:684
-#, fuzzy
 msgid "... Ethiliel? I know you must be distraught, but—"
-msgstr "… Ethiliel? Tudom, hogy most zavart vagy, de—"
+msgstr "...Ethiliel? Tudom, hogy most zavart vagy, de—"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:690
-#, fuzzy
-#| msgid ""
-#| "We must follow these footprints into the woods! Whoever took our greatest "
-#| "sage must pay! Nothing will stop the vengeance of the elves!"
 msgid ""
 "Distraught? <i>Distraught?</i> I am angry! We must follow these footprints "
 "into the woods! Whoever took our greatest sage must pay! Nothing will stop "
 "the vengeance of the elves!"
 msgstr ""
-"Kövessük a lábnyomokat az erdőbe! Bárki is rabolta el legnagyobb bölcsünket, "
-"megfizet érte! Semmi nem állhat a tündék bosszújának útjába!"
+"Zavart? <i>Zavart?</i> Mérges vagyok! Kövessük a lábnyomokat az erdőbe! "
+"Bárki is rabolta el legnagyobb bölcsünket, megfizet érte! Semmi nem állhat a "
+"tündék bosszújának útjába!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:695
-#, fuzzy
 msgid ""
 "Let us go quickly. <i>And avoid doing anything that might make her angrier "
 "than she already is...</i>"
 msgstr ""
-"Engedj tovább tüstént és ne csinálj semmi olyat, amivel még ettől is jobban "
-"felbőszíthetnéd..."
+"Gyerünk tovább tüstént <i>és ne csináljunk semmi olyat, amivel még jobban "
+"felbőszíthetnénk...</i>"
 
 #. [message]: speaker=Necro
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:739
-#, fuzzy
 msgid ""
 "So the elves finally come to defend their valley. Pity, they showed up too "
 "late. We will stop them here and prevent them from reclaiming the knowledge "
 "that was once theirs!"
 msgstr ""
-"Végre valahára megérkeztek az elfek, hogy megvédjék völgyüket. Nagy kár, "
+"Végre-valahára megérkeztek a tündék, hogy megvédjék völgyüket. Nagy kár, "
 "hogy túl későn. Itt tartóztatjuk fel őket és megakadályozzuk, hogy "
-"visszaszerezzék a tudást, mely egykoron övék volt!"
+"visszaszerezzék a tudást, mely egykoron az övék volt!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:743
-#, fuzzy
 msgid ""
 "They have reached Mebrin’s village before us! We have no hope of obtaining "
 "his aid now..."
@@ -2076,10 +1937,6 @@ msgstr ""
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/04_Vale_of_Tears.cfg:758
-#, fuzzy
-#| msgid ""
-#| "Come, my bodyguard! We must make haste to follow the trail and find "
-#| "Mebrin."
 msgid ""
 "Come, my bodyguards! We must make haste to follow this trail and find Mebrin."
 msgstr ""
@@ -2115,13 +1972,11 @@ msgstr "?"
 #. [side]
 #. only a single one
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:198
-#, fuzzy
 msgid "Monster"
 msgstr "Szörny"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:239
-#, fuzzy
 msgid ""
 "It’s so cold here! And this fog is so thick. This cannot be natural for a "
 "forest like this."
@@ -2136,54 +1991,43 @@ msgstr "Attól tartok, ez erőteljes sötét mágia eredménye."
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:249
-#, fuzzy
-#| msgid ""
-#| "This is quite a change from fighting bandits in the farmland near Westin!"
 msgid ""
 "This is quite a change from fighting bandits in the farmlands near Westin!"
 msgstr "Jókora váltás ez a Westin környéki banditákkal való harchoz képest!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:254
-#, fuzzy
 msgid ""
 "So, even you humans are being affected by the dark sorcery that taints this "
 "land. Then, there is no better place than here. We should stop and rest "
 "before we proceed."
 msgstr ""
-"Tehát még rátok emberekre is hatással van ez sötét varázs, ami bemocskolja "
+"Tehát még rátok, emberekre is hatással van ez sötét varázs, ami bemocskolja "
 "ezt a földet. Akkor nincs is alkalmasabb hely ennél. Álljunk meg és "
-"pihenjünk meg, mielőbb odébállunk."
+"pihenjünk meg, mielőbb odébbállunk."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:259
-#, fuzzy
 msgid ""
 "This place is indeed foreboding, but why do we need to stop and make camp "
 "specifically here?"
 msgstr ""
-"Ez a hely valóban vészjósjó. De miért pont itt kell megállnunk és sátrat "
+"Ez a hely valóban vészjósló. De miért pont itt kell megállnunk és sátrat "
 "vernünk?"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:264
-#, fuzzy
-#| msgid ""
-#| "The Black River is before us. Few elves have crossed it, and fewer still "
-#| "have lingered there long. If the undead come from across the river, then "
-#| "we must search for them carefully, for I know not the way."
 msgid ""
 "The Black River is before us. Few elves have crossed it, and fewer still "
 "have explored the dark forest beyond. If the undead come from across the "
 "river, we must exercise great caution in our search for them."
 msgstr ""
-"A Fekete-folyó van előttünk. Kevés tünde kelt át rajta, és még kevesebb "
-"időzött ott sokáig. Ha az élőholtak a folyón túlról jönnek, óvatosan kell "
-"felkutatnunk őket, mivel nem ismerem a járást."
+"A Fekete-folyó van előttünk. Kevés tünde kelt át rajta, és még kevesebbnek "
+"sikerült felderítenie a túlsó oldalán elterülő sötét erdőt. Ha az élőholtak "
+"a folyón túlról jönnek, óvatosan kell felkutatnunk őket."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:269
-#, fuzzy
 msgid ""
 "Even if this forest is decidedly grim, we must not fear its inhabitants so "
 "much so that we dare not even confront them. I am ready and willing to fight!"
@@ -2200,36 +2044,38 @@ msgid ""
 "enemy. We will need help to scour woods as dangerous as these, and so I have "
 "asked some of my people to aid us. My soldiers and shamans will fight at "
 "your command."
-msgstr "Óvatosság ember, nem félelem. "
+msgstr ""
+"Óvatosság, ember, nem félelem. Bármennyire szeretném is kideríteni nagy "
+"bölcsünk hollétét, semmi jóra nem vezetne, ha egyenesen az ellenség "
+"csapdájába masíroznánk. Egyedül veszedelmes lenne ezt az erdőt "
+"kifürkésznünk, így megkértem pár emberemet, segítsenek nekünk. Katonáim és "
+"sámánjaim várják parancsaid."
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:281
-#, fuzzy
 msgid ""
 "You may now recruit Elvish Fighters. Elvish Fighters are mixed fighters who "
 "skillfully wield both a sword and a bow. They are fast warriors and "
 "especially effective in forests."
 msgstr ""
-"Most már toborozhatsz Elf Harcosokat. Az Elf Harcosok kevert harcmodorúak, "
-"akik otthonosan mozognak mind a kard-, mind az íjhasználat világában. Fürge "
-"vitézek, főleg az erdő sűrűjében hatékonyak."
+"Most már toborozhatsz tünde harcosokat. A tünde harcosok kevert "
+"harcmodorúak, akik otthonosan mozognak mind a kard-, mind az íjhasználat "
+"világában. Fürge vitézek, főleg az erdő sűrűjében hatékonyak."
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:286
-#, fuzzy
 msgid ""
 "You may now recruit Elvish Shamans. Elvish Shamans are ranged support units "
 "who heal adjacent allies every turn and slow their enemies. Use them to heal "
 "wounded soldiers and weaken enemy units."
 msgstr ""
-"Most már toborozhatsz Elf Sámánokat. Az Elf Sámánok olyan távolsági támogató "
-"egységek, akik minden körben képesek támogatni szomszédos szövetségeseiket "
-"és lelassítani az ellenséges egységeket. Használd őket sebesült katonák "
-"meggyógyítására és ellenséges egységek meggyengítésére."
+"Most már toborozhatsz tünde sámánokat. A tünde sámánok olyan távolsági "
+"támogató egységek, akik minden körben képesek gyógyítani szomszédos "
+"szövetségeseiket és lelassítani az ellenséges egységeket. Használd őket "
+"sebesült katonák meggyógyítására és ellenséges egységek meggyengítésére."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:292
-#, fuzzy
 msgid ""
 "Now, so long as you feel prepared to brave the perils beyond the river, we "
 "can continue onward."
@@ -2239,36 +2085,34 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:297
-#, fuzzy
 msgid ""
 "Thank you for your help, my lady. I am ready for whatever lies in wait for "
 "us, be it man, beast, or skeleton. Sir Gerrick, Minister Hylas?"
 msgstr ""
 "Köszönöm a segítséget, úrnőm! Készen állok, legyen az ember, vadállat, vagy "
-"csontváz ki utunkba áll! Sir Gerrick? Hylas atya?"
+"csontváz, ki utunkba áll! Sir Gerrick? Hylas atya?"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:302
-#, fuzzy
 msgid "On your order, Sir Deoran."
 msgstr "Parancsodra, Sir Deoran!"
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:307
-#, fuzzy
 msgid "Evil never rests — nor does the light that seeks to exterminate it."
 msgstr ""
 "Az ördög sohasem alszik — ahogyan a fény sem, amely keresi, hogy "
 "megsemmisítse."
 
+# Nyugodjunk meg -> szedjük össze a bátorságunkat?
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:312
-#, fuzzy
-#| msgid "Very well. We will seek the river and probe its secrets."
 msgid ""
 "Very well then. Come, men, let us gather our wits and probe the forest for "
 "its secrets."
-msgstr "Rendben. Átkutatjuk a folyót és kifürkésszük titkait."
+msgstr ""
+"Rendben. Nyugodjunk meg emberek, és kutassuk át az erdőt, hogy kifürkésszük "
+"titkait!"
 
 #. [objective]: condition=win
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:318
@@ -2309,45 +2153,38 @@ msgstr "Az élőholtak mesterei vereséget szenvedtek!"
 #. [message]: speaker=Minister Hylas
 #. Shown if the player defeated the zombies, but doesn't know yet about the real enemy.
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:487
-#, fuzzy
-#| msgid "No... I fear there is still much evil present."
 msgid ""
 "No... I fear there is still much evil present. These were merely servants of "
 "a far more powerful force."
-msgstr "Nem... attól tartok, hogy a gonosz még nagyon is jelen van."
+msgstr ""
+"Nem... attól tartok, hogy a gonosz még nagyon is jelen van. Ezek csak egy "
+"sokkal nagyobb erő szolgálói voltak."
 
 #. [message]: speaker=second_unit
 #. In this case, the player knows that there is one more enemy.
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:510
-#, fuzzy
-#| msgid "Two undead leaders have fallen…"
 msgid "Two undead leaders have fallen."
-msgstr "Két élőholt vezér elbukott..."
+msgstr "Két élőholt vezér elbukott."
 
 #. [message]: speaker=Minister Hylas
 #. In this case, the player knows that there is one more enemy.
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:515
-#, fuzzy
-#| msgid "Though we have merely destroyed the servants of a far darker master…"
 msgid ""
 "Indeed, though we have merely destroyed the servants of a far more powerful "
 "master."
-msgstr "Noha csupán egy sokkal sötétebb mester tanítványait pusztítottuk el…"
+msgstr ""
+"Valóban, noha csupán egy sokkal erősebb mester tanítványait pusztítottuk el."
 
 #. [message]: speaker=Minister Hylas
 #. In this case, the player knows that there is one more enemy.
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:523
-#, fuzzy
-#| msgid "They were just servants of a far darker master…"
 msgid "These were merely servants of a far more powerful master."
-msgstr "Ők csak egy sötétebb mester tanítványai voltak…"
+msgstr "Ők csak egy sokkal erősebb mester szolgálói voltak."
 
 #. [message]: speaker=second_unit
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:535
-#, fuzzy
-#| msgid "One less evil in this forest…"
 msgid "One fewer evil in this forest."
-msgstr "Eggyel kevesebb gonosz ebben az erdőben…"
+msgstr "Eggyel kevesebb gonosz ebben az erdőben."
 
 #. [message]: speaker=second_unit
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:569
@@ -2362,10 +2199,8 @@ msgstr "Azt hiszem, látok valami mozgást a ködben... egy tábornak tűnik!"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:646
-#, fuzzy
-#| msgid "Thank heaven! You’re alive!"
 msgid "Thank the light, you’re alive!"
-msgstr "Hál’Isten! Te élsz!"
+msgstr "Hála a fénynek! Te élsz!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:651
@@ -2373,36 +2208,34 @@ msgid ""
 "You need not thank anyone that we are alive, wretched criminals! We know of "
 "your alliance with the undead and the evil you have brought to this land!"
 msgstr ""
-"Nem tartozol senkinek sem köszönettel azért, mert életben vagyunk... "
-"nyomorult bűnözők! Tudunk "
+"Nem tartoztok senkinek sem köszönettel azért, hogy életben vagyunk, "
+"nyomorult bűnözők! Tudunk az élőholtakkal kötött szövetségről és a "
+"gonoszról, amit erre a földre szabadítottatok!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:656
-#, fuzzy
 msgid ""
 "Aye, prepare to be slain, you abominable scum! You will pay for what you "
 "have done to our home!"
 msgstr ""
-"Úgy ám! Készülj pusztulásodra undorító söpredék! Most megfizetsz azért, mit "
+"Úgy ám! Készülj pusztulásodra, undorító söpredék! Most megfizetsz azért, mit "
 "otthonainkkal tettél!"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:661
-#, fuzzy
 msgid ""
 "Please, please, just hear me out. I know of these undead that you seek, and "
 "I know that you seek to destroy both them and us out of revenge. I am sorry "
 "my brothers attacked you. It was never my intention to cause everyone so "
 "much suffering."
 msgstr ""
-"Kérlek! Kérlek, hogy csak hallgass meg! Tudok ezekről az élőhalottakról, "
+"Kérlek! Kérlek, csak hallgass meg! Tudok ezekről az élőhalottakról, "
 "amelyeket keresel és tudom, hogy őket, s minket is el akarsz pusztítani "
-"bosszúd által vezérelve. Röstellem, hogy fivéreim reádtámadtak. Soha nem "
-"állt szándékomban ilyen mértékű fájdalmat okozni."
+"bosszúból. Röstellem, hogy fivéreim rádtámadtak. Soha nem állt szándékomban "
+"mindenkinek ilyen kínokat okozni."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:666
-#, fuzzy
 msgid ""
 "Tell us what you know of these undead. Make one wrong move and we will not "
 "hesitate to attack!"
@@ -2412,29 +2245,23 @@ msgstr ""
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:671
-#, fuzzy
-#| msgid ""
-#| "A year ago we ventured into the land of the elves in secret, and we "
-#| "captured a great sage. We forced him to teach us the secrets of this "
-#| "forest and of the undead."
 msgid ""
 "I swear that I am not your enemy! I will gladly tell you what I know. A year "
 "ago, we ventured into the land of the elves in secret and we captured a "
 "great sage. We forced him to teach us the secrets of this forest."
 msgstr ""
-"Egy évvel ezelőtt titokban a tündék földjére merészkedtünk, és elraboltuk a "
-"legnagyobb bölcset. Arra kényszerítettük, hogy árulja el az erdő és az "
-"élőholtak titkait."
+"Esküszöm hogy nem vagyok az ellenséged! Szívesen elmondom, amit tudok. Egy "
+"évvel ezelőtt titokban a tündék földjére merészkedtünk, és elraboltuk a "
+"legnagyobb bölcset. Arra kényszerítettük, hogy árulja el ennek az erdőnek a "
+"titkait."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:676
-#, fuzzy
 msgid "You imprisoned Mebrin?! You loathsome vermin!"
-msgstr "Te börtönbevetetted Mebrint?! Te undorító féreg!"
+msgstr "Börtönbe vetettétek Mebrint?! Te undorító féreg!"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:681
-#, fuzzy
 msgid ""
 "Wait, wait, hear me out! He told us that in the woods to the south of here, "
 "there was a powerful nexus of dark energy. He took us there and taught us to "
@@ -2443,30 +2270,27 @@ msgid ""
 "corrupting magic. They summoned undead that they could not control, and "
 "soon, they became slaves of the power they had sought to master!"
 msgstr ""
-"Várj csak, megállj! Hallgass meg! Ő azt mondta nekünk, hogy itt a délre eső "
+"Várj csak, megállj! Hallgass meg! Ő mondta nekünk, hogy itt a délre eső "
 "erdőben van egy erőteljes sötét energiaháló. Elvitt minket oda és "
 "megtanította, hogyan idézzük meg a halottakat, hogy azok az oldalunkon "
-"harcoljanak. Láttam mit művelt a bolondja, de a fivéreim túlságosan gyöngék "
-"és ostobák voltak és azonnal a romboló varázslat befolyása alá kerültek. "
-"Megidézték az élőholtakat, akiket képtelenek voltak irányításuk alatt "
-"tartani és hamar szolgáivá váltak annak az erőnek, amelyet megpróbáltak "
-"elsajátítani!"
+"harcoljanak. Láttam, milyen bolondság ezt tenni, de a fivéreim túlságosan "
+"gyöngék és ostobák voltak és azonnal a romboló varázslat befolyása alá "
+"kerültek. Élőholtakat idéztek meg, akiket képtelenek voltak irányításuk "
+"alatt tartani és hamar szolgáivá váltak annak az erőnek, amelyet "
+"megpróbáltak elsajátítani!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:686
-#, fuzzy
 msgid "A complete and utter lie from complete and utter scum."
-msgstr "Totális hazugság egy szemenszedett söpredéktől."
+msgstr "Szemenszedett hazugság a szemtelen söpredéktől."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:691
-#, fuzzy
 msgid "Please, Ethiliel, let us hear him out. What happened to Mebrin?"
-msgstr "Kérlek Ethiliel! Hallgassuk meg végig! Mi történt Mebrinnel?"
+msgstr "Kérlek Ethiliel! Hallgassuk végig! Mi történt Mebrinnel?"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:696
-#, fuzzy
 msgid ""
 "I am not sure... he must have known that the undead would corrupt and "
 "enslave us."
@@ -2476,13 +2300,11 @@ msgstr ""
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:701
-#, fuzzy
 msgid "Stop stalling and tell us what happened!"
 msgstr "Hagyd abba az időhúzást és mondd el, hogy mi történt!"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:706
-#, fuzzy
 msgid ""
 "Mebrin was more powerful than any of the undead we summoned, and yet he did "
 "not resist them. He allowed them to make him one of them and became a lich "
@@ -2490,25 +2312,22 @@ msgid ""
 "them from the depths."
 msgstr ""
 "Mebrin hatalmasabb volt, mint bármelyik élőhalott, akit eddig megidéztünk és "
-"mégsem volt képes ellenállni nekik. Hagyta, hogy olyanná tegyék, mint "
-"amilyenek ők maguk és rettentő erejű LICH lett. Átvette az irányítást a "
-"többi élőholt fejedelem fölött és most a mélyből irányítja őket."
+"mégsem állt ellen nekik. Hagyta, hogy olyanná tegyék, mint amilyenek ők "
+"maguk és rettentő erejű delevény lett. Átvette az irányítást a többi élőholt "
+"fejedelem fölött és most a mélyből irányítja őket."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:712
-#, fuzzy
-#| msgid "Lies! Mebrin would never fight for the undead, much less lead them!"
 msgid ""
 "You dare spew such falsities! Mebrin would never fight for the undead, much "
 "less lead them!"
 msgstr ""
-"Hazugság! Mebrin sose harcolna az élőholtak oldalán, még kevésbé állna az "
-"élükre!"
+"Hogy merészelsz ilyen hazugságokat fröcsögni? Mebrin sose harcolna az "
+"élőholtak oldalán, még kevésbé állna az élükre!"
 
 # A megsérült, nem tudom, hogy teljesen értelmes fordítás-e. Nekem nem tetszik. Javaslat?
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:717
-#, fuzzy
 msgid ""
 "<i>Sir Deoran, sages and mystics of great skill and age are often the first "
 "to succumb to the taint of black magic. Wisdom and power are not enough to "
@@ -2516,28 +2335,26 @@ msgid ""
 "altogether. If this Mebrin played a part in the summoning of these undead, I "
 "do not doubt that he was corrupted as well.</i>"
 msgstr ""
-"Sir Deroan, a misztikumban nagy jártasságú agg bölcsek gyakorta az elsők "
-"közt adják meg magukat a fekete mágiának. A bölcsesség és hatalom egyszerűen "
-"nem elegendő az alvilág legyőzéséhez. Az egyetlen módja annak legyőzésére "
-"az, ha sikerül a kísértésnek ellenállni. Ha ez a Mebrin szerepet játszott "
-"ezeknek az élőholtaknak a megidézésében, akkor nem hinném, hogy megsérült "
-"volna."
+"<i>Sir Deoran, a misztikumban jártas agg bölcsek gyakorta az elsők közt "
+"adják meg magukat a fekete mágiának. A bölcsesség és a hatalom egyszerűen "
+"nem elegendő az élőholtak fölötti uralomhoz - a győzelem egyetlen módja, ha "
+"sikerül a kísértésnek ellenállni. Ha ez a Mebrin szerepet játszott ezeknek "
+"az élőholtaknak a megidézésében, akkor nem kétlem, hogy közéjük állhatott.</"
+"i>"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:722
-#, fuzzy
 msgid ""
 "<i>Indeed, these elves are not as incorruptible and pure as they like to "
 "believe they are. I suspect that this sage's pride led him to believe that "
 "he could master a power that is uncontrollable.</i>"
 msgstr ""
-"Valójában ezek a tündék nem annyira megronthatatlanok és tiszták, amennyire "
-"azt hinni szeretnénk. Gyanítom, hogy ez a bölcs büszkeség késztette őt arra, "
-"hogy elsajátítson egy olyan képességet, amely irányíthatatlan."
+"<i>Valójában ezek a tündék nem annyira megronthatatlanok és tiszták, "
+"amennyire annak tartják magukat. Gyanítom, hogy ez a bölcs büszkesége miatt "
+"hihette, hogy elsajátíthat egy olyan képességet, amely irányíthatatlan.</i>"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:734
-#, fuzzy
 msgid ""
 "Very well, but even supposing your story is true, you are still criminals!"
 msgstr ""
@@ -2546,7 +2363,6 @@ msgstr ""
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:739
-#, fuzzy
 msgid ""
 "We have committed wrongdoings in the past, but at least in the fight against "
 "the undead, we can be your friends! They are as much our enemies as they are "
@@ -2560,7 +2376,6 @@ msgstr ""
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:745
-#, fuzzy
 msgid ""
 "Think of the destruction they wrought on your land! Think of how they "
 "trespassed on our lands and kidnapped our wisest sage! No matter what they "
@@ -2574,36 +2389,25 @@ msgstr ""
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:750
-#, fuzzy
-#| msgid ""
-#| "Hmm... I have to consider this... If I ally with the elves, I must fight "
-#| "the bandits, but if I ally with the bandits I will make enemies of the "
-#| "elves..."
 msgid ""
 "Peace, let me think! <i>I must consider this carefully... If I ally with the "
 "elves, I must fight the bandits, but if I ally with the bandits I will make "
 "enemies of the elves...</i>"
 msgstr ""
-"Hmm... ezt meg kell fontolnom... ha szövetséget kötök a tündékkel, meg kell "
-"küzdenem a banditákkal, de ha a banditákkal szövetkezem, a tündékből válik "
-"ellenség..."
+"Hmm... ezt meg kell fontolnom... <i>Ha szövetséget kötök a tündékkel, meg "
+"kell küzdenem a banditákkal, de ha a banditákkal szövetkezem, a tündékből "
+"válik ellenség...</i>"
 
 #. [option]
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:752
-#, fuzzy
-#| msgid ""
-#| "Your crimes are too great. You will fall with the rest of the foul undead!"
 msgid "Your crimes are too great. You will fall with the foul undead!"
 msgstr ""
 "A bűneitek túl nagyok. El kell pusztulnotok az ocsmány élőholtakkal együtt!"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:756
-#, fuzzy
-#| msgid ""
-#| "Then this parley is over! You may have sounded the doom of all of us!"
 msgid "Then this parley is over! You may have caused the doom of all of us!"
-msgstr "Akkor nincs alku! Talán mindannyiunk vesztét jelentik a szavaid!"
+msgstr "Akkor nincs alku! Talán mindannyiunk vesztét okoztad!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:762
@@ -2619,22 +2423,14 @@ msgstr "Rendben. Az összes embernek egyesülnie kell az élőhalottak ellen!"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:834
-#, fuzzy
-#| msgid ""
-#| "We will now fight alongside you. Come, my thugs and footpads, rally to me!"
 msgid ""
 "Excellent, we will fight with you. Come, my thugs and footpads, rally to me!"
-msgstr "Melletted fogunk harcolni, gyerünk banditák és útonállók, kövessetek!"
+msgstr ""
+"Kitűnő, melletted fogunk harcolni. Gyerünk, banditák és útonállók, "
+"kövessetek!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:840
-#, fuzzy
-#| msgid ""
-#| "You are no better than these criminals! We shall see if you can find your "
-#| "own way out of the forest! Come, my people, let us return to our lands. "
-#| "We were foolish to ever have any dealings with these humans. Do not set "
-#| "foot in our land ever again, Deoran, for you have brought us nothing but "
-#| "grief."
 msgid ""
 "So it comes to this. All humans are the same! You are no better than these "
 "criminals, the very pigs who sacked your towns and burned your villages! If "
@@ -2644,11 +2440,13 @@ msgid ""
 "not set foot in our land ever again, humans, for you have brought us nothing "
 "but grief."
 msgstr ""
-"Nem vagy jobb, mint ezek a bűnözők! Majd meglátjuk, hogy kitalálsz-e egyedül "
-"is az erdőből! Gyerünk, embereim, térjünk vissza földjeinkre. Ostobák "
-"voltunk, hogy bármiféle alkut kötöttünk ezekkel az emberekkel. Ne tedd be a "
-"lábadat soha többé a földünkre, Deoran, mert semmi mást nem hoztál nekünk, "
-"csak szenvedést!"
+"Szóval ide jutottunk. Minden ember egyforma! Te sem vagy jobb, mint ezek a "
+"bűnözők, akik kifosztották és felgyújtották a falvaitokat! Ha oly bátor "
+"vagy, hogy lemondasz a tündék segítségéről, legyen elég bátorságod az "
+"erdőben is utat találni magadnak! Gyerünk, embereim, térjünk vissza "
+"földjeinkre. Ostobák voltunk, hogy bármiféle alkut kötöttünk ezekkel az "
+"emberekkel. Ne tedd be a lábadat soha többé a földünkre, Deoran, mert semmi "
+"mást nem hoztál nekünk, csak szenvedést!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:852
@@ -2659,17 +2457,15 @@ msgstr ""
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:857
-#, fuzzy
 msgid ""
 "Do not fear! I know the way out and can lead you back to your homes after we "
 "defeat the undead."
 msgstr ""
-"Egyet se félj! Ismerem a kivezető utat és el tudlak vinni vissza "
-"otthonaitokhoz miután legyőztük az élőholtakat!"
+"Egyet se félj! Ismerem a kivezető utat és vissza tudlak vezetni "
+"otthonaitokhoz, miután legyőztük az élőholtakat!"
 
 #. [message]: speaker=narrator
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:901
-#, fuzzy
 msgid ""
 "Urza Afalas’s troops are exhausted from battle and cannot attack this turn, "
 "but are still able to withdraw and reposition themselves."
@@ -2679,18 +2475,14 @@ msgstr ""
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:933
-#, fuzzy
 msgid "I pay for my crimes, but without me, you cannot fight the undead..."
 msgstr "Megfizetek a bűneimért, de nélkülem nem küzdhetsz az élőholtakkal..."
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:946
-#, fuzzy
-#| msgid ""
-#| "Fools! That lich will be the death of us all! You have sealed our doom!"
 msgid "Fools! That lich will be the death of us all! Now we are all doomed!"
 msgstr ""
-"Bolondok! Ez a delevény mindannyiunk halála lesz! Megpecsételődött a sorsunk!"
+"Bolondok! Ez a delevény mindannyiunk halála lesz! Mindannyiunknak vége!"
 
 #. [unit]: type=Water Serpent, id=Beast of the Lake
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:975
@@ -2704,19 +2496,16 @@ msgstr "Grrr!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1004
-#, fuzzy
 msgid "Ouch! Did anyone feel that?"
 msgstr "Aúúú! Más is érezte ezt?"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1008
-#, fuzzy
 msgid "Aye, I felt it too. A dreadful chill of perverse origin."
 msgstr "Hogyne! Én is éreztem. Megátalkodott eredetű cudar jegesség."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1012
-#, fuzzy
 msgid ""
 "It is the work of the undead. They have begun to cast a spell on us to drain "
 "our energy and trap us in these forests. We must hurry before they complete "
@@ -2731,34 +2520,29 @@ msgstr ""
 
 #. [message]: speaker=Minister Hylas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1024
-#, fuzzy
 msgid "Foul magic pervades these forests."
 msgstr "Rossz mágia hatja át eme erdőket."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1028
-#, fuzzy
 msgid "The spell grows stronger by the moment."
 msgstr "A varázslat egyre erősebbé válik."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1040
-#, fuzzy
 msgid ""
 "The darkness is so heavy... I do not know how much longer I can go on..."
 msgstr ""
-"Oly nyomasztó ez a sötétség... nem tudom még meddig vagyok képes tovább "
+"Oly nyomasztó ez a sötétség... nem tudom, még meddig vagyok képes tovább "
 "haladni..."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1053
-#, fuzzy
 msgid "It is... so cold..."
 msgstr "Annyira... hideg... van..."
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1057
-#, fuzzy
 msgid ""
 "The undead have ensnared us in their spell... we will not be able to escape "
 "now..."
@@ -2767,18 +2551,11 @@ msgstr ""
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1080
-#, fuzzy
-#| msgid ""
-#| "Well! That was easier than I thought it’d be. Looks like the undead "
-#| "aren’t so tough after all!"
 msgid "Well! That was easier than I thought it would be."
-msgstr ""
-"Nos hát! Könnyebb volt, mint hittem. Úgy látszik, az élőholtak mégsem "
-"annyira kitartóak!"
+msgstr "Nohát! Könnyebb volt, mint hittem."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1085
-#, fuzzy
 msgid ""
 "Indeed. The lich has fallen. Looks like the corrupted sage was no match for "
 "us!"
@@ -2788,11 +2565,6 @@ msgstr ""
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1089
-#, fuzzy
-#| msgid ""
-#| "I’m afraid it is not so. This was not the real Mebrin we destroyed, but a "
-#| "mere phantom. He resides in catacombs deep underneath the castle, but "
-#| "they cannot be entered without magical means."
 msgid ""
 "I’m afraid it is not so. This was merely a phantom of the true Mebrin. He "
 "resides in catacombs deep underneath the castle, but they cannot be entered "
@@ -2800,12 +2572,12 @@ msgid ""
 "barrier he has erected."
 msgstr ""
 "Félek, hogy tévedtek. Nem az igazi Mebrint pusztítottuk el, csak egy "
-"fantomot. Ő a kastély alatti katakombákban tartózkodik, de oda varázslat "
-"segítsége nélkül nem lehet bejutni."
+"fantomot. Ő a kastély alatti katakombákban tartózkodik, de oda mágikus "
+"segítség nélkül nem lehet bejutni. Tünde varázslatra lenne szükségünk az "
+"általa emelt akadály leküzdéséhez."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1094
-#, fuzzy
 msgid ""
 "What?! You knew this all along and yet you still brought us here? You misled "
 "us!"
@@ -2815,10 +2587,6 @@ msgstr ""
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1098
-#, fuzzy
-#| msgid ""
-#| "If I had told you, you and the elves would have killed me! I didn’t have "
-#| "a choice!"
 msgid ""
 "If I had told you, you and the elves would have killed me! I had no choice!"
 msgstr ""
@@ -2832,27 +2600,17 @@ msgstr "Talán itt az ideje helyrehozni ezt a tévedésünket."
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1106
-#, fuzzy
-#| msgid ""
-#| "Then you would surely be lost in these woods forever at the mercy of the "
-#| "undead. I can lead you and your men back to the lands of Wesnoth if you "
-#| "will grant me pardon."
 msgid ""
 "Then you would surely be lost in these woods, hounded by the undead and made "
 "into their slaves. I can lead you and your men back to the lands of Wesnoth, "
 "but only if you promise to grant me pardon."
 msgstr ""
-"Ha így cselekedtek, minden bizonnyal örökre ezekben az erdőkben fogtok "
-"bolyongani az élőholtak jóvoltából. Visszavezethetlek titeket és az "
-"embereiteket Wesnoth földjére, ha megkegyelmeztek nekem."
+"Ha így cselekedtek, minden bizonnyal ezekben az erdőkben fogtok bolyongani "
+"élőholtaktól üldöztetve, majd szolgáikká válva. Visszavezethetlek titeket és "
+"az embereiteket Wesnoth földjére, ha megígéritek, hogy kegyelmet kapok."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1111
-#, fuzzy
-#| msgid ""
-#| "Now that the elves have abandoned us, that would seem to be our only "
-#| "choice. But what about Mebrin? The undead will keep attacking our homes "
-#| "unless we root them out at the source."
 msgid ""
 "Ethiliel could have dispelled these magical wards if we had not fallen for "
 "your lies! But I foolishly spurned her advice and all the aid she had "
@@ -2861,19 +2619,19 @@ msgid ""
 "Mebrin? The undead will keep attacking our homes unless we root them out at "
 "the source."
 msgstr ""
-"Most, hogy a tündék elhagytak minket, ez tűnik az egyetlen lehetőségünknek. "
-"De mi legyen Mebrinnel? Az élőholtak továbbra is támadni fogják az "
-"otthonainkat, hacsak nem irtjuk ki őket gyökerestül."
+"Ethiliel felbonthatta volna a mágikus védővarázst, ha nem dőlünk be a "
+"hazugságaidnak! Balga módon visszautasítottam tanácsát és segítségét. Hajlok "
+"rá, hogy véget vessek életednek most azonnal, de mivel a tündék távoztak... "
+"nincs sok választásunk. De mi legyen Mebrinnel? Az élőholtak továbbra is "
+"támadni fogják az otthonainkat, hacsak nem irtjuk ki őket gyökerestül."
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1115
-#, fuzzy
 msgid "You would never make it back on your own."
 msgstr "Sosem fogsz tudni egyedül visszatalálni."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1119
-#, fuzzy
 msgid ""
 "Bah, it is not like we have a choice. Very well, you will lead us back to "
 "Westin, and we will grant your pardon so long as you do not try any more "
@@ -2886,33 +2644,30 @@ msgstr ""
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1123
-#, fuzzy
 msgid ""
 "I know that Mebrin intends to lead the undead to Westin and raze the city. "
 "While his power is great and his army vast, we have fought the undead before "
 "and know that they can be defeated. Deoran—"
 msgstr ""
-"Tudom, hogy Mebrin célja, hogy Westinbe vezesse az élőholtakat és lerombolja "
-"a várost. Noha mind ereje, mind hadserege hatalmas, mi már harcoltunk az "
+"Tudom, hogy Mebrin célja Westinbe vezetni az élőholtakat és lerombolni a "
+"várost. Noha mind ereje, mind hadserege hatalmas, mi már harcoltunk az "
 "élőholtakkal korábban és tudjuk, hogy legyőzhetők. Deoran—"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1128
-#, fuzzy
 msgid "That’s <i>Sir</i> Deoran to the likes of you!"
-msgstr "Uram, az csak Deoran a hozzád hasonlóknak!"
+msgstr "Az <i>Sir</i> Deoran a hozzád hasonlóknak!"
 
 #. [message]: speaker=Urza Afalas
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1132
-#, fuzzy
 msgid ""
 "Yes, yes, Sir Deoran! If we fight against the undead on open plains or in "
 "the forests, we will surely be slaughtered. But, if we prepare our defenses "
 "and fortify the city walls, we may be able to hold back the undead and even "
 "strike at the lich-sage himself."
 msgstr ""
-"Igen, igen Sir Deoran! Hogyha nyílt síkságokon, vagy az erdőkben vesszük fel "
-"a harcot az élőholtakkal, akkor bizton lemészárolnak minket. Ám ha "
+"Igen, igen, Sir Deoran! Hogyha nyílt síkságokon, vagy az erdőkben vesszük "
+"fel a harcot az élőholtakkal, akkor bizton lemészárolnak minket. Ám ha "
 "előkészítjük védekezésünket és megerősítjük a város falait, akkor talán "
 "képesek leszünk visszatartani az élőholtakat, sőt még talán csapást is "
 "mérhetünk a delevény-bölcsre."
@@ -2928,40 +2683,23 @@ msgstr ""
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1154
-#, fuzzy
-#| msgid "Now, on with those bandits!"
 msgid "Now to defeat those bandits!"
 msgstr "No, csapjunk le a banditákra!"
 
 #. [message]: speaker=Sir Gerrick
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1185
-#, fuzzy
-#| msgid "We have beaten them both, criminals and undead!"
 msgid "We have beaten them both, outlaws and undead!"
 msgstr "Legyőztük mindannyiukat, a bűnözőket és az élőholtakat is!"
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1190
-#, fuzzy
-#| msgid ""
-#| "We should make haste to return to Wesnoth before the harvest. Fall "
-#| "arrived some time ago."
 msgid ""
 "We should make haste to return to Wesnoth. I think the fall harvest should "
 "be soon!"
-msgstr ""
-"Sietnünk kell, hogy még az aratás előtt visszaérjünk Wesnothba. Már majdnem "
-"itt az ősz."
+msgstr "Sietnünk kell vissza Wesnothba. Az őszi aratás hamarosan itt lehet!"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1194
-#, fuzzy
-#| msgid ""
-#| "Do not be so hasty; great mages are no mere tricksters to be easily "
-#| "defeated. I fear that there are tunnels and catacombs buried beneath the "
-#| "fortress and that we have merely defeated a specter. If we wish to "
-#| "cleanse the land of this evil, we must enter the darkness and root it out "
-#| "from within."
 msgid ""
 "Do not be so hasty. Powerful mages are not so easily defeated, and those "
 "skilled in the dark arts are especially adept at misdirection. There are "
@@ -2969,40 +2707,38 @@ msgid ""
 "great, dark energy. If we wish to cleanse the land of this evil, we must "
 "enter the crypt and root it out from within."
 msgstr ""
-"Ne légy olyan meggondolatlan! A nagy varázslók nem egyszerű trükkmesterek, "
-"hogy ilyen könnyen le lehessen őket győzni. Attól tartok, az erőd alatt "
-"alagutak és katakombák vannak, és mi csak egy lidércet győztünk le. Ha meg "
-"akarjuk tisztítani a vidéket a gonosztól, le kell ereszkednünk a sötétségbe, "
-"hogy gyökerestől kiirthassuk."
+"Ne légy olyan meggondolatlan! A nagy varázslókat nem ilyen könnyű legyőzni, "
+"és a sötét varázslatokban járatosak különösen gyakorlottak a "
+"félrevezetésben. Attól tartok, az erőd alatt alagutak és katakombák vannak, "
+"amik erős sötét energiát sugároznak. Ha meg akarjuk tisztítani a vidéket a "
+"gonosztól, be kell jutnunk a kriptába, hogy gyökerestől kiirthassuk."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1198
-#, fuzzy
 msgid "Very well, but where is the entrance?"
 msgstr "Rendben. De hol van a bejárat?"
 
 #. [message]: speaker=Ethiliel
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1202
-#, fuzzy
 msgid ""
 "There are strong magical wards that have hidden the way and bar our entry, "
 "but I am capable of dispelling them. It will take some time so stand back "
 "and get what rest you can. We are likely to face fierce opposition once we "
 "enter the caverns."
 msgstr ""
-"Erős varázzsal bíró őrszemek állják utunkat a bejáratnál elrejtőzve, de "
-"képes vagyok szétkergetni őket. Beletelik egy kis időbe, úgyhogy vonuljatok "
-"hátra és pihenjetek amennyit tudtok. Valószínűleg heves ellenállással fogunk "
+"Erős védővarázslatok állják utunkat a bejáratnál rejtve, de képes vagyok "
+"feloldani őket. Beletelik egy kis időbe, úgyhogy vonuljatok hátra és "
+"pihenjetek, amennyit tudtok. Valószínűleg heves ellenállással fogunk "
 "szembenézni amikor belépünk a barlangokba."
 
 #. [message]: speaker=Deoran
 #: data/campaigns/The_South_Guard/scenarios/05_Choice_In_The_Fog.cfg:1206
-#, fuzzy
 msgid ""
 "Indeed. We will leave you to your work and prepare ourselves for the coming "
 "battle."
 msgstr ""
-"Bizony. Magadra hagyunk a tennivalóiddal és felkészülünk a következő csatára."
+"Minden bizonnyal. Magadra hagyunk a tennivalóiddal és felkészülünk a közelgő "
+"csatára."
 
 #. [scenario]: id=06a_Tidings_Good_and_Ill
 #: data/campaigns/The_South_Guard/scenarios/06a_Tidings_Good_and_Ill.cfg:5
